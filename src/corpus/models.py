@@ -68,7 +68,7 @@ class RawEntity(BaseModel):
 def create_slug(text: str) -> str:
     """
     Create a stable, URL-safe slug from text.
-    
+
     Examples:
         "Sword of Night and Flame" -> "sword_of_night_and_flame"
         "Rennala, Queen of the Full Moon" -> "rennala_queen_of_the_full_moon"
@@ -86,7 +86,7 @@ def create_slug(text: str) -> str:
 def normalize_name_for_matching(text: str) -> str:
     """
     Normalize text for fuzzy matching.
-    
+
     More aggressive than slug creation - removes all non-alphanumeric characters
     and collapses whitespace for better matching.
     """

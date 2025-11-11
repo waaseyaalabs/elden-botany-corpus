@@ -1,10 +1,9 @@
 """Tests for data models."""
 
-import pytest
 
 from corpus.models import (
-    RawEntity,
     Provenance,
+    RawEntity,
     create_slug,
     normalize_name_for_matching,
 )
@@ -32,7 +31,7 @@ def test_raw_entity_to_slug():
         name="Moonlight Greatsword",
         description="A legendary weapon",
     )
-    
+
     assert entity.to_slug() == "moonlight_greatsword"
 
 
@@ -43,7 +42,7 @@ def test_provenance_model():
         uri="kaggle://test/weapons.csv",
         sha256="abc123",
     )
-    
+
     assert prov.source == "kaggle_base"
     assert prov.uri == "kaggle://test/weapons.csv"
     assert prov.sha256 == "abc123"

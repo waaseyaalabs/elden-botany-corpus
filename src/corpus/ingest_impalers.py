@@ -1,6 +1,5 @@
 """Impalers Archive DLC text dump ingestion."""
 
-import re
 from pathlib import Path
 from typing import Any
 
@@ -58,7 +57,7 @@ class ImpalersIngester:
         Returns:
             List of text records with name, text, section
         """
-        with open(html_path, "r", encoding="utf-8") as f:
+        with open(html_path, encoding="utf-8") as f:
             soup = BeautifulSoup(f, "html.parser")
 
         records: list[dict[str, Any]] = []
@@ -102,7 +101,7 @@ class ImpalersIngester:
             terms = dl.find_all("dt")
             definitions = dl.find_all("dd")
 
-            for term, definition in zip(terms, definitions):
+            for term, definition in zip(terms, definitions, strict=False):
                 name = term.get_text(strip=True)
                 text = definition.get_text(strip=True)
 

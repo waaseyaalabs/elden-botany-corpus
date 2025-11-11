@@ -20,7 +20,7 @@ def compute_file_hash(file_path: Path) -> str:
 
 def load_json(file_path: Path) -> Any:
     """Load JSON file."""
-    with open(file_path, "r", encoding="utf-8") as f:
+    with open(file_path, encoding="utf-8") as f:
         return json.load(f)
 
 
@@ -51,7 +51,7 @@ def progress_bar(iterable: Any, desc: str = "", total: int | None = None) -> Any
 def standardize_column_names(df: pl.DataFrame) -> pl.DataFrame:
     """
     Standardize DataFrame column names to snake_case.
-    
+
     Examples:
         "Item Name" -> "item_name"
         "HP" -> "hp"
@@ -73,11 +73,11 @@ def standardize_column_names(df: pl.DataFrame) -> pl.DataFrame:
 def merge_text_fields(row: dict[str, Any], text_fields: list[str]) -> str:
     """
     Merge multiple text fields into a single description.
-    
+
     Args:
         row: Dictionary of column values
         text_fields: List of column names to merge
-        
+
     Returns:
         Merged text with field labels
     """
@@ -99,12 +99,12 @@ def deduplicate_entities(
 ) -> pl.DataFrame:
     """
     Deduplicate entities based on key columns.
-    
+
     Args:
         df: Input DataFrame
         key_columns: Columns that define uniqueness
         prefer_column: If duplicates exist, prefer rows with non-null values in this column
-        
+
     Returns:
         Deduplicated DataFrame
     """
