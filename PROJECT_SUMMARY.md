@@ -235,7 +235,7 @@ docker compose -f docker/compose.example.yml up jupyter
 ## 📧 Support
 
 For questions or issues:
-- GitHub Issues: [elden-botany-corpus/issues](https://github.com/YOUR_USERNAME/elden-botany-corpus/issues)
+- GitHub Issues: [waaseyaalabs/elden-botany-corpus/issues](https://github.com/waaseyaalabs/elden-botany-corpus/issues)
 - Documentation: See README.md and CONTRIBUTING.md
 
 ---

@@ -1,6 +1,6 @@
 # Elden Ring Botany Corpus
 
-[![CI](https://github.com/YOUR_USERNAME/elden-botany-corpus/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_USERNAME/elden-botany-corpus/actions/workflows/ci.yml)
+[![CI](https://github.com/waaseyaalabs/elden-botany-corpus/actions/workflows/ci.yml/badge.svg)](https://github.com/waaseyaalabs/elden-botany-corpus/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 
@@ -95,7 +95,7 @@ elden-botany-corpus/
 ### 1. Clone & Install
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/elden-botany-corpus.git
+git clone https://github.com/waaseyaalabs/elden-botany-corpus.git
 cd elden-botany-corpus
 
 # Install dependencies
@@ -307,7 +307,7 @@ Contributions welcome! Please:
 
 ## 🐛 Issues
 
-Report bugs or request features via [GitHub Issues](https://github.com/YOUR_USERNAME/elden-botany-corpus/issues).
+Report bugs or request features via [GitHub Issues](https://github.com/waaseyaalabs/elden-botany-corpus/issues).
 
 ## 🙏 Acknowledgments
 
@@ -319,7 +319,7 @@ Report bugs or request features via [GitHub Issues](https://github.com/YOUR_USER
 
 ## 📧 Contact
 
-For questions or collaboration: [open an issue](https://github.com/YOUR_USERNAME/elden-botany-corpus/issues)
+For questions or collaboration: [open an issue](https://github.com/waaseyaalabs/elden-botany-corpus/issues)
 
 ---
 
