@@ -1,0 +1,37 @@
+# Simple pipeline definition (YAML format)
+# This could be used for more complex DAG execution
+
+name: curate_corpus
+description: Elden Ring corpus curation pipeline
+
+steps:
+  - name: fetch_kaggle
+    module: corpus.ingest_kaggle
+    function: fetch_kaggle_data
+    params:
+      include_base: true
+      include_dlc: true
+
+  - name: fetch_github
+    module: corpus.ingest_github_json
+    function: fetch_github_api_data
+    params: {}
+
+  - name: fetch_impalers
+    module: corpus.ingest_impalers
+    function: fetch_impalers_data
+    params: {}
+
+  - name: reconcile
+    module: corpus.reconcile
+    function: reconcile_all_sources
+    depends_on:
+      - fetch_kaggle
+      - fetch_github
+      - fetch_impalers
+
+  - name: curate
+    module: corpus.curate
+    function: curate_corpus
+    depends_on:
+      - reconcile

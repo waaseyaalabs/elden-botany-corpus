@@ -1,0 +1,75 @@
+version: '3.8'
+
+services:
+  # PostgreSQL with pgvector extension
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: elden-postgres
+    environment:
+      POSTGRES_USER: elden
+      POSTGRES_PASSWORD: elden_password
+      POSTGRES_DB: elden
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./sql:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U elden"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - elden-network
+
+  # Corpus worker/CLI
+  corpus-worker:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+      target: base
+    container_name: elden-corpus-worker
+    environment:
+      POSTGRES_DSN: postgresql://elden:elden_password@postgres:5432/elden
+      KAGGLE_USERNAME: ${KAGGLE_USERNAME}
+      KAGGLE_KEY: ${KAGGLE_KEY}
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      EMBED_PROVIDER: ${EMBED_PROVIDER:-none}
+    volumes:
+      - ../data:/app/data
+      - ../src:/app/src:ro
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - elden-network
+    command: tail -f /dev/null  # Keep container running
+
+  # Development/Jupyter environment (optional)
+  jupyter:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+      target: dev
+    container_name: elden-jupyter
+    environment:
+      POSTGRES_DSN: postgresql://elden:elden_password@postgres:5432/elden
+    ports:
+      - "8888:8888"
+    volumes:
+      - ../data:/app/data
+      - ../src:/app/src
+      - ../examples:/app/examples
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - elden-network
+    command: jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root
+
+volumes:
+  postgres_data:
+
+networks:
+  elden-network:
+    driver: bridge

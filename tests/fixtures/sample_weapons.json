@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Longsword",
+    "description": "A standard sword",
+    "stats": {
+      "attack": 90
+    }
+  },
+  {
+    "name": "Greatsword",
+    "description": "A large heavy sword",
+    "stats": {
+      "attack": 140
+    }
+  }
+]

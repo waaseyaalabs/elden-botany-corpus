@@ -1,0 +1,97 @@
+name: Nightly Corpus Refresh
+
+on:
+  schedule:
+    # Run at 2 AM UTC every day
+    - cron: '0 2 * * *'
+  workflow_dispatch:  # Allow manual triggering
+
+jobs:
+  refresh-corpus:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0  # Full history for comparison
+    
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    
+    - name: Install Poetry
+      run: |
+        curl -sSL https://install.python-poetry.org | python3 -
+        echo "$HOME/.local/bin" >> $GITHUB_PATH
+    
+    - name: Install dependencies
+      run: |
+        poetry install --no-interaction
+    
+    - name: Configure Kaggle credentials
+      env:
+        KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+        KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+      run: |
+        mkdir -p ~/.kaggle
+        echo "{\"username\":\"$KAGGLE_USERNAME\",\"key\":\"$KAGGLE_KEY\"}" > ~/.kaggle/kaggle.json
+        chmod 600 ~/.kaggle/kaggle.json
+    
+    - name: Fetch data sources
+      env:
+        KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+        KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+      run: |
+        poetry run corpus fetch --all
+    
+    - name: Curate corpus
+      run: |
+        poetry run corpus curate
+    
+    - name: Check for changes
+      id: check_changes
+      run: |
+        if [ -f data/curated/metadata.json ]; then
+          git add data/curated/metadata.json
+          if git diff --staged --quiet; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+        else
+          echo "changed=false" >> $GITHUB_OUTPUT
+        fi
+    
+    - name: Create Pull Request
+      if: steps.check_changes.outputs.changed == 'true'
+      uses: peter-evans/create-pull-request@v5
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: 'chore: nightly corpus refresh'
+        title: 'Corpus Refresh: Automated Update'
+        body: |
+          ## Automated Corpus Refresh
+          
+          This PR contains updated corpus data from the nightly refresh job.
+          
+          **Changes:**
+          - Updated entity counts
+          - Updated file hashes
+          - Updated provenance information
+          
+          **Metadata:**
+          See `data/curated/metadata.json` for detailed statistics.
+          
+          **Action Required:**
+          Review the changes and merge if everything looks correct.
+        branch: corpus-refresh-${{ github.run_number }}
+        delete-branch: true
+        labels: |
+          automated
+          data-refresh
+    
+    - name: No changes detected
+      if: steps.check_changes.outputs.changed == 'false'
+      run: |
+        echo "No changes detected in corpus data"
