@@ -101,7 +101,7 @@ class ImpalersIngester:
             terms = dl.find_all("dt")
             definitions = dl.find_all("dd")
 
-            for term, definition in zip(terms, definitions, strict=False):
+            for term, definition in zip(terms, definitions, strict=True):
                 name = term.get_text(strip=True)
                 text = definition.get_text(strip=True)
 
