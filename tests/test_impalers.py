@@ -12,10 +12,10 @@ def test_normalize_name_for_matching():
     assert normalize_name_for_matching("Rellana - Twin Moon Knight") == "rellana twin moon knight"
 
 
-@pytest.mark.skip(reason="Module implementation pending")
+@pytest.mark.skip(reason="Requires fixture data")
 def test_impalers_ingester_init():
     """Test ImpalersIngester initialization."""
-    # TODO: Implement when module is ready
+    # TODO: Implement with fixture data
     pass
 
 
