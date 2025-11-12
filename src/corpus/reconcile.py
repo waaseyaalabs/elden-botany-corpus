@@ -7,7 +7,6 @@ import polars as pl
 
 from corpus.config import settings
 from corpus.models import (
-    CorpusChunk,
     RawEntity,
     create_slug,
     normalize_name_for_matching,

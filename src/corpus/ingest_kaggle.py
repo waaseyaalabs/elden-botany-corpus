@@ -1,7 +1,5 @@
 """Kaggle dataset ingestion module."""
 
-import json
-import shutil
 import zipfile
 from pathlib import Path
 from typing import Any
@@ -11,7 +9,7 @@ import requests
 from tqdm import tqdm
 
 from corpus.config import settings
-from corpus.models import Provenance, RawEntity, create_slug
+from corpus.models import Provenance, RawEntity
 from corpus.utils import (
     compute_file_hash,
     progress_bar,

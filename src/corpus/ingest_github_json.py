@@ -1,7 +1,6 @@
 """GitHub API JSON ingestion module (fallback for base game)."""
 
 import json
-from pathlib import Path
 from typing import Any
 
 import requests
@@ -56,7 +55,7 @@ class GitHubAPIIngester:
         # Use cache if exists
         if cache_file.exists():
             print(f"Loading {entity_type} from cache...")
-            with open(cache_file, "r", encoding="utf-8") as f:
+            with open(cache_file, encoding="utf-8") as f:
                 return json.load(f)
 
         print(f"Fetching {entity_type} from {url}...")

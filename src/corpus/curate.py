@@ -6,7 +6,7 @@ from pathlib import Path
 import polars as pl
 
 from corpus.config import settings
-from corpus.models import CorpusChunk, RawEntity
+from corpus.models import RawEntity
 from corpus.reconcile import entities_to_dataframe
 from corpus.utils import (
     MetadataTracker,
@@ -106,7 +106,7 @@ class CorpusCurator:
         # Convert meta_json and sources to JSON strings for CSV
         df_csv = df.with_columns([
             pl.col("meta_json").map_elements(
-                lambda x: json.dumps(x) if x else "{}", 
+                lambda x: json.dumps(x) if x else "{}",
                 return_dtype=pl.Utf8
             ).alias("meta_json"),
             pl.col("sources").map_elements(

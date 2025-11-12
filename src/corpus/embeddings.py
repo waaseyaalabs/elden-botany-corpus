@@ -44,11 +44,11 @@ def _generate_openai_embeddings(
     """Generate embeddings using OpenAI API."""
     try:
         from openai import OpenAI
-    except ImportError:
+    except ImportError as err:
         raise ImportError(
             "OpenAI package not installed. "
             "Install with: poetry add openai"
-        )
+        ) from err
 
     if not settings.openai_api_key:
         raise ValueError("OPENAI_API_KEY not set in environment")
@@ -92,11 +92,11 @@ def _generate_local_embeddings(
     """Generate embeddings using local sentence-transformers."""
     try:
         from sentence_transformers import SentenceTransformer
-    except ImportError:
+    except ImportError as err:
         raise ImportError(
             "sentence-transformers not installed. "
             "Install with: poetry add sentence-transformers"
-        )
+        ) from err
 
     print(f"Loading local embedding model: {model}...")
     encoder = SentenceTransformer(model)
