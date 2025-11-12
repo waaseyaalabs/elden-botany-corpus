@@ -40,10 +40,10 @@ def test_extract_entity_names_from_text():
     pass
 
 
-@pytest.mark.skip(reason="Module implementation pending")
+@pytest.mark.skip(reason="Requires network access to GitHub - integration test")
 def test_fetch_impalers_data():
     """Test complete Impalers data fetch pipeline."""
-    # TODO: Implement when module is ready
+    # TODO: Implement integration test with network access or mock
     pass
 
 
