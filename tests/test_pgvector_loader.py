@@ -5,6 +5,7 @@ import pytest
 from corpus.models import CorpusChunk, CorpusDocument
 
 
+@pytest.mark.integration
 @pytest.mark.skip(reason="Requires PostgreSQL connection - integration test")
 def test_pgvector_loader_init():
     """Test PgVectorLoader initialization."""
@@ -12,6 +13,7 @@ def test_pgvector_loader_init():
     pass
 
 
+@pytest.mark.integration
 @pytest.mark.skip(reason="Requires PostgreSQL connection - integration test")
 def test_create_schema():
     """Test schema creation from SQL files."""
@@ -19,6 +21,7 @@ def test_create_schema():
     pass
 
 
+@pytest.mark.integration
 @pytest.mark.skip(reason="Requires PostgreSQL connection - integration test")
 def test_load_document():
     """Test loading a single document."""
@@ -26,6 +29,7 @@ def test_load_document():
     pass
 
 
+@pytest.mark.integration
 @pytest.mark.skip(reason="Requires PostgreSQL connection - integration test")
 def test_load_chunk():
     """Test loading a single chunk."""
@@ -33,6 +37,7 @@ def test_load_chunk():
     pass
 
 
+@pytest.mark.integration
 @pytest.mark.skip(reason="Requires PostgreSQL connection - integration test")
 def test_load_chunks_batch():
     """Test batch loading of chunks."""
@@ -40,6 +45,7 @@ def test_load_chunks_batch():
     pass
 
 
+@pytest.mark.integration
 @pytest.mark.skip(reason="Requires PostgreSQL connection - integration test")
 def test_update_embeddings():
     """Test updating embeddings for chunks."""
@@ -47,6 +53,7 @@ def test_update_embeddings():
     pass
 
 
+@pytest.mark.integration
 @pytest.mark.skip(reason="Requires PostgreSQL connection - integration test")
 def test_query_by_vector():
     """Test vector similarity search."""
@@ -54,6 +61,7 @@ def test_query_by_vector():
     pass
 
 
+@pytest.mark.integration
 @pytest.mark.skip(reason="Requires PostgreSQL connection - integration test")
 def test_full_text_search():
     """Test full-text search on text column."""

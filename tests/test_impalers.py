@@ -19,6 +19,7 @@ def test_impalers_ingester_init():
     pass
 
 
+@pytest.mark.integration
 @pytest.mark.skip(reason="Requires network access to GitHub - integration test")
 def test_download_impalers_archive():
     """Test downloading Impalers Archive."""
@@ -40,6 +41,7 @@ def test_extract_entity_names_from_text():
     pass
 
 
+@pytest.mark.integration
 @pytest.mark.skip(reason="Requires network access to GitHub - integration test")
 def test_fetch_impalers_data():
     """Test complete Impalers data fetch pipeline."""

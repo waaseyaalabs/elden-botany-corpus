@@ -53,6 +53,7 @@ def test_extract_description():
     assert "ignored" not in description
 
 
+@pytest.mark.integration
 @pytest.mark.skip(reason="Requires Kaggle API credentials - integration test")
 def test_download_dataset():
     """Test dataset download (integration test)."""
@@ -60,6 +61,7 @@ def test_download_dataset():
     pass
 
 
+@pytest.mark.integration
 @pytest.mark.skip(reason="Requires Kaggle data - integration test")
 def test_ingest_base_game():
     """Test base game ingestion (integration test)."""
@@ -67,6 +69,7 @@ def test_ingest_base_game():
     pass
 
 
+@pytest.mark.integration
 @pytest.mark.skip(reason="Requires Kaggle data - integration test")
 def test_ingest_dlc():
     """Test DLC ingestion (integration test)."""
@@ -74,6 +77,7 @@ def test_ingest_dlc():
     pass
 
 
+@pytest.mark.integration
 @pytest.mark.skip(reason="Requires Kaggle API credentials")
 def test_fetch_kaggle_data():
     """Test complete Kaggle data fetch pipeline."""

@@ -6,6 +6,30 @@
 
 ---
 
+## 📦 What's Included in This PR
+
+This PR adds the complete ETL and database schema scaffold in a single comprehensive commit (`da14a5c`):
+
+**New Files Added (45 files, 5139+ lines)**:
+- ✅ SQL schema files (`sql/*.sql`) - pgvector + HNSW indexes
+- ✅ 13 ETL modules (`src/corpus/*.py`) - Ingestion, reconciliation, embedding generation
+- ✅ 6 test files (`tests/*.py`) - 37 tests (16 passing, 18 integration tests marked for future)
+- ✅ Test fixtures (`tests/fixtures/*.{csv,json}`) - Sample data for offline testing
+- ✅ CI workflows (`.github/workflows/*.yml`) - Lint, type-check, test automation
+- ✅ Documentation (`README.md`, `CONTRIBUTING.md`, `PROJECT_SUMMARY.md`)
+- ✅ Infrastructure (`Makefile`, `docker/`, `pyproject.toml`, `.gitignore`)
+
+**All files added in commit `da14a5c` are new to the repository** - there is no prior work being referenced. This is the foundational scaffold for the entire project.
+
+**Reference Links**:
+- SQL Schema: [`sql/010_schema.sql`](../sql/010_schema.sql)
+- Indexes: [`sql/020_indexes.sql`](../sql/020_indexes.sql)
+- ETL Modules: [`src/corpus/`](../src/corpus/)
+- Tests: [`tests/`](../tests/)
+- CI Workflow: [`.github/workflows/ci.yml`](../.github/workflows/ci.yml)
+
+---
+
 ## 📊 Validation Results
 
 ### ✅ SQL Schema (Complete)
