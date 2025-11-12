@@ -22,11 +22,11 @@ This PR adds the complete ETL and database schema scaffold in a single comprehen
 **All files added in commit `da14a5c` are new to the repository** - there is no prior work being referenced. This is the foundational scaffold for the entire project.
 
 **Reference Links**:
-- SQL Schema: [`sql/010_schema.sql`](../sql/010_schema.sql)
-- Indexes: [`sql/020_indexes.sql`](../sql/020_indexes.sql)
-- ETL Modules: [`src/corpus/`](../src/corpus/)
-- Tests: [`tests/`](../tests/)
-- CI Workflow: [`.github/workflows/ci.yml`](../.github/workflows/ci.yml)
+- SQL Schema: [`sql/010_schema.sql`](sql/010_schema.sql)
+- Indexes: [`sql/020_indexes.sql`](sql/020_indexes.sql)
+- ETL Modules: [`src/corpus/`](src/corpus/)
+- Tests: [`tests/`](tests/)
+- CI Workflow: [`.github/workflows/ci.yml`](.github/workflows/ci.yml)
 
 ---
 

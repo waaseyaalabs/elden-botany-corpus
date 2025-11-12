@@ -1,70 +1,111 @@
 """Tests for PostgreSQL + pgvector loader."""
 
+import os
+
 import pytest
 
 from corpus.models import CorpusChunk, CorpusDocument
 
 
 @pytest.mark.integration
-@pytest.mark.skip(reason="Requires PostgreSQL connection - integration test")
+@pytest.mark.skipif(
+    os.getenv("RUN_INTEGRATION") != "1",
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+)
 def test_pgvector_loader_init():
     """Test PgVectorLoader initialization."""
+    pytest.importorskip("pgvector")
     # TODO: Implement with test database connection
     pass
 
 
 @pytest.mark.integration
-@pytest.mark.skip(reason="Requires PostgreSQL connection - integration test")
+@pytest.mark.skipif(
+    os.getenv("RUN_INTEGRATION") != "1",
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+)
 def test_create_schema():
     """Test schema creation from SQL files."""
+    pytest.importorskip("pgvector")
+    pytest.importorskip("psycopg")
     # TODO: Test that schema is created correctly
     pass
 
 
 @pytest.mark.integration
-@pytest.mark.skip(reason="Requires PostgreSQL connection - integration test")
+@pytest.mark.skipif(
+    os.getenv("RUN_INTEGRATION") != "1",
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+)
 def test_load_document():
     """Test loading a single document."""
+    pytest.importorskip("pgvector")
+    pytest.importorskip("psycopg")
     # TODO: Create test document and verify insertion
     pass
 
 
 @pytest.mark.integration
-@pytest.mark.skip(reason="Requires PostgreSQL connection - integration test")
+@pytest.mark.skipif(
+    os.getenv("RUN_INTEGRATION") != "1",
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+)
 def test_load_chunk():
     """Test loading a single chunk."""
+    pytest.importorskip("pgvector")
+    pytest.importorskip("psycopg")
     # TODO: Create test chunk and verify insertion
     pass
 
 
 @pytest.mark.integration
-@pytest.mark.skip(reason="Requires PostgreSQL connection - integration test")
+@pytest.mark.skipif(
+    os.getenv("RUN_INTEGRATION") != "1",
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+)
 def test_load_chunks_batch():
     """Test batch loading of chunks."""
+    pytest.importorskip("pgvector")
+    pytest.importorskip("psycopg")
     # TODO: Test batch insert performance and correctness
     pass
 
 
 @pytest.mark.integration
-@pytest.mark.skip(reason="Requires PostgreSQL connection - integration test")
+@pytest.mark.skipif(
+    os.getenv("RUN_INTEGRATION") != "1",
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+)
 def test_update_embeddings():
     """Test updating embeddings for chunks."""
+    pytest.importorskip("pgvector")
+    pytest.importorskip("psycopg")
     # TODO: Test embedding update logic
     pass
 
 
 @pytest.mark.integration
-@pytest.mark.skip(reason="Requires PostgreSQL connection - integration test")
+@pytest.mark.skipif(
+    os.getenv("RUN_INTEGRATION") != "1",
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+)
 def test_query_by_vector():
     """Test vector similarity search."""
+    pytest.importorskip("pgvector")
+    pytest.importorskip("psycopg")
     # TODO: Test HNSW index and similarity queries
     pass
 
 
 @pytest.mark.integration
-@pytest.mark.skip(reason="Requires PostgreSQL connection - integration test")
+@pytest.mark.skipif(
+    os.getenv("RUN_INTEGRATION") != "1",
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+)
 def test_full_text_search():
     """Test full-text search on text column."""
+    pytest.importorskip("pgvector")
+    pytest.importorskip("psycopg")
     # TODO: Test GIN index and full-text queries
     pass
 

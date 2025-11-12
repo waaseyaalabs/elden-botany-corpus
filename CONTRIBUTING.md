@@ -32,16 +32,78 @@ poetry run pre-commit install
 
 ## Testing
 
-- Write tests for new features in `tests/`
-- Run tests before submitting:
+### Unit Tests
+
+Write tests for new features in `tests/`. Unit tests should run fast and have no external dependencies.
 
 ```bash
+# Run all unit tests (default - integration tests are skipped)
 make test
 # or
 poetry run pytest -v
+
+# Explicitly skip integration tests
+poetry run pytest -m "not integration"
 ```
 
-- Aim for >80% code coverage
+Aim for >80% code coverage on core logic.
+
+### Integration Tests
+
+Integration tests require external services (PostgreSQL, Kaggle API, network access) and are **disabled by default**.
+
+**To run integration tests locally:**
+
+1. **Set up required services:**
+
+```bash
+# Start PostgreSQL with pgvector (using Docker)
+docker compose -f docker/compose.example.yml up -d postgres
+```
+
+2. **Set environment variables:**
+
+```bash
+export RUN_INTEGRATION=1
+export POSTGRES_DSN="postgresql://elden:password@localhost:5432/elden"
+export KAGGLE_USERNAME="your_username"
+export KAGGLE_KEY="your_api_key"
+```
+
+3. **Run integration tests:**
+
+```bash
+# Run only integration tests
+poetry run pytest -m integration
+
+# Run all tests (unit + integration)
+RUN_INTEGRATION=1 poetry run pytest
+```
+
+**Writing integration tests:**
+
+- Mark tests with `@pytest.mark.integration`
+- Add conditional skip: `@pytest.mark.skipif(os.getenv("RUN_INTEGRATION") != "1", reason="...")`
+- Use `pytest.importorskip()` for optional dependencies
+- Use fixtures from `conftest.py` (e.g., `pg_connection`, `pg_cursor`)
+
+Example:
+
+```python
+import os
+import pytest
+
+@pytest.mark.integration
+@pytest.mark.skipif(
+    os.getenv("RUN_INTEGRATION") != "1",
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+)
+def test_database_operation(pg_cursor):
+    """Test database operation."""
+    pytest.importorskip("psycopg")
+    # Test implementation
+    pass
+```
 
 ## Pull Request Process
 
