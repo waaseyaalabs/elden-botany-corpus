@@ -230,9 +230,51 @@ elden.corpus_chunk
 ### Run Tests
 
 ```bash
+# Run all unit tests (fast, no external dependencies)
 poetry run pytest -v
+
+# Run with coverage
 poetry run pytest --cov=corpus --cov-report=html
+
+# Skip integration tests explicitly
+poetry run pytest -m "not integration"
+
+# Run only integration tests (requires services)
+RUN_INTEGRATION=1 poetry run pytest -m integration
 ```
+
+### Integration Tests
+
+Integration tests require external services (PostgreSQL with pgvector, Kaggle API) and are **skipped by default**.
+
+**To enable integration tests:**
+
+```bash
+# Set environment variables
+export RUN_INTEGRATION=1
+export POSTGRES_DSN="postgresql://user:pass@localhost:5432/test_db"
+export KAGGLE_USERNAME="your_username"
+export KAGGLE_KEY="your_api_key"
+
+# Run integration tests
+poetry run pytest -m integration
+```
+
+**Using Docker for integration tests:**
+
+```bash
+# Start PostgreSQL with pgvector
+docker compose -f docker/compose.example.yml up -d postgres
+
+# Run integration tests
+RUN_INTEGRATION=1 POSTGRES_DSN="postgresql://elden:password@localhost:5432/elden" \
+  poetry run pytest -m integration
+```
+
+**Fixtures and test database:**
+- The `pg_connection` fixture automatically initializes the schema from `sql/*.sql` files
+- Each test uses a transaction that is rolled back after completion
+- Schema is dropped after the test session ends
 
 ### Linting & Type Checking
 

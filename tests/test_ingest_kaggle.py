@@ -1,5 +1,7 @@
 """Tests for Kaggle ingestion module."""
 
+import os
+
 import pytest
 
 from corpus.ingest_kaggle import KaggleIngester
@@ -53,29 +55,47 @@ def test_extract_description():
     assert "ignored" not in description
 
 
-@pytest.mark.skip(reason="Requires Kaggle API credentials - integration test")
+@pytest.mark.integration
+@pytest.mark.skipif(
+    os.getenv("RUN_INTEGRATION") != "1",
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+)
 def test_download_dataset():
     """Test dataset download (integration test)."""
+    pytest.importorskip("kaggle")
     # TODO: Implement integration test with mock data or test dataset
     pass
 
 
-@pytest.mark.skip(reason="Requires Kaggle data - integration test")
+@pytest.mark.integration
+@pytest.mark.skipif(
+    os.getenv("RUN_INTEGRATION") != "1",
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+)
 def test_ingest_base_game():
     """Test base game ingestion (integration test)."""
     # TODO: Implement integration test with fixture data
     pass
 
 
-@pytest.mark.skip(reason="Requires Kaggle data - integration test")
+@pytest.mark.integration
+@pytest.mark.skipif(
+    os.getenv("RUN_INTEGRATION") != "1",
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+)
 def test_ingest_dlc():
     """Test DLC ingestion (integration test)."""
     # TODO: Implement integration test with fixture data
     pass
 
 
-@pytest.mark.skip(reason="Requires Kaggle API credentials")
+@pytest.mark.integration
+@pytest.mark.skipif(
+    os.getenv("RUN_INTEGRATION") != "1",
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+)
 def test_fetch_kaggle_data():
     """Test complete Kaggle data fetch pipeline."""
+    pytest.importorskip("kaggle")
     # TODO: Add integration test when credentials available
     pass

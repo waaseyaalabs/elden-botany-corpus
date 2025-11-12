@@ -85,6 +85,8 @@ warn_redundant_casts = true
 warn_unused_ignores = true
 warn_no_return = true
 plugins = ["pydantic.mypy"]
+# Note: Some warnings expected for scaffold phase (missing stubs, optional imports)
+# CI configured with continue-on-error for initial development
 
 [[tool.mypy.overrides]]
 module = [
@@ -92,6 +94,8 @@ module = [
     "duckdb.*",
     "pgvector.*",
     "Levenshtein.*",
+    "sentence_transformers.*",
+    "openai.*",
 ]
 ignore_missing_imports = true
 
