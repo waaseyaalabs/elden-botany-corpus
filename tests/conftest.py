@@ -58,7 +58,7 @@ def temp_data_dir(tmp_path):
 def postgres_dsn():
     """
     PostgreSQL connection string for integration tests.
-    
+
     Returns DSN from environment variable POSTGRES_DSN, or None if not set.
     Tests requiring this fixture should be marked with @pytest.mark.integration
     and will be skipped if RUN_INTEGRATION != "1".
@@ -70,42 +70,42 @@ def postgres_dsn():
 def pg_connection(postgres_dsn):
     """
     PostgreSQL connection for integration tests.
-    
+
     Requires POSTGRES_DSN environment variable.
     Optional: Use testcontainers for ephemeral database.
     """
     if not postgres_dsn:
         pytest.skip("POSTGRES_DSN not set - skipping database tests")
-    
+
     psycopg = pytest.importorskip("psycopg")
-    
+
     # Create connection
     conn = psycopg.connect(postgres_dsn)
-    
+
     # Initialize schema from SQL files
     sql_dir = Path(__file__).parent.parent / "sql"
     with conn.cursor() as cur:
         # Load extensions
         extensions_sql = (sql_dir / "001_enable_extensions.sql").read_text()
         cur.execute(extensions_sql)
-        
+
         # Create schema
         schema_sql = (sql_dir / "010_schema.sql").read_text()
         cur.execute(schema_sql)
-        
+
         # Create indexes
         indexes_sql = (sql_dir / "020_indexes.sql").read_text()
         cur.execute(indexes_sql)
-        
+
         conn.commit()
-    
+
     yield conn
-    
+
     # Cleanup: drop schema
     with conn.cursor() as cur:
         cur.execute("DROP SCHEMA IF EXISTS elden CASCADE")
         conn.commit()
-    
+
     conn.close()
 
 

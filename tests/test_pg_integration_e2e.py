@@ -12,8 +12,9 @@ Run with:
 """
 
 import os
-import pytest
+
 import psycopg
+import pytest
 
 
 @pytest.mark.integration
@@ -24,19 +25,19 @@ import psycopg
 def test_pgvector_schema_and_queries():
     """
     End-to-end test: create schema, insert data, verify vector and FTS queries.
-    
+
     This test recreates a minimal schema for isolation. Future PRs can refactor
     to execute the actual SQL files from /sql/*.sql.
     """
     dsn = os.environ["POSTGRES_DSN"]
-    
+
     with psycopg.connect(dsn, autocommit=True) as conn:
         with conn.cursor() as cur:
             # ======= SETUP: Extensions + Schema =======
             cur.execute("CREATE EXTENSION IF NOT EXISTS vector;")
             cur.execute('CREATE EXTENSION IF NOT EXISTS "uuid-ossp";')
             cur.execute("CREATE SCHEMA IF NOT EXISTS elden;")
-            
+
             # ======= SETUP: Tables =======
             # Mirror 010_schema.sql structure
             cur.execute("""
@@ -49,7 +50,7 @@ def test_pgvector_schema_and_queries():
                     created_at TIMESTAMPTZ DEFAULT NOW()
                 );
             """)
-            
+
             cur.execute("""
                 CREATE TABLE IF NOT EXISTS elden.corpus_chunk (
                     id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
@@ -66,7 +67,7 @@ def test_pgvector_schema_and_queries():
                     embedding vector(1536)
                 );
             """)
-            
+
             # ======= SETUP: Indexes =======
             # Mirror 020_indexes.sql (minimal subset for this test)
             cur.execute("""
@@ -74,22 +75,22 @@ def test_pgvector_schema_and_queries():
                 ON elden.corpus_chunk USING hnsw (embedding vector_l2_ops)
                 WHERE embedding IS NOT NULL;
             """)
-            
+
             cur.execute("""
                 CREATE INDEX IF NOT EXISTS corpus_chunk_text_fts
                 ON elden.corpus_chunk USING gin (to_tsvector('english', text));
             """)
-            
+
             cur.execute("""
                 CREATE INDEX IF NOT EXISTS corpus_chunk_type_idx
                 ON elden.corpus_chunk (entity_type);
             """)
-            
+
             cur.execute("""
                 CREATE INDEX IF NOT EXISTS corpus_chunk_dlc_idx
                 ON elden.corpus_chunk (is_dlc);
             """)
-            
+
             # ======= TEST: Insert Document + Chunk =======
             cur.execute("""
                 INSERT INTO elden.corpus_document (
@@ -104,11 +105,11 @@ def test_pgvector_schema_and_queries():
             """)
             (doc_id,) = cur.fetchone()
             assert doc_id is not None, "Document insertion failed"
-            
+
             # Create a 1536-dimensional embedding vector for testing
             # First 3 values are [0.1, 0.2, 0.3], rest are zeros
             test_embedding = [0.1, 0.2, 0.3] + [0.0] * 1533
-            
+
             cur.execute("""
                 INSERT INTO elden.corpus_chunk (
                     document_id, entity_type, game_entity_id,
@@ -129,7 +130,7 @@ def test_pgvector_schema_and_queries():
             """, (doc_id, test_embedding))
             chunk_id = cur.fetchone()[0]
             assert chunk_id is not None, "Chunk insertion failed"
-            
+
             # ======= TEST: Full-Text Search =======
             # Should find the row with "legendary" in text
             cur.execute("""
@@ -148,11 +149,11 @@ def test_pgvector_schema_and_queries():
             assert "legendary" in fts_results[0][2].lower(), (
                 "FTS result doesn't contain search term"
             )
-            
+
             # ======= TEST: Vector Similarity Search (HNSW) =======
             # Search for nearest neighbor (should be the same row we inserted)
             query_vector = test_embedding  # Same embedding for exact match
-            
+
             cur.execute("""
                 SELECT id, name, embedding <-> %s::vector AS distance
                 FROM elden.corpus_chunk
@@ -171,7 +172,7 @@ def test_pgvector_schema_and_queries():
                 f"Distance should be ~0 for exact match, "
                 f"got {knn_result[2]}"
             )
-            
+
             # ======= TEST: JSONB Metadata Query =======
             cur.execute("""
                 SELECT id, meta->>'damage_type' AS damage_type
@@ -185,7 +186,7 @@ def test_pgvector_schema_and_queries():
             assert meta_results[0][1] == 'magic', (
                 "JSONB query returned wrong metadata"
             )
-            
+
             # ======= TEST: Index Existence =======
             # Verify that our key indexes were created
             cur.execute("""
@@ -205,7 +206,7 @@ def test_pgvector_schema_and_queries():
             assert 'corpus_chunk_text_fts' in indexes, (
                 "FTS GIN index not created"
             )
-            
+
             # ======= CLEANUP =======
             # Drop tables for cleanup (test isolation)
             cur.execute(
@@ -225,11 +226,11 @@ def test_pgvector_schema_and_queries():
 def test_vector_dimension_validation():
     """
     Test that vector dimension enforcement works correctly.
-    
+
     Verifies that attempting to insert a vector with wrong dimensions fails.
     """
     dsn = os.environ["POSTGRES_DSN"]
-    
+
     with psycopg.connect(dsn, autocommit=True) as conn:
         with conn.cursor() as cur:
             # Setup minimal schema
@@ -241,7 +242,7 @@ def test_vector_dimension_validation():
                     embedding vector(1536)
                 );
             """)
-            
+
             # Valid 1536-dimensional vector should succeed
             valid_vector = [0.1] * 1536
             cur.execute(
@@ -258,7 +259,7 @@ def test_vector_dimension_validation():
                     "VALUES (%s::vector)",
                     (invalid_vector,)
                 )
-            
+
             # Cleanup
             cur.execute("DROP SCHEMA elden_test CASCADE;")
 
@@ -273,7 +274,7 @@ def test_cascade_delete():
     Test that deleting a document cascades to delete associated chunks.
     """
     dsn = os.environ["POSTGRES_DSN"]
-    
+
     with psycopg.connect(dsn, autocommit=True) as conn:
         with conn.cursor() as cur:
             # Setup
@@ -297,7 +298,7 @@ def test_cascade_delete():
                     embedding vector(1536)
                 );
             """)
-            
+
             # Insert document + chunk
             cur.execute("""
                 INSERT INTO elden_cascade.corpus_document (
@@ -307,14 +308,14 @@ def test_cascade_delete():
                 RETURNING id
             """)
             doc_id = cur.fetchone()[0]
-            
+
             cur.execute("""
                 INSERT INTO elden_cascade.corpus_chunk (
                     document_id, entity_type, text, embedding
                 )
                 VALUES (%s, 'test', 'test text', %s::vector)
             """, (doc_id, [0.0] * 1536))
-            
+
             # Verify chunk exists
             cur.execute(
                 "SELECT COUNT(*) FROM elden_cascade.corpus_chunk "
@@ -322,7 +323,7 @@ def test_cascade_delete():
                 (doc_id,)
             )
             assert cur.fetchone()[0] == 1
-            
+
             # Delete document
             cur.execute(
                 "DELETE FROM elden_cascade.corpus_document WHERE id = %s",
@@ -336,6 +337,6 @@ def test_cascade_delete():
                 (doc_id,)
             )
             assert cur.fetchone()[0] == 0, "Cascade delete failed"
-            
+
             # Cleanup
             cur.execute("DROP SCHEMA elden_cascade CASCADE;")
