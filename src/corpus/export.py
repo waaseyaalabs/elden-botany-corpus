@@ -1,5 +1,7 @@
 """Export utilities for different formats."""
 
+from pathlib import Path
+
 import polars as pl
 
 from corpus.config import settings
@@ -26,6 +28,6 @@ def pack_all_to_parquet(
     df = pl.read_parquet(input_parquet)
 
     print(f"Packing {len(df)} entities by entity_type...")
-    save_parquet(df, output_parquet)
+    save_parquet(df, Path(output_parquet))
 
     print(f"Saved: {output_parquet}")

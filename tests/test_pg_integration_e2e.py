@@ -22,7 +22,7 @@ import pytest
     not os.getenv("POSTGRES_DSN"),
     reason="POSTGRES_DSN not set (required for integration tests)"
 )
-def test_pgvector_schema_and_queries():
+def test_pgvector_schema_and_queries() -> None:
     """
     End-to-end test: create schema, insert data, verify vector and FTS queries.
 
@@ -103,7 +103,9 @@ def test_pgvector_schema_and_queries():
                 )
                 RETURNING id
             """)
-            (doc_id,) = cur.fetchone()
+            result = cur.fetchone()
+            assert result is not None, "Document insertion failed"
+            (doc_id,) = result
             assert doc_id is not None, "Document insertion failed"
 
             # Create a 1536-dimensional embedding vector for testing
@@ -128,7 +130,9 @@ def test_pgvector_schema_and_queries():
                 )
                 RETURNING id
             """, (doc_id, test_embedding))
-            chunk_id = cur.fetchone()[0]
+            chunk_result = cur.fetchone()
+            assert chunk_result is not None, "Chunk insertion failed"
+            chunk_id = chunk_result[0]
             assert chunk_id is not None, "Chunk insertion failed"
 
             # ======= TEST: Full-Text Search =======
@@ -223,7 +227,7 @@ def test_pgvector_schema_and_queries():
     not os.getenv("POSTGRES_DSN"),
     reason="POSTGRES_DSN not set"
 )
-def test_vector_dimension_validation():
+def test_vector_dimension_validation() -> None:
     """
     Test that vector dimension enforcement works correctly.
 
@@ -269,7 +273,7 @@ def test_vector_dimension_validation():
     not os.getenv("POSTGRES_DSN"),
     reason="POSTGRES_DSN not set"
 )
-def test_cascade_delete():
+def test_cascade_delete() -> None:
     """
     Test that deleting a document cascades to delete associated chunks.
     """
@@ -307,7 +311,9 @@ def test_cascade_delete():
                 VALUES ('test', 'test://cascade')
                 RETURNING id
             """)
-            doc_id = cur.fetchone()[0]
+            doc_result = cur.fetchone()
+            assert doc_result is not None
+            doc_id = doc_result[0]
 
             cur.execute("""
                 INSERT INTO elden_cascade.corpus_chunk (
@@ -322,7 +328,9 @@ def test_cascade_delete():
                 "WHERE document_id = %s",
                 (doc_id,)
             )
-            assert cur.fetchone()[0] == 1
+            count_result = cur.fetchone()
+            assert count_result is not None
+            assert count_result[0] == 1
 
             # Delete document
             cur.execute(
@@ -336,7 +344,9 @@ def test_cascade_delete():
                 "WHERE document_id = %s",
                 (doc_id,)
             )
-            assert cur.fetchone()[0] == 0, "Cascade delete failed"
+            cascade_result = cur.fetchone()
+            assert cascade_result is not None
+            assert cascade_result[0] == 0, "Cascade delete failed"
 
             # Cleanup
             cur.execute("DROP SCHEMA elden_cascade CASCADE;")

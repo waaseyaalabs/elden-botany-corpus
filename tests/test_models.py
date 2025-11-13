@@ -9,7 +9,7 @@ from corpus.models import (
 )
 
 
-def test_create_slug():
+def test_create_slug() -> None:
     """Test slug generation."""
     assert create_slug("Sword of Night and Flame") == "sword_of_night_and_flame"
     assert create_slug("Rennala, Queen of the Full Moon") == "rennala_queen_of_the_full_moon"
@@ -17,14 +17,14 @@ def test_create_slug():
     assert create_slug("  Spaces  ") == "spaces"
 
 
-def test_normalize_name_for_matching():
+def test_normalize_name_for_matching() -> None:
     """Test name normalization for matching."""
     assert normalize_name_for_matching("Sword of Night") == "sword of night"
     assert normalize_name_for_matching("Rennala, Queen!") == "rennala queen"
     assert normalize_name_for_matching("  Extra   Spaces  ") == "extra spaces"
 
 
-def test_raw_entity_to_slug():
+def test_raw_entity_to_slug() -> None:
     """Test RawEntity slug generation."""
     entity = RawEntity(
         entity_type="weapon",
@@ -35,7 +35,7 @@ def test_raw_entity_to_slug():
     assert entity.to_slug() == "moonlight_greatsword"
 
 
-def test_provenance_model():
+def test_provenance_model() -> None:
     """Test Provenance model."""
     prov = Provenance(
         source="kaggle_base",

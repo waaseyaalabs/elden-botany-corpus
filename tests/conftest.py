@@ -1,13 +1,15 @@
 """Test configuration and fixtures."""
 
 import os
+from collections.abc import Generator
 from pathlib import Path
+from typing import Any
 
 import pytest
 
 
 @pytest.fixture
-def sample_entity_data():
+def sample_entity_data() -> dict[str, Any]:
     """Sample entity data for testing."""
     return {
         "name": "Sword of Night and Flame",
@@ -22,7 +24,7 @@ def sample_entity_data():
 
 
 @pytest.fixture
-def sample_boss_data():
+def sample_boss_data() -> dict[str, Any]:
     """Sample boss data."""
     return {
         "name": "Rennala, Queen of the Full Moon",
@@ -34,7 +36,7 @@ def sample_boss_data():
 
 
 @pytest.fixture
-def sample_dlc_entity():
+def sample_dlc_entity() -> dict[str, Any]:
     """Sample DLC entity."""
     return {
         "name": "Messmer the Impaler",
@@ -45,7 +47,7 @@ def sample_dlc_entity():
 
 
 @pytest.fixture
-def temp_data_dir(tmp_path):
+def temp_data_dir(tmp_path: Path) -> Path:
     """Temporary data directory."""
     data_dir = tmp_path / "data"
     data_dir.mkdir()
@@ -55,7 +57,7 @@ def temp_data_dir(tmp_path):
 
 
 @pytest.fixture(scope="session")
-def postgres_dsn():
+def postgres_dsn() -> str | None:
     """
     PostgreSQL connection string for integration tests.
 
@@ -67,7 +69,7 @@ def postgres_dsn():
 
 
 @pytest.fixture(scope="session")
-def pg_connection(postgres_dsn):
+def pg_connection(postgres_dsn: str | None) -> Generator[Any, None, None]:
     """
     PostgreSQL connection for integration tests.
 
@@ -110,7 +112,7 @@ def pg_connection(postgres_dsn):
 
 
 @pytest.fixture
-def pg_cursor(pg_connection):
+def pg_cursor(pg_connection: Any) -> Generator[Any, None, None]:
     """PostgreSQL cursor for integration tests."""
     cursor = pg_connection.cursor()
     yield cursor

@@ -96,6 +96,9 @@ module = [
     "Levenshtein.*",
     "sentence_transformers.*",
     "openai.*",
+    "pydantic_settings",
+    "kaggle",
+    "bs4",
 ]
 ignore_missing_imports = true
 
