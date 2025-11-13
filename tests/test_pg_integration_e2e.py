@@ -130,7 +130,7 @@ def test_pgvector_schema_and_queries() -> None:
                 )
                 RETURNING id
             """,
-                (doc_id, test_embedding),
+                (chunk_id, doc_id, test_embedding),
             )
             chunk_result = cur.fetchone()
             assert chunk_result is not None, "Chunk insertion failed"

@@ -35,9 +35,9 @@ jobs:
       run: |
         poetry install --no-interaction
     
-    - name: Auto-format code with Ruff
+    - name: Check code formatting with Ruff
       run: |
-        poetry run ruff format src/ tests/
+        poetry run ruff format --check src/ tests/
     
     - name: Run Ruff linter
       run: |
