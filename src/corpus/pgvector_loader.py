@@ -3,7 +3,7 @@
 import json
 import uuid
 from pathlib import Path
-from typing import Literal
+from typing import Literal, cast
 
 import polars as pl
 import psycopg
@@ -219,5 +219,6 @@ def load_to_postgres(
     # Only pass embed_provider if embed is True and provider is not "none"
     embed_provider: Literal["openai", "local"] | None = None
     if embed and settings.embed_provider != "none":
-        embed_provider = settings.embed_provider
+        # Type assertion is safe due to the check above
+        embed_provider = cast(Literal["openai", "local"], settings.embed_provider)
     loader.load_data(parquet_path, embed_provider)
