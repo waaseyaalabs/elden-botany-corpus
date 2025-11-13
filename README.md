@@ -260,15 +260,47 @@ export KAGGLE_KEY="your_api_key"
 poetry run pytest -m integration
 ```
 
-**Using Docker for integration tests:**
+### Local Postgres Integration Testing
+
+The easiest way to run Postgres integration tests is using Docker Compose:
 
 ```bash
-# Start PostgreSQL with pgvector
+# Start PostgreSQL 16 with pgvector extension
 docker compose -f docker/compose.example.yml up -d postgres
 
-# Run integration tests
-RUN_INTEGRATION=1 POSTGRES_DSN="postgresql://elden:password@localhost:5432/elden" \
-  poetry run pytest -m integration
+# Set the connection string
+export POSTGRES_DSN=postgresql://elden:elden_password@localhost:5432/elden
+
+# Run integration tests only
+poetry run pytest -m integration -v
+
+# Alternative: run just the Postgres end-to-end test
+poetry run pytest tests/test_pg_integration_e2e.py -v
+
+# Clean up when done
+docker compose -f docker/compose.example.yml down -v
+```
+
+**What the integration tests verify:**
+- PostgreSQL extensions (pgvector, uuid-ossp) can be created
+- Schema and tables are created correctly
+- HNSW vector index works for similarity search
+- Full-text search (FTS) with GIN indexes functions properly
+- JSONB metadata queries execute correctly
+- CASCADE delete behavior on foreign keys
+
+**Using Make targets:**
+
+```bash
+# Start database
+make docker-up
+
+# Run integration tests (with POSTGRES_DSN set)
+export POSTGRES_DSN=postgresql://elden:elden_password@localhost:5432/elden
+poetry run pytest -m integration
+
+# Stop database
+make docker-down
 ```
 
 **Fixtures and test database:**
