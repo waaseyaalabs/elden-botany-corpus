@@ -5,7 +5,7 @@ from corpus.models import Provenance, RawEntity
 from corpus.reconcile import EntityReconciler
 
 
-def test_entity_reconciler_add_entities():
+def test_entity_reconciler_add_entities() -> None:
     """Test adding entities with priorities."""
     reconciler = EntityReconciler()
 
@@ -44,7 +44,7 @@ def test_entity_reconciler_add_entities():
     assert "dlc" in sources
 
 
-def test_entity_reconciler_different_types():
+def test_entity_reconciler_different_types() -> None:
     """Test that different entity types don't merge."""
     reconciler = EntityReconciler()
 
@@ -73,7 +73,7 @@ def test_entity_reconciler_different_types():
     assert "armor" in types
 
 
-def test_text_matching_threshold():
+def test_text_matching_threshold() -> None:
     """Test fuzzy text matching with threshold."""
     reconciler = EntityReconciler(threshold=0.8)
 

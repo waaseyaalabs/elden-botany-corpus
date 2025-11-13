@@ -2,6 +2,7 @@
 
 import sys
 from pathlib import Path
+from typing import Literal, cast
 
 import click
 
@@ -157,7 +158,7 @@ def load(
     dsn: str | None,
     parquet: str | None,
     create_schema: bool,
-    embed: str,
+    embed: str,  # Type narrowed by click.Choice validation
 ) -> None:
     """Load curated data into PostgreSQL."""
     try:
@@ -179,7 +180,10 @@ def load(
         if embed != "none":
             # Temporarily override settings
             original_provider = settings.embed_provider
-            settings.embed_provider = embed
+            # Cast is safe because click.Choice validates the input
+            settings.embed_provider = cast(
+                Literal["openai", "local", "none"], embed
+            )
 
         load_to_postgres(
             dsn=dsn,

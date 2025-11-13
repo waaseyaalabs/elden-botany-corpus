@@ -3,6 +3,7 @@
 import json
 import uuid
 from pathlib import Path
+from typing import Literal, cast
 
 import polars as pl
 import psycopg
@@ -51,7 +52,7 @@ class PgVectorLoader:
     def load_data(
         self,
         parquet_path: str | Path,
-        embed_provider: str | None = None,
+        embed_provider: Literal["openai", "local"] | None = None,
     ) -> None:
         """
         Load data from Parquet into PostgreSQL.
@@ -151,6 +152,13 @@ class PgVectorLoader:
         Returns:
             List of similar entities
         """
+        # Ensure embed_provider is valid for generating embeddings
+        if settings.embed_provider == "none":
+            raise ValueError(
+                "Embedding provider is set to 'none'. "
+                "Cannot query similar entities without embeddings."
+            )
+
         # Generate embedding for query
         query_df = pl.DataFrame({"description": [text]})
         query_df = generate_embeddings(
@@ -208,5 +216,9 @@ def load_to_postgres(
     if create:
         loader.create_schema()
 
-    embed_provider = settings.embed_provider if embed else None
+    # Only pass embed_provider if embed is True and provider is not "none"
+    embed_provider: Literal["openai", "local"] | None = None
+    if embed and settings.embed_provider != "none":
+        # Type assertion is safe due to the check above
+        embed_provider = cast(Literal["openai", "local"], settings.embed_provider)
     loader.load_data(parquet_path, embed_provider)

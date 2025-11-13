@@ -56,13 +56,14 @@ class GitHubAPIIngester:
         if cache_file.exists():
             print(f"Loading {entity_type} from cache...")
             with open(cache_file, encoding="utf-8") as f:
-                return json.load(f)
+                result: dict[str, Any] = json.load(f)
+                return result
 
         print(f"Fetching {entity_type} from {url}...")
         response = requests.get(url, timeout=30)
         response.raise_for_status()
 
-        data = response.json()
+        data: dict[str, Any] = response.json()
 
         # Save to cache
         cache_file.parent.mkdir(parents=True, exist_ok=True)
