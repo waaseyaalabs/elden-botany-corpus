@@ -15,14 +15,18 @@ class Provenance(BaseModel):
     source: str = Field(description="Source identifier (e.g., 'kaggle_base', 'github_api')")
     uri: str = Field(description="Source URI or URL")
     sha256: str | None = Field(default=None, description="SHA256 hash of source file")
-    retrieved_at: datetime = Field(default_factory=datetime.utcnow, description="Retrieval timestamp")
+    retrieved_at: datetime = Field(
+        default_factory=datetime.utcnow, description="Retrieval timestamp"
+    )
 
 
 class CorpusDocument(BaseModel):
     """Represents a source document/dataset."""
 
     id: UUID = Field(default_factory=uuid4)
-    source_type: str = Field(description="Source type: kaggle_base, kaggle_dlc, github_api, dlc_textdump")
+    source_type: str = Field(
+        description="Source type: kaggle_base, kaggle_dlc, github_api, dlc_textdump"
+    )
     source_uri: str = Field(description="Source URI")
     title: str | None = Field(default=None)
     language: str = Field(default="en")
@@ -39,7 +43,9 @@ class CorpusChunk(BaseModel):
     is_dlc: bool = Field(default=False)
     name: str = Field(description="Entity name")
     text: str = Field(description="Full merged description/dialogue")
-    meta: dict[str, Any] = Field(default_factory=dict, description="Additional metadata (stats, scaling, etc.)")
+    meta: dict[str, Any] = Field(
+        default_factory=dict, description="Additional metadata (stats, scaling, etc.)"
+    )
     span_start: int | None = Field(default=None)
     span_end: int | None = Field(default=None)
     embedding: list[float] | None = Field(default=None)

@@ -27,9 +27,7 @@ class EntityReconciler:
         self.threshold = threshold or settings.match_threshold
         self.entity_map: dict[str, dict[str, Any]] = {}
 
-    def add_entities(
-        self, entities: list[RawEntity], priority: int
-    ) -> None:
+    def add_entities(self, entities: list[RawEntity], priority: int) -> None:
         """
         Add entities with a priority level (lower = higher priority).
 
@@ -37,9 +35,7 @@ class EntityReconciler:
             entities: List of raw entities
             priority: Priority level (1 = highest)
         """
-        for entity in progress_bar(
-            entities, desc=f"Adding entities (priority {priority})"
-        ):
+        for entity in progress_bar(entities, desc=f"Adding entities (priority {priority})"):
             slug = entity.to_slug()
             key = f"{entity.entity_type}:{slug}"
 
@@ -102,18 +98,14 @@ class EntityReconciler:
         unmapped: list[RawEntity] = []
 
         for snippet in progress_bar(text_snippets, desc="Matching text"):
-            best_match = self._find_best_match(
-                snippet.name, entity_index
-            )
+            best_match = self._find_best_match(snippet.name, entity_index)
 
             if best_match:
                 match_key, matched_entity = best_match
                 # Merge the text into matched entity
                 if snippet.description:
                     if matched_entity.description:
-                        matched_entity.description += (
-                            "\n\n" + snippet.description
-                        )
+                        matched_entity.description += "\n\n" + snippet.description
                     else:
                         matched_entity.description = snippet.description
 
@@ -126,10 +118,7 @@ class EntityReconciler:
             else:
                 unmapped.append(snippet)
 
-        print(
-            f"Matched {len(matched)} snippets, "
-            f"{len(unmapped)} unmapped"
-        )
+        print(f"Matched {len(matched)} snippets, {len(unmapped)} unmapped")
         return matched, unmapped
 
     def _find_best_match(
@@ -223,11 +212,7 @@ def entities_to_dataframe(entities: list[RawEntity]) -> pl.DataFrame:
         slug = create_slug(entity.name)
 
         # Extract metadata from raw_data
-        meta = {
-            k: v
-            for k, v in entity.raw_data.items()
-            if k not in ["name", "description"]
-        }
+        meta = {k: v for k, v in entity.raw_data.items() if k not in ["name", "description"]}
 
         # Collect provenance sources
         sources = [prov.source for prov in entity.provenance]

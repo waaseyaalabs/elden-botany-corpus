@@ -1,6 +1,5 @@
 """Tests for data models."""
 
-
 from corpus.models import (
     Provenance,
     RawEntity,

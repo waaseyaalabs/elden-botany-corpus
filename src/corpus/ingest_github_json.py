@@ -81,9 +81,7 @@ class GitHubAPIIngester:
         """
         entities: list[RawEntity] = []
 
-        for entity_type in progress_bar(
-            API_ENTITIES, desc="Fetching entity types"
-        ):
+        for entity_type in progress_bar(API_ENTITIES, desc="Fetching entity types"):
             try:
                 data = self.fetch_entity_list(entity_type)
 
@@ -101,11 +99,7 @@ class GitHubAPIIngester:
                 provenance = Provenance(
                     source="github_api",
                     uri=f"{GITHUB_RAW_BASE}/data/{entity_type}.json",
-                    sha256=(
-                        compute_file_hash(cache_file)
-                        if cache_file.exists()
-                        else None
-                    ),
+                    sha256=(compute_file_hash(cache_file) if cache_file.exists() else None),
                 )
 
                 # Convert to RawEntity

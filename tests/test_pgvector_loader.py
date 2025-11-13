@@ -10,7 +10,7 @@ from corpus.models import CorpusChunk, CorpusDocument
 @pytest.mark.integration
 @pytest.mark.skipif(
     os.getenv("RUN_INTEGRATION") != "1",
-    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)",
 )
 def test_pgvector_loader_init() -> None:
     """Test PgVectorLoader initialization."""
@@ -22,7 +22,7 @@ def test_pgvector_loader_init() -> None:
 @pytest.mark.integration
 @pytest.mark.skipif(
     os.getenv("RUN_INTEGRATION") != "1",
-    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)",
 )
 def test_create_schema() -> None:
     """Test schema creation from SQL files."""
@@ -35,7 +35,7 @@ def test_create_schema() -> None:
 @pytest.mark.integration
 @pytest.mark.skipif(
     os.getenv("RUN_INTEGRATION") != "1",
-    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)",
 )
 def test_load_document() -> None:
     """Test loading a single document."""
@@ -48,7 +48,7 @@ def test_load_document() -> None:
 @pytest.mark.integration
 @pytest.mark.skipif(
     os.getenv("RUN_INTEGRATION") != "1",
-    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)",
 )
 def test_load_chunk() -> None:
     """Test loading a single chunk."""
@@ -61,7 +61,7 @@ def test_load_chunk() -> None:
 @pytest.mark.integration
 @pytest.mark.skipif(
     os.getenv("RUN_INTEGRATION") != "1",
-    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)",
 )
 def test_load_chunks_batch() -> None:
     """Test batch loading of chunks."""
@@ -74,7 +74,7 @@ def test_load_chunks_batch() -> None:
 @pytest.mark.integration
 @pytest.mark.skipif(
     os.getenv("RUN_INTEGRATION") != "1",
-    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)",
 )
 def test_update_embeddings() -> None:
     """Test updating embeddings for chunks."""
@@ -87,7 +87,7 @@ def test_update_embeddings() -> None:
 @pytest.mark.integration
 @pytest.mark.skipif(
     os.getenv("RUN_INTEGRATION") != "1",
-    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)",
 )
 def test_query_by_vector() -> None:
     """Test vector similarity search."""
@@ -100,7 +100,7 @@ def test_query_by_vector() -> None:
 @pytest.mark.integration
 @pytest.mark.skipif(
     os.getenv("RUN_INTEGRATION") != "1",
-    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)",
 )
 def test_full_text_search() -> None:
     """Test full-text search on text column."""

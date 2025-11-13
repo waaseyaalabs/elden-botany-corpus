@@ -12,9 +12,7 @@ from corpus.utils import compute_file_hash
 
 # Impalers Archive repository
 IMPALERS_REPO = "ividyon/Impalers-Archive"
-MASTER_HTML_URL = (
-    f"https://raw.githubusercontent.com/{IMPALERS_REPO}/main/Master.html"
-)
+MASTER_HTML_URL = f"https://raw.githubusercontent.com/{IMPALERS_REPO}/main/Master.html"
 
 
 class ImpalersIngester:

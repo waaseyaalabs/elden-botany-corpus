@@ -58,7 +58,7 @@ def test_extract_description() -> None:
 @pytest.mark.integration
 @pytest.mark.skipif(
     os.getenv("RUN_INTEGRATION") != "1",
-    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)",
 )
 def test_download_dataset() -> None:
     """Test dataset download (integration test)."""
@@ -70,7 +70,7 @@ def test_download_dataset() -> None:
 @pytest.mark.integration
 @pytest.mark.skipif(
     os.getenv("RUN_INTEGRATION") != "1",
-    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)",
 )
 def test_ingest_base_game() -> None:
     """Test base game ingestion (integration test)."""
@@ -81,7 +81,7 @@ def test_ingest_base_game() -> None:
 @pytest.mark.integration
 @pytest.mark.skipif(
     os.getenv("RUN_INTEGRATION") != "1",
-    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)",
 )
 def test_ingest_dlc() -> None:
     """Test DLC ingestion (integration test)."""
@@ -92,7 +92,7 @@ def test_ingest_dlc() -> None:
 @pytest.mark.integration
 @pytest.mark.skipif(
     os.getenv("RUN_INTEGRATION") != "1",
-    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)",
 )
 def test_fetch_kaggle_data() -> None:
     """Test complete Kaggle data fetch pipeline."""

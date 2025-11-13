@@ -22,10 +22,12 @@ test:
 	poetry run pytest -v --cov=corpus --cov-report=term-missing --cov-report=html
 
 lint:
+	poetry run ruff format src/ tests/
 	poetry run ruff check src/ tests/
 	poetry run mypy src/
 
 format:
+	poetry run ruff format src/ tests/
 	poetry run ruff check --fix src/ tests/
 
 clean:
