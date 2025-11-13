@@ -39,7 +39,8 @@ def test_pgvector_schema_and_queries() -> None:
 
             # ======= SETUP: Tables =======
             # Mirror 010_schema.sql structure exactly
-            cur.execute("""
+            cur.execute(
+                """
                 CREATE TABLE IF NOT EXISTS elden.corpus_document (
                     id UUID PRIMARY KEY,
                     source_type TEXT NOT NULL,
@@ -48,9 +49,11 @@ def test_pgvector_schema_and_queries() -> None:
                     language TEXT DEFAULT 'en',
                     created_at TIMESTAMPTZ DEFAULT NOW()
                 );
-            """)
+            """
+            )
 
-            cur.execute("""
+            cur.execute(
+                """
                 CREATE TABLE IF NOT EXISTS elden.corpus_chunk (
                     id UUID PRIMARY KEY,
                     document_id UUID REFERENCES elden.corpus_document(id)
@@ -65,30 +68,39 @@ def test_pgvector_schema_and_queries() -> None:
                     span_end INT,
                     embedding vector(1536)
                 );
-            """)
+            """
+            )
 
             # ======= SETUP: Indexes =======
             # Mirror 020_indexes.sql (minimal subset for this test)
-            cur.execute("""
+            cur.execute(
+                """
                 CREATE INDEX IF NOT EXISTS corpus_chunk_embedding_hnsw_idx
                 ON elden.corpus_chunk USING hnsw (embedding vector_l2_ops)
                 WHERE embedding IS NOT NULL;
-            """)
+            """
+            )
 
-            cur.execute("""
+            cur.execute(
+                """
                 CREATE INDEX IF NOT EXISTS corpus_chunk_text_idx
                 ON elden.corpus_chunk USING gin (to_tsvector('english', text));
-            """)
+            """
+            )
 
-            cur.execute("""
+            cur.execute(
+                """
                 CREATE INDEX IF NOT EXISTS corpus_chunk_type_idx
                 ON elden.corpus_chunk (entity_type);
-            """)
+            """
+            )
 
-            cur.execute("""
+            cur.execute(
+                """
                 CREATE INDEX IF NOT EXISTS corpus_chunk_dlc_idx
                 ON elden.corpus_chunk (is_dlc);
-            """)
+            """
+            )
 
             # ======= TEST: Insert Document + Chunk =======
             doc_id = uuid.uuid4()
@@ -139,18 +151,20 @@ def test_pgvector_schema_and_queries() -> None:
 
             # ======= TEST: Full-Text Search =======
             # Should find the row with "legendary" in text
-            cur.execute("""
+            cur.execute(
+                """
                 SELECT id, name, text
                 FROM elden.corpus_chunk
                 WHERE to_tsvector('english', text) @@
                       plainto_tsquery('english', 'legendary')
-            """)
+            """
+            )
             fts_results = cur.fetchall()
             assert len(fts_results) == 1, f"Expected 1 FTS result, got {len(fts_results)}"
             assert fts_results[0][0] == chunk_id, "FTS returned wrong chunk"
-            assert "legendary" in fts_results[0][2].lower(), (
-                "FTS result doesn't contain search term"
-            )
+            assert (
+                "legendary" in fts_results[0][2].lower()
+            ), "FTS result doesn't contain search term"
 
             # ======= TEST: Vector Similarity Search (HNSW) =======
             # Search for nearest neighbor (should be the same row we inserted)
@@ -169,23 +183,26 @@ def test_pgvector_schema_and_queries() -> None:
             knn_result = cur.fetchone()
             assert knn_result is not None, "Vector KNN query returned no results"
             assert knn_result[0] == chunk_id, "KNN returned wrong chunk (expected exact match)"
-            assert knn_result[2] < 0.001, (
-                f"Distance should be ~0 for exact match, got {knn_result[2]}"
-            )
+            assert (
+                knn_result[2] < 0.001
+            ), f"Distance should be ~0 for exact match, got {knn_result[2]}"
 
             # ======= TEST: JSONB Metadata Query =======
-            cur.execute("""
+            cur.execute(
+                """
                 SELECT id, meta->>'damage_type' AS damage_type
                 FROM elden.corpus_chunk
                 WHERE meta->>'damage_type' = 'magic'
-            """)
+            """
+            )
             meta_results = cur.fetchall()
             assert len(meta_results) == 1, f"Expected 1 JSONB result, got {len(meta_results)}"
             assert meta_results[0][1] == "magic", "JSONB query returned wrong metadata"
 
             # ======= TEST: Index Existence =======
             # Verify that our key indexes were created
-            cur.execute("""
+            cur.execute(
+                """
                 SELECT indexname
                 FROM pg_indexes
                 WHERE schemaname = 'elden'
@@ -194,7 +211,8 @@ def test_pgvector_schema_and_queries() -> None:
                       'corpus_chunk_embedding_hnsw_idx',
                       'corpus_chunk_text_idx'
                   )
-            """)
+            """
+            )
             indexes = {row[0] for row in cur.fetchall()}
             assert "corpus_chunk_embedding_hnsw_idx" in indexes, "HNSW vector index not created"
             assert "corpus_chunk_text_idx" in indexes, "FTS GIN index not created"
@@ -221,12 +239,14 @@ def test_vector_dimension_validation() -> None:
             # Setup minimal schema
             cur.execute("CREATE EXTENSION IF NOT EXISTS vector;")
             cur.execute("CREATE SCHEMA IF NOT EXISTS elden_test;")
-            cur.execute("""
+            cur.execute(
+                """
                 CREATE TABLE elden_test.test_vectors (
                     id UUID PRIMARY KEY,
                     embedding vector(1536)
                 );
-            """)
+            """
+            )
 
             # Valid 1536-dimensional vector should succeed
             valid_vector = [0.1] * 1536
@@ -266,14 +286,17 @@ def test_cascade_delete() -> None:
             # Setup
             cur.execute("CREATE EXTENSION IF NOT EXISTS vector;")
             cur.execute("CREATE SCHEMA IF NOT EXISTS elden_cascade;")
-            cur.execute("""
+            cur.execute(
+                """
                 CREATE TABLE elden_cascade.corpus_document (
                     id UUID PRIMARY KEY,
                     source_type TEXT NOT NULL,
                     source_uri TEXT NOT NULL
                 );
-            """)
-            cur.execute("""
+            """
+            )
+            cur.execute(
+                """
                 CREATE TABLE elden_cascade.corpus_chunk (
                     id UUID PRIMARY KEY,
                     document_id UUID
@@ -283,7 +306,8 @@ def test_cascade_delete() -> None:
                     text TEXT NOT NULL,
                     embedding vector(1536)
                 );
-            """)
+            """
+            )
 
             # Insert document + chunk
             doc_id = uuid.uuid4()
