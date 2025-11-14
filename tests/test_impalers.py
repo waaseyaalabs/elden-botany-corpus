@@ -3,6 +3,7 @@
 import os
 
 import pytest
+
 from corpus.models import normalize_name_for_matching
 
 
