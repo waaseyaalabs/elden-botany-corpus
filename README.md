@@ -88,7 +88,7 @@ elden-botany-corpus/
 
 ### Prerequisites
 
-- **Python 3.11+**
+- **Python 3.11+** (Python 3.12 also supported)
 - **Poetry** (install: `curl -sSL https://install.python-poetry.org | python3 -`)
 - **Kaggle API credentials** (for dataset downloads)
 
@@ -98,7 +98,10 @@ elden-botany-corpus/
 git clone https://github.com/waaseyaalabs/elden-botany-corpus.git
 cd elden-botany-corpus
 
-# Install dependencies
+# Quick setup (installs Poetry if needed + dependencies)
+make setup
+
+# Or manually:
 poetry install
 ```
 
@@ -226,6 +229,46 @@ elden.corpus_chunk
 - HNSW: `embedding` (vector similarity)
 
 ## 🔧 Development
+
+### Initial Setup
+
+```bash
+# One-command setup (recommended)
+make setup
+
+# Or step-by-step:
+poetry install                    # Install dependencies
+poetry run ruff format src/ tests/  # Format code
+```
+
+### Running CI Checks Locally
+
+Before pushing code, run the same checks that CI will run:
+
+```bash
+# Run all CI checks (lint + test)
+make ci-local
+
+# Or individually:
+make lint      # Check formatting, linting, and types (no modifications)
+make test      # Run unit tests with coverage
+make format    # Auto-format code (for fixing issues)
+```
+
+**Helper Scripts** (alternative to make commands):
+```bash
+./scripts/lint.sh   # Run all lint checks
+./scripts/test.sh   # Run unit tests
+```
+
+### Code Quality Standards
+
+This project enforces:
+- **Ruff formatting** (line length: 100)
+- **Ruff linting** (pycodestyle, pyflakes, isort, bugbear, comprehensions)
+- **Mypy strict type checking**
+
+**Important**: `make lint` checks without modifying files (same as CI). Use `make format` to auto-fix issues locally.
 
 ### Run Tests
 

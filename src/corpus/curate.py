@@ -53,13 +53,9 @@ class CorpusCurator:
         self.metadata.add_row_count("total_entities", len(df))
 
         # Count by entity type
-        entity_counts = df.group_by("entity_type").agg(
-            pl.count().alias("count")
-        )
+        entity_counts = df.group_by("entity_type").agg(pl.count().alias("count"))
         for row in entity_counts.iter_rows(named=True):
-            self.metadata.add_entity_count(
-                row["entity_type"], row["count"]
-            )
+            self.metadata.add_entity_count(row["entity_type"], row["count"])
 
         # Count DLC vs base
         dlc_count = df.filter(pl.col("is_dlc")).height
@@ -104,16 +100,16 @@ class CorpusCurator:
 
         # CSV (for compatibility)
         # Convert meta_json and sources to JSON strings for CSV
-        df_csv = df.with_columns([
-            pl.col("meta_json").map_elements(
-                lambda x: json.dumps(x) if x else "{}",
-                return_dtype=pl.Utf8
-            ).alias("meta_json"),
-            pl.col("sources").map_elements(
-                lambda x: json.dumps(x) if x else "[]",
-                return_dtype=pl.Utf8
-            ).alias("sources"),
-        ])
+        df_csv = df.with_columns(
+            [
+                pl.col("meta_json")
+                .map_elements(lambda x: json.dumps(x) if x else "{}", return_dtype=pl.Utf8)
+                .alias("meta_json"),
+                pl.col("sources")
+                .map_elements(lambda x: json.dumps(x) if x else "[]", return_dtype=pl.Utf8)
+                .alias("sources"),
+            ]
+        )
 
         csv_path = self.output_dir / "unified.csv"
         save_csv(df_csv, csv_path)
@@ -138,16 +134,16 @@ class CorpusCurator:
             save_parquet(entity_df, parquet_path)
 
             # CSV
-            entity_df_csv = entity_df.with_columns([
-                pl.col("meta_json").map_elements(
-                    lambda x: json.dumps(x) if x else "{}",
-                    return_dtype=pl.Utf8
-                ).alias("meta_json"),
-                pl.col("sources").map_elements(
-                    lambda x: json.dumps(x) if x else "[]",
-                    return_dtype=pl.Utf8
-                ).alias("sources"),
-            ])
+            entity_df_csv = entity_df.with_columns(
+                [
+                    pl.col("meta_json")
+                    .map_elements(lambda x: json.dumps(x) if x else "{}", return_dtype=pl.Utf8)
+                    .alias("meta_json"),
+                    pl.col("sources")
+                    .map_elements(lambda x: json.dumps(x) if x else "[]", return_dtype=pl.Utf8)
+                    .alias("sources"),
+                ]
+            )
 
             csv_path = self.output_dir / f"{entity_type}.csv"
             save_csv(entity_df_csv, csv_path)
@@ -160,9 +156,7 @@ class CorpusCurator:
         self.metadata.save(metadata_path)
         print(f"\nSaved metadata: {metadata_path}")
 
-    def _export_unmapped_texts(
-        self, unmapped_texts: list[RawEntity]
-    ) -> None:
+    def _export_unmapped_texts(self, unmapped_texts: list[RawEntity]) -> None:
         """Export unmapped DLC texts for manual review."""
         rows = [
             {

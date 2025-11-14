@@ -19,7 +19,7 @@ def sample_entity_data() -> dict[str, Any]:
         "stats": {
             "attack": 100,
             "magic": 50,
-        }
+        },
     }
 
 

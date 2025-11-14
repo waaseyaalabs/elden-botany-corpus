@@ -1,6 +1,5 @@
 """Tests for reconciliation logic."""
 
-
 from corpus.models import Provenance, RawEntity
 from corpus.reconcile import EntityReconciler
 
@@ -109,9 +108,7 @@ def test_text_matching_threshold() -> None:
         provenance=[Provenance(source="dlc_text", uri="test://dlc")],
     )
 
-    matched, unmapped = reconciler.match_text_to_entities(
-        [exact_match, close_match, no_match]
-    )
+    matched, unmapped = reconciler.match_text_to_entities([exact_match, close_match, no_match])
 
     # Exact match should succeed
     assert "Starscourge Radahn" in matched

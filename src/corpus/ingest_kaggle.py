@@ -47,9 +47,7 @@ class KaggleIngester:
         self.base_dir = settings.raw_dir / "kaggle"
         self.base_dir.mkdir(parents=True, exist_ok=True)
 
-    def download_dataset(
-        self, dataset: str, output_dir: Path, force: bool = False
-    ) -> None:
+    def download_dataset(self, dataset: str, output_dir: Path, force: bool = False) -> None:
         """
         Download a Kaggle dataset using the Kaggle API.
 
@@ -60,8 +58,7 @@ class KaggleIngester:
         """
         if not settings.kaggle_credentials_set:
             raise ValueError(
-                "Kaggle credentials not set. "
-                "Set KAGGLE_USERNAME and KAGGLE_KEY in .env"
+                "Kaggle credentials not set. Set KAGGLE_USERNAME and KAGGLE_KEY in .env"
             )
 
         # Write kaggle config
@@ -81,9 +78,7 @@ class KaggleIngester:
             import kaggle
 
             kaggle.api.authenticate()
-            kaggle.api.dataset_download_files(
-                dataset, path=output_dir, unzip=True, quiet=False
-            )
+            kaggle.api.dataset_download_files(dataset, path=output_dir, unzip=True, quiet=False)
             print(f"Downloaded {dataset} to {output_dir}")
 
         except ImportError:
@@ -104,9 +99,7 @@ class KaggleIngester:
         total_size = int(response.headers.get("content-length", 0))
 
         with open(zip_path, "wb") as f:
-            with tqdm(
-                total=total_size, unit="B", unit_scale=True, desc="Downloading"
-            ) as pbar:
+            with tqdm(total=total_size, unit="B", unit_scale=True, desc="Downloading") as pbar:
                 for chunk in response.iter_content(chunk_size=8192):
                     f.write(chunk)
                     pbar.update(len(chunk))
@@ -263,9 +256,7 @@ class KaggleIngester:
         return "\n\n".join(parts)
 
 
-def fetch_kaggle_data(
-    include_base: bool = True, include_dlc: bool = True
-) -> list[RawEntity]:
+def fetch_kaggle_data(include_base: bool = True, include_dlc: bool = True) -> list[RawEntity]:
     """
     Fetch Kaggle datasets.
 

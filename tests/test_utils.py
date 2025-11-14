@@ -1,6 +1,5 @@
 """Tests for utility functions."""
 
-
 from pathlib import Path
 
 import polars as pl
@@ -47,11 +46,13 @@ def test_save_load_json(tmp_path: Path) -> None:
 
 def test_standardize_column_names() -> None:
     """Test column name standardization."""
-    df = pl.DataFrame({
-        "Item Name": ["Sword"],
-        "HP Cost": [10],
-        "FP": [5],
-    })
+    df = pl.DataFrame(
+        {
+            "Item Name": ["Sword"],
+            "HP Cost": [10],
+            "FP": [5],
+        }
+    )
 
     df_std = standardize_column_names(df)
 

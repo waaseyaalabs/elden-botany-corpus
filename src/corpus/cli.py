@@ -23,9 +23,7 @@ def main() -> None:
 
 
 @main.command()
-@click.option(
-    "--base/--no-base", default=True, help="Include base game data"
-)
+@click.option("--base/--no-base", default=True, help="Include base game data")
 @click.option("--dlc/--no-dlc", default=True, help="Include DLC data")
 @click.option(
     "--github/--no-github",
@@ -53,8 +51,7 @@ def fetch(
     """Fetch data from all configured sources."""
     if not settings.kaggle_credentials_set:
         click.echo(
-            "Warning: Kaggle credentials not set. "
-            "Kaggle datasets will be skipped.",
+            "Warning: Kaggle credentials not set. Kaggle datasets will be skipped.",
             err=True,
         )
 
@@ -66,9 +63,7 @@ def fetch(
         kaggle_base = []
         kaggle_dlc = []
         if base or dlc:
-            kaggle_entities = fetch_kaggle_data(
-                include_base=base, include_dlc=dlc
-            )
+            kaggle_entities = fetch_kaggle_data(include_base=base, include_dlc=dlc)
             # Split by is_dlc
             kaggle_base = [e for e in kaggle_entities if not e.is_dlc]
             kaggle_dlc = [e for e in kaggle_entities if e.is_dlc]
@@ -102,9 +97,7 @@ def curate() -> None:
         # Re-fetch (should use cached data)
         click.echo("Loading cached data...")
 
-        kaggle_entities = fetch_kaggle_data(
-            include_base=True, include_dlc=True
-        )
+        kaggle_entities = fetch_kaggle_data(include_base=True, include_dlc=True)
         kaggle_base = [e for e in kaggle_entities if not e.is_dlc]
         kaggle_dlc = [e for e in kaggle_entities if e.is_dlc]
 
@@ -123,9 +116,7 @@ def curate() -> None:
         df = curate_corpus(entities, unmapped)
 
         click.echo(f"\n✓ Curated {len(df)} entities")
-        click.echo(
-            f"  Output: {settings.curated_dir / 'unified.parquet'}"
-        )
+        click.echo(f"  Output: {settings.curated_dir / 'unified.parquet'}")
 
     except Exception as e:
         click.echo(f"Error during curation: {e}", err=True)
@@ -163,11 +154,7 @@ def load(
     """Load curated data into PostgreSQL."""
     try:
         dsn = dsn or settings.postgres_dsn
-        parquet_path = (
-            Path(parquet)
-            if parquet
-            else settings.curated_dir / "unified.parquet"
-        )
+        parquet_path = Path(parquet) if parquet else settings.curated_dir / "unified.parquet"
 
         if not parquet_path.exists():
             click.echo(
@@ -181,9 +168,7 @@ def load(
             # Temporarily override settings
             original_provider = settings.embed_provider
             # Cast is safe because click.Choice validates the input
-            settings.embed_provider = cast(
-                Literal["openai", "local", "none"], embed
-            )
+            settings.embed_provider = cast(Literal["openai", "local", "none"], embed)
 
         load_to_postgres(
             dsn=dsn,

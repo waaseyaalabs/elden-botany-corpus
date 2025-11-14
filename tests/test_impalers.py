@@ -16,7 +16,7 @@ def test_normalize_name_for_matching() -> None:
 
 @pytest.mark.skipif(
     os.getenv("RUN_INTEGRATION") != "1",
-    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)",
 )
 def test_impalers_ingester_init() -> None:
     """Test ImpalersIngester initialization."""
@@ -27,7 +27,7 @@ def test_impalers_ingester_init() -> None:
 @pytest.mark.integration
 @pytest.mark.skipif(
     os.getenv("RUN_INTEGRATION") != "1",
-    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)",
 )
 def test_download_impalers_archive() -> None:
     """Test downloading Impalers Archive."""
@@ -37,7 +37,7 @@ def test_download_impalers_archive() -> None:
 
 @pytest.mark.skipif(
     os.getenv("RUN_INTEGRATION") != "1",
-    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)",
 )
 def test_parse_html_text_dump() -> None:
     """Test parsing HTML text dump."""
@@ -47,7 +47,7 @@ def test_parse_html_text_dump() -> None:
 
 @pytest.mark.skipif(
     os.getenv("RUN_INTEGRATION") != "1",
-    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)",
 )
 def test_extract_entity_names_from_text() -> None:
     """Test entity name extraction from text dump."""
@@ -58,7 +58,7 @@ def test_extract_entity_names_from_text() -> None:
 @pytest.mark.integration
 @pytest.mark.skipif(
     os.getenv("RUN_INTEGRATION") != "1",
-    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)",
 )
 def test_fetch_impalers_data() -> None:
     """Test complete Impalers data fetch pipeline."""
@@ -68,7 +68,7 @@ def test_fetch_impalers_data() -> None:
 
 @pytest.mark.skipif(
     os.getenv("RUN_INTEGRATION") != "1",
-    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)",
 )
 def test_filter_dlc_content() -> None:
     """Test filtering DLC-specific content from base game text."""
