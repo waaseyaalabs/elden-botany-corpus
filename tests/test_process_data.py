@@ -1,5 +1,7 @@
 """Tests for data processing pipeline."""
 
+import time
+
 import pandas as pd
 import pytest
 
@@ -299,6 +301,27 @@ settings:
         result2 = processor.process_dataset("test-weapons")
         # No files should be processed
         assert len(result2.get("files_processed", [])) == 0
+
+    def test_process_dataset_uses_hash_cache(self, config_file, temp_dirs, sample_weapons_csv):
+        """Test cache prevents unnecessary reprocessing when content is unchanged."""
+        processor = DataProcessor(
+            config_path=config_file,
+            raw_dir=temp_dirs["raw_dir"],
+            processed_dir=temp_dirs["processed_dir"],
+        )
+
+        # Initial processing to populate cache
+        processor.process_dataset("test-weapons")
+
+        # Touch the raw file but keep contents identical
+        raw_file = sample_weapons_csv
+        original_contents = raw_file.read_text()
+        time.sleep(1.1)
+        raw_file.write_text(original_contents)
+
+        result = processor.process_dataset("test-weapons")
+        assert result["status"] == "success"
+        assert result.get("files_processed", []) == []
 
     def test_process_dataset_force_reprocess(self, config_file, temp_dirs, sample_weapons_csv):
         """Test force flag reprocesses files."""

@@ -54,11 +54,11 @@ kaggle.json
 .kaggle/
 
 # Data (exclude large artifacts)
-data/raw/**/*.zip
-data/raw/**/*.csv
-data/raw/**/*.json
-data/raw/**/*.parquet
-data/raw/**/*.html
+data/raw/**
+!data/raw/.gitkeep
+data/processed/**
+!data/processed/.gitkeep
+data/processed/.cache/
 data/curated/*.parquet
 data/curated/*.csv
 !data/curated/metadata.json
