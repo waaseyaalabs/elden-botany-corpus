@@ -33,12 +33,10 @@ import yaml
 
 try:
     from kaggle.api.kaggle_api_extended import KaggleApi
-except ImportError:
-    print(
-        "Error: kaggle package not installed. Run: pip install kaggle",
-        file=sys.stderr,
-    )
-    sys.exit(1)
+except ImportError as e:
+    raise ImportError(
+        "kaggle package not installed. Run: pip install kaggle"
+    ) from e
 
 # Configure logging
 logging.basicConfig(

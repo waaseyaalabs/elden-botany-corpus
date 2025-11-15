@@ -21,6 +21,9 @@ on:
     # Run weekly on Sundays at 00:00 UTC to refresh datasets
     - cron: '0 0 * * 0'
 
+permissions:
+  contents: read
+
 jobs:
   kaggle-smoke-test:
     runs-on: ubuntu-latest

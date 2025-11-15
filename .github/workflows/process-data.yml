@@ -18,6 +18,9 @@ on:
     # Run every Monday at 4 AM UTC (after Kaggle ingestion)
     - cron: '0 4 * * 1'
 
+permissions:
+  contents: read
+
 env:
   PYTHON_VERSION: '3.12'
 

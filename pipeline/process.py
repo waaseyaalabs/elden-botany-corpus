@@ -13,7 +13,6 @@ import yaml
 
 from pipeline.schemas import get_dataset_schema, validate_dataframe
 from pipeline.utils import (
-    coerce_types,
     get_processing_stats,
     handle_missing_values,
     needs_processing,
@@ -339,12 +338,16 @@ class DataProcessor:
                 schema = get_dataset_schema(dataset_name)
                 if schema:
                     logger.info("Validating schema...")
-                    is_valid, error_msg = validate_dataframe(df, schema)
+                    is_valid, error_msg, validated_df = validate_dataframe(
+                        df, schema
+                    )
                     if not is_valid:
                         logger.error(f"Schema validation failed: {error_msg}")
                         results["status"] = "failed"
                         results["error"] = error_msg
                         continue
+                    # Use validated dataframe with coerced types
+                    df = validated_df
                     logger.info("Schema validation passed")
                 else:
                     logger.warning(

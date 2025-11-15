@@ -1,9 +1,5 @@
 """Tests for data processing pipeline."""
 
-import json
-import tempfile
-from pathlib import Path
-
 import pandas as pd
 import pytest
 
@@ -56,7 +52,7 @@ class TestSchemas:
             }
         )
 
-        is_valid, error = validate_dataframe(df, WEAPONS_SCHEMA)
+        is_valid, error, _ = validate_dataframe(df, WEAPONS_SCHEMA)
         assert is_valid
         assert error is None
 
@@ -72,7 +68,7 @@ class TestSchemas:
             }
         )
 
-        is_valid, error = validate_dataframe(df, WEAPONS_SCHEMA)
+        is_valid, error, _ = validate_dataframe(df, WEAPONS_SCHEMA)
         assert not is_valid
         assert error is not None
         assert "weapon_type" in error
@@ -87,7 +83,7 @@ class TestSchemas:
             }
         )
 
-        is_valid, error = validate_dataframe(df, ITEMS_SCHEMA)
+        is_valid, error, _ = validate_dataframe(df, ITEMS_SCHEMA)
         assert not is_valid
         assert error is not None
 
@@ -103,7 +99,7 @@ class TestSchemas:
             }
         )
 
-        is_valid, error = validate_dataframe(df, BOSSES_SCHEMA)
+        is_valid, error, _ = validate_dataframe(df, BOSSES_SCHEMA)
         assert is_valid
 
 

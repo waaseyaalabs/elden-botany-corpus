@@ -3,7 +3,7 @@
 Uses Pandera for runtime validation and type checking of DataFrames.
 """
 
-from typing import Dict, Optional
+from typing import Any, Dict, Optional
 
 import pandera as pa
 from pandera import Column, DataFrameSchema, Check
@@ -200,7 +200,9 @@ def get_dataset_schema(dataset_name: str) -> Optional[DataFrameSchema]:
     return None
 
 
-def validate_dataframe(df, schema: DataFrameSchema) -> tuple[bool, Optional[str]]:
+def validate_dataframe(
+    df, schema: DataFrameSchema
+) -> tuple[bool, Optional[str], Any]:
     """Validate a DataFrame against a schema.
 
     Args:
@@ -208,10 +210,11 @@ def validate_dataframe(df, schema: DataFrameSchema) -> tuple[bool, Optional[str]
         schema: Pandera DataFrameSchema
 
     Returns:
-        Tuple of (is_valid, error_message)
+        Tuple of (is_valid, error_message, validated_df)
+        The validated_df contains the coerced types when validation succeeds
     """
     try:
-        schema.validate(df, lazy=True)
-        return True, None
+        validated_df = schema.validate(df, lazy=True)
+        return True, None, validated_df
     except pa.errors.SchemaErrors as e:
-        return False, str(e)
+        return False, str(e), df
