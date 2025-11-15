@@ -3,18 +3,17 @@
 import os
 
 import pytest
-
 from corpus.ingest_kaggle import KaggleIngester
 
 
-def test_kaggle_ingester_init():
+def test_kaggle_ingester_init() -> None:
     """Test KaggleIngester initialization."""
     ingester = KaggleIngester()
     assert ingester.base_dir.exists()
     assert ingester.base_dir.name == "kaggle"
 
 
-def test_extract_name():
+def test_extract_name() -> None:
     """Test name extraction from various row formats."""
     ingester = KaggleIngester()
 
@@ -35,7 +34,7 @@ def test_extract_name():
     assert ingester._extract_name(row) == ""
 
 
-def test_extract_description():
+def test_extract_description() -> None:
     """Test description extraction and merging."""
     ingester = KaggleIngester()
 
@@ -58,9 +57,9 @@ def test_extract_description():
 @pytest.mark.integration
 @pytest.mark.skipif(
     os.getenv("RUN_INTEGRATION") != "1",
-    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)",
 )
-def test_download_dataset():
+def test_download_dataset() -> None:
     """Test dataset download (integration test)."""
     pytest.importorskip("kaggle")
     # TODO: Implement integration test with mock data or test dataset
@@ -70,9 +69,9 @@ def test_download_dataset():
 @pytest.mark.integration
 @pytest.mark.skipif(
     os.getenv("RUN_INTEGRATION") != "1",
-    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)",
 )
-def test_ingest_base_game():
+def test_ingest_base_game() -> None:
     """Test base game ingestion (integration test)."""
     # TODO: Implement integration test with fixture data
     pass
@@ -81,9 +80,9 @@ def test_ingest_base_game():
 @pytest.mark.integration
 @pytest.mark.skipif(
     os.getenv("RUN_INTEGRATION") != "1",
-    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)",
 )
-def test_ingest_dlc():
+def test_ingest_dlc() -> None:
     """Test DLC ingestion (integration test)."""
     # TODO: Implement integration test with fixture data
     pass
@@ -92,9 +91,9 @@ def test_ingest_dlc():
 @pytest.mark.integration
 @pytest.mark.skipif(
     os.getenv("RUN_INTEGRATION") != "1",
-    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)",
 )
-def test_fetch_kaggle_data():
+def test_fetch_kaggle_data() -> None:
     """Test complete Kaggle data fetch pipeline."""
     pytest.importorskip("kaggle")
     # TODO: Add integration test when credentials available

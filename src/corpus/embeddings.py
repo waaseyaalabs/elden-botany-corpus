@@ -38,17 +38,12 @@ def generate_embeddings(
         raise ValueError(f"Unknown provider: {provider}")
 
 
-def _generate_openai_embeddings(
-    df: pl.DataFrame, model: str, batch_size: int
-) -> pl.DataFrame:
+def _generate_openai_embeddings(df: pl.DataFrame, model: str, batch_size: int) -> pl.DataFrame:
     """Generate embeddings using OpenAI API."""
     try:
         from openai import OpenAI
     except ImportError as err:
-        raise ImportError(
-            "OpenAI package not installed. "
-            "Install with: poetry add openai"
-        ) from err
+        raise ImportError("OpenAI package not installed. Install with: poetry add openai") from err
 
     if not settings.openai_api_key:
         raise ValueError("OPENAI_API_KEY not set in environment")
@@ -58,9 +53,7 @@ def _generate_openai_embeddings(
     texts = df.select("description").to_series().to_list()
     embeddings = []
 
-    print(
-        f"Generating embeddings for {len(texts)} texts using {model}..."
-    )
+    print(f"Generating embeddings for {len(texts)} texts using {model}...")
 
     for i in tqdm(range(0, len(texts), batch_size), desc="Embedding"):
         batch = texts[i : i + batch_size]
@@ -70,9 +63,7 @@ def _generate_openai_embeddings(
             model=model,
         )
 
-        batch_embeddings = [
-            item.embedding for item in response.data
-        ]
+        batch_embeddings = [item.embedding for item in response.data]
         embeddings.extend(batch_embeddings)
 
     # Add embeddings as JSON strings for Polars
@@ -86,16 +77,13 @@ def _generate_openai_embeddings(
     return df
 
 
-def _generate_local_embeddings(
-    df: pl.DataFrame, model: str, batch_size: int
-) -> pl.DataFrame:
+def _generate_local_embeddings(df: pl.DataFrame, model: str, batch_size: int) -> pl.DataFrame:
     """Generate embeddings using local sentence-transformers."""
     try:
         from sentence_transformers import SentenceTransformer
     except ImportError as err:
         raise ImportError(
-            "sentence-transformers not installed. "
-            "Install with: poetry add sentence-transformers"
+            "sentence-transformers not installed. Install with: poetry add sentence-transformers"
         ) from err
 
     print(f"Loading local embedding model: {model}...")

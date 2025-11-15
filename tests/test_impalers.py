@@ -3,11 +3,10 @@
 import os
 
 import pytest
-
 from corpus.models import normalize_name_for_matching
 
 
-def test_normalize_name_for_matching():
+def test_normalize_name_for_matching() -> None:
     """Test name normalization for fuzzy matching."""
     assert normalize_name_for_matching("Messmer the Impaler") == "messmer the impaler"
     assert normalize_name_for_matching("Bayle, the Dread") == "bayle the dread"
@@ -16,9 +15,9 @@ def test_normalize_name_for_matching():
 
 @pytest.mark.skipif(
     os.getenv("RUN_INTEGRATION") != "1",
-    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)",
 )
-def test_impalers_ingester_init():
+def test_impalers_ingester_init() -> None:
     """Test ImpalersIngester initialization."""
     # TODO: Implement with fixture data
     pass
@@ -27,9 +26,9 @@ def test_impalers_ingester_init():
 @pytest.mark.integration
 @pytest.mark.skipif(
     os.getenv("RUN_INTEGRATION") != "1",
-    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)",
 )
-def test_download_impalers_archive():
+def test_download_impalers_archive() -> None:
     """Test downloading Impalers Archive."""
     # TODO: Implement integration test with mock HTML data
     pass
@@ -37,9 +36,9 @@ def test_download_impalers_archive():
 
 @pytest.mark.skipif(
     os.getenv("RUN_INTEGRATION") != "1",
-    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)",
 )
-def test_parse_html_text_dump():
+def test_parse_html_text_dump() -> None:
     """Test parsing HTML text dump."""
     # TODO: Create fixture HTML and test parsing logic
     pass
@@ -47,9 +46,9 @@ def test_parse_html_text_dump():
 
 @pytest.mark.skipif(
     os.getenv("RUN_INTEGRATION") != "1",
-    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)",
 )
-def test_extract_entity_names_from_text():
+def test_extract_entity_names_from_text() -> None:
     """Test entity name extraction from text dump."""
     # TODO: Test extraction of boss names, item names, etc.
     pass
@@ -58,9 +57,9 @@ def test_extract_entity_names_from_text():
 @pytest.mark.integration
 @pytest.mark.skipif(
     os.getenv("RUN_INTEGRATION") != "1",
-    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)",
 )
-def test_fetch_impalers_data():
+def test_fetch_impalers_data() -> None:
     """Test complete Impalers data fetch pipeline."""
     # TODO: Implement integration test with network access or mock
     pass
@@ -68,9 +67,9 @@ def test_fetch_impalers_data():
 
 @pytest.mark.skipif(
     os.getenv("RUN_INTEGRATION") != "1",
-    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)",
 )
-def test_filter_dlc_content():
+def test_filter_dlc_content() -> None:
     """Test filtering DLC-specific content from base game text."""
     # TODO: Test that only DLC content is extracted
     pass

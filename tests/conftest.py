@@ -1,13 +1,15 @@
 """Test configuration and fixtures."""
 
 import os
+from collections.abc import Generator
 from pathlib import Path
+from typing import Any
 
 import pytest
 
 
 @pytest.fixture
-def sample_entity_data():
+def sample_entity_data() -> dict[str, Any]:
     """Sample entity data for testing."""
     return {
         "name": "Sword of Night and Flame",
@@ -17,12 +19,12 @@ def sample_entity_data():
         "stats": {
             "attack": 100,
             "magic": 50,
-        }
+        },
     }
 
 
 @pytest.fixture
-def sample_boss_data():
+def sample_boss_data() -> dict[str, Any]:
     """Sample boss data."""
     return {
         "name": "Rennala, Queen of the Full Moon",
@@ -34,7 +36,7 @@ def sample_boss_data():
 
 
 @pytest.fixture
-def sample_dlc_entity():
+def sample_dlc_entity() -> dict[str, Any]:
     """Sample DLC entity."""
     return {
         "name": "Messmer the Impaler",
@@ -45,7 +47,7 @@ def sample_dlc_entity():
 
 
 @pytest.fixture
-def temp_data_dir(tmp_path):
+def temp_data_dir(tmp_path: Path) -> Path:
     """Temporary data directory."""
     data_dir = tmp_path / "data"
     data_dir.mkdir()
@@ -55,10 +57,10 @@ def temp_data_dir(tmp_path):
 
 
 @pytest.fixture(scope="session")
-def postgres_dsn():
+def postgres_dsn() -> str | None:
     """
     PostgreSQL connection string for integration tests.
-    
+
     Returns DSN from environment variable POSTGRES_DSN, or None if not set.
     Tests requiring this fixture should be marked with @pytest.mark.integration
     and will be skipped if RUN_INTEGRATION != "1".
@@ -67,50 +69,50 @@ def postgres_dsn():
 
 
 @pytest.fixture(scope="session")
-def pg_connection(postgres_dsn):
+def pg_connection(postgres_dsn: str | None) -> Generator[Any, None, None]:
     """
     PostgreSQL connection for integration tests.
-    
+
     Requires POSTGRES_DSN environment variable.
     Optional: Use testcontainers for ephemeral database.
     """
     if not postgres_dsn:
         pytest.skip("POSTGRES_DSN not set - skipping database tests")
-    
+
     psycopg = pytest.importorskip("psycopg")
-    
+
     # Create connection
     conn = psycopg.connect(postgres_dsn)
-    
+
     # Initialize schema from SQL files
     sql_dir = Path(__file__).parent.parent / "sql"
     with conn.cursor() as cur:
         # Load extensions
         extensions_sql = (sql_dir / "001_enable_extensions.sql").read_text()
         cur.execute(extensions_sql)
-        
+
         # Create schema
         schema_sql = (sql_dir / "010_schema.sql").read_text()
         cur.execute(schema_sql)
-        
+
         # Create indexes
         indexes_sql = (sql_dir / "020_indexes.sql").read_text()
         cur.execute(indexes_sql)
-        
+
         conn.commit()
-    
+
     yield conn
-    
+
     # Cleanup: drop schema
     with conn.cursor() as cur:
         cur.execute("DROP SCHEMA IF EXISTS elden CASCADE")
         conn.commit()
-    
+
     conn.close()
 
 
 @pytest.fixture
-def pg_cursor(pg_connection):
+def pg_cursor(pg_connection: Any) -> Generator[Any, None, None]:
     """PostgreSQL cursor for integration tests."""
     cursor = pg_connection.cursor()
     yield cursor

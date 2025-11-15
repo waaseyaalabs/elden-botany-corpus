@@ -10,9 +10,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 class Settings(BaseSettings):
     """Application settings loaded from environment variables."""
 
-    model_config = SettingsConfigDict(
-        env_file=".env", env_file_encoding="utf-8", extra="ignore"
-    )
+    model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8", extra="ignore")
 
     # Kaggle API credentials
     kaggle_username: str = Field(default="", description="Kaggle username")
@@ -28,26 +26,16 @@ class Settings(BaseSettings):
     embed_provider: Literal["openai", "local", "none"] = Field(
         default="none", description="Embedding provider"
     )
-    embed_dimension: int = Field(
-        default=1536, description="Embedding vector dimension"
-    )
-    embed_model: str = Field(
-        default="text-embedding-3-small", description="Embedding model name"
-    )
+    embed_dimension: int = Field(default=1536, description="Embedding vector dimension")
+    embed_model: str = Field(default="text-embedding-3-small", description="Embedding model name")
 
     # OpenAI API key (when using openai provider)
     openai_api_key: str = Field(default="", description="OpenAI API key")
 
     # Data paths
-    data_dir: Path = Field(
-        default=Path("data"), description="Root data directory"
-    )
-    raw_dir: Path = Field(
-        default=Path("data/raw"), description="Raw data directory"
-    )
-    curated_dir: Path = Field(
-        default=Path("data/curated"), description="Curated data directory"
-    )
+    data_dir: Path = Field(default=Path("data"), description="Root data directory")
+    raw_dir: Path = Field(default=Path("data/raw"), description="Raw data directory")
+    curated_dir: Path = Field(default=Path("data/curated"), description="Curated data directory")
 
     # String matching threshold for DLC text reconciliation
     match_threshold: float = Field(
@@ -55,12 +43,10 @@ class Settings(BaseSettings):
     )
 
     # Batch size for embedding generation
-    embed_batch_size: int = Field(
-        default=128, description="Batch size for embedding generation"
-    )
+    embed_batch_size: int = Field(default=128, description="Batch size for embedding generation")
 
     def __init__(self, **kwargs: object) -> None:
-        super().__init__(**kwargs)
+        super().__init__(**kwargs)  # type: ignore[arg-type]
         # Ensure directories exist
         self.raw_dir.mkdir(parents=True, exist_ok=True)
         self.curated_dir.mkdir(parents=True, exist_ok=True)
@@ -79,10 +65,7 @@ class Settings(BaseSettings):
         kaggle_dir.mkdir(exist_ok=True)
 
         config_file = kaggle_dir / "kaggle.json"
-        config_content = (
-            f'{{"username":"{self.kaggle_username}",'
-            f'"key":"{self.kaggle_key}"}}'
-        )
+        config_content = f'{{"username":"{self.kaggle_username}","key":"{self.kaggle_key}"}}'
         config_file.write_text(config_content)
         config_file.chmod(0o600)
 

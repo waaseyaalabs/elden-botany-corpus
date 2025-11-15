@@ -1,8 +1,8 @@
 """Tests for utility functions."""
 
+from pathlib import Path
 
 import polars as pl
-
 from corpus.utils import (
     MetadataTracker,
     compute_file_hash,
@@ -13,7 +13,7 @@ from corpus.utils import (
 )
 
 
-def test_compute_file_hash(tmp_path):
+def test_compute_file_hash(tmp_path: Path) -> None:
     """Test file hash computation."""
     test_file = tmp_path / "test.txt"
     test_file.write_text("test content")
@@ -31,7 +31,7 @@ def test_compute_file_hash(tmp_path):
     assert hash1 != hash3
 
 
-def test_save_load_json(tmp_path):
+def test_save_load_json(tmp_path: Path) -> None:
     """Test JSON save and load."""
     test_data = {"key": "value", "number": 42, "list": [1, 2, 3]}
     test_file = tmp_path / "test.json"
@@ -43,13 +43,15 @@ def test_save_load_json(tmp_path):
     assert loaded == test_data
 
 
-def test_standardize_column_names():
+def test_standardize_column_names() -> None:
     """Test column name standardization."""
-    df = pl.DataFrame({
-        "Item Name": ["Sword"],
-        "HP Cost": [10],
-        "FP": [5],
-    })
+    df = pl.DataFrame(
+        {
+            "Item Name": ["Sword"],
+            "HP Cost": [10],
+            "FP": [5],
+        }
+    )
 
     df_std = standardize_column_names(df)
 
@@ -58,7 +60,7 @@ def test_standardize_column_names():
     assert "fp" in df_std.columns
 
 
-def test_merge_text_fields():
+def test_merge_text_fields() -> None:
     """Test merging text fields."""
     row = {
         "description": "A powerful weapon",
@@ -79,7 +81,7 @@ def test_merge_text_fields():
     assert "nan_field" not in text.lower()
 
 
-def test_metadata_tracker(tmp_path):
+def test_metadata_tracker(tmp_path: Path) -> None:
     """Test metadata tracking."""
     tracker = MetadataTracker()
 

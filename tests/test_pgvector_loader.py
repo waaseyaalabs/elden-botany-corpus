@@ -3,16 +3,15 @@
 import os
 
 import pytest
-
 from corpus.models import CorpusChunk, CorpusDocument
 
 
 @pytest.mark.integration
 @pytest.mark.skipif(
     os.getenv("RUN_INTEGRATION") != "1",
-    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)",
 )
-def test_pgvector_loader_init():
+def test_pgvector_loader_init() -> None:
     """Test PgVectorLoader initialization."""
     pytest.importorskip("pgvector")
     # TODO: Implement with test database connection
@@ -22,9 +21,9 @@ def test_pgvector_loader_init():
 @pytest.mark.integration
 @pytest.mark.skipif(
     os.getenv("RUN_INTEGRATION") != "1",
-    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)",
 )
-def test_create_schema():
+def test_create_schema() -> None:
     """Test schema creation from SQL files."""
     pytest.importorskip("pgvector")
     pytest.importorskip("psycopg")
@@ -35,9 +34,9 @@ def test_create_schema():
 @pytest.mark.integration
 @pytest.mark.skipif(
     os.getenv("RUN_INTEGRATION") != "1",
-    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)",
 )
-def test_load_document():
+def test_load_document() -> None:
     """Test loading a single document."""
     pytest.importorskip("pgvector")
     pytest.importorskip("psycopg")
@@ -48,9 +47,9 @@ def test_load_document():
 @pytest.mark.integration
 @pytest.mark.skipif(
     os.getenv("RUN_INTEGRATION") != "1",
-    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)",
 )
-def test_load_chunk():
+def test_load_chunk() -> None:
     """Test loading a single chunk."""
     pytest.importorskip("pgvector")
     pytest.importorskip("psycopg")
@@ -61,9 +60,9 @@ def test_load_chunk():
 @pytest.mark.integration
 @pytest.mark.skipif(
     os.getenv("RUN_INTEGRATION") != "1",
-    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)",
 )
-def test_load_chunks_batch():
+def test_load_chunks_batch() -> None:
     """Test batch loading of chunks."""
     pytest.importorskip("pgvector")
     pytest.importorskip("psycopg")
@@ -74,9 +73,9 @@ def test_load_chunks_batch():
 @pytest.mark.integration
 @pytest.mark.skipif(
     os.getenv("RUN_INTEGRATION") != "1",
-    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)",
 )
-def test_update_embeddings():
+def test_update_embeddings() -> None:
     """Test updating embeddings for chunks."""
     pytest.importorskip("pgvector")
     pytest.importorskip("psycopg")
@@ -87,9 +86,9 @@ def test_update_embeddings():
 @pytest.mark.integration
 @pytest.mark.skipif(
     os.getenv("RUN_INTEGRATION") != "1",
-    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)",
 )
-def test_query_by_vector():
+def test_query_by_vector() -> None:
     """Test vector similarity search."""
     pytest.importorskip("pgvector")
     pytest.importorskip("psycopg")
@@ -100,9 +99,9 @@ def test_query_by_vector():
 @pytest.mark.integration
 @pytest.mark.skipif(
     os.getenv("RUN_INTEGRATION") != "1",
-    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)"
+    reason="Integration tests disabled (set RUN_INTEGRATION=1 to enable)",
 )
-def test_full_text_search():
+def test_full_text_search() -> None:
     """Test full-text search on text column."""
     pytest.importorskip("pgvector")
     pytest.importorskip("psycopg")
@@ -110,7 +109,7 @@ def test_full_text_search():
     pass
 
 
-def test_corpus_document_model():
+def test_corpus_document_model() -> None:
     """Test CorpusDocument model validation."""
     doc = CorpusDocument(
         source_type="kaggle_base",
@@ -124,7 +123,7 @@ def test_corpus_document_model():
     assert doc.created_at is not None
 
 
-def test_corpus_chunk_model():
+def test_corpus_chunk_model() -> None:
     """Test CorpusChunk model validation."""
     chunk = CorpusChunk(
         entity_type="weapon",
@@ -147,7 +146,7 @@ def test_corpus_chunk_model():
     assert len(hash_value) == 64  # SHA256 hex length
 
 
-def test_corpus_chunk_with_embedding():
+def test_corpus_chunk_with_embedding() -> None:
     """Test CorpusChunk with embedding vector."""
     chunk = CorpusChunk(
         entity_type="boss",

@@ -3,6 +3,7 @@
 import json
 import uuid
 from pathlib import Path
+from typing import Literal
 
 import polars as pl
 import psycopg
@@ -51,7 +52,7 @@ class PgVectorLoader:
     def load_data(
         self,
         parquet_path: str | Path,
-        embed_provider: str | None = None,
+        embed_provider: Literal["openai", "local"] | None = None,
     ) -> None:
         """
         Load data from Parquet into PostgreSQL.
@@ -89,9 +90,7 @@ class PgVectorLoader:
             )
 
             # Insert chunks
-            for row in tqdm(
-                df.iter_rows(named=True), total=len(df), desc="Inserting"
-            ):
+            for row in tqdm(df.iter_rows(named=True), total=len(df), desc="Inserting"):
                 chunk_id = str(uuid.uuid4())
 
                 # Parse embedding if present
@@ -151,18 +150,19 @@ class PgVectorLoader:
         Returns:
             List of similar entities
         """
+        # Ensure embed_provider is valid for generating embeddings
+        if settings.embed_provider == "none":
+            raise ValueError(
+                "Embedding provider is set to 'none'. "
+                "Cannot query similar entities without embeddings."
+            )
+
         # Generate embedding for query
         query_df = pl.DataFrame({"description": [text]})
-        query_df = generate_embeddings(
-            query_df, provider=settings.embed_provider
-        )
-        query_embedding = json.loads(
-            query_df.select("embedding").item(0, 0)
-        )
+        query_df = generate_embeddings(query_df, provider=settings.embed_provider)
+        query_embedding = json.loads(query_df.select("embedding").item(0, 0))
 
-        with psycopg.connect(
-            self.dsn, row_factory=dict_row
-        ) as conn:
+        with psycopg.connect(self.dsn, row_factory=dict_row) as conn:
             if entity_type:
                 results = conn.execute(
                     """
@@ -208,5 +208,10 @@ def load_to_postgres(
     if create:
         loader.create_schema()
 
-    embed_provider = settings.embed_provider if embed else None
+    # Only pass embed_provider if embed is True and provider is not "none"
+    embed_provider: Literal["openai", "local"] | None = None
+    if embed and settings.embed_provider != "none":
+        # Narrowing type through conditional check
+        assert settings.embed_provider in ("openai", "local")
+        embed_provider = settings.embed_provider
     loader.load_data(parquet_path, embed_provider)

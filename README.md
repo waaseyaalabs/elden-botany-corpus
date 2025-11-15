@@ -88,7 +88,7 @@ elden-botany-corpus/
 
 ### Prerequisites
 
-- **Python 3.11+**
+- **Python 3.11+** (Python 3.12 also supported)
 - **Poetry** (install: `curl -sSL https://install.python-poetry.org | python3 -`)
 - **Kaggle API credentials** (for dataset downloads)
 
@@ -98,7 +98,10 @@ elden-botany-corpus/
 git clone https://github.com/waaseyaalabs/elden-botany-corpus.git
 cd elden-botany-corpus
 
-# Install dependencies
+# Quick setup (installs Poetry if needed + dependencies)
+make setup
+
+# Or manually:
 poetry install
 ```
 
@@ -227,6 +230,46 @@ elden.corpus_chunk
 
 ## 🔧 Development
 
+### Initial Setup
+
+```bash
+# One-command setup (recommended)
+make setup
+
+# Or step-by-step:
+poetry install                    # Install dependencies
+poetry run ruff format src/ tests/  # Format code
+```
+
+### Running CI Checks Locally
+
+Before pushing code, run the same checks that CI will run:
+
+```bash
+# Run all CI checks (lint + test)
+make ci-local
+
+# Or individually:
+make lint      # Check formatting, linting, and types (no modifications)
+make test      # Run unit tests with coverage
+make format    # Auto-format code (for fixing issues)
+```
+
+**Helper Scripts** (alternative to make commands):
+```bash
+./scripts/lint.sh   # Run all lint checks
+./scripts/test.sh   # Run unit tests
+```
+
+### Code Quality Standards
+
+This project enforces:
+- **Ruff formatting** (line length: 100)
+- **Ruff linting** (pycodestyle, pyflakes, isort, bugbear, comprehensions)
+- **Mypy strict type checking**
+
+**Important**: `make lint` checks without modifying files (same as CI). Use `make format` to auto-fix issues locally.
+
 ### Run Tests
 
 ```bash
@@ -260,15 +303,47 @@ export KAGGLE_KEY="your_api_key"
 poetry run pytest -m integration
 ```
 
-**Using Docker for integration tests:**
+### Local Postgres Integration Testing
+
+The easiest way to run Postgres integration tests is using Docker Compose:
 
 ```bash
-# Start PostgreSQL with pgvector
+# Start PostgreSQL 16 with pgvector extension
 docker compose -f docker/compose.example.yml up -d postgres
 
-# Run integration tests
-RUN_INTEGRATION=1 POSTGRES_DSN="postgresql://elden:password@localhost:5432/elden" \
-  poetry run pytest -m integration
+# Set the connection string
+export POSTGRES_DSN=postgresql://elden:elden_password@localhost:5432/elden
+
+# Run integration tests only
+poetry run pytest -m integration -v
+
+# Alternative: run just the Postgres end-to-end test
+poetry run pytest tests/test_pg_integration_e2e.py -v
+
+# Clean up when done
+docker compose -f docker/compose.example.yml down -v
+```
+
+**What the integration tests verify:**
+- PostgreSQL extensions (pgvector, uuid-ossp) can be created
+- Schema and tables are created correctly
+- HNSW vector index works for similarity search
+- Full-text search (FTS) with GIN indexes functions properly
+- JSONB metadata queries execute correctly
+- CASCADE delete behavior on foreign keys
+
+**Using Make targets:**
+
+```bash
+# Start database
+make docker-up
+
+# Run integration tests (with POSTGRES_DSN set)
+export POSTGRES_DSN=postgresql://elden:elden_password@localhost:5432/elden
+poetry run pytest -m integration
+
+# Stop database
+make docker-down
 ```
 
 **Fixtures and test database:**

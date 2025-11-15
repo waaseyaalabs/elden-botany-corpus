@@ -1,0 +1,13 @@
+# Example environment configuration for elden-botany-corpus
+# Copy this to .envrc (for direnv) or source it manually
+# cp .envrc.example .envrc && direnv allow
+
+# Add Poetry to PATH
+export PATH="$HOME/.local/bin:$PATH"
+
+# Optional: Activate Poetry virtual environment automatically
+# Uncomment the line below if you want to auto-activate the venv
+# source $(poetry env info --path)/bin/activate
+
+echo "✅ Development environment configured!"
+echo "   Run 'make setup' if you haven't already installed dependencies"

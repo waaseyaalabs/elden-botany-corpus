@@ -56,13 +56,14 @@ class GitHubAPIIngester:
         if cache_file.exists():
             print(f"Loading {entity_type} from cache...")
             with open(cache_file, encoding="utf-8") as f:
-                return json.load(f)
+                result: dict[str, Any] = json.load(f)
+                return result
 
         print(f"Fetching {entity_type} from {url}...")
         response = requests.get(url, timeout=30)
         response.raise_for_status()
 
-        data = response.json()
+        data: dict[str, Any] = response.json()
 
         # Save to cache
         cache_file.parent.mkdir(parents=True, exist_ok=True)
@@ -80,9 +81,7 @@ class GitHubAPIIngester:
         """
         entities: list[RawEntity] = []
 
-        for entity_type in progress_bar(
-            API_ENTITIES, desc="Fetching entity types"
-        ):
+        for entity_type in progress_bar(API_ENTITIES, desc="Fetching entity types"):
             try:
                 data = self.fetch_entity_list(entity_type)
 
@@ -100,11 +99,7 @@ class GitHubAPIIngester:
                 provenance = Provenance(
                     source="github_api",
                     uri=f"{GITHUB_RAW_BASE}/data/{entity_type}.json",
-                    sha256=(
-                        compute_file_hash(cache_file)
-                        if cache_file.exists()
-                        else None
-                    ),
+                    sha256=(compute_file_hash(cache_file) if cache_file.exists() else None),
                 )
 
                 # Convert to RawEntity
