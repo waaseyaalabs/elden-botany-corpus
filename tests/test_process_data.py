@@ -122,9 +122,7 @@ class TestUtils:
 
     def test_normalize_categorical(self):
         """Test categorical value normalization."""
-        df = pd.DataFrame(
-            {"weapon_type": ["Straight Sword", "KATANA", "great_sword"]}
-        )
+        df = pd.DataFrame({"weapon_type": ["Straight Sword", "KATANA", "great_sword"]})
 
         mapping = {
             "weapon_type": {
@@ -247,9 +245,7 @@ settings:
         assert processor.config is not None
         assert len(processor.config["datasets"]) == 2
 
-    def test_process_dataset_creates_parquet(
-        self, config_file, temp_dirs, sample_weapons_csv
-    ):
+    def test_process_dataset_creates_parquet(self, config_file, temp_dirs, sample_weapons_csv):
         """Test processing creates Parquet output."""
         processor = DataProcessor(
             config_path=config_file,
@@ -263,14 +259,10 @@ settings:
         assert len(result["files_processed"]) == 1
 
         # Check output file exists
-        output_file = (
-            temp_dirs["processed_dir"] / "test-weapons" / "weapons.parquet"
-        )
+        output_file = temp_dirs["processed_dir"] / "test-weapons" / "weapons.parquet"
         assert output_file.exists()
 
-    def test_process_dataset_validates_schema(
-        self, config_file, temp_dirs, sample_weapons_csv
-    ):
+    def test_process_dataset_validates_schema(self, config_file, temp_dirs, sample_weapons_csv):
         """Test processing validates against schema."""
         processor = DataProcessor(
             config_path=config_file,
@@ -284,18 +276,14 @@ settings:
         assert result["status"] == "success"
 
         # Verify output data
-        output_file = (
-            temp_dirs["processed_dir"] / "test-weapons" / "weapons.parquet"
-        )
+        output_file = temp_dirs["processed_dir"] / "test-weapons" / "weapons.parquet"
         df = pd.read_parquet(output_file)
 
         # Check transformations applied
         assert "weapon_id" in df.columns
         assert df["weapon_type"].tolist() == ["sword", "katana", "greatsword"]
 
-    def test_process_dataset_skips_up_to_date(
-        self, config_file, temp_dirs, sample_weapons_csv
-    ):
+    def test_process_dataset_skips_up_to_date(self, config_file, temp_dirs, sample_weapons_csv):
         """Test processing skips up-to-date files."""
         processor = DataProcessor(
             config_path=config_file,
@@ -312,9 +300,7 @@ settings:
         # No files should be processed
         assert len(result2.get("files_processed", [])) == 0
 
-    def test_process_dataset_force_reprocess(
-        self, config_file, temp_dirs, sample_weapons_csv
-    ):
+    def test_process_dataset_force_reprocess(self, config_file, temp_dirs, sample_weapons_csv):
         """Test force flag reprocesses files."""
         processor = DataProcessor(
             config_path=config_file,
@@ -330,9 +316,7 @@ settings:
         assert result["status"] == "success"
         assert len(result["files_processed"]) == 1
 
-    def test_process_dataset_dry_run(
-        self, config_file, temp_dirs, sample_weapons_csv
-    ):
+    def test_process_dataset_dry_run(self, config_file, temp_dirs, sample_weapons_csv):
         """Test dry run doesn't write files."""
         processor = DataProcessor(
             config_path=config_file,
@@ -345,14 +329,10 @@ settings:
         assert result["status"] == "success"
 
         # Output file should NOT exist
-        output_file = (
-            temp_dirs["processed_dir"] / "test-weapons" / "weapons.parquet"
-        )
+        output_file = temp_dirs["processed_dir"] / "test-weapons" / "weapons.parquet"
         assert not output_file.exists()
 
-    def test_process_all_skips_disabled(
-        self, config_file, temp_dirs, sample_weapons_csv
-    ):
+    def test_process_all_skips_disabled(self, config_file, temp_dirs, sample_weapons_csv):
         """Test process_all skips disabled datasets."""
         processor = DataProcessor(
             config_path=config_file,
@@ -373,9 +353,7 @@ settings:
         assert results["summary"]["succeeded"] == 1
         assert results["summary"]["skipped"] == 1
 
-    def test_transform_weapons_normalizes_types(
-        self, config_file, temp_dirs
-    ):
+    def test_transform_weapons_normalizes_types(self, config_file, temp_dirs):
         """Test weapon type normalization."""
         processor = DataProcessor(
             config_path=config_file,
@@ -396,9 +374,7 @@ settings:
         assert "weapon_id" in result.columns
         assert result["weapon_type"].tolist() == ["sword", "bow"]
 
-    def test_transform_handles_missing_values(
-        self, config_file, temp_dirs
-    ):
+    def test_transform_handles_missing_values(self, config_file, temp_dirs):
         """Test missing value handling in transformations."""
         processor = DataProcessor(
             config_path=config_file,
