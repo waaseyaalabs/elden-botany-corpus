@@ -47,6 +47,11 @@ poetry.lock
 # Environment
 .env
 .env.local
+.env.*
+
+# Kaggle credentials
+kaggle.json
+.kaggle/
 
 # Data (exclude large artifacts)
 data/raw/**/*.zip
