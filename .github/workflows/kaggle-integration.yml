@@ -1,0 +1,47 @@
+name: Kaggle Integration
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  kaggle-smoke-test:
+    runs-on: ubuntu-latest
+    env:
+      KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+      KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify Kaggle secrets are available
+        run: |
+          if [ -z "${KAGGLE_USERNAME}" ] || [ -z "${KAGGLE_KEY}" ]; then
+            echo "KAGGLE_USERNAME and KAGGLE_KEY must be defined as repository secrets."
+            exit 1
+          fi
+
+      - name: Configure Kaggle credentials
+        run: |
+          mkdir -p ~/.kaggle
+          cat <<EOF > ~/.kaggle/kaggle.json
+          {
+            "username": "${KAGGLE_USERNAME}",
+            "key": "${KAGGLE_KEY}"
+          }
+          EOF
+          chmod 600 ~/.kaggle/kaggle.json
+
+      - name: Install Kaggle client
+        run: |
+          python -m pip install --upgrade pip
+          pip install kaggle
+
+      - name: Kaggle API smoke test
+        run: |
+          kaggle datasets list -s "titanic" | head -n 5
