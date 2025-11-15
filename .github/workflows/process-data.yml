@@ -1,6 +1,17 @@
 name: Data Processing Pipeline
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'pipeline/**'
+      - 'scripts/process_data.py'
+      - 'pipelines/**'
+      - 'docs/data-processing.md'
+      - '.github/workflows/process-data.yml'
+      - 'tests/test_process_data.py'
+      - 'tests/test_processing_pending.py'
   workflow_dispatch:
     inputs:
       force:
@@ -12,8 +23,9 @@ on:
     paths:
       - 'pipeline/**'
       - 'scripts/process_data.py'
-      - 'config/kaggle_datasets.yml'
+      - 'pipelines/**'
       - 'tests/test_process_data.py'
+      - 'tests/test_processing_pending.py'
   schedule:
     # Run every Monday at 4 AM UTC (after Kaggle ingestion)
     - cron: '0 4 * * 1'
@@ -77,7 +89,7 @@ jobs:
       
       - name: Run unit tests
         run: |
-          poetry run pytest tests/test_process_data.py -v
+          poetry run pytest tests/test_process_data.py tests/test_processing_pending.py -v
   
   process-data:
     name: Process datasets
