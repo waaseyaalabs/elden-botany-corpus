@@ -200,7 +200,7 @@ datasets:
     owner: "test"
     slug: "test-weapons"
     enabled: true
-  
+
   - name: "test-bosses"
     owner: "test"
     slug: "test-bosses"
