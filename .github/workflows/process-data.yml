@@ -5,6 +5,7 @@ on:
     branches:
       - main
     paths:
+      - 'config/kaggle_datasets.yml'
       - 'pipeline/**'
       - 'scripts/process_data.py'
       - 'pipelines/**'
@@ -21,6 +22,7 @@ on:
         default: false
   pull_request:
     paths:
+      - 'config/kaggle_datasets.yml'
       - 'pipeline/**'
       - 'scripts/process_data.py'
       - 'pipelines/**'
