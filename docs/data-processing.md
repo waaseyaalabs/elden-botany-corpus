@@ -159,6 +159,22 @@ python scripts/process_data.py \
   --output-stats processing-stats.json
 ```
 
+### Change Detection & Dry Runs
+
+Every invocation of `scripts/process_data.py` now inspects the raw tree and
+prints which datasets actually need work before any heavy lifting begins. The
+script uses the same hash-and-mtime logic as the processor to determine if
+Parquet outputs are stale, and reports the first few out-of-date files for easy
+debugging. Use `--dry-run` to execute the full validation path without writing
+Parquet files, and `--force` to override the cache when you explicitly need to
+rebuild everything. For CI and local development this makes it obvious when no
+datasets require processing (the script will say so), while still confirming
+that transformations remain valid.
+
+> **Reminder:** `data/raw/` and `data/processed/` stay gitignored artifacts.
+> The pipeline only creates `.gitkeep` placeholders so you never accidentally
+> commit downloaded or generated datasets.
+
 ### Using Poetry
 
 ```bash
@@ -200,13 +216,14 @@ The pipeline runs in GitHub Actions with two jobs:
 ### 1. Validate Processing (Dry Run)
 Runs on:
 - Pull requests affecting pipeline code
+- Pushes to `main` that touch pipeline, docs, or tests
 - Manual trigger
 
 Actions:
 - Creates sample test data
 - Runs pipeline in dry-run mode
 - Validates schema compliance
-- Runs unit tests
+- Runs unit tests (`tests/test_process_data.py` and `tests/test_processing_pending.py`)
 
 ### 2. Process Data
 Runs on:

@@ -136,6 +136,21 @@ Examples:
         cache_dir=args.cache_dir,
     )
 
+    pending = processor.get_pending_datasets(force=args.force)
+    if args.force:
+        logger.info("Force flag enabled; all datasets with raw files will " "be processed.")
+    elif pending:
+        logger.info("Detected %d dataset(s) with stale raw files:", len(pending))
+        for dataset, payload in pending.items():
+            logger.info("  - %s (%s)", dataset, payload.get("reason", "unknown"))
+            for raw_file in payload.get("files", [])[:5]:
+                logger.debug("      - %s", raw_file)
+            extra_files = max(len(payload.get("files", [])) - 5, 0)
+            if extra_files:
+                logger.debug("      ...and %d more", extra_files)
+    else:
+        logger.info("No datasets require processing; performing validation run only.")
+
     # Process all datasets
     try:
         results = processor.process_all(force=args.force, dry_run=args.dry_run)

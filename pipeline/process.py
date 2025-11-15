@@ -6,7 +6,7 @@ and writes processed Parquet files.
 
 import logging
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any
 
 import pandas as pd
 import yaml
@@ -23,6 +23,8 @@ from pipeline.utils import (
     write_parquet,
 )
 
+ProcessingResult = dict[str, Any]
+
 logger = logging.getLogger(__name__)
 
 
@@ -34,7 +36,7 @@ class DataProcessor:
         config_path: Path,
         raw_dir: Path,
         processed_dir: Path,
-        cache_dir: Optional[Path] = None,
+        cache_dir: Path | None = None,
     ):
         """Initialize data processor.
 
@@ -50,14 +52,14 @@ class DataProcessor:
         self.cache_dir = cache_dir or (processed_dir / ".cache")
 
         self.config = self._load_config()
-        self.processing_stats: Dict[str, Any] = {}
+        self.processing_stats: dict[str, Any] = {}
 
-    def _load_config(self) -> Dict[str, Any]:
+    def _load_config(self) -> dict[str, Any]:
         """Load Kaggle datasets configuration."""
         with open(self.config_path) as f:
             return yaml.safe_load(f)
 
-    def _get_dataset_files(self, dataset_name: str) -> List[Path]:
+    def _get_dataset_files(self, dataset_name: str) -> list[Path]:
         """Find all data files for a dataset in raw directory.
 
         Args:
@@ -71,15 +73,13 @@ class DataProcessor:
             return []
 
         # Find CSV, JSON, and Parquet files
-        files = []
+        files: list[Path] = []
         for pattern in ["*.csv", "*.json", "*.parquet"]:
             files.extend(dataset_dir.glob(pattern))
 
         return sorted(files)
 
-    def _apply_transformations(
-        self, df: pd.DataFrame, dataset_name: str
-    ) -> pd.DataFrame:
+    def _apply_transformations(self, df: pd.DataFrame, dataset_name: str) -> pd.DataFrame:
         """Apply dataset-specific transformations.
 
         Args:
@@ -141,9 +141,7 @@ class DataProcessor:
         }
 
         if "weapon_type" in df.columns:
-            df = normalize_categorical(
-                df, {"weapon_type": weapon_type_mapping}
-            )
+            df = normalize_categorical(df, {"weapon_type": weapon_type_mapping})
 
         # Handle missing damage values
         damage_cols = [
@@ -214,14 +212,10 @@ class DataProcessor:
         }
 
         if "armor_type" in df.columns:
-            df = normalize_categorical(
-                df, {"armor_type": armor_type_mapping}
-            )
+            df = normalize_categorical(df, {"armor_type": armor_type_mapping})
 
         # Handle missing defense values
-        defense_cols = [
-            col for col in df.columns if col.startswith("defense_")
-        ]
+        defense_cols = [col for col in df.columns if col.startswith("defense_")]
         strategy = {col: 0.0 for col in defense_cols}
         df = handle_missing_values(df, strategy)
 
@@ -240,9 +234,7 @@ class DataProcessor:
         }
 
         if "spell_type" in df.columns:
-            df = normalize_categorical(
-                df, {"spell_type": spell_type_mapping}
-            )
+            df = normalize_categorical(df, {"spell_type": spell_type_mapping})
 
         # Handle missing costs
         if "fp_cost" in df.columns:
@@ -291,7 +283,7 @@ class DataProcessor:
 
     def process_dataset(
         self, dataset_name: str, force: bool = False, dry_run: bool = False
-    ) -> Dict[str, Any]:
+    ) -> ProcessingResult:
         """Process a single dataset.
 
         Args:
@@ -309,19 +301,19 @@ class DataProcessor:
             logger.warning(f"No raw files found for {dataset_name}")
             return {"status": "skipped", "reason": "no_raw_files"}
 
-        results = {"status": "success", "files_processed": []}
+        files_processed: list[dict[str, Any]] = []
+        results: ProcessingResult = {
+            "status": "success",
+            "files_processed": files_processed,
+        }
 
         for raw_file in raw_files:
             file_stem = raw_file.stem
-            output_file = (
-                self.processed_dir / dataset_name / f"{file_stem}.parquet"
-            )
+            output_file = self.processed_dir / dataset_name / f"{file_stem}.parquet"
             cache_file = self.cache_dir / f"{dataset_name}.json"
 
             # Check if processing needed
-            if not force and not needs_processing(
-                raw_file, output_file, cache_file
-            ):
+            if not force and not needs_processing(raw_file, output_file, cache_file):
                 logger.info(f"Skipping {raw_file.name} (up-to-date)")
                 continue
 
@@ -338,9 +330,7 @@ class DataProcessor:
                 schema = get_dataset_schema(dataset_name)
                 if schema:
                     logger.info("Validating schema...")
-                    is_valid, error_msg, validated_df = validate_dataframe(
-                        df, schema
-                    )
+                    is_valid, error_msg, validated_df = validate_dataframe(df, schema)
                     if not is_valid:
                         logger.error(f"Schema validation failed: {error_msg}")
                         results["status"] = "failed"
@@ -350,10 +340,7 @@ class DataProcessor:
                     df = validated_df
                     logger.info("Schema validation passed")
                 else:
-                    logger.warning(
-                        f"No schema found for {dataset_name}, skipping "
-                        "validation"
-                    )
+                    logger.warning(f"No schema found for {dataset_name}, skipping " "validation")
 
                 # Get stats
                 stats = get_processing_stats(df)
@@ -375,15 +362,13 @@ class DataProcessor:
                 )
 
             except Exception as e:
-                logger.error(f"Error processing {raw_file}: {e}", exc_info=True)
+                logger.error("Error processing %s: %s", raw_file, e, exc_info=True)
                 results["status"] = "failed"
                 results["error"] = str(e)
 
         return results
 
-    def process_all(
-        self, force: bool = False, dry_run: bool = False
-    ) -> Dict[str, Any]:
+    def process_all(self, force: bool = False, dry_run: bool = False) -> ProcessingResult:
         """Process all datasets defined in config.
 
         Args:
@@ -394,11 +379,9 @@ class DataProcessor:
             Overall processing statistics
         """
         datasets = self.config.get("datasets", [])
-        skip_disabled = self.config.get("settings", {}).get(
-            "skip_disabled", True
-        )
+        skip_disabled = self.config.get("settings", {}).get("skip_disabled", True)
 
-        results = {"datasets": {}, "summary": {}}
+        results: ProcessingResult = {"datasets": {}, "summary": {}}
 
         for dataset in datasets:
             name = dataset.get("name")
@@ -424,16 +407,8 @@ class DataProcessor:
 
         # Generate summary
         total = len(results["datasets"])
-        succeeded = sum(
-            1
-            for r in results["datasets"].values()
-            if r.get("status") == "success"
-        )
-        failed = sum(
-            1
-            for r in results["datasets"].values()
-            if r.get("status") == "failed"
-        )
+        succeeded = sum(1 for r in results["datasets"].values() if r.get("status") == "success")
+        failed = sum(1 for r in results["datasets"].values() if r.get("status") == "failed")
         skipped = total - succeeded - failed
 
         results["summary"] = {
@@ -444,3 +419,54 @@ class DataProcessor:
         }
 
         return results
+
+    def get_pending_datasets(self, force: bool = False) -> dict[str, dict[str, Any]]:
+        """Return datasets that require processing.
+
+        Args:
+            force: When True, treat every dataset with raw files as pending.
+
+        Returns:
+            Mapping of dataset name to metadata describing why it needs
+            processing and which raw files triggered the decision.
+        """
+
+        datasets = self.config.get("datasets", [])
+        skip_disabled = self.config.get("settings", {}).get("skip_disabled", True)
+        pending: dict[str, dict[str, Any]] = {}
+
+        for dataset in datasets:
+            name = dataset.get("name")
+            enabled = dataset.get("enabled", True)
+
+            if not name:
+                continue
+
+            if not enabled and skip_disabled:
+                continue
+
+            raw_files = self._get_dataset_files(name)
+            if not raw_files:
+                continue
+
+            if force:
+                pending[name] = {
+                    "reason": "force",
+                    "files": [str(path) for path in raw_files],
+                }
+                continue
+
+            cache_file = self.cache_dir / f"{name}.json"
+            files_needing: list[str] = []
+            for raw_file in raw_files:
+                output_file = self.processed_dir / name / f"{raw_file.stem}.parquet"
+                if needs_processing(raw_file, output_file, cache_file):
+                    files_needing.append(str(raw_file))
+
+            if files_needing:
+                pending[name] = {
+                    "reason": "stale_files",
+                    "files": files_needing,
+                }
+
+        return pending
