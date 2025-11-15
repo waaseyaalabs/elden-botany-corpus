@@ -1,0 +1,156 @@
+name: Data Processing Pipeline
+
+on:
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Force reprocess all datasets'
+        required: false
+        type: boolean
+        default: false
+  pull_request:
+    paths:
+      - 'pipeline/**'
+      - 'scripts/process_data.py'
+      - 'config/kaggle_datasets.yml'
+      - 'tests/test_process_data.py'
+  schedule:
+    # Run every Monday at 4 AM UTC (after Kaggle ingestion)
+    - cron: '0 4 * * 1'
+
+permissions:
+  contents: read
+
+env:
+  PYTHON_VERSION: '3.12'
+
+jobs:
+  validate-processing:
+    name: Validate data processing (dry run)
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      
+      - name: Install Poetry
+        uses: snok/install-poetry@v1
+        with:
+          version: latest
+          virtualenvs-create: true
+          virtualenvs-in-project: true
+      
+      - name: Cache dependencies
+        uses: actions/cache@v4
+        with:
+          path: .venv
+          key: venv-${{ runner.os }}-${{ hashFiles('**/poetry.lock') }}
+      
+      - name: Install dependencies
+        run: |
+          poetry install --no-interaction
+      
+      - name: Create sample raw data
+        run: |
+          mkdir -p data/raw/test-dataset
+          cat > data/raw/test-dataset/weapons.csv << 'EOF'
+          id,name,weapon_type,damage_physical,weight
+          1,Longsword,sword,110,3.5
+          2,Katana,katana,103,5.5
+          3,Greatsword,greatsword,138,9.0
+          EOF
+      
+      - name: Run processing pipeline (dry run)
+        run: |
+          poetry run python scripts/process_data.py \
+            --dry-run \
+            --verbose
+      
+      - name: Run unit tests
+        run: |
+          poetry run pytest tests/test_process_data.py -v
+  
+  process-data:
+    name: Process datasets
+    runs-on: ubuntu-latest
+    needs: validate-processing
+    if: github.event_name == 'workflow_dispatch' || github.event_name == 'schedule'
+    
+    env:
+      KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+      KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      
+      - name: Install Poetry
+        uses: snok/install-poetry@v1
+        with:
+          version: latest
+          virtualenvs-create: true
+          virtualenvs-in-project: true
+      
+      - name: Install dependencies
+        run: |
+          poetry install --no-interaction
+      
+      - name: Configure Kaggle credentials
+        run: |
+          mkdir -p ~/.kaggle
+          cat <<EOF > ~/.kaggle/kaggle.json
+          {
+            "username": "${KAGGLE_USERNAME}",
+            "key": "${KAGGLE_KEY}"
+          }
+          EOF
+          chmod 600 ~/.kaggle/kaggle.json
+      
+      - name: Download Kaggle datasets
+        run: |
+          poetry run python -m scripts.download_kaggle_dataset \
+            --config config/kaggle_datasets.yml \
+            --output-dir data/raw \
+            --verbose
+        continue-on-error: true
+      
+      - name: Process datasets
+        run: |
+          FORCE_FLAG=""
+          if [ "${{ github.event.inputs.force }}" == "true" ]; then
+            FORCE_FLAG="--force"
+          fi
+          
+          poetry run python scripts/process_data.py \
+            --config config/kaggle_datasets.yml \
+            --raw-dir data/raw \
+            --processed-dir data/processed \
+            --output-stats processing-stats.json \
+            --verbose \
+            ${FORCE_FLAG}
+      
+      - name: Upload processing statistics
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: processing-stats
+          path: processing-stats.json
+          retention-days: 30
+      
+      - name: Upload processed data (sample)
+        uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: processed-data-sample
+          path: data/processed/**/*.parquet
+          retention-days: 7

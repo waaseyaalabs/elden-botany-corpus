@@ -131,10 +131,24 @@ jobs:
       run: |
         poetry install --no-interaction
     
+    - name: Configure Kaggle credentials
+      if: ${{ secrets.KAGGLE_USERNAME != '' && secrets.KAGGLE_KEY != '' }}
+      run: |
+        mkdir -p ~/.kaggle
+        cat <<EOF > ~/.kaggle/kaggle.json
+        {
+          "username": "${{ secrets.KAGGLE_USERNAME }}",
+          "key": "${{ secrets.KAGGLE_KEY }}"
+        }
+        EOF
+        chmod 600 ~/.kaggle/kaggle.json
+    
     - name: Run integration tests
       env:
         RUN_INTEGRATION: "1"
         POSTGRES_DSN: postgresql://test_user:test_password@localhost:5432/test_db
+        KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+        KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
       run: |
         poetry run pytest -v -m integration --cov=corpus --cov-report=xml --cov-report=term
     

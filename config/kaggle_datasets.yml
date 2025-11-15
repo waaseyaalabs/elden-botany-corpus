@@ -1,0 +1,55 @@
+# Kaggle Datasets Configuration
+# 
+# This file defines which Kaggle datasets to download and where to place them.
+# Each dataset entry specifies the owner, slug, and optionally specific files.
+#
+# Usage:
+#   python -m scripts.download_kaggle_dataset \
+#     --config config/kaggle_datasets.yml \
+#     --output-dir data/raw
+
+datasets:
+  # Example: Elden Ring data from a hypothetical Kaggle dataset
+  # Replace with actual Kaggle dataset slugs you want to use
+  - name: "elden-ring-items"
+    owner: "example-owner"
+    slug: "elden-ring-dataset"
+    description: "Elden Ring items, weapons, armor, and spells dataset"
+    files:
+      # If files is empty or omitted, downloads all files in the dataset
+      # Specify individual files to download only those:
+      - "items.csv"
+      - "weapons.json"
+      - "armor.csv"
+      - "spells.json"
+    enabled: true
+
+  # Example: Additional dataset for boss information
+  - name: "elden-ring-bosses"
+    owner: "another-owner"
+    slug: "elden-ring-bosses"
+    description: "Elden Ring boss encounters and drop tables"
+    files: []  # Empty list = download all files
+    enabled: false  # Set to true when ready to use
+
+  # Example: Community-contributed dataset
+  - name: "elden-ring-locations"
+    owner: "community"
+    slug: "elden-ring-locations-map"
+    description: "Elden Ring map locations and coordinates"
+    # files not specified = download all files
+    enabled: false
+
+# Global settings
+settings:
+  # Whether to skip datasets with enabled: false
+  skip_disabled: true
+  
+  # Whether to verify file integrity after download (if available)
+  verify_integrity: true
+  
+  # Default timeout for downloads (seconds)
+  download_timeout: 300
+  
+  # Whether to unzip downloaded files automatically
+  auto_unzip: true
