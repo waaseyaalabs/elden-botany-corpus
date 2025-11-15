@@ -138,7 +138,7 @@ Examples:
 
     pending = processor.get_pending_datasets(force=args.force)
     if args.force:
-        logger.info("Force flag enabled; all datasets with raw files will " "be processed.")
+        logger.info("Force flag enabled; processing every dataset.")
     elif pending:
         logger.info("Detected %d dataset(s) with stale raw files:", len(pending))
         for dataset, payload in pending.items():

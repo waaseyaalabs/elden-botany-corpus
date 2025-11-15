@@ -7,7 +7,7 @@ on:
     paths:
       - 'pipeline/**'
       - 'scripts/process_data.py'
-      - 'config/kaggle_datasets.yml'
+      - 'pipelines/**'
       - 'docs/data-processing.md'
       - '.github/workflows/process-data.yml'
       - 'tests/test_process_data.py'
@@ -23,7 +23,7 @@ on:
     paths:
       - 'pipeline/**'
       - 'scripts/process_data.py'
-      - 'config/kaggle_datasets.yml'
+      - 'pipelines/**'
       - 'tests/test_process_data.py'
       - 'tests/test_processing_pending.py'
   schedule:
