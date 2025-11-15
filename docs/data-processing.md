@@ -36,6 +36,8 @@ scripts/
 └── process_data.py   # CLI entrypoint
 ```
 
+> **Version control:** `data/raw/` and `data/processed/` only track `.gitkeep` placeholders so locally generated datasets stay out of commits by default.
+
 ## Schemas
 
 The pipeline defines strict schemas for Elden Ring datasets using [Pandera](https://pandera.readthedocs.io/):
@@ -192,6 +194,8 @@ result = processor.process_dataset("elden-ring-weapons")
 ## CI/CD Integration
 
 The pipeline runs in GitHub Actions with two jobs:
+
+- A workflow-level concurrency group (`process-data-${{ github.ref }}`) ensures only one run per branch executes at a time; newer pushes cancel any in-progress runs.
 
 ### 1. Validate Processing (Dry Run)
 Runs on:

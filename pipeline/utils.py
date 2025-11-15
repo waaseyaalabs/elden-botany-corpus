@@ -170,30 +170,28 @@ def needs_processing(
     Returns:
         True if processing is needed
     """
-    # Processed file doesn't exist
+    # Processed file doesn't exist yet
     if not processed_path.exists():
         return True
 
-    # Raw file is newer than processed
-    if raw_path.stat().st_mtime > processed_path.stat().st_mtime:
-        return True
-
-    # Check cache if available
+    cached_hash: Optional[str] = None
     if cache_file and cache_file.exists():
         try:
             with open(cache_file) as f:
                 cache = json.load(f)
-
-            raw_hash = calculate_file_hash(raw_path)
             cached_hash = cache.get(str(raw_path))
-
-            if raw_hash != cached_hash:
-                return True
         except Exception:
-            # If cache check fails, assume processing needed
-            return True
+            cached_hash = None
 
-    return False
+    if cached_hash is not None:
+        try:
+            raw_hash = calculate_file_hash(raw_path)
+        except Exception:
+            return True
+        return raw_hash != cached_hash
+
+    # Fall back to modification time when no cache exists
+    return raw_path.stat().st_mtime > processed_path.stat().st_mtime
 
 
 def update_cache(cache_file: Path, file_path: Path):

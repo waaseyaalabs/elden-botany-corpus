@@ -24,6 +24,10 @@ permissions:
 env:
   PYTHON_VERSION: '3.12'
 
+concurrency:
+  group: process-data-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   validate-processing:
     name: Validate data processing (dry run)
