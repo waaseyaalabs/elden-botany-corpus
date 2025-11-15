@@ -3,6 +3,7 @@
 import os
 
 import pytest
+
 from corpus.ingest_kaggle import KaggleIngester
 
 

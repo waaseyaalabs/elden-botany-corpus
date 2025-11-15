@@ -3,6 +3,7 @@
 import os
 
 import pytest
+
 from corpus.models import CorpusChunk, CorpusDocument
 
 

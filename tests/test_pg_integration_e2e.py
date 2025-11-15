@@ -140,14 +140,9 @@ def test_pgvector_schema_and_queries() -> None:
                     false,
                     %s::vector
                 )
-                RETURNING id
             """,
                 (chunk_id, doc_id, test_embedding),
             )
-            chunk_result = cur.fetchone()
-            assert chunk_result is not None, "Chunk insertion failed"
-            chunk_id = chunk_result[0]
-            assert chunk_id is not None, "Chunk insertion failed"
 
             # ======= TEST: Full-Text Search =======
             # Should find the row with "legendary" in text
@@ -162,9 +157,9 @@ def test_pgvector_schema_and_queries() -> None:
             fts_results = cur.fetchall()
             assert len(fts_results) == 1, f"Expected 1 FTS result, got {len(fts_results)}"
             assert fts_results[0][0] == chunk_id, "FTS returned wrong chunk"
-            assert (
-                "legendary" in fts_results[0][2].lower()
-            ), "FTS result doesn't contain search term"
+            assert "legendary" in fts_results[0][2].lower(), (
+                "FTS result doesn't contain search term"
+            )
 
             # ======= TEST: Vector Similarity Search (HNSW) =======
             # Search for nearest neighbor (should be the same row we inserted)
@@ -183,9 +178,9 @@ def test_pgvector_schema_and_queries() -> None:
             knn_result = cur.fetchone()
             assert knn_result is not None, "Vector KNN query returned no results"
             assert knn_result[0] == chunk_id, "KNN returned wrong chunk (expected exact match)"
-            assert (
-                knn_result[2] < 0.001
-            ), f"Distance should be ~0 for exact match, got {knn_result[2]}"
+            assert knn_result[2] < 0.001, (
+                f"Distance should be ~0 for exact match, got {knn_result[2]}"
+            )
 
             # ======= TEST: JSONB Metadata Query =======
             cur.execute(
