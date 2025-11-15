@@ -53,7 +53,7 @@ jobs:
       
       - name: Install dependencies
         run: |
-          poetry install --no-interaction --no-root
+          poetry install --no-interaction
       
       - name: Create sample raw data
         run: |
@@ -103,7 +103,7 @@ jobs:
       
       - name: Install dependencies
         run: |
-          poetry install --no-interaction --no-root
+          poetry install --no-interaction
       
       - name: Configure Kaggle credentials
         run: |
