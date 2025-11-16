@@ -36,3 +36,6 @@ settings:
   
   # Whether to unzip downloaded files automatically
   auto_unzip: true
+
+  # Number of worker processes for dataset processing (1 keeps serial)
+  process_workers: 1

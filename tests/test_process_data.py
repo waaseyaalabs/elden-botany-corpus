@@ -1,5 +1,7 @@
 """Tests for data processing pipeline."""
 
+import os
+import textwrap
 import time
 
 import pandas as pd
@@ -196,22 +198,25 @@ class TestDataProcessor:
     def config_file(self, temp_dirs):
         """Create test configuration file."""
         config_path = temp_dirs["config_dir"] / "test_config.yml"
-        config_content = """
-datasets:
-  - name: "test-weapons"
-    owner: "test"
-    slug: "test-weapons"
-    enabled: true
+        config_content = textwrap.dedent(
+            """
+            datasets:
+              - name: "test-weapons"
+                owner: "test"
+                slug: "test-weapons"
+                enabled: true
 
-  - name: "test-bosses"
-    owner: "test"
-    slug: "test-bosses"
-    enabled: false
+              - name: "test-bosses"
+                owner: "test"
+                slug: "test-bosses"
+                enabled: false
 
-settings:
-  skip_disabled: true
-  auto_unzip: true
-"""
+            settings:
+              skip_disabled: true
+              auto_unzip: true
+              process_workers: 1
+            """
+        )
         config_path.write_text(config_content)
         return config_path
 
@@ -375,6 +380,53 @@ settings:
         # Check summary
         assert results["summary"]["succeeded"] == 1
         assert results["summary"]["skipped"] == 1
+
+    def test_process_all_parallel_dispatches(
+        self,
+        config_file,
+        temp_dirs,
+        sample_weapons_csv,
+        monkeypatch,
+    ):
+        """Ensure parallel helper is used when multiple datasets and workers>1."""
+        processor = DataProcessor(
+            config_path=config_file,
+            raw_dir=temp_dirs["raw_dir"],
+            processed_dir=temp_dirs["processed_dir"],
+        )
+
+        processor.config["datasets"].append({"name": "test-extra", "enabled": True})
+
+        captured: dict[str, object] = {}
+
+        def fake_parallel(self, dataset_names, force, dry_run, max_workers):
+            captured["names"] = dataset_names
+            captured["force"] = force
+            captured["dry_run"] = dry_run
+            captured["max_workers"] = max_workers
+            return {name: {"status": "success", "files_processed": []} for name in dataset_names}
+
+        monkeypatch.setattr(DataProcessor, "_process_datasets_parallel", fake_parallel)
+
+        results = processor.process_all(workers=2)
+
+        assert captured["names"] == ["test-weapons", "test-extra"]
+        assert captured["max_workers"] == 2
+        assert results["datasets"]["test-weapons"]["status"] == "success"
+        assert results["datasets"]["test-extra"]["status"] == "success"
+
+    def test_resolve_worker_count_auto_cpu(self, config_file, temp_dirs):
+        """Auto worker value should fall back to CPU count when <=0."""
+        processor = DataProcessor(
+            config_path=config_file,
+            raw_dir=temp_dirs["raw_dir"],
+            processed_dir=temp_dirs["processed_dir"],
+        )
+
+        processor.config.setdefault("settings", {})["process_workers"] = 0
+
+        assert processor._resolve_worker_count(None) == max(os.cpu_count() or 1, 1)
+        assert processor._resolve_worker_count(3) == 3
 
     def test_transform_weapons_normalizes_types(self, config_file, temp_dirs):
         """Test weapon type normalization."""

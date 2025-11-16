@@ -7,6 +7,7 @@ import polars as pl
 
 from corpus.config import settings
 from corpus.models import RawEntity
+from corpus.quality import QualityReporter
 from corpus.reconcile import entities_to_dataframe
 from corpus.utils import (
     MetadataTracker,
@@ -18,16 +19,28 @@ from corpus.utils import (
 class CorpusCurator:
     """Curate and export final corpus datasets."""
 
-    def __init__(self, output_dir: Path | None = None) -> None:
+    def __init__(
+        self,
+        output_dir: Path | None = None,
+        enable_quality_reports: bool = True,
+    ) -> None:
         """
         Initialize curator.
 
         Args:
             output_dir: Output directory (default: settings.curated_dir)
+            enable_quality_reports: Generate HTML/JSON quality reports for
+                each curated dataset when True.
         """
         self.output_dir = output_dir or settings.curated_dir
         self.output_dir.mkdir(parents=True, exist_ok=True)
         self.metadata = MetadataTracker()
+        self.quality_reporter: QualityReporter | None = None
+        if enable_quality_reports:
+            self.quality_reporter = QualityReporter(
+                output_dir=self.output_dir / "quality",
+                relative_root=self.output_dir,
+            )
 
     def curate(
         self,
@@ -53,7 +66,9 @@ class CorpusCurator:
         self.metadata.add_row_count("total_entities", len(df))
 
         # Count by entity type
-        entity_counts = df.group_by("entity_type").agg(pl.count().alias("count"))
+        entity_counts = df.group_by("entity_type").agg(
+            pl.count().alias("count"),
+        )
         for row in entity_counts.iter_rows(named=True):
             self.metadata.add_entity_count(row["entity_type"], row["count"])
 
@@ -123,6 +138,8 @@ class CorpusCurator:
         save_csv(df_csv, csv_path)
         print(f"Saved: {csv_path}")
 
+        self._record_quality_report("unified", df)
+
     def export_by_entity_type(self, df: pl.DataFrame) -> None:
         """
         Export separate files per entity type.
@@ -166,6 +183,8 @@ class CorpusCurator:
 
             print(f"Exported {len(entity_df)} {entity_type} entities")
 
+            self._record_quality_report(entity_type, entity_df)
+
     def export_metadata(self) -> None:
         """Export metadata about the curation process."""
         metadata_path = self.output_dir / "metadata.json"
@@ -188,9 +207,24 @@ class CorpusCurator:
         save_csv(df, csv_path)
         print(f"Saved {len(df)} unmapped texts: {csv_path}")
 
+    def _record_quality_report(
+        self,
+        dataset_name: str,
+        df: pl.DataFrame,
+    ) -> None:
+        """Generate and track quality reports for curated datasets."""
+
+        if not self.quality_reporter:
+            return
+
+        summary = self.quality_reporter.generate_report(dataset_name, df)
+        self.metadata.add_quality_report(dataset_name, summary)
+
 
 def curate_corpus(
-    entities: list[RawEntity], unmapped_texts: list[RawEntity] | None = None
+    entities: list[RawEntity],
+    unmapped_texts: list[RawEntity] | None = None,
+    enable_quality_reports: bool = True,
 ) -> pl.DataFrame:
     """
     Main curation pipeline.
@@ -198,11 +232,13 @@ def curate_corpus(
     Args:
         entities: Reconciled entities
         unmapped_texts: Unmapped DLC text snippets
+        enable_quality_reports: When True, emit HTML/JSON quality diagnostics
+            for unified + per-entity exports.
 
     Returns:
         Unified DataFrame
     """
-    curator = CorpusCurator()
+    curator = CorpusCurator(enable_quality_reports=enable_quality_reports)
 
     # Curate
     df = curator.curate(entities, unmapped_texts)

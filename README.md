@@ -15,6 +15,7 @@ A curated, provenance-tracked dataset of **Elden Ring** game data (base game + S
 - **Fuzzy Text Matching**: DLC text dump integration using Levenshtein distance
 - **PostgreSQL + pgvector**: Ready for semantic search with vector embeddings
 - **Export Formats**: Parquet (partitioned), CSV, and direct Postgres loading
+- **Quality Diagnostics**: HTML/JSON profiling for every curated dataset
 - **Automated Refresh**: GitHub Actions workflow for nightly updates
 
 ## 📊 Data Sources
@@ -72,6 +73,7 @@ elden-botany-corpus/
 │       ├── unified.parquet  # Main output
 │       ├── unified.csv
 │       ├── metadata.json    # Provenance & stats
+│       ├── quality/         # HTML/JSON profiling artifacts
 │       └── unmapped_dlc_text.csv  # Unmatched texts for review
 ├── docker/                  # Docker setup
 │   ├── Dockerfile
@@ -128,7 +130,9 @@ poetry run corpus fetch --all
 poetry run corpus curate
 ```
 
-**Output**: `data/curated/unified.parquet` (~5-10MB) with all entities.
+**Output**: `data/curated/unified.parquet` (~5-10MB) with all entities, plus
+`data/curated/quality/*.json|html` containing per-dataset profiling summaries that
+are referenced inside `data/curated/metadata.json`.
 
 ### 4. (Optional) Load to PostgreSQL
 
@@ -151,7 +155,8 @@ corpus fetch --base --dlc             # Only Kaggle
 corpus fetch --github --impalers      # Fallback + DLC text
 
 # Curate corpus (reconcile + dedupe + export)
-corpus curate
+corpus curate                 # writes reports under data/curated/quality/
+corpus curate --no-quality    # skip HTML/JSON profiling
 
 # Load to PostgreSQL
 corpus load --dsn <POSTGRES_DSN> --create-schema --embed openai
