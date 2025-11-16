@@ -241,3 +241,68 @@ pytest tests/ -q                       # ✅ 16 passed, 18 skipped
 ---
 
 **Conclusion**: The ETL and database schema scaffold is **complete and validated**. All acceptance criteria met. Ready for PR submission.
+
+---
+
+# Full Corpus Build - Validation Summary
+
+**Date**: November 16, 2025  
+**Feature**: WIP #16 – Generate first full Elden Ring corpus  
+**Status**: ✅ **Complete (local build + load)**
+
+---
+
+## 🧪 Run Overview
+
+- ✅ **Environment**: Poetry virtualenv (`.venv`) activated via `poetry run …`
+- ✅ **Kaggle Credentials**: Pulled from GitHub-hosted secrets (`~/.kaggle/kaggle.json`) and written to `.env` for CLI consumption
+- ✅ **Docker Compose**: Installed `docker-compose` (apt package) to spin up pgvector Postgres via `docker/compose.example.yml`
+
+### Commands Executed
+
+1. `poetry run corpus fetch --all`
+  - Kaggle Base: **2,246** entities (warning: missing `ashes_of_war.csv` in upstream archive)
+  - Kaggle DLC: **3,637** entities
+  - GitHub API cache: **2,283** entities
+  - Impalers Archive: **467** DLC text snippets
+2. `poetry run corpus curate`
+  - Reconciled **4,233** unique entities (Base: 641, DLC: 3,592)
+  - Exported `data/curated/unified.parquet`, `unified.csv`, per-entity CSVs, and `metadata.json`
+  - All **467** Impalers snippets remained unmapped (captured in `data/curated/unmapped_dlc_text.csv`)
+3. `docker-compose -f docker/compose.example.yml up -d postgres`
+  - Container `elden-postgres` healthy on `localhost:5432`
+4. `poetry run corpus load --dsn postgresql://elden:elden_password@localhost:5432/elden --create-schema`
+  - Schema auto-created from `sql/*.sql`
+  - Inserted **4,233** rows into `elden.corpus_chunk`
+
+### Outputs Verified
+
+- `data/curated/unified.parquet` (≈5–10 MB) & `unified.csv`
+- `data/curated/metadata.json` (row counts + provenance summary)
+- `data/curated/unmapped_dlc_text.csv` (467 records for manual review)
+- Postgres tables populated in local pgvector instance
+
+## ⚠️ Observations & Gaps
+
+| Area | Finding | Impact |
+| --- | --- | --- |
+| Kaggle Base Dataset | `ashes_of_war.csv` absent in cached download | No base-game Ashes; coverage relies on DLC + GitHub fallback |
+| Impalers Matching | Fuzzy matching threshold (0.86) produced **0** matches for DLC text snippets | Dialogue/descriptions remain out-of-band; manual curation needed |
+| Docker Compose Vars | `docker-compose` warns about unset `KAGGLE_*`/`OPENAI_API_KEY` (defaults to blank) | Safe for local Postgres-only runs, but worth documenting |
+
+## 🔮 Future Enhancements (as requested in issue)
+
+1. **Parallelized ingestion + curation** – Use Polars lazy execution or multiprocessing when iterating large DLC tables to cut runtime (~2–3s today but will grow with future sources).
+2. **Data-quality reporting** – Emit summary tables (missing columns, null ratios, provenance mixes) into `metadata.json` and optionally Markdown under `docs/` for auditability.
+3. **Schema versioning & lineage** – Capture schema version + git SHA in `metadata.json` and add a `schema_version` column inside `elden.corpus_document` for downstream reproducibility.
+4. **Incremental + lineage-aware refreshes** – Track source file hashes (already in `metadata.json` placeholder) and implement `poetry run corpus fetch --incremental` to skip unchanged datasets.
+5. **Impalers/NPC mapping improvements** – Lower/adjust fuzzy threshold per entity type, add custom dictionaries, or integrate manual overrides to reduce the 467 unmapped entries.
+
+## 📎 Artifacts to Share in Issue #16
+
+- Fetch + curate logs (see above command outputs)
+- Postgres load confirmation (`poetry run corpus load …`)
+- `data/curated/metadata.json` excerpt for row counts
+- Noted gaps + proposed follow-ups (bullets above)
+
+**Conclusion**: The first full Elden Ring corpus has been fetched, curated, and loaded into Postgres locally. Outstanding items revolve around enrichment (Impalers mapping) and future optimization work.
