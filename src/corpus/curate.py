@@ -102,11 +102,19 @@ class CorpusCurator:
         # Convert meta_json and sources to JSON strings for CSV
         df_csv = df.with_columns(
             [
-                pl.col("meta_json")
-                .map_elements(lambda x: json.dumps(x) if x else "{}", return_dtype=pl.Utf8)
+                pl.when(pl.col("meta_json").is_null())
+                .then(pl.lit("{}"))
+                .otherwise(pl.col("meta_json").struct.json_encode())
                 .alias("meta_json"),
                 pl.col("sources")
-                .map_elements(lambda x: json.dumps(x) if x else "[]", return_dtype=pl.Utf8)
+                .map_elements(
+                    lambda x: (
+                        json.dumps(x.to_list())
+                        if isinstance(x, pl.Series)
+                        else json.dumps(x if x is not None else [])
+                    ),
+                    return_dtype=pl.Utf8,
+                )
                 .alias("sources"),
             ]
         )
@@ -136,11 +144,19 @@ class CorpusCurator:
             # CSV
             entity_df_csv = entity_df.with_columns(
                 [
-                    pl.col("meta_json")
-                    .map_elements(lambda x: json.dumps(x) if x else "{}", return_dtype=pl.Utf8)
+                    pl.when(pl.col("meta_json").is_null())
+                    .then(pl.lit("{}"))
+                    .otherwise(pl.col("meta_json").struct.json_encode())
                     .alias("meta_json"),
                     pl.col("sources")
-                    .map_elements(lambda x: json.dumps(x) if x else "[]", return_dtype=pl.Utf8)
+                    .map_elements(
+                        lambda x: (
+                            json.dumps(x.to_list())
+                            if isinstance(x, pl.Series)
+                            else json.dumps(x if x is not None else [])
+                        ),
+                        return_dtype=pl.Utf8,
+                    )
                     .alias("sources"),
                 ]
             )

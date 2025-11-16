@@ -1,5 +1,6 @@
 """Kaggle dataset ingestion module."""
 
+import re
 import zipfile
 from pathlib import Path
 from typing import Any
@@ -18,7 +19,9 @@ from corpus.utils import (
 
 # Kaggle dataset identifiers
 KAGGLE_BASE_DATASET = "robikscube/elden-ring-ultimate-dataset"
-KAGGLE_DLC_DATASET = "pedroaltobelli96/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc"
+KAGGLE_DLC_DATASET = (
+    "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc"
+)
 
 # Expected tables from base dataset
 BASE_TABLES = [
@@ -47,7 +50,12 @@ class KaggleIngester:
         self.base_dir = settings.raw_dir / "kaggle"
         self.base_dir.mkdir(parents=True, exist_ok=True)
 
-    def download_dataset(self, dataset: str, output_dir: Path, force: bool = False) -> None:
+    def download_dataset(
+        self,
+        dataset: str,
+        output_dir: Path,
+        force: bool = False,
+    ) -> None:
         """
         Download a Kaggle dataset using the Kaggle API.
 
@@ -58,7 +66,8 @@ class KaggleIngester:
         """
         if not settings.kaggle_credentials_set:
             raise ValueError(
-                "Kaggle credentials not set. Set KAGGLE_USERNAME and KAGGLE_KEY in .env"
+                "Kaggle credentials not set. Set KAGGLE_USERNAME "
+                "and KAGGLE_KEY in .env"
             )
 
         # Write kaggle config
@@ -67,7 +76,8 @@ class KaggleIngester:
         output_dir.mkdir(parents=True, exist_ok=True)
 
         # Check if already downloaded
-        if output_dir.exists() and list(output_dir.glob("*.csv")) and not force:
+        existing_csv = list(output_dir.rglob("*.csv"))
+        if output_dir.exists() and existing_csv and not force:
             print(f"Dataset {dataset} already downloaded to {output_dir}")
             return
 
@@ -78,7 +88,12 @@ class KaggleIngester:
             import kaggle
 
             kaggle.api.authenticate()
-            kaggle.api.dataset_download_files(dataset, path=output_dir, unzip=True, quiet=False)
+            kaggle.api.dataset_download_files(
+                dataset,
+                path=output_dir,
+                unzip=True,
+                quiet=False,
+            )
             print(f"Downloaded {dataset} to {output_dir}")
 
         except ImportError:
@@ -99,7 +114,12 @@ class KaggleIngester:
         total_size = int(response.headers.get("content-length", 0))
 
         with open(zip_path, "wb") as f:
-            with tqdm(total=total_size, unit="B", unit_scale=True, desc="Downloading") as pbar:
+            with tqdm(
+                total=total_size,
+                unit="B",
+                unit_scale=True,
+                desc="Downloading",
+            ) as pbar:
                 for chunk in response.iter_content(chunk_size=8192):
                     f.write(chunk)
                     pbar.update(len(chunk))
@@ -129,7 +149,7 @@ class KaggleIngester:
                 continue
 
             # Load CSV
-            df = pl.read_csv(csv_path)
+            df = pl.read_csv(csv_path, infer_schema_length=0)
             df = standardize_column_names(df)
 
             # Create provenance
@@ -140,9 +160,11 @@ class KaggleIngester:
             )
 
             # Convert to RawEntity
-            entity_type = table_name.rstrip("s")  # Remove plural
+            entity_type = self._to_entity_type(table_name)
             for row in progress_bar(
-                df.iter_rows(named=True), desc=f"Processing {table_name}", total=len(df)
+                df.iter_rows(named=True),
+                desc=f"Processing {table_name}",
+                total=len(df),
             ):
                 name = self._extract_name(row)
                 if not name:
@@ -176,13 +198,17 @@ class KaggleIngester:
         entities: list[RawEntity] = []
 
         # Find all CSV files
-        csv_files = list(output_dir.glob("*.csv"))
+        csv_files = sorted(output_dir.rglob("*.csv"))
+        if not csv_files:
+            print(f"Warning: No CSV files found in {output_dir}")
+            return entities
 
         for csv_path in csv_files:
-            table_name = csv_path.stem
+            table_name = self._normalize_table_name(csv_path.stem)
+            relative_path = csv_path.relative_to(output_dir)
 
             # Load CSV
-            df = pl.read_csv(csv_path)
+            df = pl.read_csv(csv_path, infer_schema_length=0)
             df = standardize_column_names(df)
 
             # Check if DLC column exists
@@ -191,14 +217,18 @@ class KaggleIngester:
             # Create provenance
             provenance = Provenance(
                 source="kaggle_dlc",
-                uri=f"kaggle://{KAGGLE_DLC_DATASET}/{table_name}.csv",
+                uri=(
+                    f"kaggle://{KAGGLE_DLC_DATASET}/{relative_path.as_posix()}"
+                ),
                 sha256=compute_file_hash(csv_path),
             )
 
             # Convert to RawEntity
-            entity_type = table_name.rstrip("s")  # Remove plural
+            entity_type = self._to_entity_type(table_name)
             for row in progress_bar(
-                df.iter_rows(named=True), desc=f"Processing {table_name}", total=len(df)
+                df.iter_rows(named=True),
+                desc=f"Processing {table_name}",
+                total=len(df),
             ):
                 name = self._extract_name(row)
                 if not name:
@@ -255,8 +285,41 @@ class KaggleIngester:
 
         return "\n\n".join(parts)
 
+    def _normalize_table_name(self, name: str) -> str:
+        """Convert raw filenames into snake_case for downstream usage."""
 
-def fetch_kaggle_data(include_base: bool = True, include_dlc: bool = True) -> list[RawEntity]:
+        normalized = name.replace("-", "_").replace(" ", "_")
+        normalized = re.sub(r"(?<!^)(?=[A-Z])", "_", normalized)
+        normalized = re.sub(r"__+", "_", normalized)
+        return normalized.lower().strip("_")
+
+    def _to_entity_type(self, table_name: str) -> str:
+        """Derive entity type with overrides for odd plurals."""
+
+        normalized = table_name.lower()
+        overrides = {
+            "ashes_of_war": "ash",
+            "spirit_ashes": "spirit",
+            "great_runes": "great_rune",
+            "crystal_tears": "crystal_tear",
+            "key_items": "key_item",
+            "upgrade_materials": "upgrade_material",
+            "weapons_upgrades": "weapon_upgrade",
+            "shields_upgrades": "shield_upgrade",
+            "whetblades": "whetblade",
+            "remembrances": "remembrance",
+        }
+
+        if normalized in overrides:
+            return overrides[normalized]
+
+        return normalized.rstrip("s")
+
+
+def fetch_kaggle_data(
+    include_base: bool = True,
+    include_dlc: bool = True,
+) -> list[RawEntity]:
     """
     Fetch Kaggle datasets.
 

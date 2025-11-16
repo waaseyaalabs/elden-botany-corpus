@@ -9,36 +9,19 @@
 #     --output-dir data/raw
 
 datasets:
-  # Example: Elden Ring data from a hypothetical Kaggle dataset
-  # Replace with actual Kaggle dataset slugs you want to use
-  - name: "elden-ring-items"
-    owner: "example-owner"
-    slug: "elden-ring-dataset"
-    description: "Elden Ring items, weapons, armor, and spells dataset"
-    files:
-      # If files is empty or omitted, downloads all files in the dataset
-      # Specify individual files to download only those:
-      - "items.csv"
-      - "weapons.json"
-      - "armor.csv"
-      - "spells.json"
+  - name: "elden-ring-base"
+    owner: "robikscube"
+    slug: "elden-ring-ultimate-dataset"
+    description: "Rob Mulla's Elden Ring Ultimate Dataset (base game coverage)"
+    files: []
     enabled: true
 
-  # Example: Additional dataset for boss information
-  - name: "elden-ring-bosses"
-    owner: "another-owner"
-    slug: "elden-ring-bosses"
-    description: "Elden Ring boss encounters and drop tables"
-    files: []  # Empty list = download all files
-    enabled: false  # Set to true when ready to use
-
-  # Example: Community-contributed dataset
-  - name: "elden-ring-locations"
-    owner: "community"
-    slug: "elden-ring-locations-map"
-    description: "Elden Ring map locations and coordinates"
-    # files not specified = download all files
-    enabled: false
+  - name: "elden-ring-dlc"
+    owner: "pedroaltobelli"
+    slug: "ultimate-elden-ring-with-shadow-of-the-erdtree-dlc"
+    description: "Pedro Altobelli's Ultimate Elden Ring dataset with Shadow of the Erdtree DLC"
+    files: []
+    enabled: true
 
 # Global settings
 settings:
