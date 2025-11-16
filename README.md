@@ -15,6 +15,7 @@ A curated, provenance-tracked dataset of **Elden Ring** game data (base game + S
 - **Fuzzy Text Matching**: DLC text dump integration using Levenshtein distance
 - **PostgreSQL + pgvector**: Ready for semantic search with vector embeddings
 - **Export Formats**: Parquet (partitioned), CSV, and direct Postgres loading
+- **Quality Reports**: JSON + HTML profiling emitted for every curated dataset
 - **Automated Refresh**: GitHub Actions workflow for nightly updates
 
 ## 📊 Data Sources
@@ -72,6 +73,7 @@ elden-botany-corpus/
 │       ├── unified.parquet  # Main output
 │       ├── unified.csv
 │       ├── metadata.json    # Provenance & stats
+│       ├── quality/         # HTML + JSON profiling per dataset
 │       └── unmapped_dlc_text.csv  # Unmatched texts for review
 ├── docker/                  # Docker setup
 │   ├── Dockerfile
@@ -128,7 +130,7 @@ poetry run corpus fetch --all
 poetry run corpus curate
 ```
 
-**Output**: `data/curated/unified.parquet` (~5-10MB) with all entities.
+**Output**: `data/curated/unified.parquet` (~5-10MB) with all entities. Quality diagnostics are co-located under `data/curated/quality/` and summarized in `data/curated/metadata.json`.
 
 ### 4. (Optional) Load to PostgreSQL
 
@@ -371,6 +373,13 @@ poetry run corpus fetch --all
 ```
 
 ## 📊 Data Quality
+
+### Automated Quality Reports
+
+- Each `corpus curate` run now emits JSON + HTML profiles under `data/curated/quality/` (one per unified + entity dataset).
+- Reports capture row counts, column-level null percentages, numeric min/max/mean/std, categorical top values, and a curated list of `alerts` for quick triage.
+- `data/curated/metadata.json` stores the same payload under `quality_reports`, so CI or downstream jobs can fail fast if an alert is present (e.g., `null_percent >= 50%`).
+- To enforce thresholds, parse the metadata file inside your automation and exit non-zero if any alert matches your rule set.
 
 ### Reconciliation Logic
 
