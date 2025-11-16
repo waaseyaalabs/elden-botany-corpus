@@ -1,5 +1,6 @@
 """Entity reconciliation and deduplication logic."""
 
+from datetime import datetime
 from typing import Any
 
 import Levenshtein
@@ -7,6 +8,7 @@ import polars as pl
 
 from corpus.config import settings
 from corpus.models import (
+    Provenance,
     RawEntity,
     create_slug,
     normalize_name_for_matching,
@@ -35,30 +37,31 @@ class EntityReconciler:
             entities: List of raw entities
             priority: Priority level (1 = highest)
         """
-        for entity in progress_bar(entities, desc=f"Adding entities (priority {priority})"):
+        for entity in progress_bar(
+            entities, desc=f"Adding entities (priority {priority})"
+        ):
             slug = entity.to_slug()
             key = f"{entity.entity_type}:{slug}"
 
             if key not in self.entity_map:
                 self.entity_map[key] = {
-                    "entity": entity,
+                    "entity": entity.model_copy(deep=True),
                     "priority": priority,
-                    "sources": [entity.provenance[0].source],
+                    "sources": self._unique_sources(entity.provenance),
                 }
-            else:
-                # Check if this source has higher priority
-                existing = self.entity_map[key]
-                if priority < existing["priority"]:
-                    # Replace with higher priority
-                    self.entity_map[key]["entity"] = entity
-                    self.entity_map[key]["priority"] = priority
+                continue
 
-                # Merge provenance
-                existing_sources = set(existing["sources"])
-                for prov in entity.provenance:
-                    if prov.source not in existing_sources:
-                        existing["sources"].append(prov.source)
-                        existing["entity"].provenance.append(prov)
+            entry = self.entity_map[key]
+            existing_entity: RawEntity = entry["entity"]
+
+            if priority < entry["priority"]:
+                # Preserve heritage before replacing the entity reference
+                previous_provenance = existing_entity.provenance
+                entry["entity"] = entity.model_copy(deep=True)
+                entry["priority"] = priority
+                self._merge_provenance(entry, previous_provenance)
+
+            self._merge_provenance(entry, entity.provenance)
 
     def get_reconciled_entities(self) -> list[RawEntity]:
         """
@@ -105,7 +108,9 @@ class EntityReconciler:
                 # Merge the text into matched entity
                 if snippet.description:
                     if matched_entity.description:
-                        matched_entity.description += "\n\n" + snippet.description
+                        matched_entity.description += (
+                            "\n\n" + snippet.description
+                        )
                     else:
                         matched_entity.description = snippet.description
 
@@ -153,6 +158,45 @@ class EntityReconciler:
                 best_match = (norm_name, entities[0][1])
 
         return best_match
+
+    @staticmethod
+    def _unique_sources(provenance: list[Provenance]) -> list[str]:
+        """Return provenance sources without duplicates while keeping order."""
+        seen: set[str] = set()
+        ordered_sources: list[str] = []
+        for prov in provenance:
+            if prov.source not in seen:
+                seen.add(prov.source)
+                ordered_sources.append(prov.source)
+        return ordered_sources
+
+    def _merge_provenance(
+        self, entry: dict[str, Any], provenance: list[Provenance]
+    ) -> None:
+        """Merge provenance records and source summary into an entry."""
+        if not provenance:
+            return
+
+        existing_sources = set(entry["sources"])
+        existing_prov_keys = {
+            self._provenance_key(prov) for prov in entry["entity"].provenance
+        }
+
+        for prov in provenance.copy():
+            prov_key = self._provenance_key(prov)
+            if prov.source not in existing_sources:
+                entry["sources"].append(prov.source)
+                existing_sources.add(prov.source)
+            if prov_key not in existing_prov_keys:
+                entry["entity"].provenance.append(prov.model_copy(deep=True))
+                existing_prov_keys.add(prov_key)
+
+    @staticmethod
+    def _provenance_key(
+        prov: Provenance,
+    ) -> tuple[str, str, str | None, datetime]:
+        """Generate a tuple that uniquely identifies a provenance record."""
+        return prov.source, prov.uri, prov.sha256, prov.retrieved_at
 
 
 def reconcile_all_sources(
@@ -212,7 +256,11 @@ def entities_to_dataframe(entities: list[RawEntity]) -> pl.DataFrame:
         slug = create_slug(entity.name)
 
         # Extract metadata from raw_data
-        meta = {k: v for k, v in entity.raw_data.items() if k not in ["name", "description"]}
+        meta = {
+            k: v
+            for k, v in entity.raw_data.items()
+            if k not in ["name", "description"]
+        }
 
         # Collect provenance sources
         sources = [prov.source for prov in entity.provenance]

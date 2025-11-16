@@ -23,6 +23,9 @@ You may cite Fextralife as reference in docs, but **do not crawl/scrape**.
 ### 5. Reproducibility > convenience
 All downloads are hashed; ETL is deterministic; any change opens an auto-PR with row counts + hashes.
 
+### 6. Prefer latest stable packages
+When adding a new dependency, pin it to the latest stable release available at the time of introduction and document the rationale so downstream automation can monitor for updates.
+
 ---
 
 ## Scope of Work

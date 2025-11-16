@@ -1,0 +1,46 @@
+{
+  "row_counts": {
+    "total_entities": 4233,
+    "dlc_entities": 3592,
+    "base_entities": 641
+  },
+  "file_hashes": {},
+  "entity_counts": {
+    "remembrance": 26,
+    "item": 446,
+    "sorcerie": 86,
+    "skill": 256,
+    "material": 102,
+    "tool": 35,
+    "npc": 119,
+    "key_item": 108,
+    "crystal_tear": 37,
+    "talisman": 155,
+    "classe": 13,
+    "location": 289,
+    "spirit": 87,
+    "ammo": 69,
+    "upgrade_material": 43,
+    "creature": 238,
+    "consumable": 207,
+    "weapon": 407,
+    "armor": 730,
+    "bosse": 165,
+    "shield": 79,
+    "ashe": 90,
+    "bell": 60,
+    "ash": 117,
+    "incantation": 134,
+    "multi": 16,
+    "great_rune": 9,
+    "whetblade": 6,
+    "cookbook": 104
+  },
+  "duplicates_removed": {},
+  "unmapped_texts": 467,
+  "provenance_summary": {
+    "kaggle_dlc": 3592,
+    "kaggle_base": 2215,
+    "github_api": 2253
+  }
+}
