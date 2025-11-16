@@ -59,7 +59,6 @@ class EntityReconciler:
                 previous_provenance = existing_entity.provenance
                 entry["entity"] = entity.model_copy(deep=True)
                 entry["priority"] = priority
-                existing_entity = entry["entity"]
                 self._merge_provenance(entry, previous_provenance)
 
             self._merge_provenance(entry, entity.provenance)
