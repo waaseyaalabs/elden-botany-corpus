@@ -15,7 +15,7 @@ A curated, provenance-tracked dataset of **Elden Ring** game data (base game + S
 - **Fuzzy Text Matching**: DLC text dump integration using Levenshtein distance
 - **PostgreSQL + pgvector**: Ready for semantic search with vector embeddings
 - **Export Formats**: Parquet (partitioned), CSV, and direct Postgres loading
-- **Quality Reports**: JSON + HTML profiling emitted for every curated dataset
+- **Quality Reports**: HTML/JSON profiling artifacts for every curated dataset
 - **Automated Refresh**: GitHub Actions workflow for nightly updates
 
 ## 📊 Data Sources
@@ -73,7 +73,7 @@ elden-botany-corpus/
 │       ├── unified.parquet  # Main output
 │       ├── unified.csv
 │       ├── metadata.json    # Provenance & stats
-│       ├── quality/         # HTML + JSON profiling per dataset
+│       ├── quality/         # HTML/JSON profiling artifacts
 │       └── unmapped_dlc_text.csv  # Unmatched texts for review
 ├── docker/                  # Docker setup
 │   ├── Dockerfile
@@ -88,11 +88,7 @@ elden-botany-corpus/
 
 ## 🚀 Quick Start
 
-### Prerequisites
-
-- **Python 3.11+** (Python 3.12 also supported)
-- **Poetry** (install: `curl -sSL https://install.python-poetry.org | python3 -`)
-- **Kaggle API credentials** (for dataset downloads)
+│       ├── quality/         # HTML/JSON profiling artifacts
 
 ### 1. Clone & Install
 
@@ -130,7 +126,7 @@ poetry run corpus fetch --all
 poetry run corpus curate
 ```
 
-**Output**: `data/curated/unified.parquet` (~5-10MB) with all entities. Quality diagnostics are co-located under `data/curated/quality/` and summarized in `data/curated/metadata.json`.
+**Output**: `data/curated/unified.parquet` (~5-10MB) with all entities. Per-dataset profiling summaries live under `data/curated/quality/*.json|html` and are referenced inside `data/curated/metadata.json`.
 
 ### 4. (Optional) Load to PostgreSQL
 
@@ -143,7 +139,7 @@ poetry run corpus load --dsn postgresql://elden:elden_password@localhost:5432/el
 ```
 
 ## 📖 Usage
-
+**Output**: `data/curated/unified.parquet` (~5-10MB) with all entities. Per-dataset profiling summaries live under `data/curated/quality/*.json|html` and are referenced inside `data/curated/metadata.json`.
 ### CLI Commands
 
 ```bash
@@ -153,7 +149,8 @@ corpus fetch --base --dlc             # Only Kaggle
 corpus fetch --github --impalers      # Fallback + DLC text
 
 # Curate corpus (reconcile + dedupe + export)
-corpus curate
+corpus curate                 # writes reports under data/curated/quality/
+corpus curate --no-quality    # skip HTML/JSON profiling
 
 # Load to PostgreSQL
 corpus load --dsn <POSTGRES_DSN> --create-schema --embed openai

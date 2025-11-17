@@ -153,10 +153,14 @@ class MetadataTracker:
         """Add provenance summary."""
         self.metadata["provenance_summary"][source] = count
 
-    def add_quality_report(self, dataset: str, report: dict[str, Any]) -> None:
-        """Attach quality report references for a dataset."""
+    def add_quality_report(
+        self,
+        dataset: str,
+        summary: dict[str, Any],
+    ) -> None:
+        """Register quality report artifact metadata."""
 
-        self.metadata["quality_reports"][dataset] = report
+        self.metadata["quality_reports"][dataset] = summary
 
     def save(self, file_path: Path) -> None:
         """Save metadata to JSON."""

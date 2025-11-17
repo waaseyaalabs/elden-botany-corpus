@@ -144,6 +144,11 @@ Dry run (validate without writing):
 python scripts/process_data.py --dry-run
 ```
 
+Use multiple worker processes (auto CPU detection when 0):
+```bash
+python scripts/process_data.py --workers 4
+```
+
 Custom paths:
 ```bash
 python scripts/process_data.py \
@@ -158,6 +163,30 @@ Save processing statistics:
 python scripts/process_data.py \
   --output-stats processing-stats.json
 ```
+
+### Parallel Execution
+
+Dataset processing now supports optional multiprocessing:
+
+- Pass `--workers N` to `scripts/process_data.py` to process datasets concurrently.
+- Use `--workers 0` to auto-detect CPU count or omit the flag to fall back to the
+  `settings.process_workers` value in `config/kaggle_datasets.yml` (default 1).
+- Serial execution remains the default to preserve deterministic ordering, but
+  multi-core machines see faster rebuilds when opting into concurrency.
+
+### Quality Diagnostics for Curated Data
+
+Running `poetry run corpus curate` now emits lightweight data-profiling reports for
+both the unified dataset and every per-entity export. The curator captures:
+
+- Overall row/column counts and average null percentages.
+- Per-column null percentages, numeric min/max/mean statistics, and the top
+  categorical values (with frequencies) when applicable.
+- HTML and JSON artifacts saved under `data/curated/quality/`, with relative
+  paths recorded in `data/curated/metadata.json` for downstream tooling.
+
+Disable report generation via `corpus curate --no-quality` if you only need the
+raw Parquet/CSV outputs.
 
 ### Change Detection & Dry Runs
 
@@ -447,7 +476,7 @@ poetry run pip install pandera pyarrow
 
 ## Future Enhancements
 
-- [ ] Parallel dataset processing (multiprocessing)
+- [x] Parallel dataset processing (multiprocessing)
 - [x] Data quality reports (profiling, stats)
 - [ ] Schema versioning and migration
 - [ ] Incremental processing for append-only datasets

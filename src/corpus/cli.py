@@ -91,13 +91,21 @@ def fetch(
 
 
 @main.command()
-def curate() -> None:
+@click.option(
+    "--quality/--no-quality",
+    default=True,
+    help="Generate HTML/JSON quality reports for curated datasets",
+)
+def curate(quality: bool) -> None:
     """Reconcile and curate corpus data."""
     try:
         # Re-fetch (should use cached data)
         click.echo("Loading cached data...")
 
-        kaggle_entities = fetch_kaggle_data(include_base=True, include_dlc=True)
+        kaggle_entities = fetch_kaggle_data(
+            include_base=True,
+            include_dlc=True,
+        )
         kaggle_base = [e for e in kaggle_entities if not e.is_dlc]
         kaggle_dlc = [e for e in kaggle_entities if e.is_dlc]
 
@@ -113,7 +121,11 @@ def curate() -> None:
         )
 
         # Curate and export
-        df = curate_corpus(entities, unmapped)
+        df = curate_corpus(
+            entities,
+            unmapped,
+            enable_quality_reports=quality,
+        )
 
         click.echo(f"\n✓ Curated {len(df)} entities")
         click.echo(f"  Output: {settings.curated_dir / 'unified.parquet'}")
@@ -168,7 +180,10 @@ def load(
             # Temporarily override settings
             original_provider = settings.embed_provider
             # Cast is safe because click.Choice validates the input
-            settings.embed_provider = cast(Literal["openai", "local", "none"], embed)
+            settings.embed_provider = cast(
+                Literal["openai", "local", "none"],
+                embed,
+            )
 
         load_to_postgres(
             dsn=dsn,

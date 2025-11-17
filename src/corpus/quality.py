@@ -2,12 +2,12 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass
 from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
 import polars as pl  # type: ignore[import]
+from polars import exceptions as pl_exceptions  # type: ignore[import]
 
 from corpus.config import settings
 from corpus.utils import save_json
@@ -39,32 +39,34 @@ def _is_categorical_dtype(dtype: pl.PolarsDataType) -> bool:
     return dtype in {pl.Utf8, pl.Categorical, pl.Boolean}
 
 
-@dataclass(slots=True)
-class ColumnQuality:
-    """Per-column quality metrics."""
-
-    name: str
-    dtype: str
-    null_percent: float
-    unique_count: int | None
-    summary: dict[str, Any]
-
-
 class QualityReporter:
     """Create machine-readable and HTML quality reports for curated outputs."""
 
     def __init__(
         self,
         output_dir: Path | None = None,
+        *,
         top_k: int = 5,
+        relative_root: Path | None = None,
         base_dir: Path | None = None,
     ) -> None:
         self.output_dir = output_dir or settings.curated_dir / "quality"
         self.output_dir.mkdir(parents=True, exist_ok=True)
         self.top_k = top_k
-        self.base_dir = base_dir or settings.curated_dir
+        self.relative_root = (
+            relative_root or base_dir or self.output_dir.parent
+        )
 
     def profile(self, dataset_name: str, df: pl.DataFrame) -> dict[str, Any]:
+        """Backward-compatible alias for :meth:`generate_report`."""
+
+        return self.generate_report(dataset_name, df)
+
+    def generate_report(
+        self,
+        dataset_name: str,
+        df: pl.DataFrame,
+    ) -> dict[str, Any]:
         """Generate quality report artifacts for a dataset."""
 
         summary = self._summarize(dataset_name, df)
@@ -75,8 +77,8 @@ class QualityReporter:
         save_json(summary, json_path, indent=2)
         html_path.write_text(self._render_html(summary), encoding="utf-8")
 
-        rel_json = self._relative_to_base(json_path)
-        rel_html = self._relative_to_base(html_path)
+        rel_json = self._relative_path(json_path)
+        rel_html = self._relative_path(html_path)
 
         report_refs = {
             "dataset": dataset_name,
@@ -89,8 +91,12 @@ class QualityReporter:
         }
 
         summary["reports"] = report_refs
+        summary["rows"] = summary["row_count"]
+        summary["columns"] = summary["column_count"]
+        summary["null_pct_avg"] = summary["overall_null_percent"]
+        summary["json_report"] = str(rel_json)
+        summary["html_report"] = str(rel_html)
         return summary
-
     # fmt: off
 
     def _summarize(
@@ -150,7 +156,10 @@ class QualityReporter:
                     ]
 
             if not non_null_series.is_empty():
-                unique_count = non_null_series.n_unique()
+                try:
+                    unique_count = non_null_series.n_unique()
+                except pl_exceptions.InvalidOperationError:
+                    unique_count = None
 
             if null_percent >= 50.0:
                 alerts.append(f"{column} has {null_percent:.2f}% nulls")
@@ -257,10 +266,10 @@ class QualityReporter:
 
     # fmt: on
 
-    def _relative_to_base(self, path: Path) -> Path:
+    def _relative_path(self, path: Path) -> Path:
         """Return a path relative to the curated base directory."""
 
         try:
-            return path.relative_to(self.base_dir)
+            return path.relative_to(self.relative_root)
         except ValueError:
             return path

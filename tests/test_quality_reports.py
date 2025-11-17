@@ -1,47 +1,70 @@
-"""Tests for quality report generation."""
+"""Tests for automated quality report generation."""
 
+from __future__ import annotations
+
+import json
 from pathlib import Path
 
 import polars as pl  # type: ignore[import]
+
 from corpus.curate import CorpusCurator  # type: ignore[import]
 from corpus.quality import QualityReporter  # type: ignore[import]
 
 
-def test_quality_reporter_generates_files(tmp_path: Path) -> None:
-    """QualityReporter should emit JSON and HTML summaries with stats."""
+def test_quality_reporter_generates_profiles(tmp_path: Path) -> None:
+    """QualityReporter should emit JSON/HTML artifacts and rich metadata."""
 
     df = pl.DataFrame(
         {
-            "name": ["Alpha", "Beta", None, "Alpha"],
+            "name": ["Sword", "Shield", None, "Sword"],
             "hit_points": [100, 200, 150, None],
         }
     )
 
     reporter = QualityReporter(
         output_dir=tmp_path / "quality",
-        base_dir=tmp_path,
+        relative_root=tmp_path,
     )
 
-    summary = reporter.profile("unified", df)
+    summary = reporter.generate_report("unified", df)
 
-    json_report = tmp_path / "quality" / "unified.json"
-    html_report = tmp_path / "quality" / "unified.html"
+    json_path = tmp_path / summary["json_report"]
+    html_path = tmp_path / summary["html_report"]
 
-    assert json_report.exists()
-    assert html_report.exists()
-    assert summary["reports"]["json"] == "quality/unified.json"
-    assert summary["columns"]["name"]["null_percent"] == 25.0
-    assert summary["columns"]["hit_points"]["summary"]["max"] == 200
+    assert json_path.exists()
+    assert html_path.exists()
+
+    payload = json.loads(json_path.read_text())
+    assert payload["row_count"] == 4
+    assert payload["columns"]["hit_points"]["summary"]["max"] == 200
+    assert summary["reports"]["json"] == summary["json_report"]
+    assert summary["rows"] == payload["row_count"]
+
+    alias = reporter.profile("alias", df)
+    assert alias["json_report"].endswith("alias.json")
 
 
-def test_curator_records_quality_metadata(tmp_path: Path) -> None:
-    """CorpusCurator should attach report metadata for datasets."""
+def test_curator_records_quality_reports(tmp_path: Path) -> None:
+    """CorpusCurator should capture report metadata for all exports."""
 
-    curator = CorpusCurator(output_dir=tmp_path)
-    df = pl.DataFrame({"entity_type": ["weapon", "armor"], "value": [1, 2]})
+    curator = CorpusCurator(output_dir=tmp_path, enable_quality_reports=True)
 
-    curator._record_quality_report("demo", df)
+    df = pl.DataFrame(
+        {
+            "entity_type": ["weapon", "weapon", "boss"],
+            "name": ["Sword", "Axe", "Margit"],
+            "meta_json": [{"tier": 1}, {"tier": 2}, {"tier": 5}],
+            "sources": [["kaggle"], ["github"], ["kaggle"]],
+        }
+    )
+
+    curator.export_unified(df)
+    curator.export_by_entity_type(df)
 
     reports = curator.metadata.metadata["quality_reports"]
-    assert "demo" in reports
-    assert reports["demo"]["reports"]["json"].endswith("demo.json")
+    assert set(reports) == {"unified", "weapon", "boss"}
+
+    unified_report = reports["unified"]
+    assert unified_report["rows"] == 3
+    assert unified_report["reports"]["json"] == unified_report["json_report"]
+    assert (tmp_path / unified_report["json_report"]).exists()

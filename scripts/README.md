@@ -27,6 +27,25 @@ python -m scripts.download_kaggle_dataset \
 
 ---
 
+### `process_data.py`
+
+Processes raw datasets into validated Parquet outputs with optional concurrency.
+
+**Usage:**
+```bash
+python scripts/process_data.py [--force] [--dry-run] [--workers N]
+```
+
+**Highlights:**
+- Detects stale datasets before processing and supports dry-run validation.
+- `--workers N` (or config `settings.process_workers`) parallelizes dataset
+  work; use `--workers 0` to auto-detect CPU count or omit for serial mode.
+- Supports writing processing statistics via `--output-stats path.json`.
+
+Refer to `docs/data-processing.md` for the full pipeline guide.
+
+---
+
 ### `setup_kaggle_creds.py`
 
 Generates `~/.kaggle/kaggle.json` from environment variables.
