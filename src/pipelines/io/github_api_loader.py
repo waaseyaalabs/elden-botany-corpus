@@ -42,9 +42,7 @@ def load_github_api_weapons(raw_root: Path) -> list[dict[str, Any]]:
         )
 
         source_id_raw = (
-            entry_dict.get("id")
-            or entry_dict.get("slug")
-            or name.strip().lower().replace(" ", "-")
+            entry_dict.get("id") or entry_dict.get("slug") or name.strip().lower().replace(" ", "-")
         )
 
         normalized: dict[str, Any] = {
@@ -164,9 +162,7 @@ def load_github_api_armor(raw_root: Path) -> list[dict[str, Any]]:
         if not isinstance(name, str) or not name.strip():
             continue
 
-        damage_entries = to_entry_list(
-            row.get("dmgNegation") or row.get("damage_negation")
-        )
+        damage_entries = to_entry_list(row.get("dmgNegation") or row.get("damage_negation"))
         resistance_entries = to_entry_list(row.get("resistance"))
 
         extra_fields = {
@@ -201,15 +197,9 @@ def load_github_api_spells(raw_root: Path) -> list[dict[str, Any]]:
     records: list[dict[str, Any]] = []
 
     records.extend(
-        _load_github_spell_file(
-            base_dir / "incantations.json", spell_type_hint="incantation"
-        )
+        _load_github_spell_file(base_dir / "incantations.json", spell_type_hint="incantation")
     )
-    records.extend(
-        _load_github_spell_file(
-            base_dir / "sorceries.json", spell_type_hint="sorcery"
-        )
-    )
+    records.extend(_load_github_spell_file(base_dir / "sorceries.json", spell_type_hint="sorcery"))
 
     return records
 
@@ -237,9 +227,7 @@ def _load_github_payload(
     return payload.get("source"), rows
 
 
-def _load_github_spell_file(
-    path: Path, *, spell_type_hint: str
-) -> list[dict[str, Any]]:
+def _load_github_spell_file(path: Path, *, spell_type_hint: str) -> list[dict[str, Any]]:
     source_url, rows = _load_github_payload(path)
 
     records: list[dict[str, Any]] = []
@@ -250,9 +238,7 @@ def _load_github_spell_file(
             continue
 
         requirements = to_entry_list(row.get("requires"))
-        required_int, required_fai, required_arc = _requirements_from_entries(
-            requirements
-        )
+        required_int, required_fai, required_arc = _requirements_from_entries(requirements)
 
         extra_fields = {
             "image": row.get("image") or None,
@@ -283,9 +269,7 @@ def _load_github_spell_file(
     return records
 
 
-def _requirements_from_entries(
-    entries: Sequence[dict[str, Any]]
-) -> tuple[Any, Any, Any]:
+def _requirements_from_entries(entries: Sequence[dict[str, Any]]) -> tuple[Any, Any, Any]:
     lookup: dict[str, Any] = {}
     for entry in entries:
         name = str(entry.get("name", "")).strip().lower()

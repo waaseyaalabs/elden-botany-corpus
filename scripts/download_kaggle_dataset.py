@@ -34,9 +34,7 @@ import yaml
 try:
     from kaggle.api.kaggle_api_extended import KaggleApi
 except ImportError as e:
-    raise ImportError(
-        "kaggle package not installed. Run: pip install kaggle"
-    ) from e
+    raise ImportError("kaggle package not installed. Run: pip install kaggle") from e
 
 # Configure logging
 logging.basicConfig(
@@ -49,9 +47,7 @@ logger = logging.getLogger(__name__)
 class KaggleDatasetDownloader:
     """Handles downloading and organizing Kaggle datasets."""
 
-    def __init__(
-        self, config_path: Path, output_dir: Path, force: bool = False
-    ):
+    def __init__(self, config_path: Path, output_dir: Path, force: bool = False):
         """
         Initialize the downloader.
 
@@ -71,9 +67,7 @@ class KaggleDatasetDownloader:
         logger.info(f"Loading configuration from {self.config_path}")
 
         if not self.config_path.exists():
-            raise FileNotFoundError(
-                f"Configuration file not found: {self.config_path}"
-            )
+            raise FileNotFoundError(f"Configuration file not found: {self.config_path}")
 
         with open(self.config_path) as f:
             self.config = yaml.safe_load(f)
@@ -81,9 +75,7 @@ class KaggleDatasetDownloader:
         if not self.config or "datasets" not in self.config:
             raise ValueError("Configuration must contain 'datasets' key")
 
-        logger.info(
-            f"Loaded {len(self.config['datasets'])} dataset(s) from config"
-        )
+        logger.info(f"Loaded {len(self.config['datasets'])} dataset(s) from config")
 
     def authenticate(self) -> None:
         """Authenticate with Kaggle API."""
@@ -94,8 +86,7 @@ class KaggleDatasetDownloader:
         except Exception as e:
             logger.error(f"Failed to authenticate with Kaggle API: {e}")
             logger.error(
-                "Ensure ~/.kaggle/kaggle.json exists or "
-                "KAGGLE_USERNAME and KAGGLE_KEY are set"
+                "Ensure ~/.kaggle/kaggle.json exists or " "KAGGLE_USERNAME and KAGGLE_KEY are set"
             )
             raise
 
@@ -152,9 +143,7 @@ class KaggleDatasetDownloader:
             logger.error(f"Failed to download dataset '{name}': {e}")
             raise
 
-    def _download_file(
-        self, dataset_id: str, file_name: str, output_path: Path
-    ) -> None:
+    def _download_file(self, dataset_id: str, file_name: str, output_path: Path) -> None:
         """
         Download a specific file from a dataset.
 
@@ -167,10 +156,7 @@ class KaggleDatasetDownloader:
 
         # Skip if file exists and force is False
         if file_path.exists() and not self.force:
-            logger.info(
-                f"File already exists (use --force to "
-                f"re-download): {file_name}"
-            )
+            logger.info(f"File already exists (use --force to " f"re-download): {file_name}")
             return
 
         logger.info(f"Downloading file: {file_name}")
@@ -196,9 +182,7 @@ class KaggleDatasetDownloader:
         """
         # Check if dataset already downloaded
         if not self.force and self._dataset_exists(output_path):
-            logger.info(
-                "Dataset already downloaded (use --force to re-download)"
-            )
+            logger.info("Dataset already downloaded (use --force to re-download)")
             return
 
         logger.info("Downloading entire dataset")
@@ -228,9 +212,7 @@ class KaggleDatasetDownloader:
             return False
 
         # Check if directory has any non-hidden files
-        files = [
-            f for f in output_path.iterdir() if not f.name.startswith(".")
-        ]
+        files = [f for f in output_path.iterdir() if not f.name.startswith(".")]
         return len(files) > 0
 
     def _unzip_files(self, output_path: Path) -> None:
@@ -275,9 +257,7 @@ class KaggleDatasetDownloader:
             # Download each dataset
             datasets = self.config.get("datasets", [])
             for i, dataset_config in enumerate(datasets, 1):
-                logger.info(
-                    f"\n--- Processing dataset {i}/{len(datasets)} ---"
-                )
+                logger.info(f"\n--- Processing dataset {i}/{len(datasets)} ---")
                 try:
                     self.download_dataset(dataset_config)
                 except Exception as e:

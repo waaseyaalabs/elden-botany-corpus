@@ -71,9 +71,7 @@ class GitHubAPIIngester:
 
         return data
 
-    def _download_all_pages(
-        self, url: str, entity_type: str
-    ) -> dict[str, Any]:
+    def _download_all_pages(self, url: str, entity_type: str) -> dict[str, Any]:
         """Download and combine every page for a given entity type."""
 
         aggregated: list[dict[str, Any]] = []
@@ -122,9 +120,7 @@ class GitHubAPIIngester:
             page += 1
 
             if page > 1000:
-                raise RuntimeError(
-                    f"Exceeded pagination limit while fetching {entity_type}"
-                )
+                raise RuntimeError(f"Exceeded pagination limit while fetching {entity_type}")
 
         return {
             "success": True,
@@ -143,9 +139,7 @@ class GitHubAPIIngester:
         """
         entities: list[RawEntity] = []
 
-        for entity_type in progress_bar(
-            API_ENTITIES, desc="Fetching entity types"
-        ):
+        for entity_type in progress_bar(API_ENTITIES, desc="Fetching entity types"):
             try:
                 data = self.fetch_entity_list(entity_type)
 
@@ -163,11 +157,7 @@ class GitHubAPIIngester:
                 provenance = Provenance(
                     source="github_api",
                     uri=f"{ELDEN_RING_API_BASE}/{entity_type}",
-                    sha256=(
-                        compute_file_hash(cache_file)
-                        if cache_file.exists()
-                        else None
-                    ),
+                    sha256=(compute_file_hash(cache_file) if cache_file.exists() else None),
                 )
 
                 # Convert to RawEntity

@@ -37,9 +37,7 @@ class EntityReconciler:
             entities: List of raw entities
             priority: Priority level (1 = highest)
         """
-        for entity in progress_bar(
-            entities, desc=f"Adding entities (priority {priority})"
-        ):
+        for entity in progress_bar(entities, desc=f"Adding entities (priority {priority})"):
             slug = entity.to_slug()
             key = f"{entity.entity_type}:{slug}"
 
@@ -108,9 +106,7 @@ class EntityReconciler:
                 # Merge the text into matched entity
                 if snippet.description:
                     if matched_entity.description:
-                        matched_entity.description += (
-                            "\n\n" + snippet.description
-                        )
+                        matched_entity.description += "\n\n" + snippet.description
                     else:
                         matched_entity.description = snippet.description
 
@@ -170,17 +166,13 @@ class EntityReconciler:
                 ordered_sources.append(prov.source)
         return ordered_sources
 
-    def _merge_provenance(
-        self, entry: dict[str, Any], provenance: list[Provenance]
-    ) -> None:
+    def _merge_provenance(self, entry: dict[str, Any], provenance: list[Provenance]) -> None:
         """Merge provenance records and source summary into an entry."""
         if not provenance:
             return
 
         existing_sources = set(entry["sources"])
-        existing_prov_keys = {
-            self._provenance_key(prov) for prov in entry["entity"].provenance
-        }
+        existing_prov_keys = {self._provenance_key(prov) for prov in entry["entity"].provenance}
 
         for prov in provenance.copy():
             prov_key = self._provenance_key(prov)
@@ -256,11 +248,7 @@ def entities_to_dataframe(entities: list[RawEntity]) -> pl.DataFrame:
         slug = create_slug(entity.name)
 
         # Extract metadata from raw_data
-        meta = {
-            k: v
-            for k, v in entity.raw_data.items()
-            if k not in ["name", "description"]
-        }
+        meta = {k: v for k, v in entity.raw_data.items() if k not in ["name", "description"]}
 
         # Collect provenance sources
         sources = [prov.source for prov in entity.provenance]
