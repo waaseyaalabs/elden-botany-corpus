@@ -7,12 +7,11 @@ import argparse
 import json
 import os
 from pathlib import Path
-from typing import Dict
 
 
-def parse_env_file(path: Path) -> Dict[str, str]:
+def parse_env_file(path: Path) -> dict[str, str]:
     """Best-effort parser for KEY=VALUE lines inside a .env file."""
-    values: Dict[str, str] = {}
+    values: dict[str, str] = {}
     if not path.exists():
         return values
 

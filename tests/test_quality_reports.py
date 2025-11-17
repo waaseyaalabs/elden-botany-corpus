@@ -6,7 +6,6 @@ import json
 from pathlib import Path
 
 import polars as pl  # type: ignore[import]
-
 from corpus.curate import CorpusCurator  # type: ignore[import]
 from corpus.quality import QualityReporter  # type: ignore[import]
 

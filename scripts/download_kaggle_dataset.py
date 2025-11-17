@@ -69,7 +69,7 @@ class KaggleDatasetDownloader:
     def load_config(self) -> None:
         """Load and validate configuration file."""
         logger.info(f"Loading configuration from {self.config_path}")
-        
+
         if not self.config_path.exists():
             raise FileNotFoundError(
                 f"Configuration file not found: {self.config_path}"
@@ -111,7 +111,7 @@ class KaggleDatasetDownloader:
         slug = dataset_config.get("slug")
         enabled = dataset_config.get("enabled", True)
         files = dataset_config.get("files", [])
-        
+
         # Check if dataset should be skipped
         settings = self.config.get("settings", {})
         if not enabled and settings.get("skip_disabled", True):
@@ -226,7 +226,7 @@ class KaggleDatasetDownloader:
         """
         if not output_path.exists():
             return False
-        
+
         # Check if directory has any non-hidden files
         files = [
             f for f in output_path.iterdir() if not f.name.startswith(".")
@@ -241,23 +241,23 @@ class KaggleDatasetDownloader:
             output_path: Directory containing zip files
         """
         zip_files = list(output_path.glob("*.zip"))
-        
+
         if not zip_files:
             return
 
         logger.info(f"Found {len(zip_files)} zip file(s) to extract")
-        
+
         for zip_file in zip_files:
             try:
                 logger.info(f"Extracting: {zip_file.name}")
                 with zipfile.ZipFile(zip_file, "r") as zf:
                     zf.extractall(output_path)
                 logger.info(f"Extracted: {zip_file.name}")
-                
+
                 # Optionally remove zip file after extraction
                 # Keeping it for now in case extraction fails
                 # zip_file.unlink()
-                
+
             except Exception as e:
                 logger.error(f"Failed to extract {zip_file.name}: {e}")
                 # Continue with other files
