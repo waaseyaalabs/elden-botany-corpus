@@ -7,7 +7,8 @@ license = "Apache-2.0"
 readme = "README.md"
 packages = [
     {include = "corpus", from = "src"},
-    {include = "pipeline"}
+    {include = "pipeline"},
+    {include = "pipelines", from = "src"}
 ]
 
 [tool.poetry.dependencies]
@@ -80,6 +81,7 @@ ignore = [
 
 [tool.mypy]
 python_version = "3.11"
+mypy_path = "src"
 strict = true
 warn_return_any = true
 warn_unused_configs = true
@@ -106,6 +108,7 @@ module = [
     "kaggle",
     "bs4",
     "pandera.*",
+    "pytest",
 ]
 ignore_missing_imports = true
 
