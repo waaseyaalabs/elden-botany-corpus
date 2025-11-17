@@ -126,11 +126,7 @@ def _load_lore_frame(path: Path) -> pd.DataFrame:
         raise FileNotFoundError(f"Lore corpus parquet not found: {path}")
 
     frame = pd.read_parquet(path)
-    missing = [
-        column
-        for column in REQUIRED_COLUMNS
-        if column not in frame.columns
-    ]
+    missing = [column for column in REQUIRED_COLUMNS if column not in frame.columns]
     if missing:
         missing_str = ", ".join(missing)
         raise EmbeddingGenerationError(
@@ -180,14 +176,13 @@ def _encode_texts(
 ) -> list[list[float]]:
     vectors: list[list[float]] = []
     for start in range(0, len(texts), batch_size):
-        batch = list(texts[start:start + batch_size])
+        batch = list(texts[start : start + batch_size])
         if not batch:
             continue
         encoded = encoder.encode(batch)
         if len(encoded) != len(batch):
             raise LoreEmbeddingError(
-                "Embedding backend returned mismatched vector count within a "
-                "batch",
+                "Embedding backend returned mismatched vector count within a " "batch",
             )
         vectors.extend(encoded)
     return vectors
