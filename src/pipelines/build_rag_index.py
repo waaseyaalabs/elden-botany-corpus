@@ -222,6 +222,7 @@ def _write_info(
 ) -> None:
     provider = _get_constant_value(metadata, "embedding_provider")
     model_name = _get_constant_value(metadata, "embedding_model")
+    strategy = _get_constant_value(metadata, "embedding_strategy")
     payload = {
         "vector_count": len(metadata),
         "dimension": dimension,
@@ -229,6 +230,8 @@ def _write_info(
         "embedding_provider": provider,
         "embedding_model": model_name,
     }
+    if strategy is not None:
+        payload["embedding_strategy"] = strategy
     info_path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
 
 
@@ -329,12 +332,9 @@ def _apply_filters(
         if column not in filtered.columns:
             continue
         if isinstance(value, str):
-            filtered = cast(pd.DataFrame, filtered[filtered[column] == value])
+            filtered = filtered[filtered[column] == value]
         else:
-            filtered = cast(
-                pd.DataFrame,
-                filtered[filtered[column].isin(list(value))],
-            )
+            filtered = filtered[filtered[column].isin(list(value))]
     return filtered
 
 

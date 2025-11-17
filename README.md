@@ -163,6 +163,17 @@ Artifacts are written under `data/embeddings/`:
 - `rag_metadata.parquet`: metadata joined with embeddings for filterable search
 - `rag_index_meta.json`: dimension, vector count, normalization flag, provider/model names
 
+### Text-Type Weighting
+
+Narrative-heavy fields (`description`, `impalers_excerpt`, `quote`, `lore`) are boosted before embedding so they surface ahead of terse `effect` lines. The default coefficients live in `config/text_type_weights.yml` and can be overridden per run:
+
+```bash
+poetry run python -m pipelines.build_lore_embeddings \
+   --text-type-weights /path/to/custom_weights.yml
+```
+
+Each embedding row records `embedding_strategy=weighted_text_types_v1`, the configured weight file, and a `text_type_components` pipe-delimited summary so downstream evaluations can confirm which snippets influenced the vector.
+
 ### Qualitative Retrieval Evaluation
 
 The notebook `notebooks/qualitative_rag_eval.ipynb` records five representative probes (Radahn gravitation, scarlet rot, fungal armor, gloam-eyed thorns, Messmer flame). Each run captures:

@@ -64,6 +64,14 @@ def write_sample_lore_corpus(base_dir: Path) -> Path:
             "text": "Moonblade cleaves with frostlit arcs.",
         },
         {
+            "lore_id": "lore-weapon-effect",
+            "canonical_id": "weapon-001",
+            "category": "weapon",
+            "text_type": "effect",
+            "source": "test",
+            "text": "Fires arcs of moonlit frost dealing magic damage.",
+        },
+        {
             "lore_id": "lore-boss",
             "canonical_id": "boss-001",
             "category": "boss",

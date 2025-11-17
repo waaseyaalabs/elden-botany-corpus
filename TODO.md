@@ -13,3 +13,9 @@
 
 ## Follow-ups
 - [ ] Review Pandera warning about imports in a future PR.
+
+## RAG quality improvements
+- [x] Reweight text types so `description` and `impalers_excerpt` rows score higher than terse `effect` snippets for thematic prompts (Radahn, Scarlet Rot, etc.).
+- [x] Augment preprocessing by concatenating complementary fields (e.g., effect + description) before embedding to blend mechanics with lore context.
+- [ ] Prototype a lightweight reranker (cosine or cross-encoder) prioritizing narrative-rich passages for story-heavy searches.
+- [ ] Audit corpus coverage for Radahn/Malenia/Rot dialogue in Impalers/GitHub sources and schedule ingestion if gaps remain.
