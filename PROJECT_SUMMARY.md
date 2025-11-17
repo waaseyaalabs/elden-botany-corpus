@@ -45,6 +45,12 @@ A complete, production-ready data pipeline for curating Elden Ring game data (ba
 - ✅ **Local Embeddings**: sentence-transformers integration
 - ✅ **Pluggable Architecture**: Easy to swap embedding providers
 
+### RAG Retrieval
+
+- ✅ **Lore Embedding Pipeline**: `pipelines.build_lore_embeddings` validates Layer 2 text columns, resolves providers/models, and writes `data/embeddings/lore_embeddings.parquet` with provenance columns.
+- ✅ **FAISS Index Builder**: `pipelines.build_rag_index` persists `faiss_index.bin`, `rag_metadata.parquet`, and `rag_index_meta.json`, exposing `RAGQueryHelper` plus CLI wiring in the `rag` package.
+- ✅ **Qualitative Evaluation**: `notebooks/qualitative_rag_eval.ipynb` documents thematic probes (gravity, rot, thorns, Messmer flame) and records strengths/risks so Layer 3 authors can cite retrieval behavior.
+
 ### CLI & Automation
 
 - ✅ **CLI Commands**: `corpus fetch`, `corpus curate`, `corpus load`

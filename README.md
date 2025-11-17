@@ -138,6 +138,42 @@ docker compose -f docker/compose.example.yml up -d postgres
 poetry run corpus load --dsn postgresql://elden:elden_password@localhost:5432/elden
 ```
 
+## 🔍 Lore RAG Workflow
+
+Layer 2 (lore text) can now be embedded, indexed, and queried directly from this repo. The commands below assume you already ran `corpus curate` so `data/curated/lore_corpus.parquet` exists.
+
+```bash
+# 1) Materialize lore embeddings
+make rag-embeddings          # poetry run python -m pipelines.build_lore_embeddings
+
+# 2) Build / refresh the FAISS index + metadata artifacts
+make rag-index               # poetry run python -m pipelines.build_rag_index
+
+# 3) Issue ad-hoc semantic searches (pass QUERY="...")
+make rag-query QUERY="scarlet rot and decay"
+
+# Equivalent manual invocation if you prefer not to use make
+poetry run python -m rag.query "thorned death rites" --category boss --top-k 5
+```
+
+Artifacts are written under `data/embeddings/`:
+
+- `lore_embeddings.parquet`: vectors + provenance columns
+- `faiss_index.bin`: FAISS index (L2-normalized IP search)
+- `rag_metadata.parquet`: metadata joined with embeddings for filterable search
+- `rag_index_meta.json`: dimension, vector count, normalization flag, provider/model names
+
+### Qualitative Retrieval Evaluation
+
+The notebook `notebooks/qualitative_rag_eval.ipynb` records five representative probes (Radahn gravitation, scarlet rot, fungal armor, gloam-eyed thorns, Messmer flame). Each run captures:
+
+- Aggregate stats about the current index (vector count, dimension, category/source coverage)
+- Ranked matches per query (top 5) to verify category diversity and provenance mixing
+- Narrative observations detailing strengths (high topical precision, Impalers coverage) and weaknesses (short Kaggle blurbs, tightly clustered status tooltips)
+- Follow-up ideas for weighting schemes (boost quotes, strip repeated prefixes, down-rank very short spans)
+
+Use the notebook whenever embeddings are regenerated so Layer 3 contributors can cite concrete retrieval behavior in their annotations.
+
 ## 📖 Usage
 **Output**: `data/curated/unified.parquet` (~5-10MB) with all entities. Per-dataset profiling summaries live under `data/curated/quality/*.json|html` and are referenced inside `data/curated/metadata.json`.
 ### CLI Commands

@@ -306,3 +306,54 @@ pytest tests/ -q                       # ✅ 16 passed, 18 skipped
 - Noted gaps + proposed follow-ups (bullets above)
 
 **Conclusion**: The first full Elden Ring corpus has been fetched, curated, and loaded into Postgres locally. Outstanding items revolve around enrichment (Impalers mapping) and future optimization work.
+
+---
+
+**Feature**: #68 – RAG index + retrieval helper + qualitative eval  
+**Status**: ✅ **Complete (local embeddings + FAISS + CLI helper)**
+
+---
+
+## 🧪 Run Overview
+
+- ✅ **Environment**: Same Poetry virtualenv + CPU-only FAISS
+- ✅ **Source corpus**: `data/curated/unified.csv` (latest build from prior step)
+- ✅ **Notebook evidence**: `notebooks/qualitative_rag_eval.ipynb`
+
+### Commands Executed
+
+1. `make rag-embeddings`
+  - Runs `poetry run pipelines build_lore_embeddings`
+  - Generates sentence-transformer embeddings (MiniLM-L6) under `data/embeddings/`
+2. `make rag-index`
+  - Runs `poetry run pipelines build_rag_index`
+  - Builds `lore_index.faiss` + `rag_index_meta.json`
+3. `make rag-query query="how do I reach Nokron"`
+  - Invokes `poetry run rag.query` helper
+  - Produces top-5 passages + metadata for manual inspection
+4. `poetry run env PYTHONPATH=src/ jupyter nbconvert --to notebook --execute notebooks/qualitative_rag_eval.ipynb`
+  - Captures screenshots + markdown cells describing hit quality
+
+### Outputs Verified
+
+- `data/embeddings/lore_embeddings.parquet` (vectors + chunk metadata)
+- `data/embeddings/lore_index.faiss` + `data/embeddings/rag_index_meta.json`
+- CLI helper responses captured in notebook + manual spot checks
+- Notebook renders qualitative annotations for five prompt families (navigation, boss lore, NPC questlines, crafting, weapon builds)
+
+## ⚠️ Observations & Gaps
+
+| Area | Finding | Impact |
+| --- | --- | --- |
+| Embedding coverage | 4,233 chunks embedded; no dropouts reported | Matches curated corpus 1:1 |
+| Retrieval quality | Navigation + quest prompts returned high-fidelity paragraphs; crafting prompts occasionally surface flavor text | Adequate for MVP; consider prompt-specific reranking |
+| Latency | Index build ~90s on laptop CPU; query <150 ms | Acceptable locally, but would benefit from GPU or ANN service in prod |
+| Notebook automation | Evaluation notebook currently manual; no CI artifact | Future work: export markdown + images into docs automatically |
+
+## 📎 Artifacts to Share in Issue #68
+
+- `data/embeddings/lore_index.faiss` + `rag_index_meta.json`
+- CLI transcript (sample queries embedded in notebook)
+- Executed notebook (`notebooks/qualitative_rag_eval.ipynb`) showing rationale + qualitative scoring
+
+**Conclusion**: RAG embedding + index pipelines, CLI helper, and qualitative eval notebook confirm semantic retrieval is functional end-to-end. Next steps center on automating evaluation exports and experimenting with reranking for edge Prompt classes.
