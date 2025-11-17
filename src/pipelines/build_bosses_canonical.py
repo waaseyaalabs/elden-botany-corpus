@@ -130,9 +130,7 @@ def _records_to_dataframe(records: list[dict[str, Any]]) -> pd.DataFrame:
         raise RuntimeError("No canonical records remain after merging")
 
     frame["source_priority"] = (
-        pd.to_numeric(frame["source_priority"], errors="coerce")
-        .fillna(99)
-        .astype(int)
+        pd.to_numeric(frame["source_priority"], errors="coerce").fillna(99).astype(int)
     )
     frame["is_dlc"] = frame["is_dlc"].fillna(False).astype(bool)
     frame["region"] = frame.get("region", pd.Series(dtype="string"))
@@ -143,11 +141,7 @@ def _records_to_dataframe(records: list[dict[str, Any]]) -> pd.DataFrame:
     for column in INT_COLUMNS:
         if column not in frame.columns:
             frame[column] = pd.NA
-        frame[column] = (
-            pd.to_numeric(frame[column], errors="coerce")
-            .round(0)
-            .astype("Int64")
-        )
+        frame[column] = pd.to_numeric(frame[column], errors="coerce").round(0).astype("Int64")
 
     frame.reset_index(drop=True, inplace=True)
     frame["boss_id"] = pd.Series(range(1, len(frame) + 1), dtype="Int64")
@@ -169,9 +163,7 @@ def _records_to_dataframe(records: list[dict[str, Any]]) -> pd.DataFrame:
         "provenance",
     ]
 
-    extra_columns = [
-        column for column in frame.columns if column not in column_order
-    ]
+    extra_columns = [column for column in frame.columns if column not in column_order]
     return frame.loc[:, column_order + extra_columns]
 
 

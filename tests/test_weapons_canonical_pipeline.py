@@ -39,9 +39,9 @@ def test_kaggle_base_loader_parses_weapon_stats(tmp_path: Path) -> None:
             "description": "A reliable blade",
             "category": "Straight Sword",
             "weight": "3.5",
-            "attack": "[{\"name\": \"Phy\", \"amount\": 113}]",
-            "requiredAttributes": "[{\"name\": \"Str\", \"amount\": 9}]",
-            "scalesWith": "[{\"name\": \"Str\", \"scaling\": \"D\"}]",
+            "attack": '[{"name": "Phy", "amount": 113}]',
+            "requiredAttributes": '[{"name": "Str", "amount": 9}]',
+            "scalesWith": '[{"name": "Str", "scaling": "D"}]',
         }
     ]
     _write_csv(raw_root / "kaggle" / "base" / "weapons.csv", rows)
@@ -68,9 +68,9 @@ def test_build_weapons_canonical_merges_sources(tmp_path: Path) -> None:
             "description": "Base entry",
             "category": "Axe",
             "weight": "4.0",
-            "attack": "[{\"name\": \"Phy\", \"amount\": 100}]",
-            "requiredAttributes": "[{\"name\": \"Str\", \"amount\": 8}]",
-            "scalesWith": "[{\"name\": \"Str\", \"scaling\": \"C\"}]",
+            "attack": '[{"name": "Phy", "amount": 100}]',
+            "requiredAttributes": '[{"name": "Str", "amount": 8}]',
+            "scalesWith": '[{"name": "Str", "scaling": "C"}]',
         }
     ]
     _write_csv(raw_root / "kaggle" / "base" / "weapons.csv", base_rows)
@@ -84,7 +84,7 @@ def test_build_weapons_canonical_merges_sources(tmp_path: Path) -> None:
             "category": "Twinblade",
             "weight": "6.0",
             "dlc": 1,
-            "requirements": "{\"Str\": 12, \"Dex\": 18}",
+            "requirements": '{"Str": 12, "Dex": 18}',
         }
     ]
     _write_csv(

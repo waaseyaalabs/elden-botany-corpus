@@ -53,9 +53,7 @@ class QualityReporter:
         self.output_dir = output_dir or settings.curated_dir / "quality"
         self.output_dir.mkdir(parents=True, exist_ok=True)
         self.top_k = top_k
-        self.relative_root = (
-            relative_root or base_dir or self.output_dir.parent
-        )
+        self.relative_root = relative_root or base_dir or self.output_dir.parent
 
     def profile(self, dataset_name: str, df: pl.DataFrame) -> dict[str, Any]:
         """Backward-compatible alias for :meth:`generate_report`."""
@@ -97,6 +95,7 @@ class QualityReporter:
         summary["json_report"] = str(rel_json)
         summary["html_report"] = str(rel_html)
         return summary
+
     # fmt: off
 
     def _summarize(

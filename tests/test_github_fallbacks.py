@@ -207,9 +207,7 @@ def test_load_github_api_spells_parses_requirements(tmp_path: Path) -> None:
 
     records = load_github_api_spells(raw_root)
     assert len(records) == 2
-    spell = next(
-        entry for entry in records if entry["name"] == "Glintstone Pebble"
-    )
+    spell = next(entry for entry in records if entry["name"] == "Glintstone Pebble")
     assert spell["spell_type"] == "sorcery"
     assert spell["required_int"] == 10
 
@@ -346,8 +344,8 @@ def test_armor_canonical_keeps_github_only_rows(tmp_path: Path) -> None:
                 "description": "Reliable",
                 "category": "head",
                 "weight": 4.6,
-                "dmgNegation": "[{\"name\": \"Phy\", \"amount\": 6.8}]",
-                "resistance": "[{\"name\": \"Imm.\", \"amount\": 70}]",
+                "dmgNegation": '[{"name": "Phy", "amount": 6.8}]',
+                "resistance": '[{"name": "Imm.", "amount": 70}]',
             }
         ],
     )
@@ -404,7 +402,7 @@ def test_spells_canonical_handles_mixed_sources(tmp_path: Path) -> None:
                 "description": "Hurls stones",
                 "cost": 7,
                 "slots": 1,
-                "requires": "{\"Faith\": 10}",
+                "requires": '{"Faith": 10}',
             }
         ],
     )

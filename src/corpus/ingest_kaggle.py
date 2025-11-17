@@ -19,9 +19,7 @@ from corpus.utils import (
 
 # Kaggle dataset identifiers
 KAGGLE_BASE_DATASET = "robikscube/elden-ring-ultimate-dataset"
-KAGGLE_DLC_DATASET = (
-    "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc"
-)
+KAGGLE_DLC_DATASET = "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc"
 
 # Expected tables from base dataset
 BASE_TABLES = [
@@ -66,8 +64,7 @@ class KaggleIngester:
         """
         if not settings.kaggle_credentials_set:
             raise ValueError(
-                "Kaggle credentials not set. Set KAGGLE_USERNAME "
-                "and KAGGLE_KEY in .env"
+                "Kaggle credentials not set. Set KAGGLE_USERNAME " "and KAGGLE_KEY in .env"
             )
 
         # Write kaggle config
@@ -217,9 +214,7 @@ class KaggleIngester:
             # Create provenance
             provenance = Provenance(
                 source="kaggle_dlc",
-                uri=(
-                    f"kaggle://{KAGGLE_DLC_DATASET}/{relative_path.as_posix()}"
-                ),
+                uri=(f"kaggle://{KAGGLE_DLC_DATASET}/{relative_path.as_posix()}"),
                 sha256=compute_file_hash(csv_path),
             )
 

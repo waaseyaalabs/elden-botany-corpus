@@ -155,9 +155,7 @@ def safe_float(value: Any) -> float | None:
     if value is None:
         return None
 
-    if isinstance(value, float | int) and not (
-        isinstance(value, float) and math.isnan(value)
-    ):
+    if isinstance(value, float | int) and not (isinstance(value, float) and math.isnan(value)):
         return float(value)
 
     if isinstance(value, str):
@@ -242,9 +240,7 @@ def to_entry_list(value: Any) -> list[dict[str, Any]]:
 def extract_damage(entries: list[dict[str, Any]]) -> dict[str, float | None]:
     """Extract damage columns from structured attack stats."""
 
-    result: dict[str, float | None] = {
-        value: None for value in DAMAGE_KEY_MAP.values()
-    }
+    result: dict[str, float | None] = {value: None for value in DAMAGE_KEY_MAP.values()}
 
     for entry in entries:
         name = str(entry.get("name", "")).strip().lower()
@@ -255,14 +251,10 @@ def extract_damage(entries: list[dict[str, Any]]) -> dict[str, float | None]:
     return result
 
 
-def extract_requirements(
-    entries: list[dict[str, Any]]
-) -> dict[str, int | None]:
+def extract_requirements(entries: list[dict[str, Any]]) -> dict[str, int | None]:
     """Extract attribute requirements as canonical columns."""
 
-    result: dict[str, int | None] = {
-        value: None for value in ATTRIBUTE_KEY_MAP.values()
-    }
+    result: dict[str, int | None] = {value: None for value in ATTRIBUTE_KEY_MAP.values()}
 
     for entry in entries:
         name = str(entry.get("name", "")).strip().lower()
@@ -296,13 +288,7 @@ def normalize_weapon_type(raw_value: str | None) -> str:
     if not raw_value:
         return "other"
 
-    cleaned = (
-        raw_value.lower()
-        .replace("-", " ")
-        .replace("_", " ")
-        .replace("/", " ")
-        .strip()
-    )
+    cleaned = raw_value.lower().replace("-", " ").replace("_", " ").replace("/", " ").strip()
 
     if cleaned.endswith("s") and cleaned[:-1] in WEAPON_TYPE_MAPPING:
         cleaned = cleaned[:-1]
@@ -319,14 +305,10 @@ def serialize_payload(payload: dict[str, Any]) -> str:
     return json.dumps(payload, ensure_ascii=False, sort_keys=True)
 
 
-def extract_armor_damage(
-    entries: list[dict[str, Any]]
-) -> dict[str, float | None]:
+def extract_armor_damage(entries: list[dict[str, Any]]) -> dict[str, float | None]:
     """Map structured damage negation entries to canonical armor columns."""
 
-    result: dict[str, float | None] = {
-        value: None for value in ARMOR_DAMAGE_KEY_MAP.values()
-    }
+    result: dict[str, float | None] = {value: None for value in ARMOR_DAMAGE_KEY_MAP.values()}
 
     for entry in entries:
         if "name" in entry:
@@ -339,14 +321,16 @@ def extract_armor_damage(
             key = ARMOR_DAMAGE_KEY_MAP.get(name)
             if key is None:
                 continue
-            result[key] = safe_float(raw_value)
+            value = safe_float(raw_value)
+            if value is None:
+                result[key] = None
+                continue
+            result[key] = max(value, 0.0)
 
     return result
 
 
-def extract_armor_resistances(
-    entries: list[dict[str, Any]]
-) -> dict[str, float | int | None]:
+def extract_armor_resistances(entries: list[dict[str, Any]]) -> dict[str, float | int | None]:
     """Map resistance entries to canonical armor resistance columns."""
 
     result: dict[str, float | int | None] = {
@@ -365,10 +349,17 @@ def extract_armor_resistances(
             if key is None:
                 continue
             if key == "poise":
-                result[key] = safe_float(raw_value)
+                value = safe_float(raw_value)
+                if value is None:
+                    result[key] = None
+                else:
+                    result[key] = max(value, 0.0)
             else:
                 int_value = safe_int(raw_value)
-                result[key] = int_value
+                if int_value is None:
+                    result[key] = None
+                else:
+                    result[key] = max(int_value, 0)
 
     return result
 
