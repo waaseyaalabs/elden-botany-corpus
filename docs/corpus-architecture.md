@@ -23,7 +23,7 @@ The corpus is intentionally layered so each stage builds higher-order meaning on
   - Symbolic & botanical interpretations authored by contributors, with provenance and confidence scores.
   - Community annotations referencing videos, essays, or high-signal forum posts.
   - LLM-generated summaries that stitch related lore passages, stored alongside human commentary.
-- **Status**: Not yet implemented; this issue finalizes the semantic retrieval bridge that Layer 3 requires. Design docs will evolve as clustering + annotation tooling is built.
+- **Status**: Semantic retrieval bridge delivered via `pipelines.build_lore_embeddings`, `pipelines.build_rag_index`, and `rag.query` (see qualitative eval notebook for proof). The remaining work tracks clustering + annotation tooling for contributor workflows.
 
 ## Operational Principles
 - **Determinism**: Every layer is rebuildable via `poetry run python -m pipelines.<pipeline>` commands plus Makefile shortcuts.

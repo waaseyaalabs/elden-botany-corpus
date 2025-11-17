@@ -1,6 +1,6 @@
 # Makefile for common tasks
 
-.PHONY: help setup install test lint format clean fetch curate load ci-local
+.PHONY: help setup install test lint format clean fetch curate load rag-embeddings rag-index rag-query ci-local
 
 help:
 	@echo "Elden Botany Corpus - Available Commands"
@@ -15,6 +15,9 @@ help:
 	@echo "  make fetch      - Fetch all data sources"
 	@echo "  make curate     - Curate corpus"
 	@echo "  make load       - Load to PostgreSQL (requires POSTGRES_DSN)"
+	@echo "  make rag-embeddings - Build lore_embeddings.parquet"
+	@echo "  make rag-index  - Build FAISS index + metadata"
+	@echo "  make rag-query  - Run semantic search (pass QUERY='...')"
 	@echo ""
 
 setup:
@@ -57,6 +60,19 @@ curate:
 
 load:
 	poetry run corpus load --create-schema
+
+rag-embeddings:
+	poetry run python -m pipelines.build_lore_embeddings $(ARGS)
+
+rag-index:
+	poetry run python -m pipelines.build_rag_index $(ARGS)
+
+rag-query:
+	@if [ -z "$(QUERY)" ]; then \
+		echo "Usage: make rag-query QUERY='scarlet rot' [ARGS='--category item']"; \
+		exit 1; \
+	fi
+	poetry run python -m rag.query "$(QUERY)" $(ARGS)
 
 docker-up:
 	docker compose -f docker/compose.example.yml up -d

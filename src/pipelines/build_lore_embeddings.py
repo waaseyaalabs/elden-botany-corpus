@@ -46,11 +46,20 @@ REQUIRED_COLUMNS = (
 )
 
 
-class LoreEmbeddingError(RuntimeError):
+class EmbeddingGenerationError(RuntimeError):
     """Raised when lore embedding generation fails."""
 
 
-__all__ = ["build_lore_embeddings", "LoreEmbeddingError", "main"]
+class LoreEmbeddingError(EmbeddingGenerationError):
+    """Backward-compatible alias for embedding pipeline failures."""
+
+
+__all__ = [
+    "build_lore_embeddings",
+    "EmbeddingGenerationError",
+    "LoreEmbeddingError",
+    "main",
+]
 
 
 def build_lore_embeddings(
@@ -62,14 +71,18 @@ def build_lore_embeddings(
     batch_size: int | None = None,
     encoder: EncoderProtocol | None = None,
     limit: int | None = None,
+    dry_run: bool = False,
 ) -> pd.DataFrame:
     """Embed lore corpus rows and write them to a parquet file."""
 
     frame = _load_lore_frame(lore_path)
+    frame = _sanitize_lore_frame(frame)
     if limit is not None:
         frame = frame.head(limit)
     if frame.empty:
-        raise LoreEmbeddingError("Lore corpus is empty; nothing to embed")
+        raise EmbeddingGenerationError(
+            "Lore corpus is empty; nothing to embed",
+        )
 
     resolved_provider = _resolve_provider(provider)
     resolved_model = model_name or settings.embed_model
@@ -85,7 +98,8 @@ def build_lore_embeddings(
 
     if len(vectors) != len(frame):
         raise LoreEmbeddingError(
-            "Encoder returned mismatched vector count; expected " f"{len(frame)} got {len(vectors)}"
+            "Encoder returned mismatched vector count; "
+            f"expected {len(frame)} got {len(vectors)}",
         )
 
     enriched = frame.copy()
@@ -93,15 +107,16 @@ def build_lore_embeddings(
     enriched["embedding_provider"] = resolved_provider
     enriched["embedding_model"] = resolved_model
 
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    enriched.to_parquet(output_path, index=False)
-    LOGGER.info(
-        "Wrote %s embeddings (provider=%s, model=%s) to %s",
-        len(enriched),
-        resolved_provider,
-        resolved_model,
-        output_path,
-    )
+    if not dry_run:
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        enriched.to_parquet(output_path, index=False)
+        LOGGER.info(
+            "Wrote %s embeddings (provider=%s, model=%s) to %s",
+            len(enriched),
+            resolved_provider,
+            resolved_model,
+            output_path,
+        )
     return enriched
 
 
@@ -112,8 +127,19 @@ def _load_lore_frame(path: Path) -> pd.DataFrame:
     frame = pd.read_parquet(path)
     missing = [column for column in REQUIRED_COLUMNS if column not in frame.columns]
     if missing:
-        raise LoreEmbeddingError(f"Lore corpus is missing required columns: {', '.join(missing)}")
+        missing_str = ", ".join(missing)
+        raise EmbeddingGenerationError(
+            f"Lore corpus is missing required columns: {missing_str}",
+        )
     return frame.reset_index(drop=True)
+
+
+def _sanitize_lore_frame(frame: pd.DataFrame) -> pd.DataFrame:
+    sanitized = frame.copy()
+    sanitized[TEXT_COLUMN] = sanitized[TEXT_COLUMN].astype(str).str.strip()
+    sanitized = sanitized[sanitized[TEXT_COLUMN].notna()]
+    sanitized = sanitized[sanitized[TEXT_COLUMN] != ""]
+    return sanitized.reset_index(drop=True)
 
 
 def _resolve_provider(provider: ProviderName | None) -> ProviderName:
@@ -155,7 +181,7 @@ def _encode_texts(
         encoded = encoder.encode(batch)
         if len(encoded) != len(batch):
             raise LoreEmbeddingError(
-                "Embedding backend returned mismatched vector count within a " "batch"
+                "Embedding backend returned mismatched vector count within a " "batch",
             )
         vectors.extend(encoded)
     return vectors
@@ -195,6 +221,11 @@ def parse_args() -> argparse.Namespace:
         help="Optional maximum number of rows to embed",
     )
     parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Run embeddings without writing parquet output",
+    )
+    parser.add_argument(
         "--verbose",
         action="store_true",
         help="Enable verbose logging",
@@ -219,6 +250,7 @@ def main() -> None:
             model_name=args.model_name,
             batch_size=args.batch_size,
             limit=args.limit,
+            dry_run=args.dry_run,
         )
     except Exception as exc:  # noqa: BLE001
         LOGGER.error("Lore embedding pipeline failed: %s", exc)
