@@ -9,15 +9,14 @@ from pathlib import Path
 
 from pipelines.build_lore_embeddings import build_lore_embeddings
 from pipelines.build_rag_index import build_rag_index, query_index
-from tests.helpers import DeterministicEncoder, write_sample_lore_corpus
+
+from .helpers import DeterministicEncoder, write_sample_lore_corpus
 
 
 def test_build_rag_index_produces_artifacts(tmp_path: Path) -> None:
     lore_path = write_sample_lore_corpus(tmp_path)
-    embeddings_path = (
-        tmp_path / "data" / "embeddings" / "lore_embeddings.parquet"
-    )
-    index_path = tmp_path / "data" / "embeddings" / "lore_index.faiss"
+    embeddings_path = tmp_path / "data" / "embeddings" / "lore_embeddings.parquet"
+    index_path = tmp_path / "data" / "embeddings" / "faiss_index.bin"
     metadata_path = tmp_path / "data" / "embeddings" / "rag_metadata.parquet"
     info_path = tmp_path / "data" / "embeddings" / "rag_index_meta.json"
 
@@ -47,10 +46,8 @@ def test_build_rag_index_produces_artifacts(tmp_path: Path) -> None:
 
 def test_query_index_supports_filters(tmp_path: Path) -> None:
     lore_path = write_sample_lore_corpus(tmp_path)
-    embeddings_path = (
-        tmp_path / "data" / "embeddings" / "lore_embeddings.parquet"
-    )
-    index_path = tmp_path / "data" / "embeddings" / "lore_index.faiss"
+    embeddings_path = tmp_path / "data" / "embeddings" / "lore_embeddings.parquet"
+    index_path = tmp_path / "data" / "embeddings" / "faiss_index.bin"
     metadata_path = tmp_path / "data" / "embeddings" / "rag_metadata.parquet"
     info_path = tmp_path / "data" / "embeddings" / "rag_index_meta.json"
 

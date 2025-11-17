@@ -8,7 +8,9 @@ readme = "README.md"
 packages = [
     {include = "corpus", from = "src"},
     {include = "pipeline"},
-    {include = "pipelines", from = "src"}
+    {include = "pipelines", from = "src"},
+    {include = "rag", from = "src"},
+    {include = "eldenbotany", from = "src"}
 ]
 
 [tool.poetry.dependencies]

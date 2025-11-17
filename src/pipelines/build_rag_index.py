@@ -12,14 +12,15 @@ import argparse
 import json
 import logging
 import os
+from collections.abc import Mapping, Sequence
 from pathlib import Path
-from typing import Any, Mapping, Sequence, cast
+from typing import Any, cast
 
 import faiss  # type: ignore[import]
 import numpy as np  # type: ignore[import]
 import pandas as pd  # type: ignore[import]
-
 from corpus.config import settings
+
 from pipelines.embedding_backends import (
     EmbeddingEncoder,
     EncoderConfig,
@@ -33,7 +34,8 @@ VectorMatrix = Any
 LOGGER = logging.getLogger(__name__)
 
 DEFAULT_EMBEDDINGS = Path("data/embeddings/lore_embeddings.parquet")
-DEFAULT_INDEX = Path("data/embeddings/lore_index.faiss")
+DEFAULT_INDEX = Path("data/embeddings/faiss_index.bin")
+LEGACY_INDEX = Path("data/embeddings/lore_index.faiss")
 DEFAULT_METADATA = Path("data/embeddings/rag_metadata.parquet")
 DEFAULT_INFO = Path("data/embeddings/rag_index_meta.json")
 
@@ -109,10 +111,11 @@ def load_query_helper(
     model_name: str | None = None,
     batch_size: int | None = None,
     encoder: EmbeddingEncoder | None = None,
-) -> "RAGQueryHelper":
+) -> RAGQueryHelper:
     """Load persisted artifacts and return a helper ready for querying."""
 
-    if not index_path.exists():
+    resolved_index_path = _resolve_index_path(index_path)
+    if not resolved_index_path.exists():
         raise FileNotFoundError(f"Index file not found: {index_path}")
     if not metadata_path.exists():
         raise FileNotFoundError(f"Metadata parquet not found: {metadata_path}")
@@ -123,9 +126,7 @@ def load_query_helper(
     if resolved_provider is None:
         resolved_provider = _get_constant_value(metadata, "embedding_provider")
     if resolved_provider not in {"local", "openai"}:
-        raise RAGIndexError(
-            "Cannot determine embedding provider; rebuild embeddings"
-        )
+        raise RAGIndexError("Cannot determine embedding provider; rebuild embeddings")
     resolved_provider = cast(ProviderLiteral, resolved_provider)
 
     resolved_model = model_name or info.get("embedding_model")
@@ -143,7 +144,7 @@ def load_query_helper(
     )
 
     normalize = bool(info.get("normalized", True))
-    index = faiss.read_index(str(index_path))
+    index = faiss.read_index(str(resolved_index_path))
     helper = RAGQueryHelper(
         index=index,
         metadata=metadata.reset_index(drop=True),
@@ -151,6 +152,18 @@ def load_query_helper(
         normalize=normalize,
     )
     return helper
+
+
+def _resolve_index_path(target: Path) -> Path:
+    if target.exists():
+        return target
+    if target == DEFAULT_INDEX and LEGACY_INDEX.exists():
+        LOGGER.warning(
+            ("Legacy lore_index.faiss artifact detected; rebuild the RAG " "index to generate %s."),
+            DEFAULT_INDEX,
+        )
+        return LEGACY_INDEX
+    return target
 
 
 def query_index(
@@ -223,9 +236,7 @@ def _read_info(path: Path) -> dict[str, object]:
     try:
         return json.loads(path.read_text(encoding="utf-8"))
     except json.JSONDecodeError as exc:  # pragma: no cover - defensive
-        raise RAGIndexError(
-            f"Failed to parse index metadata JSON: {exc}"
-        ) from exc
+        raise RAGIndexError(f"Failed to parse index metadata JSON: {exc}") from exc
 
 
 def _get_constant_value(frame: pd.DataFrame, column: str) -> str | None:
@@ -262,9 +273,7 @@ class RAGQueryHelper:
     ) -> pd.DataFrame:
         vectors = self._encoder.encode([query_text])
         if not vectors:
-            raise RAGIndexError(
-                "Embedding backend returned no vector for query"
-            )
+            raise RAGIndexError("Embedding backend returned no vector for query")
 
         query_vec = np.asarray(vectors, dtype=np.float32)
         if query_vec.ndim == 1:
@@ -333,9 +342,7 @@ def _log_index_summary(frame: pd.DataFrame, dimension: int) -> None:
     LOGGER.info("Indexing %s embeddings (dim=%s)", len(frame), dimension)
     for label in ("category", "source", "text_type"):
         counts = frame[label].value_counts()
-        formatted = ", ".join(
-            f"{key}={value}" for key, value in counts.items()
-        )
+        formatted = ", ".join(f"{key}={value}" for key, value in counts.items())
         LOGGER.info("Distribution by %s: %s", label, formatted)
 
 
