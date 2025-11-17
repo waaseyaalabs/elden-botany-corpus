@@ -102,6 +102,16 @@ Examples:
         help="Write processing statistics to JSON file",
     )
 
+    parser.add_argument(
+        "--workers",
+        type=int,
+        default=None,
+        help=(
+            "Number of worker processes to use (default: serial or value "
+            "from config settings). Use 0 to auto-detect CPU count."
+        ),
+    )
+
     args = parser.parse_args()
 
     # Setup logging
@@ -126,6 +136,10 @@ Examples:
     logger.info(f"Processed directory: {args.processed_dir}")
     logger.info(f"Force reprocess: {args.force}")
     logger.info(f"Dry run: {args.dry_run}")
+    logger.info(
+        "Workers: %s",
+        "auto" if args.workers == 0 else args.workers or "config",
+    )
     logger.info("=" * 60)
 
     # Create processor
@@ -153,7 +167,11 @@ Examples:
 
     # Process all datasets
     try:
-        results = processor.process_all(force=args.force, dry_run=args.dry_run)
+        results = processor.process_all(
+            force=args.force,
+            dry_run=args.dry_run,
+            workers=args.workers,
+        )
 
         # Print summary
         logger.info("=" * 60)

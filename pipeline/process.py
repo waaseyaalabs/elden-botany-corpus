@@ -4,7 +4,10 @@ Reads raw data, applies transformations, validates schemas,
 and writes processed Parquet files.
 """
 
+import copy
 import logging
+import os
+from concurrent.futures import ProcessPoolExecutor, as_completed
 from pathlib import Path
 from typing import Any
 
@@ -37,6 +40,7 @@ class DataProcessor:
         raw_dir: Path,
         processed_dir: Path,
         cache_dir: Path | None = None,
+        config_data: dict[str, Any] | None = None,
     ):
         """Initialize data processor.
 
@@ -51,7 +55,11 @@ class DataProcessor:
         self.processed_dir = Path(processed_dir)
         self.cache_dir = cache_dir or (processed_dir / ".cache")
 
-        self.config = self._load_config()
+        if config_data is not None:
+            # Copy so worker processes cannot mutate shared config state.
+            self.config = copy.deepcopy(config_data)
+        else:
+            self.config = self._load_config()
         self.processing_stats: dict[str, Any] = {}
 
     def _load_config(self) -> dict[str, Any]:
@@ -368,20 +376,32 @@ class DataProcessor:
 
         return results
 
-    def process_all(self, force: bool = False, dry_run: bool = False) -> ProcessingResult:
+    def process_all(
+        self,
+        force: bool = False,
+        dry_run: bool = False,
+        workers: int | None = None,
+    ) -> ProcessingResult:
         """Process all datasets defined in config.
 
         Args:
             force: Force reprocessing all datasets
             dry_run: Validate only, don't write files
+            workers: Optional override for worker processes (1 keeps serial)
 
         Returns:
             Overall processing statistics
         """
+
         datasets = self.config.get("datasets", [])
-        skip_disabled = self.config.get("settings", {}).get("skip_disabled", True)
+        skip_disabled = self.config.get("settings", {}).get(
+            "skip_disabled",
+            True,
+        )
+        worker_count = self._resolve_worker_count(workers)
 
         results: ProcessingResult = {"datasets": {}, "summary": {}}
+        datasets_to_process: list[str] = []
 
         for dataset in datasets:
             name = dataset.get("name")
@@ -395,20 +415,46 @@ class DataProcessor:
                 }
                 continue
 
-            try:
-                dataset_result = self.process_dataset(name, force, dry_run)
-                results["datasets"][name] = dataset_result
-            except Exception as e:
-                logger.error(f"Error processing dataset {name}: {e}")
-                results["datasets"][name] = {
-                    "status": "failed",
-                    "error": str(e),
-                }
+            datasets_to_process.append(name)
+
+        if datasets_to_process:
+            if worker_count <= 1 or len(datasets_to_process) == 1:
+                for name in datasets_to_process:
+                    try:
+                        dataset_result = self.process_dataset(
+                            name,
+                            force,
+                            dry_run,
+                        )
+                        results["datasets"][name] = dataset_result
+                    except Exception as e:
+                        logger.error(f"Error processing dataset {name}: {e}")
+                        results["datasets"][name] = {
+                            "status": "failed",
+                            "error": str(e),
+                        }
+            else:
+                logger.info(
+                    "Processing %d dataset(s) with %d worker processes",
+                    len(datasets_to_process),
+                    worker_count,
+                )
+                parallel_results = self._process_datasets_parallel(
+                    datasets_to_process,
+                    force=force,
+                    dry_run=dry_run,
+                    max_workers=worker_count,
+                )
+                results["datasets"].update(parallel_results)
 
         # Generate summary
         total = len(results["datasets"])
-        succeeded = sum(1 for r in results["datasets"].values() if r.get("status") == "success")
-        failed = sum(1 for r in results["datasets"].values() if r.get("status") == "failed")
+        succeeded = sum(
+            1 for result in results["datasets"].values() if result.get("status") == "success"
+        )
+        failed = sum(
+            1 for result in results["datasets"].values() if result.get("status") == "failed"
+        )
         skipped = total - succeeded - failed
 
         results["summary"] = {
@@ -420,7 +466,86 @@ class DataProcessor:
 
         return results
 
-    def get_pending_datasets(self, force: bool = False) -> dict[str, dict[str, Any]]:
+    def _resolve_worker_count(self, requested_workers: int | None) -> int:
+        """Determine worker count from CLI override or config settings."""
+
+        if requested_workers is not None:
+            return self._normalize_worker_value(requested_workers)
+
+        config_workers = self.config.get("settings", {}).get("process_workers")
+        if config_workers is None:
+            return 1
+
+        return self._normalize_worker_value(config_workers)
+
+    @staticmethod
+    def _normalize_worker_value(value: int) -> int:
+        """Convert worker input into a usable positive integer."""
+
+        if value is None or value == 1:
+            return 1
+
+        if value <= 0:
+            return max(os.cpu_count() or 1, 1)
+
+        return value
+
+    def _process_datasets_parallel(
+        self,
+        dataset_names: list[str],
+        force: bool,
+        dry_run: bool,
+        max_workers: int,
+    ) -> dict[str, ProcessingResult]:
+        """Dispatch dataset processing across a worker pool."""
+
+        results: dict[str, ProcessingResult] = {}
+        config_snapshot = copy.deepcopy(self.config)
+
+        tasks = [
+            {
+                "dataset": dataset_name,
+                "config_path": self.config_path,
+                "raw_dir": self.raw_dir,
+                "processed_dir": self.processed_dir,
+                "cache_dir": self.cache_dir,
+                "force": force,
+                "dry_run": dry_run,
+                "config_data": config_snapshot,
+            }
+            for dataset_name in dataset_names
+        ]
+
+        with ProcessPoolExecutor(max_workers=max_workers) as executor:
+            future_map = {
+                executor.submit(
+                    _process_dataset_worker,
+                    payload,
+                ): payload["dataset"]
+                for payload in tasks
+            }
+
+            for future in as_completed(future_map):
+                dataset_name = str(future_map[future])
+                try:
+                    results[dataset_name] = future.result()
+                except Exception as exc:
+                    logger.error(
+                        "Parallel processing failed for %s: %s",
+                        dataset_name,
+                        exc,
+                    )
+                    results[dataset_name] = {
+                        "status": "failed",
+                        "error": str(exc),
+                    }
+
+        return results
+
+    def get_pending_datasets(
+        self,
+        force: bool = False,
+    ) -> dict[str, dict[str, Any]]:
         """Return datasets that require processing.
 
         Args:
@@ -432,7 +557,10 @@ class DataProcessor:
         """
 
         datasets = self.config.get("datasets", [])
-        skip_disabled = self.config.get("settings", {}).get("skip_disabled", True)
+        skip_disabled = self.config.get("settings", {}).get(
+            "skip_disabled",
+            True,
+        )
         pending: dict[str, dict[str, Any]] = {}
 
         for dataset in datasets:
@@ -470,3 +598,20 @@ class DataProcessor:
                 }
 
         return pending
+
+
+def _process_dataset_worker(payload: dict[str, Any]) -> ProcessingResult:
+    """Entry point executed within worker processes."""
+
+    processor = DataProcessor(
+        config_path=payload["config_path"],
+        raw_dir=payload["raw_dir"],
+        processed_dir=payload["processed_dir"],
+        cache_dir=payload["cache_dir"],
+        config_data=payload["config_data"],
+    )
+    return processor.process_dataset(
+        payload["dataset"],
+        force=payload["force"],
+        dry_run=payload["dry_run"],
+    )

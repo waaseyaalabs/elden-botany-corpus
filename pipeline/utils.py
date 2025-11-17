@@ -146,7 +146,11 @@ def calculate_file_hash(filepath: Path) -> str:
     return sha256.hexdigest()
 
 
-def needs_processing(raw_path: Path, processed_path: Path, cache_file: Path | None = None) -> bool:
+def needs_processing(
+    raw_path: Path,
+    processed_path: Path,
+    cache_file: Path | None = None,
+) -> bool:
     """Check if raw file needs to be processed.
 
     Compares:
@@ -226,7 +230,7 @@ def detect_delimiter(filepath: Path, sample_size: int = 10) -> str:
     counts = {d: sample.count(d) for d in delimiters}
 
     # Return delimiter with highest count
-    return max(counts, key=counts.get)
+    return max(counts, key=lambda delimiter: counts[delimiter])
 
 
 def read_data_file(filepath: Path) -> pd.DataFrame:
@@ -254,7 +258,11 @@ def read_data_file(filepath: Path) -> pd.DataFrame:
         raise ValueError(f"Unsupported file format: {suffix}")
 
 
-def write_parquet(df: pd.DataFrame, output_path: Path, compression: str = "snappy"):
+def write_parquet(
+    df: pd.DataFrame,
+    output_path: Path,
+    compression: str = "snappy",
+) -> None:
     """Write DataFrame to Parquet with consistent settings.
 
     Args:
@@ -263,7 +271,12 @@ def write_parquet(df: pd.DataFrame, output_path: Path, compression: str = "snapp
         compression: Compression algorithm ('snappy', 'gzip', 'brotli')
     """
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    df.to_parquet(output_path, compression=compression, index=False, engine="pyarrow")
+    df.to_parquet(
+        output_path,
+        compression=compression,
+        index=False,
+        engine="pyarrow",
+    )
 
 
 def get_processing_stats(df: pd.DataFrame) -> dict[str, Any]:
