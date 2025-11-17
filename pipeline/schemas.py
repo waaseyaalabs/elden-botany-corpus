@@ -5,8 +5,9 @@ Uses Pandera for runtime validation and type checking of DataFrames.
 
 from typing import Any
 
-import pandera as pa
-from pandera import Check, Column, DataFrameSchema
+import pandera
+import pandera.pandas as pa
+from pandera.pandas import Check, Column, DataFrameSchema
 
 # Common field types and validations
 COMMON_CHECKS = {
@@ -348,5 +349,5 @@ def validate_dataframe(df, schema: DataFrameSchema) -> tuple[bool, str | None, A
     try:
         validated_df = schema.validate(df, lazy=True)
         return True, None, validated_df
-    except pa.errors.SchemaErrors as e:
+    except pandera.errors.SchemaErrors as e:
         return False, str(e), df
