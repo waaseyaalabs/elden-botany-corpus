@@ -19,7 +19,7 @@ class EmbeddingEncoder(Protocol):
     def encode(self, texts: Sequence[str]) -> list[list[float]]:
         """Encode a list of texts into dense vectors."""
 
-        ...
+        pass
 
 
 @dataclass(slots=True)
