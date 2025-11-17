@@ -199,9 +199,7 @@ def _load_lore_frame(path: Path) -> pd.DataFrame:
 
     frame = pd.read_parquet(path)
     missing = [
-        column
-        for column in REQUIRED_COLUMNS
-        if column not in frame.columns
+        column for column in REQUIRED_COLUMNS if column not in frame.columns
     ]
     if missing:
         missing_str = ", ".join(missing)
@@ -310,8 +308,7 @@ def _compose_weighted_record(
         for result, original in ordered
     ]
     embedding_sections = [
-        _format_section(result.text_type, result.text)
-        for result, _ in ordered
+        _format_section(result.text_type, result.text) for result, _ in ordered
     ]
 
     display_text = "\n\n".join(
@@ -517,7 +514,7 @@ def _encode_texts(
 ) -> list[list[float]]:
     vectors: list[list[float]] = []
     for start in range(0, len(texts), batch_size):
-        batch = list(texts[start:start + batch_size])
+        batch = list(texts[start : start + batch_size])
         if not batch:
             continue
         encoded = encoder.encode(batch)
