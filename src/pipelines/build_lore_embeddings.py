@@ -2,215 +2,202 @@
 # pyright: reportUnknownArgumentType=false
 # pyright: reportUnknownMemberType=false
 # pyright: reportUnknownVariableType=false
+# pyright: reportGeneralTypeIssues=false
 
-"""Generate lore embeddings and persist them for downstream RAG indexing."""
+"""Generate lore text embeddings for downstream RAG indexing."""
 
 from __future__ import annotations
 
 import argparse
 import logging
-import os
-from collections import Counter
+from collections.abc import Sequence
 from pathlib import Path
-from typing import cast
+from typing import Literal, Protocol
 
 import pandas as pd  # type: ignore[import]
-
 from corpus.config import settings
-from pipelines.embedding_backends import (
-    EmbeddingEncoder,
-    EncoderConfig,
-    ProviderLiteral,
-    create_encoder,
-)
+
+from pipelines.embedding_backends import EncoderConfig, create_encoder
+
+ProviderName = Literal["local", "openai"]
+
+
+class EncoderProtocol(Protocol):
+    """Local protocol for embedding encoders."""
+
+    def encode(self, texts: Sequence[str]) -> list[list[float]]:
+        """Encode input texts into vectors."""
+
+        ...
+
 
 LOGGER = logging.getLogger(__name__)
 
-DEFAULT_LORE_CORPUS = Path("data/curated/lore_corpus.parquet")
-DEFAULT_OUTPUT = Path("data/embeddings/lore_embeddings.parquet")
-
+DEFAULT_LORE_PATH = Path("data/curated/lore_corpus.parquet")
+DEFAULT_OUTPUT_PATH = Path("data/embeddings/lore_embeddings.parquet")
+TEXT_COLUMN = "text"
 REQUIRED_COLUMNS = (
     "lore_id",
     "canonical_id",
     "category",
     "text_type",
     "source",
-    "text",
+    TEXT_COLUMN,
 )
 
 
-class EmbeddingGenerationError(RuntimeError):
-    """Raised when embedding generation fails."""
+class LoreEmbeddingError(RuntimeError):
+    """Raised when lore embedding generation fails."""
+
+
+__all__ = ["build_lore_embeddings", "LoreEmbeddingError", "main"]
 
 
 def build_lore_embeddings(
     *,
-    lore_path: Path = DEFAULT_LORE_CORPUS,
-    output_path: Path = DEFAULT_OUTPUT,
-    provider: ProviderLiteral | None = None,
+    lore_path: Path = DEFAULT_LORE_PATH,
+    output_path: Path = DEFAULT_OUTPUT_PATH,
+    provider: ProviderName | None = None,
     model_name: str | None = None,
     batch_size: int | None = None,
-    encoder: EmbeddingEncoder | None = None,
-    dry_run: bool = False,
+    encoder: EncoderProtocol | None = None,
+    limit: int | None = None,
 ) -> pd.DataFrame:
-    """Load the lore corpus and materialize embeddings per lore row."""
+    """Embed lore corpus rows and write them to a parquet file."""
 
-    frame = _load_lore_corpus(lore_path)
+    frame = _load_lore_frame(lore_path)
+    if limit is not None:
+        frame = frame.head(limit)
     if frame.empty:
-        raise EmbeddingGenerationError(f"Lore corpus at {lore_path} is empty")
+        raise LoreEmbeddingError("Lore corpus is empty; nothing to embed")
 
-    configured_provider = provider or settings.embed_provider
-    if configured_provider not in {"local", "openai"}:
-        raise EmbeddingGenerationError("Embedding provider is not configured")
-    resolved_provider = cast(ProviderLiteral, configured_provider)
-
+    resolved_provider = _resolve_provider(provider)
     resolved_model = model_name or settings.embed_model
     resolved_batch = batch_size or settings.embed_batch_size
-
     resolved_encoder = encoder or _build_encoder(
         provider=resolved_provider,
         model_name=resolved_model,
         batch_size=resolved_batch,
     )
 
-    prepared = _prepare_rows(frame)
-    if prepared.empty:
-        raise EmbeddingGenerationError("No lore rows with text to embed")
+    texts = frame[TEXT_COLUMN].astype(str).tolist()
+    vectors = _encode_texts(texts, resolved_encoder, resolved_batch)
 
-    texts = prepared["text"].tolist()
-    vectors = resolved_encoder.encode(texts)
-    if not vectors:
-        raise EmbeddingGenerationError("Embedding backend returned no vectors")
-    if len(vectors) != len(prepared):
-        raise EmbeddingGenerationError(
-            "Embedding count mismatch with lore rows"
+    if len(vectors) != len(frame):
+        raise LoreEmbeddingError(
+            "Encoder returned mismatched vector count; expected " f"{len(frame)} got {len(vectors)}"
         )
 
-    dimension = len(vectors[0])
-    if dimension == 0:
-        raise EmbeddingGenerationError("Embedding vectors have zero dimension")
-
-    prepared = prepared.copy()
-    prepared["embedding"] = vectors
-    prepared["embedding_model"] = resolved_model
-    prepared["embedding_provider"] = resolved_provider
-    prepared["embedding_dim"] = dimension
-
-    _log_summary(prepared, dimension)
-
-    if dry_run:
-        LOGGER.info("Dry run enabled; skipping parquet write")
-        return prepared
+    enriched = frame.copy()
+    enriched["embedding"] = vectors
+    enriched["embedding_provider"] = resolved_provider
+    enriched["embedding_model"] = resolved_model
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    prepared.to_parquet(output_path, index=False)
-    LOGGER.info("Wrote lore embeddings to %s", output_path)
+    enriched.to_parquet(output_path, index=False)
+    LOGGER.info(
+        "Wrote %s embeddings (provider=%s, model=%s) to %s",
+        len(enriched),
+        resolved_provider,
+        resolved_model,
+        output_path,
+    )
+    return enriched
 
-    return prepared
+
+def _load_lore_frame(path: Path) -> pd.DataFrame:
+    if not path.exists():
+        raise FileNotFoundError(f"Lore corpus parquet not found: {path}")
+
+    frame = pd.read_parquet(path)
+    missing = [column for column in REQUIRED_COLUMNS if column not in frame.columns]
+    if missing:
+        raise LoreEmbeddingError(f"Lore corpus is missing required columns: {', '.join(missing)}")
+    return frame.reset_index(drop=True)
+
+
+def _resolve_provider(provider: ProviderName | None) -> ProviderName:
+    resolved = provider or settings.embed_provider
+    if resolved == "none":
+        msg = (
+            "Embedding provider is 'none'. Set EMBED_PROVIDER or pass "
+            "--provider when running the pipeline."
+        )
+        raise LoreEmbeddingError(msg)
+    return resolved
 
 
 def _build_encoder(
     *,
-    provider: ProviderLiteral,
+    provider: ProviderName,
     model_name: str,
     batch_size: int,
-) -> EmbeddingEncoder:
-    api_key = settings.openai_api_key or os.getenv("OPENAI_API_KEY")
+) -> EncoderProtocol:
     config = EncoderConfig(
         provider=provider,
         model_name=model_name,
         batch_size=batch_size,
-        openai_api_key=api_key,
+        openai_api_key=settings.openai_api_key,
     )
     return create_encoder(config)
 
 
-def _load_lore_corpus(path: Path) -> pd.DataFrame:
-    if not path.exists():
-        raise FileNotFoundError(f"Lore corpus parquet not found at {path}")
-
-    frame = pd.read_parquet(path)
-    missing = [
-        column for column in REQUIRED_COLUMNS if column not in frame.columns
-    ]
-    if missing:
-        columns = ", ".join(missing)
-        raise EmbeddingGenerationError(
-            f"Lore corpus missing columns: {columns}"
-        )
-
-    return frame
-
-
-def _prepare_rows(frame: pd.DataFrame) -> pd.DataFrame:
-    subset = frame.loc[:, REQUIRED_COLUMNS].copy()
-    subset = cast(
-        pd.DataFrame,
-        subset.sort_values("lore_id"),  # type: ignore[call-arg]
-    )
-    subset.reset_index(drop=True, inplace=True)
-    subset["text"] = subset["text"].astype(str).str.strip()
-    subset = cast(
-        pd.DataFrame,
-        subset.loc[subset["text"].astype(bool)],
-    )
-    subset.reset_index(drop=True, inplace=True)
-    return subset
-
-
-def _log_summary(frame: pd.DataFrame, dimension: int) -> None:
-    LOGGER.info("Generated %s embeddings (dim=%s)", len(frame), dimension)
-    for label in ("category", "source", "text_type"):
-        counts = Counter(frame[label])
-        formatted = ", ".join(
-            f"{key}={value}" for key, value in counts.items()
-        )
-        LOGGER.info("Distribution by %s: %s", label, formatted)
+def _encode_texts(
+    texts: Sequence[str],
+    encoder: EncoderProtocol,
+    batch_size: int,
+) -> list[list[float]]:
+    vectors: list[list[float]] = []
+    for start in range(0, len(texts), batch_size):
+        batch = list(texts[start : start + batch_size])
+        if not batch:
+            continue
+        encoded = encoder.encode(batch)
+        if len(encoded) != len(batch):
+            raise LoreEmbeddingError(
+                "Embedding backend returned mismatched vector count within a " "batch"
+            )
+        vectors.extend(encoded)
+    return vectors
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(
-        description="Build lore embeddings parquet"
-    )
+    parser = argparse.ArgumentParser(description="Build lore text embeddings")
     parser.add_argument(
         "--lore-path",
         type=Path,
-        default=DEFAULT_LORE_CORPUS,
+        default=DEFAULT_LORE_PATH,
         help="Path to lore_corpus.parquet",
     )
     parser.add_argument(
         "--output",
         type=Path,
-        default=DEFAULT_OUTPUT,
-        help="Embedding parquet destination",
+        default=DEFAULT_OUTPUT_PATH,
+        help="Output parquet path for embeddings",
     )
     parser.add_argument(
         "--provider",
         choices=["local", "openai"],
-        default=None,
-        help="Embedding provider to use",
+        help="Embedding provider to use (overrides settings)",
     )
     parser.add_argument(
         "--model-name",
-        type=str,
-        default=None,
-        help="Override embedding model name",
+        help="Embedding model identifier",
     )
     parser.add_argument(
         "--batch-size",
         type=int,
-        default=None,
-        help="Override batch size for embedding backend",
+        help="Batch size for embedding requests",
     )
     parser.add_argument(
-        "--dry-run",
-        action="store_true",
-        help="Skip writing artifacts",
+        "--limit",
+        type=int,
+        help="Optional maximum number of rows to embed",
     )
     parser.add_argument(
         "--verbose",
         action="store_true",
-        help="Enable debug logging",
+        help="Enable verbose logging",
     )
     return parser.parse_args()
 
@@ -231,7 +218,7 @@ def main() -> None:
             provider=args.provider,
             model_name=args.model_name,
             batch_size=args.batch_size,
-            dry_run=args.dry_run,
+            limit=args.limit,
         )
     except Exception as exc:  # noqa: BLE001
         LOGGER.error("Lore embedding pipeline failed: %s", exc)

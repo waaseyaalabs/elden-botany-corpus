@@ -7,8 +7,9 @@
 
 from __future__ import annotations
 
+from collections.abc import Sequence
 from dataclasses import dataclass
-from typing import Literal, Protocol, Sequence
+from typing import Literal, Protocol
 
 ProviderLiteral = Literal["local", "openai"]
 
@@ -19,7 +20,7 @@ class EmbeddingEncoder(Protocol):
     def encode(self, texts: Sequence[str]) -> list[list[float]]:
         """Encode a list of texts into dense vectors."""
 
-        pass
+        ...
 
 
 @dataclass(slots=True)
@@ -91,8 +92,7 @@ class _OpenAIEncoder:
             from openai import OpenAI  # type: ignore[import]
         except ImportError as err:  # pragma: no cover - import guard
             raise ImportError(
-                "openai package is not installed. "
-                "Install with 'poetry add openai'"
+                "openai package is not installed. " "Install with 'poetry add openai'"
             ) from err
 
         self._model_name = model_name
@@ -105,7 +105,7 @@ class _OpenAIEncoder:
 
         batches: list[list[float]] = []
         for start in range(0, len(texts), self._batch_size):
-            batch = list(texts[start:start + self._batch_size])
+            batch = list(texts[start : start + self._batch_size])
             response = self._client.embeddings.create(
                 input=batch,
                 model=self._model_name,
