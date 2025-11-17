@@ -126,6 +126,7 @@ class MetadataTracker:
             "duplicates_removed": {},
             "unmapped_texts": 0,
             "provenance_summary": {},
+            "quality_reports": {},
         }
 
     def add_row_count(self, source: str, count: int) -> None:
@@ -151,6 +152,11 @@ class MetadataTracker:
     def add_provenance_summary(self, source: str, count: int) -> None:
         """Add provenance summary."""
         self.metadata["provenance_summary"][source] = count
+
+    def add_quality_report(self, dataset: str, report: dict[str, Any]) -> None:
+        """Attach quality report references for a dataset."""
+
+        self.metadata["quality_reports"][dataset] = report
 
     def save(self, file_path: Path) -> None:
         """Save metadata to JSON."""

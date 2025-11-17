@@ -341,6 +341,54 @@ result = duckdb.query("""
 - No index column (cleaner files)
 - PyArrow engine (modern, efficient)
 
+## Quality Reports
+
+Every successful `corpus curate` run writes structured quality diagnostics next to the curated artifacts:
+
+- **Location**: `data/curated/quality/<dataset>.json` + `.html` (unified + each entity export)
+- **Content**: Row/column counts, per-column null percentages, numeric min/max/mean/std, categorical top values, and an `alerts` list
+- **Metadata**: The exact payload is embedded in `data/curated/metadata.json` under `quality_reports` so downstream consumers do not need to parse every individual file
+
+Example JSON stub:
+
+```json
+{
+  "dataset": "unified",
+  "row_count": 5231,
+  "column_count": 38,
+  "overall_null_percent": 4.12,
+  "alerts": ["weapon_scaling has 63.50% nulls"],
+  "columns": {
+    "weapon_scaling": {"dtype": "Utf8", "null_percent": 63.5, ... }
+  },
+  "reports": {
+    "json": "quality/unified.json",
+    "html": "quality/unified.html"
+  }
+}
+```
+
+### Failing the Pipeline on Alerts
+
+You can wire the metadata into CI/CD by reading the consolidated alerts list:
+
+```python
+from pathlib import Path
+import json
+
+metadata = json.loads(Path("data/curated/metadata.json").read_text())
+alerts = [
+    (dataset, alert)
+    for dataset, payload in metadata.get("quality_reports", {}).items()
+    for alert in payload.get("alerts", [])
+]
+
+if alerts:
+    raise SystemExit(f"Quality alerts detected: {alerts}")
+```
+
+Replace the `if alerts` clause with any rule (e.g., check for `nulls` substring or a specific numeric threshold) to enforce project-specific quality bars.
+
 ## Troubleshooting
 
 ### Schema Validation Fails
@@ -400,7 +448,7 @@ poetry run pip install pandera pyarrow
 ## Future Enhancements
 
 - [ ] Parallel dataset processing (multiprocessing)
-- [ ] Data quality reports (profiling, stats)
+- [x] Data quality reports (profiling, stats)
 - [ ] Schema versioning and migration
 - [ ] Incremental processing for append-only datasets
 - [ ] Data lineage tracking

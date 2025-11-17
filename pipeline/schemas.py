@@ -3,11 +3,10 @@
 Uses Pandera for runtime validation and type checking of DataFrames.
 """
 
-from typing import Any, Dict, Optional
+from typing import Any
 
 import pandera as pa
-from pandera import Column, DataFrameSchema, Check
-
+from pandera import Check, Column, DataFrameSchema
 
 # Common field types and validations
 COMMON_CHECKS = {
@@ -21,7 +20,11 @@ COMMON_CHECKS = {
 ITEMS_SCHEMA = DataFrameSchema(
     {
         "item_id": Column(pa.Int64, nullable=False, unique=True, coerce=True),
-        "name": Column(pa.String, nullable=False, checks=COMMON_CHECKS["non_empty_str"]),
+        "name": Column(
+            pa.String,
+            nullable=False,
+            checks=COMMON_CHECKS["non_empty_str"],
+        ),
         "category": Column(
             pa.String,
             nullable=False,
@@ -41,9 +44,24 @@ ITEMS_SCHEMA = DataFrameSchema(
             ),
         ),
         "description": Column(pa.String, nullable=True),
-        "weight": Column(pa.Float64, nullable=True, checks=COMMON_CHECKS["positive"], coerce=True),
-        "sell_price": Column(pa.Int64, nullable=True, checks=COMMON_CHECKS["positive"], coerce=True),
-        "max_stack": Column(pa.Int64, nullable=True, checks=COMMON_CHECKS["positive"], coerce=True),
+        "weight": Column(
+            pa.Float64,
+            nullable=True,
+            checks=COMMON_CHECKS["positive"],
+            coerce=True,
+        ),
+        "sell_price": Column(
+            pa.Int64,
+            nullable=True,
+            checks=COMMON_CHECKS["positive"],
+            coerce=True,
+        ),
+        "max_stack": Column(
+            pa.Int64,
+            nullable=True,
+            checks=COMMON_CHECKS["positive"],
+            coerce=True,
+        ),
         "rarity": Column(
             pa.String,
             nullable=True,
@@ -58,9 +76,7 @@ ITEMS_SCHEMA = DataFrameSchema(
 # Elden Ring Weapons Schema
 WEAPONS_SCHEMA = DataFrameSchema(
     {
-        "weapon_id": Column(
-            pa.Int64, nullable=False, unique=True, coerce=True
-        ),
+        "weapon_id": Column(pa.Int64, nullable=False, unique=True, coerce=True),
         "name": Column(
             pa.String,
             nullable=False,
@@ -116,27 +132,106 @@ BOSSES_SCHEMA = DataFrameSchema(
 # Armor Schema
 ARMOR_SCHEMA = DataFrameSchema(
     {
-        "armor_id": Column(pa.Int64, nullable=False, unique=True, coerce=True),
-        "name": Column(pa.String, nullable=False, checks=COMMON_CHECKS["non_empty_str"]),
+        "armor_id": Column(
+            pa.Int64,
+            nullable=False,
+            unique=True,
+            coerce=True,
+        ),
+        "name": Column(
+            pa.String,
+            nullable=False,
+            checks=COMMON_CHECKS["non_empty_str"],
+        ),
         "armor_type": Column(
             pa.String,
             nullable=False,
             checks=Check.isin(["head", "chest", "arms", "legs"]),
         ),
-        "weight": Column(pa.Float64, nullable=False, checks=COMMON_CHECKS["positive"], coerce=True),
-        "defense_physical": Column(pa.Float64, nullable=True, checks=COMMON_CHECKS["positive"], coerce=True),
-        "defense_strike": Column(pa.Float64, nullable=True, checks=COMMON_CHECKS["positive"], coerce=True),
-        "defense_slash": Column(pa.Float64, nullable=True, checks=COMMON_CHECKS["positive"], coerce=True),
-        "defense_pierce": Column(pa.Float64, nullable=True, checks=COMMON_CHECKS["positive"], coerce=True),
-        "defense_magic": Column(pa.Float64, nullable=True, checks=COMMON_CHECKS["positive"], coerce=True),
-        "defense_fire": Column(pa.Float64, nullable=True, checks=COMMON_CHECKS["positive"], coerce=True),
-        "defense_lightning": Column(pa.Float64, nullable=True, checks=COMMON_CHECKS["positive"], coerce=True),
-        "defense_holy": Column(pa.Float64, nullable=True, checks=COMMON_CHECKS["positive"], coerce=True),
-        "resistance_immunity": Column(pa.Int64, nullable=True, checks=COMMON_CHECKS["positive"], coerce=True),
-        "resistance_robustness": Column(pa.Int64, nullable=True, checks=COMMON_CHECKS["positive"], coerce=True),
-        "resistance_focus": Column(pa.Int64, nullable=True, checks=COMMON_CHECKS["positive"], coerce=True),
-        "resistance_vitality": Column(pa.Int64, nullable=True, checks=COMMON_CHECKS["positive"], coerce=True),
-        "poise": Column(pa.Float64, nullable=True, checks=COMMON_CHECKS["positive"], coerce=True),
+        "weight": Column(
+            pa.Float64,
+            nullable=False,
+            checks=COMMON_CHECKS["positive"],
+            coerce=True,
+        ),
+        "defense_physical": Column(
+            pa.Float64,
+            nullable=True,
+            checks=COMMON_CHECKS["positive"],
+            coerce=True,
+        ),
+        "defense_strike": Column(
+            pa.Float64,
+            nullable=True,
+            checks=COMMON_CHECKS["positive"],
+            coerce=True,
+        ),
+        "defense_slash": Column(
+            pa.Float64,
+            nullable=True,
+            checks=COMMON_CHECKS["positive"],
+            coerce=True,
+        ),
+        "defense_pierce": Column(
+            pa.Float64,
+            nullable=True,
+            checks=COMMON_CHECKS["positive"],
+            coerce=True,
+        ),
+        "defense_magic": Column(
+            pa.Float64,
+            nullable=True,
+            checks=COMMON_CHECKS["positive"],
+            coerce=True,
+        ),
+        "defense_fire": Column(
+            pa.Float64,
+            nullable=True,
+            checks=COMMON_CHECKS["positive"],
+            coerce=True,
+        ),
+        "defense_lightning": Column(
+            pa.Float64,
+            nullable=True,
+            checks=COMMON_CHECKS["positive"],
+            coerce=True,
+        ),
+        "defense_holy": Column(
+            pa.Float64,
+            nullable=True,
+            checks=COMMON_CHECKS["positive"],
+            coerce=True,
+        ),
+        "resistance_immunity": Column(
+            pa.Int64,
+            nullable=True,
+            checks=COMMON_CHECKS["positive"],
+            coerce=True,
+        ),
+        "resistance_robustness": Column(
+            pa.Int64,
+            nullable=True,
+            checks=COMMON_CHECKS["positive"],
+            coerce=True,
+        ),
+        "resistance_focus": Column(
+            pa.Int64,
+            nullable=True,
+            checks=COMMON_CHECKS["positive"],
+            coerce=True,
+        ),
+        "resistance_vitality": Column(
+            pa.Int64,
+            nullable=True,
+            checks=COMMON_CHECKS["positive"],
+            coerce=True,
+        ),
+        "poise": Column(
+            pa.Float64,
+            nullable=True,
+            checks=COMMON_CHECKS["positive"],
+            coerce=True,
+        ),
     },
     strict=False,
     coerce=True,
@@ -146,19 +241,58 @@ ARMOR_SCHEMA = DataFrameSchema(
 # Spells Schema
 SPELLS_SCHEMA = DataFrameSchema(
     {
-        "spell_id": Column(pa.Int64, nullable=False, unique=True, coerce=True),
-        "name": Column(pa.String, nullable=False, checks=COMMON_CHECKS["non_empty_str"]),
+        "spell_id": Column(
+            pa.Int64,
+            nullable=False,
+            unique=True,
+            coerce=True,
+        ),
+        "name": Column(
+            pa.String,
+            nullable=False,
+            checks=COMMON_CHECKS["non_empty_str"],
+        ),
         "spell_type": Column(
             pa.String,
             nullable=False,
             checks=Check.isin(["sorcery", "incantation"]),
         ),
-        "fp_cost": Column(pa.Int64, nullable=False, checks=COMMON_CHECKS["positive"], coerce=True),
-        "stamina_cost": Column(pa.Int64, nullable=True, checks=COMMON_CHECKS["positive"], coerce=True),
-        "slots_required": Column(pa.Int64, nullable=False, checks=COMMON_CHECKS["positive"], coerce=True),
-        "required_int": Column(pa.Int64, nullable=True, checks=COMMON_CHECKS["positive"], coerce=True),
-        "required_fai": Column(pa.Int64, nullable=True, checks=COMMON_CHECKS["positive"], coerce=True),
-        "required_arc": Column(pa.Int64, nullable=True, checks=COMMON_CHECKS["positive"], coerce=True),
+        "fp_cost": Column(
+            pa.Int64,
+            nullable=False,
+            checks=COMMON_CHECKS["positive"],
+            coerce=True,
+        ),
+        "stamina_cost": Column(
+            pa.Int64,
+            nullable=True,
+            checks=COMMON_CHECKS["positive"],
+            coerce=True,
+        ),
+        "slots_required": Column(
+            pa.Int64,
+            nullable=False,
+            checks=COMMON_CHECKS["positive"],
+            coerce=True,
+        ),
+        "required_int": Column(
+            pa.Int64,
+            nullable=True,
+            checks=COMMON_CHECKS["positive"],
+            coerce=True,
+        ),
+        "required_fai": Column(
+            pa.Int64,
+            nullable=True,
+            checks=COMMON_CHECKS["positive"],
+            coerce=True,
+        ),
+        "required_arc": Column(
+            pa.Int64,
+            nullable=True,
+            checks=COMMON_CHECKS["positive"],
+            coerce=True,
+        ),
         "description": Column(pa.String, nullable=True),
     },
     strict=False,
@@ -167,7 +301,7 @@ SPELLS_SCHEMA = DataFrameSchema(
 
 
 # Schema registry
-SCHEMA_REGISTRY: Dict[str, DataFrameSchema] = {
+SCHEMA_REGISTRY: dict[str, DataFrameSchema] = {
     "items": ITEMS_SCHEMA,
     "weapons": WEAPONS_SCHEMA,
     "bosses": BOSSES_SCHEMA,
@@ -176,7 +310,7 @@ SCHEMA_REGISTRY: Dict[str, DataFrameSchema] = {
 }
 
 
-def get_dataset_schema(dataset_name: str) -> Optional[DataFrameSchema]:
+def get_dataset_schema(dataset_name: str) -> DataFrameSchema | None:
     """Get the Pandera schema for a dataset by name.
 
     Args:
@@ -187,22 +321,20 @@ def get_dataset_schema(dataset_name: str) -> Optional[DataFrameSchema]:
     """
     # Normalize dataset name
     normalized = dataset_name.lower().replace("-", "_").replace(" ", "_")
-    
+
     # Try exact match first
     if normalized in SCHEMA_REGISTRY:
         return SCHEMA_REGISTRY[normalized]
-    
+
     # Try fuzzy match (contains)
     for key, schema in SCHEMA_REGISTRY.items():
         if key in normalized or normalized in key:
             return schema
-    
+
     return None
 
 
-def validate_dataframe(
-    df, schema: DataFrameSchema
-) -> tuple[bool, Optional[str], Any]:
+def validate_dataframe(df, schema: DataFrameSchema) -> tuple[bool, str | None, Any]:
     """Validate a DataFrame against a schema.
 
     Args:

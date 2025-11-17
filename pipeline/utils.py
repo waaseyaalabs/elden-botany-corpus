@@ -10,7 +10,7 @@ Provides helper functions for:
 import hashlib
 import json
 from pathlib import Path
-from typing import Any, Dict, Optional
+from typing import Any
 
 import pandas as pd
 
@@ -39,9 +39,7 @@ def normalize_column_names(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
-def handle_missing_values(
-    df: pd.DataFrame, strategy: Dict[str, Any]
-) -> pd.DataFrame:
+def handle_missing_values(df: pd.DataFrame, strategy: dict[str, Any]) -> pd.DataFrame:
     """Handle missing values based on column-specific strategies.
 
     Args:
@@ -76,9 +74,7 @@ def handle_missing_values(
     return df
 
 
-def normalize_categorical(
-    df: pd.DataFrame, mappings: Dict[str, Dict[str, str]]
-) -> pd.DataFrame:
+def normalize_categorical(df: pd.DataFrame, mappings: dict[str, dict[str, str]]) -> pd.DataFrame:
     """Normalize categorical values using predefined mappings.
 
     Args:
@@ -99,7 +95,7 @@ def normalize_categorical(
     return df
 
 
-def coerce_types(df: pd.DataFrame, type_map: Dict[str, str]) -> pd.DataFrame:
+def coerce_types(df: pd.DataFrame, type_map: dict[str, str]) -> pd.DataFrame:
     """Coerce DataFrame columns to specified types.
 
     Args:
@@ -118,9 +114,7 @@ def coerce_types(df: pd.DataFrame, type_map: Dict[str, str]) -> pd.DataFrame:
 
         try:
             if target_type == "int":
-                df[col] = pd.to_numeric(df[col], errors="coerce").astype(
-                    "Int64"
-                )
+                df[col] = pd.to_numeric(df[col], errors="coerce").astype("Int64")
             elif target_type == "float":
                 df[col] = pd.to_numeric(df[col], errors="coerce")
             elif target_type == "bool":
@@ -152,9 +146,7 @@ def calculate_file_hash(filepath: Path) -> str:
     return sha256.hexdigest()
 
 
-def needs_processing(
-    raw_path: Path, processed_path: Path, cache_file: Optional[Path] = None
-) -> bool:
+def needs_processing(raw_path: Path, processed_path: Path, cache_file: Path | None = None) -> bool:
     """Check if raw file needs to be processed.
 
     Compares:
@@ -174,7 +166,7 @@ def needs_processing(
     if not processed_path.exists():
         return True
 
-    cached_hash: Optional[str] = None
+    cached_hash: str | None = None
     if cache_file and cache_file.exists():
         try:
             with open(cache_file) as f:
@@ -262,9 +254,7 @@ def read_data_file(filepath: Path) -> pd.DataFrame:
         raise ValueError(f"Unsupported file format: {suffix}")
 
 
-def write_parquet(
-    df: pd.DataFrame, output_path: Path, compression: str = "snappy"
-):
+def write_parquet(df: pd.DataFrame, output_path: Path, compression: str = "snappy"):
     """Write DataFrame to Parquet with consistent settings.
 
     Args:
@@ -273,12 +263,10 @@ def write_parquet(
         compression: Compression algorithm ('snappy', 'gzip', 'brotli')
     """
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    df.to_parquet(
-        output_path, compression=compression, index=False, engine="pyarrow"
-    )
+    df.to_parquet(output_path, compression=compression, index=False, engine="pyarrow")
 
 
-def get_processing_stats(df: pd.DataFrame) -> Dict[str, Any]:
+def get_processing_stats(df: pd.DataFrame) -> dict[str, Any]:
     """Generate processing statistics for a DataFrame.
 
     Args:
