@@ -62,6 +62,7 @@ data/processed/.cache/
 data/curated/*.parquet
 data/curated/*.csv
 !data/curated/metadata.json
+data/embeddings/
 
 # Test artifacts
 .pytest_cache/
