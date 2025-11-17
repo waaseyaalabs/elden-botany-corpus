@@ -28,7 +28,8 @@ class EncoderProtocol(Protocol):
     def encode(self, texts: Sequence[str]) -> list[list[float]]:
         """Encode input texts into vectors."""
 
-        ...
+        pass
+        raise NotImplementedError
 
 
 LOGGER = logging.getLogger(__name__)
