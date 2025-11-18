@@ -1,0 +1,137 @@
+version: 1
+updated: "2025-11-18"
+review_log:
+  - reviewer: "Lore editors working group"
+    decision: "pending"
+    notes: "Awaiting async sign-off after schema publication"
+categories:
+  botanical:
+    label: "Botanical"
+    description: "Living plant matter, fungal blooms, and ecological interactions referenced in lore lines."
+    motifs:
+      - slug: "fungus"
+        label: "Fungus & Mycelia"
+        description: "Rotting blooms, scarlet aeonia, and parasitic growth imagery."
+        synonyms: ["mold", "mycelium", "mushroom"]
+        narrative_signals:
+          - "Mentions of scarlet rot or decay spreading underground"
+          - "Visual descriptions of spore clouds or fungal crowns"
+        canonical_examples:
+          - "Scarlet Aeonia"
+          - "Kindred of Rot"
+      - slug: "thorn"
+        label: "Thorns & Brambles"
+        description: "Penetrating or constricting plant matter, thorn-crowned figures."
+        synonyms: ["bramble", "thorn", "thornvine"]
+        narrative_signals:
+          - "Binding vines used as punishment or ward"
+          - "References to painful growth or self-imposed penance"
+        canonical_examples:
+          - "Thorn Sorcerer"
+          - "Mogh's accursed blood roses"
+      - slug: "sap"
+        label: "Sap & Flow"
+        description: "Imagery of sap, amber tears, or life-essence fluids derived from flora."
+        synonyms: ["sap", "amber", "resin"]
+        narrative_signals:
+          - "Mentions of amber memories or frozen sap"
+          - "Descriptions of sap acting as lifeblood or seal"
+        canonical_examples:
+          - "Erdtree's amber tears"
+          - "Mirage rinds"
+  elemental:
+    label: "Elemental"
+    description: "Classical elements plus gravity, order, and outer cosmic forces."
+    motifs:
+      - slug: "gravity"
+        label: "Gravity Wells"
+        description: "Starscourge themes, cosmic pressure, and crushed matter."
+        synonyms: ["gravity", "starscourge", "singularity"]
+        narrative_signals:
+          - "Purple sigils, meteor storms, or collapsing skies"
+          - "Radahn lineage references"
+        canonical_examples:
+          - "Starscourge Greatsword"
+          - "Gravity sorceries"
+      - slug: "flame"
+        label: "Sacred Flame"
+        description: "Golden or frenzied flame invocations and cleansing fire."
+        synonyms: ["flame", "fire", "ignite"]
+        narrative_signals:
+          - "Combustion miracles, blackflame, or frenzied outbursts"
+          - "References to purging corruption through flame"
+        canonical_examples:
+          - "Giantsflame"
+          - "Blackflame Ritual"
+      - slug: "glintstone"
+        label: "Glintstone & Crystalline"
+        description: "Intellect, primeval sorcery, and crystalline accretions."
+        synonyms: ["glintstone", "crystal", "primeval"]
+        narrative_signals:
+          - "Blue-white glimmering motifs"
+          - "Crystalline bodies or intellect as mineral"
+        canonical_examples:
+          - "Primeval Sorcerer Lusat"
+          - "Crystalian beings"
+  narrative:
+    label: "Narrative"
+    description: "Archetypal story beats, vows, betrayals, and ritual scars."
+    motifs:
+      - slug: "rebirth"
+        label: "Rebirth & Cycles"
+        description: "Transformation, cocoons, molting, and rebirth vows."
+        synonyms: ["rebirth", "renewal", "cycle"]
+        narrative_signals:
+          - "Larval tear usage"
+          - "References to new bodies or reincarnation"
+        canonical_examples:
+          - "Rennala's Great Rebirth"
+      - slug: "martyrdom"
+        label: "Martyrdom & Sacrifice"
+        description: "Willing suffering to gain power, thorn-chariots, or bloody vows."
+        synonyms: ["martyr", "sacrifice", "penance"]
+        narrative_signals:
+          - "Language about chosen suffering"
+          - "Targets blessing others through pain"
+        canonical_examples:
+          - "Fire Giant guardians"
+      - slug: "betrayal"
+        label: "Betrayal & Fracture"
+        description: "Broken oaths, shattered rings, and splintered dynasties."
+        synonyms: ["betrayal", "treachery", "schism"]
+        narrative_signals:
+          - "Shattered crowns or usurped thrones"
+          - "Lore describing trust turned weapon"
+        canonical_examples:
+          - "Night of Black Knives"
+  cosmic:
+    label: "Cosmic"
+    description: "Outer gods, fate threads, and dreamlike astral intrusions."
+    motifs:
+      - slug: "scarlet_rot"
+        label: "Scarlet Rot Divinity"
+        description: "Outer god influence of rot and astral fungus."
+        synonyms: ["scarlet", "rot", "outer_rot"]
+        narrative_signals:
+          - "Mentions of Malenia or unalloyed gold resisting corruption"
+          - "Dreams infected by crimson spores"
+        canonical_examples:
+          - "Malenia, Blade of Miquella"
+      - slug: "primeval_current"
+        label: "Primeval Current"
+        description: "Fate currents, flowing constellations, and glintstone tides."
+        synonyms: ["current", "fate", "glint-flow"]
+        narrative_signals:
+          - "Astrologers listening to the stars"
+          - "References to tides of grace"
+        canonical_examples:
+          - "Primeval sorcerer Azur"
+      - slug: "dream"
+        label: "Dream & Reverie"
+        description: "Visions, sleep spells, and astral dreamscapes bridging realms."
+        synonyms: ["dream", "slumber", "reverie"]
+        narrative_signals:
+          - "Stasis cocoons or eternal sleep"
+          - "Narratives crossing from waking world to beyond"
+        canonical_examples:
+          - "Miquella's cocoon"
