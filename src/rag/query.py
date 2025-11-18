@@ -32,6 +32,7 @@ from rag.reranker import (  # type: ignore[import-not-found]
 FilterValue = str | Sequence[str]
 FilterMapping = Mapping[str, FilterValue]
 FilterInput = FilterMapping | Sequence["FilterExpression"]
+_DEDUP_PADDING_FACTOR = 3
 
 
 class EncoderProtocol(Protocol):
@@ -95,11 +96,17 @@ def query_lore(
         encoder=encoder,
     )
     normalized_filters = _prepare_filters(filters)
-    frame = helper.query(query_text, top_k=top_k, filter_by=normalized_filters)
+    padded_top_k = max(1, top_k) * _DEDUP_PADDING_FACTOR
+    frame = helper.query(
+        query_text,
+        top_k=padded_top_k,
+        filter_by=normalized_filters,
+    )
     frame = _deduplicate_frame(frame)
     matches = _frame_to_matches(frame)
     active_reranker = reranker or load_reranker(None)
-    return active_reranker.rerank(matches)
+    reranked = active_reranker.rerank(matches)
+    return reranked[:top_k]
 
 
 def _prepare_filters(
@@ -180,12 +187,13 @@ def _deduplicate_frame(frame: pd.DataFrame) -> pd.DataFrame:
     duplicates: list[dict[str, object]] = []
 
     for _, row in frame.iterrows():
-        text_value = _normalize_text(row.get("text"))
-        is_duplicate = bool(text_value and text_value in seen)
-        target = duplicates if is_duplicate else unique_rows
-        if text_value and not is_duplicate:
-            seen.add(text_value)
-        target.append(row.to_dict())
+        normalized = _normalize_text(row.get("text"))
+        if normalized and normalized in seen:
+            duplicates.append(row.to_dict())
+            continue
+        if normalized:
+            seen.add(normalized)
+        unique_rows.append(row.to_dict())
 
     if not duplicates:
         return frame

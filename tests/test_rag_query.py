@@ -11,10 +11,10 @@ from collections.abc import Sequence
 from pathlib import Path
 
 import pandas as pd  # type: ignore[import]
+import pytest
 from rag.query import (  # type: ignore[import]
     FilterExpression,
     LoreMatch,
-    _deduplicate_frame,  # noqa: SLF001
     query_lore,
 )
 
@@ -26,6 +26,96 @@ from pipelines.build_rag_index import (  # type: ignore[import]
 )
 
 from .helpers import DeterministicEncoder, write_sample_lore_corpus
+
+
+class _StubQueryHelper:
+    def __init__(self, frame: pd.DataFrame) -> None:
+        self._frame = frame
+        self.calls: list[int] = []
+
+    def query(
+        self,
+        _: str,
+        *,
+        top_k: int,
+        filter_by: object | None = None,
+    ) -> pd.DataFrame:
+        self.calls.append(top_k)
+        limit = min(len(self._frame), top_k)
+        return self._frame.head(limit).copy()
+
+
+def _build_match_frame(total: int) -> pd.DataFrame:
+    rows = []
+    for index in range(total):
+        rows.append(
+            {
+                "lore_id": f"lore-{index}",
+                "text": f"Sample text {index}",
+                "score": 1.0 - index * 0.01,
+                "canonical_id": f"canon-{index}",
+                "category": "item",
+                "text_type": "description",
+                "source": "test",
+            }
+        )
+    return pd.DataFrame(rows)
+
+
+def test_query_lore_defaults_to_10_unique_results(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    frame = _build_match_frame(20)
+    helper = _StubQueryHelper(frame)
+
+    def _fake_loader(**_: object) -> _StubQueryHelper:
+        return helper
+
+    monkeypatch.setattr("rag.query.load_query_helper", _fake_loader)
+
+    matches = query_lore("topic")
+
+    assert helper.calls[-1] == 30  # padded top_k
+    assert len(matches) == 10
+
+
+def test_query_lore_honors_top_k_override(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    frame = _build_match_frame(20)
+    helper = _StubQueryHelper(frame)
+
+    def _fake_loader(**_: object) -> _StubQueryHelper:
+        return helper
+
+    monkeypatch.setattr("rag.query.load_query_helper", _fake_loader)
+
+    matches = query_lore("topic", top_k=4)
+
+    assert helper.calls[-1] == 12
+    assert len(matches) == 4
+
+
+def test_query_lore_deduplicates_results(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    rows = _build_match_frame(15).to_dict("records")
+    rows[1]["text"] = rows[0]["text"]
+    rows[3]["text"] = rows[2]["text"]
+    frame = pd.DataFrame(rows)
+    helper = _StubQueryHelper(frame)
+
+    def _fake_loader(**_: object) -> _StubQueryHelper:
+        return helper
+
+    monkeypatch.setattr("rag.query.load_query_helper", _fake_loader)
+
+    matches = query_lore("topic", top_k=5)
+
+    texts = [match.text for match in matches]
+    assert len(matches) == 5
+    assert texts.count(rows[0]["text"]) == 1
+    assert texts.count(rows[2]["text"]) == 1
 
 
 def _build_rag_fixture(
@@ -139,31 +229,3 @@ def test_query_lore_supports_exclusion_filters(tmp_path: Path) -> None:
     assert matches
     assert all(match.text_type != "description" for match in matches)
 
-
-def test_deduplicate_frame_moves_duplicates_to_end() -> None:
-    frame = pd.DataFrame(
-        [
-            {
-                "lore_id": "lore-1",
-                "text": "Crimson Bloom restores a trickle of HP.",
-                "score": 0.9,
-            },
-            {
-                "lore_id": "lore-dup",
-                "text": "Crimson Bloom restores a trickle of HP.",
-                "score": 0.85,
-            },
-            {
-                "lore_id": "lore-2",
-                "text": "Moonblade cleaves with frostlit arcs.",
-                "score": 0.8,
-            },
-        ]
-    )
-
-    deduped = _deduplicate_frame(frame)
-    texts = list(deduped["text"])
-
-    assert texts[0] == "Crimson Bloom restores a trickle of HP."
-    assert texts[1] == "Moonblade cleaves with frostlit arcs."
-    assert texts[-1] == "Crimson Bloom restores a trickle of HP."

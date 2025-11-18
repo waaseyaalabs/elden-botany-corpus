@@ -12,7 +12,8 @@ import argparse
 import json
 import logging
 import os
-from collections.abc import Mapping, Sequence
+from collections.abc import Mapping
+from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, cast
 
@@ -30,6 +31,15 @@ from pipelines.embedding_backends import (
 
 FAISSIndex = Any
 VectorMatrix = Any
+
+
+@dataclass(slots=True)
+class FilterClause:
+    """Include/exclude filters applied to the retrieved metadata frame."""
+
+    include: set[str] = field(default_factory=set)
+    exclude: set[str] = field(default_factory=set)
+
 
 LOGGER = logging.getLogger(__name__)
 
@@ -126,7 +136,9 @@ def load_query_helper(
     if resolved_provider is None:
         resolved_provider = _get_constant_value(metadata, "embedding_provider")
     if resolved_provider not in {"local", "openai"}:
-        raise RAGIndexError("Cannot determine embedding provider; rebuild embeddings")
+        raise RAGIndexError(
+            "Cannot determine embedding provider; rebuild embeddings"
+        )
     resolved_provider = cast(ProviderLiteral, resolved_provider)
 
     resolved_model = model_name or info.get("embedding_model")
@@ -159,7 +171,10 @@ def _resolve_index_path(target: Path) -> Path:
         return target
     if target == DEFAULT_INDEX and LEGACY_INDEX.exists():
         LOGGER.warning(
-            ("Legacy lore_index.faiss artifact detected; rebuild the RAG " "index to generate %s."),
+            (
+                "Legacy lore_index.faiss artifact detected; rebuild the RAG "
+                "index to generate %s."
+            ),
             DEFAULT_INDEX,
         )
         return LEGACY_INDEX
@@ -170,7 +185,7 @@ def query_index(
     query_text: str,
     *,
     top_k: int = 5,
-    filter_by: Mapping[str, str | Sequence[str]] | None = None,
+    filter_by: Mapping[str, FilterClause] | None = None,
     index_path: Path = DEFAULT_INDEX,
     metadata_path: Path = DEFAULT_METADATA,
     info_path: Path = DEFAULT_INFO,
@@ -239,7 +254,9 @@ def _read_info(path: Path) -> dict[str, object]:
     try:
         return json.loads(path.read_text(encoding="utf-8"))
     except json.JSONDecodeError as exc:  # pragma: no cover - defensive
-        raise RAGIndexError(f"Failed to parse index metadata JSON: {exc}") from exc
+        raise RAGIndexError(
+            f"Failed to parse index metadata JSON: {exc}"
+        ) from exc
 
 
 def _get_constant_value(frame: pd.DataFrame, column: str) -> str | None:
@@ -272,11 +289,13 @@ class RAGQueryHelper:
         query_text: str,
         *,
         top_k: int = 5,
-        filter_by: Mapping[str, str | Sequence[str]] | None = None,
+        filter_by: Mapping[str, FilterClause] | None = None,
     ) -> pd.DataFrame:
         vectors = self._encoder.encode([query_text])
         if not vectors:
-            raise RAGIndexError("Embedding backend returned no vector for query")
+            raise RAGIndexError(
+                "Embedding backend returned no vector for query"
+            )
 
         query_vec = np.asarray(vectors, dtype=np.float32)
         if query_vec.ndim == 1:
@@ -299,7 +318,7 @@ def _search_index(
     metadata: pd.DataFrame,
     query_vec: VectorMatrix,
     top_k: int,
-    filter_by: Mapping[str, str | Sequence[str]] | None,
+    filter_by: Mapping[str, FilterClause] | None,
 ) -> pd.DataFrame:
     if metadata.empty:
         return metadata.head(0).copy()
@@ -325,16 +344,18 @@ def _search_index(
 
 def _apply_filters(
     frame: pd.DataFrame,
-    filters: Mapping[str, str | Sequence[str]],
+    filters: Mapping[str, FilterClause],
 ) -> pd.DataFrame:
     filtered = frame
-    for column, value in filters.items():
+    for column, clause in filters.items():
         if column not in filtered.columns:
             continue
-        if isinstance(value, str):
-            filtered = filtered[filtered[column] == value]
-        else:
-            filtered = filtered[filtered[column].isin(list(value))]
+        if clause.include:
+            filtered = filtered[filtered[column].isin(sorted(clause.include))]
+        if clause.exclude:
+            filtered = filtered[
+                ~filtered[column].isin(sorted(clause.exclude))
+            ]
     return filtered
 
 
@@ -342,7 +363,9 @@ def _log_index_summary(frame: pd.DataFrame, dimension: int) -> None:
     LOGGER.info("Indexing %s embeddings (dim=%s)", len(frame), dimension)
     for label in ("category", "source", "text_type"):
         counts = frame[label].value_counts()
-        formatted = ", ".join(f"{key}={value}" for key, value in counts.items())
+        formatted = ", ".join(
+            f"{key}={value}" for key, value in counts.items()
+        )
         LOGGER.info("Distribution by %s: %s", label, formatted)
 
 

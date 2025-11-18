@@ -162,7 +162,7 @@ make rag-index               # poetry run python -m pipelines.build_rag_index
 make rag-query QUERY="scarlet rot and decay"
 
 # Equivalent manual invocation if you prefer not to use make
-poetry run python -m rag.query "thorned death rites" --category boss --top-k 5
+poetry run python -m rag.query "thorned death rites" --filter text_type!=dialogue --top-k 10
 ```
 
 Artifacts are written under `data/embeddings/`:
@@ -172,7 +172,13 @@ Artifacts are written under `data/embeddings/`:
 - `rag_metadata.parquet`: metadata joined with embeddings for filterable search
 - `rag_index_meta.json`: dimension, vector count, normalization flag, provider/model names
 
-Carian Archive dialogue FMGs are ingested during `pipelines.build_lore_corpus`, so NPC speech appears as `text_type=dialogue` rows alongside canonical descriptions and Impalers excerpts.
+Key query flags:
+
+- `--top-k` now defaults to **10** results; queries internally fetch extra matches and deduplicate near-identical prose so the default window is unique-heavy.
+- `--filter` accepts repeatable expressions such as `text_type=description` or `text_type!=dialogue,effect`, enabling inclusive/exclusive filtering per column.
+- `--category/--text-type/--source` remain available for quick single-column filters, and `--reranker identity` (default) prepares the CLI for future cross-encoder rerankers.
+
+Carian Archive FMGs (TalkMsg, BossCaption, Weapon/Armor/Goods captions, etc.) are ingested during the canonical + lore builds, with fallback aliases (e.g., `ArtsName.fmg.xml`) ensuring new DLC assets land even when primary files go missing. NPC speech appears as `text_type=dialogue` rows alongside canonical descriptions and Impalers excerpts, and the additional Carian records surface throughout the RAG metadata for filtering.
 
 ### Text-Type Weighting
 
