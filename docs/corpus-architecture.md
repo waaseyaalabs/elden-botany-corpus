@@ -23,6 +23,7 @@ The corpus is intentionally layered so each stage builds higher-order meaning on
   - Symbolic & botanical interpretations authored by contributors, with provenance and confidence scores.
   - Community annotations referencing videos, essays, or high-signal forum posts.
   - LLM-generated summaries that stitch related lore passages, stored alongside human commentary.
+- **Schema**: See [`docs/community-corpus-schema.md`](community-corpus-schema.md) for the full contributor annotation schema, motif taxonomy, and review checklist.
 - **Status**: Semantic retrieval bridge delivered via `pipelines.build_lore_embeddings`, `pipelines.build_rag_index`, and `rag.query` (see qualitative eval notebook for proof). The remaining work tracks clustering + annotation tooling for contributor workflows.
 
 ## Operational Principles
