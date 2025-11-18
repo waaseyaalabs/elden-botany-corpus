@@ -44,6 +44,11 @@ A curated, provenance-tracked dataset of **Elden Ring** game data (base game + S
    - **License**: Not specified (check repository)
    - **Format**: Master.html with dialogue and item descriptions
 
+5. **Carian Archive (FMG Localization Text)**  
+   🔗 [github.com/AsteriskAmpersand/Carian-Archive](https://github.com/AsteriskAmpersand/Carian-Archive)  
+   - **Files**: `WeaponName.fmg.xml` + `WeaponCaption.fmg.xml` (typically under `GameText/GR/data/INTERROOT_win64/msg/engUS/`)
+   - **Usage**: Provides authoritative in-game weapon names and flavor text. Run `poetry run corpus fetch --carian` (included in `--all`) to automatically cache the XMLs under `data/raw/carian_archive/`, or place them manually to preserve custom subdirectories.
+
 **Note**: Fextralife wiki is referenced for manual validation only—no automated scraping.
 
 ## 📁 Repository Structure
@@ -57,6 +62,7 @@ elden-botany-corpus/
 │   ├── ingest_kaggle.py     # Kaggle dataset ingestion
 │   ├── ingest_github_json.py  # GitHub API fallback
 │   ├── ingest_impalers.py   # DLC text dump parsing
+│   ├── ingest_carian_fmg.py  # Carian Archive FMG downloader
 │   ├── reconcile.py         # Deduplication & fuzzy matching
 │   ├── curate.py            # Curation pipeline
 │   ├── export.py            # Export utilities
@@ -125,6 +131,8 @@ poetry run corpus fetch --all
 # Reconcile & curate (generates unified.parquet)
 poetry run corpus curate
 ```
+
+`corpus fetch` now includes a `--carian/--no-carian` toggle for the Carian Archive FMG XMLs (enabled by default and implied by `--all`).
 
 **Output**: `data/curated/unified.parquet` (~5-10MB) with all entities. Per-dataset profiling summaries live under `data/curated/quality/*.json|html` and are referenced inside `data/curated/metadata.json`.
 

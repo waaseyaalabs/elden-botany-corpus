@@ -8,6 +8,7 @@ import click
 
 from corpus.config import settings
 from corpus.curate import curate_corpus
+from corpus.ingest_carian_fmg import fetch_carian_fmg_files
 from corpus.ingest_github_json import fetch_github_api_data
 from corpus.ingest_impalers import fetch_impalers_data
 from corpus.ingest_kaggle import fetch_kaggle_data
@@ -36,6 +37,11 @@ def main() -> None:
     help="Include Impalers text dump",
 )
 @click.option(
+    "--carian/--no-carian",
+    default=True,
+    help="Include Carian Archive FMG XMLs",
+)
+@click.option(
     "--all",
     "fetch_all",
     is_flag=True,
@@ -46,24 +52,29 @@ def fetch(
     dlc: bool,
     github: bool,
     impalers: bool,
+    carian: bool,
     fetch_all: bool,
 ) -> None:
     """Fetch data from all configured sources."""
     if not settings.kaggle_credentials_set:
-        click.echo(
-            "Warning: Kaggle credentials not set. Kaggle datasets will be skipped.",
-            err=True,
+        warning = (
+            "Warning: Kaggle credentials not set. "
+            "Kaggle datasets will be skipped."
         )
+        click.echo(warning, err=True)
 
     if fetch_all:
-        base = dlc = github = impalers = True
+        base = dlc = github = impalers = carian = True
 
     try:
         # Fetch Kaggle data
         kaggle_base = []
         kaggle_dlc = []
         if base or dlc:
-            kaggle_entities = fetch_kaggle_data(include_base=base, include_dlc=dlc)
+            kaggle_entities = fetch_kaggle_data(
+                include_base=base,
+                include_dlc=dlc,
+            )
             # Split by is_dlc
             kaggle_base = [e for e in kaggle_entities if not e.is_dlc]
             kaggle_dlc = [e for e in kaggle_entities if e.is_dlc]
@@ -78,12 +89,17 @@ def fetch(
         if impalers:
             dlc_texts = fetch_impalers_data()
 
+        carian_fmg = []
+        if carian:
+            carian_fmg = fetch_carian_fmg_files()
+
         # Save counts
         click.echo("\n=== Fetch Summary ===")
         click.echo(f"Kaggle base: {len(kaggle_base)}")
         click.echo(f"Kaggle DLC: {len(kaggle_dlc)}")
         click.echo(f"GitHub API: {len(github_api)}")
         click.echo(f"Impalers text: {len(dlc_texts)}")
+        click.echo(f"Carian FMG XMLs: {len(carian_fmg)}")
 
     except Exception as e:
         click.echo(f"Error during fetch: {e}", err=True)
@@ -166,7 +182,11 @@ def load(
     """Load curated data into PostgreSQL."""
     try:
         dsn = dsn or settings.postgres_dsn
-        parquet_path = Path(parquet) if parquet else settings.curated_dir / "unified.parquet"
+        parquet_path = (
+            Path(parquet)
+            if parquet
+            else settings.curated_dir / "unified.parquet"
+        )
 
         if not parquet_path.exists():
             click.echo(
