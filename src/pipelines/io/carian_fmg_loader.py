@@ -1,11 +1,15 @@
 from __future__ import annotations
 
+import logging
 import xml.etree.ElementTree as ET
+from collections.abc import Callable
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Callable
+from typing import Any
 
+from corpus.ingest_carian_fmg import CARIAN_FMG_CANDIDATES
 from corpus.models import create_slug, normalize_name_for_matching
+
 from pipelines.io.common import serialize_payload  # type: ignore[import]
 
 FMG_PRIORITY = 4
@@ -14,13 +18,17 @@ FMG_PRIORITY = 4
 RecordBuilder = Callable[[str, str | None, int], dict[str, Any]]
 
 
+LOGGER = logging.getLogger(__name__)
+
+
 @dataclass(frozen=True)
 class NameCaptionSpec:
-    names_filename: str
-    captions_filename: str
+    names_candidates: tuple[str, ...]
+    captions_candidates: tuple[str, ...]
     source: str
     record_builder: RecordBuilder
     deduplicate_by_name: bool = False
+    optional: bool = False
 
 
 def load_carian_weapon_fmg(raw_root: Path) -> list[dict[str, Any]]:
@@ -28,8 +36,8 @@ def load_carian_weapon_fmg(raw_root: Path) -> list[dict[str, Any]]:
 
     archive_root = _require_archive_root(raw_root)
     spec = NameCaptionSpec(
-        names_filename="WeaponName.fmg.xml",
-        captions_filename="WeaponCaption.fmg.xml",
+        names_candidates=CARIAN_FMG_CANDIDATES["weapon_name"],
+        captions_candidates=CARIAN_FMG_CANDIDATES["weapon_caption"],
         source="carian_weapon_fmg",
         record_builder=_weapon_record_builder,
         deduplicate_by_name=True,
@@ -42,8 +50,8 @@ def load_carian_armor_fmg(raw_root: Path) -> list[dict[str, Any]]:
 
     archive_root = _require_archive_root(raw_root)
     spec = NameCaptionSpec(
-        names_filename="ProtectorName.fmg.xml",
-        captions_filename="ProtectorCaption.fmg.xml",
+        names_candidates=CARIAN_FMG_CANDIDATES["protector_name"],
+        captions_candidates=CARIAN_FMG_CANDIDATES["protector_caption"],
         source="carian_armor_fmg",
         record_builder=_armor_record_builder,
         deduplicate_by_name=True,
@@ -57,26 +65,26 @@ def load_carian_item_fmg(raw_root: Path) -> list[dict[str, Any]]:
     archive_root = _require_archive_root(raw_root)
     specs = [
         NameCaptionSpec(
-            names_filename="GoodsName.fmg.xml",
-            captions_filename="GoodsCaption.fmg.xml",
+            names_candidates=CARIAN_FMG_CANDIDATES["goods_name"],
+            captions_candidates=CARIAN_FMG_CANDIDATES["goods_caption"],
             source="carian_goods_fmg",
             record_builder=_item_record_builder("consumable"),
         ),
         NameCaptionSpec(
-            names_filename="AccessoryName.fmg.xml",
-            captions_filename="AccessoryCaption.fmg.xml",
+            names_candidates=CARIAN_FMG_CANDIDATES["accessory_name"],
+            captions_candidates=CARIAN_FMG_CANDIDATES["accessory_caption"],
             source="carian_accessory_fmg",
             record_builder=_item_record_builder("talisman"),
         ),
         NameCaptionSpec(
-            names_filename="GemName.fmg.xml",
-            captions_filename="GemCaption.fmg.xml",
+            names_candidates=CARIAN_FMG_CANDIDATES["gem_name"],
+            captions_candidates=CARIAN_FMG_CANDIDATES["gem_caption"],
             source="carian_gem_fmg",
             record_builder=_item_record_builder("spirit"),
         ),
         NameCaptionSpec(
-            names_filename="WeaponSkillName.fmg.xml",
-            captions_filename="WeaponSkillCaption.fmg.xml",
+            names_candidates=CARIAN_FMG_CANDIDATES["weapon_skill"],
+            captions_candidates=CARIAN_FMG_CANDIDATES["weapon_skill_caption"],
             source="carian_skill_fmg",
             record_builder=_item_record_builder("ash_of_war"),
         ),
@@ -93,10 +101,11 @@ def load_carian_boss_fmg(raw_root: Path) -> list[dict[str, Any]]:
 
     archive_root = _require_archive_root(raw_root)
     spec = NameCaptionSpec(
-        names_filename="BossName.fmg.xml",
-        captions_filename="BossCaption.fmg.xml",
+        names_candidates=CARIAN_FMG_CANDIDATES["boss_name"],
+        captions_candidates=CARIAN_FMG_CANDIDATES["boss_caption"],
         source="carian_boss_fmg",
         record_builder=_boss_record_builder,
+        optional=True,
     )
     return _load_name_caption_records(archive_root, spec)
 
@@ -106,8 +115,8 @@ def load_carian_spell_fmg(raw_root: Path) -> list[dict[str, Any]]:
 
     archive_root = _require_archive_root(raw_root)
     spec = NameCaptionSpec(
-        names_filename="MagicName.fmg.xml",
-        captions_filename="MagicCaption.fmg.xml",
+        names_candidates=CARIAN_FMG_CANDIDATES["magic_name"],
+        captions_candidates=CARIAN_FMG_CANDIDATES["magic_caption"],
         source="carian_spell_fmg",
         record_builder=_spell_record_builder,
     )
@@ -118,11 +127,31 @@ def load_carian_dialogue_lines(raw_root: Path) -> list[dict[str, Any]]:
     """Parse TalkMsg/NpcName FMGs into dialogue lines."""
 
     archive_root = _require_archive_root(raw_root)
-    talk_path = _resolve_fmg_path(archive_root, "TalkMsg.fmg.xml")
-    npc_path = _resolve_fmg_path(archive_root, "NpcName.fmg.xml")
+    talk_path = _resolve_candidate_path(
+        archive_root,
+        CARIAN_FMG_CANDIDATES["talk"],
+        description="Carian dialogue",
+        required=False,
+    )
+    if talk_path is None:
+        LOGGER.warning("Skipping Carian dialogue ingestion; TalkMsg missing")
+        return []
 
     talk_entries = _parse_fmg_file(talk_path)
-    npc_names = _parse_fmg_file(npc_path)
+
+    npc_resolved = _resolve_candidate_path(
+        archive_root,
+        CARIAN_FMG_CANDIDATES["npc_name"],
+        description="Carian NPC names",
+        required=False,
+    )
+    if npc_resolved is None:
+        LOGGER.warning("NpcName FMG missing; continuing without speaker names")
+        npc_path = None
+        npc_names: dict[int, str] = {}
+    else:
+        npc_path = npc_resolved
+        npc_names = _parse_fmg_file(npc_path)
 
     lines: list[dict[str, Any]] = []
     for talk_id, text in sorted(talk_entries.items()):
@@ -142,7 +171,7 @@ def load_carian_dialogue_lines(raw_root: Path) -> list[dict[str, Any]]:
                 "payload": serialize_payload(
                     {
                         "talk_path": str(talk_path),
-                        "npc_path": str(npc_path),
+                        "npc_path": str(npc_path) if npc_path else None,
                     }
                 ),
             }
@@ -163,11 +192,24 @@ def _load_name_caption_records(
     archive_root: Path,
     spec: NameCaptionSpec,
 ) -> list[dict[str, Any]]:
-    names_path = _resolve_fmg_path(archive_root, spec.names_filename)
-    captions_path = _resolve_fmg_path(archive_root, spec.captions_filename)
+    names_path = _resolve_candidate_path(
+        archive_root,
+        spec.names_candidates,
+        description=f"{spec.source} names",
+        required=not spec.optional,
+    )
+    if names_path is None:
+        return []
+
+    captions_path = _resolve_candidate_path(
+        archive_root,
+        spec.captions_candidates,
+        description=f"{spec.source} captions",
+        required=False,
+    )
 
     names = _parse_fmg_file(names_path)
-    captions = _parse_fmg_file(captions_path)
+    captions = _parse_fmg_file(captions_path) if captions_path else {}
 
     records: list[dict[str, Any]]
     if spec.deduplicate_by_name:
@@ -184,9 +226,9 @@ def _load_name_caption_records(
     for record in records:
         fmg_ids = record.pop("_fmg_ids", [])
         description_source = record.pop("_description_source", None)
-        payload = {
+        payload: dict[str, Any] = {
             "names_path": str(names_path),
-            "captions_path": str(captions_path),
+            "captions_path": str(captions_path) if captions_path else None,
             "fmg_ids": fmg_ids,
             "description_id": description_source,
         }
@@ -332,6 +374,40 @@ def _resolve_fmg_path(base_dir: Path, filename: str) -> Path:
     return matches[0]
 
 
+def _resolve_candidate_path(
+    archive_root: Path,
+    candidates: tuple[str, ...],
+    *,
+    description: str,
+    required: bool,
+) -> Path | None:
+    missing: list[str] = []
+    for index, candidate in enumerate(candidates):
+        try:
+            path = _resolve_fmg_path(archive_root, candidate)
+        except FileNotFoundError as exc:
+            missing.append(str(exc))
+            continue
+        if index > 0:
+            LOGGER.info(
+                "Using fallback FMG %s for %s (primary missing)",
+                candidate,
+                description,
+            )
+        return path
+
+    if required:
+        message = f"Missing FMG candidates for {description}; " f"tried {', '.join(candidates)}"
+        raise FileNotFoundError(message)
+
+    LOGGER.warning(
+        "No FMG candidates available for %s; tried %s",
+        description,
+        ", ".join(candidates),
+    )
+    return None
+
+
 def _parse_fmg_file(path: Path) -> dict[int, str]:
     if not path.exists():
         message = f"FMG file does not exist: {path}"
@@ -381,9 +457,9 @@ def _resolve_speaker_id(
 ) -> int | None:
     candidate = entry_id
     while candidate > 0:
-        if (
-            candidate in npc_names
-            and npc_names[candidate] not in (None, "%null%")
+        if candidate in npc_names and npc_names[candidate] not in (
+            None,
+            "%null%",
         ):
             return candidate
         candidate //= 10

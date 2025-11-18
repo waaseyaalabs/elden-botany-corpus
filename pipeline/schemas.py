@@ -40,6 +40,7 @@ ITEMS_SCHEMA = DataFrameSchema(
                     "talisman",
                     "tool",
                     "material",
+                    "spirit",
                     "other",
                 ]
             ),
@@ -77,7 +78,12 @@ ITEMS_SCHEMA = DataFrameSchema(
 # Elden Ring Weapons Schema
 WEAPONS_SCHEMA = DataFrameSchema(
     {
-        "weapon_id": Column(pa.Int64, nullable=False, unique=True, coerce=True),
+        "weapon_id": Column(
+            pa.Int64,
+            nullable=False,
+            unique=True,
+            coerce=True,
+        ),
         "name": Column(
             pa.String,
             nullable=False,
@@ -335,7 +341,9 @@ def get_dataset_schema(dataset_name: str) -> DataFrameSchema | None:
     return None
 
 
-def validate_dataframe(df, schema: DataFrameSchema) -> tuple[bool, str | None, Any]:
+def validate_dataframe(
+    df, schema: DataFrameSchema
+) -> tuple[bool, str | None, Any]:
     """Validate a DataFrame against a schema.
 
     Args:

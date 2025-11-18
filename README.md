@@ -48,6 +48,7 @@ A curated, provenance-tracked dataset of **Elden Ring** game data (base game + S
    🔗 [github.com/AsteriskAmpersand/Carian-Archive](https://github.com/AsteriskAmpersand/Carian-Archive)  
    - **Files**: Weapon, armor, goods, accessory, gem, boss, magic, and talk FMG XMLs (e.g., `WeaponName.fmg.xml`, `ProtectorCaption.fmg.xml`, `TalkMsg.fmg.xml`).
    - **Usage**: Supplies authoritative names/captions plus NPC dialogue that now flow into the canonical tables and lore corpus. Run `poetry run corpus fetch --carian` (included in `--all`) to cache everything under `data/raw/carian_archive/`, or place them manually to preserve custom subdirectories.
+      - **Alias handling**: Each FMG dataset has an ordered list of candidate filenames defined in `corpus/ingest_carian_fmg.py` (`CARIAN_FMG_CANDIDATES`). The downloader/loader will pick the first file that exists locally (e.g., `WeaponSkillName.fmg.xml` falls back to `ArtsName.fmg.xml`). To add another alias, append it to the relevant candidate list and rerun `poetry run corpus fetch --carian`.
 
 **Note**: Fextralife wiki is referenced for manual validation only—no automated scraping.
 
