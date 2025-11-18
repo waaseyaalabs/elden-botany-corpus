@@ -35,7 +35,7 @@ COMMENT ON COLUMN elden.corpus_chunk.embedding IS 'Vector embedding for semantic
 -- Community contributor directory
 CREATE TABLE IF NOT EXISTS elden.community_contributor (
     id UUID PRIMARY KEY,
-    handle TEXT NOT NULL UNIQUE CHECK (handle ~ '^[A-Za-z0-9_\-]{2,39}$'),
+    handle TEXT NOT NULL UNIQUE CHECK (handle ~ '^[a-z0-9_\-]{2,39}$'),
     display_name TEXT,
     auth_provider TEXT NOT NULL DEFAULT 'github',
     profile_uri TEXT,

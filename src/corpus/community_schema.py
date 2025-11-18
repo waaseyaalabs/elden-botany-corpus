@@ -1,12 +1,13 @@
-from __future__ import annotations
-
 """Pydantic models for the Community Corpus annotation schema."""
 
+from __future__ import annotations
+
+from collections.abc import Iterable
 from dataclasses import dataclass
-from datetime import datetime, timezone
+from datetime import UTC, datetime
+from decimal import Decimal
 from enum import Enum
 from pathlib import Path
-from typing import Iterable
 from uuid import UUID, uuid4
 
 import yaml
@@ -20,12 +21,15 @@ from pydantic import (
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_TAXONOMY_PATH = PROJECT_ROOT / "config" / "community_motifs.yml"
+MIN_HANDLE_LENGTH = 2
+MAX_HANDLE_LENGTH = 39
+ALLOWED_HANDLE_CHARS = set("abcdefghijklmnopqrstuvwxyz0123456789-_")
 
 
 def utcnow() -> datetime:
     """Return a timezone-aware UTC timestamp."""
 
-    return datetime.now(tz=timezone.utc)
+    return datetime.now(tz=UTC)
 
 
 class SubmissionChannel(str, Enum):
@@ -80,14 +84,7 @@ class SymbolismMetadata(BaseModel):
     def deduplicate_lists(self) -> SymbolismMetadata:
         """Ensure every symbolism list has unique, trimmed entries."""
 
-        for attr in (
-            "colors",
-            "botanical_signals",
-            "archetypes",
-            "allegories",
-            "emotions",
-            "rituals",
-        ):
+        for attr in SymbolismMetadata.model_fields.keys():
             values = getattr(self, attr)
             seen: list[str] = []
             for item in values:
@@ -237,7 +234,13 @@ class CommunityAnnotationRevision(BaseModel):
     references: list[AnnotationReference] = Field(
         default_factory=empty_reference_list,
     )
-    confidence: float | None = Field(default=None, ge=0.0, le=1.0)
+    confidence: Decimal | None = Field(
+        default=None,
+        ge=0,
+        le=1,
+        max_digits=4,
+        decimal_places=3,
+    )
     is_current: bool = False
     review_state: AnnotationReviewState = AnnotationReviewState.PENDING
     reviewer_handle: str | None = None
@@ -288,14 +291,12 @@ class CommunityAnnotation(BaseModel):
     def validate_handle(cls, handle: str) -> str:
         """Ensure contributor handles follow GitHub-like constraints."""
 
-        allowed = set("abcdefghijklmnopqrstuvwxyz0123456789-_")
         slug = handle.strip().lower()
-        if not 2 <= len(slug) <= 39:
-            raise ValueError("Handle must be between 2 and 39 chars")
-        if not set(slug) <= allowed:
-            raise ValueError(
-                "Handle must be alphanumeric plus - or _ characters"
-            )
+        if not MIN_HANDLE_LENGTH <= len(slug) <= MAX_HANDLE_LENGTH:
+            msg = f"Handle must be between {MIN_HANDLE_LENGTH} and " f"{MAX_HANDLE_LENGTH} chars"
+            raise ValueError(msg)
+        if not set(slug) <= ALLOWED_HANDLE_CHARS:
+            raise ValueError("Handle must be alphanumeric plus - or _ characters")
         return slug
 
     def add_revision(
@@ -310,9 +311,7 @@ class CommunityAnnotation(BaseModel):
         revision.ensure_motifs_are_known(taxonomy)
         for existing in self.revisions:
             if existing.version == revision.version:
-                raise ValueError(
-                    "Revision version already exists for this annotation"
-                )
+                raise ValueError("Revision version already exists for this annotation")
             existing.is_current = False
         revision.is_current = True
         self.revisions.append(revision)
@@ -326,6 +325,9 @@ class CommunityAnnotation(BaseModel):
 
         if not self.revisions:
             return None
+        current = next((rev for rev in self.revisions if rev.is_current), None)
+        if current is not None:
+            return current
         return max(self.revisions, key=lambda rev: rev.version)
 
 
@@ -349,7 +351,7 @@ class AnnotationDiff:
         curr_tags = set(current.motif_tags)
         symbolism_delta: dict[str, tuple[list[str], list[str]]] = {}
         if previous:
-            for field in SymbolismMetadata.model_fields:
+            for field in SymbolismMetadata.model_fields.keys():
                 before = getattr(previous.symbolism, field)
                 after = getattr(current.symbolism, field)
                 if before != after:
@@ -358,7 +360,7 @@ class AnnotationDiff:
                         [value for value in after if value not in before],
                     )
         else:
-            for field in SymbolismMetadata.model_fields:
+            for field in SymbolismMetadata.model_fields.keys():
                 values = getattr(current.symbolism, field)
                 if values:
                     symbolism_delta[field] = ([], values)
