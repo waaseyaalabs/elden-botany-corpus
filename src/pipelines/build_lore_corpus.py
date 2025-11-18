@@ -19,13 +19,29 @@ from corpus.models import create_slug, normalize_name_for_matching
 from Levenshtein import ratio as levenshtein_ratio  # type: ignore[import]
 from pandera import Check, Column, DataFrameSchema
 
+from pipelines.io.carian_fmg_loader import load_carian_dialogue_lines
+
 LOGGER = logging.getLogger(__name__)
 
 DEFAULT_CURATED_ROOT = Path("data/curated")
 DEFAULT_RAW_ROOT = Path("data/raw")
 DEFAULT_OUTPUT = Path("data/curated/lore_corpus.parquet")
 
-ALLOWED_SOURCES = {"kaggle_base", "kaggle_dlc", "github_api", "impalers"}
+ALLOWED_SOURCES = {
+    "kaggle_base",
+    "kaggle_dlc",
+    "github_api",
+    "impalers",
+    "carian_weapon_fmg",
+    "carian_armor_fmg",
+    "carian_goods_fmg",
+    "carian_accessory_fmg",
+    "carian_gem_fmg",
+    "carian_skill_fmg",
+    "carian_boss_fmg",
+    "carian_spell_fmg",
+    "carian_dialogue_fmg",
+}
 ALLOWED_CATEGORIES = {"item", "weapon", "armor", "boss", "spell", "npc"}
 ALLOWED_TEXT_TYPES = {
     "description",
@@ -37,6 +53,7 @@ ALLOWED_TEXT_TYPES = {
     "special_effect",
     "drops",
     "impalers_excerpt",
+    "dialogue",
 }
 
 
@@ -156,6 +173,9 @@ def build_lore_corpus(
         frame = canonical_frames[spec.category]
         lore_rows.extend(_extract_canonical_lore(frame, spec))
 
+    carian_dialogue_rows = _load_carian_dialogue_lore(raw_root)
+    lore_rows.extend(carian_dialogue_rows)
+
     impalers_entries = _parse_impalers_dump(raw_root / "impalers" / "Master.html")
     matched_impalers, unmatched = _match_impalers_entries(
         entries=impalers_entries,
@@ -250,6 +270,64 @@ def _extract_canonical_lore(frame: pd.DataFrame, spec: DomainSpec) -> list[dict[
                 }
             )
 
+    return rows
+
+
+def _load_carian_dialogue_lore(raw_root: Path) -> list[dict[str, Any]]:
+    try:
+        entries = load_carian_dialogue_lines(raw_root)
+    except FileNotFoundError as exc:
+        LOGGER.warning("Skipping Carian dialogue ingestion: %s", exc)
+        return []
+
+    rows: list[dict[str, Any]] = []
+    for entry in entries:
+        text = _normalize_text(entry.get("text"))
+        if not text:
+            continue
+
+        speaker_name = str(entry.get("speaker_name") or "Carian Speaker")
+        speaker_slug = entry.get("speaker_slug") or create_slug(speaker_name)
+        if not speaker_slug:
+            speaker_slug = f"speaker-{entry.get('talk_id')}"
+
+        speaker_id = entry.get("speaker_id")
+        if speaker_id not in (None, ""):
+            canonical_id = f"npc:{speaker_id}"
+        else:
+            canonical_id = f"npc:{speaker_slug}"
+
+        source = str(entry.get("source") or "carian_dialogue_fmg")
+        lore_id = _compute_lore_id(canonical_id, "dialogue", text)
+        provenance = {
+            "source": source,
+            "talk_id": entry.get("talk_id"),
+            "speaker_id": speaker_id,
+            "speaker_name": speaker_name,
+            "speaker_slug": speaker_slug,
+        }
+        payload = entry.get("payload")
+        if payload:
+            provenance["payload"] = payload
+
+        rows.append(
+            {
+                "lore_id": lore_id,
+                "canonical_id": canonical_id,
+                "category": "npc",
+                "source": source,
+                "text_type": "dialogue",
+                "language": "en",
+                "text": text,
+                "provenance": json.dumps(
+                    provenance,
+                    ensure_ascii=False,
+                    sort_keys=True,
+                ),
+            }
+        )
+
+    LOGGER.info("Loaded %s Carian dialogue lines", len(rows))
     return rows
 
 
@@ -391,7 +469,9 @@ def _match_impalers_entries(
     return matched_rows, unmatched_entries
 
 
-def _build_canonical_lookup(frames: dict[str, pd.DataFrame]) -> dict[str, list[dict[str, Any]]]:
+def _build_canonical_lookup(
+    frames: dict[str, pd.DataFrame],
+) -> dict[str, list[dict[str, Any]]]:
     lookup: dict[str, list[dict[str, Any]]] = {}
     for category, frame in frames.items():
         entries: list[dict[str, Any]] = []
@@ -466,7 +546,10 @@ def _section_base(section: str | None) -> str | None:
     return section.split("_")[0]
 
 
-def _log_corpus_stats(df: pd.DataFrame, unmatched: list[dict[str, Any]]) -> None:
+def _log_corpus_stats(
+    df: pd.DataFrame,
+    unmatched: list[dict[str, Any]],
+) -> None:
     LOGGER.info("Lore lines total: %s", len(df))
     for label, series in (
         ("by source", df["source"]),

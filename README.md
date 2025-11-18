@@ -46,8 +46,8 @@ A curated, provenance-tracked dataset of **Elden Ring** game data (base game + S
 
 5. **Carian Archive (FMG Localization Text)**  
    🔗 [github.com/AsteriskAmpersand/Carian-Archive](https://github.com/AsteriskAmpersand/Carian-Archive)  
-   - **Files**: `WeaponName.fmg.xml` + `WeaponCaption.fmg.xml` (typically under `GameText/GR/data/INTERROOT_win64/msg/engUS/`)
-   - **Usage**: Provides authoritative in-game weapon names and flavor text. Run `poetry run corpus fetch --carian` (included in `--all`) to automatically cache the XMLs under `data/raw/carian_archive/`, or place them manually to preserve custom subdirectories.
+   - **Files**: Weapon, armor, goods, accessory, gem, boss, magic, and talk FMG XMLs (e.g., `WeaponName.fmg.xml`, `ProtectorCaption.fmg.xml`, `TalkMsg.fmg.xml`).
+   - **Usage**: Supplies authoritative names/captions plus NPC dialogue that now flow into the canonical tables and lore corpus. Run `poetry run corpus fetch --carian` (included in `--all`) to cache everything under `data/raw/carian_archive/`, or place them manually to preserve custom subdirectories.
 
 **Note**: Fextralife wiki is referenced for manual validation only—no automated scraping.
 
@@ -171,9 +171,11 @@ Artifacts are written under `data/embeddings/`:
 - `rag_metadata.parquet`: metadata joined with embeddings for filterable search
 - `rag_index_meta.json`: dimension, vector count, normalization flag, provider/model names
 
+Carian Archive dialogue FMGs are ingested during `pipelines.build_lore_corpus`, so NPC speech appears as `text_type=dialogue` rows alongside canonical descriptions and Impalers excerpts.
+
 ### Text-Type Weighting
 
-Narrative-heavy fields (`description`, `impalers_excerpt`, `quote`, `lore`) are boosted before embedding so they surface ahead of terse `effect` lines. The default coefficients live in `config/text_type_weights.yml` and can be overridden per run:
+Narrative-heavy fields (`description`, `dialogue`, `impalers_excerpt`, `quote`, `lore`) are boosted before embedding so they surface ahead of terse `effect` lines. The default coefficients live in `config/text_type_weights.yml` and can be overridden per run:
 
 ```bash
 poetry run python -m pipelines.build_lore_embeddings \

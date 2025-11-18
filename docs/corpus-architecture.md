@@ -4,13 +4,13 @@ The corpus is intentionally layered so each stage builds higher-order meaning on
 
 ## Layer 1 — Canonical Corpus (Structured Entities)
 - **Scope**: Weapons, armor, talismans, consumables, spirits, bosses, ashes, bell bearings, upgrade materials, DLC expansions, and supporting relational lookups.
-- **Sources**: Kaggle Base + DLC datasets, GitHub `eldenring-api`, Impalers spreadsheets/HTML (structured portions), and bespoke reconciliations.
+- **Sources**: Kaggle Base + DLC datasets, GitHub `eldenring-api`, Carian Archive FMG captions, Impalers spreadsheets/HTML (structured portions), and bespoke reconciliations.
 - **Processing**: Deterministic IDs, Pandera schema validation, deduplicated names, DLC override reconciliation, and provenance columns for every attribute.
 - **Outputs**: Curated Parquet tables under `data/curated/`, PostgreSQL exports (`elden.canonical_*` tables), plus seed metadata for downstream embeddings.
 - **Guarantees**: Deterministic canonical IDs, consistent foreign-key relationships, and tracked source lineage for every field.
 
 ## Layer 2 — Lore Corpus (Textual Lines)
-- **Scope**: All textual descriptions, quotes, flavor text, effects blurbs, narrative fragments, DLC additions, GitHub fallback strings, and Impalers HTML excerpts mapped to canonical entities.
+- **Scope**: All textual descriptions, quotes, flavor text, effects blurbs, narrative fragments, DLC additions, GitHub fallback strings, Carian Archive dialogue lines, and Impalers HTML excerpts mapped to canonical entities.
 - **Linkage**: Each lore row carries `lore_id`, `canonical_id`, `category`, `text_type`, and `source`, allowing joins back to Layer 1.
 - **Pipelines**: `pipelines.build_lore_corpus` aggregates text; `pipelines.build_lore_embeddings` encodes sentences; `pipelines.build_rag_index` produces `data/embeddings/faiss_index.bin` + `rag_metadata.parquet` for retrieval.
 - **Purpose**: Supplies semantically searchable text for RAG, qualitative analysis, and future motif clustering. Serves as the substrate for embedding-powered search.

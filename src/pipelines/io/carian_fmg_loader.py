@@ -1,76 +1,314 @@
 from __future__ import annotations
 
 import xml.etree.ElementTree as ET
+from dataclasses import dataclass
 from pathlib import Path
-from typing import Any
+from typing import Any, Callable
 
-from corpus.models import normalize_name_for_matching
-from pipelines.io.common import serialize_payload
+from corpus.models import create_slug, normalize_name_for_matching
+from pipelines.io.common import serialize_payload  # type: ignore[import]
 
-FMG_SOURCE_NAME = "carian_weapon_fmg"
 FMG_PRIORITY = 4
 
 
-def load_carian_weapon_fmg(raw_root: Path) -> list[dict[str, Any]]:
-    """Load weapon names and captions from Carian Archive FMG dumps."""
+RecordBuilder = Callable[[str, str | None, int], dict[str, Any]]
 
+
+@dataclass(frozen=True)
+class NameCaptionSpec:
+    names_filename: str
+    captions_filename: str
+    source: str
+    record_builder: RecordBuilder
+    deduplicate_by_name: bool = False
+
+
+def load_carian_weapon_fmg(raw_root: Path) -> list[dict[str, Any]]:
+    """Load weapon names/captions from the Carian Archive."""
+
+    archive_root = _require_archive_root(raw_root)
+    spec = NameCaptionSpec(
+        names_filename="WeaponName.fmg.xml",
+        captions_filename="WeaponCaption.fmg.xml",
+        source="carian_weapon_fmg",
+        record_builder=_weapon_record_builder,
+        deduplicate_by_name=True,
+    )
+    return _load_name_caption_records(archive_root, spec)
+
+
+def load_carian_armor_fmg(raw_root: Path) -> list[dict[str, Any]]:
+    """Load armor captions to enrich canonical armor descriptions."""
+
+    archive_root = _require_archive_root(raw_root)
+    spec = NameCaptionSpec(
+        names_filename="ProtectorName.fmg.xml",
+        captions_filename="ProtectorCaption.fmg.xml",
+        source="carian_armor_fmg",
+        record_builder=_armor_record_builder,
+        deduplicate_by_name=True,
+    )
+    return _load_name_caption_records(archive_root, spec)
+
+
+def load_carian_item_fmg(raw_root: Path) -> list[dict[str, Any]]:
+    """Aggregate item/talisman/spirit captions from Carian FMGs."""
+
+    archive_root = _require_archive_root(raw_root)
+    specs = [
+        NameCaptionSpec(
+            names_filename="GoodsName.fmg.xml",
+            captions_filename="GoodsCaption.fmg.xml",
+            source="carian_goods_fmg",
+            record_builder=_item_record_builder("consumable"),
+        ),
+        NameCaptionSpec(
+            names_filename="AccessoryName.fmg.xml",
+            captions_filename="AccessoryCaption.fmg.xml",
+            source="carian_accessory_fmg",
+            record_builder=_item_record_builder("talisman"),
+        ),
+        NameCaptionSpec(
+            names_filename="GemName.fmg.xml",
+            captions_filename="GemCaption.fmg.xml",
+            source="carian_gem_fmg",
+            record_builder=_item_record_builder("spirit"),
+        ),
+        NameCaptionSpec(
+            names_filename="WeaponSkillName.fmg.xml",
+            captions_filename="WeaponSkillCaption.fmg.xml",
+            source="carian_skill_fmg",
+            record_builder=_item_record_builder("ash_of_war"),
+        ),
+    ]
+
+    records: list[dict[str, Any]] = []
+    for spec in specs:
+        records.extend(_load_name_caption_records(archive_root, spec))
+    return records
+
+
+def load_carian_boss_fmg(raw_root: Path) -> list[dict[str, Any]]:
+    """Load boss captions for narrative enrichment."""
+
+    archive_root = _require_archive_root(raw_root)
+    spec = NameCaptionSpec(
+        names_filename="BossName.fmg.xml",
+        captions_filename="BossCaption.fmg.xml",
+        source="carian_boss_fmg",
+        record_builder=_boss_record_builder,
+    )
+    return _load_name_caption_records(archive_root, spec)
+
+
+def load_carian_spell_fmg(raw_root: Path) -> list[dict[str, Any]]:
+    """Load spell names/captions for sorceries and incantations."""
+
+    archive_root = _require_archive_root(raw_root)
+    spec = NameCaptionSpec(
+        names_filename="MagicName.fmg.xml",
+        captions_filename="MagicCaption.fmg.xml",
+        source="carian_spell_fmg",
+        record_builder=_spell_record_builder,
+    )
+    return _load_name_caption_records(archive_root, spec)
+
+
+def load_carian_dialogue_lines(raw_root: Path) -> list[dict[str, Any]]:
+    """Parse TalkMsg/NpcName FMGs into dialogue lines."""
+
+    archive_root = _require_archive_root(raw_root)
+    talk_path = _resolve_fmg_path(archive_root, "TalkMsg.fmg.xml")
+    npc_path = _resolve_fmg_path(archive_root, "NpcName.fmg.xml")
+
+    talk_entries = _parse_fmg_file(talk_path)
+    npc_names = _parse_fmg_file(npc_path)
+
+    lines: list[dict[str, Any]] = []
+    for talk_id, text in sorted(talk_entries.items()):
+        speaker_id = _resolve_speaker_id(talk_id, npc_names)
+        speaker_name = npc_names.get(speaker_id) if speaker_id else None
+        if not speaker_name:
+            speaker_name = f"Carian Speaker {talk_id}"
+        speaker_slug = create_slug(speaker_name)
+        lines.append(
+            {
+                "talk_id": talk_id,
+                "text": text,
+                "speaker_id": speaker_id,
+                "speaker_name": speaker_name,
+                "speaker_slug": speaker_slug,
+                "source": "carian_dialogue_fmg",
+                "payload": serialize_payload(
+                    {
+                        "talk_path": str(talk_path),
+                        "npc_path": str(npc_path),
+                    }
+                ),
+            }
+        )
+
+    return lines
+
+
+def _require_archive_root(raw_root: Path) -> Path:
     archive_root = raw_root / "carian_archive"
     if not archive_root.exists():
         message = f"Missing Carian Archive directory: {archive_root}"
         raise FileNotFoundError(message)
+    return archive_root
 
-    names_path = _resolve_fmg_path(archive_root, "WeaponName.fmg.xml")
-    captions_path = _resolve_fmg_path(archive_root, "WeaponCaption.fmg.xml")
+
+def _load_name_caption_records(
+    archive_root: Path,
+    spec: NameCaptionSpec,
+) -> list[dict[str, Any]]:
+    names_path = _resolve_fmg_path(archive_root, spec.names_filename)
+    captions_path = _resolve_fmg_path(archive_root, spec.captions_filename)
 
     names = _parse_fmg_file(names_path)
     captions = _parse_fmg_file(captions_path)
 
+    records: list[dict[str, Any]]
+    if spec.deduplicate_by_name:
+        records = _deduplicate_records(names, captions, spec.record_builder)
+    else:
+        records = []
+        for fmg_id, name in sorted(names.items()):
+            description = captions.get(fmg_id)
+            record = spec.record_builder(name, description, fmg_id)
+            record["_fmg_ids"] = [fmg_id]
+            records.append(record)
+
+    finalized: list[dict[str, Any]] = []
+    for record in records:
+        fmg_ids = record.pop("_fmg_ids", [])
+        description_source = record.pop("_description_source", None)
+        payload = {
+            "names_path": str(names_path),
+            "captions_path": str(captions_path),
+            "fmg_ids": fmg_ids,
+            "description_id": description_source,
+        }
+        if fmg_ids:
+            record.setdefault("source_id", str(fmg_ids[0]))
+        else:
+            record.setdefault("source_id", record.get("name"))
+        record["source"] = spec.source
+        record["source_priority"] = FMG_PRIORITY
+        record["is_dlc"] = False
+        record["source_payload"] = serialize_payload(payload)
+        finalized.append(record)
+
+    finalized.sort(key=lambda row: row["name"].lower())
+    return finalized
+
+
+def _deduplicate_records(
+    names: dict[int, str],
+    captions: dict[int, str],
+    builder: RecordBuilder,
+) -> list[dict[str, Any]]:
     records_by_key: dict[str, dict[str, Any]] = {}
 
-    sorted_ids = sorted(names.keys())
-    for fmg_id in sorted_ids:
+    for fmg_id in sorted(names.keys()):
         name = names[fmg_id]
         match_key = normalize_name_for_matching(name)
         if not match_key:
             continue
-
         description = captions.get(fmg_id)
-        entry = records_by_key.get(match_key)
-        if entry is None:
-            entry = {
-                "name": name,
-                "description": description,
-                "weapon_type": "other",
-                "weight": None,
-                "source": FMG_SOURCE_NAME,
-                "source_id": str(fmg_id),
-                "is_dlc": False,
-                "source_priority": FMG_PRIORITY,
-                "_fmg_ids": [fmg_id],
-            }
+        record = records_by_key.get(match_key)
+        if record is None:
+            record = builder(name, description, fmg_id)
+            record["_fmg_ids"] = [fmg_id]
             if description:
-                entry["_description_source"] = fmg_id
-            records_by_key[match_key] = entry
+                record["_description_source"] = fmg_id
+            records_by_key[match_key] = record
             continue
 
-        entry["_fmg_ids"].append(fmg_id)
-        if description and not entry.get("description"):
-            entry["description"] = description
-            entry["_description_source"] = fmg_id
+        record["_fmg_ids"].append(fmg_id)
+        if description and not record.get("description"):
+            record["description"] = description
+            record["_description_source"] = fmg_id
 
-    records: list[dict[str, Any]] = []
-    for entry in records_by_key.values():
-        payload = {
-            "fmg_ids": entry.pop("_fmg_ids", []),
-            "description_id": entry.pop("_description_source", None),
-            "names_path": str(names_path),
-            "captions_path": str(captions_path),
+    return list(records_by_key.values())
+
+
+def _weapon_record_builder(
+    name: str,
+    description: str | None,
+    _: int,
+) -> dict[str, Any]:
+    return {
+        "name": name,
+        "description": description,
+        "weapon_type": "other",
+        "weight": None,
+    }
+
+
+def _armor_record_builder(
+    name: str,
+    description: str | None,
+    _: int,
+) -> dict[str, Any]:
+    return {
+        "name": name,
+        "description": description,
+        "armor_type": "other",
+        "weight": None,
+    }
+
+
+def _item_record_builder(category: str) -> RecordBuilder:
+    def _builder(name: str, description: str | None, _: int) -> dict[str, Any]:
+        return {
+            "name": name,
+            "description": description,
+            "category": category,
+            "weight": None,
+            "sell_price": 0,
+            "max_stack": 1,
+            "rarity": None,
+            "effect": None,
+            "obtained_from": None,
         }
-        entry["source_payload"] = serialize_payload(payload)
-        records.append(entry)
 
-    records.sort(key=lambda row: row["name"].lower())
-    return records
+    return _builder
+
+
+def _boss_record_builder(
+    name: str,
+    description: str | None,
+    _: int,
+) -> dict[str, Any]:
+    return {
+        "name": name,
+        "description": description,
+        "region": None,
+        "location": None,
+        "drops": None,
+        "health_points": None,
+        "quote": None,
+    }
+
+
+def _spell_record_builder(
+    name: str,
+    description: str | None,
+    _: int,
+) -> dict[str, Any]:
+    return {
+        "name": name,
+        "description": description,
+        "spell_type": "incantation",
+        "fp_cost": 0,
+        "stamina_cost": 0,
+        "slots_required": 1,
+        "required_int": 0,
+        "required_fai": 0,
+        "required_arc": 0,
+    }
 
 
 def _resolve_fmg_path(base_dir: Path, filename: str) -> Path:
@@ -121,7 +359,7 @@ def _parse_fmg_file(path: Path) -> dict[int, str]:
 
 
 def _normalize_fmg_text(value: str) -> str:
-    stripped_lines = []
+    stripped_lines: list[str] = []
     blank_pending = False
     for line in value.splitlines():
         cleaned = line.strip()
@@ -135,3 +373,18 @@ def _normalize_fmg_text(value: str) -> str:
         stripped_lines.append(cleaned)
     text = "\n".join(stripped_lines).strip()
     return text
+
+
+def _resolve_speaker_id(
+    entry_id: int,
+    npc_names: dict[int, str],
+) -> int | None:
+    candidate = entry_id
+    while candidate > 0:
+        if (
+            candidate in npc_names
+            and npc_names[candidate] not in (None, "%null%")
+        ):
+            return candidate
+        candidate //= 10
+    return None

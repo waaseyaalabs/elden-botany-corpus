@@ -11,6 +11,7 @@ import json
 from pathlib import Path
 
 import pandas as pd  # type: ignore[import-not-found]
+import pytest
 
 from pipelines.build_lore_corpus import (
     _compute_lore_id,
@@ -38,7 +39,10 @@ def test_parse_impalers_dump_extracts_entries(tmp_path: Path) -> None:
     assert "First line" in "\n".join(entry["paragraphs"])
 
 
-def test_build_lore_corpus_pipeline(tmp_path: Path) -> None:
+def test_build_lore_corpus_pipeline(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
     curated_root = tmp_path / "curated"
     raw_root = tmp_path / "raw"
     impalers_dir = raw_root / "impalers"
@@ -135,6 +139,22 @@ def test_build_lore_corpus_pipeline(tmp_path: Path) -> None:
         encoding="utf-8",
     )
 
+    dialogue_rows = [
+        {
+            "talk_id": 5001,
+            "text": "Carian voice line",
+            "speaker_id": 700,
+            "speaker_name": "Primeval Sorcerer",
+            "speaker_slug": "primeval_sorcerer",
+            "source": "carian_dialogue_fmg",
+            "payload": {"names": "NpcName"},
+        }
+    ]
+    monkeypatch.setattr(
+        "pipelines.build_lore_corpus.load_carian_dialogue_lines",
+        lambda raw_root: dialogue_rows,
+    )
+
     output = curated_root / "lore_corpus.parquet"
     df = build_lore_corpus(
         curated_root=curated_root,
@@ -166,3 +186,10 @@ def test_build_lore_corpus_pipeline(tmp_path: Path) -> None:
 
     parsed_provenance = json.loads(imp_row["provenance"])
     assert parsed_provenance["source"] == "impalers"
+
+    dialogue_df = df[df["text_type"] == "dialogue"]
+    assert len(dialogue_df) == 1
+    dialogue_row = dialogue_df.iloc[0]
+    assert dialogue_row["category"] == "npc"
+    assert dialogue_row["source"] == "carian_dialogue_fmg"
+    assert dialogue_row["canonical_id"] == "npc:700"

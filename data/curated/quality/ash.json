@@ -1,0 +1,62 @@
+{
+  "dataset": "ash",
+  "generated_at": "2025-11-18T01:05:06.066632+00:00",
+  "row_count": 117,
+  "column_count": 7,
+  "overall_null_percent": 0.0,
+  "columns": {
+    "entity_type": {
+      "dtype": "Utf8",
+      "null_percent": 0.0,
+      "unique_count": 1,
+      "summary": {
+        "top_values": []
+      }
+    },
+    "slug": {
+      "dtype": "Utf8",
+      "null_percent": 0.0,
+      "unique_count": 117,
+      "summary": {
+        "top_values": []
+      }
+    },
+    "name": {
+      "dtype": "Utf8",
+      "null_percent": 0.0,
+      "unique_count": 117,
+      "summary": {
+        "top_values": []
+      }
+    },
+    "is_dlc": {
+      "dtype": "Boolean",
+      "null_percent": 0.0,
+      "unique_count": 1,
+      "summary": {
+        "top_values": []
+      }
+    },
+    "description": {
+      "dtype": "Utf8",
+      "null_percent": 0.0,
+      "unique_count": 117,
+      "summary": {
+        "top_values": []
+      }
+    },
+    "meta_json": {
+      "dtype": "Struct([Field('id', Utf8), Field('image', Utf8), Field('type', Utf8), Field('damage_negation', Utf8), Field('resistance', Utf8), Field('weight', Utf8), Field('special_effect', Utf8), Field('how_to_acquire', Utf8), Field('in_game_section', Utf8), Field('dlc', Utf8)])",
+      "null_percent": 0.0,
+      "unique_count": 117,
+      "summary": {}
+    },
+    "sources": {
+      "dtype": "List(Utf8)",
+      "null_percent": 0.0,
+      "unique_count": null,
+      "summary": {}
+    }
+  },
+  "alerts": []
+}

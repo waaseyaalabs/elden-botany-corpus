@@ -9,13 +9,68 @@ import requests
 
 from corpus.config import settings
 
+
+def _relpath(filename: str) -> str:
+    return f"GameText/GR/data/INTERROOT_win64/msg/engUS/{filename}"
+
+
 CARIAN_ARCHIVE_REPO: Final = "AsteriskAmpersand/Carian-Archive"
 CARIAN_BASE_URL: Final = (
     f"https://raw.githubusercontent.com/{CARIAN_ARCHIVE_REPO}/main"
 )
+CARIAN_FMG_FILENAMES: Final[tuple[str, ...]] = (
+    "AccessoryCaption.fmg.xml",
+    "AccessoryInfo.fmg.xml",
+    "AccessoryName.fmg.xml",
+    "ActionButtonText.fmg.xml",
+    "ArtsCaption.fmg.xml",
+    "ArtsName.fmg.xml",
+    "BloodMsg.fmg.xml",
+    "BossCaption.fmg.xml",
+    "BossName.fmg.xml",
+    "EventTextForMap.fmg.xml",
+    "EventTextForTalk.fmg.xml",
+    "GemCaption.fmg.xml",
+    "GemEffect.fmg.xml",
+    "GemInfo.fmg.xml",
+    "GemName.fmg.xml",
+    "GoodsCaption.fmg.xml",
+    "GoodsDialog.fmg.xml",
+    "GoodsInfo.fmg.xml",
+    "GoodsInfo2.fmg.xml",
+    "GoodsName.fmg.xml",
+    "GR_Dialogues.fmg.xml",
+    "GR_KeyGuide.fmg.xml",
+    "GR_LineHelp.fmg.xml",
+    "GR_MenuText.fmg.xml",
+    "GR_System_Message_win64.fmg.xml",
+    "LoadingText.fmg.xml",
+    "LoadingTitle.fmg.xml",
+    "MagicCaption.fmg.xml",
+    "MagicInfo.fmg.xml",
+    "MagicName.fmg.xml",
+    "MovieSubtitle.fmg.xml",
+    "NetworkMessage.fmg.xml",
+    "NpcName.fmg.xml",
+    "PlaceName.fmg.xml",
+    "ProtectorCaption.fmg.xml",
+    "ProtectorInfo.fmg.xml",
+    "ProtectorName.fmg.xml",
+    "TalkMsg.fmg.xml",
+    "TextEmbedImageName_win64.fmg.xml",
+    "ToS_win64.fmg.xml",
+    "TutorialBody.fmg.xml",
+    "TutorialTitle.fmg.xml",
+    "WeaponCaption.fmg.xml",
+    "WeaponEffect.fmg.xml",
+    "WeaponInfo.fmg.xml",
+    "WeaponName.fmg.xml",
+    "WeaponSkillCaption.fmg.xml",
+    "WeaponSkillName.fmg.xml",
+)
+
 CARIAN_FMG_RELATIVE_PATHS: Final[list[str]] = [
-    "GameText/GR/data/INTERROOT_win64/msg/engUS/WeaponName.fmg.xml",
-    "GameText/GR/data/INTERROOT_win64/msg/engUS/WeaponCaption.fmg.xml",
+    _relpath(filename) for filename in CARIAN_FMG_FILENAMES
 ]
 REQUEST_TIMEOUT_SECONDS: Final = 30
 

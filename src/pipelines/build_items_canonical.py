@@ -23,6 +23,7 @@ from pipelines.canonical_utils import (
     log_schema_validation_failure,
     log_source_row_summary,
 )
+from pipelines.io.carian_fmg_loader import load_carian_item_fmg
 from pipelines.io.github_api_loader import load_github_api_items
 from pipelines.io.kaggle_base_loader import load_kaggle_base_items
 from pipelines.io.kaggle_dlc_loader import load_kaggle_dlc_items
@@ -42,6 +43,7 @@ SOURCE_LOADERS: list[tuple[str, SourceLoader]] = [
     ("kaggle_dlc", load_kaggle_dlc_items),
     ("kaggle_base", load_kaggle_base_items),
     ("github_api", load_github_api_items),
+    ("carian_fmg", load_carian_item_fmg),
 ]
 
 
