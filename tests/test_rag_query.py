@@ -39,10 +39,31 @@ class _StubQueryHelper:
         *,
         top_k: int,
         filter_by: object | None = None,
+        include_vectors: bool = False,
     ) -> pd.DataFrame:
         self.calls.append(top_k)
         limit = min(len(self._frame), top_k)
-        return self._frame.head(limit).copy()
+        subset = self._frame.head(limit).copy()
+        if include_vectors and "_vector" not in subset.columns:
+            subset["_vector"] = [[float(index), 0.0, 0.0] for index in range(len(subset))]
+        return subset
+
+
+class _StubReranker:
+    def __init__(self, pool_size: int) -> None:
+        self.candidate_pool_size: int | None = pool_size
+        self.queries: list[str] = []
+
+    def rerank(
+        self,
+        query: str,
+        matches: Sequence[LoreMatch],
+    ) -> list[LoreMatch]:
+        self.queries.append(query)
+        annotated = list(matches)
+        for idx, match in enumerate(annotated):
+            match.reranker_score = float(len(annotated) - idx)
+        return list(reversed(annotated))
 
 
 def _build_match_frame(total: int) -> pd.DataFrame:
@@ -118,6 +139,120 @@ def test_query_lore_deduplicates_results(
     assert texts.count(rows[2]["text"]) == 1
 
 
+def test_query_lore_balanced_mode_limits_dialogue(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    rows = []
+    for index in range(6):
+        rows.append(
+            {
+                "lore_id": f"lore-{index}",
+                "text": f"Sample text {index}",
+                "score": 1.0 - index * 0.01,
+                "canonical_id": f"canon-{index}",
+                "category": "item",
+                "text_type": "dialogue" if index < 4 else "description",
+                "source": "test",
+            }
+        )
+    helper = _StubQueryHelper(pd.DataFrame(rows))
+
+    def _fake_loader(**_: object) -> _StubQueryHelper:
+        return helper
+
+    monkeypatch.setattr("rag.query.load_query_helper", _fake_loader)
+
+    matches = query_lore("topic", top_k=4)
+
+    dialogue = [match for match in matches if match.text_type == "dialogue"]
+    assert len(dialogue) <= 2
+
+
+def test_query_lore_raw_mode_preserves_rank(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    frame = _build_match_frame(5)
+    helper = _StubQueryHelper(frame)
+
+    def _fake_loader(**_: object) -> _StubQueryHelper:
+        return helper
+
+    monkeypatch.setattr("rag.query.load_query_helper", _fake_loader)
+
+    matches = query_lore("topic", top_k=4, mode="raw")
+
+    expected = [f"lore-{idx}" for idx in range(4)]
+    assert [match.lore_id for match in matches] == expected
+
+
+def test_query_lore_semantic_dedup_skips_dialogue_variants(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    rows = [
+        {
+            "lore_id": "dialogue-1",
+            "text": "Speak, Tarnished, of flame.",
+            "score": 0.99,
+            "canonical_id": "canon-1",
+            "category": "npc",
+            "text_type": "dialogue",
+            "source": "test",
+            "_vector": [0.4, 0.4, 0.2],
+        },
+        {
+            "lore_id": "dialogue-2",
+            "text": "Speak Tarnished of flame!",
+            "score": 0.98,
+            "canonical_id": "canon-2",
+            "category": "npc",
+            "text_type": "dialogue",
+            "source": "test",
+            "_vector": [0.4, 0.4, 0.2],
+        },
+        {
+            "lore_id": "description-1",
+            "text": "A relic of Messmer's pyres.",
+            "score": 0.8,
+            "canonical_id": "canon-3",
+            "category": "item",
+            "text_type": "description",
+            "source": "test",
+            "_vector": [0.1, 0.2, 0.3],
+        },
+    ]
+    helper = _StubQueryHelper(pd.DataFrame(rows))
+
+    def _fake_loader(**_: object) -> _StubQueryHelper:
+        return helper
+
+    monkeypatch.setattr("rag.query.load_query_helper", _fake_loader)
+
+    matches = query_lore("topic", top_k=3)
+
+    lore_ids = [match.lore_id for match in matches]
+    assert "dialogue-1" in lore_ids or "dialogue-2" in lore_ids
+    assert not ({"dialogue-1", "dialogue-2"} <= set(lore_ids))
+
+
+def test_query_lore_respects_reranker_candidate_pool(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    frame = _build_match_frame(60)
+    helper = _StubQueryHelper(frame)
+    reranker = _StubReranker(pool_size=40)
+
+    def _fake_loader(**_: object) -> _StubQueryHelper:
+        return helper
+
+    monkeypatch.setattr("rag.query.load_query_helper", _fake_loader)
+
+    matches = query_lore("topic", top_k=5, reranker=reranker)
+
+    assert helper.calls[-1] == 40
+    assert reranker.queries == ["topic"]
+    assert matches[0].reranker_score is not None
+
+
 def _build_rag_fixture(
     base_dir: Path,
     *,
@@ -129,9 +264,7 @@ def _build_rag_fixture(
         extra_frame = pd.DataFrame(extra_rows, columns=frame.columns)
         frame = pd.concat([frame, extra_frame], ignore_index=True)
         frame.to_parquet(lore_path, index=False)
-    embeddings_path = (
-        base_dir / "data" / "embeddings" / "lore_embeddings.parquet"
-    )
+    embeddings_path = base_dir / "data" / "embeddings" / "lore_embeddings.parquet"
     index_path = base_dir / "data" / "embeddings" / "faiss_index.bin"
     metadata_path = base_dir / "data" / "embeddings" / "rag_metadata.parquet"
     info_path = base_dir / "data" / "embeddings" / "rag_index_meta.json"
@@ -228,4 +361,3 @@ def test_query_lore_supports_exclusion_filters(tmp_path: Path) -> None:
 
     assert matches
     assert all(match.text_type != "description" for match in matches)
-

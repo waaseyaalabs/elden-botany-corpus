@@ -57,10 +57,7 @@ def fetch(
 ) -> None:
     """Fetch data from all configured sources."""
     if not settings.kaggle_credentials_set:
-        warning = (
-            "Warning: Kaggle credentials not set. "
-            "Kaggle datasets will be skipped."
-        )
+        warning = "Warning: Kaggle credentials not set. " "Kaggle datasets will be skipped."
         click.echo(warning, err=True)
 
     if fetch_all:
@@ -182,11 +179,7 @@ def load(
     """Load curated data into PostgreSQL."""
     try:
         dsn = dsn or settings.postgres_dsn
-        parquet_path = (
-            Path(parquet)
-            if parquet
-            else settings.curated_dir / "unified.parquet"
-        )
+        parquet_path = Path(parquet) if parquet else settings.curated_dir / "unified.parquet"
 
         if not parquet_path.exists():
             click.echo(

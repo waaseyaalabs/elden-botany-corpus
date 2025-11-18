@@ -170,13 +170,15 @@ Artifacts are written under `data/embeddings/`:
 - `lore_embeddings.parquet`: vectors + provenance columns
 - `faiss_index.bin`: FAISS index (L2-normalized IP search)
 - `rag_metadata.parquet`: metadata joined with embeddings for filterable search
-- `rag_index_meta.json`: dimension, vector count, normalization flag, provider/model names
+- `rag_index_meta.json`: dimension, vector count, normalization flag, provider/model names, plus the default reranker configuration (name, model, candidate pool size)
 
 Key query flags:
 
 - `--top-k` now defaults to **10** results; queries internally fetch extra matches and deduplicate near-identical prose so the default window is unique-heavy.
+- `--mode balanced|raw` controls the final ordering. `balanced` (default) interleaves descriptions, lore, impalers excerpts, and dialogue so no single text type dominates the top-k window unless diversity is impossible. `raw` preserves the FAISS/reranker order when you need the pure similarity list.
+- `--reranker identity|cross_encoder` toggles the second-pass scorer. `cross_encoder` downloads `cross-encoder/ms-marco-MiniLM-L-6-v2`, reranks the top ~50 FAISS candidates, annotates `reranker_score`, and writes its configuration to `rag_index_meta.json`.
 - `--filter` accepts repeatable expressions such as `text_type=description` or `text_type!=dialogue,effect`, enabling inclusive/exclusive filtering per column.
-- `--category/--text-type/--source` remain available for quick single-column filters, and `--reranker identity` (default) prepares the CLI for future cross-encoder rerankers.
+- `--category/--text-type/--source` remain available for quick single-column filters.
 
 Carian Archive FMGs (TalkMsg, BossCaption, Weapon/Armor/Goods captions, etc.) are ingested during the canonical + lore builds, with fallback aliases (e.g., `ArtsName.fmg.xml`) ensuring new DLC assets land even when primary files go missing. NPC speech appears as `text_type=dialogue` rows alongside canonical descriptions and Impalers excerpts, and the additional Carian records surface throughout the RAG metadata for filtering.
 
@@ -188,6 +190,8 @@ Narrative-heavy fields (`description`, `dialogue`, `impalers_excerpt`, `quote`, 
 poetry run python -m pipelines.build_lore_embeddings \
    --text-type-weights /path/to/custom_weights.yml
 ```
+
+Dialogue now carries a 0.7 weight (down from 1.5) so Carian TalkMsg rows complement, rather than overwhelm, descriptive lore. Whenever you change the YAML file, rerun `make rag-embeddings && make rag-index` to regenerate `data/embeddings/*` with the new weighting.
 
 Each embedding row records `embedding_strategy=weighted_text_types_v1`, the configured weight file, and a `text_type_components` pipe-delimited summary so downstream evaluations can confirm which snippets influenced the vector.
 

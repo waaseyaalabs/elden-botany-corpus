@@ -1,0 +1,1418 @@
+{
+  "radahn_default": {
+    "meta": {
+      "label": "Radahn gravity comet",
+      "query": "Radahn gravity comet",
+      "filters": null,
+      "note": "Balanced mode, no filters"
+    },
+    "embedding": [
+      {
+        "lore_id": "weapon:2816::weighted_text_types_v1",
+        "text": "Description:\nGreatarrows used by General Radahn during the festival of combat. These are in fact the many spears with which he was stabbed by the Cleanrot Knights.\nImbued with Radahn's gravitational power.",
+        "score": 0.3809182345867157,
+        "canonical_id": "weapon:2816",
+        "category": "weapon",
+        "text_type": "description",
+        "source": "carian_weapon_fmg",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:description:1/2"
+      },
+      {
+        "lore_id": "npc:carian_speaker_316031060::weighted_text_types_v1",
+        "text": "Dialogue:\nIf General Radahn were to die, the stars would resume their movement.",
+        "score": 0.4683793783187866,
+        "canonical_id": "npc:carian_speaker_316031060",
+        "category": "npc",
+        "text_type": "dialogue",
+        "source": "carian_dialogue_fmg",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:dialogue:1/2"
+      },
+      {
+        "lore_id": "item:464::weighted_text_types_v1",
+        "text": "Description:\nOne of the glintstone sorceries that manipulates gravitational forces.\nFires numerous gravitational projectiles. Any foes struck will be pulled toward the caster.\nCharging enhances potency.\nA gravitational technique mastered by the young Radahn.\n\"I thank you for your tutelage, for now I can challenge the stars.\"",
+        "score": 0.3756685256958008,
+        "canonical_id": "item:464",
+        "category": "item",
+        "text_type": "description",
+        "source": "carian_goods_fmg",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:description:2/2"
+      },
+      {
+        "lore_id": "npc:carian_speaker_316031040::weighted_text_types_v1",
+        "text": "Dialogue:\nBut long ago, General Radahn challenged the swirling constellations, and in a crushing victory, arrested their cycles.",
+        "score": 0.4623214602470398,
+        "canonical_id": "npc:carian_speaker_316031040",
+        "category": "npc",
+        "text_type": "dialogue",
+        "source": "carian_dialogue_fmg",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:dialogue:2/2"
+      },
+      {
+        "lore_id": "npc:carian_speaker_224039010::weighted_text_types_v1",
+        "text": "Dialogue:\nShould General Radahn be defeated, the stars would once again resume their movement.",
+        "score": 0.46015751361846924,
+        "canonical_id": "npc:carian_speaker_224039010",
+        "category": "npc",
+        "text_type": "dialogue",
+        "source": "carian_dialogue_fmg",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:dialogue:3/2"
+      },
+      {
+        "lore_id": "npc:carian_speaker_224032110::weighted_text_types_v1",
+        "text": "Dialogue:\nAnd so, if General Radahn were defeated, the stars would once again resume their movement.",
+        "score": 0.45528721809387207,
+        "canonical_id": "npc:carian_speaker_224032110",
+        "category": "npc",
+        "text_type": "dialogue",
+        "source": "carian_dialogue_fmg",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:dialogue:4/2"
+      },
+      {
+        "lore_id": "npc:carian_speaker_224032090::weighted_text_types_v1",
+        "text": "Dialogue:\nBut General Radahn is the conqueror of the stars.",
+        "score": 0.4450235068798065,
+        "canonical_id": "npc:carian_speaker_224032090",
+        "category": "npc",
+        "text_type": "dialogue",
+        "source": "carian_dialogue_fmg",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:dialogue:5/2"
+      },
+      {
+        "lore_id": "npc:carian_speaker_216064020::weighted_text_types_v1",
+        "text": "Dialogue:\nNow, we find ourselves at a festival of combat, pitted against Radahn, once the strongest of the demigods.",
+        "score": 0.4406132102012634,
+        "canonical_id": "npc:carian_speaker_216064020",
+        "category": "npc",
+        "text_type": "dialogue",
+        "source": "carian_dialogue_fmg",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:dialogue:6/2"
+      },
+      {
+        "lore_id": "npc:carian_speaker_312030020::weighted_text_types_v1",
+        "text": "Dialogue:\nGeneral Radahn, mightiest demigod of the Shattering, awaits you!",
+        "score": 0.438699871301651,
+        "canonical_id": "npc:carian_speaker_312030020",
+        "category": "npc",
+        "text_type": "dialogue",
+        "source": "carian_dialogue_fmg",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:dialogue:7/2"
+      },
+      {
+        "lore_id": "npc:carian_speaker_216063040::weighted_text_types_v1",
+        "text": "Dialogue:\nThat Starscourge Radahn holds Ranni's fate in stasis.",
+        "score": 0.43276864290237427,
+        "canonical_id": "npc:carian_speaker_216063040",
+        "category": "npc",
+        "text_type": "dialogue",
+        "source": "carian_dialogue_fmg",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:dialogue:8/2"
+      }
+    ],
+    "reranked": [
+      {
+        "lore_id": "item:464::weighted_text_types_v1",
+        "text": "Description:\nOne of the glintstone sorceries that manipulates gravitational forces.\nFires numerous gravitational projectiles. Any foes struck will be pulled toward the caster.\nCharging enhances potency.\nA gravitational technique mastered by the young Radahn.\n\"I thank you for your tutelage, for now I can challenge the stars.\"",
+        "score": 0.3756685256958008,
+        "canonical_id": "item:464",
+        "category": "item",
+        "text_type": "description",
+        "source": "carian_goods_fmg",
+        "reranker_score": 2.3844316005706787,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:description:1/2"
+      },
+      {
+        "lore_id": "npc:carian_speaker_316031040::weighted_text_types_v1",
+        "text": "Dialogue:\nBut long ago, General Radahn challenged the swirling constellations, and in a crushing victory, arrested their cycles.",
+        "score": 0.4623214602470398,
+        "canonical_id": "npc:carian_speaker_316031040",
+        "category": "npc",
+        "text_type": "dialogue",
+        "source": "carian_dialogue_fmg",
+        "reranker_score": -1.3598030805587769,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:dialogue:1/2"
+      },
+      {
+        "lore_id": "boss:11::weighted_text_types_v1",
+        "text": "Drops:\nYelough Anix Tunnel: 120,000; Meteorite of Astel",
+        "score": 0.3655391335487366,
+        "canonical_id": "boss:11",
+        "category": "boss",
+        "text_type": "drops",
+        "source": "kaggle_dlc",
+        "reranker_score": -11.305245399475098,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:drops:1/2"
+      },
+      {
+        "lore_id": "weapon:2816::weighted_text_types_v1",
+        "text": "Description:\nGreatarrows used by General Radahn during the festival of combat. These are in fact the many spears with which he was stabbed by the Cleanrot Knights.\nImbued with Radahn's gravitational power.",
+        "score": 0.3809182345867157,
+        "canonical_id": "weapon:2816",
+        "category": "weapon",
+        "text_type": "description",
+        "source": "carian_weapon_fmg",
+        "reranker_score": 0.611889123916626,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:description:2/2"
+      },
+      {
+        "lore_id": "npc:carian_speaker_224032090::weighted_text_types_v1",
+        "text": "Dialogue:\nBut General Radahn is the conqueror of the stars.",
+        "score": 0.4450235068798065,
+        "canonical_id": "npc:carian_speaker_224032090",
+        "category": "npc",
+        "text_type": "dialogue",
+        "source": "carian_dialogue_fmg",
+        "reranker_score": -2.061873435974121,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:dialogue:2/2"
+      },
+      {
+        "lore_id": "item:1638::weighted_text_types_v1",
+        "text": "Description:\nGreatarrows used by the General Radahns during the festival of combat. These are in fact the many spears with which he was stabbed by the Cleanrot Knights. Imbued with Radahn's gravitational power.",
+        "score": 0.3677939772605896,
+        "canonical_id": "item:1638",
+        "category": "item",
+        "text_type": "description",
+        "source": "kaggle_dlc",
+        "reranker_score": 0.39318591356277466,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:description:3/2"
+      },
+      {
+        "lore_id": "npc:carian_speaker_20210600::weighted_text_types_v1",
+        "text": "Dialogue:\nGeneral Radahn.",
+        "score": 0.40101921558380127,
+        "canonical_id": "npc:carian_speaker_20210600",
+        "category": "npc",
+        "text_type": "dialogue",
+        "source": "carian_dialogue_fmg",
+        "reranker_score": -2.687272787094116,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:dialogue:3/2"
+      },
+      {
+        "lore_id": "spell:191::weighted_text_types_v1",
+        "text": "Description:\nOne of the glintstone sorceries of the Academy of Raya Lucaria. Fires twin projectiles that form a spiral as they travel. This sorcery can be cast repeatedly and while in motion. Charging enhances potency. A sorcery of the Karolos Conspectus, the most venerable of the academy. This was the product of a failed attempt to create a new comet. NOTE: This was changed with Patch 1.07 as follows: The Attack Power was Increased.\n\nEffect:\nFire twin spiraling projectiles",
+        "score": 0.36097538471221924,
+        "canonical_id": "spell:191",
+        "category": "spell",
+        "text_type": "description",
+        "source": "kaggle_dlc",
+        "reranker_score": -10.227378845214844,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:description:4/2"
+      },
+      {
+        "lore_id": "npc:carian_speaker_312030020::weighted_text_types_v1",
+        "text": "Dialogue:\nGeneral Radahn, mightiest demigod of the Shattering, awaits you!",
+        "score": 0.438699871301651,
+        "canonical_id": "npc:carian_speaker_312030020",
+        "category": "npc",
+        "text_type": "dialogue",
+        "source": "carian_dialogue_fmg",
+        "reranker_score": -2.737281560897827,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:dialogue:4/2"
+      },
+      {
+        "lore_id": "spell:100::weighted_text_types_v1",
+        "text": "Description:\nOne of the glintstone sorceries of the Academy of Raya Lucaria.Fires a magical comet with a trailing tail.This sorcery can be cast repeatedly and while in motion. Charging enhances potency.A sorcery of the Karolos Conspectus, the most venerable of the academy.\n\nEffect:\nFires a magic comet with a trailing tail",
+        "score": 0.35813894867897034,
+        "canonical_id": "spell:100",
+        "category": "spell",
+        "text_type": "description",
+        "source": "kaggle_dlc",
+        "reranker_score": -10.267088890075684,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:description:5/2"
+      }
+    ]
+  },
+  "radahn_filtered": {
+    "meta": {
+      "label": "Radahn gravity comet",
+      "query": "Radahn gravity comet",
+      "filters": [
+        {
+          "column": "text_type",
+          "values": [
+            "dialogue"
+          ],
+          "operator": "exclude"
+        }
+      ],
+      "note": "Balanced mode, filter text_type!=dialogue"
+    },
+    "embedding": [
+      {
+        "lore_id": "weapon:2816::weighted_text_types_v1",
+        "text": "Description:\nGreatarrows used by General Radahn during the festival of combat. These are in fact the many spears with which he was stabbed by the Cleanrot Knights.\nImbued with Radahn's gravitational power.",
+        "score": 0.3809182345867157,
+        "canonical_id": "weapon:2816",
+        "category": "weapon",
+        "text_type": "description",
+        "source": "carian_weapon_fmg",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:description:1/2"
+      },
+      {
+        "lore_id": "boss:11::weighted_text_types_v1",
+        "text": "Drops:\nYelough Anix Tunnel: 120,000; Meteorite of Astel",
+        "score": 0.3655391335487366,
+        "canonical_id": "boss:11",
+        "category": "boss",
+        "text_type": "drops",
+        "source": "kaggle_dlc",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:drops:1/2"
+      },
+      {
+        "lore_id": "boss:158::weighted_text_types_v1",
+        "text": "Quote:\nThe Red Lion General wielded gravitational powers which he learned in Sellia during his younger days. All so he would never have to abandon his beloved but scrawny steed.\n\nDrops:\nRedmane Castle: 70,000; Remembrance of the Starscourge; Radahn's Great Rune",
+        "score": 0.32775306701660156,
+        "canonical_id": "boss:158",
+        "category": "boss",
+        "text_type": "quote",
+        "source": "kaggle_dlc",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:quote:1/2"
+      },
+      {
+        "lore_id": "item:464::weighted_text_types_v1",
+        "text": "Description:\nOne of the glintstone sorceries that manipulates gravitational forces.\nFires numerous gravitational projectiles. Any foes struck will be pulled toward the caster.\nCharging enhances potency.\nA gravitational technique mastered by the young Radahn.\n\"I thank you for your tutelage, for now I can challenge the stars.\"",
+        "score": 0.3756685256958008,
+        "canonical_id": "item:464",
+        "category": "item",
+        "text_type": "description",
+        "source": "carian_goods_fmg",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:description:2/2"
+      },
+      {
+        "lore_id": "boss:52::weighted_text_types_v1",
+        "text": "Drops:\nVolcano Cave: 11,000; Jar Cannon",
+        "score": 0.2852078974246979,
+        "canonical_id": "boss:52",
+        "category": "boss",
+        "text_type": "drops",
+        "source": "kaggle_dlc",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:drops:2/2"
+      },
+      {
+        "lore_id": "item:1638::weighted_text_types_v1",
+        "text": "Description:\nGreatarrows used by the General Radahns during the festival of combat. These are in fact the many spears with which he was stabbed by the Cleanrot Knights. Imbued with Radahn's gravitational power.",
+        "score": 0.3677939772605896,
+        "canonical_id": "item:1638",
+        "category": "item",
+        "text_type": "description",
+        "source": "kaggle_dlc",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:description:3/2"
+      },
+      {
+        "lore_id": "boss:149::weighted_text_types_v1",
+        "text": "Drops:\nRauh Base: 210,000; Roar of Rugalea",
+        "score": 0.2811800539493561,
+        "canonical_id": "boss:149",
+        "category": "boss",
+        "text_type": "drops",
+        "source": "kaggle_dlc",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:drops:3/2"
+      },
+      {
+        "lore_id": "spell:191::weighted_text_types_v1",
+        "text": "Description:\nOne of the glintstone sorceries of the Academy of Raya Lucaria. Fires twin projectiles that form a spiral as they travel. This sorcery can be cast repeatedly and while in motion. Charging enhances potency. A sorcery of the Karolos Conspectus, the most venerable of the academy. This was the product of a failed attempt to create a new comet. NOTE: This was changed with Patch 1.07 as follows: The Attack Power was Increased.\n\nEffect:\nFire twin spiraling projectiles",
+        "score": 0.36097538471221924,
+        "canonical_id": "spell:191",
+        "category": "spell",
+        "text_type": "description",
+        "source": "kaggle_dlc",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:description:4/2"
+      },
+      {
+        "lore_id": "spell:100::weighted_text_types_v1",
+        "text": "Description:\nOne of the glintstone sorceries of the Academy of Raya Lucaria.Fires a magical comet with a trailing tail.This sorcery can be cast repeatedly and while in motion. Charging enhances potency.A sorcery of the Karolos Conspectus, the most venerable of the academy.\n\nEffect:\nFires a magic comet with a trailing tail",
+        "score": 0.35813894867897034,
+        "canonical_id": "spell:100",
+        "category": "spell",
+        "text_type": "description",
+        "source": "kaggle_dlc",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:description:5/2"
+      },
+      {
+        "lore_id": "spell:44::weighted_text_types_v1",
+        "text": "Description:\nOne of the glintstone sorceries that manipulates gravitational forces. Fires numerous gravitational projectiles. Any foes struck will be pulled toward the caster. Charging enhances potency. A gravitational technique mastered by the young Radahn. \"I thank you for your tutelage, for now I can challenge the stars.\"\n\nEffect:\nPulls foes toward caster with gravity projectile volley",
+        "score": 0.33666491508483887,
+        "canonical_id": "spell:44",
+        "category": "spell",
+        "text_type": "description",
+        "source": "kaggle_dlc",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:description:6/2"
+      }
+    ],
+    "reranked": [
+      {
+        "lore_id": "spell:44::weighted_text_types_v1",
+        "text": "Description:\nOne of the glintstone sorceries that manipulates gravitational forces. Fires numerous gravitational projectiles. Any foes struck will be pulled toward the caster. Charging enhances potency. A gravitational technique mastered by the young Radahn. \"I thank you for your tutelage, for now I can challenge the stars.\"\n\nEffect:\nPulls foes toward caster with gravity projectile volley",
+        "score": 0.33666491508483887,
+        "canonical_id": "spell:44",
+        "category": "spell",
+        "text_type": "description",
+        "source": "kaggle_dlc",
+        "reranker_score": 2.3846287727355957,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:description:1/2"
+      },
+      {
+        "lore_id": "boss:158::weighted_text_types_v1",
+        "text": "Quote:\nThe Red Lion General wielded gravitational powers which he learned in Sellia during his younger days. All so he would never have to abandon his beloved but scrawny steed.\n\nDrops:\nRedmane Castle: 70,000; Remembrance of the Starscourge; Radahn's Great Rune",
+        "score": 0.32775306701660156,
+        "canonical_id": "boss:158",
+        "category": "boss",
+        "text_type": "quote",
+        "source": "kaggle_dlc",
+        "reranker_score": 0.4390943646430969,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:quote:1/2"
+      },
+      {
+        "lore_id": "boss:149::weighted_text_types_v1",
+        "text": "Drops:\nRauh Base: 210,000; Roar of Rugalea",
+        "score": 0.2811800539493561,
+        "canonical_id": "boss:149",
+        "category": "boss",
+        "text_type": "drops",
+        "source": "kaggle_dlc",
+        "reranker_score": -10.930276870727539,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:drops:1/2"
+      },
+      {
+        "lore_id": "item:464::weighted_text_types_v1",
+        "text": "Description:\nOne of the glintstone sorceries that manipulates gravitational forces.\nFires numerous gravitational projectiles. Any foes struck will be pulled toward the caster.\nCharging enhances potency.\nA gravitational technique mastered by the young Radahn.\n\"I thank you for your tutelage, for now I can challenge the stars.\"",
+        "score": 0.3756685256958008,
+        "canonical_id": "item:464",
+        "category": "item",
+        "text_type": "description",
+        "source": "carian_goods_fmg",
+        "reranker_score": 2.384432077407837,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:description:2/2"
+      },
+      {
+        "lore_id": "boss:11::weighted_text_types_v1",
+        "text": "Drops:\nYelough Anix Tunnel: 120,000; Meteorite of Astel",
+        "score": 0.3655391335487366,
+        "canonical_id": "boss:11",
+        "category": "boss",
+        "text_type": "drops",
+        "source": "kaggle_dlc",
+        "reranker_score": -11.305245399475098,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:drops:2/2"
+      },
+      {
+        "lore_id": "spell:111::weighted_text_types_v1",
+        "text": "Description:\nOne of the glintstone sorceries that manipulates gravitational forces.Fires a projectile of condensed gravitational force. Those struck by it will be pulled toward the caster.Charging enhances potency.A gravitational technique studied by the young Radahn. His master was an Alabaster Lord with skin of stone.\n\nEffect:\nPulls foes toward caster with gravity projectile",
+        "score": 0.30529946088790894,
+        "canonical_id": "spell:111",
+        "category": "spell",
+        "text_type": "description",
+        "source": "kaggle_dlc",
+        "reranker_score": 2.0909547805786133,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:description:3/2"
+      },
+      {
+        "lore_id": "boss:52::weighted_text_types_v1",
+        "text": "Drops:\nVolcano Cave: 11,000; Jar Cannon",
+        "score": 0.2852078974246979,
+        "canonical_id": "boss:52",
+        "category": "boss",
+        "text_type": "drops",
+        "source": "kaggle_dlc",
+        "reranker_score": -11.399616241455078,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:drops:3/2"
+      },
+      {
+        "lore_id": "weapon:3124::weighted_text_types_v1",
+        "text": "Description:\nCurved greatswords of black steel wielded by General Radahn.\nA pair of weapons decorated with a lion mane motif.\nRadahn earned considerable renown as the Starscourge in his youth, and it is said that it was during this time he engraved the gravity crest upon these blades.",
+        "score": 0.3297109603881836,
+        "canonical_id": "weapon:3124",
+        "category": "weapon",
+        "text_type": "description",
+        "source": "kaggle_dlc",
+        "reranker_score": 1.9714466333389282,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:description:4/2"
+      },
+      {
+        "lore_id": "item:941::weighted_text_types_v1",
+        "text": "Description:\nOne of the glintstone sorceries that manipulates gravitational forces.\nFires a projectile of condensed gravitational force. Those struck by it will be pulled toward the caster.\nCharging enhances potency.\nA gravitational technique studied by the young Radahn. His master was an Alabaster Lord with skin of stone.",
+        "score": 0.3215821087360382,
+        "canonical_id": "item:941",
+        "category": "item",
+        "text_type": "description",
+        "source": "carian_goods_fmg",
+        "reranker_score": 1.8556511402130127,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:description:5/2"
+      },
+      {
+        "lore_id": "item:1712::weighted_text_types_v1",
+        "text": "Description:\nRemembrance of Starscourge Radahn, hewn into the Erdtree. The power of its namesake can be unlocked by the Finger Reader.Alternatively, it can be used to gain a great bounty of runes. The Red Lion General wielded gravitational powers which he learned in Sellia during his younger days. All so he would never have to abandon his beloved but scrawny steed.",
+        "score": 0.3120584487915039,
+        "canonical_id": "item:1712",
+        "category": "item",
+        "text_type": "description",
+        "source": "kaggle_dlc",
+        "reranker_score": 1.609947681427002,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:description:6/2"
+      }
+    ]
+  },
+  "scarlet_rot": {
+    "meta": {
+      "label": "Scarlet rot and decay",
+      "query": "Scarlet rot and decay",
+      "filters": [
+        {
+          "column": "text_type",
+          "values": [
+            "dialogue"
+          ],
+          "operator": "exclude"
+        }
+      ],
+      "note": "Balanced mode, filter text_type!=dialogue"
+    },
+    "embedding": [
+      {
+        "lore_id": "spell:72::weighted_text_types_v1",
+        "text": "Description:\nSpews scarlet rot breath of Ekzykes from above\n\nEffect:\n???",
+        "score": 0.5934633016586304,
+        "canonical_id": "spell:72",
+        "category": "spell",
+        "text_type": "description",
+        "source": "kaggle_base",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:description:1/2"
+      },
+      {
+        "lore_id": "item:1024::weighted_text_types_v1",
+        "text": "Impalers Excerpt:\nCraftable item prepared using a capacious cracked pot.\nA goodly amount of materials is sealed inside.\nThrow at enemies to cause a large buildup of scarlet rot.\nRot is one of the divine elements of the outer gods, and eats away at life like a vicious plague.\n\nDescription:\nCraftable item prepared using a capacious cracked pot. A goodly amount of materials is sealed inside. Throw at enemies to cause a large buildup of scarlet rot. Rot is one of the divine elements of the outer gods, and eats away at life like a vicious plague.\n\nEffect:\nThrow at enemies to cause a large buildup of scarlet rot",
+        "score": 0.4566187858581543,
+        "canonical_id": "item:1024",
+        "category": "item",
+        "text_type": "impalers_excerpt",
+        "source": "kaggle_dlc|impalers",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:impalers_excerpt:1/2"
+      },
+      {
+        "lore_id": "boss:131::weighted_text_types_v1",
+        "text": "Quote:\nGuardians of the Minor Erdtrees, infested with Scarlet Rot. Their large staff can knock foes away, and their slam attack releases a cloud of rot, quickly leading to enemies\u2019 demise.\n\nDrops:\nMinor Erdtree (Caelid):: 9,600; Greenburst Crystal Tear; Flame-Shrouding Cracked Tear; Minor Erdtree (Dragonbarrow):: 91,000; Opaline Hardtear; Stonebarb Cracked Tear; Minor Erdtree (Consecrated Snowfield):: 160,000; Ruptured Crystal Tear; Thorny Cracked Tear; Elphael, Brace of the Haligtree:: 27,090; Walkway: Rotten Staff; Gateway: Lord's Rune",
+        "score": 0.4786111116409302,
+        "canonical_id": "boss:131",
+        "category": "boss",
+        "text_type": "quote",
+        "source": "kaggle_dlc",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:quote:1/2"
+      },
+      {
+        "lore_id": "item:1599::weighted_text_types_v1",
+        "text": "Description:\nScarlet boluses made of cave moss.Craftable item. Alleviates scarlet rot buildup and cures rot aliment. Scarlet rot accumulates gradually, coming into effect once the threshold is reached. Scarlet rot ailment greatly lowers HP in steady increments for a period.\n\nEffect:\nAlleviates scarlet rot buildup and cures rot.",
+        "score": 0.541102945804596,
+        "canonical_id": "item:1599",
+        "category": "item",
+        "text_type": "description",
+        "source": "kaggle_dlc",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:description:2/2"
+      },
+      {
+        "lore_id": "item:1118::weighted_text_types_v1",
+        "text": "Description:\nA talisman depicting the exultation of pests.\nRaises attack power when poisoning or rot occurs in the vicinity.\n\"Rot for the scarlet goddess. O scarlet blossoms, flourish in distant lands, and return to us, the unwanted children.\"",
+        "score": 0.5380923748016357,
+        "canonical_id": "item:1118",
+        "category": "item",
+        "text_type": "description",
+        "source": "carian_accessory_fmg",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:description:3/2"
+      },
+      {
+        "lore_id": "weapon:2484::weighted_text_types_v1",
+        "text": "Description:\nGreatsword featuring a flame-like undulation.\nShreds enemy flesh, inducing blood loss.\nScarlet rot is kept at bay with flame at Redmane Castle, and as such, this beloved sword of Jerren's eventually became the symbol of the castle itself.",
+        "score": 0.5021889209747314,
+        "canonical_id": "weapon:2484",
+        "category": "weapon",
+        "text_type": "description",
+        "source": "carian_weapon_fmg",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:description:4/2"
+      },
+      {
+        "lore_id": "armor:615::weighted_text_types_v1",
+        "text": "Description:\nThick, bristly cloak eaten through by scarlet rot.The symbol of an underground gravekeeper's station. Altered:Worn by gladiators who were driven from the colosseum.The wearer becomes a slightly easier target for foes.",
+        "score": 0.4794619679450989,
+        "canonical_id": "armor:615",
+        "category": "armor",
+        "text_type": "description",
+        "source": "kaggle_dlc",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:description:5/2"
+      },
+      {
+        "lore_id": "item:1744::weighted_text_types_v1",
+        "text": "Description:\nCraftable item prepared using a ritual pot. Decorated with the crest of scarlet wings. Throw at enemies to cause buildup of scarlet rot. The rot bubbles up from the Swamp of Aeonia, and eats away at life like a vicious plague.\n\nEffect:\nThrow at enemies to inflict Scarlet Rot",
+        "score": 0.45830869674682617,
+        "canonical_id": "item:1744",
+        "category": "item",
+        "text_type": "description",
+        "source": "kaggle_dlc",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:description:6/2"
+      },
+      {
+        "lore_id": "item:1558::weighted_text_types_v1",
+        "text": "Description:\nIncantation of the servants of rot.\nSecretes countless sticky threads, launching them forwards.\nA technique of the pale pests who crawl through the lands afflicted by scarlet rot; the abandoned children of the goddess.\n\"Do you have an interest in rot incantations?\"",
+        "score": 0.4550604224205017,
+        "canonical_id": "item:1558",
+        "category": "item",
+        "text_type": "description",
+        "source": "carian_goods_fmg",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:description:7/2"
+      },
+      {
+        "lore_id": "spell:166::weighted_text_types_v1",
+        "text": "Description:\nIncantation of the servants of rot. Secretes countless sticky threads, launching them forwards. A technique of the pale pests who crawl through the lands afflicted by scarlet rot; the abandoned children of the goddess. \"Do you have an interest in rot incantations?\"\n\nEffect:\nLaunches countless sticky threads before caster",
+        "score": 0.4440760016441345,
+        "canonical_id": "spell:166",
+        "category": "spell",
+        "text_type": "description",
+        "source": "kaggle_dlc",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:description:8/2"
+      }
+    ],
+    "reranked": [
+      {
+        "lore_id": "item:1599::weighted_text_types_v1",
+        "text": "Description:\nScarlet boluses made of cave moss.Craftable item. Alleviates scarlet rot buildup and cures rot aliment. Scarlet rot accumulates gradually, coming into effect once the threshold is reached. Scarlet rot ailment greatly lowers HP in steady increments for a period.\n\nEffect:\nAlleviates scarlet rot buildup and cures rot.",
+        "score": 0.541102945804596,
+        "canonical_id": "item:1599",
+        "category": "item",
+        "text_type": "description",
+        "source": "kaggle_dlc",
+        "reranker_score": 2.426589012145996,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:description:1/2"
+      },
+      {
+        "lore_id": "item:1024::weighted_text_types_v1",
+        "text": "Impalers Excerpt:\nCraftable item prepared using a capacious cracked pot.\nA goodly amount of materials is sealed inside.\nThrow at enemies to cause a large buildup of scarlet rot.\nRot is one of the divine elements of the outer gods, and eats away at life like a vicious plague.\n\nDescription:\nCraftable item prepared using a capacious cracked pot. A goodly amount of materials is sealed inside. Throw at enemies to cause a large buildup of scarlet rot. Rot is one of the divine elements of the outer gods, and eats away at life like a vicious plague.\n\nEffect:\nThrow at enemies to cause a large buildup of scarlet rot",
+        "score": 0.4566187858581543,
+        "canonical_id": "item:1024",
+        "category": "item",
+        "text_type": "impalers_excerpt",
+        "source": "kaggle_dlc|impalers",
+        "reranker_score": 0.787686824798584,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:impalers_excerpt:1/2"
+      },
+      {
+        "lore_id": "boss:131::weighted_text_types_v1",
+        "text": "Quote:\nGuardians of the Minor Erdtrees, infested with Scarlet Rot. Their large staff can knock foes away, and their slam attack releases a cloud of rot, quickly leading to enemies\u2019 demise.\n\nDrops:\nMinor Erdtree (Caelid):: 9,600; Greenburst Crystal Tear; Flame-Shrouding Cracked Tear; Minor Erdtree (Dragonbarrow):: 91,000; Opaline Hardtear; Stonebarb Cracked Tear; Minor Erdtree (Consecrated Snowfield):: 160,000; Ruptured Crystal Tear; Thorny Cracked Tear; Elphael, Brace of the Haligtree:: 27,090; Walkway: Rotten Staff; Gateway: Lord's Rune",
+        "score": 0.4786111116409302,
+        "canonical_id": "boss:131",
+        "category": "boss",
+        "text_type": "quote",
+        "source": "kaggle_dlc",
+        "reranker_score": 1.2159662246704102,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:quote:1/2"
+      },
+      {
+        "lore_id": "boss:88::weighted_text_types_v1",
+        "text": "Drops:\nShadow Keep: 150,000; Aspects of the Crucible: Thorns; Scadutree Fragment x2; Charo's Hidden Grave: 9,576; Scadutree Fragment; Recluses' River: 11,270 each; Scadutree Fragment each; Ancient Ruins of Rauh: 11,960; Scadutree Fragment",
+        "score": 0.39210575819015503,
+        "canonical_id": "boss:88",
+        "category": "boss",
+        "text_type": "drops",
+        "source": "kaggle_dlc",
+        "reranker_score": -11.343742370605469,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:drops:1/2"
+      },
+      {
+        "lore_id": "spell:186::weighted_text_types_v1",
+        "text": "Description:\nTechnique of Malenia, the Goddess of Rot. Creates a gigantic flower that blooms into an explosion of scarlet rot. Each time the scarlet flower blooms, Malenia's rot advances. It has bloomed twice already. With the third bloom, she will become a rue goddess.\n\nEffect:\nCreates a giant flower that explodes with scarlet rot",
+        "score": 0.43188774585723877,
+        "canonical_id": "spell:186",
+        "category": "spell",
+        "text_type": "description",
+        "source": "kaggle_dlc",
+        "reranker_score": 1.4749752283096313,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:description:2/2"
+      },
+      {
+        "lore_id": "item:1788::weighted_text_types_v1",
+        "text": "Impalers Excerpt:\nA large, rotten bud that will never come into bloom.\nMaterial used for crafting items.\nGrows in lands blighted by the scarlet rot.\nThere was a time when these buds were not touched by the scarlet rot's blight\u2014when they were the symbol of the small church deep in the ancient ruins of Rauh.\n\nDescription:\nA large, rotten bud that will never come into bloom. Material used for crafting items. Grows in lands blighted by the scarlet rot. There was a time when these buds were not touched by the scarlet rot's blightwhen they were the symbol of the small church deep in the ancient ruins of Rauh.\n\nEffect:\nMaterial used for crafting items",
+        "score": 0.43264442682266235,
+        "canonical_id": "item:1788",
+        "category": "item",
+        "text_type": "impalers_excerpt",
+        "source": "kaggle_dlc|impalers",
+        "reranker_score": -0.01195521280169487,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:impalers_excerpt:2/2"
+      },
+      {
+        "lore_id": "boss:45::weighted_text_types_v1",
+        "text": "Quote:\nIn the time when there was no Erdtree, death was burned in ghostflame. Deathbirds were the keepers of that fire.\n\nDrops:\nAcademy Gate Town:: 7,800; Ancient Death Rancor; Caelid: 15,000; Death's Poker; Mountaintops of the Giants:: 77,000; Death Ritual Spear; Apostate Derelict:: 220,000; Explosive Ghostflame; Charo's Hidden Grave: 230,000; Ash of War: Ghostflame Call",
+        "score": 0.3897600769996643,
+        "canonical_id": "boss:45",
+        "category": "boss",
+        "text_type": "quote",
+        "source": "kaggle_dlc",
+        "reranker_score": -11.275139808654785,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:quote:2/2"
+      },
+      {
+        "lore_id": "item:1787::weighted_text_types_v1",
+        "text": "Description:\nTechnique of Malenia, the Goddess of Rot.\nCreates a gigantic flower that blooms into an explosion of scarlet rot.\nEach time the scarlet flower blooms, Malenia's rot advances. It has bloomed twice already. With the third bloom, she will become a true goddess.",
+        "score": 0.43355807662010193,
+        "canonical_id": "item:1787",
+        "category": "item",
+        "text_type": "description",
+        "source": "carian_goods_fmg",
+        "reranker_score": 1.3663376569747925,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:description:3/2"
+      },
+      {
+        "lore_id": "weapon:2617::weighted_text_types_v1",
+        "text": "Impalers Excerpt:\nWeapon of Romina, Saint of the Bud.\nA scarlet glaive with a dangling bud-like blade.\nAttacks cause buildup of rot.\nOnce, in the crumbling, burning church, Romina held the bud in speechless silence.\nThat bud would become her blade.\n\nDescription:\nWeapon of Romina, Saint of the Bud. A scarlet glaive with a dangling bud-like blade. Attacks cause buildup of rot. Once, in the crumbling, burning church, Romina held the bud in speechless silence. That bud would become her blade.",
+        "score": 0.37847816944122314,
+        "canonical_id": "weapon:2617",
+        "category": "weapon",
+        "text_type": "impalers_excerpt",
+        "source": "kaggle_dlc|impalers",
+        "reranker_score": -1.9180748462677002,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:impalers_excerpt:3/2"
+      },
+      {
+        "lore_id": "item:1744::weighted_text_types_v1",
+        "text": "Description:\nCraftable item prepared using a ritual pot. Decorated with the crest of scarlet wings. Throw at enemies to cause buildup of scarlet rot. The rot bubbles up from the Swamp of Aeonia, and eats away at life like a vicious plague.\n\nEffect:\nThrow at enemies to inflict Scarlet Rot",
+        "score": 0.45830869674682617,
+        "canonical_id": "item:1744",
+        "category": "item",
+        "text_type": "description",
+        "source": "kaggle_dlc",
+        "reranker_score": 1.0941452980041504,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:description:4/2"
+      }
+    ]
+  },
+  "fungus": {
+    "meta": {
+      "label": "fungus mushroom armor",
+      "query": "fungus mushroom armor",
+      "filters": null,
+      "note": "Balanced mode, no filters"
+    },
+    "embedding": [
+      {
+        "lore_id": "item:2004::weighted_text_types_v1",
+        "text": "Description:\nA mushroom covered in toxic mold that grows in rotten lands.Material used for crafting items. A skilled hand can repurpose its toxic mold into an effective ward against scarlet rot.\n\nEffect:\nMaterial used for crafting items",
+        "score": 0.5857197642326355,
+        "canonical_id": "item:2004",
+        "category": "item",
+        "text_type": "description",
+        "source": "kaggle_dlc",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:description:1/2"
+      },
+      {
+        "lore_id": "item:1667::weighted_text_types_v1",
+        "text": "Impalers Excerpt:\nRed mushroom that grows in sullen lands.\nMaterial used for crafting items.\nEasily found everywhere in the realm of shadow.\nThe flesh of the mushroom is similar to raw meat, and can serve as pot innards.\n\nDescription:\nRed mushroom that grows in sullen lands. Material used for crafting items. Easily found everywhere in the realm of shadow. The flesh of the mushroom is similar to raw meat, and can serve as pot innards.\n\nEffect:\nMaterial used for crafting items",
+        "score": 0.5123426914215088,
+        "canonical_id": "item:1667",
+        "category": "item",
+        "text_type": "impalers_excerpt",
+        "source": "kaggle_dlc|impalers",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:impalers_excerpt:1/2"
+      },
+      {
+        "lore_id": "item:1312::weighted_text_types_v1",
+        "text": "Description:\nA mushroom that grows in the false night in and around the Eternal City.Material used for crafting items. It drips with a viscous fluid that behaves much like oil.\n\nEffect:\nMaterial used for crafting items",
+        "score": 0.5301715135574341,
+        "canonical_id": "item:1312",
+        "category": "item",
+        "text_type": "description",
+        "source": "kaggle_dlc",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:description:2/2"
+      },
+      {
+        "lore_id": "item:2084::weighted_text_types_v1",
+        "text": "Impalers Excerpt:\nMilky-white mushroom that grows in sullen lands.\nMaterial used for crafting items.\nEasily found everywhere in the realm of shadow.\nThe flesh of the mushroom is similar to raw meat, and can serve as pot innards.\n\nDescription:\nMilky-white mushroom that grows in sullen lands. Material used for crafting items. Easily found everywhere in the realm of shadow. The flesh of the mushroom is similar to raw meat, and can serve as pot innards.\n\nEffect:\nMaterial used for crafting items",
+        "score": 0.5099503397941589,
+        "canonical_id": "item:2084",
+        "category": "item",
+        "text_type": "impalers_excerpt",
+        "source": "kaggle_dlc|impalers",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:impalers_excerpt:2/2"
+      },
+      {
+        "lore_id": "item:1371::weighted_text_types_v1",
+        "text": "Description:\nA fungal growth that thrives in damp thickets and elsewhere.Material used for crafting items.Its thick, spongy flesh makes it a key component in throwing pots.\n\nEffect:\nMaterial used for crafting items",
+        "score": 0.5294705033302307,
+        "canonical_id": "item:1371",
+        "category": "item",
+        "text_type": "description",
+        "source": "kaggle_dlc",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:description:3/2"
+      },
+      {
+        "lore_id": "item:763::weighted_text_types_v1",
+        "text": "Impalers Excerpt:\nA species of fungus known for its deathly sweet stench.\nMaterial used for crafting items.\nFound by hunting man-flies.\nCultivated using the flesh and blood of man-flies, it can serve as pot innards.\n\nDescription:\nA species of fungus known for its deathly sweet stench. Material used for crafting items. Found by hunting man-flies. Cultivated using the flesh and blood of man-flies, it can serve as pot innards.\n\nEffect:\nMaterial used for crafting items",
+        "score": 0.4189947247505188,
+        "canonical_id": "item:763",
+        "category": "item",
+        "text_type": "impalers_excerpt",
+        "source": "kaggle_dlc|impalers",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:impalers_excerpt:3/2"
+      },
+      {
+        "lore_id": "armor:488::weighted_text_types_v1",
+        "text": "Description:\nMushrooms found growing all over the body. These overgrown mushrooms form a towering headpiece. Raises attack power when something nearby suffers from poison or rot. Long ago, great lords served the scarlet rot. Perhaps such fungal bodies served as their crowns.",
+        "score": 0.47188490629196167,
+        "canonical_id": "armor:488",
+        "category": "armor",
+        "text_type": "description",
+        "source": "kaggle_dlc",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:description:4/2"
+      },
+      {
+        "lore_id": "armor:375::weighted_text_types_v1",
+        "text": "Impalers Excerpt:\nArmor of the broken drake warrior Igon, from a set comprised of a miscellany of parts. Filthy belongings are attached to this tattered piece of protective-wear.\nThe poor scavenger of battlefields found honor through Dragon Communion.\n\nDescription:\nArmor of the broken drake warrior Igon, from a set comprised of a miscellany of parts. Filthy belongings are attached to this tattered piece of protective-wear. The poor scavenger of battlefields found honor through Dragon Communion.",
+        "score": 0.40505343675613403,
+        "canonical_id": "armor:375",
+        "category": "armor",
+        "text_type": "impalers_excerpt",
+        "source": "kaggle_dlc|impalers",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:impalers_excerpt:4/2"
+      },
+      {
+        "lore_id": "armor:487::weighted_text_types_v1",
+        "text": "Description:\nMushrooms found growing all over the body. These overgrown mushroom have colonized the torso. To those enraptured by the scarlet rot, they are holy vestments that root one to the earth.",
+        "score": 0.45400434732437134,
+        "canonical_id": "armor:487",
+        "category": "armor",
+        "text_type": "description",
+        "source": "kaggle_dlc",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:description:5/2"
+      },
+      {
+        "lore_id": "armor:489::weighted_text_types_v1",
+        "text": "Description:\nMushrooms found growing all over the body. These overgrown mushroom have colonized the head. To those enraptured by the scarlet rot, they are holy vestments that root one to the earth.",
+        "score": 0.44909149408340454,
+        "canonical_id": "armor:489",
+        "category": "armor",
+        "text_type": "description",
+        "source": "kaggle_dlc",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:description:6/2"
+      }
+    ],
+    "reranked": [
+      {
+        "lore_id": "armor:488::weighted_text_types_v1",
+        "text": "Description:\nMushrooms found growing all over the body. These overgrown mushrooms form a towering headpiece. Raises attack power when something nearby suffers from poison or rot. Long ago, great lords served the scarlet rot. Perhaps such fungal bodies served as their crowns.",
+        "score": 0.47188490629196167,
+        "canonical_id": "armor:488",
+        "category": "armor",
+        "text_type": "description",
+        "source": "kaggle_dlc",
+        "reranker_score": 1.247399091720581,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:description:1/2"
+      },
+      {
+        "lore_id": "item:1667::weighted_text_types_v1",
+        "text": "Impalers Excerpt:\nRed mushroom that grows in sullen lands.\nMaterial used for crafting items.\nEasily found everywhere in the realm of shadow.\nThe flesh of the mushroom is similar to raw meat, and can serve as pot innards.\n\nDescription:\nRed mushroom that grows in sullen lands. Material used for crafting items. Easily found everywhere in the realm of shadow. The flesh of the mushroom is similar to raw meat, and can serve as pot innards.\n\nEffect:\nMaterial used for crafting items",
+        "score": 0.5123426914215088,
+        "canonical_id": "item:1667",
+        "category": "item",
+        "text_type": "impalers_excerpt",
+        "source": "kaggle_dlc|impalers",
+        "reranker_score": -0.9131402969360352,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:impalers_excerpt:1/2"
+      },
+      {
+        "lore_id": "item:2004::weighted_text_types_v1",
+        "text": "Description:\nA mushroom covered in toxic mold that grows in rotten lands.Material used for crafting items. A skilled hand can repurpose its toxic mold into an effective ward against scarlet rot.\n\nEffect:\nMaterial used for crafting items",
+        "score": 0.5857197642326355,
+        "canonical_id": "item:2004",
+        "category": "item",
+        "text_type": "description",
+        "source": "kaggle_dlc",
+        "reranker_score": -0.814146876335144,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:description:2/2"
+      },
+      {
+        "lore_id": "item:2084::weighted_text_types_v1",
+        "text": "Impalers Excerpt:\nMilky-white mushroom that grows in sullen lands.\nMaterial used for crafting items.\nEasily found everywhere in the realm of shadow.\nThe flesh of the mushroom is similar to raw meat, and can serve as pot innards.\n\nDescription:\nMilky-white mushroom that grows in sullen lands. Material used for crafting items. Easily found everywhere in the realm of shadow. The flesh of the mushroom is similar to raw meat, and can serve as pot innards.\n\nEffect:\nMaterial used for crafting items",
+        "score": 0.5099503397941589,
+        "canonical_id": "item:2084",
+        "category": "item",
+        "text_type": "impalers_excerpt",
+        "source": "kaggle_dlc|impalers",
+        "reranker_score": -1.3764902353286743,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:impalers_excerpt:2/2"
+      },
+      {
+        "lore_id": "armor:486::weighted_text_types_v1",
+        "text": "Description:\nMushrooms found growing all over the body. These overgrown mushroom have colonized the arms. To those enraptured by the scarlet rot, they are holy vestments that root one to the earth.",
+        "score": 0.44592195749282837,
+        "canonical_id": "armor:486",
+        "category": "armor",
+        "text_type": "description",
+        "source": "kaggle_dlc",
+        "reranker_score": -0.9943055510520935,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:description:3/2"
+      },
+      {
+        "lore_id": "item:763::weighted_text_types_v1",
+        "text": "Impalers Excerpt:\nA species of fungus known for its deathly sweet stench.\nMaterial used for crafting items.\nFound by hunting man-flies.\nCultivated using the flesh and blood of man-flies, it can serve as pot innards.\n\nDescription:\nA species of fungus known for its deathly sweet stench. Material used for crafting items. Found by hunting man-flies. Cultivated using the flesh and blood of man-flies, it can serve as pot innards.\n\nEffect:\nMaterial used for crafting items",
+        "score": 0.4189947247505188,
+        "canonical_id": "item:763",
+        "category": "item",
+        "text_type": "impalers_excerpt",
+        "source": "kaggle_dlc|impalers",
+        "reranker_score": -6.984164714813232,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:impalers_excerpt:3/2"
+      },
+      {
+        "lore_id": "armor:487::weighted_text_types_v1",
+        "text": "Description:\nMushrooms found growing all over the body. These overgrown mushroom have colonized the torso. To those enraptured by the scarlet rot, they are holy vestments that root one to the earth.",
+        "score": 0.45400434732437134,
+        "canonical_id": "armor:487",
+        "category": "armor",
+        "text_type": "description",
+        "source": "kaggle_dlc",
+        "reranker_score": -1.7892637252807617,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:description:4/2"
+      },
+      {
+        "lore_id": "armor:375::weighted_text_types_v1",
+        "text": "Impalers Excerpt:\nArmor of the broken drake warrior Igon, from a set comprised of a miscellany of parts. Filthy belongings are attached to this tattered piece of protective-wear.\nThe poor scavenger of battlefields found honor through Dragon Communion.\n\nDescription:\nArmor of the broken drake warrior Igon, from a set comprised of a miscellany of parts. Filthy belongings are attached to this tattered piece of protective-wear. The poor scavenger of battlefields found honor through Dragon Communion.",
+        "score": 0.40505343675613403,
+        "canonical_id": "armor:375",
+        "category": "armor",
+        "text_type": "impalers_excerpt",
+        "source": "kaggle_dlc|impalers",
+        "reranker_score": -10.63820743560791,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:impalers_excerpt:4/2"
+      },
+      {
+        "lore_id": "item:1312::weighted_text_types_v1",
+        "text": "Description:\nA mushroom that grows in the false night in and around the Eternal City.Material used for crafting items. It drips with a viscous fluid that behaves much like oil.\n\nEffect:\nMaterial used for crafting items",
+        "score": 0.5301715135574341,
+        "canonical_id": "item:1312",
+        "category": "item",
+        "text_type": "description",
+        "source": "kaggle_dlc",
+        "reranker_score": -1.9503936767578125,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:description:5/2"
+      },
+      {
+        "lore_id": "armor:489::weighted_text_types_v1",
+        "text": "Description:\nMushrooms found growing all over the body. These overgrown mushroom have colonized the head. To those enraptured by the scarlet rot, they are holy vestments that root one to the earth.",
+        "score": 0.44909149408340454,
+        "canonical_id": "armor:489",
+        "category": "armor",
+        "text_type": "description",
+        "source": "kaggle_dlc",
+        "reranker_score": -2.341740608215332,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:description:6/2"
+      }
+    ]
+  },
+  "thorns": {
+    "meta": {
+      "label": "thorns death gloam-eyed queen",
+      "query": "thorns death gloam-eyed queen",
+      "filters": [
+        {
+          "column": "text_type",
+          "values": [
+            "dialogue"
+          ],
+          "operator": "exclude"
+        }
+      ],
+      "note": "Balanced mode, filter text_type!=dialogue"
+    },
+    "embedding": [
+      {
+        "lore_id": "item:317::weighted_text_types_v1",
+        "text": "Description:\nSuperior black flame incantation of the Godskin Apostles.\nSummons a circle of black flame pillars around the caster.\nCharging increases the size of the circle.\nThe Gloam-Eyed Queen led the apostles. It is said that she was an Empyrean chosen by the Fingers.",
+        "score": 0.5006847977638245,
+        "canonical_id": "item:317",
+        "category": "item",
+        "text_type": "description",
+        "source": "carian_goods_fmg",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:description:1/2"
+      },
+      {
+        "lore_id": "weapon:1701::weighted_text_types_v1",
+        "text": "Impalers Excerpt:\nLight greatsword with gold inlaid. \nWeapon of Leda, the Needle Knight.\nDeals holy damage.\nThough polished to a mirror sheen, this blade still reeks with the stench of crusted blood that lingers from the cull of her knightly comrades.\n\nDescription:\nLight greatsword with gold inlaid. Weapon of Leda, the Needle Knight. Deals holy damage. Though polished to a mirror sheen, this blade still reeks with the stench of crusted blood that lingers from the cull of her knightly comrades.",
+        "score": 0.4096152186393738,
+        "canonical_id": "weapon:1701",
+        "category": "weapon",
+        "text_type": "impalers_excerpt",
+        "source": "kaggle_dlc|impalers",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:impalers_excerpt:1/2"
+      },
+      {
+        "lore_id": "boss:133::weighted_text_types_v1",
+        "text": "Drops:\nWar-Dead Catacombs: 64,000; Redmane Knight Ogha Spirit Ashes; Golden Seed; Grand Cloister: 11,193; Golden Seed; Elphael, Brace of the Haligtree: 26,460; Golden Seed",
+        "score": 0.42182689905166626,
+        "canonical_id": "boss:133",
+        "category": "boss",
+        "text_type": "drops",
+        "source": "kaggle_dlc",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:drops:1/2"
+      },
+      {
+        "lore_id": "boss:19::weighted_text_types_v1",
+        "text": "Quote:\nValiant Gargoyles, mended with blackened corpse wax. Such is the mark of those who serve Maliketh, the Black Blade.\n\nDrops:\nBestial Sanctum:: 88,000; Gargoyle's Blackblade; Gargoyle's Black Halberd; Forbidden Lands:: 60,000; Gargoyle's Black Axe; Gargoyle's Black Blades",
+        "score": 0.40879639983177185,
+        "canonical_id": "boss:19",
+        "category": "boss",
+        "text_type": "quote",
+        "source": "kaggle_dlc",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:quote:1/2"
+      },
+      {
+        "lore_id": "spell:24::weighted_text_types_v1",
+        "text": "Description:\nSuperior black flame incantation of the Godskin Apostles. Summons a circle of black flame pillars around the caster. Charging increases the size of the circle. The Gloam-Eyed Queen led the apostles. It is said that she was an Empyrean chosen by the Fingers.\n\nEffect:\nSummons circle of black flame pillars around caster.",
+        "score": 0.48998188972473145,
+        "canonical_id": "spell:24",
+        "category": "spell",
+        "text_type": "description",
+        "source": "kaggle_dlc",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:description:2/2"
+      },
+      {
+        "lore_id": "boss:131::weighted_text_types_v1",
+        "text": "Quote:\nGuardians of the Minor Erdtrees, infested with Scarlet Rot. Their large staff can knock foes away, and their slam attack releases a cloud of rot, quickly leading to enemies\u2019 demise.\n\nDrops:\nMinor Erdtree (Caelid):: 9,600; Greenburst Crystal Tear; Flame-Shrouding Cracked Tear; Minor Erdtree (Dragonbarrow):: 91,000; Opaline Hardtear; Stonebarb Cracked Tear; Minor Erdtree (Consecrated Snowfield):: 160,000; Ruptured Crystal Tear; Thorny Cracked Tear; Elphael, Brace of the Haligtree:: 27,090; Walkway: Rotten Staff; Gateway: Lord's Rune",
+        "score": 0.4077415466308594,
+        "canonical_id": "boss:131",
+        "category": "boss",
+        "text_type": "quote",
+        "source": "kaggle_dlc",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:quote:2/2"
+      },
+      {
+        "lore_id": "item:1286::weighted_text_types_v1",
+        "text": "Description:\nThis legendary talisman is an eye engraved with an Elden Rune, said to be the seal of Queen Marika.\nGreatly raises mind, intelligence, faith, and arcane, but also increases damage taken by a similar measure.\nSolemn duty weighs upon the one beholden; not unlike a gnawing curse from which there is no deliverance.",
+        "score": 0.4711456894874573,
+        "canonical_id": "item:1286",
+        "category": "item",
+        "text_type": "description",
+        "source": "carian_accessory_fmg",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:description:3/2"
+      },
+      {
+        "lore_id": "boss:115::weighted_text_types_v1",
+        "text": "Quote:\nA Vicious beast that has lost all reason, attacking indiscriminately.\n\nDrops:\nUnsightly Catacombs: Unsightly Catacombs :; 9400 Runes; Perfumer Tricia Ashes Redmane Castle :; 16000 Runes; Ruins Greatsword",
+        "score": 0.4036739766597748,
+        "canonical_id": "boss:115",
+        "category": "boss",
+        "text_type": "quote",
+        "source": "kaggle_dlc",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:quote:3/2"
+      },
+      {
+        "lore_id": "item:397::weighted_text_types_v1",
+        "text": "Description:\nAn aberrant sorcery discovered by exiled criminals.\nTheirs are the sorceries most reviled by the academy.\nWounds the caster with thorns of sin, sending a trail of bloodthorns running over the ground to impale enemies from below.\nThis sorcery can be cast repeatedly.\nThe guilty, their eyes gouged by thorns, lived in eternal darkness. There, they discovered the blood star.",
+        "score": 0.4596211612224579,
+        "canonical_id": "item:397",
+        "category": "item",
+        "text_type": "description",
+        "source": "carian_goods_fmg",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:description:4/2"
+      },
+      {
+        "lore_id": "item:1625::weighted_text_types_v1",
+        "text": "Description:\nThis legendary talisman is an eye engraved with an Elden Rune, said to be the seal of King Consort Radagon.\nGreatly raises vigor, endurance, strength, and dexterity, but also increases damage taken by a similar measure.\nSolemn duty weighs upon the one beholden; not unlike a gnawing curse from which there is no deliverance.",
+        "score": 0.45792141556739807,
+        "canonical_id": "item:1625",
+        "category": "item",
+        "text_type": "description",
+        "source": "carian_accessory_fmg",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:description:5/2"
+      }
+    ],
+    "reranked": [
+      {
+        "lore_id": "item:877::weighted_text_types_v1",
+        "text": "Description:\nSacred cloth of the Godskin Apostles, made from supple skin sewn together.\nSuccessive attacks restore HP.\nThe Gloam-Eyed Queen cradles newborn apostles swaddled in this cloth. Soon they will grow to become the death of the gods.",
+        "score": 0.41375356912612915,
+        "canonical_id": "item:877",
+        "category": "item",
+        "text_type": "description",
+        "source": "carian_accessory_fmg",
+        "reranker_score": 2.9659435749053955,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:description:1/2"
+      },
+      {
+        "lore_id": "item:1337::weighted_text_types_v1",
+        "text": "Impalers Excerpt:\nA Great Rune relinquished by Miquella.\nBroken and bereft of its bounty, it retains naught but the power to resist charms.\nMiquella set off for the tower enshrouded by shadow, abandoning everything\u2014his golden flesh, his blinding strength, even his fate.\nAll in an effort to bury the original sin. To embrace the whole of it, and be reborn as a new god.\n\nDescription:\nA Great Rune relinquished by Miquella. Broken and bereft of its bounty, it retains naught but the power to resist charms. Miquella set off for the tower enshrouded by shadow, abandoning everything\u2014his golden flesh, his blinding strength, even his fate. All in an effort to bury the original sin. To embrace the whole of it, and be reborn as a new god.\n\nObtained From:\nScadutree Base\n\nEffect:\nRetains naught but the power to resist charms",
+        "score": 0.39965111017227173,
+        "canonical_id": "item:1337",
+        "category": "item",
+        "text_type": "impalers_excerpt",
+        "source": "kaggle_dlc|impalers",
+        "reranker_score": -11.195491790771484,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:impalers_excerpt:1/2"
+      },
+      {
+        "lore_id": "boss:131::weighted_text_types_v1",
+        "text": "Quote:\nGuardians of the Minor Erdtrees, infested with Scarlet Rot. Their large staff can knock foes away, and their slam attack releases a cloud of rot, quickly leading to enemies\u2019 demise.\n\nDrops:\nMinor Erdtree (Caelid):: 9,600; Greenburst Crystal Tear; Flame-Shrouding Cracked Tear; Minor Erdtree (Dragonbarrow):: 91,000; Opaline Hardtear; Stonebarb Cracked Tear; Minor Erdtree (Consecrated Snowfield):: 160,000; Ruptured Crystal Tear; Thorny Cracked Tear; Elphael, Brace of the Haligtree:: 27,090; Walkway: Rotten Staff; Gateway: Lord's Rune",
+        "score": 0.4077415466308594,
+        "canonical_id": "boss:131",
+        "category": "boss",
+        "text_type": "quote",
+        "source": "kaggle_dlc",
+        "reranker_score": -10.464825630187988,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:quote:1/2"
+      },
+      {
+        "lore_id": "boss:133::weighted_text_types_v1",
+        "text": "Drops:\nWar-Dead Catacombs: 64,000; Redmane Knight Ogha Spirit Ashes; Golden Seed; Grand Cloister: 11,193; Golden Seed; Elphael, Brace of the Haligtree: 26,460; Golden Seed",
+        "score": 0.42182689905166626,
+        "canonical_id": "boss:133",
+        "category": "boss",
+        "text_type": "drops",
+        "source": "kaggle_dlc",
+        "reranker_score": -11.266422271728516,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:drops:1/2"
+      },
+      {
+        "lore_id": "spell:24::weighted_text_types_v1",
+        "text": "Description:\nSuperior black flame incantation of the Godskin Apostles. Summons a circle of black flame pillars around the caster. Charging increases the size of the circle. The Gloam-Eyed Queen led the apostles. It is said that she was an Empyrean chosen by the Fingers.\n\nEffect:\nSummons circle of black flame pillars around caster.",
+        "score": 0.48998188972473145,
+        "canonical_id": "spell:24",
+        "category": "spell",
+        "text_type": "description",
+        "source": "kaggle_dlc",
+        "reranker_score": 0.39644956588745117,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:description:2/2"
+      },
+      {
+        "lore_id": "weapon:1701::weighted_text_types_v1",
+        "text": "Impalers Excerpt:\nLight greatsword with gold inlaid. \nWeapon of Leda, the Needle Knight.\nDeals holy damage.\nThough polished to a mirror sheen, this blade still reeks with the stench of crusted blood that lingers from the cull of her knightly comrades.\n\nDescription:\nLight greatsword with gold inlaid. Weapon of Leda, the Needle Knight. Deals holy damage. Though polished to a mirror sheen, this blade still reeks with the stench of crusted blood that lingers from the cull of her knightly comrades.",
+        "score": 0.4096152186393738,
+        "canonical_id": "weapon:1701",
+        "category": "weapon",
+        "text_type": "impalers_excerpt",
+        "source": "kaggle_dlc|impalers",
+        "reranker_score": -11.245357513427734,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:impalers_excerpt:2/2"
+      },
+      {
+        "lore_id": "boss:19::weighted_text_types_v1",
+        "text": "Quote:\nValiant Gargoyles, mended with blackened corpse wax. Such is the mark of those who serve Maliketh, the Black Blade.\n\nDrops:\nBestial Sanctum:: 88,000; Gargoyle's Blackblade; Gargoyle's Black Halberd; Forbidden Lands:: 60,000; Gargoyle's Black Axe; Gargoyle's Black Blades",
+        "score": 0.40879639983177185,
+        "canonical_id": "boss:19",
+        "category": "boss",
+        "text_type": "quote",
+        "source": "kaggle_dlc",
+        "reranker_score": -11.162031173706055,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:quote:2/2"
+      },
+      {
+        "lore_id": "item:317::weighted_text_types_v1",
+        "text": "Description:\nSuperior black flame incantation of the Godskin Apostles.\nSummons a circle of black flame pillars around the caster.\nCharging increases the size of the circle.\nThe Gloam-Eyed Queen led the apostles. It is said that she was an Empyrean chosen by the Fingers.",
+        "score": 0.5006847977638245,
+        "canonical_id": "item:317",
+        "category": "item",
+        "text_type": "description",
+        "source": "carian_goods_fmg",
+        "reranker_score": 0.32629600167274475,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:description:3/2"
+      },
+      {
+        "lore_id": "armor:252::weighted_text_types_v1",
+        "text": "Impalers Excerpt:\nRobe of Count Ymir, High Priest.\nThe front is open, exposing the squirming fingers beneath.\nThis robe is the image of his fervent desire having broken free, laying bare his greatest wish, and wearing it enhances finger sorceries.\n\"I will be the true mother.\nMy fingers will grant us redemption!\"\n\nDescription:\nRobe of Count Ymir, High Priest. The front is open, exposing the squirming fingers beneath. This robe is the image of his fervent desire having broken free, laying bare his greatest wish, and wearing it enhances finger sorceries. \"I will be the true mother. My fingers will grant us redemption!\"",
+        "score": 0.38731926679611206,
+        "canonical_id": "armor:252",
+        "category": "armor",
+        "text_type": "impalers_excerpt",
+        "source": "kaggle_dlc|impalers",
+        "reranker_score": -11.332624435424805,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:impalers_excerpt:3/2"
+      },
+      {
+        "lore_id": "boss:115::weighted_text_types_v1",
+        "text": "Quote:\nA Vicious beast that has lost all reason, attacking indiscriminately.\n\nDrops:\nUnsightly Catacombs: Unsightly Catacombs :; 9400 Runes; Perfumer Tricia Ashes Redmane Castle :; 16000 Runes; Ruins Greatsword",
+        "score": 0.4036739766597748,
+        "canonical_id": "boss:115",
+        "category": "boss",
+        "text_type": "quote",
+        "source": "kaggle_dlc",
+        "reranker_score": -11.359855651855469,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:quote:3/2"
+      }
+    ]
+  },
+  "messmer": {
+    "meta": {
+      "label": "Messmer flame serpent blood",
+      "query": "Messmer flame serpent blood",
+      "filters": null,
+      "note": "Balanced mode, no filters"
+    },
+    "embedding": [
+      {
+        "lore_id": "spell:149::weighted_text_types_v1",
+        "text": "Description:\nAn incantation of Messmer the Impaler. Summons Messmer's flame to form a giant floating orb. The orb soars toward a foe, crashes into the earth, and explodes after a brief delay. Charging enhances potency. Messmer despised his own fire. Time and time again he hoped to rid himself of it, but ever did it burn.\n\nEffect:\nShapes Messmer's flame into a giant orb that soars at foe",
+        "score": 0.5309575200080872,
+        "canonical_id": "spell:149",
+        "category": "spell",
+        "text_type": "description",
+        "source": "kaggle_dlc",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:description:1/2"
+      },
+      {
+        "lore_id": "armor:480::weighted_text_types_v1",
+        "text": "Impalers Excerpt:\nBlack helm of Messmer the Impaler, crowned with two intertwined winged serpents.\nSlightly enhances incantations of Messmer's flame as well as Fire Knight skills.\nThe winged snakes were Messmer's constant companions.\nThey were there when the base serpent was sealed away behind his eye. They were there through his eternity of suffering. They will accompany him yet, in his hideous new form born when he destroyed the grace granted by his mother. They have accepted his fate as much as he.\n\nDescription:\nBlack helm of Messmer the Impaler, crowned with two intertwined winged serpents.Slightly enhances incantations of Messmer's flame as well as Fire Knight skills.The winged snakes were Messmer's constant companions.They were there when the base serpent was sealed away behind his eye. They were there through his eternity of suffering. They will accompany him yet, in his hideous new form born when he destroyed the grace granted by his mother. They have accepted his fate as much as he.",
+        "score": 0.5512473583221436,
+        "canonical_id": "armor:480",
+        "category": "armor",
+        "text_type": "impalers_excerpt",
+        "source": "kaggle_dlc|impalers",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:impalers_excerpt:1/2"
+      },
+      {
+        "lore_id": "npc:carian_speaker_20300310::weighted_text_types_v1",
+        "text": "Dialogue:\nJoin the Serpent King, as family...",
+        "score": 0.4477306008338928,
+        "canonical_id": "npc:carian_speaker_20300310",
+        "category": "npc",
+        "text_type": "dialogue",
+        "source": "carian_dialogue_fmg",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:dialogue:1/2"
+      },
+      {
+        "lore_id": "boss:151::weighted_text_types_v1",
+        "text": "Quote:\nJoin the Serpent King, as family... Together, we will devour the very gods!\n\nDrops:\nVolcano Manor: 130.000; Rykard's Great Rune; Remembrance of the Blasphemous",
+        "score": 0.4356585144996643,
+        "canonical_id": "boss:151",
+        "category": "boss",
+        "text_type": "quote",
+        "source": "kaggle_dlc",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:quote:1/2"
+      },
+      {
+        "lore_id": "spell:74::weighted_text_types_v1",
+        "text": "Description:\nIncantation of the Fire Knights under Messmer the Impaler's personal command. Launch a serpentine flame that bends and curls in pursuit of its foe. Charging enhances potency. When the flame they received from Messmer would not find purchase within them, the Fire Knights relied on fire incantations to honor their bond.\n\nEffect:\nLaunches a threaded serpentine flame",
+        "score": 0.4723092019557953,
+        "canonical_id": "spell:74",
+        "category": "spell",
+        "text_type": "description",
+        "source": "kaggle_dlc",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:description:2/2"
+      },
+      {
+        "lore_id": "armor:258::weighted_text_types_v1",
+        "text": "Impalers Excerpt:\nArmor of the Fire Knights under Messmer the Impaler's personal command.\nDistinguished by its red cape and twin golden snakes which adorn the neck, enhancing incantations of Messmer's flame.\nThese were the only ones who truly knew Messmer. His flames, like serpents. The painful fate that accompanied his accursed form.\n\nDescription:\nArmor of the Fire Knights under Messmer the Impaler's personal command. Distinguished by its red cape and twin golden snakes which adorn the neck, enhancing incantations of Messmer's flame. These were the only ones who truly knew Messmer. His flames, like serpents. The painful fate that accompanied his accursed form.",
+        "score": 0.5309450030326843,
+        "canonical_id": "armor:258",
+        "category": "armor",
+        "text_type": "impalers_excerpt",
+        "source": "kaggle_dlc|impalers",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:impalers_excerpt:2/2"
+      },
+      {
+        "lore_id": "npc:carian_speaker_310050000::weighted_text_types_v1",
+        "text": "Dialogue:\nAhh, the flame of chaos has nestled within you.",
+        "score": 0.43857985734939575,
+        "canonical_id": "npc:carian_speaker_310050000",
+        "category": "npc",
+        "text_type": "dialogue",
+        "source": "carian_dialogue_fmg",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:dialogue:2/2"
+      },
+      {
+        "lore_id": "item:140::weighted_text_types_v1",
+        "text": "Description:\nThis Ash of War grants an armament the Blood affinity and the following skill:\n\"Bloody Slash: Blood Oath skill granted by the Lord of Blood. From a low stance, coat the blade in your own blood to unleash a rending blood slash in a wide arc.\"\nUsable on swords (colossal weapons excepted).",
+        "score": 0.42383116483688354,
+        "canonical_id": "item:140",
+        "category": "item",
+        "text_type": "description",
+        "source": "carian_gem_fmg",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:description:3/2"
+      },
+      {
+        "lore_id": "armor:481::weighted_text_types_v1",
+        "text": "Impalers Excerpt:\nBlack helm of Messmer the Impaler, crowned with two intertwined winged serpents. Slightly enhances incantations of Messmer's fire as well as Fire Knight skills.\nThe winged snakes were Messmer's constant companions.\nThey were there when the base serpent was sealed away behind his eye. They were there through his eternity of suffering. They will accompany him yet, in his hideous new form born when he destroyed the grace granted by his mother. They have accepted his fate as much as he.\n\nDescription:\nBlack helm of Messmer the Impaler, crowned with two intertwined winged serpents. Slightly enhances incantations of Messmer's fire as well as Fire Knight skills.The winged snakes were Messmer's constant companions.They were there when the base serpent was sealed away behind his eye. They were there through his eternity of suffering. They will accompany him yet, in his hideous new form born when he destroyed the grace granted by his mother. They have accepted his fate as much as he.",
+        "score": 0.5305131673812866,
+        "canonical_id": "armor:481",
+        "category": "armor",
+        "text_type": "impalers_excerpt",
+        "source": "kaggle_dlc|impalers",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:impalers_excerpt:3/2"
+      },
+      {
+        "lore_id": "npc:carian_speaker_300900010::weighted_text_types_v1",
+        "text": "Dialogue:\nLet me be your serpent\u2026",
+        "score": 0.4368543028831482,
+        "canonical_id": "npc:carian_speaker_300900010",
+        "category": "npc",
+        "text_type": "dialogue",
+        "source": "carian_dialogue_fmg",
+        "reranker_score": null,
+        "ordering_notes": "balanced-slot:dialogue:3/2"
+      }
+    ],
+    "reranked": [
+      {
+        "lore_id": "spell:74::weighted_text_types_v1",
+        "text": "Description:\nIncantation of the Fire Knights under Messmer the Impaler's personal command. Launch a serpentine flame that bends and curls in pursuit of its foe. Charging enhances potency. When the flame they received from Messmer would not find purchase within them, the Fire Knights relied on fire incantations to honor their bond.\n\nEffect:\nLaunches a threaded serpentine flame",
+        "score": 0.4723092019557953,
+        "canonical_id": "spell:74",
+        "category": "spell",
+        "text_type": "description",
+        "source": "kaggle_dlc",
+        "reranker_score": 3.705937385559082,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:description:1/2"
+      },
+      {
+        "lore_id": "armor:480::weighted_text_types_v1",
+        "text": "Impalers Excerpt:\nBlack helm of Messmer the Impaler, crowned with two intertwined winged serpents.\nSlightly enhances incantations of Messmer's flame as well as Fire Knight skills.\nThe winged snakes were Messmer's constant companions.\nThey were there when the base serpent was sealed away behind his eye. They were there through his eternity of suffering. They will accompany him yet, in his hideous new form born when he destroyed the grace granted by his mother. They have accepted his fate as much as he.\n\nDescription:\nBlack helm of Messmer the Impaler, crowned with two intertwined winged serpents.Slightly enhances incantations of Messmer's flame as well as Fire Knight skills.The winged snakes were Messmer's constant companions.They were there when the base serpent was sealed away behind his eye. They were there through his eternity of suffering. They will accompany him yet, in his hideous new form born when he destroyed the grace granted by his mother. They have accepted his fate as much as he.",
+        "score": 0.5512473583221436,
+        "canonical_id": "armor:480",
+        "category": "armor",
+        "text_type": "impalers_excerpt",
+        "source": "kaggle_dlc|impalers",
+        "reranker_score": 4.257012367248535,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:impalers_excerpt:1/2"
+      },
+      {
+        "lore_id": "npc:carian_speaker_313033000::weighted_text_types_v1",
+        "text": "Dialogue:\nThe serpent that lurked in the shadows that night...",
+        "score": 0.41606563329696655,
+        "canonical_id": "npc:carian_speaker_313033000",
+        "category": "npc",
+        "text_type": "dialogue",
+        "source": "carian_dialogue_fmg",
+        "reranker_score": -9.032461166381836,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:dialogue:1/2"
+      },
+      {
+        "lore_id": "boss:77::weighted_text_types_v1",
+        "text": "Quote:\nThe great serpent of Mt. Gelmir that swallowed Praetor Rykard. Attacks with poisonous spit, bites, and slams.\n\nDrops:\nMt. Gelmir: Volcano Manor :; 130,000 Runes; Rykard's Great Rune; Remembrance of the Blasphemous",
+        "score": 0.41084057092666626,
+        "canonical_id": "boss:77",
+        "category": "boss",
+        "text_type": "quote",
+        "source": "kaggle_dlc",
+        "reranker_score": -8.832237243652344,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:quote:1/2"
+      },
+      {
+        "lore_id": "spell:149::weighted_text_types_v1",
+        "text": "Description:\nAn incantation of Messmer the Impaler. Summons Messmer's flame to form a giant floating orb. The orb soars toward a foe, crashes into the earth, and explodes after a brief delay. Charging enhances potency. Messmer despised his own fire. Time and time again he hoped to rid himself of it, but ever did it burn.\n\nEffect:\nShapes Messmer's flame into a giant orb that soars at foe",
+        "score": 0.5309575200080872,
+        "canonical_id": "spell:149",
+        "category": "spell",
+        "text_type": "description",
+        "source": "kaggle_dlc",
+        "reranker_score": 1.839914083480835,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:description:2/2"
+      },
+      {
+        "lore_id": "armor:258::weighted_text_types_v1",
+        "text": "Impalers Excerpt:\nArmor of the Fire Knights under Messmer the Impaler's personal command.\nDistinguished by its red cape and twin golden snakes which adorn the neck, enhancing incantations of Messmer's flame.\nThese were the only ones who truly knew Messmer. His flames, like serpents. The painful fate that accompanied his accursed form.\n\nDescription:\nArmor of the Fire Knights under Messmer the Impaler's personal command. Distinguished by its red cape and twin golden snakes which adorn the neck, enhancing incantations of Messmer's flame. These were the only ones who truly knew Messmer. His flames, like serpents. The painful fate that accompanied his accursed form.",
+        "score": 0.5309450030326843,
+        "canonical_id": "armor:258",
+        "category": "armor",
+        "text_type": "impalers_excerpt",
+        "source": "kaggle_dlc|impalers",
+        "reranker_score": 3.5324575901031494,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:impalers_excerpt:2/2"
+      },
+      {
+        "lore_id": "npc:carian_speaker_332002020::weighted_text_types_v1",
+        "text": "Dialogue:\nThen please. Kill the great serpent.",
+        "score": 0.42200830578804016,
+        "canonical_id": "npc:carian_speaker_332002020",
+        "category": "npc",
+        "text_type": "dialogue",
+        "source": "carian_dialogue_fmg",
+        "reranker_score": -9.061935424804688,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:dialogue:2/2"
+      },
+      {
+        "lore_id": "boss:151::weighted_text_types_v1",
+        "text": "Quote:\nJoin the Serpent King, as family... Together, we will devour the very gods!\n\nDrops:\nVolcano Manor: 130.000; Rykard's Great Rune; Remembrance of the Blasphemous",
+        "score": 0.4356585144996643,
+        "canonical_id": "boss:151",
+        "category": "boss",
+        "text_type": "quote",
+        "source": "kaggle_dlc",
+        "reranker_score": -10.39518928527832,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:quote:2/2"
+      },
+      {
+        "lore_id": "spell:185::weighted_text_types_v1",
+        "text": "Description:\nThe terrible power of Rykard, Lord of Blasphemy. Summons searing spirits that leave a trail of delayed explosions in their wake. These spirits manifest from the rancor of heroes who met a violent end. The lord granted them an audience, whereupon they were welcomed by the maw of the great serpent -- and within the serpent's bowels, they became the lord's kin. Note:\n\nEffect:\nReleases searing spirits that repeatedly explode after delay",
+        "score": 0.42364442348480225,
+        "canonical_id": "spell:185",
+        "category": "spell",
+        "text_type": "description",
+        "source": "kaggle_dlc",
+        "reranker_score": -9.021596908569336,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:description:3/2"
+      },
+      {
+        "lore_id": "armor:481::weighted_text_types_v1",
+        "text": "Impalers Excerpt:\nBlack helm of Messmer the Impaler, crowned with two intertwined winged serpents. Slightly enhances incantations of Messmer's fire as well as Fire Knight skills.\nThe winged snakes were Messmer's constant companions.\nThey were there when the base serpent was sealed away behind his eye. They were there through his eternity of suffering. They will accompany him yet, in his hideous new form born when he destroyed the grace granted by his mother. They have accepted his fate as much as he.\n\nDescription:\nBlack helm of Messmer the Impaler, crowned with two intertwined winged serpents. Slightly enhances incantations of Messmer's fire as well as Fire Knight skills.The winged snakes were Messmer's constant companions.They were there when the base serpent was sealed away behind his eye. They were there through his eternity of suffering. They will accompany him yet, in his hideous new form born when he destroyed the grace granted by his mother. They have accepted his fate as much as he.",
+        "score": 0.5305131673812866,
+        "canonical_id": "armor:481",
+        "category": "armor",
+        "text_type": "impalers_excerpt",
+        "source": "kaggle_dlc|impalers",
+        "reranker_score": 3.1463470458984375,
+        "ordering_notes": "reranker:cross_encoder; balanced-slot:impalers_excerpt:3/2"
+      }
+    ]
+  }
+}

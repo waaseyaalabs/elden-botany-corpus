@@ -13,9 +13,10 @@ A complete, production-ready data pipeline for curating Elden Ring game data (ba
 
 - ✅ **Carian FMG aliasing** now ingests alternate filename pairs (e.g., `ArtsName.fmg.xml`) so ash-of-war, boss, spell, and dialogue datasets survive missing canonical FMGs. See `corpus/ingest_carian_fmg.py` and `pipelines/io/carian_fmg_loader.py` for the candidate lists.
 - ✅ **Canonical + lore rebuild** completed after the alias change (items/weapons/armor/bosses/spells + `pipelines.build_lore_corpus`). Lore corpus currently holds 15,992 lines with 8,030 Carian dialogue rows.
-- ✅ **Embeddings + FAISS artifacts** regenerated locally using `all-MiniLM-L6-v2` (14,454 vectors, `embedding_strategy=weighted_text_types_v1`). Artifacts live under `data/embeddings/` and are described in `eval/rag_weighting_evaluation.md`.
-- ✅ **Benchmark runbook updated** (`eval/rag_weighting_evaluation.md`) with raw `rag.query` outputs for Radahn, Scarlet Rot, Fungus, Thorns/Gloam-Eyed, and Messmer prompts. Dialogue-heavy results surfaced for the first two prompts, highlighting a pending tuning task (reduce dialogue weighting or add category filters).
-- ⚠️ **Next tuning step**: adjust text-type weights (e.g., downgrade `dialogue`) or filter NPC rows when running general lore benchmarks so descriptive weapon/spell entries regain representation.
+- ✅ **Dialogue weighting dampened + embeddings rebuilt**. `dialogue` rows now default to a 0.7 multiplier (down from 1.5) so descriptive lore re-enters the top window; `make rag-embeddings && make rag-index` were rerun to bake the change into `data/embeddings/*`.
+- ✅ **Balanced retrieval + semantic dedup**. `rag.query` now default-interleaves dialogue, descriptions, impalers excerpts, and lore, caps any single text_type at two slots before falling back, flattens multi-line TalkMsg blocks, and skips near-duplicate dialogue if cosine similarity >0.97.
+- ✅ **Cross-encoder reranker integration**. `rag.reranker` exposes an identity + `cross-encoder/ms-marco-MiniLM-L-6-v2` reranker, annotates `reranker_score` / ordering notes, respects `--mode balanced|raw`, and records reranker metadata in `rag_index_meta.json`.
+- ✅ **Benchmark runbook updated** (`eval/rag_weighting_evaluation.md`) with embedding-only vs reranked tables for Radahn, Scarlet Rot, Fungus, Thorns/Gloam-Eyed, and Messmer prompts, showing descriptions re-entering the default top-10 while valid dialogue still appears.
 
 ## ✅ Deliverables Completed
 

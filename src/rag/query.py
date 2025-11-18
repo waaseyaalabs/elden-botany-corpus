@@ -9,12 +9,15 @@ from __future__ import annotations
 
 import argparse
 import logging
+from collections import defaultdict, deque
 from collections.abc import Mapping, MutableMapping, Sequence
 from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Literal, Protocol
 
+import numpy as np
 import pandas as pd  # type: ignore[import]
+from numpy.typing import NDArray
 
 from pipelines.build_rag_index import (
     DEFAULT_INDEX,
@@ -33,6 +36,11 @@ FilterValue = str | Sequence[str]
 FilterMapping = Mapping[str, FilterValue]
 FilterInput = FilterMapping | Sequence["FilterExpression"]
 _DEDUP_PADDING_FACTOR = 3
+_SEMANTIC_DUPLICATE_THRESHOLD = 0.97
+_SEMANTIC_TEXT_TYPES = {"dialogue", "quote"}
+_BALANCED_MAX_PER_TYPE = 2
+_BALANCED_PRIORITY = ("description", "lore", "impalers_excerpt", "dialogue")
+BalancedMode = Literal["balanced", "raw"]
 
 
 class EncoderProtocol(Protocol):
@@ -69,6 +77,8 @@ class LoreMatch:
     category: str | None
     text_type: str | None
     source: str | None
+    reranker_score: float | None = None
+    ordering_notes: str | None = None
 
     def to_dict(self) -> dict[str, object]:
         """Convert the match into a serialisable dictionary."""
@@ -86,6 +96,7 @@ def query_lore(
     info_path: Path = DEFAULT_INFO,
     encoder: EncoderProtocol | None = None,
     reranker: RerankerProtocol | None = None,
+    mode: BalancedMode = "balanced",
 ) -> list[LoreMatch]:
     """Query the persisted FAISS index and return matches with metadata."""
 
@@ -96,17 +107,18 @@ def query_lore(
         encoder=encoder,
     )
     normalized_filters = _prepare_filters(filters)
-    padded_top_k = max(1, top_k) * _DEDUP_PADDING_FACTOR
+    active_reranker = reranker or load_reranker(None)
+    padded_top_k = _resolve_candidate_window(top_k, active_reranker)
     frame = helper.query(
         query_text,
         top_k=padded_top_k,
         filter_by=normalized_filters,
+        include_vectors=True,
     )
     frame = _deduplicate_frame(frame)
     matches = _frame_to_matches(frame)
-    active_reranker = reranker or load_reranker(None)
-    reranked = active_reranker.rerank(matches)
-    return reranked[:top_k]
+    reranked = active_reranker.rerank(query_text, matches)
+    return _apply_mode(reranked, top_k, mode=mode)
 
 
 def _prepare_filters(
@@ -178,48 +190,227 @@ def _frame_to_matches(frame: pd.DataFrame) -> list[LoreMatch]:
     return matches
 
 
+def _resolve_candidate_window(
+    top_k: int,
+    reranker: RerankerProtocol | None,
+) -> int:
+    window = max(1, top_k) * _DEDUP_PADDING_FACTOR
+    pool_size = getattr(reranker, "candidate_pool_size", None)
+    if isinstance(pool_size, int) and pool_size > 0:
+        window = max(window, pool_size)
+    return window
+
+
+def _apply_mode(
+    matches: Sequence[LoreMatch],
+    top_k: int,
+    *,
+    mode: BalancedMode,
+) -> list[LoreMatch]:
+    if top_k <= 0:
+        return []
+    if mode == "raw":
+        return list(matches[:top_k])
+    return _balanced_interleave(matches, top_k)
+
+
+def _balanced_interleave(
+    matches: Sequence[LoreMatch],
+    top_k: int,
+) -> list[LoreMatch]:
+    if not matches:
+        return []
+
+    buckets = _build_type_buckets(matches)
+    if not buckets:
+        return list(matches[:top_k])
+
+    priority = [key for key in _BALANCED_PRIORITY if key in buckets]
+    remaining = [key for key in buckets if key not in priority]
+    ordered_keys = priority + remaining
+    counts: defaultdict[str, int] = defaultdict(int)
+    results: list[LoreMatch] = []
+    overflow: list[LoreMatch] = []
+
+    while len(results) < top_k and ordered_keys:
+        progress = False
+        for key in list(ordered_keys):
+            queue = buckets.get(key)
+            if not queue:
+                ordered_keys.remove(key)
+                buckets.pop(key, None)
+                continue
+            maxed_out = counts[key] >= _BALANCED_MAX_PER_TYPE
+            if maxed_out and _has_diversity_options(buckets, counts):
+                overflow.append(queue.popleft())
+                if not queue:
+                    ordered_keys.remove(key)
+                    buckets.pop(key, None)
+                continue
+            candidate = queue.popleft()
+            counts[key] += 1
+            _append_ordering_note(
+                candidate,
+                f"balanced-slot:{key}:{counts[key]}/{_BALANCED_MAX_PER_TYPE}",
+            )
+            results.append(candidate)
+            progress = True
+            if not queue:
+                ordered_keys.remove(key)
+                buckets.pop(key, None)
+            if len(results) >= top_k:
+                break
+        if not progress:
+            break
+
+    if len(results) < top_k:
+        remainder: list[LoreMatch] = []
+        for queue in buckets.values():
+            remainder.extend(list(queue))
+        remainder = overflow + remainder
+        for candidate in remainder:
+            _append_ordering_note(candidate, "balanced-fallback")
+            results.append(candidate)
+            if len(results) >= top_k:
+                break
+    return results[:top_k]
+
+
+def _build_type_buckets(
+    matches: Sequence[LoreMatch],
+) -> dict[str, deque[LoreMatch]]:
+    buckets: dict[str, deque[LoreMatch]] = {}
+    for match in matches:
+        key = (match.text_type or "unknown").lower()
+        buckets.setdefault(key, deque()).append(match)
+    return buckets
+
+
+def _has_diversity_options(
+    buckets: Mapping[str, deque[LoreMatch]],
+    counts: Mapping[str, int],
+) -> bool:
+    for key, queue in buckets.items():
+        if queue and counts.get(key, 0) < _BALANCED_MAX_PER_TYPE:
+            return True
+    return False
+
+
+def _append_ordering_note(match: LoreMatch, note: str) -> None:
+    if not note:
+        return
+    if match.ordering_notes:
+        match.ordering_notes = f"{match.ordering_notes}; {note}"
+    else:
+        match.ordering_notes = note
+
+
 def _deduplicate_frame(frame: pd.DataFrame) -> pd.DataFrame:
     if frame.empty or "text" not in frame.columns:
         return frame
 
-    seen: set[str] = set()
+    seen_texts: set[str] = set()
+    kept_vectors: list[NDArray[np.float32]] = []
+    columns = [column for column in frame.columns if column != "_vector"]
     unique_rows: list[dict[str, object]] = []
-    duplicates: list[dict[str, object]] = []
 
     for _, row in frame.iterrows():
         normalized = _normalize_text(row.get("text"))
-        if normalized and normalized in seen:
-            duplicates.append(row.to_dict())
+        if normalized and normalized in seen_texts:
             continue
+
+        text_type = str(row.get("text_type", "")).strip().lower()
+        vector = _coerce_vector(row.get("_vector"))
+
+        if (
+            vector is not None
+            and text_type in _SEMANTIC_TEXT_TYPES
+            and _is_semantic_duplicate(vector, kept_vectors)
+        ):
+            continue
+
         if normalized:
-            seen.add(normalized)
-        unique_rows.append(row.to_dict())
+            seen_texts.add(normalized)
+        if vector is not None and text_type in _SEMANTIC_TEXT_TYPES:
+            kept_vectors.append(vector)
 
-    if not duplicates:
-        return frame
+        record = row.to_dict()
+        record.pop("_vector", None)
+        unique_rows.append(record)
 
-    combined = unique_rows + duplicates
-    return pd.DataFrame(combined, columns=frame.columns)
+    if not unique_rows:
+        return frame.head(0)
+
+    return pd.DataFrame.from_records(unique_rows, columns=columns)
 
 
 def _normalize_text(value: object) -> str:
     if value is None:
         return ""
     normalized = str(value).strip()
-    return " ".join(normalized.split()).lower()
+    normalized = (
+        normalized.replace("\n", " ")
+        .replace("\r", " ")
+        .replace("“", '"')
+        .replace("”", '"')
+        .replace("’", "'")
+        .replace("–", "-")
+        .replace("—", "-")
+    )
+    collapsed = " ".join(normalized.split())
+    return collapsed.lower()
+
+
+def _coerce_vector(value: object) -> NDArray[np.float32] | None:
+    if value is None:
+        return None
+    try:
+        array = np.asarray(value, dtype=np.float32)
+    except (TypeError, ValueError):  # pragma: no cover - defensive
+        return None
+    if array.ndim != 1:
+        return None
+    return array
+
+
+def _is_semantic_duplicate(
+    vector: NDArray[np.float32],
+    existing: Sequence[NDArray[np.float32]],
+    *,
+    threshold: float = _SEMANTIC_DUPLICATE_THRESHOLD,
+) -> bool:
+    if not existing:
+        return False
+    vector_norm = float(np.linalg.norm(vector))
+    if vector_norm == 0.0:
+        return False
+    for candidate in existing:
+        candidate_norm = float(np.linalg.norm(candidate))
+        if candidate_norm == 0.0:
+            continue
+        similarity = float(np.dot(candidate, vector) / (candidate_norm * vector_norm))
+        if similarity >= threshold:
+            return True
+    return False
 
 
 def _format_match(match: LoreMatch, counter: int) -> str:
     text_label = match.text_type or "text"
     category_label = match.category or "unknown"
-    header = f"{counter}. [{match.score:.3f}] {text_label} | {category_label}"
+    score_label = f"emb={match.score:.3f}"
+    if match.reranker_score is not None:
+        score_label = f"{score_label} rerank={match.reranker_score:.3f}"
+    header = f"{counter}. [{score_label}] {text_label} | {category_label}"
     provenance = (
         "    lore_id="
         f"{match.lore_id} canonical_id={match.canonical_id or '—'} "
         f"source={match.source or '—'}"
     )
     body = f"    {match.text}"
-    return "\n".join([header, provenance, body])
+    lines = [header, provenance, body]
+    if match.ordering_notes:
+        lines.append(f"    note={match.ordering_notes}")
+    return "\n".join(lines)
 
 
 def _parse_cli_filters(
@@ -279,11 +470,7 @@ def _parse_filter_expression(raw_expression: str) -> FilterExpression | None:
         )
         return None
 
-    values = [
-        token.strip()
-        for token in raw_values.split(",")
-        if token.strip()
-    ]
+    values = [token.strip() for token in raw_values.split(",") if token.strip()]
     if not values:
         LOGGER.warning(
             "Ignoring filter with missing values: %s",
@@ -362,6 +549,15 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
         ),
     )
     parser.add_argument(
+        "--mode",
+        choices=("balanced", "raw"),
+        default="balanced",
+        help=(
+            "Retrieval ordering strategy: balanced interleaves text types, "
+            "raw preserves FAISS or reranker order."
+        ),
+    )
+    parser.add_argument(
         "--verbose",
         action="store_true",
         help="Enable verbose logging",
@@ -389,6 +585,7 @@ def main(argv: Sequence[str] | None = None) -> None:
             metadata_path=args.metadata,
             info_path=args.info,
             reranker=reranker,
+            mode=args.mode,
         )
     except (FileNotFoundError, RAGIndexError, ValueError) as exc:
         LOGGER.error("Query failed: %s", exc)

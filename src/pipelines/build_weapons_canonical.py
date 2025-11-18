@@ -168,10 +168,14 @@ def _records_to_dataframe(records: list[dict[str, Any]]) -> pd.DataFrame:
     if frame.empty:
         raise RuntimeError("No canonical records remain after merging")
 
-    frame["source_priority"] = pd.to_numeric(
-        frame["source_priority"],
-        errors="coerce",
-    ).fillna(99).astype(int)
+    frame["source_priority"] = (
+        pd.to_numeric(
+            frame["source_priority"],
+            errors="coerce",
+        )
+        .fillna(99)
+        .astype(int)
+    )
 
     frame["is_dlc"] = frame["is_dlc"].fillna(False).astype(bool)
 
@@ -183,9 +187,7 @@ def _records_to_dataframe(records: list[dict[str, Any]]) -> pd.DataFrame:
     for column in SCALING_COLUMNS:
         if column not in frame.columns:
             frame[column] = "-"
-        frame[column] = (
-            frame[column].fillna("-").replace("", "-").astype(str).str.upper()
-        )
+        frame[column] = frame[column].fillna("-").replace("", "-").astype(str).str.upper()
 
     frame["weapon_type"] = frame["weapon_type"].fillna("other")
     if "provenance" not in frame.columns:
@@ -224,9 +226,7 @@ def _records_to_dataframe(records: list[dict[str, Any]]) -> pd.DataFrame:
         "provenance",
     ]
 
-    extra_columns = [
-        column for column in frame.columns if column not in column_order
-    ]
+    extra_columns = [column for column in frame.columns if column not in column_order]
     final_columns = column_order + extra_columns
 
     return frame.loc[:, final_columns]  # type: ignore[return-value]
@@ -238,9 +238,7 @@ def _resolve_description(bucket: Bucket) -> str | None:
     fallback_priority = _description_priority(bucket.best.get("source"))
 
     best_value = fallback_value
-    best_priority = (
-        fallback_priority if fallback_value else DEFAULT_DESCRIPTION_PRIORITY
-    )
+    best_priority = fallback_priority if fallback_value else DEFAULT_DESCRIPTION_PRIORITY
 
     for entry in bucket.entries:
         raw_value = entry.get("description")

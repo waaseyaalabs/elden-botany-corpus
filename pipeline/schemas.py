@@ -341,9 +341,7 @@ def get_dataset_schema(dataset_name: str) -> DataFrameSchema | None:
     return None
 
 
-def validate_dataframe(
-    df, schema: DataFrameSchema
-) -> tuple[bool, str | None, Any]:
+def validate_dataframe(df, schema: DataFrameSchema) -> tuple[bool, str | None, Any]:
     """Validate a DataFrame against a schema.
 
     Args:

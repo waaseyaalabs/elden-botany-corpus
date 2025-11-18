@@ -34,7 +34,9 @@ class NameCaptionSpec:
 def load_carian_weapon_fmg(raw_root: Path) -> list[dict[str, Any]]:
     """Load weapon names/captions from the Carian Archive."""
 
-    archive_root = _require_archive_root(raw_root)
+    archive_root = _resolve_archive_root(raw_root, context="weapon FMGs")
+    if archive_root is None:
+        return []
     spec = NameCaptionSpec(
         names_candidates=CARIAN_FMG_CANDIDATES["weapon_name"],
         captions_candidates=CARIAN_FMG_CANDIDATES["weapon_caption"],
@@ -48,7 +50,9 @@ def load_carian_weapon_fmg(raw_root: Path) -> list[dict[str, Any]]:
 def load_carian_armor_fmg(raw_root: Path) -> list[dict[str, Any]]:
     """Load armor captions to enrich canonical armor descriptions."""
 
-    archive_root = _require_archive_root(raw_root)
+    archive_root = _resolve_archive_root(raw_root, context="armor FMGs")
+    if archive_root is None:
+        return []
     spec = NameCaptionSpec(
         names_candidates=CARIAN_FMG_CANDIDATES["protector_name"],
         captions_candidates=CARIAN_FMG_CANDIDATES["protector_caption"],
@@ -62,7 +66,9 @@ def load_carian_armor_fmg(raw_root: Path) -> list[dict[str, Any]]:
 def load_carian_item_fmg(raw_root: Path) -> list[dict[str, Any]]:
     """Aggregate item/talisman/spirit captions from Carian FMGs."""
 
-    archive_root = _require_archive_root(raw_root)
+    archive_root = _resolve_archive_root(raw_root, context="item FMGs")
+    if archive_root is None:
+        return []
     specs = [
         NameCaptionSpec(
             names_candidates=CARIAN_FMG_CANDIDATES["goods_name"],
@@ -99,7 +105,9 @@ def load_carian_item_fmg(raw_root: Path) -> list[dict[str, Any]]:
 def load_carian_boss_fmg(raw_root: Path) -> list[dict[str, Any]]:
     """Load boss captions for narrative enrichment."""
 
-    archive_root = _require_archive_root(raw_root)
+    archive_root = _resolve_archive_root(raw_root, context="boss FMGs")
+    if archive_root is None:
+        return []
     spec = NameCaptionSpec(
         names_candidates=CARIAN_FMG_CANDIDATES["boss_name"],
         captions_candidates=CARIAN_FMG_CANDIDATES["boss_caption"],
@@ -113,7 +121,9 @@ def load_carian_boss_fmg(raw_root: Path) -> list[dict[str, Any]]:
 def load_carian_spell_fmg(raw_root: Path) -> list[dict[str, Any]]:
     """Load spell names/captions for sorceries and incantations."""
 
-    archive_root = _require_archive_root(raw_root)
+    archive_root = _resolve_archive_root(raw_root, context="spell FMGs")
+    if archive_root is None:
+        return []
     spec = NameCaptionSpec(
         names_candidates=CARIAN_FMG_CANDIDATES["magic_name"],
         captions_candidates=CARIAN_FMG_CANDIDATES["magic_caption"],
@@ -126,7 +136,9 @@ def load_carian_spell_fmg(raw_root: Path) -> list[dict[str, Any]]:
 def load_carian_dialogue_lines(raw_root: Path) -> list[dict[str, Any]]:
     """Parse TalkMsg/NpcName FMGs into dialogue lines."""
 
-    archive_root = _require_archive_root(raw_root)
+    archive_root = _resolve_archive_root(raw_root, context="dialogue FMGs")
+    if archive_root is None:
+        return []
     talk_path = _resolve_candidate_path(
         archive_root,
         CARIAN_FMG_CANDIDATES["talk"],
@@ -186,6 +198,18 @@ def _require_archive_root(raw_root: Path) -> Path:
         message = f"Missing Carian Archive directory: {archive_root}"
         raise FileNotFoundError(message)
     return archive_root
+
+
+def _resolve_archive_root(raw_root: Path, *, context: str) -> Path | None:
+    try:
+        return _require_archive_root(raw_root)
+    except FileNotFoundError:
+        LOGGER.warning(
+            "Skipping %s ingestion; Carian archive missing under %s",
+            context,
+            raw_root,
+        )
+        return None
 
 
 def _load_name_caption_records(
@@ -397,7 +421,8 @@ def _resolve_candidate_path(
         return path
 
     if required:
-        message = f"Missing FMG candidates for {description}; " f"tried {', '.join(candidates)}"
+        tried = ", ".join(candidates)
+        message = f"Missing FMG candidates for {description}; tried {tried}"
         raise FileNotFoundError(message)
 
     LOGGER.warning(

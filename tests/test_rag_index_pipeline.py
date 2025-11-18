@@ -5,12 +5,18 @@
 
 from __future__ import annotations
 
+import json
 from pathlib import Path
 
-from pipelines.build_lore_embeddings import build_lore_embeddings
-from pipelines.build_rag_index import build_rag_index, query_index
+from corpus.config import settings
 
-from .helpers import DeterministicEncoder, write_sample_lore_corpus
+from pipelines.build_lore_embeddings import build_lore_embeddings
+from pipelines.build_rag_index import (
+    FilterClause,
+    build_rag_index,
+    query_index,
+)
+from tests.helpers import DeterministicEncoder, write_sample_lore_corpus
 
 
 def test_build_rag_index_produces_artifacts(tmp_path: Path) -> None:
@@ -42,6 +48,8 @@ def test_build_rag_index_produces_artifacts(tmp_path: Path) -> None:
     assert info_path.exists()
     assert len(metadata) == 3
     assert set(metadata["category"]) == {"item", "weapon", "boss"}
+    info_payload = json.loads(info_path.read_text(encoding="utf-8"))
+    assert info_payload["reranker"]["default_name"] == settings.reranker_name
 
 
 def test_query_index_supports_filters(tmp_path: Path) -> None:
@@ -67,10 +75,12 @@ def test_query_index_supports_filters(tmp_path: Path) -> None:
         info_path=info_path,
     )
 
+    filters = {"category": FilterClause(include={"weapon"})}
+
     results = query_index(
         "Moonblade",
         top_k=2,
-        filter_by={"category": "weapon"},
+        filter_by=filters,
         index_path=index_path,
         metadata_path=metadata_path,
         info_path=info_path,

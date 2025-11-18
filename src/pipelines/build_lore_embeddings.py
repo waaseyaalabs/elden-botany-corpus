@@ -57,6 +57,7 @@ DEFAULT_TEXT_TYPE_WEIGHTS: dict[str, float] = {
     "impalers_excerpt": 1.7,
     "quote": 1.3,
     "lore": 1.2,
+    "dialogue": 0.7,
     "effect": 0.7,
     "obtained_from": 0.8,
     "drops": 0.8,

@@ -12,7 +12,7 @@ import argparse
 import json
 import logging
 import os
-from collections.abc import Mapping
+from collections.abc import Mapping, Sequence
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, cast
@@ -136,9 +136,7 @@ def load_query_helper(
     if resolved_provider is None:
         resolved_provider = _get_constant_value(metadata, "embedding_provider")
     if resolved_provider not in {"local", "openai"}:
-        raise RAGIndexError(
-            "Cannot determine embedding provider; rebuild embeddings"
-        )
+        raise RAGIndexError("Cannot determine embedding provider; rebuild embeddings")
     resolved_provider = cast(ProviderLiteral, resolved_provider)
 
     resolved_model = model_name or info.get("embedding_model")
@@ -171,10 +169,7 @@ def _resolve_index_path(target: Path) -> Path:
         return target
     if target == DEFAULT_INDEX and LEGACY_INDEX.exists():
         LOGGER.warning(
-            (
-                "Legacy lore_index.faiss artifact detected; rebuild the RAG "
-                "index to generate %s."
-            ),
+            ("Legacy lore_index.faiss artifact detected; rebuild the RAG " "index to generate %s."),
             DEFAULT_INDEX,
         )
         return LEGACY_INDEX
@@ -247,6 +242,11 @@ def _write_info(
     }
     if strategy is not None:
         payload["embedding_strategy"] = strategy
+    payload["reranker"] = {
+        "default_name": settings.reranker_name,
+        "default_model": settings.reranker_model,
+        "candidate_pool": settings.reranker_candidate_pool,
+    }
     info_path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
 
 
@@ -254,9 +254,7 @@ def _read_info(path: Path) -> dict[str, object]:
     try:
         return json.loads(path.read_text(encoding="utf-8"))
     except json.JSONDecodeError as exc:  # pragma: no cover - defensive
-        raise RAGIndexError(
-            f"Failed to parse index metadata JSON: {exc}"
-        ) from exc
+        raise RAGIndexError(f"Failed to parse index metadata JSON: {exc}") from exc
 
 
 def _get_constant_value(frame: pd.DataFrame, column: str) -> str | None:
@@ -290,12 +288,11 @@ class RAGQueryHelper:
         *,
         top_k: int = 5,
         filter_by: Mapping[str, FilterClause] | None = None,
+        include_vectors: bool = False,
     ) -> pd.DataFrame:
         vectors = self._encoder.encode([query_text])
         if not vectors:
-            raise RAGIndexError(
-                "Embedding backend returned no vector for query"
-            )
+            raise RAGIndexError("Embedding backend returned no vector for query")
 
         query_vec = np.asarray(vectors, dtype=np.float32)
         if query_vec.ndim == 1:
@@ -309,6 +306,7 @@ class RAGQueryHelper:
             query_vec=query_vec,
             top_k=top_k,
             filter_by=filter_by,
+            include_vectors=include_vectors,
         )
 
 
@@ -319,6 +317,7 @@ def _search_index(
     query_vec: VectorMatrix,
     top_k: int,
     filter_by: Mapping[str, FilterClause] | None,
+    include_vectors: bool = False,
 ) -> pd.DataFrame:
     if metadata.empty:
         return metadata.head(0).copy()
@@ -331,6 +330,10 @@ def _search_index(
         candidate_scores = distances[0][valid]
         candidate_df = metadata.iloc[candidate_idx].copy()
         candidate_df["score"] = candidate_scores[: len(candidate_df)]
+        if include_vectors:
+            vectors = _reconstruct_vectors(index, candidate_idx)
+            if vectors is not None:
+                candidate_df["_vector"] = vectors
 
         if filter_by:
             candidate_df = _apply_filters(candidate_df, filter_by)
@@ -340,6 +343,23 @@ def _search_index(
             return candidate_df.head(top_k)
 
         limit = min(len(metadata), limit * 2)
+
+
+def _reconstruct_vectors(
+    index: FAISSIndex,
+    candidate_indices: Sequence[int],
+) -> list[list[float]] | None:
+    if not hasattr(index, "reconstruct"):
+        return None
+
+    vectors: list[list[float]] = []
+    for idx in candidate_indices:
+        try:
+            vector = index.reconstruct(int(idx))
+        except (ValueError, RuntimeError, AttributeError):  # pragma: no cover
+            return None
+        vectors.append(vector.tolist())
+    return vectors
 
 
 def _apply_filters(
@@ -353,9 +373,7 @@ def _apply_filters(
         if clause.include:
             filtered = filtered[filtered[column].isin(sorted(clause.include))]
         if clause.exclude:
-            filtered = filtered[
-                ~filtered[column].isin(sorted(clause.exclude))
-            ]
+            filtered = filtered[~filtered[column].isin(sorted(clause.exclude))]
     return filtered
 
 
@@ -363,9 +381,7 @@ def _log_index_summary(frame: pd.DataFrame, dimension: int) -> None:
     LOGGER.info("Indexing %s embeddings (dim=%s)", len(frame), dimension)
     for label in ("category", "source", "text_type"):
         counts = frame[label].value_counts()
-        formatted = ", ".join(
-            f"{key}={value}" for key, value in counts.items()
-        )
+        formatted = ", ".join(f"{key}={value}" for key, value in counts.items())
         LOGGER.info("Distribution by %s: %s", label, formatted)
 
 
