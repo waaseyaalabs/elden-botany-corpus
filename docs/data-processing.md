@@ -85,6 +85,32 @@ The pipeline defines strict schemas for Elden Ring datasets using [Pandera](http
 - **slots_required** (int64, required)
 - **required_int, required_fai, etc.** (int64, optional)
 
+### Schema Versioning & Compatibility
+
+- **Explicit versions.** Every entry in `pipeline/schemas.py` is wrapped in a
+  `SchemaVersion` object whose canonical tag follows the pattern
+  `<dataset>_vN` (for example `weapons_v1`). The helper functions
+  `get_dataset_schema()`, `get_active_schema_version()`, and
+  `list_schema_versions()` expose the metadata so you can request older
+  versions or inspect migration notes.
+- **Processor awareness.** `scripts/process_data.py` now records the active
+  schema version inside each dataset cache (`data/processed/.cache/<name>.json`).
+  If the on-disk cache predates the current schema, the processor will
+  automatically reprocess that dataset even when the raw files are unchanged.
+  You can optionally add `schema` and/or `schema_version` keys to an individual
+  dataset entry in `config/kaggle_datasets.yml` to pin a specific version
+  while new revisions roll out side-by-side.
+- **Curated metadata.** `poetry run corpus curate` writes the schema tags that
+  produced every per-entity export into `data/curated/metadata.json` under the
+  new `schema_versions` block. Downstream workflows can now audit which schema
+  defined each CSV/Parquet artifact.
+- **Adding a new version.** Introduce another `SchemaVersion` entry (for example
+  `SchemaVersion(dataset="weapons", version="v2", ...)`), mark the previous
+  version as `deprecated=True` when appropriate, document the migration in
+  `migration_notes`, and update any dataset config that should opt into the new
+  tag. The processor will take care of invalidating caches and curated metadata
+  will automatically reflect the new tag after the next `corpus curate` run.
+
 ## Transformations
 
 ### Column Name Normalization

@@ -14,6 +14,7 @@ from corpus.utils import (
     save_csv,
     save_parquet,
 )
+from pipeline.schemas import get_active_schema_version
 
 
 class CorpusCurator:
@@ -183,6 +184,7 @@ class CorpusCurator:
 
             print(f"Exported {len(entity_df)} {entity_type} entities")
             self._record_quality_report(entity_type, entity_df)
+            self._track_schema_version(entity_type)
 
     def export_metadata(self) -> None:
         """Export metadata about the curation process."""
@@ -218,6 +220,18 @@ class CorpusCurator:
 
         summary = self.quality_reporter.generate_report(dataset_name, df)
         self.metadata.add_quality_report(dataset_name, summary)
+
+    def _track_schema_version(self, dataset_name: str) -> None:
+        """Record schema version metadata for a curated dataset."""
+
+        schema_version = get_active_schema_version(dataset_name)
+        if not schema_version:
+            return
+
+        self.metadata.add_schema_version(
+            dataset_name,
+            schema_version.to_metadata(),
+        )
 
 
 def curate_corpus(

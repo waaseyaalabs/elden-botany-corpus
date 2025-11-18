@@ -2,6 +2,9 @@
 # 
 # This file defines which Kaggle datasets to download and where to place them.
 # Each dataset entry specifies the owner, slug, and optionally specific files.
+# Optional keys per dataset:
+#   schema: force a specific schema registry key (default: dataset name)
+#   schema_version: request a particular schema tag (e.g., v1)
 #
 # Usage:
 #   python -m scripts.download_kaggle_dataset \

@@ -91,6 +91,13 @@ def test_metadata_tracker(tmp_path: Path) -> None:
     tracker.add_duplicates_removed("weapon", 5)
     tracker.set_unmapped_texts(10)
     tracker.add_provenance_summary("kaggle", 150)
+    tracker.add_schema_version(
+        "weapon",
+        {
+            "tag": "weapons_v1",
+            "version": "v1",
+        },
+    )
 
     # Save metadata
     output_file = tmp_path / "metadata.json"
@@ -104,3 +111,4 @@ def test_metadata_tracker(tmp_path: Path) -> None:
     assert data["entity_counts"]["weapon"] == 50
     assert data["unmapped_texts"] == 10
     assert data["provenance_summary"]["kaggle"] == 150
+    assert data["schema_versions"]["weapon"]["tag"] == "weapons_v1"

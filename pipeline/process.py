@@ -14,7 +14,11 @@ from typing import Any
 import pandas as pd
 import yaml
 
-from pipeline.schemas import get_dataset_schema, validate_dataframe
+from pipeline.schemas import (
+    SchemaVersion,
+    get_dataset_schema,
+    validate_dataframe,
+)
 from pipeline.utils import (
     get_processing_stats,
     handle_missing_values,
@@ -87,7 +91,31 @@ class DataProcessor:
 
         return sorted(files)
 
-    def _apply_transformations(self, df: pd.DataFrame, dataset_name: str) -> pd.DataFrame:
+    def _get_dataset_config(self, dataset_name: str) -> dict[str, Any] | None:
+        """Return config entry for a dataset by name."""
+
+        for dataset in self.config.get("datasets", []):
+            if dataset.get("name") == dataset_name:
+                return dataset
+        return None
+
+    def _resolve_schema_version(
+        self,
+        dataset_name: str,
+    ) -> SchemaVersion | None:
+        """Resolve schema metadata for a dataset, honoring config overrides."""
+
+        dataset_cfg = self._get_dataset_config(dataset_name) or {}
+        schema_name = dataset_cfg.get("schema")
+        schema_version = dataset_cfg.get("schema_version")
+        lookup = schema_name or dataset_name
+        return get_dataset_schema(lookup, version=schema_version)
+
+    def _apply_transformations(
+        self,
+        df: pd.DataFrame,
+        dataset_name: str,
+    ) -> pd.DataFrame:
         """Apply dataset-specific transformations.
 
         Args:
@@ -149,7 +177,10 @@ class DataProcessor:
         }
 
         if "weapon_type" in df.columns:
-            df = normalize_categorical(df, {"weapon_type": weapon_type_mapping})
+            df = normalize_categorical(
+                df,
+                {"weapon_type": weapon_type_mapping},
+            )
 
         # Handle missing damage values
         damage_cols = [
@@ -223,7 +254,11 @@ class DataProcessor:
             df = normalize_categorical(df, {"armor_type": armor_type_mapping})
 
         # Handle missing defense values
-        defense_cols = [col for col in df.columns if col.startswith("defense_")]
+        defense_cols = [
+            col
+            for col in df.columns
+            if col.startswith("defense_")
+        ]
         strategy = {col: 0.0 for col in defense_cols}
         df = handle_missing_values(df, strategy)
 
@@ -315,13 +350,26 @@ class DataProcessor:
             "files_processed": files_processed,
         }
 
+        schema_version = self._resolve_schema_version(dataset_name)
+        schema_tag = schema_version.tag if schema_version else None
+        if schema_version:
+            results["schema_version"] = schema_tag
+            results["schema_metadata"] = schema_version.to_metadata()
+
         for raw_file in raw_files:
             file_stem = raw_file.stem
-            output_file = self.processed_dir / dataset_name / f"{file_stem}.parquet"
+            output_file = (
+                self.processed_dir / dataset_name / f"{file_stem}.parquet"
+            )
             cache_file = self.cache_dir / f"{dataset_name}.json"
 
             # Check if processing needed
-            if not force and not needs_processing(raw_file, output_file, cache_file):
+            if not force and not needs_processing(
+                raw_file,
+                output_file,
+                cache_file,
+                expected_schema_version=schema_tag,
+            ):
                 logger.info(f"Skipping {raw_file.name} (up-to-date)")
                 continue
 
@@ -335,10 +383,12 @@ class DataProcessor:
                 df = self._apply_transformations(df, dataset_name)
 
                 # Validate schema
-                schema = get_dataset_schema(dataset_name)
-                if schema:
-                    logger.info("Validating schema...")
-                    is_valid, error_msg, validated_df = validate_dataframe(df, schema)
+                if schema_version:
+                    logger.info("Validating schema %s...", schema_tag)
+                    is_valid, error_msg, validated_df = validate_dataframe(
+                        df,
+                        schema_version,
+                    )
                     if not is_valid:
                         logger.error(f"Schema validation failed: {error_msg}")
                         results["status"] = "failed"
@@ -348,7 +398,10 @@ class DataProcessor:
                     df = validated_df
                     logger.info("Schema validation passed")
                 else:
-                    logger.warning(f"No schema found for {dataset_name}, skipping " "validation")
+                    logger.warning(
+                        "No schema found for %s, skipping validation",
+                        dataset_name,
+                    )
 
                 # Get stats
                 stats = get_processing_stats(df)
@@ -359,18 +412,24 @@ class DataProcessor:
                     write_parquet(df, output_file)
 
                     # Update cache
-                    update_cache(cache_file, raw_file)
+                    update_cache(cache_file, raw_file, schema_tag)
 
                 results["files_processed"].append(
                     {
                         "input": str(raw_file),
                         "output": str(output_file),
                         "stats": stats,
+                        "schema_version": schema_tag,
                     }
                 )
 
             except Exception as e:
-                logger.error("Error processing %s: %s", raw_file, e, exc_info=True)
+                logger.error(
+                    "Error processing %s: %s",
+                    raw_file,
+                    e,
+                    exc_info=True,
+                )
                 results["status"] = "failed"
                 results["error"] = str(e)
 
@@ -450,10 +509,14 @@ class DataProcessor:
         # Generate summary
         total = len(results["datasets"])
         succeeded = sum(
-            1 for result in results["datasets"].values() if result.get("status") == "success"
+            1
+            for result in results["datasets"].values()
+            if result.get("status") == "success"
         )
         failed = sum(
-            1 for result in results["datasets"].values() if result.get("status") == "failed"
+            1
+            for result in results["datasets"].values()
+            if result.get("status") == "failed"
         )
         skipped = total - succeeded - failed
 
@@ -585,10 +648,19 @@ class DataProcessor:
                 continue
 
             cache_file = self.cache_dir / f"{name}.json"
+            schema_version = self._resolve_schema_version(name)
+            schema_tag = schema_version.tag if schema_version else None
             files_needing: list[str] = []
             for raw_file in raw_files:
-                output_file = self.processed_dir / name / f"{raw_file.stem}.parquet"
-                if needs_processing(raw_file, output_file, cache_file):
+                output_file = (
+                    self.processed_dir / name / f"{raw_file.stem}.parquet"
+                )
+                if needs_processing(
+                    raw_file,
+                    output_file,
+                    cache_file,
+                    expected_schema_version=schema_tag,
+                ):
                     files_needing.append(str(raw_file))
 
             if files_needing:

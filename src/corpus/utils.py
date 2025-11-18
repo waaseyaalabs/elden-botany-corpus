@@ -43,7 +43,11 @@ def save_csv(df: pl.DataFrame, file_path: Path) -> None:
     df.write_csv(file_path)
 
 
-def progress_bar(iterable: Any, desc: str = "", total: int | None = None) -> Any:
+def progress_bar(
+    iterable: Any,
+    desc: str = "",
+    total: int | None = None,
+) -> Any:
     """Create a tqdm progress bar."""
     return tqdm(iterable, desc=desc, total=total, unit="item")
 
@@ -84,7 +88,11 @@ def merge_text_fields(row: dict[str, Any], text_fields: list[str]) -> str:
     parts = []
     for field in text_fields:
         value = row.get(field)
-        if value and str(value).strip() and str(value).lower() not in ("nan", "none", "null"):
+        if value and str(value).strip() and str(value).lower() not in (
+            "nan",
+            "none",
+            "null",
+        ):
             # Add field label if it's meaningful
             if len(text_fields) > 1:
                 label = field.replace("_", " ").title()
@@ -103,7 +111,8 @@ def deduplicate_entities(
     Args:
         df: Input DataFrame
         key_columns: Columns that define uniqueness
-        prefer_column: If duplicates exist, prefer rows with non-null values in this column
+        prefer_column: If duplicates exist, prefer rows with non-null values
+            in this column
 
     Returns:
         Deduplicated DataFrame
@@ -127,6 +136,7 @@ class MetadataTracker:
             "unmapped_texts": 0,
             "provenance_summary": {},
             "quality_reports": {},
+            "schema_versions": {},
         }
 
     def add_row_count(self, source: str, count: int) -> None:
@@ -161,6 +171,23 @@ class MetadataTracker:
         """Register quality report artifact metadata."""
 
         self.metadata["quality_reports"][dataset] = summary
+
+    def add_schema_version(
+        self,
+        dataset: str,
+        schema_metadata: dict[str, Any] | str,
+    ) -> None:
+        """Record the schema version that produced a dataset."""
+
+        if isinstance(schema_metadata, str):
+            payload: dict[str, Any] = {
+                "tag": schema_metadata,
+                "version": schema_metadata,
+            }
+        else:
+            payload = schema_metadata
+
+        self.metadata["schema_versions"][dataset] = payload
 
     def save(self, file_path: Path) -> None:
         """Save metadata to JSON."""

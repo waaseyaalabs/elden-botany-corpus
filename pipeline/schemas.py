@@ -1,9 +1,10 @@
-"""Schema definitions for Elden Ring datasets.
+"""Schema definitions for Elden Ring datasets with version metadata."""
 
-Uses Pandera for runtime validation and type checking of DataFrames.
-"""
+from __future__ import annotations
 
-from typing import Any
+from dataclasses import dataclass
+import re
+from typing import Any, Iterable
 
 import pandera
 import pandera.pandas as pa
@@ -307,41 +308,213 @@ SPELLS_SCHEMA = DataFrameSchema(
 )
 
 
-# Schema registry
-SCHEMA_REGISTRY: dict[str, DataFrameSchema] = {
-    "items": ITEMS_SCHEMA,
-    "weapons": WEAPONS_SCHEMA,
-    "bosses": BOSSES_SCHEMA,
-    "armor": ARMOR_SCHEMA,
-    "spells": SPELLS_SCHEMA,
+VERSION_SUFFIX_RE = re.compile(
+    r"^(?P<dataset>[a-z0-9_]+)_v(?P<version>[a-z0-9][a-z0-9_.-]*)$"
+)
+
+
+def _normalize_dataset_name(name: str) -> str:
+    return name.strip().lower().replace("-", "_").replace(" ", "_")
+
+
+@dataclass(frozen=True)
+class SchemaVersion:
+    """Metadata wrapper for a Pandera schema version."""
+
+    dataset: str
+    version: str
+    schema: DataFrameSchema
+    migration_notes: str | None = None
+    compatibility: list[str] | None = None
+    deprecated: bool = False
+
+    def __post_init__(self) -> None:
+        normalized_dataset = _normalize_dataset_name(self.dataset)
+        canonical_version = self.version.lower()
+        if not canonical_version.startswith("v"):
+            canonical_version = f"v{canonical_version}"
+        object.__setattr__(self, "dataset", normalized_dataset)
+        object.__setattr__(self, "version", canonical_version)
+
+    @property
+    def tag(self) -> str:
+        """Return canonical identifier (e.g., 'weapons_v1')."""
+
+        return f"{self.dataset}_{self.version}"
+
+    @property
+    def is_active(self) -> bool:
+        """Whether this schema version is active (not deprecated)."""
+
+        return not self.deprecated
+
+    def to_metadata(self) -> dict[str, Any]:
+        """Serialize schema metadata for downstream tracking."""
+
+        payload: dict[str, Any] = {
+            "tag": self.tag,
+            "version": self.version,
+            "dataset": self.dataset,
+            "deprecated": self.deprecated,
+        }
+        if self.migration_notes:
+            payload["migration_notes"] = self.migration_notes
+        if self.compatibility:
+            payload["compatibility"] = self.compatibility
+        return payload
+
+
+SCHEMA_REGISTRY: dict[str, list[SchemaVersion]] = {
+    "items": [
+        SchemaVersion(
+            dataset="items",
+            version="v1",
+            schema=ITEMS_SCHEMA,
+            migration_notes="Initial canonical schema",
+            compatibility=["initial_release"],
+        ),
+    ],
+    "weapons": [
+        SchemaVersion(
+            dataset="weapons",
+            version="v1",
+            schema=WEAPONS_SCHEMA,
+            migration_notes="Initial canonical schema",
+            compatibility=["initial_release"],
+        ),
+    ],
+    "bosses": [
+        SchemaVersion(
+            dataset="bosses",
+            version="v1",
+            schema=BOSSES_SCHEMA,
+            migration_notes="Initial canonical schema",
+            compatibility=["initial_release"],
+        ),
+    ],
+    "armor": [
+        SchemaVersion(
+            dataset="armor",
+            version="v1",
+            schema=ARMOR_SCHEMA,
+            migration_notes="Initial canonical schema",
+            compatibility=["initial_release"],
+        ),
+    ],
+    "spells": [
+        SchemaVersion(
+            dataset="spells",
+            version="v1",
+            schema=SPELLS_SCHEMA,
+            migration_notes="Initial canonical schema",
+            compatibility=["initial_release"],
+        ),
+    ],
 }
 
 
-def get_dataset_schema(dataset_name: str) -> DataFrameSchema | None:
-    """Get the Pandera schema for a dataset by name.
+def _match_dataset_key(dataset_name: str) -> tuple[str | None, str | None]:
+    """Return dataset key and optional explicit version from input name."""
+
+    normalized = _normalize_dataset_name(dataset_name)
+    if normalized in SCHEMA_REGISTRY:
+        return normalized, None
+
+    match = VERSION_SUFFIX_RE.match(normalized)
+    if match:
+        dataset_key = match.group("dataset")
+        version = f"v{match.group('version')}"
+        if dataset_key in SCHEMA_REGISTRY:
+            return dataset_key, version
+
+    # Fallback to fuzzy matching
+    for key in SCHEMA_REGISTRY:
+        if key in normalized or normalized in key:
+            return key, None
+
+    return None, None
+
+
+def _iter_schema_candidates(
+    dataset_key: str,
+    allow_deprecated: bool,
+) -> Iterable[SchemaVersion]:
+    for schema_version in SCHEMA_REGISTRY.get(dataset_key, []):
+        if schema_version.deprecated and not allow_deprecated:
+            continue
+        yield schema_version
+
+
+def get_dataset_schema(
+    dataset_name: str,
+    version: str | None = None,
+    allow_deprecated: bool = False,
+) -> SchemaVersion | None:
+    """Get schema metadata for a dataset.
 
     Args:
-        dataset_name: Name of the dataset (e.g., 'items', 'weapons')
+        dataset_name: Dataset identifier (e.g., 'items', 'weapons_v1')
+        version: Optional explicit version string ('v1' or 'items_v1')
+        allow_deprecated: When True, include deprecated versions in lookup
 
     Returns:
-        DataFrameSchema if found, None otherwise
+        ``SchemaVersion`` if found, ``None`` otherwise
     """
-    # Normalize dataset name
-    normalized = dataset_name.lower().replace("-", "_").replace(" ", "_")
 
-    # Try exact match first
-    if normalized in SCHEMA_REGISTRY:
-        return SCHEMA_REGISTRY[normalized]
+    dataset_key, inline_version = _match_dataset_key(dataset_name)
+    if dataset_key is None:
+        return None
 
-    # Try fuzzy match (contains)
-    for key, schema in SCHEMA_REGISTRY.items():
-        if key in normalized or normalized in key:
-            return schema
+    requested_version = version or inline_version
+    if requested_version:
+        requested_version = requested_version.lower()
+        if not requested_version.startswith("v"):
+            requested_version = f"v{requested_version}"
+
+    for schema_version in _iter_schema_candidates(
+        dataset_key,
+        allow_deprecated,
+    ):
+        if requested_version and schema_version.version != requested_version:
+            continue
+        return schema_version
 
     return None
 
 
-def validate_dataframe(df, schema: DataFrameSchema) -> tuple[bool, str | None, Any]:
+def list_schema_versions(
+    dataset_name: str | None = None,
+) -> dict[str, list[SchemaVersion]] | list[SchemaVersion]:
+    """List schema versions for a dataset or the entire registry."""
+
+    if dataset_name is None:
+        return SCHEMA_REGISTRY
+
+    dataset_key, _ = _match_dataset_key(dataset_name)
+    if dataset_key is None:
+        return []
+    return SCHEMA_REGISTRY.get(dataset_key, [])
+
+
+def get_active_schema_version(dataset_name: str) -> SchemaVersion | None:
+    """Return the first non-deprecated schema version for a dataset."""
+
+    dataset_key, _ = _match_dataset_key(dataset_name)
+    if dataset_key is None:
+        return None
+
+    for schema_version in _iter_schema_candidates(
+        dataset_key,
+        allow_deprecated=False,
+    ):
+        return schema_version
+    return None
+
+
+def validate_dataframe(
+    df,
+    schema: DataFrameSchema | SchemaVersion,
+) -> tuple[bool, str | None, Any]:
     """Validate a DataFrame against a schema.
 
     Args:
@@ -353,7 +526,10 @@ def validate_dataframe(df, schema: DataFrameSchema) -> tuple[bool, str | None, A
         The validated_df contains the coerced types when validation succeeds
     """
     try:
-        validated_df = schema.validate(df, lazy=True)
+        schema_obj = (
+            schema.schema if isinstance(schema, SchemaVersion) else schema
+        )
+        validated_df = schema_obj.validate(df, lazy=True)
         return True, None, validated_df
     except pandera.errors.SchemaErrors as e:
         return False, str(e), df

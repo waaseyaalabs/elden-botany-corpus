@@ -1,5 +1,6 @@
 """Tests for data processing pipeline."""
 
+import json
 import os
 import textwrap
 import time
@@ -13,6 +14,7 @@ from pipeline.schemas import (
     ITEMS_SCHEMA,
     WEAPONS_SCHEMA,
     get_dataset_schema,
+    list_schema_versions,
     validate_dataframe,
 )
 from pipeline.utils import (
@@ -31,18 +33,46 @@ class TestSchemas:
         """Test exact schema name matching."""
         schema = get_dataset_schema("weapons")
         assert schema is not None
-        assert schema == WEAPONS_SCHEMA
+        assert schema.schema == WEAPONS_SCHEMA
+        assert schema.tag == "weapons_v1"
 
     def test_get_dataset_schema_fuzzy_match(self):
         """Test fuzzy schema name matching."""
         schema = get_dataset_schema("elden-ring-weapons")
         assert schema is not None
-        assert schema == WEAPONS_SCHEMA
+        assert schema.schema == WEAPONS_SCHEMA
 
     def test_get_dataset_schema_not_found(self):
         """Test schema not found returns None."""
         schema = get_dataset_schema("nonexistent")
         assert schema is None
+
+    def test_get_dataset_schema_specific_version(self):
+        """Explicit version requests should resolve identical schema."""
+        schema = get_dataset_schema("weapons", version="v1")
+        assert schema is not None
+        assert schema.version == "v1"
+
+    def test_list_schema_versions(self):
+        """Schema registry should enumerate versions per dataset."""
+        versions = list_schema_versions("weapons")
+        assert len(versions) == 1
+        assert versions[0].tag == "weapons_v1"
+
+    def test_validate_with_schema_version(self):
+        """validate_dataframe accepts SchemaVersion payloads."""
+        schema = get_dataset_schema("weapons")
+        assert schema is not None
+        df = pd.DataFrame(
+            {
+                "weapon_id": [1],
+                "name": ["Longsword"],
+                "weapon_type": ["sword"],
+            }
+        )
+        is_valid, error, _ = validate_dataframe(df, schema)
+        assert is_valid
+        assert error is None
 
     def test_validate_weapons_schema_valid(self):
         """Test weapons schema validation with valid data."""
@@ -126,7 +156,15 @@ class TestUtils:
 
     def test_normalize_categorical(self):
         """Test categorical value normalization."""
-        df = pd.DataFrame({"weapon_type": ["Straight Sword", "KATANA", "great_sword"]})
+        df = pd.DataFrame(
+            {
+                "weapon_type": [
+                    "Straight Sword",
+                    "KATANA",
+                    "great_sword",
+                ]
+            }
+        )
 
         mapping = {
             "weapon_type": {
@@ -252,7 +290,12 @@ class TestDataProcessor:
         assert processor.config is not None
         assert len(processor.config["datasets"]) == 2
 
-    def test_process_dataset_creates_parquet(self, config_file, temp_dirs, sample_weapons_csv):
+    def test_process_dataset_creates_parquet(
+        self,
+        config_file,
+        temp_dirs,
+        sample_weapons_csv,
+    ) -> None:
         """Test processing creates Parquet output."""
         processor = DataProcessor(
             config_path=config_file,
@@ -264,12 +307,21 @@ class TestDataProcessor:
 
         assert result["status"] == "success"
         assert len(result["files_processed"]) == 1
+        assert result["schema_version"] == "weapons_v1"
+        assert result["files_processed"][0]["schema_version"] == "weapons_v1"
 
         # Check output file exists
-        output_file = temp_dirs["processed_dir"] / "test-weapons" / "weapons.parquet"
+        output_file = (
+            temp_dirs["processed_dir"] / "test-weapons" / "weapons.parquet"
+        )
         assert output_file.exists()
 
-    def test_process_dataset_validates_schema(self, config_file, temp_dirs, sample_weapons_csv):
+    def test_process_dataset_validates_schema(
+        self,
+        config_file,
+        temp_dirs,
+        sample_weapons_csv,
+    ) -> None:
         """Test processing validates against schema."""
         processor = DataProcessor(
             config_path=config_file,
@@ -281,16 +333,24 @@ class TestDataProcessor:
 
         # Should succeed with valid data
         assert result["status"] == "success"
+        assert result["schema_version"] == "weapons_v1"
 
         # Verify output data
-        output_file = temp_dirs["processed_dir"] / "test-weapons" / "weapons.parquet"
+        output_file = (
+            temp_dirs["processed_dir"] / "test-weapons" / "weapons.parquet"
+        )
         df = pd.read_parquet(output_file)
 
         # Check transformations applied
         assert "weapon_id" in df.columns
         assert df["weapon_type"].tolist() == ["sword", "katana", "greatsword"]
 
-    def test_process_dataset_skips_up_to_date(self, config_file, temp_dirs, sample_weapons_csv):
+    def test_process_dataset_skips_up_to_date(
+        self,
+        config_file,
+        temp_dirs,
+        sample_weapons_csv,
+    ) -> None:
         """Test processing skips up-to-date files."""
         processor = DataProcessor(
             config_path=config_file,
@@ -306,9 +366,15 @@ class TestDataProcessor:
         result2 = processor.process_dataset("test-weapons")
         # No files should be processed
         assert len(result2.get("files_processed", [])) == 0
+        assert result2["schema_version"] == "weapons_v1"
 
-    def test_process_dataset_uses_hash_cache(self, config_file, temp_dirs, sample_weapons_csv):
-        """Test cache prevents unnecessary reprocessing when content is unchanged."""
+    def test_process_dataset_uses_hash_cache(
+        self,
+        config_file,
+        temp_dirs,
+        sample_weapons_csv,
+    ) -> None:
+        """Cache prevents extra work when raw content is unchanged."""
         processor = DataProcessor(
             config_path=config_file,
             raw_dir=temp_dirs["raw_dir"],
@@ -327,8 +393,14 @@ class TestDataProcessor:
         result = processor.process_dataset("test-weapons")
         assert result["status"] == "success"
         assert result.get("files_processed", []) == []
+        assert result["schema_version"] == "weapons_v1"
 
-    def test_process_dataset_force_reprocess(self, config_file, temp_dirs, sample_weapons_csv):
+    def test_process_dataset_force_reprocess(
+        self,
+        config_file,
+        temp_dirs,
+        sample_weapons_csv,
+    ) -> None:
         """Test force flag reprocesses files."""
         processor = DataProcessor(
             config_path=config_file,
@@ -343,8 +415,14 @@ class TestDataProcessor:
         result = processor.process_dataset("test-weapons", force=True)
         assert result["status"] == "success"
         assert len(result["files_processed"]) == 1
+        assert result["schema_version"] == "weapons_v1"
 
-    def test_process_dataset_dry_run(self, config_file, temp_dirs, sample_weapons_csv):
+    def test_process_dataset_dry_run(
+        self,
+        config_file,
+        temp_dirs,
+        sample_weapons_csv,
+    ) -> None:
         """Test dry run doesn't write files."""
         processor = DataProcessor(
             config_path=config_file,
@@ -355,12 +433,20 @@ class TestDataProcessor:
         result = processor.process_dataset("test-weapons", dry_run=True)
 
         assert result["status"] == "success"
+        assert result["schema_version"] == "weapons_v1"
 
         # Output file should NOT exist
-        output_file = temp_dirs["processed_dir"] / "test-weapons" / "weapons.parquet"
+        output_file = (
+            temp_dirs["processed_dir"] / "test-weapons" / "weapons.parquet"
+        )
         assert not output_file.exists()
 
-    def test_process_all_skips_disabled(self, config_file, temp_dirs, sample_weapons_csv):
+    def test_process_all_skips_disabled(
+        self,
+        config_file,
+        temp_dirs,
+        sample_weapons_csv,
+    ) -> None:
         """Test process_all skips disabled datasets."""
         processor = DataProcessor(
             config_path=config_file,
@@ -372,6 +458,10 @@ class TestDataProcessor:
 
         # test-weapons should be processed
         assert results["datasets"]["test-weapons"]["status"] == "success"
+        assert (
+            results["datasets"]["test-weapons"]["schema_version"]
+            == "weapons_v1"
+        )
 
         # test-bosses should be skipped
         assert results["datasets"]["test-bosses"]["status"] == "skipped"
@@ -388,14 +478,19 @@ class TestDataProcessor:
         sample_weapons_csv,
         monkeypatch,
     ):
-        """Ensure parallel helper is used when multiple datasets and workers>1."""
+        """Ensure helper runs when multiple datasets and workers > 1."""
         processor = DataProcessor(
             config_path=config_file,
             raw_dir=temp_dirs["raw_dir"],
             processed_dir=temp_dirs["processed_dir"],
         )
 
-        processor.config["datasets"].append({"name": "test-extra", "enabled": True})
+        processor.config["datasets"].append(
+            {
+                "name": "test-extra",
+                "enabled": True,
+            }
+        )
 
         captured: dict[str, object] = {}
 
@@ -404,9 +499,19 @@ class TestDataProcessor:
             captured["force"] = force
             captured["dry_run"] = dry_run
             captured["max_workers"] = max_workers
-            return {name: {"status": "success", "files_processed": []} for name in dataset_names}
+            return {
+                name: {
+                    "status": "success",
+                    "files_processed": [],
+                }
+                for name in dataset_names
+            }
 
-        monkeypatch.setattr(DataProcessor, "_process_datasets_parallel", fake_parallel)
+        monkeypatch.setattr(
+            DataProcessor,
+            "_process_datasets_parallel",
+            fake_parallel,
+        )
 
         results = processor.process_all(workers=2)
 
@@ -414,6 +519,33 @@ class TestDataProcessor:
         assert captured["max_workers"] == 2
         assert results["datasets"]["test-weapons"]["status"] == "success"
         assert results["datasets"]["test-extra"]["status"] == "success"
+
+    def test_schema_version_mismatch_triggers_reprocess(
+        self,
+        config_file,
+        temp_dirs,
+        sample_weapons_csv,
+    ) -> None:
+        """Changing cached schema version should force reprocessing."""
+        processor = DataProcessor(
+            config_path=config_file,
+            raw_dir=temp_dirs["raw_dir"],
+            processed_dir=temp_dirs["processed_dir"],
+        )
+
+        processor.process_dataset("test-weapons")
+
+        cache_file = (
+            temp_dirs["processed_dir"] / ".cache" / "test-weapons.json"
+        )
+        cache_file.parent.mkdir(parents=True, exist_ok=True)
+        payload = json.loads(cache_file.read_text())
+        payload["schema_version"] = "weapons_v0"
+        cache_file.write_text(json.dumps(payload, indent=2))
+
+        result = processor.process_dataset("test-weapons")
+        assert len(result["files_processed"]) == 1
+        assert result["schema_version"] == "weapons_v1"
 
     def test_resolve_worker_count_auto_cpu(self, config_file, temp_dirs):
         """Auto worker value should fall back to CPU count when <=0."""
@@ -425,7 +557,10 @@ class TestDataProcessor:
 
         processor.config.setdefault("settings", {})["process_workers"] = 0
 
-        assert processor._resolve_worker_count(None) == max(os.cpu_count() or 1, 1)
+        assert processor._resolve_worker_count(None) == max(
+            os.cpu_count() or 1,
+            1,
+        )
         assert processor._resolve_worker_count(3) == 3
 
     def test_transform_weapons_normalizes_types(self, config_file, temp_dirs):

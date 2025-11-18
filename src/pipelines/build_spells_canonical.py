@@ -81,10 +81,10 @@ def build_spells_canonical(
     )
     finalized = _records_to_dataframe(merged_records)
 
-    schema = get_dataset_schema("spells")
-    if schema is None:
+    schema_version = get_dataset_schema("spells")
+    if schema_version is None:
         raise RuntimeError("Spells schema is not registered")
-    schema = cast(Any, schema)
+    schema = cast(Any, schema_version.schema)
 
     try:
         validated = schema.validate(finalized, lazy=True)
@@ -138,7 +138,9 @@ def _records_to_dataframe(records: list[dict[str, Any]]) -> pd.DataFrame:
         raise RuntimeError("No canonical records remain after merging")
 
     frame["source_priority"] = (
-        pd.to_numeric(frame["source_priority"], errors="coerce").fillna(99).astype(int)
+        pd.to_numeric(frame["source_priority"], errors="coerce")
+        .fillna(99)
+        .astype(int)
     )
     frame["is_dlc"] = frame["is_dlc"].fillna(False).astype(bool)
     raw_spell_types = frame.get(
@@ -202,7 +204,11 @@ def _records_to_dataframe(records: list[dict[str, Any]]) -> pd.DataFrame:
         "provenance",
     ]
 
-    extra_columns = [column for column in frame.columns if column not in column_order]
+    extra_columns = [
+        column
+        for column in frame.columns
+        if column not in column_order
+    ]
     return frame.loc[:, column_order + extra_columns]
 
 

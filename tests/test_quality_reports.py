@@ -67,3 +67,7 @@ def test_curator_records_quality_reports(tmp_path: Path) -> None:
     assert unified_report["rows"] == 3
     assert unified_report["reports"]["json"] == unified_report["json_report"]
     assert (tmp_path / unified_report["json_report"]).exists()
+
+    schema_versions = curator.metadata.metadata["schema_versions"]
+    assert schema_versions["weapon"]["tag"] == "weapons_v1"
+    assert schema_versions["boss"]["tag"] == "bosses_v1"
