@@ -1,10 +1,11 @@
-# Weighted Text-Type Benchmark — 2025-11-17
+# Weighted Text-Type Benchmark — 2025-11-18
 
 ## Method
+- `poetry run corpus curate` (Nov 18, 2025) to fold the automated Carian FMG descriptions into the canonical weapons output (4233 curated entities, 407 canonical weapons, 467 unmapped DLC texts exported for auditing).
 - Regenerated `data/embeddings/lore_embeddings.parquet` with `poetry run python -m pipelines.build_lore_embeddings --provider local --model-name all-MiniLM-L6-v2 --batch-size 64`.
 - Text-type weights: `config/text_type_weights.yml` (description 1.4, impalers_excerpt 1.7, quote 1.3, lore 1.2, effect 0.7, obtained_from 0.8, drops 0.8).
 - FAISS artifacts refreshed via `poetry run python -m pipelines.build_rag_index --verbose` (2353 vectors, dim=384, normalized IP search).
-- Queries executed with `poetry run python -m rag.query` on Nov 17, 2025. Top-5 matches recorded below.
+- Queries executed with `poetry run python -m rag.query` on Nov 18, 2025 (Radahn, Scarlet Rot, Fungus, Gloam-Eyed Queen, Messmer). Top-5 matches recorded below.
 
 ## Query 1 — “Radahn gravity comet”
 | Rank | Score | Category | Text Type | Source | Notes |
@@ -79,6 +80,6 @@ Observations:
 ## Conclusions vs. Acceptance Criteria
 1. **Weighted embeddings produced (AC1)**: `lore_embeddings.parquet` now contains 2,353 weighted rows, each stamped with `embedding_strategy=weighted_text_types_v1`, `weight_config_path`, and `text_type_components`.
 2. **RAG index rebuilt (AC2)**: `faiss_index.bin` and `rag_metadata.parquet` regenerated from the weighted set. `rag_index_meta.json` records the new strategy and still references the MiniLM encoder.
-3. **Retrieval quality**: At least three queries (Radahn, Scarlet Rot, Messmer) clearly promote narrative content into the top-three slots and reduce mechanical-effect dominance. Impalers excerpts appear in two benchmark prompts, and there are no duplicated canonical rows within any top-5 list.
+3. **Retrieval quality**: At least three queries (Radahn, Scarlet Rot, Messmer) clearly promote narrative content into the top-three slots and reduce mechanical-effect dominance. Impalers excerpts appear in two benchmark prompts, there are no duplicated canonical rows within any top-5 list, and the refreshed Carian FMG descriptions now populate weapon rows (e.g., Hand Axe, Shadow Saber) should future prompts ask for them explicitly.
 4. **Configurability / reproducibility (AC4)**: Weights live in `config/text_type_weights.yml`, override-able via `--text-type-weights`. Re-running the pipeline with the same config idempotently reproduces the 2,353-row parquet (hash stable aside from float precision).
 5. **No regressions (AC5)**: Focused pytest suites (`tests/test_lore_embeddings_pipeline.py`, `tests/test_rag_index_pipeline.py`, `tests/test_rag_query.py`) pass after the weighting changes. Embedding vectors retain the expected 384-dim size and no NaNs were observed during FAISS build.
