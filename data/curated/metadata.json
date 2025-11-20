@@ -6,35 +6,35 @@
   },
   "file_hashes": {},
   "entity_counts": {
-    "sorcerie": 86,
-    "talisman": 155,
-    "bosse": 165,
-    "remembrance": 26,
-    "creature": 238,
+    "location": 289,
     "item": 446,
-    "crystal_tear": 37,
-    "ammo": 69,
-    "key_item": 108,
-    "cookbook": 104,
-    "skill": 256,
-    "incantation": 134,
-    "shield": 79,
-    "ash": 117,
-    "bell": 60,
-    "ashe": 90,
     "upgrade_material": 43,
-    "weapon": 407,
-    "whetblade": 6,
-    "classe": 13,
-    "multi": 16,
-    "spirit": 87,
+    "cookbook": 104,
+    "ash": 117,
+    "crystal_tear": 37,
     "npc": 119,
-    "armor": 730,
-    "tool": 35,
-    "consumable": 207,
+    "creature": 238,
+    "ammo": 69,
+    "spirit": 87,
     "material": 102,
     "great_rune": 9,
-    "location": 289
+    "ashe": 90,
+    "armor": 730,
+    "weapon": 407,
+    "bell": 60,
+    "key_item": 108,
+    "incantation": 134,
+    "tool": 35,
+    "multi": 16,
+    "skill": 256,
+    "sorcerie": 86,
+    "whetblade": 6,
+    "consumable": 207,
+    "bosse": 165,
+    "talisman": 155,
+    "shield": 79,
+    "remembrance": 26,
+    "classe": 13
   },
   "duplicates_removed": {},
   "unmapped_texts": 467,
@@ -46,7 +46,7 @@
   "quality_reports": {
     "unified": {
       "dataset": "unified",
-      "generated_at": "2025-11-18T01:05:05.989947+00:00",
+      "generated_at": "2025-11-20T20:24:56.087540+00:00",
       "row_count": 4233,
       "column_count": 7,
       "overall_null_percent": 0.0,
@@ -56,7 +56,7 @@
         "dataset": "unified",
         "json": "quality/unified.json",
         "html": "quality/unified.html",
-        "generated_at": "2025-11-18T01:05:05.989947+00:00",
+        "generated_at": "2025-11-20T20:24:56.087540+00:00",
         "row_count": 4233,
         "column_count": 7,
         "alerts": []
@@ -66,251 +66,9 @@
       "json_report": "quality/unified.json",
       "html_report": "quality/unified.html"
     },
-    "spirit": {
-      "dataset": "spirit",
-      "generated_at": "2025-11-18T01:05:05.998811+00:00",
-      "row_count": 87,
-      "column_count": 7,
-      "overall_null_percent": 0.0,
-      "columns": 7,
-      "alerts": [],
-      "reports": {
-        "dataset": "spirit",
-        "json": "quality/spirit.json",
-        "html": "quality/spirit.html",
-        "generated_at": "2025-11-18T01:05:05.998811+00:00",
-        "row_count": 87,
-        "column_count": 7,
-        "alerts": []
-      },
-      "rows": 87,
-      "null_pct_avg": 0.0,
-      "json_report": "quality/spirit.json",
-      "html_report": "quality/spirit.html"
-    },
-    "consumable": {
-      "dataset": "consumable",
-      "generated_at": "2025-11-18T01:05:06.006879+00:00",
-      "row_count": 207,
-      "column_count": 7,
-      "overall_null_percent": 0.0,
-      "columns": 7,
-      "alerts": [],
-      "reports": {
-        "dataset": "consumable",
-        "json": "quality/consumable.json",
-        "html": "quality/consumable.html",
-        "generated_at": "2025-11-18T01:05:06.006879+00:00",
-        "row_count": 207,
-        "column_count": 7,
-        "alerts": []
-      },
-      "rows": 207,
-      "null_pct_avg": 0.0,
-      "json_report": "quality/consumable.json",
-      "html_report": "quality/consumable.html"
-    },
-    "creature": {
-      "dataset": "creature",
-      "generated_at": "2025-11-18T01:05:06.015037+00:00",
-      "row_count": 238,
-      "column_count": 7,
-      "overall_null_percent": 0.0,
-      "columns": 7,
-      "alerts": [],
-      "reports": {
-        "dataset": "creature",
-        "json": "quality/creature.json",
-        "html": "quality/creature.html",
-        "generated_at": "2025-11-18T01:05:06.015037+00:00",
-        "row_count": 238,
-        "column_count": 7,
-        "alerts": []
-      },
-      "rows": 238,
-      "null_pct_avg": 0.0,
-      "json_report": "quality/creature.json",
-      "html_report": "quality/creature.html"
-    },
-    "classe": {
-      "dataset": "classe",
-      "generated_at": "2025-11-18T01:05:06.021390+00:00",
-      "row_count": 13,
-      "column_count": 7,
-      "overall_null_percent": 0.0,
-      "columns": 7,
-      "alerts": [],
-      "reports": {
-        "dataset": "classe",
-        "json": "quality/classe.json",
-        "html": "quality/classe.html",
-        "generated_at": "2025-11-18T01:05:06.021390+00:00",
-        "row_count": 13,
-        "column_count": 7,
-        "alerts": []
-      },
-      "rows": 13,
-      "null_pct_avg": 0.0,
-      "json_report": "quality/classe.json",
-      "html_report": "quality/classe.html"
-    },
-    "tool": {
-      "dataset": "tool",
-      "generated_at": "2025-11-18T01:05:06.028310+00:00",
-      "row_count": 35,
-      "column_count": 7,
-      "overall_null_percent": 0.0,
-      "columns": 7,
-      "alerts": [],
-      "reports": {
-        "dataset": "tool",
-        "json": "quality/tool.json",
-        "html": "quality/tool.html",
-        "generated_at": "2025-11-18T01:05:06.028310+00:00",
-        "row_count": 35,
-        "column_count": 7,
-        "alerts": []
-      },
-      "rows": 35,
-      "null_pct_avg": 0.0,
-      "json_report": "quality/tool.json",
-      "html_report": "quality/tool.html"
-    },
-    "location": {
-      "dataset": "location",
-      "generated_at": "2025-11-18T01:05:06.036741+00:00",
-      "row_count": 289,
-      "column_count": 7,
-      "overall_null_percent": 0.0,
-      "columns": 7,
-      "alerts": [],
-      "reports": {
-        "dataset": "location",
-        "json": "quality/location.json",
-        "html": "quality/location.html",
-        "generated_at": "2025-11-18T01:05:06.036741+00:00",
-        "row_count": 289,
-        "column_count": 7,
-        "alerts": []
-      },
-      "rows": 289,
-      "null_pct_avg": 0.0,
-      "json_report": "quality/location.json",
-      "html_report": "quality/location.html"
-    },
-    "remembrance": {
-      "dataset": "remembrance",
-      "generated_at": "2025-11-18T01:05:06.043655+00:00",
-      "row_count": 26,
-      "column_count": 7,
-      "overall_null_percent": 0.0,
-      "columns": 7,
-      "alerts": [],
-      "reports": {
-        "dataset": "remembrance",
-        "json": "quality/remembrance.json",
-        "html": "quality/remembrance.html",
-        "generated_at": "2025-11-18T01:05:06.043655+00:00",
-        "row_count": 26,
-        "column_count": 7,
-        "alerts": []
-      },
-      "rows": 26,
-      "null_pct_avg": 0.0,
-      "json_report": "quality/remembrance.json",
-      "html_report": "quality/remembrance.html"
-    },
-    "cookbook": {
-      "dataset": "cookbook",
-      "generated_at": "2025-11-18T01:05:06.051262+00:00",
-      "row_count": 104,
-      "column_count": 7,
-      "overall_null_percent": 0.0,
-      "columns": 7,
-      "alerts": [],
-      "reports": {
-        "dataset": "cookbook",
-        "json": "quality/cookbook.json",
-        "html": "quality/cookbook.html",
-        "generated_at": "2025-11-18T01:05:06.051262+00:00",
-        "row_count": 104,
-        "column_count": 7,
-        "alerts": []
-      },
-      "rows": 104,
-      "null_pct_avg": 0.0,
-      "json_report": "quality/cookbook.json",
-      "html_report": "quality/cookbook.html"
-    },
-    "bosse": {
-      "dataset": "bosse",
-      "generated_at": "2025-11-18T01:05:06.059057+00:00",
-      "row_count": 165,
-      "column_count": 7,
-      "overall_null_percent": 0.0,
-      "columns": 7,
-      "alerts": [],
-      "reports": {
-        "dataset": "bosse",
-        "json": "quality/bosse.json",
-        "html": "quality/bosse.html",
-        "generated_at": "2025-11-18T01:05:06.059057+00:00",
-        "row_count": 165,
-        "column_count": 7,
-        "alerts": []
-      },
-      "rows": 165,
-      "null_pct_avg": 0.0,
-      "json_report": "quality/bosse.json",
-      "html_report": "quality/bosse.html"
-    },
-    "ash": {
-      "dataset": "ash",
-      "generated_at": "2025-11-18T01:05:06.066632+00:00",
-      "row_count": 117,
-      "column_count": 7,
-      "overall_null_percent": 0.0,
-      "columns": 7,
-      "alerts": [],
-      "reports": {
-        "dataset": "ash",
-        "json": "quality/ash.json",
-        "html": "quality/ash.html",
-        "generated_at": "2025-11-18T01:05:06.066632+00:00",
-        "row_count": 117,
-        "column_count": 7,
-        "alerts": []
-      },
-      "rows": 117,
-      "null_pct_avg": 0.0,
-      "json_report": "quality/ash.json",
-      "html_report": "quality/ash.html"
-    },
-    "multi": {
-      "dataset": "multi",
-      "generated_at": "2025-11-18T01:05:06.073519+00:00",
-      "row_count": 16,
-      "column_count": 7,
-      "overall_null_percent": 0.0,
-      "columns": 7,
-      "alerts": [],
-      "reports": {
-        "dataset": "multi",
-        "json": "quality/multi.json",
-        "html": "quality/multi.html",
-        "generated_at": "2025-11-18T01:05:06.073519+00:00",
-        "row_count": 16,
-        "column_count": 7,
-        "alerts": []
-      },
-      "rows": 16,
-      "null_pct_avg": 0.0,
-      "json_report": "quality/multi.json",
-      "html_report": "quality/multi.html"
-    },
     "talisman": {
       "dataset": "talisman",
-      "generated_at": "2025-11-18T01:05:06.081989+00:00",
+      "generated_at": "2025-11-20T20:24:56.097304+00:00",
       "row_count": 155,
       "column_count": 7,
       "overall_null_percent": 0.0,
@@ -320,7 +78,7 @@
         "dataset": "talisman",
         "json": "quality/talisman.json",
         "html": "quality/talisman.html",
-        "generated_at": "2025-11-18T01:05:06.081989+00:00",
+        "generated_at": "2025-11-20T20:24:56.097304+00:00",
         "row_count": 155,
         "column_count": 7,
         "alerts": []
@@ -330,53 +88,9 @@
       "json_report": "quality/talisman.json",
       "html_report": "quality/talisman.html"
     },
-    "item": {
-      "dataset": "item",
-      "generated_at": "2025-11-18T01:05:06.094368+00:00",
-      "row_count": 446,
-      "column_count": 7,
-      "overall_null_percent": 0.0,
-      "columns": 7,
-      "alerts": [],
-      "reports": {
-        "dataset": "item",
-        "json": "quality/item.json",
-        "html": "quality/item.html",
-        "generated_at": "2025-11-18T01:05:06.094368+00:00",
-        "row_count": 446,
-        "column_count": 7,
-        "alerts": []
-      },
-      "rows": 446,
-      "null_pct_avg": 0.0,
-      "json_report": "quality/item.json",
-      "html_report": "quality/item.html"
-    },
-    "whetblade": {
-      "dataset": "whetblade",
-      "generated_at": "2025-11-18T01:05:06.101348+00:00",
-      "row_count": 6,
-      "column_count": 7,
-      "overall_null_percent": 0.0,
-      "columns": 7,
-      "alerts": [],
-      "reports": {
-        "dataset": "whetblade",
-        "json": "quality/whetblade.json",
-        "html": "quality/whetblade.html",
-        "generated_at": "2025-11-18T01:05:06.101348+00:00",
-        "row_count": 6,
-        "column_count": 7,
-        "alerts": []
-      },
-      "rows": 6,
-      "null_pct_avg": 0.0,
-      "json_report": "quality/whetblade.json",
-      "html_report": "quality/whetblade.html"
-    },
     "armor": {
       "dataset": "armor",
-      "generated_at": "2025-11-18T01:05:06.115016+00:00",
+      "generated_at": "2025-11-20T20:24:56.111699+00:00",
       "row_count": 730,
       "column_count": 7,
       "overall_null_percent": 0.0,
@@ -386,7 +100,7 @@
         "dataset": "armor",
         "json": "quality/armor.json",
         "html": "quality/armor.html",
-        "generated_at": "2025-11-18T01:05:06.115016+00:00",
+        "generated_at": "2025-11-20T20:24:56.111699+00:00",
         "row_count": 730,
         "column_count": 7,
         "alerts": []
@@ -396,185 +110,75 @@
       "json_report": "quality/armor.json",
       "html_report": "quality/armor.html"
     },
-    "upgrade_material": {
-      "dataset": "upgrade_material",
-      "generated_at": "2025-11-18T01:05:06.122173+00:00",
-      "row_count": 43,
+    "location": {
+      "dataset": "location",
+      "generated_at": "2025-11-20T20:24:56.122171+00:00",
+      "row_count": 289,
       "column_count": 7,
       "overall_null_percent": 0.0,
       "columns": 7,
       "alerts": [],
       "reports": {
-        "dataset": "upgrade_material",
-        "json": "quality/upgrade_material.json",
-        "html": "quality/upgrade_material.html",
-        "generated_at": "2025-11-18T01:05:06.122173+00:00",
-        "row_count": 43,
+        "dataset": "location",
+        "json": "quality/location.json",
+        "html": "quality/location.html",
+        "generated_at": "2025-11-20T20:24:56.122171+00:00",
+        "row_count": 289,
         "column_count": 7,
         "alerts": []
       },
-      "rows": 43,
+      "rows": 289,
       "null_pct_avg": 0.0,
-      "json_report": "quality/upgrade_material.json",
-      "html_report": "quality/upgrade_material.html"
+      "json_report": "quality/location.json",
+      "html_report": "quality/location.html"
     },
-    "shield": {
-      "dataset": "shield",
-      "generated_at": "2025-11-18T01:05:06.129132+00:00",
-      "row_count": 79,
+    "classe": {
+      "dataset": "classe",
+      "generated_at": "2025-11-20T20:24:56.129585+00:00",
+      "row_count": 13,
       "column_count": 7,
       "overall_null_percent": 0.0,
       "columns": 7,
       "alerts": [],
       "reports": {
-        "dataset": "shield",
-        "json": "quality/shield.json",
-        "html": "quality/shield.html",
-        "generated_at": "2025-11-18T01:05:06.129132+00:00",
-        "row_count": 79,
+        "dataset": "classe",
+        "json": "quality/classe.json",
+        "html": "quality/classe.html",
+        "generated_at": "2025-11-20T20:24:56.129585+00:00",
+        "row_count": 13,
         "column_count": 7,
         "alerts": []
       },
-      "rows": 79,
+      "rows": 13,
       "null_pct_avg": 0.0,
-      "json_report": "quality/shield.json",
-      "html_report": "quality/shield.html"
+      "json_report": "quality/classe.json",
+      "html_report": "quality/classe.html"
     },
-    "bell": {
-      "dataset": "bell",
-      "generated_at": "2025-11-18T01:05:06.136825+00:00",
-      "row_count": 60,
+    "cookbook": {
+      "dataset": "cookbook",
+      "generated_at": "2025-11-20T20:24:56.137648+00:00",
+      "row_count": 104,
       "column_count": 7,
       "overall_null_percent": 0.0,
       "columns": 7,
       "alerts": [],
       "reports": {
-        "dataset": "bell",
-        "json": "quality/bell.json",
-        "html": "quality/bell.html",
-        "generated_at": "2025-11-18T01:05:06.136825+00:00",
-        "row_count": 60,
+        "dataset": "cookbook",
+        "json": "quality/cookbook.json",
+        "html": "quality/cookbook.html",
+        "generated_at": "2025-11-20T20:24:56.137648+00:00",
+        "row_count": 104,
         "column_count": 7,
         "alerts": []
       },
-      "rows": 60,
+      "rows": 104,
       "null_pct_avg": 0.0,
-      "json_report": "quality/bell.json",
-      "html_report": "quality/bell.html"
-    },
-    "skill": {
-      "dataset": "skill",
-      "generated_at": "2025-11-18T01:05:06.146171+00:00",
-      "row_count": 256,
-      "column_count": 7,
-      "overall_null_percent": 0.0,
-      "columns": 7,
-      "alerts": [],
-      "reports": {
-        "dataset": "skill",
-        "json": "quality/skill.json",
-        "html": "quality/skill.html",
-        "generated_at": "2025-11-18T01:05:06.146171+00:00",
-        "row_count": 256,
-        "column_count": 7,
-        "alerts": []
-      },
-      "rows": 256,
-      "null_pct_avg": 0.0,
-      "json_report": "quality/skill.json",
-      "html_report": "quality/skill.html"
-    },
-    "incantation": {
-      "dataset": "incantation",
-      "generated_at": "2025-11-18T01:05:06.154321+00:00",
-      "row_count": 134,
-      "column_count": 7,
-      "overall_null_percent": 0.0,
-      "columns": 7,
-      "alerts": [],
-      "reports": {
-        "dataset": "incantation",
-        "json": "quality/incantation.json",
-        "html": "quality/incantation.html",
-        "generated_at": "2025-11-18T01:05:06.154321+00:00",
-        "row_count": 134,
-        "column_count": 7,
-        "alerts": []
-      },
-      "rows": 134,
-      "null_pct_avg": 0.0,
-      "json_report": "quality/incantation.json",
-      "html_report": "quality/incantation.html"
-    },
-    "weapon": {
-      "dataset": "weapon",
-      "generated_at": "2025-11-18T01:05:06.164543+00:00",
-      "row_count": 407,
-      "column_count": 7,
-      "overall_null_percent": 0.0,
-      "columns": 7,
-      "alerts": [],
-      "reports": {
-        "dataset": "weapon",
-        "json": "quality/weapon.json",
-        "html": "quality/weapon.html",
-        "generated_at": "2025-11-18T01:05:06.164543+00:00",
-        "row_count": 407,
-        "column_count": 7,
-        "alerts": []
-      },
-      "rows": 407,
-      "null_pct_avg": 0.0,
-      "json_report": "quality/weapon.json",
-      "html_report": "quality/weapon.html"
-    },
-    "ashe": {
-      "dataset": "ashe",
-      "generated_at": "2025-11-18T01:05:06.172041+00:00",
-      "row_count": 90,
-      "column_count": 7,
-      "overall_null_percent": 0.0,
-      "columns": 7,
-      "alerts": [],
-      "reports": {
-        "dataset": "ashe",
-        "json": "quality/ashe.json",
-        "html": "quality/ashe.html",
-        "generated_at": "2025-11-18T01:05:06.172041+00:00",
-        "row_count": 90,
-        "column_count": 7,
-        "alerts": []
-      },
-      "rows": 90,
-      "null_pct_avg": 0.0,
-      "json_report": "quality/ashe.json",
-      "html_report": "quality/ashe.html"
-    },
-    "material": {
-      "dataset": "material",
-      "generated_at": "2025-11-18T01:05:06.179441+00:00",
-      "row_count": 102,
-      "column_count": 7,
-      "overall_null_percent": 0.0,
-      "columns": 7,
-      "alerts": [],
-      "reports": {
-        "dataset": "material",
-        "json": "quality/material.json",
-        "html": "quality/material.html",
-        "generated_at": "2025-11-18T01:05:06.179441+00:00",
-        "row_count": 102,
-        "column_count": 7,
-        "alerts": []
-      },
-      "rows": 102,
-      "null_pct_avg": 0.0,
-      "json_report": "quality/material.json",
-      "html_report": "quality/material.html"
+      "json_report": "quality/cookbook.json",
+      "html_report": "quality/cookbook.html"
     },
     "sorcerie": {
       "dataset": "sorcerie",
-      "generated_at": "2025-11-18T01:05:06.186829+00:00",
+      "generated_at": "2025-11-20T20:24:56.145593+00:00",
       "row_count": 86,
       "column_count": 7,
       "overall_null_percent": 0.0,
@@ -584,7 +188,7 @@
         "dataset": "sorcerie",
         "json": "quality/sorcerie.json",
         "html": "quality/sorcerie.html",
-        "generated_at": "2025-11-18T01:05:06.186829+00:00",
+        "generated_at": "2025-11-20T20:24:56.145593+00:00",
         "row_count": 86,
         "column_count": 7,
         "alerts": []
@@ -594,9 +198,31 @@
       "json_report": "quality/sorcerie.json",
       "html_report": "quality/sorcerie.html"
     },
+    "incantation": {
+      "dataset": "incantation",
+      "generated_at": "2025-11-20T20:24:56.154037+00:00",
+      "row_count": 134,
+      "column_count": 7,
+      "overall_null_percent": 0.0,
+      "columns": 7,
+      "alerts": [],
+      "reports": {
+        "dataset": "incantation",
+        "json": "quality/incantation.json",
+        "html": "quality/incantation.html",
+        "generated_at": "2025-11-20T20:24:56.154037+00:00",
+        "row_count": 134,
+        "column_count": 7,
+        "alerts": []
+      },
+      "rows": 134,
+      "null_pct_avg": 0.0,
+      "json_report": "quality/incantation.json",
+      "html_report": "quality/incantation.html"
+    },
     "crystal_tear": {
       "dataset": "crystal_tear",
-      "generated_at": "2025-11-18T01:05:06.193649+00:00",
+      "generated_at": "2025-11-20T20:24:56.161265+00:00",
       "row_count": 37,
       "column_count": 7,
       "overall_null_percent": 0.0,
@@ -606,7 +232,7 @@
         "dataset": "crystal_tear",
         "json": "quality/crystal_tear.json",
         "html": "quality/crystal_tear.html",
-        "generated_at": "2025-11-18T01:05:06.193649+00:00",
+        "generated_at": "2025-11-20T20:24:56.161265+00:00",
         "row_count": 37,
         "column_count": 7,
         "alerts": []
@@ -616,31 +242,9 @@
       "json_report": "quality/crystal_tear.json",
       "html_report": "quality/crystal_tear.html"
     },
-    "great_rune": {
-      "dataset": "great_rune",
-      "generated_at": "2025-11-18T01:05:06.200907+00:00",
-      "row_count": 9,
-      "column_count": 7,
-      "overall_null_percent": 0.0,
-      "columns": 7,
-      "alerts": [],
-      "reports": {
-        "dataset": "great_rune",
-        "json": "quality/great_rune.json",
-        "html": "quality/great_rune.html",
-        "generated_at": "2025-11-18T01:05:06.200907+00:00",
-        "row_count": 9,
-        "column_count": 7,
-        "alerts": []
-      },
-      "rows": 9,
-      "null_pct_avg": 0.0,
-      "json_report": "quality/great_rune.json",
-      "html_report": "quality/great_rune.html"
-    },
     "ammo": {
       "dataset": "ammo",
-      "generated_at": "2025-11-18T01:05:06.207982+00:00",
+      "generated_at": "2025-11-20T20:24:56.168915+00:00",
       "row_count": 69,
       "column_count": 7,
       "overall_null_percent": 0.0,
@@ -650,7 +254,7 @@
         "dataset": "ammo",
         "json": "quality/ammo.json",
         "html": "quality/ammo.html",
-        "generated_at": "2025-11-18T01:05:06.207982+00:00",
+        "generated_at": "2025-11-20T20:24:56.168915+00:00",
         "row_count": 69,
         "column_count": 7,
         "alerts": []
@@ -660,31 +264,163 @@
       "json_report": "quality/ammo.json",
       "html_report": "quality/ammo.html"
     },
-    "npc": {
-      "dataset": "npc",
-      "generated_at": "2025-11-18T01:05:06.215398+00:00",
-      "row_count": 119,
+    "item": {
+      "dataset": "item",
+      "generated_at": "2025-11-20T20:24:56.179529+00:00",
+      "row_count": 446,
       "column_count": 7,
       "overall_null_percent": 0.0,
       "columns": 7,
       "alerts": [],
       "reports": {
-        "dataset": "npc",
-        "json": "quality/npc.json",
-        "html": "quality/npc.html",
-        "generated_at": "2025-11-18T01:05:06.215398+00:00",
-        "row_count": 119,
+        "dataset": "item",
+        "json": "quality/item.json",
+        "html": "quality/item.html",
+        "generated_at": "2025-11-20T20:24:56.179529+00:00",
+        "row_count": 446,
         "column_count": 7,
         "alerts": []
       },
-      "rows": 119,
+      "rows": 446,
       "null_pct_avg": 0.0,
-      "json_report": "quality/npc.json",
-      "html_report": "quality/npc.html"
+      "json_report": "quality/item.json",
+      "html_report": "quality/item.html"
+    },
+    "upgrade_material": {
+      "dataset": "upgrade_material",
+      "generated_at": "2025-11-20T20:24:56.187067+00:00",
+      "row_count": 43,
+      "column_count": 7,
+      "overall_null_percent": 0.0,
+      "columns": 7,
+      "alerts": [],
+      "reports": {
+        "dataset": "upgrade_material",
+        "json": "quality/upgrade_material.json",
+        "html": "quality/upgrade_material.html",
+        "generated_at": "2025-11-20T20:24:56.187067+00:00",
+        "row_count": 43,
+        "column_count": 7,
+        "alerts": []
+      },
+      "rows": 43,
+      "null_pct_avg": 0.0,
+      "json_report": "quality/upgrade_material.json",
+      "html_report": "quality/upgrade_material.html"
+    },
+    "skill": {
+      "dataset": "skill",
+      "generated_at": "2025-11-20T20:24:56.196070+00:00",
+      "row_count": 256,
+      "column_count": 7,
+      "overall_null_percent": 0.0,
+      "columns": 7,
+      "alerts": [],
+      "reports": {
+        "dataset": "skill",
+        "json": "quality/skill.json",
+        "html": "quality/skill.html",
+        "generated_at": "2025-11-20T20:24:56.196070+00:00",
+        "row_count": 256,
+        "column_count": 7,
+        "alerts": []
+      },
+      "rows": 256,
+      "null_pct_avg": 0.0,
+      "json_report": "quality/skill.json",
+      "html_report": "quality/skill.html"
+    },
+    "bell": {
+      "dataset": "bell",
+      "generated_at": "2025-11-20T20:24:56.203429+00:00",
+      "row_count": 60,
+      "column_count": 7,
+      "overall_null_percent": 0.0,
+      "columns": 7,
+      "alerts": [],
+      "reports": {
+        "dataset": "bell",
+        "json": "quality/bell.json",
+        "html": "quality/bell.html",
+        "generated_at": "2025-11-20T20:24:56.203429+00:00",
+        "row_count": 60,
+        "column_count": 7,
+        "alerts": []
+      },
+      "rows": 60,
+      "null_pct_avg": 0.0,
+      "json_report": "quality/bell.json",
+      "html_report": "quality/bell.html"
+    },
+    "ashe": {
+      "dataset": "ashe",
+      "generated_at": "2025-11-20T20:24:56.211143+00:00",
+      "row_count": 90,
+      "column_count": 7,
+      "overall_null_percent": 0.0,
+      "columns": 7,
+      "alerts": [],
+      "reports": {
+        "dataset": "ashe",
+        "json": "quality/ashe.json",
+        "html": "quality/ashe.html",
+        "generated_at": "2025-11-20T20:24:56.211143+00:00",
+        "row_count": 90,
+        "column_count": 7,
+        "alerts": []
+      },
+      "rows": 90,
+      "null_pct_avg": 0.0,
+      "json_report": "quality/ashe.json",
+      "html_report": "quality/ashe.html"
+    },
+    "whetblade": {
+      "dataset": "whetblade",
+      "generated_at": "2025-11-20T20:24:56.218024+00:00",
+      "row_count": 6,
+      "column_count": 7,
+      "overall_null_percent": 0.0,
+      "columns": 7,
+      "alerts": [],
+      "reports": {
+        "dataset": "whetblade",
+        "json": "quality/whetblade.json",
+        "html": "quality/whetblade.html",
+        "generated_at": "2025-11-20T20:24:56.218024+00:00",
+        "row_count": 6,
+        "column_count": 7,
+        "alerts": []
+      },
+      "rows": 6,
+      "null_pct_avg": 0.0,
+      "json_report": "quality/whetblade.json",
+      "html_report": "quality/whetblade.html"
+    },
+    "ash": {
+      "dataset": "ash",
+      "generated_at": "2025-11-20T20:24:56.225628+00:00",
+      "row_count": 117,
+      "column_count": 7,
+      "overall_null_percent": 0.0,
+      "columns": 7,
+      "alerts": [],
+      "reports": {
+        "dataset": "ash",
+        "json": "quality/ash.json",
+        "html": "quality/ash.html",
+        "generated_at": "2025-11-20T20:24:56.225628+00:00",
+        "row_count": 117,
+        "column_count": 7,
+        "alerts": []
+      },
+      "rows": 117,
+      "null_pct_avg": 0.0,
+      "json_report": "quality/ash.json",
+      "html_report": "quality/ash.html"
     },
     "key_item": {
       "dataset": "key_item",
-      "generated_at": "2025-11-18T01:05:06.223276+00:00",
+      "generated_at": "2025-11-20T20:24:56.234871+00:00",
       "row_count": 108,
       "column_count": 7,
       "overall_null_percent": 0.0,
@@ -694,7 +430,7 @@
         "dataset": "key_item",
         "json": "quality/key_item.json",
         "html": "quality/key_item.html",
-        "generated_at": "2025-11-18T01:05:06.223276+00:00",
+        "generated_at": "2025-11-20T20:24:56.234871+00:00",
         "row_count": 108,
         "column_count": 7,
         "alerts": []
@@ -703,6 +439,435 @@
       "null_pct_avg": 0.0,
       "json_report": "quality/key_item.json",
       "html_report": "quality/key_item.html"
+    },
+    "npc": {
+      "dataset": "npc",
+      "generated_at": "2025-11-20T20:24:56.243045+00:00",
+      "row_count": 119,
+      "column_count": 7,
+      "overall_null_percent": 0.0,
+      "columns": 7,
+      "alerts": [],
+      "reports": {
+        "dataset": "npc",
+        "json": "quality/npc.json",
+        "html": "quality/npc.html",
+        "generated_at": "2025-11-20T20:24:56.243045+00:00",
+        "row_count": 119,
+        "column_count": 7,
+        "alerts": []
+      },
+      "rows": 119,
+      "null_pct_avg": 0.0,
+      "json_report": "quality/npc.json",
+      "html_report": "quality/npc.html"
+    },
+    "creature": {
+      "dataset": "creature",
+      "generated_at": "2025-11-20T20:24:56.252270+00:00",
+      "row_count": 238,
+      "column_count": 7,
+      "overall_null_percent": 0.0,
+      "columns": 7,
+      "alerts": [],
+      "reports": {
+        "dataset": "creature",
+        "json": "quality/creature.json",
+        "html": "quality/creature.html",
+        "generated_at": "2025-11-20T20:24:56.252270+00:00",
+        "row_count": 238,
+        "column_count": 7,
+        "alerts": []
+      },
+      "rows": 238,
+      "null_pct_avg": 0.0,
+      "json_report": "quality/creature.json",
+      "html_report": "quality/creature.html"
+    },
+    "multi": {
+      "dataset": "multi",
+      "generated_at": "2025-11-20T20:24:56.259487+00:00",
+      "row_count": 16,
+      "column_count": 7,
+      "overall_null_percent": 0.0,
+      "columns": 7,
+      "alerts": [],
+      "reports": {
+        "dataset": "multi",
+        "json": "quality/multi.json",
+        "html": "quality/multi.html",
+        "generated_at": "2025-11-20T20:24:56.259487+00:00",
+        "row_count": 16,
+        "column_count": 7,
+        "alerts": []
+      },
+      "rows": 16,
+      "null_pct_avg": 0.0,
+      "json_report": "quality/multi.json",
+      "html_report": "quality/multi.html"
+    },
+    "tool": {
+      "dataset": "tool",
+      "generated_at": "2025-11-20T20:24:56.266686+00:00",
+      "row_count": 35,
+      "column_count": 7,
+      "overall_null_percent": 0.0,
+      "columns": 7,
+      "alerts": [],
+      "reports": {
+        "dataset": "tool",
+        "json": "quality/tool.json",
+        "html": "quality/tool.html",
+        "generated_at": "2025-11-20T20:24:56.266686+00:00",
+        "row_count": 35,
+        "column_count": 7,
+        "alerts": []
+      },
+      "rows": 35,
+      "null_pct_avg": 0.0,
+      "json_report": "quality/tool.json",
+      "html_report": "quality/tool.html"
+    },
+    "consumable": {
+      "dataset": "consumable",
+      "generated_at": "2025-11-20T20:24:56.275486+00:00",
+      "row_count": 207,
+      "column_count": 7,
+      "overall_null_percent": 0.0,
+      "columns": 7,
+      "alerts": [],
+      "reports": {
+        "dataset": "consumable",
+        "json": "quality/consumable.json",
+        "html": "quality/consumable.html",
+        "generated_at": "2025-11-20T20:24:56.275486+00:00",
+        "row_count": 207,
+        "column_count": 7,
+        "alerts": []
+      },
+      "rows": 207,
+      "null_pct_avg": 0.0,
+      "json_report": "quality/consumable.json",
+      "html_report": "quality/consumable.html"
+    },
+    "shield": {
+      "dataset": "shield",
+      "generated_at": "2025-11-20T20:24:56.283232+00:00",
+      "row_count": 79,
+      "column_count": 7,
+      "overall_null_percent": 0.0,
+      "columns": 7,
+      "alerts": [],
+      "reports": {
+        "dataset": "shield",
+        "json": "quality/shield.json",
+        "html": "quality/shield.html",
+        "generated_at": "2025-11-20T20:24:56.283232+00:00",
+        "row_count": 79,
+        "column_count": 7,
+        "alerts": []
+      },
+      "rows": 79,
+      "null_pct_avg": 0.0,
+      "json_report": "quality/shield.json",
+      "html_report": "quality/shield.html"
+    },
+    "bosse": {
+      "dataset": "bosse",
+      "generated_at": "2025-11-20T20:24:56.291371+00:00",
+      "row_count": 165,
+      "column_count": 7,
+      "overall_null_percent": 0.0,
+      "columns": 7,
+      "alerts": [],
+      "reports": {
+        "dataset": "bosse",
+        "json": "quality/bosse.json",
+        "html": "quality/bosse.html",
+        "generated_at": "2025-11-20T20:24:56.291371+00:00",
+        "row_count": 165,
+        "column_count": 7,
+        "alerts": []
+      },
+      "rows": 165,
+      "null_pct_avg": 0.0,
+      "json_report": "quality/bosse.json",
+      "html_report": "quality/bosse.html"
+    },
+    "spirit": {
+      "dataset": "spirit",
+      "generated_at": "2025-11-20T20:24:56.299674+00:00",
+      "row_count": 87,
+      "column_count": 7,
+      "overall_null_percent": 0.0,
+      "columns": 7,
+      "alerts": [],
+      "reports": {
+        "dataset": "spirit",
+        "json": "quality/spirit.json",
+        "html": "quality/spirit.html",
+        "generated_at": "2025-11-20T20:24:56.299674+00:00",
+        "row_count": 87,
+        "column_count": 7,
+        "alerts": []
+      },
+      "rows": 87,
+      "null_pct_avg": 0.0,
+      "json_report": "quality/spirit.json",
+      "html_report": "quality/spirit.html"
+    },
+    "weapon": {
+      "dataset": "weapon",
+      "generated_at": "2025-11-20T20:24:56.310270+00:00",
+      "row_count": 407,
+      "column_count": 7,
+      "overall_null_percent": 0.0,
+      "columns": 7,
+      "alerts": [],
+      "reports": {
+        "dataset": "weapon",
+        "json": "quality/weapon.json",
+        "html": "quality/weapon.html",
+        "generated_at": "2025-11-20T20:24:56.310270+00:00",
+        "row_count": 407,
+        "column_count": 7,
+        "alerts": []
+      },
+      "rows": 407,
+      "null_pct_avg": 0.0,
+      "json_report": "quality/weapon.json",
+      "html_report": "quality/weapon.html"
+    },
+    "material": {
+      "dataset": "material",
+      "generated_at": "2025-11-20T20:24:56.318283+00:00",
+      "row_count": 102,
+      "column_count": 7,
+      "overall_null_percent": 0.0,
+      "columns": 7,
+      "alerts": [],
+      "reports": {
+        "dataset": "material",
+        "json": "quality/material.json",
+        "html": "quality/material.html",
+        "generated_at": "2025-11-20T20:24:56.318283+00:00",
+        "row_count": 102,
+        "column_count": 7,
+        "alerts": []
+      },
+      "rows": 102,
+      "null_pct_avg": 0.0,
+      "json_report": "quality/material.json",
+      "html_report": "quality/material.html"
+    },
+    "great_rune": {
+      "dataset": "great_rune",
+      "generated_at": "2025-11-20T20:24:56.325516+00:00",
+      "row_count": 9,
+      "column_count": 7,
+      "overall_null_percent": 0.0,
+      "columns": 7,
+      "alerts": [],
+      "reports": {
+        "dataset": "great_rune",
+        "json": "quality/great_rune.json",
+        "html": "quality/great_rune.html",
+        "generated_at": "2025-11-20T20:24:56.325516+00:00",
+        "row_count": 9,
+        "column_count": 7,
+        "alerts": []
+      },
+      "rows": 9,
+      "null_pct_avg": 0.0,
+      "json_report": "quality/great_rune.json",
+      "html_report": "quality/great_rune.html"
+    },
+    "remembrance": {
+      "dataset": "remembrance",
+      "generated_at": "2025-11-20T20:24:56.333316+00:00",
+      "row_count": 26,
+      "column_count": 7,
+      "overall_null_percent": 0.0,
+      "columns": 7,
+      "alerts": [],
+      "reports": {
+        "dataset": "remembrance",
+        "json": "quality/remembrance.json",
+        "html": "quality/remembrance.html",
+        "generated_at": "2025-11-20T20:24:56.333316+00:00",
+        "row_count": 26,
+        "column_count": 7,
+        "alerts": []
+      },
+      "rows": 26,
+      "null_pct_avg": 0.0,
+      "json_report": "quality/remembrance.json",
+      "html_report": "quality/remembrance.html"
     }
+  },
+  "schema_versions": {
+    "armor": {
+      "tag": "armor_v1",
+      "version": "v1",
+      "dataset": "armor",
+      "deprecated": false,
+      "migration_notes": "Initial canonical schema",
+      "compatibility": [
+        "initial_release"
+      ]
+    },
+    "item": {
+      "tag": "items_v1",
+      "version": "v1",
+      "dataset": "items",
+      "deprecated": false,
+      "migration_notes": "Initial canonical schema",
+      "compatibility": [
+        "initial_release"
+      ]
+    },
+    "bosse": {
+      "tag": "bosses_v1",
+      "version": "v1",
+      "dataset": "bosses",
+      "deprecated": false,
+      "migration_notes": "Initial canonical schema",
+      "compatibility": [
+        "initial_release"
+      ]
+    },
+    "weapon": {
+      "tag": "weapons_v1",
+      "version": "v1",
+      "dataset": "weapons",
+      "deprecated": false,
+      "migration_notes": "Initial canonical schema",
+      "compatibility": [
+        "initial_release"
+      ]
+    }
+  },
+  "lineage_manifests": {
+    "root": "lineage",
+    "datasets": {
+      "armor": {
+        "path": "lineage/armor.json",
+        "records": 730
+      },
+      "ash": {
+        "path": "lineage/ash.json",
+        "records": 117
+      },
+      "bosse": {
+        "path": "lineage/bosse.json",
+        "records": 165
+      },
+      "creature": {
+        "path": "lineage/creature.json",
+        "records": 238
+      },
+      "incantation": {
+        "path": "lineage/incantation.json",
+        "records": 134
+      },
+      "ammo": {
+        "path": "lineage/ammo.json",
+        "records": 69
+      },
+      "bell": {
+        "path": "lineage/bell.json",
+        "records": 60
+      },
+      "consumable": {
+        "path": "lineage/consumable.json",
+        "records": 207
+      },
+      "cookbook": {
+        "path": "lineage/cookbook.json",
+        "records": 104
+      },
+      "crystal_tear": {
+        "path": "lineage/crystal_tear.json",
+        "records": 37
+      },
+      "great_rune": {
+        "path": "lineage/great_rune.json",
+        "records": 9
+      },
+      "key_item": {
+        "path": "lineage/key_item.json",
+        "records": 108
+      },
+      "material": {
+        "path": "lineage/material.json",
+        "records": 102
+      },
+      "multi": {
+        "path": "lineage/multi.json",
+        "records": 16
+      },
+      "remembrance": {
+        "path": "lineage/remembrance.json",
+        "records": 26
+      },
+      "tool": {
+        "path": "lineage/tool.json",
+        "records": 35
+      },
+      "upgrade_material": {
+        "path": "lineage/upgrade_material.json",
+        "records": 43
+      },
+      "whetblade": {
+        "path": "lineage/whetblade.json",
+        "records": 6
+      },
+      "location": {
+        "path": "lineage/location.json",
+        "records": 289
+      },
+      "npc": {
+        "path": "lineage/npc.json",
+        "records": 119
+      },
+      "shield": {
+        "path": "lineage/shield.json",
+        "records": 79
+      },
+      "skill": {
+        "path": "lineage/skill.json",
+        "records": 256
+      },
+      "sorcerie": {
+        "path": "lineage/sorcerie.json",
+        "records": 86
+      },
+      "spirit": {
+        "path": "lineage/spirit.json",
+        "records": 87
+      },
+      "talisman": {
+        "path": "lineage/talisman.json",
+        "records": 155
+      },
+      "weapon": {
+        "path": "lineage/weapon.json",
+        "records": 407
+      },
+      "classe": {
+        "path": "lineage/classe.json",
+        "records": 13
+      },
+      "item": {
+        "path": "lineage/item.json",
+        "records": 446
+      },
+      "ashe": {
+        "path": "lineage/ashe.json",
+        "records": 90
+      }
+    },
+    "total_records": 4233,
+    "index": "lineage/index.json"
   }
 }

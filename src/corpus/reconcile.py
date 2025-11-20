@@ -186,9 +186,16 @@ class EntityReconciler:
     @staticmethod
     def _provenance_key(
         prov: Provenance,
-    ) -> tuple[str, str, str | None, datetime]:
+    ) -> tuple[str, str | None, str | None, str, str | None, datetime]:
         """Generate a tuple that uniquely identifies a provenance record."""
-        return prov.source, prov.uri, prov.sha256, prov.retrieved_at
+        return (
+            prov.source,
+            prov.dataset,
+            prov.source_file,
+            prov.uri,
+            prov.sha256,
+            prov.retrieved_at,
+        )
 
 
 def reconcile_all_sources(

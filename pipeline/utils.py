@@ -39,7 +39,10 @@ def normalize_column_names(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
-def handle_missing_values(df: pd.DataFrame, strategy: dict[str, Any]) -> pd.DataFrame:
+def handle_missing_values(
+    df: pd.DataFrame,
+    strategy: dict[str, Any],
+) -> pd.DataFrame:
     """Handle missing values based on column-specific strategies.
 
     Args:
@@ -74,7 +77,10 @@ def handle_missing_values(df: pd.DataFrame, strategy: dict[str, Any]) -> pd.Data
     return df
 
 
-def normalize_categorical(df: pd.DataFrame, mappings: dict[str, dict[str, str]]) -> pd.DataFrame:
+def normalize_categorical(
+    df: pd.DataFrame,
+    mappings: dict[str, dict[str, str]],
+) -> pd.DataFrame:
     """Normalize categorical values using predefined mappings.
 
     Args:
@@ -150,6 +156,7 @@ def needs_processing(
     raw_path: Path,
     processed_path: Path,
     cache_file: Path | None = None,
+    expected_schema_version: str | None = None,
 ) -> bool:
     """Check if raw file needs to be processed.
 
@@ -162,6 +169,8 @@ def needs_processing(
         raw_path: Path to raw input file
         processed_path: Path to processed output file
         cache_file: Optional path to cache file with hashes
+        expected_schema_version: When provided, reprocess if cached schema
+            version differs
 
     Returns:
         True if processing is needed
@@ -171,13 +180,28 @@ def needs_processing(
         return True
 
     cached_hash: str | None = None
+    cached_schema_version: str | None = None
     if cache_file and cache_file.exists():
         try:
             with open(cache_file) as f:
                 cache = json.load(f)
-            cached_hash = cache.get(str(raw_path))
         except Exception:
+            cache = {}
+
+        if isinstance(cache, dict):
+            cached_schema_version = cache.get("schema_version")
+
+            files_cache = cache.get("files")
+            if isinstance(files_cache, dict):
+                cached_hash = files_cache.get(str(raw_path))
+            else:
+                cached_hash = cache.get(str(raw_path))
+        else:
             cached_hash = None
+
+    if expected_schema_version is not None:
+        if cached_schema_version != expected_schema_version:
+            return True
 
     if cached_hash is not None:
         try:
@@ -190,14 +214,19 @@ def needs_processing(
     return raw_path.stat().st_mtime > processed_path.stat().st_mtime
 
 
-def update_cache(cache_file: Path, file_path: Path):
+def update_cache(
+    cache_file: Path,
+    file_path: Path,
+    schema_version: str | None = None,
+) -> None:
     """Update cache with current file hash.
 
     Args:
         cache_file: Path to cache JSON file
         file_path: Path to file to cache
+        schema_version: Optional schema identifier stored alongside hashes
     """
-    cache = {}
+    cache: dict[str, Any] = {}
     if cache_file.exists():
         try:
             with open(cache_file) as f:
@@ -205,11 +234,29 @@ def update_cache(cache_file: Path, file_path: Path):
         except Exception:
             cache = {}
 
-    cache[str(file_path)] = calculate_file_hash(file_path)
+    files_cache: dict[str, str]
+    if isinstance(cache, dict):
+        existing = cache.get("files")
+        if isinstance(existing, dict):
+            files_cache = existing
+        else:
+            files_cache = {
+                key: value
+                for key, value in cache.items()
+                if isinstance(key, str) and isinstance(value, str)
+            }
+    else:
+        files_cache = {}
+
+    files_cache[str(file_path)] = calculate_file_hash(file_path)
+
+    next_cache: dict[str, Any] = {"files": files_cache}
+    if schema_version:
+        next_cache["schema_version"] = schema_version
 
     cache_file.parent.mkdir(parents=True, exist_ok=True)
     with open(cache_file, "w") as f:
-        json.dump(cache, f, indent=2)
+        json.dump(next_cache, f, indent=2)
 
 
 def detect_delimiter(filepath: Path, sample_size: int = 10) -> str:

@@ -1,0 +1,527 @@
+[
+  {
+    "slug": "ancestral_infants_head",
+    "entity_type": "tool",
+    "name": "Ancestral Infant's Head",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/tools.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/tools.csv",
+        "sha256": "bf75de8ed2336ae2a3733432f9dca82234e48cdddac5c8e2e375682373f77432",
+        "retrieved_at": "2025-11-20T20:24:54.534754"
+      }
+    ]
+  },
+  {
+    "slug": "blasphemous_claw",
+    "entity_type": "tool",
+    "name": "Blasphemous Claw",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/tools.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/tools.csv",
+        "sha256": "bf75de8ed2336ae2a3733432f9dca82234e48cdddac5c8e2e375682373f77432",
+        "retrieved_at": "2025-11-20T20:24:54.534754"
+      }
+    ]
+  },
+  {
+    "slug": "bondstone",
+    "entity_type": "tool",
+    "name": "Bondstone",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/tools.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/tools.csv",
+        "sha256": "bf75de8ed2336ae2a3733432f9dca82234e48cdddac5c8e2e375682373f77432",
+        "retrieved_at": "2025-11-20T20:24:54.534754"
+      }
+    ]
+  },
+  {
+    "slug": "call_of_tibia",
+    "entity_type": "tool",
+    "name": "Call of Tibia",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/tools.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/tools.csv",
+        "sha256": "bf75de8ed2336ae2a3733432f9dca82234e48cdddac5c8e2e375682373f77432",
+        "retrieved_at": "2025-11-20T20:24:54.534754"
+      }
+    ]
+  },
+  {
+    "slug": "charming_branch",
+    "entity_type": "tool",
+    "name": "Charming Branch",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/tools.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/tools.csv",
+        "sha256": "bf75de8ed2336ae2a3733432f9dca82234e48cdddac5c8e2e375682373f77432",
+        "retrieved_at": "2025-11-20T20:24:54.534754"
+      }
+    ]
+  },
+  {
+    "slug": "fire_coil",
+    "entity_type": "tool",
+    "name": "Fire Coil",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/tools.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/tools.csv",
+        "sha256": "bf75de8ed2336ae2a3733432f9dca82234e48cdddac5c8e2e375682373f77432",
+        "retrieved_at": "2025-11-20T20:24:54.534754"
+      }
+    ]
+  },
+  {
+    "slug": "fire_spritestone",
+    "entity_type": "tool",
+    "name": "Fire Spritestone",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/tools.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/tools.csv",
+        "sha256": "bf75de8ed2336ae2a3733432f9dca82234e48cdddac5c8e2e375682373f77432",
+        "retrieved_at": "2025-11-20T20:24:54.534754"
+      }
+    ]
+  },
+  {
+    "slug": "glinting_nail",
+    "entity_type": "tool",
+    "name": "Glinting Nail",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/tools.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/tools.csv",
+        "sha256": "bf75de8ed2336ae2a3733432f9dca82234e48cdddac5c8e2e375682373f77432",
+        "retrieved_at": "2025-11-20T20:24:54.534754"
+      }
+    ]
+  },
+  {
+    "slug": "golden_vow_tool",
+    "entity_type": "tool",
+    "name": "Golden Vow (Tool)",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/tools.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/tools.csv",
+        "sha256": "bf75de8ed2336ae2a3733432f9dca82234e48cdddac5c8e2e375682373f77432",
+        "retrieved_at": "2025-11-20T20:24:54.534754"
+      }
+    ]
+  },
+  {
+    "slug": "horned_bairn",
+    "entity_type": "tool",
+    "name": "Horned Bairn",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/tools.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/tools.csv",
+        "sha256": "bf75de8ed2336ae2a3733432f9dca82234e48cdddac5c8e2e375682373f77432",
+        "retrieved_at": "2025-11-20T20:24:54.534754"
+      }
+    ]
+  },
+  {
+    "slug": "lantern",
+    "entity_type": "tool",
+    "name": "Lantern",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/tools.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/tools.csv",
+        "sha256": "bf75de8ed2336ae2a3733432f9dca82234e48cdddac5c8e2e375682373f77432",
+        "retrieved_at": "2025-11-20T20:24:54.534754"
+      }
+    ]
+  },
+  {
+    "slug": "margits_shackle",
+    "entity_type": "tool",
+    "name": "Margit's Shackle",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/tools.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/tools.csv",
+        "sha256": "bf75de8ed2336ae2a3733432f9dca82234e48cdddac5c8e2e375682373f77432",
+        "retrieved_at": "2025-11-20T20:24:54.534754"
+      }
+    ]
+  },
+  {
+    "slug": "memory_of_grace",
+    "entity_type": "tool",
+    "name": "Memory of Grace",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/tools.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/tools.csv",
+        "sha256": "bf75de8ed2336ae2a3733432f9dca82234e48cdddac5c8e2e375682373f77432",
+        "retrieved_at": "2025-11-20T20:24:54.534754"
+      }
+    ]
+  },
+  {
+    "slug": "mimics_veil",
+    "entity_type": "tool",
+    "name": "Mimic's Veil",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/tools.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/tools.csv",
+        "sha256": "bf75de8ed2336ae2a3733432f9dca82234e48cdddac5c8e2e375682373f77432",
+        "retrieved_at": "2025-11-20T20:24:54.534754"
+      }
+    ]
+  },
+  {
+    "slug": "mohgs_shackle",
+    "entity_type": "tool",
+    "name": "Mohg's Shackle",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/tools.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/tools.csv",
+        "sha256": "bf75de8ed2336ae2a3733432f9dca82234e48cdddac5c8e2e375682373f77432",
+        "retrieved_at": "2025-11-20T20:24:54.534754"
+      }
+    ]
+  },
+  {
+    "slug": "omen_bairn",
+    "entity_type": "tool",
+    "name": "Omen Bairn",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/tools.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/tools.csv",
+        "sha256": "bf75de8ed2336ae2a3733432f9dca82234e48cdddac5c8e2e375682373f77432",
+        "retrieved_at": "2025-11-20T20:24:54.534754"
+      }
+    ]
+  },
+  {
+    "slug": "perfumed_oil_of_ranah",
+    "entity_type": "tool",
+    "name": "Perfumed Oil of Ranah",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/tools.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/tools.csv",
+        "sha256": "bf75de8ed2336ae2a3733432f9dca82234e48cdddac5c8e2e375682373f77432",
+        "retrieved_at": "2025-11-20T20:24:54.534754"
+      }
+    ]
+  },
+  {
+    "slug": "prattling_pate_hello",
+    "entity_type": "tool",
+    "name": "Prattling Pate \"Hello\"",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/tools.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/tools.csv",
+        "sha256": "bf75de8ed2336ae2a3733432f9dca82234e48cdddac5c8e2e375682373f77432",
+        "retrieved_at": "2025-11-20T20:24:54.534754"
+      }
+    ]
+  },
+  {
+    "slug": "prattling_pate_lamentation",
+    "entity_type": "tool",
+    "name": "Prattling Pate Lamentation",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/tools.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/tools.csv",
+        "sha256": "bf75de8ed2336ae2a3733432f9dca82234e48cdddac5c8e2e375682373f77432",
+        "retrieved_at": "2025-11-20T20:24:54.534754"
+      }
+    ]
+  },
+  {
+    "slug": "prattling_pate_lets_get_to_it",
+    "entity_type": "tool",
+    "name": "Prattling Pate \"Let's get to it\"",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/tools.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/tools.csv",
+        "sha256": "bf75de8ed2336ae2a3733432f9dca82234e48cdddac5c8e2e375682373f77432",
+        "retrieved_at": "2025-11-20T20:24:54.534754"
+      }
+    ]
+  },
+  {
+    "slug": "prattling_pate_my_beloved",
+    "entity_type": "tool",
+    "name": "Prattling Pate \"My Beloved\"",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/tools.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/tools.csv",
+        "sha256": "bf75de8ed2336ae2a3733432f9dca82234e48cdddac5c8e2e375682373f77432",
+        "retrieved_at": "2025-11-20T20:24:54.534754"
+      }
+    ]
+  },
+  {
+    "slug": "prattling_pate_please_help",
+    "entity_type": "tool",
+    "name": "Prattling Pate \"Please Help\"",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/tools.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/tools.csv",
+        "sha256": "bf75de8ed2336ae2a3733432f9dca82234e48cdddac5c8e2e375682373f77432",
+        "retrieved_at": "2025-11-20T20:24:54.534754"
+      }
+    ]
+  },
+  {
+    "slug": "prattling_pate_thank_you",
+    "entity_type": "tool",
+    "name": "Prattling Pate \"Thank you\"",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/tools.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/tools.csv",
+        "sha256": "bf75de8ed2336ae2a3733432f9dca82234e48cdddac5c8e2e375682373f77432",
+        "retrieved_at": "2025-11-20T20:24:54.534754"
+      }
+    ]
+  },
+  {
+    "slug": "prattling_pate_youre_beautiful",
+    "entity_type": "tool",
+    "name": "Prattling Pate \"You're Beautiful\"",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/tools.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/tools.csv",
+        "sha256": "bf75de8ed2336ae2a3733432f9dca82234e48cdddac5c8e2e375682373f77432",
+        "retrieved_at": "2025-11-20T20:24:54.534754"
+      }
+    ]
+  },
+  {
+    "slug": "prattling_pateapologies",
+    "entity_type": "tool",
+    "name": "Prattling Pate\"Apologies\"",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/tools.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/tools.csv",
+        "sha256": "bf75de8ed2336ae2a3733432f9dca82234e48cdddac5c8e2e375682373f77432",
+        "retrieved_at": "2025-11-20T20:24:54.534754"
+      }
+    ]
+  },
+  {
+    "slug": "prattling_patewonderful",
+    "entity_type": "tool",
+    "name": "Prattling Pate\"Wonderful\"",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/tools.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/tools.csv",
+        "sha256": "bf75de8ed2336ae2a3733432f9dca82234e48cdddac5c8e2e375682373f77432",
+        "retrieved_at": "2025-11-20T20:24:54.534754"
+      }
+    ]
+  },
+  {
+    "slug": "pureblood_knights_medal",
+    "entity_type": "tool",
+    "name": "Pureblood Knight's Medal",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/tools.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/tools.csv",
+        "sha256": "bf75de8ed2336ae2a3733432f9dca82234e48cdddac5c8e2e375682373f77432",
+        "retrieved_at": "2025-11-20T20:24:54.534754"
+      }
+    ]
+  },
+  {
+    "slug": "regal_omen_bairn",
+    "entity_type": "tool",
+    "name": "Regal Omen Bairn",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/tools.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/tools.csv",
+        "sha256": "bf75de8ed2336ae2a3733432f9dca82234e48cdddac5c8e2e375682373f77432",
+        "retrieved_at": "2025-11-20T20:24:54.534754"
+      }
+    ]
+  },
+  {
+    "slug": "spectral_steed_whistle",
+    "entity_type": "tool",
+    "name": "Spectral Steed Whistle",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/tools.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/tools.csv",
+        "sha256": "bf75de8ed2336ae2a3733432f9dca82234e48cdddac5c8e2e375682373f77432",
+        "retrieved_at": "2025-11-20T20:24:54.534754"
+      }
+    ]
+  },
+  {
+    "slug": "spritestone",
+    "entity_type": "tool",
+    "name": "Spritestone",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/tools.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/tools.csv",
+        "sha256": "bf75de8ed2336ae2a3733432f9dca82234e48cdddac5c8e2e375682373f77432",
+        "retrieved_at": "2025-11-20T20:24:54.534754"
+      }
+    ]
+  },
+  {
+    "slug": "sunwarmth_stone",
+    "entity_type": "tool",
+    "name": "Sunwarmth Stone",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/tools.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/tools.csv",
+        "sha256": "bf75de8ed2336ae2a3733432f9dca82234e48cdddac5c8e2e375682373f77432",
+        "retrieved_at": "2025-11-20T20:24:54.534754"
+      }
+    ]
+  },
+  {
+    "slug": "surging_frenzied_flame",
+    "entity_type": "tool",
+    "name": "Surging Frenzied Flame",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/tools.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/tools.csv",
+        "sha256": "bf75de8ed2336ae2a3733432f9dca82234e48cdddac5c8e2e375682373f77432",
+        "retrieved_at": "2025-11-20T20:24:54.534754"
+      }
+    ]
+  },
+  {
+    "slug": "telescope",
+    "entity_type": "tool",
+    "name": "Telescope",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/tools.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/tools.csv",
+        "sha256": "bf75de8ed2336ae2a3733432f9dca82234e48cdddac5c8e2e375682373f77432",
+        "retrieved_at": "2025-11-20T20:24:54.534754"
+      }
+    ]
+  },
+  {
+    "slug": "torches",
+    "entity_type": "tool",
+    "name": "Torches",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/tools.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/tools.csv",
+        "sha256": "bf75de8ed2336ae2a3733432f9dca82234e48cdddac5c8e2e375682373f77432",
+        "retrieved_at": "2025-11-20T20:24:54.534754"
+      }
+    ]
+  },
+  {
+    "slug": "wraith_calling_bell",
+    "entity_type": "tool",
+    "name": "Wraith Calling Bell",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/tools.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/tools.csv",
+        "sha256": "bf75de8ed2336ae2a3733432f9dca82234e48cdddac5c8e2e375682373f77432",
+        "retrieved_at": "2025-11-20T20:24:54.534754"
+      }
+    ]
+  }
+]

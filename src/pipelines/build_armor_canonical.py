@@ -92,10 +92,10 @@ def build_armor_canonical(
     )
     finalized = _records_to_dataframe(merged_records)
 
-    schema = get_dataset_schema("armor")
-    if schema is None:
+    schema_version = get_dataset_schema("armor")
+    if schema_version is None:
         raise RuntimeError("Armor schema is not registered")
-    schema = cast(Any, schema)
+    schema = cast(Any, schema_version.schema)
 
     try:
         validated = schema.validate(finalized, lazy=True)

@@ -85,6 +85,32 @@ The pipeline defines strict schemas for Elden Ring datasets using [Pandera](http
 - **slots_required** (int64, required)
 - **required_int, required_fai, etc.** (int64, optional)
 
+### Schema Versioning & Compatibility
+
+- **Explicit versions.** Every entry in `pipeline/schemas.py` is wrapped in a
+  `SchemaVersion` object whose canonical tag follows the pattern
+  `<dataset>_vN` (for example `weapons_v1`). The helper functions
+  `get_dataset_schema()`, `get_active_schema_version()`, and
+  `list_schema_versions()` expose the metadata so you can request older
+  versions or inspect migration notes.
+- **Processor awareness.** `scripts/process_data.py` now records the active
+  schema version inside each dataset cache (`data/processed/.cache/<name>.json`).
+  If the on-disk cache predates the current schema, the processor will
+  automatically reprocess that dataset even when the raw files are unchanged.
+  You can optionally add `schema` and/or `schema_version` keys to an individual
+  dataset entry in `config/kaggle_datasets.yml` to pin a specific version
+  while new revisions roll out side-by-side.
+- **Curated metadata.** `poetry run corpus curate` writes the schema tags that
+  produced every per-entity export into `data/curated/metadata.json` under the
+  new `schema_versions` block. Downstream workflows can now audit which schema
+  defined each CSV/Parquet artifact.
+- **Adding a new version.** Introduce another `SchemaVersion` entry (for example
+  `SchemaVersion(dataset="weapons", version="v2", ...)`), mark the previous
+  version as `deprecated=True` when appropriate, document the migration in
+  `migration_notes`, and update any dataset config that should opt into the new
+  tag. The processor will take care of invalidating caches and curated metadata
+  will automatically reflect the new tag after the next `corpus curate` run.
+
 ## Transformations
 
 ### Column Name Normalization
@@ -397,6 +423,44 @@ Example JSON stub:
 }
 ```
 
+### Lineage Manifests
+
+`poetry run corpus curate` now writes explicit data lineage artifacts so every
+curated slug points back to its originating files:
+
+- **Location**: `data/curated/lineage/`
+- **Index**: `lineage/index.json` captures the generation timestamp and maps
+  each entity type to its manifest path
+- **Per-entity manifests**: `lineage/<entity_type>.json` lists every slug, its
+  display name, and the full provenance payload (source identifier, dataset
+  handle, source file, canonical URI, SHA256 checksum, and retrieval timestamp)
+- **Metadata**: `data/curated/metadata.json` exposes a `lineage_manifests` block
+  so downstream tooling can discover the artifacts without scanning the
+  filesystem
+
+Example lineage record:
+
+```json
+{
+  "slug": "sword_of_night_and_flame",
+  "entity_type": "weapon",
+  "name": "Sword of Night and Flame",
+  "sources": [
+    {
+      "source": "kaggle_dlc",
+      "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+      "source_file": "weapons.csv",
+      "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/weapons.csv",
+      "sha256": "...",
+      "retrieved_at": "2025-11-18T21:05:47.074558+00:00"
+    }
+  ]
+}
+```
+
+Use these manifests to audit provenance, reproduce ingestion steps, or validate
+hashes before trusting downstream predictions.
+
 ### Failing the Pipeline on Alerts
 
 You can wire the metadata into CI/CD by reading the consolidated alerts list:
@@ -480,7 +544,7 @@ poetry run pip install pandera pyarrow
 - [x] Data quality reports (profiling, stats)
 - [ ] Schema versioning and migration
 - [ ] Incremental processing for append-only datasets
-- [ ] Data lineage tracking
+- [x] Data lineage tracking
 - [ ] Custom validation rules per dataset
 - [ ] Automated data drift detection
 - [ ] Integration with data cataloging tools

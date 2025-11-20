@@ -1,0 +1,3989 @@
+[
+  {
+    "slug": "abductor_virgins",
+    "entity_type": "bosse",
+    "name": "Abductor Virgins",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "adan_thief_of_fire",
+    "entity_type": "bosse",
+    "name": "Adan, Thief of Fire",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "alabaster_lord",
+    "entity_type": "bosse",
+    "name": "Alabaster Lord",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "alecto_black_knife_ringleader",
+    "entity_type": "bosse",
+    "name": "Alecto, Black Knife Ringleader",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "ancestor_spirit",
+    "entity_type": "bosse",
+    "name": "Ancestor Spirit",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "ancient_dragon_lansseax",
+    "entity_type": "bosse",
+    "name": "Ancient Dragon Lansseax",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "ancient_dragon_man",
+    "entity_type": "bosse",
+    "name": "Ancient Dragon-Man",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "ancient_dragon_senessax",
+    "entity_type": "bosse",
+    "name": "Ancient Dragon Senessax",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "ancient_hero_of_zamor",
+    "entity_type": "bosse",
+    "name": "Ancient Hero of Zamor",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "astel_naturalborn_of_the_void",
+    "entity_type": "bosse",
+    "name": "Astel, Naturalborn of the Void",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "astel_stars_of_darkness",
+    "entity_type": "bosse",
+    "name": "Astel, Stars of Darkness",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "base_serpent_messmer",
+    "entity_type": "bosse",
+    "name": "Base Serpent Messmer",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "battlemage_hugues",
+    "entity_type": "bosse",
+    "name": "Battlemage Hugues",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "bayle_the_dread",
+    "entity_type": "bosse",
+    "name": "Bayle The Dread",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "beast_clergyman",
+    "entity_type": "bosse",
+    "name": "Beast Clergyman",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "beast_of_farum_azula",
+    "entity_type": "bosse",
+    "name": "Beast Of Farum Azula",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "beastman_of_farum_azula",
+    "entity_type": "bosse",
+    "name": "Beastman of Farum Azula",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "bell_bearing_hunter",
+    "entity_type": "bosse",
+    "name": "Bell Bearing Hunter",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "black_blade_kindred",
+    "entity_type": "bosse",
+    "name": "Black Blade Kindred",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "black_knife_assassin",
+    "entity_type": "bosse",
+    "name": "Black Knife Assassin",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "black_knight_edredd",
+    "entity_type": "bosse",
+    "name": "Black Knight Edredd",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "black_knight_garrew",
+    "entity_type": "bosse",
+    "name": "Black Knight Garrew",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "blackgaol_knight",
+    "entity_type": "bosse",
+    "name": "Blackgaol Knight",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "bloodhound_knight",
+    "entity_type": "bosse",
+    "name": "Bloodhound Knight",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "bloodhound_knight_darriwil",
+    "entity_type": "bosse",
+    "name": "Bloodhound Knight Darriwil",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "bols_carian_knight",
+    "entity_type": "bosse",
+    "name": "Bols, Carian Knight",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "borealis_the_freezing_fog",
+    "entity_type": "bosse",
+    "name": "Borealis, the Freezing Fog",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "burial_tree_watchdog",
+    "entity_type": "bosse",
+    "name": "Burial Tree Watchdog",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "cemetery_shade",
+    "entity_type": "bosse",
+    "name": "Cemetery Shade",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "chief_bloodfiend",
+    "entity_type": "bosse",
+    "name": "Chief Bloodfiend",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "cleanrot_knight",
+    "entity_type": "bosse",
+    "name": "Cleanrot Knight",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "commander_gaius",
+    "entity_type": "bosse",
+    "name": "Commander Gaius",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "commander_niall",
+    "entity_type": "bosse",
+    "name": "Commander Niall",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "commander_oneil",
+    "entity_type": "bosse",
+    "name": "Commander O'Neil",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "count_ymir_mother_of_fingers",
+    "entity_type": "bosse",
+    "name": "Count Ymir, Mother of Fingers",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "crucible_knight",
+    "entity_type": "bosse",
+    "name": "Crucible Knight",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "crucible_knight_ordovis",
+    "entity_type": "bosse",
+    "name": "Crucible Knight Ordovis",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "crucible_knight_siluria",
+    "entity_type": "bosse",
+    "name": "Crucible Knight Siluria",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "crucible_knights",
+    "entity_type": "bosse",
+    "name": "Crucible Knights",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "crystalian",
+    "entity_type": "bosse",
+    "name": "Crystalian",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "crystalians",
+    "entity_type": "bosse",
+    "name": "Crystalians",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "curseblade_labirith",
+    "entity_type": "bosse",
+    "name": "Curseblade Labirith",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "dancer_of_ranah",
+    "entity_type": "bosse",
+    "name": "Dancer of Ranah",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "death_knight",
+    "entity_type": "bosse",
+    "name": "Death Knight",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "death_rite_bird",
+    "entity_type": "bosse",
+    "name": "Death Rite Bird",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "deathbird",
+    "entity_type": "bosse",
+    "name": "Deathbird",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "decaying_ekzykes",
+    "entity_type": "bosse",
+    "name": "Decaying Ekzykes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "demi_human_chief",
+    "entity_type": "bosse",
+    "name": "Demi-human Chief",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "demi_human_chiefs",
+    "entity_type": "bosse",
+    "name": "Demi-Human Chiefs",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "demi_human_queen_gilika",
+    "entity_type": "bosse",
+    "name": "Demi-Human Queen Gilika",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "demi_human_queen_maggie",
+    "entity_type": "bosse",
+    "name": "Demi-Human Queen Maggie",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "demi_human_queen_margot",
+    "entity_type": "bosse",
+    "name": "Demi-Human Queen Margot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "demi_human_queen_marigga",
+    "entity_type": "bosse",
+    "name": "Demi-Human Queen Marigga",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "demi_human_swordmaster_onze",
+    "entity_type": "bosse",
+    "name": "Demi-Human Swordmaster Onze",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "divine_beast_dancing_lion",
+    "entity_type": "bosse",
+    "name": "Divine Beast Dancing Lion",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "divine_bridge_golem",
+    "entity_type": "bosse",
+    "name": "Divine Bridge Golem",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "draconic_tree_sentinel",
+    "entity_type": "bosse",
+    "name": "Draconic Tree Sentinel",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "dragonkin_soldier",
+    "entity_type": "bosse",
+    "name": "Dragonkin Soldier",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "dragonkin_soldier_of_nokstella",
+    "entity_type": "bosse",
+    "name": "Dragonkin Soldier of Nokstella",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "dragonlord_placidusax",
+    "entity_type": "bosse",
+    "name": "Dragonlord Placidusax",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "dryleaf_dane",
+    "entity_type": "bosse",
+    "name": "Dryleaf Dane",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "elden_beast",
+    "entity_type": "bosse",
+    "name": "Elden Beast",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "elemer_of_the_briar",
+    "entity_type": "bosse",
+    "name": "Elemer of the Briar",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "erdtree_avatar",
+    "entity_type": "bosse",
+    "name": "Erdtree Avatar",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "erdtree_burial_watchdog",
+    "entity_type": "bosse",
+    "name": "Erdtree Burial Watchdog",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "esgar_priest_of_blood",
+    "entity_type": "bosse",
+    "name": "Esgar, Priest of Blood",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "fallingstar_beast",
+    "entity_type": "bosse",
+    "name": "Fallingstar Beast",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "fell_twins",
+    "entity_type": "bosse",
+    "name": "Fell Twins",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "fias_champions",
+    "entity_type": "bosse",
+    "name": "Fia's Champions",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "fire_giant",
+    "entity_type": "bosse",
+    "name": "Fire Giant",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "flying_dragon_agheel",
+    "entity_type": "bosse",
+    "name": "Flying Dragon Agheel",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "flying_dragon_greyll",
+    "entity_type": "bosse",
+    "name": "Flying Dragon Greyll",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "frenzied_duelist",
+    "entity_type": "bosse",
+    "name": "Frenzied Duelist",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "full_grown_fallingstar_beast",
+    "entity_type": "bosse",
+    "name": "Full-Grown Fallingstar Beast",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "glintstone_dragon_adula",
+    "entity_type": "bosse",
+    "name": "Glintstone Dragon Adula",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "glintstone_dragon_smarag",
+    "entity_type": "bosse",
+    "name": "Glintstone Dragon Smarag",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "god_devouring_serpent",
+    "entity_type": "bosse",
+    "name": "God-Devouring Serpent",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "godefroy_the_grafted",
+    "entity_type": "bosse",
+    "name": "Godefroy The Grafted",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "godfrey_first_elden_lord",
+    "entity_type": "bosse",
+    "name": "Godfrey, First Elden Lord",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "godfrey_first_elden_lord_golden_shade",
+    "entity_type": "bosse",
+    "name": "Godfrey, First Elden Lord (Golden Shade)",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "godfrey_first_elden_lord_hoarah_loux",
+    "entity_type": "bosse",
+    "name": "Godfrey, First Elden Lord (hoarah Loux)",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "godfrey_the_grafted",
+    "entity_type": "bosse",
+    "name": "Godfrey The Grafted",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "godrick_the_grafted",
+    "entity_type": "bosse",
+    "name": "Godrick the Grafted",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "godskin_apostle",
+    "entity_type": "bosse",
+    "name": "Godskin Apostle",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "godskin_apostle_and_godskin_noble",
+    "entity_type": "bosse",
+    "name": "Godskin Apostle and Godskin Noble",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "godskin_duo",
+    "entity_type": "bosse",
+    "name": "Godskin Duo",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "godskin_noble",
+    "entity_type": "bosse",
+    "name": "Godskin Noble",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "golden_hippopotamus",
+    "entity_type": "bosse",
+    "name": "Golden Hippopotamus",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "golem",
+    "entity_type": "bosse",
+    "name": "Golem",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "grafted_scion",
+    "entity_type": "bosse",
+    "name": "Grafted Scion",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "grave_warden_duelist",
+    "entity_type": "bosse",
+    "name": "Grave Warden Duelist",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "great_wyrm_theodorix",
+    "entity_type": "bosse",
+    "name": "Great Wyrm Theodorix",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "guardian_golem",
+    "entity_type": "bosse",
+    "name": "Guardian Golem",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "hoarah_loux_warrior",
+    "entity_type": "bosse",
+    "name": "Hoarah Loux, Warrior",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "jagged_peak_drake",
+    "entity_type": "bosse",
+    "name": "Jagged Peak Drake",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "jori_elder_inquisitor",
+    "entity_type": "bosse",
+    "name": "Jori, Elder Inquisitor",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "kindred_of_rot",
+    "entity_type": "bosse",
+    "name": "Kindred of Rot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "lamenter",
+    "entity_type": "bosse",
+    "name": "Lamenter",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "leonine_misbegotten",
+    "entity_type": "bosse",
+    "name": "Leonine Misbegotten",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "lichdragon_fortissax",
+    "entity_type": "bosse",
+    "name": "Lichdragon Fortissax",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "lion_guardian",
+    "entity_type": "bosse",
+    "name": "Lion Guardian",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "loretta_knight_of_the_haligtree",
+    "entity_type": "bosse",
+    "name": "Loretta, Knight of the Haligtree",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "mad_pumpkin_head",
+    "entity_type": "bosse",
+    "name": "Mad Pumpkin Head",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "magma_wyrm",
+    "entity_type": "bosse",
+    "name": "Magma Wyrm",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "magma_wyrm_makar",
+    "entity_type": "bosse",
+    "name": "MAGMA WYRM MAKAR",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "malenia_blade_of_miquella",
+    "entity_type": "bosse",
+    "name": "Malenia, Blade of Miquella",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "maliketh_the_black_blade",
+    "entity_type": "bosse",
+    "name": "Maliketh, The Black Blade",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "margit_the_fell_omen",
+    "entity_type": "bosse",
+    "name": "Margit, the Fell Omen",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "messmer_the_impaler",
+    "entity_type": "bosse",
+    "name": "Messmer the Impaler",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "metyr_mother_of_fingers",
+    "entity_type": "bosse",
+    "name": "Metyr, Mother of Fingers",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "midra_lord_of_frenzied_flame",
+    "entity_type": "bosse",
+    "name": "Midra, Lord of Frenzied Flame",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "mimic_tear",
+    "entity_type": "bosse",
+    "name": "Mimic Tear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "miranda_the_blighted_bloom",
+    "entity_type": "bosse",
+    "name": "Miranda The Blighted Bloom",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "misbegotten_crusader",
+    "entity_type": "bosse",
+    "name": "Misbegotten Crusader",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "misbegotten_warrior",
+    "entity_type": "bosse",
+    "name": "Misbegotten Warrior",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "mohg_lord_of_blood",
+    "entity_type": "bosse",
+    "name": "Mohg, Lord of Blood",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "mohg_the_omen",
+    "entity_type": "bosse",
+    "name": "Mohg, the Omen",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "morgott_the_grace_given_veiled_monarch_omen_king",
+    "entity_type": "bosse",
+    "name": "Morgott The Grace-Given Veiled Monarch Omen King",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "necromancer_garris",
+    "entity_type": "bosse",
+    "name": "Necromancer Garris",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "nights_cavalry",
+    "entity_type": "bosse",
+    "name": "Night's Cavalry",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "nox_swordstress_nox_monk",
+    "entity_type": "bosse",
+    "name": "Nox Swordstress & Nox Monk",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "nox_swordstress_nox_priest",
+    "entity_type": "bosse",
+    "name": "Nox Swordstress & Nox Priest",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "omenkiller",
+    "entity_type": "bosse",
+    "name": "Omenkiller",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "onyx_lord",
+    "entity_type": "bosse",
+    "name": "Onyx Lord",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "patches",
+    "entity_type": "bosse",
+    "name": "Patches",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "perfumer_tricia",
+    "entity_type": "bosse",
+    "name": "Perfumer Tricia",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "perfumer_tricia_and_misbegotten_warrior",
+    "entity_type": "bosse",
+    "name": "Perfumer Tricia and Misbegotten Warrior",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "promised_consort_radahn",
+    "entity_type": "bosse",
+    "name": "Promised Consort Radahn",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "pumpkin_head",
+    "entity_type": "bosse",
+    "name": "Pumpkin Head",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "putrescent_knight",
+    "entity_type": "bosse",
+    "name": "Putrescent Knight",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "putrid_avatar",
+    "entity_type": "bosse",
+    "name": "Putrid Avatar",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "putrid_grave_warden_duelist",
+    "entity_type": "bosse",
+    "name": "Putrid Grave Warden Duelist",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "putrid_tree_spirit",
+    "entity_type": "bosse",
+    "name": "Putrid Tree Spirit",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "radagon_of_the_golden_order",
+    "entity_type": "bosse",
+    "name": "Radagon of the Golden Order",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "radahn_consort_of_miquella",
+    "entity_type": "bosse",
+    "name": "Radahn, Consort of Miquella",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "rakshasa",
+    "entity_type": "bosse",
+    "name": "Rakshasa",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "ralva_the_great_red_bear",
+    "entity_type": "bosse",
+    "name": "Ralva the Great Red Bear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "red_bear",
+    "entity_type": "bosse",
+    "name": "Red Bear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "red_wolf_of_radagon",
+    "entity_type": "bosse",
+    "name": "Red Wolf of Radagon",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "red_wolf_of_the_champion",
+    "entity_type": "bosse",
+    "name": "Red Wolf of the Champion",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "regal_ancestor_spirit",
+    "entity_type": "bosse",
+    "name": "Regal Ancestor Spirit",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "rellana_twin_moon_knight",
+    "entity_type": "bosse",
+    "name": "Rellana, Twin Moon Knight",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "rennala_carian_queen_of_the_full_moon",
+    "entity_type": "bosse",
+    "name": "Rennala Carian Queen of the Full Moon",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "rick_soldier_of_god",
+    "entity_type": "bosse",
+    "name": "Rick, Soldier Of God",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "romina_saint_of_the_bud",
+    "entity_type": "bosse",
+    "name": "Romina, Saint of the Bud",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "roundtable_knight_vyke",
+    "entity_type": "bosse",
+    "name": "Roundtable Knight Vyke",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "royal_knight_loretta",
+    "entity_type": "bosse",
+    "name": "Royal Knight Loretta",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "royal_revenant",
+    "entity_type": "bosse",
+    "name": "Royal Revenant",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "rugalea_the_great_red_bear",
+    "entity_type": "bosse",
+    "name": "Rugalea the Great Red Bear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "runebear",
+    "entity_type": "bosse",
+    "name": "Runebear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "rykard_lord_of_blasphemy",
+    "entity_type": "bosse",
+    "name": "Rykard, Lord of Blasphemy",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "sanguine_noble",
+    "entity_type": "bosse",
+    "name": "Sanguine Noble",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "scadutree_avatar",
+    "entity_type": "bosse",
+    "name": "Scadutree Avatar",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "scaly_misbegotten",
+    "entity_type": "bosse",
+    "name": "Scaly Misbegotten",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "sir_gideon_ofnir_the_all_knowing",
+    "entity_type": "bosse",
+    "name": "Sir Gideon Ofnir, The All-Knowing",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "soldier_of_godrick",
+    "entity_type": "bosse",
+    "name": "Soldier Of Godrick",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "spirit_caller_snail",
+    "entity_type": "bosse",
+    "name": "Spirit-caller Snail",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "spiritcaller_snail",
+    "entity_type": "bosse",
+    "name": "Spiritcaller Snail",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "starscourge_radahn",
+    "entity_type": "bosse",
+    "name": "Starscourge Radahn",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "stonedigger_troll",
+    "entity_type": "bosse",
+    "name": "Stonedigger Troll",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      }
+    ]
+  },
+  {
+    "slug": "tibia_mariner",
+    "entity_type": "bosse",
+    "name": "Tibia Mariner",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "tree_sentinel",
+    "entity_type": "bosse",
+    "name": "Tree Sentinel",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "ulcerated_tree_spirit",
+    "entity_type": "bosse",
+    "name": "Ulcerated Tree Spirit",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "valiant_gargoyle",
+    "entity_type": "bosse",
+    "name": "Valiant Gargoyle",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  },
+  {
+    "slug": "wormface",
+    "entity_type": "bosse",
+    "name": "Wormface",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/bosses.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/bosses.csv",
+        "sha256": "91c953ce8018d1f84991c404a0ca25bdcf6d80883872e977feb17ed22b2ac518",
+        "retrieved_at": "2025-11-20T20:24:54.512675"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "bosses.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/bosses.csv",
+        "sha256": "d98e215f674b6124770e02aba520cb45f4a66e25a062ecf1d89c2f0d5eaebb3f",
+        "retrieved_at": "2025-11-20T20:24:54.473375"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:bosses",
+        "source_file": "bosses.json",
+        "uri": "https://eldenring.fanapis.com/api/bosses",
+        "sha256": "4be7d8d82b83bd988e8ad39040695dd2a7f8ff2591e26f4c7f5bdbd376f994d0",
+        "retrieved_at": "2025-11-20T20:24:54.999535"
+      }
+    ]
+  }
+]

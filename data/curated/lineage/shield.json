@@ -1,0 +1,2291 @@
+[
+  {
+    "slug": "albinauric_shield",
+    "entity_type": "shield",
+    "name": "Albinauric Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "ants_skull_plate",
+    "entity_type": "shield",
+    "name": "Ant's Skull Plate",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "banished_knights_shield",
+    "entity_type": "shield",
+    "name": "Banished Knight's Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "beast_crest_heater_shield",
+    "entity_type": "shield",
+    "name": "Beast Crest Heater Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "beastmans_jar_shield",
+    "entity_type": "shield",
+    "name": "Beastman's Jar-Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "black_leather_shield",
+    "entity_type": "shield",
+    "name": "Black Leather Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "black_steel_greatshield",
+    "entity_type": "shield",
+    "name": "Black Steel Greatshield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      }
+    ]
+  },
+  {
+    "slug": "blue_crest_heater_shield",
+    "entity_type": "shield",
+    "name": "Blue Crest Heater Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "blue_gold_kite_shield",
+    "entity_type": "shield",
+    "name": "Blue-Gold Kite Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "blue_white_wooden_shield",
+    "entity_type": "shield",
+    "name": "Blue-White Wooden Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "brass_shield",
+    "entity_type": "shield",
+    "name": "Brass Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "briar_greatshield",
+    "entity_type": "shield",
+    "name": "Briar Greatshield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "buckler",
+    "entity_type": "shield",
+    "name": "Buckler",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "candletree_wooden_shield",
+    "entity_type": "shield",
+    "name": "Candletree Wooden Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "carian_knights_shield",
+    "entity_type": "shield",
+    "name": "Carian Knight's Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "carian_thrusting_shield",
+    "entity_type": "shield",
+    "name": "Carian Thrusting Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      }
+    ]
+  },
+  {
+    "slug": "coil_shield",
+    "entity_type": "shield",
+    "name": "Coil Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "crossed_tree_towershield",
+    "entity_type": "shield",
+    "name": "Crossed-Tree Towershield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "crucible_hornshield",
+    "entity_type": "shield",
+    "name": "Crucible Hornshield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "cuckoo_greatshield",
+    "entity_type": "shield",
+    "name": "Cuckoo Greatshield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "distinguished_greatshield",
+    "entity_type": "shield",
+    "name": "Distinguished Greatshield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "dragon_towershield",
+    "entity_type": "shield",
+    "name": "Dragon Towershield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "dragonclaw_shield",
+    "entity_type": "shield",
+    "name": "Dragonclaw Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "dueling_shield",
+    "entity_type": "shield",
+    "name": "Dueling Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      }
+    ]
+  },
+  {
+    "slug": "eclipse_crest_greatshield",
+    "entity_type": "shield",
+    "name": "Eclipse Crest Greatshield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "eclipse_crest_heater_shield",
+    "entity_type": "shield",
+    "name": "Eclipse Crest Heater Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "erdtree_greatshield",
+    "entity_type": "shield",
+    "name": "Erdtree Greatshield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "fingerprint_stone_shield",
+    "entity_type": "shield",
+    "name": "Fingerprint Stone Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "flame_crest_wooden_shield",
+    "entity_type": "shield",
+    "name": "Flame Crest Wooden Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "gilded_greatshield",
+    "entity_type": "shield",
+    "name": "Gilded Greatshield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "gilded_iron_shield",
+    "entity_type": "shield",
+    "name": "Gilded Iron Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "golden_beast_crest_shield",
+    "entity_type": "shield",
+    "name": "Golden Beast Crest Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "golden_greatshield",
+    "entity_type": "shield",
+    "name": "Golden Greatshield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "golden_lion_shield",
+    "entity_type": "shield",
+    "name": "Golden Lion Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      }
+    ]
+  },
+  {
+    "slug": "great_turtle_shell",
+    "entity_type": "shield",
+    "name": "Great Turtle Shell",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "haligtree_crest_greatshield",
+    "entity_type": "shield",
+    "name": "Haligtree Crest Greatshield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "hawk_crest_wooden_shield",
+    "entity_type": "shield",
+    "name": "Hawk Crest Wooden Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "heater_shield",
+    "entity_type": "shield",
+    "name": "Heater Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "horse_crest_wooden_shield",
+    "entity_type": "shield",
+    "name": "Horse Crest Wooden Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "ice_crest_shield",
+    "entity_type": "shield",
+    "name": "Ice Crest Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "icon_shield",
+    "entity_type": "shield",
+    "name": "Icon Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "inverted_hawk_heater_shield",
+    "entity_type": "shield",
+    "name": "Inverted Hawk Heater Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "inverted_hawk_towershield",
+    "entity_type": "shield",
+    "name": "Inverted Hawk Towershield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "iron_roundshield",
+    "entity_type": "shield",
+    "name": "Iron Roundshield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "jellyfish_shield",
+    "entity_type": "shield",
+    "name": "Jellyfish Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "kite_shield",
+    "entity_type": "shield",
+    "name": "Kite Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "large_leather_shield",
+    "entity_type": "shield",
+    "name": "Large Leather Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "lordsworns_shield",
+    "entity_type": "shield",
+    "name": "Lordsworn's Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "man_serpents_shield",
+    "entity_type": "shield",
+    "name": "Man-Serpent's Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "manor_towershield",
+    "entity_type": "shield",
+    "name": "Manor Towershield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "marred_leather_shield",
+    "entity_type": "shield",
+    "name": "Marred Leather Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "marred_wooden_shield",
+    "entity_type": "shield",
+    "name": "Marred Wooden Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "messmer_soldier_shield",
+    "entity_type": "shield",
+    "name": "Messmer Soldier Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      }
+    ]
+  },
+  {
+    "slug": "one_eyed_shield",
+    "entity_type": "shield",
+    "name": "One-Eyed Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "perfumers_shield",
+    "entity_type": "shield",
+    "name": "Perfumer's Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "pillory_shield",
+    "entity_type": "shield",
+    "name": "Pillory Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "red_crest_heater_shield",
+    "entity_type": "shield",
+    "name": "Red Crest Heater Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "red_thorn_roundshield",
+    "entity_type": "shield",
+    "name": "Red Thorn Roundshield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "redmane_greatshield",
+    "entity_type": "shield",
+    "name": "Redmane Greatshield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "rickety_shield",
+    "entity_type": "shield",
+    "name": "Rickety Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "rift_shield",
+    "entity_type": "shield",
+    "name": "Rift Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "riveted_wooden_shield",
+    "entity_type": "shield",
+    "name": "Riveted Wooden Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "round_shield",
+    "entity_type": "shield",
+    "name": "Round Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "scorpion_kite_shield",
+    "entity_type": "shield",
+    "name": "Scorpion Kite Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "scripture_wooden_shield",
+    "entity_type": "shield",
+    "name": "Scripture Wooden Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "serpent_crest_shield",
+    "entity_type": "shield",
+    "name": "Serpent Crest Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      }
+    ]
+  },
+  {
+    "slug": "shield_of_night",
+    "entity_type": "shield",
+    "name": "Shield of Night",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      }
+    ]
+  },
+  {
+    "slug": "shield_of_the_guilty",
+    "entity_type": "shield",
+    "name": "Shield of the Guilty",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "silver_mirrorshield",
+    "entity_type": "shield",
+    "name": "Silver Mirrorshield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "smithscript_shield",
+    "entity_type": "shield",
+    "name": "Smithscript Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      }
+    ]
+  },
+  {
+    "slug": "smoldering_shield",
+    "entity_type": "shield",
+    "name": "Smoldering Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "spiked_palisade_shield",
+    "entity_type": "shield",
+    "name": "Spiked Palisade Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "spiralhorn_shield",
+    "entity_type": "shield",
+    "name": "Spiralhorn Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "sun_realm_shield",
+    "entity_type": "shield",
+    "name": "Sun Realm Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "twinbird_kite_shield",
+    "entity_type": "shield",
+    "name": "Twinbird Kite Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "verdigris_greatshield",
+    "entity_type": "shield",
+    "name": "Verdigris Greatshield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      }
+    ]
+  },
+  {
+    "slug": "visage_shield",
+    "entity_type": "shield",
+    "name": "Visage Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  },
+  {
+    "slug": "wolf_crest_shield",
+    "entity_type": "shield",
+    "name": "Wolf Crest Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      }
+    ]
+  },
+  {
+    "slug": "wooden_greatshield",
+    "entity_type": "shield",
+    "name": "Wooden Greatshield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/shields.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/shields.csv",
+        "sha256": "c6e69dc779d0179edefe32241cf4fda999a39b35221d7f7502d232fde995edb7",
+        "retrieved_at": "2025-11-20T20:24:54.543069"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "shields.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/shields.csv",
+        "sha256": "5dd51d3bb9eae1353e86c2551375e7eb728e8f590ea525f1c76a417952ba31d9",
+        "retrieved_at": "2025-11-20T20:24:54.487190"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:shields",
+        "source_file": "shields.json",
+        "uri": "https://eldenring.fanapis.com/api/shields",
+        "sha256": "1a27aea012e4b00b67176cda50cd8f6a28d8698545c9812ce08f240148f7ff94",
+        "retrieved_at": "2025-11-20T20:24:54.998264"
+      }
+    ]
+  }
+]

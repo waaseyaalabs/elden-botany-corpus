@@ -13,8 +13,19 @@ class Provenance(BaseModel):
     """Source provenance metadata."""
 
     source: str = Field(description="Source identifier (e.g., 'kaggle_base', 'github_api')")
+    dataset: str | None = Field(
+        default=None,
+        description="Dataset identifier or name",
+    )
+    source_file: str | None = Field(
+        default=None,
+        description="Relative path or file identifier",
+    )
     uri: str = Field(description="Source URI or URL")
-    sha256: str | None = Field(default=None, description="SHA256 hash of source file")
+    sha256: str | None = Field(
+        default=None,
+        description="SHA256 hash of source file",
+    )
     retrieved_at: datetime = Field(
         default_factory=datetime.utcnow, description="Retrieval timestamp"
     )
@@ -25,7 +36,7 @@ class CorpusDocument(BaseModel):
 
     id: UUID = Field(default_factory=uuid4)
     source_type: str = Field(
-        description="Source type: kaggle_base, kaggle_dlc, github_api, dlc_textdump"
+        description=("Source type: kaggle_base, kaggle_dlc, github_api, dlc_textdump")
     )
     source_uri: str = Field(description="Source URI")
     title: str | None = Field(default=None)
@@ -44,7 +55,8 @@ class CorpusChunk(BaseModel):
     name: str = Field(description="Entity name")
     text: str = Field(description="Full merged description/dialogue")
     meta: dict[str, Any] = Field(
-        default_factory=dict, description="Additional metadata (stats, scaling, etc.)"
+        default_factory=dict,
+        description="Additional metadata (stats, scaling, etc.)",
     )
     span_start: int | None = Field(default=None)
     span_end: int | None = Field(default=None)
@@ -93,7 +105,8 @@ def normalize_name_for_matching(text: str) -> str:
     """
     Normalize text for fuzzy matching.
 
-    More aggressive than slug creation - removes all non-alphanumeric characters
+    More aggressive than slug creation.
+    Removes all non-alphanumeric characters
     and collapses whitespace for better matching.
     """
     text = text.lower()

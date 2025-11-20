@@ -1,0 +1,1445 @@
+[
+  {
+    "slug": "arrow",
+    "entity_type": "ammo",
+    "name": "Arrow",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "ballista_bolt",
+    "entity_type": "ammo",
+    "name": "Ballista Bolt",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "black_key_bolt",
+    "entity_type": "ammo",
+    "name": "Black-Key Bolt",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "bloodbone_arrow",
+    "entity_type": "ammo",
+    "name": "Bloodbone Arrow",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "bloodbone_arrow_fletched",
+    "entity_type": "ammo",
+    "name": "Bloodbone Arrow (Fletched)",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "bloodbone_bolt",
+    "entity_type": "ammo",
+    "name": "Bloodbone Bolt",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "bolt",
+    "entity_type": "ammo",
+    "name": "Bolt",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "bone_arrow",
+    "entity_type": "ammo",
+    "name": "Bone Arrow",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "bone_arrow_fletched",
+    "entity_type": "ammo",
+    "name": "Bone Arrow (Fletched)",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "bone_ballista_bolt",
+    "entity_type": "ammo",
+    "name": "Bone Ballista Bolt",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "bone_bolt",
+    "entity_type": "ammo",
+    "name": "Bone Bolt",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "bone_great_arrow",
+    "entity_type": "ammo",
+    "name": "Bone Great Arrow",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      }
+    ]
+  },
+  {
+    "slug": "bone_great_arrow_fletched",
+    "entity_type": "ammo",
+    "name": "Bone Great Arrow (Fletched)",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      }
+    ]
+  },
+  {
+    "slug": "burred_bolt",
+    "entity_type": "ammo",
+    "name": "Burred Bolt",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "coldbone_arrow",
+    "entity_type": "ammo",
+    "name": "Coldbone Arrow",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      }
+    ]
+  },
+  {
+    "slug": "coldbone_arrow_fletched",
+    "entity_type": "ammo",
+    "name": "Coldbone Arrow (Fletched)",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      }
+    ]
+  },
+  {
+    "slug": "coldbone_bolt",
+    "entity_type": "ammo",
+    "name": "Coldbone Bolt",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      }
+    ]
+  },
+  {
+    "slug": "dwelling_arrow",
+    "entity_type": "ammo",
+    "name": "Dwelling Arrow",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "explosive_bolt",
+    "entity_type": "ammo",
+    "name": "Explosive Bolt",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "explosive_greatbolt",
+    "entity_type": "ammo",
+    "name": "Explosive Greatbolt",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "fire_arrow",
+    "entity_type": "ammo",
+    "name": "Fire Arrow",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "firebone_arrow",
+    "entity_type": "ammo",
+    "name": "Firebone Arrow",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "firebone_arrow_fletched",
+    "entity_type": "ammo",
+    "name": "Firebone Arrow (Fletched)",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "firebone_bolt",
+    "entity_type": "ammo",
+    "name": "Firebone Bolt",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "flaming_bolt",
+    "entity_type": "ammo",
+    "name": "Flaming Bolt",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "golden_arrow",
+    "entity_type": "ammo",
+    "name": "Golden Arrow",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "golden_bolt",
+    "entity_type": "ammo",
+    "name": "Golden Bolt",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "golden_great_arrow",
+    "entity_type": "ammo",
+    "name": "Golden Great Arrow",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "golems_great_arrow",
+    "entity_type": "ammo",
+    "name": "Golem's Great Arrow",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "golems_magic_arrow",
+    "entity_type": "ammo",
+    "name": "Golem's Magic Arrow",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      }
+    ]
+  },
+  {
+    "slug": "great_arrow",
+    "entity_type": "ammo",
+    "name": "Great Arrow",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "haligbone_arrow",
+    "entity_type": "ammo",
+    "name": "Haligbone Arrow",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "haligbone_arrow_fletched",
+    "entity_type": "ammo",
+    "name": "Haligbone Arrow (Fletched)",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "haligbone_bolt",
+    "entity_type": "ammo",
+    "name": "Haligbone Bolt",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "igons_harpoon",
+    "entity_type": "ammo",
+    "name": "Igon's Harpoon",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      }
+    ]
+  },
+  {
+    "slug": "lightning_greabolt",
+    "entity_type": "ammo",
+    "name": "Lightning Greabolt",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "lightning_greatbolt",
+    "entity_type": "ammo",
+    "name": "Lightning Greatbolt",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      }
+    ]
+  },
+  {
+    "slug": "lightningbone_arrow",
+    "entity_type": "ammo",
+    "name": "Lightningbone Arrow",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "lightningbone_arrow_fletched",
+    "entity_type": "ammo",
+    "name": "Lightningbone Arrow (Fletched)",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "lightningbone_bolt",
+    "entity_type": "ammo",
+    "name": "Lightningbone Bolt",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "lordsworns_bolt",
+    "entity_type": "ammo",
+    "name": "Lordsworn's Bolt",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "magicbone_arrow",
+    "entity_type": "ammo",
+    "name": "Magicbone Arrow",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "magicbone_arrow_fletched",
+    "entity_type": "ammo",
+    "name": "Magicbone Arrow (Fletched)",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "magicbone_bolt",
+    "entity_type": "ammo",
+    "name": "Magicbone Bolt",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "meteor_bolt",
+    "entity_type": "ammo",
+    "name": "Meteor Bolt",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "perfumers_bolt",
+    "entity_type": "ammo",
+    "name": "Perfumer's Bolt",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "piquebone_arrow",
+    "entity_type": "ammo",
+    "name": "Piquebone Arrow",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      }
+    ]
+  },
+  {
+    "slug": "piquebone_arrow_fletched",
+    "entity_type": "ammo",
+    "name": "Piquebone Arrow (Fletched)",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      }
+    ]
+  },
+  {
+    "slug": "piquebone_bolt",
+    "entity_type": "ammo",
+    "name": "Piquebone Bolt",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      }
+    ]
+  },
+  {
+    "slug": "poisonbone_arrow",
+    "entity_type": "ammo",
+    "name": "Poisonbone Arrow",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "poisonbone_arrow_fletched",
+    "entity_type": "ammo",
+    "name": "Poisonbone Arrow (Fletched)",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "poisonbone_bolt",
+    "entity_type": "ammo",
+    "name": "Poisonbone Bolt",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "rabbaths_greatbolt",
+    "entity_type": "ammo",
+    "name": "Rabbath's Greatbolt",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      }
+    ]
+  },
+  {
+    "slug": "radahns_spear",
+    "entity_type": "ammo",
+    "name": "Radahn's Spear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "rainbow_stone_arrow",
+    "entity_type": "ammo",
+    "name": "Rainbow Stone Arrow",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "rainbow_stone_arrow_fletched",
+    "entity_type": "ammo",
+    "name": "Rainbow Stone Arrow (Fletched)",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      }
+    ]
+  },
+  {
+    "slug": "rotbone_arrow",
+    "entity_type": "ammo",
+    "name": "Rotbone Arrow",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "rotbone_arrow_fletched",
+    "entity_type": "ammo",
+    "name": "Rotbone Arrow (Fletched)",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "rotbone_bolt",
+    "entity_type": "ammo",
+    "name": "Rotbone Bolt",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "serpent_arrow",
+    "entity_type": "ammo",
+    "name": "Serpent Arrow",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "shattershard_arrow",
+    "entity_type": "ammo",
+    "name": "Shattershard Arrow",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "shattershard_arrow_fletched",
+    "entity_type": "ammo",
+    "name": "Shattershard Arrow (Fletched)",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "sleepbone_arrow",
+    "entity_type": "ammo",
+    "name": "Sleepbone Arrow",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "sleepbone_arrow_fletched",
+    "entity_type": "ammo",
+    "name": "Sleepbone Arrow (Fletched)",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "sleepbone_bolt",
+    "entity_type": "ammo",
+    "name": "Sleepbone Bolt",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      }
+    ]
+  },
+  {
+    "slug": "spiritflame_arrow",
+    "entity_type": "ammo",
+    "name": "Spiritflame Arrow",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "ammos.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/ammos.csv",
+        "sha256": "b0ce4f6fbcd3f91f8eaa9d04e236cffa49eb543d6159204969c8a1b441e74629",
+        "retrieved_at": "2025-11-20T20:24:54.462244"
+      }
+    ]
+  },
+  {
+    "slug": "st_trinas_arrow",
+    "entity_type": "ammo",
+    "name": "St. Trina's Arrow",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      }
+    ]
+  },
+  {
+    "slug": "storm_arrow",
+    "entity_type": "ammo",
+    "name": "Storm Arrow",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      }
+    ]
+  },
+  {
+    "slug": "stormwing_bone_arrow",
+    "entity_type": "ammo",
+    "name": "Stormwing Bone Arrow",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/ammos.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/ammos.csv",
+        "sha256": "475bbbe969d861b694a1394d7620c374d4166ee9643f62dc0c93e64b944566d5",
+        "retrieved_at": "2025-11-20T20:24:54.520328"
+      }
+    ]
+  }
+]

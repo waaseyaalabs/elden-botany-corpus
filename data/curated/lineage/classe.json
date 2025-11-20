@@ -1,0 +1,301 @@
+[
+  {
+    "slug": "astrologer",
+    "entity_type": "classe",
+    "name": "Astrologer",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "classes.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/classes.csv",
+        "sha256": "ddebdd94ef170771ecd0abe5c5f634b4307675cda5902955a2134f2daa89fbce",
+        "retrieved_at": "2025-11-20T20:24:54.475059"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:classes",
+        "source_file": "classes.json",
+        "uri": "https://eldenring.fanapis.com/api/classes",
+        "sha256": "583cae5d48aeee882d1ab25aefce987bab8513df939e13765e9e0d39bb43e972",
+        "retrieved_at": "2025-11-20T20:24:55.000040"
+      }
+    ]
+  },
+  {
+    "slug": "bandit",
+    "entity_type": "classe",
+    "name": "Bandit",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "classes.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/classes.csv",
+        "sha256": "ddebdd94ef170771ecd0abe5c5f634b4307675cda5902955a2134f2daa89fbce",
+        "retrieved_at": "2025-11-20T20:24:54.475059"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:classes",
+        "source_file": "classes.json",
+        "uri": "https://eldenring.fanapis.com/api/classes",
+        "sha256": "583cae5d48aeee882d1ab25aefce987bab8513df939e13765e9e0d39bb43e972",
+        "retrieved_at": "2025-11-20T20:24:55.000040"
+      }
+    ]
+  },
+  {
+    "slug": "bloody_wolf",
+    "entity_type": "classe",
+    "name": "Bloody Wolf",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "classes.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/classes.csv",
+        "sha256": "ddebdd94ef170771ecd0abe5c5f634b4307675cda5902955a2134f2daa89fbce",
+        "retrieved_at": "2025-11-20T20:24:54.475059"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:classes",
+        "source_file": "classes.json",
+        "uri": "https://eldenring.fanapis.com/api/classes",
+        "sha256": "583cae5d48aeee882d1ab25aefce987bab8513df939e13765e9e0d39bb43e972",
+        "retrieved_at": "2025-11-20T20:24:55.000040"
+      }
+    ]
+  },
+  {
+    "slug": "champion",
+    "entity_type": "classe",
+    "name": "Champion",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "classes.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/classes.csv",
+        "sha256": "ddebdd94ef170771ecd0abe5c5f634b4307675cda5902955a2134f2daa89fbce",
+        "retrieved_at": "2025-11-20T20:24:54.475059"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:classes",
+        "source_file": "classes.json",
+        "uri": "https://eldenring.fanapis.com/api/classes",
+        "sha256": "583cae5d48aeee882d1ab25aefce987bab8513df939e13765e9e0d39bb43e972",
+        "retrieved_at": "2025-11-20T20:24:55.000040"
+      }
+    ]
+  },
+  {
+    "slug": "confessor",
+    "entity_type": "classe",
+    "name": "Confessor",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "classes.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/classes.csv",
+        "sha256": "ddebdd94ef170771ecd0abe5c5f634b4307675cda5902955a2134f2daa89fbce",
+        "retrieved_at": "2025-11-20T20:24:54.475059"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:classes",
+        "source_file": "classes.json",
+        "uri": "https://eldenring.fanapis.com/api/classes",
+        "sha256": "583cae5d48aeee882d1ab25aefce987bab8513df939e13765e9e0d39bb43e972",
+        "retrieved_at": "2025-11-20T20:24:55.000040"
+      }
+    ]
+  },
+  {
+    "slug": "enchanted_knight",
+    "entity_type": "classe",
+    "name": "Enchanted Knight",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "classes.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/classes.csv",
+        "sha256": "ddebdd94ef170771ecd0abe5c5f634b4307675cda5902955a2134f2daa89fbce",
+        "retrieved_at": "2025-11-20T20:24:54.475059"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:classes",
+        "source_file": "classes.json",
+        "uri": "https://eldenring.fanapis.com/api/classes",
+        "sha256": "583cae5d48aeee882d1ab25aefce987bab8513df939e13765e9e0d39bb43e972",
+        "retrieved_at": "2025-11-20T20:24:55.000040"
+      }
+    ]
+  },
+  {
+    "slug": "hero",
+    "entity_type": "classe",
+    "name": "Hero",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "classes.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/classes.csv",
+        "sha256": "ddebdd94ef170771ecd0abe5c5f634b4307675cda5902955a2134f2daa89fbce",
+        "retrieved_at": "2025-11-20T20:24:54.475059"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:classes",
+        "source_file": "classes.json",
+        "uri": "https://eldenring.fanapis.com/api/classes",
+        "sha256": "583cae5d48aeee882d1ab25aefce987bab8513df939e13765e9e0d39bb43e972",
+        "retrieved_at": "2025-11-20T20:24:55.000040"
+      }
+    ]
+  },
+  {
+    "slug": "prisoner",
+    "entity_type": "classe",
+    "name": "Prisoner",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "classes.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/classes.csv",
+        "sha256": "ddebdd94ef170771ecd0abe5c5f634b4307675cda5902955a2134f2daa89fbce",
+        "retrieved_at": "2025-11-20T20:24:54.475059"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:classes",
+        "source_file": "classes.json",
+        "uri": "https://eldenring.fanapis.com/api/classes",
+        "sha256": "583cae5d48aeee882d1ab25aefce987bab8513df939e13765e9e0d39bb43e972",
+        "retrieved_at": "2025-11-20T20:24:55.000040"
+      }
+    ]
+  },
+  {
+    "slug": "prophet",
+    "entity_type": "classe",
+    "name": "Prophet",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "classes.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/classes.csv",
+        "sha256": "ddebdd94ef170771ecd0abe5c5f634b4307675cda5902955a2134f2daa89fbce",
+        "retrieved_at": "2025-11-20T20:24:54.475059"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:classes",
+        "source_file": "classes.json",
+        "uri": "https://eldenring.fanapis.com/api/classes",
+        "sha256": "583cae5d48aeee882d1ab25aefce987bab8513df939e13765e9e0d39bb43e972",
+        "retrieved_at": "2025-11-20T20:24:55.000040"
+      }
+    ]
+  },
+  {
+    "slug": "samurai",
+    "entity_type": "classe",
+    "name": "Samurai",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "classes.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/classes.csv",
+        "sha256": "ddebdd94ef170771ecd0abe5c5f634b4307675cda5902955a2134f2daa89fbce",
+        "retrieved_at": "2025-11-20T20:24:54.475059"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:classes",
+        "source_file": "classes.json",
+        "uri": "https://eldenring.fanapis.com/api/classes",
+        "sha256": "583cae5d48aeee882d1ab25aefce987bab8513df939e13765e9e0d39bb43e972",
+        "retrieved_at": "2025-11-20T20:24:55.000040"
+      }
+    ]
+  },
+  {
+    "slug": "vagabond",
+    "entity_type": "classe",
+    "name": "Vagabond",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "classes.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/classes.csv",
+        "sha256": "ddebdd94ef170771ecd0abe5c5f634b4307675cda5902955a2134f2daa89fbce",
+        "retrieved_at": "2025-11-20T20:24:54.475059"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:classes",
+        "source_file": "classes.json",
+        "uri": "https://eldenring.fanapis.com/api/classes",
+        "sha256": "583cae5d48aeee882d1ab25aefce987bab8513df939e13765e9e0d39bb43e972",
+        "retrieved_at": "2025-11-20T20:24:55.000040"
+      }
+    ]
+  },
+  {
+    "slug": "warrior",
+    "entity_type": "classe",
+    "name": "Warrior",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "classes.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/classes.csv",
+        "sha256": "ddebdd94ef170771ecd0abe5c5f634b4307675cda5902955a2134f2daa89fbce",
+        "retrieved_at": "2025-11-20T20:24:54.475059"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:classes",
+        "source_file": "classes.json",
+        "uri": "https://eldenring.fanapis.com/api/classes",
+        "sha256": "583cae5d48aeee882d1ab25aefce987bab8513df939e13765e9e0d39bb43e972",
+        "retrieved_at": "2025-11-20T20:24:55.000040"
+      }
+    ]
+  },
+  {
+    "slug": "wretch",
+    "entity_type": "classe",
+    "name": "Wretch",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "classes.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/classes.csv",
+        "sha256": "ddebdd94ef170771ecd0abe5c5f634b4307675cda5902955a2134f2daa89fbce",
+        "retrieved_at": "2025-11-20T20:24:54.475059"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:classes",
+        "source_file": "classes.json",
+        "uri": "https://eldenring.fanapis.com/api/classes",
+        "sha256": "583cae5d48aeee882d1ab25aefce987bab8513df939e13765e9e0d39bb43e972",
+        "retrieved_at": "2025-11-20T20:24:55.000040"
+      }
+    ]
+  }
+]

@@ -1,0 +1,137 @@
+[
+  {
+    "slug": "godricks_great_rune",
+    "entity_type": "great_rune",
+    "name": "Godrick's Great Rune",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/greatRunes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/greatRunes.csv",
+        "sha256": "a148d250320a917cbc17008193074559e0d1c98d76f399670fa399be8e28a338",
+        "retrieved_at": "2025-11-20T20:24:54.528515"
+      }
+    ]
+  },
+  {
+    "slug": "great_rune_of_the_unborn",
+    "entity_type": "great_rune",
+    "name": "Great Rune of the Unborn",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/greatRunes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/greatRunes.csv",
+        "sha256": "a148d250320a917cbc17008193074559e0d1c98d76f399670fa399be8e28a338",
+        "retrieved_at": "2025-11-20T20:24:54.528515"
+      }
+    ]
+  },
+  {
+    "slug": "malenias_great_rune",
+    "entity_type": "great_rune",
+    "name": "Malenia's Great Rune",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/greatRunes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/greatRunes.csv",
+        "sha256": "a148d250320a917cbc17008193074559e0d1c98d76f399670fa399be8e28a338",
+        "retrieved_at": "2025-11-20T20:24:54.528515"
+      }
+    ]
+  },
+  {
+    "slug": "miquellas_great_rune",
+    "entity_type": "great_rune",
+    "name": "Miquella's Great Rune",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/greatRunes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/greatRunes.csv",
+        "sha256": "a148d250320a917cbc17008193074559e0d1c98d76f399670fa399be8e28a338",
+        "retrieved_at": "2025-11-20T20:24:54.528515"
+      }
+    ]
+  },
+  {
+    "slug": "mohgs_great_rune",
+    "entity_type": "great_rune",
+    "name": "Mohg's Great Rune",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/greatRunes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/greatRunes.csv",
+        "sha256": "a148d250320a917cbc17008193074559e0d1c98d76f399670fa399be8e28a338",
+        "retrieved_at": "2025-11-20T20:24:54.528515"
+      }
+    ]
+  },
+  {
+    "slug": "morgotts_great_rune",
+    "entity_type": "great_rune",
+    "name": "Morgott's Great Rune",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/greatRunes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/greatRunes.csv",
+        "sha256": "a148d250320a917cbc17008193074559e0d1c98d76f399670fa399be8e28a338",
+        "retrieved_at": "2025-11-20T20:24:54.528515"
+      }
+    ]
+  },
+  {
+    "slug": "phantom_great_rune",
+    "entity_type": "great_rune",
+    "name": "Phantom Great Rune",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/greatRunes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/greatRunes.csv",
+        "sha256": "a148d250320a917cbc17008193074559e0d1c98d76f399670fa399be8e28a338",
+        "retrieved_at": "2025-11-20T20:24:54.528515"
+      }
+    ]
+  },
+  {
+    "slug": "radahns_great_rune",
+    "entity_type": "great_rune",
+    "name": "Radahn's Great Rune",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/greatRunes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/greatRunes.csv",
+        "sha256": "a148d250320a917cbc17008193074559e0d1c98d76f399670fa399be8e28a338",
+        "retrieved_at": "2025-11-20T20:24:54.528515"
+      }
+    ]
+  },
+  {
+    "slug": "rykards_great_rune",
+    "entity_type": "great_rune",
+    "name": "Rykard's Great Rune",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/greatRunes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/greatRunes.csv",
+        "sha256": "a148d250320a917cbc17008193074559e0d1c98d76f399670fa399be8e28a338",
+        "retrieved_at": "2025-11-20T20:24:54.528515"
+      }
+    ]
+  }
+]

@@ -1,0 +1,647 @@
+[
+  {
+    "slug": "ancient_dragon_smithing_stone",
+    "entity_type": "upgrade_material",
+    "name": "Ancient Dragon Smithing Stone",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/upgradeMaterials.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/upgradeMaterials.csv",
+        "sha256": "9281055956cae12acf10fce2469346c7d69c1b5334d33a08d45345ee8b921ae7",
+        "retrieved_at": "2025-11-20T20:24:54.535765"
+      }
+    ]
+  },
+  {
+    "slug": "ghost_glovewort_1",
+    "entity_type": "upgrade_material",
+    "name": "Ghost Glovewort [1]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/upgradeMaterials.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/upgradeMaterials.csv",
+        "sha256": "9281055956cae12acf10fce2469346c7d69c1b5334d33a08d45345ee8b921ae7",
+        "retrieved_at": "2025-11-20T20:24:54.535765"
+      }
+    ]
+  },
+  {
+    "slug": "ghost_glovewort_2",
+    "entity_type": "upgrade_material",
+    "name": "Ghost Glovewort [2]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/upgradeMaterials.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/upgradeMaterials.csv",
+        "sha256": "9281055956cae12acf10fce2469346c7d69c1b5334d33a08d45345ee8b921ae7",
+        "retrieved_at": "2025-11-20T20:24:54.535765"
+      }
+    ]
+  },
+  {
+    "slug": "ghost_glovewort_3",
+    "entity_type": "upgrade_material",
+    "name": "Ghost Glovewort [3]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/upgradeMaterials.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/upgradeMaterials.csv",
+        "sha256": "9281055956cae12acf10fce2469346c7d69c1b5334d33a08d45345ee8b921ae7",
+        "retrieved_at": "2025-11-20T20:24:54.535765"
+      }
+    ]
+  },
+  {
+    "slug": "ghost_glovewort_4",
+    "entity_type": "upgrade_material",
+    "name": "Ghost Glovewort [4]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/upgradeMaterials.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/upgradeMaterials.csv",
+        "sha256": "9281055956cae12acf10fce2469346c7d69c1b5334d33a08d45345ee8b921ae7",
+        "retrieved_at": "2025-11-20T20:24:54.535765"
+      }
+    ]
+  },
+  {
+    "slug": "ghost_glovewort_5",
+    "entity_type": "upgrade_material",
+    "name": "Ghost Glovewort [5]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/upgradeMaterials.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/upgradeMaterials.csv",
+        "sha256": "9281055956cae12acf10fce2469346c7d69c1b5334d33a08d45345ee8b921ae7",
+        "retrieved_at": "2025-11-20T20:24:54.535765"
+      }
+    ]
+  },
+  {
+    "slug": "ghost_glovewort_6",
+    "entity_type": "upgrade_material",
+    "name": "Ghost Glovewort [6]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/upgradeMaterials.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/upgradeMaterials.csv",
+        "sha256": "9281055956cae12acf10fce2469346c7d69c1b5334d33a08d45345ee8b921ae7",
+        "retrieved_at": "2025-11-20T20:24:54.535765"
+      }
+    ]
+  },
+  {
+    "slug": "ghost_glovewort_7",
+    "entity_type": "upgrade_material",
+    "name": "Ghost Glovewort [7]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/upgradeMaterials.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/upgradeMaterials.csv",
+        "sha256": "9281055956cae12acf10fce2469346c7d69c1b5334d33a08d45345ee8b921ae7",
+        "retrieved_at": "2025-11-20T20:24:54.535765"
+      }
+    ]
+  },
+  {
+    "slug": "ghost_glovewort_8",
+    "entity_type": "upgrade_material",
+    "name": "Ghost Glovewort [8]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/upgradeMaterials.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/upgradeMaterials.csv",
+        "sha256": "9281055956cae12acf10fce2469346c7d69c1b5334d33a08d45345ee8b921ae7",
+        "retrieved_at": "2025-11-20T20:24:54.535765"
+      }
+    ]
+  },
+  {
+    "slug": "ghost_glovewort_9",
+    "entity_type": "upgrade_material",
+    "name": "Ghost Glovewort [9]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/upgradeMaterials.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/upgradeMaterials.csv",
+        "sha256": "9281055956cae12acf10fce2469346c7d69c1b5334d33a08d45345ee8b921ae7",
+        "retrieved_at": "2025-11-20T20:24:54.535765"
+      }
+    ]
+  },
+  {
+    "slug": "golden_seed",
+    "entity_type": "upgrade_material",
+    "name": "Golden Seed",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/upgradeMaterials.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/upgradeMaterials.csv",
+        "sha256": "9281055956cae12acf10fce2469346c7d69c1b5334d33a08d45345ee8b921ae7",
+        "retrieved_at": "2025-11-20T20:24:54.535765"
+      }
+    ]
+  },
+  {
+    "slug": "grave_glovewort_1",
+    "entity_type": "upgrade_material",
+    "name": "Grave Glovewort [1]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/upgradeMaterials.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/upgradeMaterials.csv",
+        "sha256": "9281055956cae12acf10fce2469346c7d69c1b5334d33a08d45345ee8b921ae7",
+        "retrieved_at": "2025-11-20T20:24:54.535765"
+      }
+    ]
+  },
+  {
+    "slug": "grave_glovewort_2",
+    "entity_type": "upgrade_material",
+    "name": "Grave Glovewort [2]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/upgradeMaterials.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/upgradeMaterials.csv",
+        "sha256": "9281055956cae12acf10fce2469346c7d69c1b5334d33a08d45345ee8b921ae7",
+        "retrieved_at": "2025-11-20T20:24:54.535765"
+      }
+    ]
+  },
+  {
+    "slug": "grave_glovewort_3",
+    "entity_type": "upgrade_material",
+    "name": "Grave Glovewort [3]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/upgradeMaterials.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/upgradeMaterials.csv",
+        "sha256": "9281055956cae12acf10fce2469346c7d69c1b5334d33a08d45345ee8b921ae7",
+        "retrieved_at": "2025-11-20T20:24:54.535765"
+      }
+    ]
+  },
+  {
+    "slug": "grave_glovewort_4",
+    "entity_type": "upgrade_material",
+    "name": "Grave Glovewort [4]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/upgradeMaterials.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/upgradeMaterials.csv",
+        "sha256": "9281055956cae12acf10fce2469346c7d69c1b5334d33a08d45345ee8b921ae7",
+        "retrieved_at": "2025-11-20T20:24:54.535765"
+      }
+    ]
+  },
+  {
+    "slug": "grave_glovewort_5",
+    "entity_type": "upgrade_material",
+    "name": "Grave Glovewort [5]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/upgradeMaterials.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/upgradeMaterials.csv",
+        "sha256": "9281055956cae12acf10fce2469346c7d69c1b5334d33a08d45345ee8b921ae7",
+        "retrieved_at": "2025-11-20T20:24:54.535765"
+      }
+    ]
+  },
+  {
+    "slug": "grave_glovewort_6",
+    "entity_type": "upgrade_material",
+    "name": "Grave Glovewort [6]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/upgradeMaterials.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/upgradeMaterials.csv",
+        "sha256": "9281055956cae12acf10fce2469346c7d69c1b5334d33a08d45345ee8b921ae7",
+        "retrieved_at": "2025-11-20T20:24:54.535765"
+      }
+    ]
+  },
+  {
+    "slug": "grave_glovewort_7",
+    "entity_type": "upgrade_material",
+    "name": "Grave Glovewort [7]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/upgradeMaterials.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/upgradeMaterials.csv",
+        "sha256": "9281055956cae12acf10fce2469346c7d69c1b5334d33a08d45345ee8b921ae7",
+        "retrieved_at": "2025-11-20T20:24:54.535765"
+      }
+    ]
+  },
+  {
+    "slug": "grave_glovewort_8",
+    "entity_type": "upgrade_material",
+    "name": "Grave Glovewort [8]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/upgradeMaterials.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/upgradeMaterials.csv",
+        "sha256": "9281055956cae12acf10fce2469346c7d69c1b5334d33a08d45345ee8b921ae7",
+        "retrieved_at": "2025-11-20T20:24:54.535765"
+      }
+    ]
+  },
+  {
+    "slug": "grave_glovewort_9",
+    "entity_type": "upgrade_material",
+    "name": "Grave Glovewort [9]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/upgradeMaterials.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/upgradeMaterials.csv",
+        "sha256": "9281055956cae12acf10fce2469346c7d69c1b5334d33a08d45345ee8b921ae7",
+        "retrieved_at": "2025-11-20T20:24:54.535765"
+      }
+    ]
+  },
+  {
+    "slug": "great_ghost_glovewort",
+    "entity_type": "upgrade_material",
+    "name": "Great Ghost Glovewort",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/upgradeMaterials.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/upgradeMaterials.csv",
+        "sha256": "9281055956cae12acf10fce2469346c7d69c1b5334d33a08d45345ee8b921ae7",
+        "retrieved_at": "2025-11-20T20:24:54.535765"
+      }
+    ]
+  },
+  {
+    "slug": "great_grave_glovewort",
+    "entity_type": "upgrade_material",
+    "name": "Great Grave Glovewort",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/upgradeMaterials.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/upgradeMaterials.csv",
+        "sha256": "9281055956cae12acf10fce2469346c7d69c1b5334d33a08d45345ee8b921ae7",
+        "retrieved_at": "2025-11-20T20:24:54.535765"
+      }
+    ]
+  },
+  {
+    "slug": "revered_spirit_ash",
+    "entity_type": "upgrade_material",
+    "name": "Revered Spirit Ash",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/upgradeMaterials.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/upgradeMaterials.csv",
+        "sha256": "9281055956cae12acf10fce2469346c7d69c1b5334d33a08d45345ee8b921ae7",
+        "retrieved_at": "2025-11-20T20:24:54.535765"
+      }
+    ]
+  },
+  {
+    "slug": "sacred_tear",
+    "entity_type": "upgrade_material",
+    "name": "Sacred Tear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/upgradeMaterials.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/upgradeMaterials.csv",
+        "sha256": "9281055956cae12acf10fce2469346c7d69c1b5334d33a08d45345ee8b921ae7",
+        "retrieved_at": "2025-11-20T20:24:54.535765"
+      }
+    ]
+  },
+  {
+    "slug": "scadutree_fragment",
+    "entity_type": "upgrade_material",
+    "name": "Scadutree Fragment",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/upgradeMaterials.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/upgradeMaterials.csv",
+        "sha256": "9281055956cae12acf10fce2469346c7d69c1b5334d33a08d45345ee8b921ae7",
+        "retrieved_at": "2025-11-20T20:24:54.535765"
+      }
+    ]
+  },
+  {
+    "slug": "smithing_stone_1",
+    "entity_type": "upgrade_material",
+    "name": "Smithing Stone [1]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/upgradeMaterials.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/upgradeMaterials.csv",
+        "sha256": "9281055956cae12acf10fce2469346c7d69c1b5334d33a08d45345ee8b921ae7",
+        "retrieved_at": "2025-11-20T20:24:54.535765"
+      }
+    ]
+  },
+  {
+    "slug": "smithing_stone_2",
+    "entity_type": "upgrade_material",
+    "name": "Smithing Stone [2]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/upgradeMaterials.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/upgradeMaterials.csv",
+        "sha256": "9281055956cae12acf10fce2469346c7d69c1b5334d33a08d45345ee8b921ae7",
+        "retrieved_at": "2025-11-20T20:24:54.535765"
+      }
+    ]
+  },
+  {
+    "slug": "smithing_stone_3",
+    "entity_type": "upgrade_material",
+    "name": "Smithing Stone [3]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/upgradeMaterials.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/upgradeMaterials.csv",
+        "sha256": "9281055956cae12acf10fce2469346c7d69c1b5334d33a08d45345ee8b921ae7",
+        "retrieved_at": "2025-11-20T20:24:54.535765"
+      }
+    ]
+  },
+  {
+    "slug": "smithing_stone_4",
+    "entity_type": "upgrade_material",
+    "name": "Smithing Stone [4]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/upgradeMaterials.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/upgradeMaterials.csv",
+        "sha256": "9281055956cae12acf10fce2469346c7d69c1b5334d33a08d45345ee8b921ae7",
+        "retrieved_at": "2025-11-20T20:24:54.535765"
+      }
+    ]
+  },
+  {
+    "slug": "smithing_stone_5",
+    "entity_type": "upgrade_material",
+    "name": "Smithing Stone [5]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/upgradeMaterials.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/upgradeMaterials.csv",
+        "sha256": "9281055956cae12acf10fce2469346c7d69c1b5334d33a08d45345ee8b921ae7",
+        "retrieved_at": "2025-11-20T20:24:54.535765"
+      }
+    ]
+  },
+  {
+    "slug": "smithing_stone_6",
+    "entity_type": "upgrade_material",
+    "name": "Smithing Stone [6]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/upgradeMaterials.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/upgradeMaterials.csv",
+        "sha256": "9281055956cae12acf10fce2469346c7d69c1b5334d33a08d45345ee8b921ae7",
+        "retrieved_at": "2025-11-20T20:24:54.535765"
+      }
+    ]
+  },
+  {
+    "slug": "smithing_stone_7",
+    "entity_type": "upgrade_material",
+    "name": "Smithing Stone [7]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/upgradeMaterials.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/upgradeMaterials.csv",
+        "sha256": "9281055956cae12acf10fce2469346c7d69c1b5334d33a08d45345ee8b921ae7",
+        "retrieved_at": "2025-11-20T20:24:54.535765"
+      }
+    ]
+  },
+  {
+    "slug": "smithing_stone_8",
+    "entity_type": "upgrade_material",
+    "name": "Smithing Stone [8]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/upgradeMaterials.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/upgradeMaterials.csv",
+        "sha256": "9281055956cae12acf10fce2469346c7d69c1b5334d33a08d45345ee8b921ae7",
+        "retrieved_at": "2025-11-20T20:24:54.535765"
+      }
+    ]
+  },
+  {
+    "slug": "somber_ancient_dragon_smithing_stone",
+    "entity_type": "upgrade_material",
+    "name": "Somber Ancient Dragon Smithing Stone",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/upgradeMaterials.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/upgradeMaterials.csv",
+        "sha256": "9281055956cae12acf10fce2469346c7d69c1b5334d33a08d45345ee8b921ae7",
+        "retrieved_at": "2025-11-20T20:24:54.535765"
+      }
+    ]
+  },
+  {
+    "slug": "somber_smithing_stone_1",
+    "entity_type": "upgrade_material",
+    "name": "Somber Smithing Stone [1]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/upgradeMaterials.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/upgradeMaterials.csv",
+        "sha256": "9281055956cae12acf10fce2469346c7d69c1b5334d33a08d45345ee8b921ae7",
+        "retrieved_at": "2025-11-20T20:24:54.535765"
+      }
+    ]
+  },
+  {
+    "slug": "somber_smithing_stone_2",
+    "entity_type": "upgrade_material",
+    "name": "Somber Smithing Stone [2]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/upgradeMaterials.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/upgradeMaterials.csv",
+        "sha256": "9281055956cae12acf10fce2469346c7d69c1b5334d33a08d45345ee8b921ae7",
+        "retrieved_at": "2025-11-20T20:24:54.535765"
+      }
+    ]
+  },
+  {
+    "slug": "somber_smithing_stone_3",
+    "entity_type": "upgrade_material",
+    "name": "Somber Smithing Stone [3]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/upgradeMaterials.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/upgradeMaterials.csv",
+        "sha256": "9281055956cae12acf10fce2469346c7d69c1b5334d33a08d45345ee8b921ae7",
+        "retrieved_at": "2025-11-20T20:24:54.535765"
+      }
+    ]
+  },
+  {
+    "slug": "somber_smithing_stone_4",
+    "entity_type": "upgrade_material",
+    "name": "Somber Smithing Stone [4]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/upgradeMaterials.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/upgradeMaterials.csv",
+        "sha256": "9281055956cae12acf10fce2469346c7d69c1b5334d33a08d45345ee8b921ae7",
+        "retrieved_at": "2025-11-20T20:24:54.535765"
+      }
+    ]
+  },
+  {
+    "slug": "somber_smithing_stone_5",
+    "entity_type": "upgrade_material",
+    "name": "Somber Smithing Stone [5]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/upgradeMaterials.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/upgradeMaterials.csv",
+        "sha256": "9281055956cae12acf10fce2469346c7d69c1b5334d33a08d45345ee8b921ae7",
+        "retrieved_at": "2025-11-20T20:24:54.535765"
+      }
+    ]
+  },
+  {
+    "slug": "somber_smithing_stone_6",
+    "entity_type": "upgrade_material",
+    "name": "Somber Smithing Stone [6]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/upgradeMaterials.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/upgradeMaterials.csv",
+        "sha256": "9281055956cae12acf10fce2469346c7d69c1b5334d33a08d45345ee8b921ae7",
+        "retrieved_at": "2025-11-20T20:24:54.535765"
+      }
+    ]
+  },
+  {
+    "slug": "somber_smithing_stone_7",
+    "entity_type": "upgrade_material",
+    "name": "Somber Smithing Stone [7]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/upgradeMaterials.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/upgradeMaterials.csv",
+        "sha256": "9281055956cae12acf10fce2469346c7d69c1b5334d33a08d45345ee8b921ae7",
+        "retrieved_at": "2025-11-20T20:24:54.535765"
+      }
+    ]
+  },
+  {
+    "slug": "somber_smithing_stone_8",
+    "entity_type": "upgrade_material",
+    "name": "Somber Smithing Stone [8]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/upgradeMaterials.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/upgradeMaterials.csv",
+        "sha256": "9281055956cae12acf10fce2469346c7d69c1b5334d33a08d45345ee8b921ae7",
+        "retrieved_at": "2025-11-20T20:24:54.535765"
+      }
+    ]
+  },
+  {
+    "slug": "somber_smithing_stone_9",
+    "entity_type": "upgrade_material",
+    "name": "Somber Smithing Stone [9]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/upgradeMaterials.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/upgradeMaterials.csv",
+        "sha256": "9281055956cae12acf10fce2469346c7d69c1b5334d33a08d45345ee8b921ae7",
+        "retrieved_at": "2025-11-20T20:24:54.535765"
+      }
+    ]
+  }
+]

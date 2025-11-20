@@ -156,6 +156,8 @@ class GitHubAPIIngester:
                 cache_file = self.base_dir / f"{entity_type}.json"
                 provenance = Provenance(
                     source="github_api",
+                    dataset=f"fanapis:{entity_type}",
+                    source_file=f"{entity_type}.json",
                     uri=f"{ELDEN_RING_API_BASE}/{entity_type}",
                     sha256=(compute_file_hash(cache_file) if cache_file.exists() else None),
                 )
