@@ -1,0 +1,2571 @@
+[
+  {
+    "slug": "abandoned_merchant_siofra_river",
+    "entity_type": "npc",
+    "name": "Abandoned Merchant Siofra River",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "aeonian_spirit",
+    "entity_type": "npc",
+    "name": "Aeonian Spirit",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "aeonian_swamp_spirit",
+    "entity_type": "npc",
+    "name": "Aeonian Swamp Spirit",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "albinauric_village_spirit",
+    "entity_type": "npc",
+    "name": "Albinauric Village Spirit",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "albus",
+    "entity_type": "npc",
+    "name": "Albus",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "ashen_spirit",
+    "entity_type": "npc",
+    "name": "Ashen Spirit",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "blackguard_big_boggart",
+    "entity_type": "npc",
+    "name": "Blackguard Big Boggart",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "blaidd",
+    "entity_type": "npc",
+    "name": "Blaidd",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "blaidd_the_half_wolf",
+    "entity_type": "npc",
+    "name": "Blaidd the Half-Wolf",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "bloodhunter_raz",
+    "entity_type": "npc",
+    "name": "Bloodhunter Raz",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "bloody_finger_hunter_yura",
+    "entity_type": "npc",
+    "name": "Bloody Finger Hunter Yura",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "boc_the_seamster",
+    "entity_type": "npc",
+    "name": "Boc the Seamster",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "brother_corhyn",
+    "entity_type": "npc",
+    "name": "Brother Corhyn",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "carian_manor_spirit",
+    "entity_type": "npc",
+    "name": "Carian Manor Spirit",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "church_of_pilgrimage_spirit",
+    "entity_type": "npc",
+    "name": "Church of Pilgrimage Spirit",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "count_ymir_high_priest",
+    "entity_type": "npc",
+    "name": "Count Ymir, High Priest",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "d_beholder_of_death",
+    "entity_type": "npc",
+    "name": "D, Beholder of Death",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "d_hunter_of_the_dead",
+    "entity_type": "npc",
+    "name": "D, Hunter of the Dead",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "deathtouched_spirit",
+    "entity_type": "npc",
+    "name": "Deathtouched Spirit",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "dragon_communion_priestess",
+    "entity_type": "npc",
+    "name": "Dragon Communion Priestess",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "dryleaf_dane",
+    "entity_type": "npc",
+    "name": "Dryleaf Dane",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "dung_eater",
+    "entity_type": "npc",
+    "name": "Dung Eater",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "eclipse_spirit",
+    "entity_type": "npc",
+    "name": "Eclipse Spirit",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "edgar",
+    "entity_type": "npc",
+    "name": "Edgar",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "enia",
+    "entity_type": "npc",
+    "name": "Enia",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "ensha_of_the_royal_remains",
+    "entity_type": "npc",
+    "name": "Ensha of the Royal Remains",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "erdtree_sanctuary_spirit",
+    "entity_type": "npc",
+    "name": "Erdtree Sanctuary Spirit",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "fia",
+    "entity_type": "npc",
+    "name": "Fia",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "fia_deathbed_companion",
+    "entity_type": "npc",
+    "name": "Fia, Deathbed Companion",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "finger_maiden_therolina",
+    "entity_type": "npc",
+    "name": "Finger Maiden Therolina",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "fire_knight_queelign",
+    "entity_type": "npc",
+    "name": "Fire Knight Queelign",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "frenzied_spirit",
+    "entity_type": "npc",
+    "name": "Frenzied Spirit",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "frustrated_spirit",
+    "entity_type": "npc",
+    "name": "Frustrated Spirit",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "gatekeeper_gostoc",
+    "entity_type": "npc",
+    "name": "Gatekeeper Gostoc",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "gideon_ofnir",
+    "entity_type": "npc",
+    "name": "Gideon Ofnir",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "godwyn_the_golden",
+    "entity_type": "npc",
+    "name": "Godwyn the Golden",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "goldmask",
+    "entity_type": "npc",
+    "name": "Goldmask",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "gowry",
+    "entity_type": "npc",
+    "name": "Gowry",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "grape_spirit",
+    "entity_type": "npc",
+    "name": "Grape Spirit",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "gurranq_beast_clergyman",
+    "entity_type": "npc",
+    "name": "Gurranq, Beast Clergyman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "hermit_merchant_leyndell",
+    "entity_type": "npc",
+    "name": "Hermit Merchant (Leyndell)",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "hornsent",
+    "entity_type": "npc",
+    "name": "Hornsent",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "hornsent_grandam",
+    "entity_type": "npc",
+    "name": "Hornsent Grandam",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "hyetta",
+    "entity_type": "npc",
+    "name": "Hyetta",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "igon",
+    "entity_type": "npc",
+    "name": "Igon",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "iji_war_counselor_carian_blacksmith",
+    "entity_type": "npc",
+    "name": "Iji War Counselor & Carian Blacksmith",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "imprisoned_merchant",
+    "entity_type": "npc",
+    "name": "Imprisoned Merchant",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "irina",
+    "entity_type": "npc",
+    "name": "Irina",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "iron_fist_alexander",
+    "entity_type": "npc",
+    "name": "Iron Fist Alexander",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "isolated_merchant_raya_lucaria",
+    "entity_type": "npc",
+    "name": "Isolated Merchant Raya Lucaria",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "jar_bairn",
+    "entity_type": "npc",
+    "name": "Jar Bairn",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "jolan",
+    "entity_type": "npc",
+    "name": "Jolan",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "kenneth_haight",
+    "entity_type": "npc",
+    "name": "Kenneth Haight",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "kingsrealm_spirit",
+    "entity_type": "npc",
+    "name": "Kingsrealm Spirit",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "knight_bernahl",
+    "entity_type": "npc",
+    "name": "Knight Bernahl",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "knight_diallos",
+    "entity_type": "npc",
+    "name": "Knight Diallos",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "laiedd_spirit",
+    "entity_type": "npc",
+    "name": "Laiedd Spirit",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "latenna",
+    "entity_type": "npc",
+    "name": "Latenna",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "lionel_the_lionhearted",
+    "entity_type": "npc",
+    "name": "Lionel the Lionhearted",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "liurnian_highway_spirit",
+    "entity_type": "npc",
+    "name": "Liurnian Highway Spirit",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "liurnian_lake_spirit",
+    "entity_type": "npc",
+    "name": "Liurnian Lake Spirit",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "lost_snow_spirit",
+    "entity_type": "npc",
+    "name": "Lost Snow Spirit",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "master_lusat",
+    "entity_type": "npc",
+    "name": "Master Lusat",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "melina",
+    "entity_type": "npc",
+    "name": "Melina",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "merchant_kale",
+    "entity_type": "npc",
+    "name": "Merchant Kale",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "merchant_kalé",
+    "entity_type": "npc",
+    "name": "Merchant Kalé",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "millicent",
+    "entity_type": "npc",
+    "name": "Millicent",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "millicents_sisters",
+    "entity_type": "npc",
+    "name": "Millicent's Sisters",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "miquella",
+    "entity_type": "npc",
+    "name": "Miquella",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "miriel_pastor_of_vows",
+    "entity_type": "npc",
+    "name": "Miriel, Pastor of Vows",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "moore",
+    "entity_type": "npc",
+    "name": "Moore",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "morne_spirit",
+    "entity_type": "npc",
+    "name": "Morne Spirit",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "needle_knight_leda",
+    "entity_type": "npc",
+    "name": "Needle Knight Leda",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "nepheli_loux",
+    "entity_type": "npc",
+    "name": "Nepheli Loux",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "nepheli_loux_warrior",
+    "entity_type": "npc",
+    "name": "Nepheli Loux, Warrior",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "nomadic_merchant_central_altus_plateau",
+    "entity_type": "npc",
+    "name": "Nomadic Merchant Central ALTUS PLATEAU",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "palm_reader",
+    "entity_type": "npc",
+    "name": "Palm Reader",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "patches",
+    "entity_type": "npc",
+    "name": "Patches",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "pidia_carian_servant",
+    "entity_type": "npc",
+    "name": "Pidia, Carian Servant",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "preceptor_seluvis",
+    "entity_type": "npc",
+    "name": "Preceptor Seluvis",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "primeval_sorcerer_azur",
+    "entity_type": "npc",
+    "name": "Primeval Sorcerer Azur",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "queen_marika",
+    "entity_type": "npc",
+    "name": "Queen Marika",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "queen_marika_the_eternal",
+    "entity_type": "npc",
+    "name": "Queen Marika the Eternal",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "ranni_the_witch",
+    "entity_type": "npc",
+    "name": "Ranni The Witch",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "ranni_witch_carian_lunar_princess",
+    "entity_type": "npc",
+    "name": "Ranni Witch Carian Lunar Princess",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "redmane_freyja",
+    "entity_type": "npc",
+    "name": "Redmane Freyja",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "renna",
+    "entity_type": "npc",
+    "name": "Renna",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "rennala_queen_of_the_full_moon",
+    "entity_type": "npc",
+    "name": "Rennala, Queen of the Full Moon",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "roderika",
+    "entity_type": "npc",
+    "name": "Roderika",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "rya",
+    "entity_type": "npc",
+    "name": "Rya",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "rykard_lord_of_blasphemy",
+    "entity_type": "npc",
+    "name": "Rykard, Lord of Blasphemy",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "sanguine_noble_npc",
+    "entity_type": "npc",
+    "name": "Sanguine Noble (NPC)",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "shabriri",
+    "entity_type": "npc",
+    "name": "Shabriri",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "siofra_river_spirit",
+    "entity_type": "npc",
+    "name": "Siofra River Spirit",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "sir_ansbach",
+    "entity_type": "npc",
+    "name": "Sir Ansbach",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "smithing_master_hewg",
+    "entity_type": "npc",
+    "name": "Smithing Master Hewg",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "sorcerer_rogier",
+    "entity_type": "npc",
+    "name": "Sorcerer Rogier",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "sorceress_sellen",
+    "entity_type": "npc",
+    "name": "Sorceress Sellen",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "st_trina",
+    "entity_type": "npc",
+    "name": "St. Trina",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "stranded_graveyard_spirit",
+    "entity_type": "npc",
+    "name": "Stranded Graveyard Spirit",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "study_hall_spirit",
+    "entity_type": "npc",
+    "name": "Study Hall Spirit",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "tanith",
+    "entity_type": "npc",
+    "name": "Tanith",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "the_gate_town_bridge_spirit",
+    "entity_type": "npc",
+    "name": "The Gate Town Bridge Spirit",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "the_great_jar",
+    "entity_type": "npc",
+    "name": "The Great-Jar",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "the_shaded_castle_spirit",
+    "entity_type": "npc",
+    "name": "The Shaded Castle Spirit",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "the_two_fingers",
+    "entity_type": "npc",
+    "name": "The Two Fingers",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "thiollier",
+    "entity_type": "npc",
+    "name": "Thiollier",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "thops",
+    "entity_type": "npc",
+    "name": "Thops",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "three_fingers",
+    "entity_type": "npc",
+    "name": "Three Fingers",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "tower_of_return_spirit",
+    "entity_type": "npc",
+    "name": "Tower of Return Spirit",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "twin_maiden_husks",
+    "entity_type": "npc",
+    "name": "Twin Maiden Husks",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "two_fingers",
+    "entity_type": "npc",
+    "name": "Two Fingers",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "volcano_manor_spirit",
+    "entity_type": "npc",
+    "name": "Volcano Manor Spirit",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "wandering_artist_spirit",
+    "entity_type": "npc",
+    "name": "Wandering Artist Spirit",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "war_counselor_iji",
+    "entity_type": "npc",
+    "name": "War Counselor Iji",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "white_faced_varré",
+    "entity_type": "npc",
+    "name": "White-faced Varré",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  },
+  {
+    "slug": "white_mask_varre",
+    "entity_type": "npc",
+    "name": "White Mask Varre",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "windmill_spirit",
+    "entity_type": "npc",
+    "name": "Windmill Spirit",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      }
+    ]
+  },
+  {
+    "slug": "witch_hunter_jerren",
+    "entity_type": "npc",
+    "name": "Witch-Hunter Jerren",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/npcs.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/npcs.csv",
+        "sha256": "3adad41b532022bcd100ca8b4624dcb39adcdab06259b304d497ba83ccbb4774",
+        "retrieved_at": "2025-11-20T20:24:54.541359"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "npcs.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/npcs.csv",
+        "sha256": "30064e937b152c42943f139590e24e1c5a198bdd0a9cb4b8fceee0913c598dd0",
+        "retrieved_at": "2025-11-20T20:24:54.485942"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:npcs",
+        "source_file": "npcs.json",
+        "uri": "https://eldenring.fanapis.com/api/npcs",
+        "sha256": "dd355708fc3b99a86c1aa90a4317825fab077b4759cecfd95fa9cd17c482e6a8",
+        "retrieved_at": "2025-11-20T20:24:55.006070"
+      }
+    ]
+  }
+]

@@ -2,9 +2,10 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass
 import re
-from typing import Any, Iterable
+from collections.abc import Iterable
+from dataclasses import dataclass
+from typing import Any
 
 import pandera
 import pandera.pandas as pa
@@ -308,9 +309,7 @@ SPELLS_SCHEMA = DataFrameSchema(
 )
 
 
-VERSION_SUFFIX_RE = re.compile(
-    r"^(?P<dataset>[a-z0-9_]+)_v(?P<version>[a-z0-9][a-z0-9_.-]*)$"
-)
+VERSION_SUFFIX_RE = re.compile(r"^(?P<dataset>[a-z0-9_]+)_v(?P<version>[a-z0-9][a-z0-9_.-]*)$")
 
 
 def _normalize_dataset_name(name: str) -> str:
@@ -526,9 +525,7 @@ def validate_dataframe(
         The validated_df contains the coerced types when validation succeeds
     """
     try:
-        schema_obj = (
-            schema.schema if isinstance(schema, SchemaVersion) else schema
-        )
+        schema_obj = schema.schema if isinstance(schema, SchemaVersion) else schema
         validated_df = schema_obj.validate(df, lazy=True)
         return True, None, validated_df
     except pandera.errors.SchemaErrors as e:

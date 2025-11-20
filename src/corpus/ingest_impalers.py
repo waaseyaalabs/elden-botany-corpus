@@ -152,6 +152,8 @@ class ImpalersIngester:
         # Create provenance
         provenance = Provenance(
             source="dlc_textdump",
+            dataset=IMPALERS_REPO,
+            source_file=html_path.name,
             uri=MASTER_HTML_URL,
             sha256=compute_file_hash(html_path),
         )

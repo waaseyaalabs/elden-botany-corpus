@@ -1,0 +1,392 @@
+[
+  {
+    "slug": "elden_remembrance",
+    "entity_type": "remembrance",
+    "name": "Elden Remembrance",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/remembrances.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/remembrances.csv",
+        "sha256": "54a09115ebde8c26f04c821d0419a6d350fa95ebec853fad6db3303cd8db24b0",
+        "retrieved_at": "2025-11-20T20:24:54.533783"
+      }
+    ]
+  },
+  {
+    "slug": "heart_of_bayle",
+    "entity_type": "remembrance",
+    "name": "Heart of Bayle",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/remembrances.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/remembrances.csv",
+        "sha256": "54a09115ebde8c26f04c821d0419a6d350fa95ebec853fad6db3303cd8db24b0",
+        "retrieved_at": "2025-11-20T20:24:54.533783"
+      }
+    ]
+  },
+  {
+    "slug": "remembrance_of_a_god_and_a_lord",
+    "entity_type": "remembrance",
+    "name": "Remembrance of a God and a Lord",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/remembrances.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/remembrances.csv",
+        "sha256": "54a09115ebde8c26f04c821d0419a6d350fa95ebec853fad6db3303cd8db24b0",
+        "retrieved_at": "2025-11-20T20:24:54.533783"
+      }
+    ]
+  },
+  {
+    "slug": "remembrance_of_hoarah_loux",
+    "entity_type": "remembrance",
+    "name": "Remembrance of Hoarah Loux",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/remembrances.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/remembrances.csv",
+        "sha256": "54a09115ebde8c26f04c821d0419a6d350fa95ebec853fad6db3303cd8db24b0",
+        "retrieved_at": "2025-11-20T20:24:54.533783"
+      }
+    ]
+  },
+  {
+    "slug": "remembrance_of_putrescence",
+    "entity_type": "remembrance",
+    "name": "Remembrance of Putrescence",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/remembrances.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/remembrances.csv",
+        "sha256": "54a09115ebde8c26f04c821d0419a6d350fa95ebec853fad6db3303cd8db24b0",
+        "retrieved_at": "2025-11-20T20:24:54.533783"
+      }
+    ]
+  },
+  {
+    "slug": "remembrance_of_the_black_blade",
+    "entity_type": "remembrance",
+    "name": "Remembrance of the Black Blade",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/remembrances.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/remembrances.csv",
+        "sha256": "54a09115ebde8c26f04c821d0419a6d350fa95ebec853fad6db3303cd8db24b0",
+        "retrieved_at": "2025-11-20T20:24:54.533783"
+      }
+    ]
+  },
+  {
+    "slug": "remembrance_of_the_blood_lord",
+    "entity_type": "remembrance",
+    "name": "Remembrance of the Blood Lord",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/remembrances.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/remembrances.csv",
+        "sha256": "54a09115ebde8c26f04c821d0419a6d350fa95ebec853fad6db3303cd8db24b0",
+        "retrieved_at": "2025-11-20T20:24:54.533783"
+      }
+    ]
+  },
+  {
+    "slug": "remembrance_of_the_dancing_lion",
+    "entity_type": "remembrance",
+    "name": "Remembrance of the Dancing Lion",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/remembrances.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/remembrances.csv",
+        "sha256": "54a09115ebde8c26f04c821d0419a6d350fa95ebec853fad6db3303cd8db24b0",
+        "retrieved_at": "2025-11-20T20:24:54.533783"
+      }
+    ]
+  },
+  {
+    "slug": "remembrance_of_the_fire_giant",
+    "entity_type": "remembrance",
+    "name": "Remembrance of the Fire Giant",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/remembrances.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/remembrances.csv",
+        "sha256": "54a09115ebde8c26f04c821d0419a6d350fa95ebec853fad6db3303cd8db24b0",
+        "retrieved_at": "2025-11-20T20:24:54.533783"
+      }
+    ]
+  },
+  {
+    "slug": "remembrance_of_the_full_moon_queen",
+    "entity_type": "remembrance",
+    "name": "Remembrance of the Full Moon Queen",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/remembrances.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/remembrances.csv",
+        "sha256": "54a09115ebde8c26f04c821d0419a6d350fa95ebec853fad6db3303cd8db24b0",
+        "retrieved_at": "2025-11-20T20:24:54.533783"
+      }
+    ]
+  },
+  {
+    "slug": "remembrance_of_the_grafted",
+    "entity_type": "remembrance",
+    "name": "Remembrance of the Grafted",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/remembrances.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/remembrances.csv",
+        "sha256": "54a09115ebde8c26f04c821d0419a6d350fa95ebec853fad6db3303cd8db24b0",
+        "retrieved_at": "2025-11-20T20:24:54.533783"
+      }
+    ]
+  },
+  {
+    "slug": "remembrance_of_the_impaler",
+    "entity_type": "remembrance",
+    "name": "Remembrance of the Impaler",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/remembrances.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/remembrances.csv",
+        "sha256": "54a09115ebde8c26f04c821d0419a6d350fa95ebec853fad6db3303cd8db24b0",
+        "retrieved_at": "2025-11-20T20:24:54.533783"
+      }
+    ]
+  },
+  {
+    "slug": "remembrance_of_the_lord_of_frenzied_flame",
+    "entity_type": "remembrance",
+    "name": "Remembrance of the Lord of Frenzied Flame",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/remembrances.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/remembrances.csv",
+        "sha256": "54a09115ebde8c26f04c821d0419a6d350fa95ebec853fad6db3303cd8db24b0",
+        "retrieved_at": "2025-11-20T20:24:54.533783"
+      }
+    ]
+  },
+  {
+    "slug": "remembrance_of_the_mother_of_fingers",
+    "entity_type": "remembrance",
+    "name": "Remembrance of the Mother of Fingers",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/remembrances.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/remembrances.csv",
+        "sha256": "54a09115ebde8c26f04c821d0419a6d350fa95ebec853fad6db3303cd8db24b0",
+        "retrieved_at": "2025-11-20T20:24:54.533783"
+      }
+    ]
+  },
+  {
+    "slug": "remembrance_of_the_omen_king",
+    "entity_type": "remembrance",
+    "name": "Remembrance of the Omen King",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/remembrances.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/remembrances.csv",
+        "sha256": "54a09115ebde8c26f04c821d0419a6d350fa95ebec853fad6db3303cd8db24b0",
+        "retrieved_at": "2025-11-20T20:24:54.533783"
+      }
+    ]
+  },
+  {
+    "slug": "remembrance_of_the_regal_ancestor",
+    "entity_type": "remembrance",
+    "name": "Remembrance of the Regal Ancestor",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/remembrances.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/remembrances.csv",
+        "sha256": "54a09115ebde8c26f04c821d0419a6d350fa95ebec853fad6db3303cd8db24b0",
+        "retrieved_at": "2025-11-20T20:24:54.533783"
+      }
+    ]
+  },
+  {
+    "slug": "remembrance_of_the_rot_goddess",
+    "entity_type": "remembrance",
+    "name": "Remembrance of the Rot Goddess",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/remembrances.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/remembrances.csv",
+        "sha256": "54a09115ebde8c26f04c821d0419a6d350fa95ebec853fad6db3303cd8db24b0",
+        "retrieved_at": "2025-11-20T20:24:54.533783"
+      }
+    ]
+  },
+  {
+    "slug": "remembrance_of_the_saint_of_the_bud",
+    "entity_type": "remembrance",
+    "name": "Remembrance of the Saint of the Bud",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/remembrances.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/remembrances.csv",
+        "sha256": "54a09115ebde8c26f04c821d0419a6d350fa95ebec853fad6db3303cd8db24b0",
+        "retrieved_at": "2025-11-20T20:24:54.533783"
+      }
+    ]
+  },
+  {
+    "slug": "remembrance_of_the_shadow_sunflower",
+    "entity_type": "remembrance",
+    "name": "Remembrance of the Shadow Sunflower",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/remembrances.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/remembrances.csv",
+        "sha256": "54a09115ebde8c26f04c821d0419a6d350fa95ebec853fad6db3303cd8db24b0",
+        "retrieved_at": "2025-11-20T20:24:54.533783"
+      }
+    ]
+  },
+  {
+    "slug": "remembrance_of_the_twin_moon_knight",
+    "entity_type": "remembrance",
+    "name": "Remembrance of the Twin Moon Knight",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/remembrances.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/remembrances.csv",
+        "sha256": "54a09115ebde8c26f04c821d0419a6d350fa95ebec853fad6db3303cd8db24b0",
+        "retrieved_at": "2025-11-20T20:24:54.533783"
+      }
+    ]
+  },
+  {
+    "slug": "remembrance_of_the_wild_boar_rider",
+    "entity_type": "remembrance",
+    "name": "Remembrance of the Wild Boar Rider",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/remembrances.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/remembrances.csv",
+        "sha256": "54a09115ebde8c26f04c821d0419a6d350fa95ebec853fad6db3303cd8db24b0",
+        "retrieved_at": "2025-11-20T20:24:54.533783"
+      }
+    ]
+  },
+  {
+    "slug": "remembrance_of_theblasphemous",
+    "entity_type": "remembrance",
+    "name": "Remembrance of theBlasphemous",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/remembrances.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/remembrances.csv",
+        "sha256": "54a09115ebde8c26f04c821d0419a6d350fa95ebec853fad6db3303cd8db24b0",
+        "retrieved_at": "2025-11-20T20:24:54.533783"
+      }
+    ]
+  },
+  {
+    "slug": "remembrance_of_thedragonlord",
+    "entity_type": "remembrance",
+    "name": "Remembrance of theDragonlord",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/remembrances.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/remembrances.csv",
+        "sha256": "54a09115ebde8c26f04c821d0419a6d350fa95ebec853fad6db3303cd8db24b0",
+        "retrieved_at": "2025-11-20T20:24:54.533783"
+      }
+    ]
+  },
+  {
+    "slug": "remembrance_of_thelichdragon",
+    "entity_type": "remembrance",
+    "name": "Remembrance of theLichdragon",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/remembrances.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/remembrances.csv",
+        "sha256": "54a09115ebde8c26f04c821d0419a6d350fa95ebec853fad6db3303cd8db24b0",
+        "retrieved_at": "2025-11-20T20:24:54.533783"
+      }
+    ]
+  },
+  {
+    "slug": "remembrance_of_thenaturalborn",
+    "entity_type": "remembrance",
+    "name": "Remembrance of theNaturalborn",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/remembrances.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/remembrances.csv",
+        "sha256": "54a09115ebde8c26f04c821d0419a6d350fa95ebec853fad6db3303cd8db24b0",
+        "retrieved_at": "2025-11-20T20:24:54.533783"
+      }
+    ]
+  },
+  {
+    "slug": "remembrance_of_thestarscourge",
+    "entity_type": "remembrance",
+    "name": "Remembrance of theStarscourge",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/remembrances.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/remembrances.csv",
+        "sha256": "54a09115ebde8c26f04c821d0419a6d350fa95ebec853fad6db3303cd8db24b0",
+        "retrieved_at": "2025-11-20T20:24:54.533783"
+      }
+    ]
+  }
+]

@@ -1,0 +1,3842 @@
+[
+  {
+    "slug": "alabaster_lords_pull",
+    "entity_type": "skill",
+    "name": "Alabaster Lord's Pull",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "ancient_lightning_spear",
+    "entity_type": "skill",
+    "name": "Ancient Lightning Spear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "angels_wings",
+    "entity_type": "skill",
+    "name": "Angel's Wings",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "aspects_of_the_crucible_wings",
+    "entity_type": "skill",
+    "name": "Aspects of the Crucible: Wings",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "assassins_gambit",
+    "entity_type": "skill",
+    "name": "Assassin's Gambit",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "barbaric_roar",
+    "entity_type": "skill",
+    "name": "Barbaric Roar",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "barrage",
+    "entity_type": "skill",
+    "name": "Barrage",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "barricade_shield",
+    "entity_type": "skill",
+    "name": "Barricade Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "bear_witness",
+    "entity_type": "skill",
+    "name": "Bear Witness!",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "beasts_roar",
+    "entity_type": "skill",
+    "name": "Beast's Roar",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "black_flame_tornado",
+    "entity_type": "skill",
+    "name": "Black Flame Tornado",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "blade_of_death",
+    "entity_type": "skill",
+    "name": "Blade of Death",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "blade_of_gold",
+    "entity_type": "skill",
+    "name": "Blade of Gold",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "blind_spot",
+    "entity_type": "skill",
+    "name": "Blind Spot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "blindfold_of_happiness",
+    "entity_type": "skill",
+    "name": "Blindfold of Happiness",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "blinkbolt",
+    "entity_type": "skill",
+    "name": "Blinkbolt",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "blinkbolt_long_hafted_axe",
+    "entity_type": "skill",
+    "name": "Blinkbolt: Long-hafted Axe",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "blinkbolt_twinaxe",
+    "entity_type": "skill",
+    "name": "Blinkbolt: Twinaxe",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "blood_blade",
+    "entity_type": "skill",
+    "name": "Blood Blade",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "blood_tax",
+    "entity_type": "skill",
+    "name": "Blood Tax",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "bloodblade_dance",
+    "entity_type": "skill",
+    "name": "Bloodblade Dance",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "bloodboon_ritual",
+    "entity_type": "skill",
+    "name": "Bloodboon Ritual",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "bloodfiends_bloodboon",
+    "entity_type": "skill",
+    "name": "Bloodfiends' Bloodboon",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "bloodhounds_finesse",
+    "entity_type": "skill",
+    "name": "Bloodhound's Finesse",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "bloodhounds_step",
+    "entity_type": "skill",
+    "name": "Bloodhound's Step",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "bloody_slash",
+    "entity_type": "skill",
+    "name": "Bloody Slash",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "braggarts_roar",
+    "entity_type": "skill",
+    "name": "Braggart's Roar",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "bubble_shower",
+    "entity_type": "skill",
+    "name": "Bubble Shower",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "buckler_parry",
+    "entity_type": "skill",
+    "name": "Buckler Parry",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "carian_grandeur",
+    "entity_type": "skill",
+    "name": "Carian Grandeur",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "carian_greatsword_skill",
+    "entity_type": "skill",
+    "name": "Carian Greatsword Skill",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "carian_retaliation",
+    "entity_type": "skill",
+    "name": "Carian Retaliation",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "carian_sovereignty",
+    "entity_type": "skill",
+    "name": "Carian Sovereignty",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "charge_forth",
+    "entity_type": "skill",
+    "name": "Charge Forth",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "chilling_mist",
+    "entity_type": "skill",
+    "name": "Chilling Mist",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "claw_flick",
+    "entity_type": "skill",
+    "name": "Claw Flick",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "contagious_fury",
+    "entity_type": "skill",
+    "name": "Contagious Fury",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "corpse_piler",
+    "entity_type": "skill",
+    "name": "Corpse Piler",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "corpse_wax_cutter",
+    "entity_type": "skill",
+    "name": "Corpse Wax Cutter",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "cragblade",
+    "entity_type": "skill",
+    "name": "Cragblade",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "cursed_blood_slice",
+    "entity_type": "skill",
+    "name": "Cursed-Blood Slice",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "darkness",
+    "entity_type": "skill",
+    "name": "Darkness",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "deadly_dance",
+    "entity_type": "skill",
+    "name": "Deadly Dance",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "deadly_poison_spray",
+    "entity_type": "skill",
+    "name": "Deadly Poison Spray",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "death_flare",
+    "entity_type": "skill",
+    "name": "Death Flare",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "destined_death",
+    "entity_type": "skill",
+    "name": "Destined Death",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "determination",
+    "entity_type": "skill",
+    "name": "Determination",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "devonias_vortex",
+    "entity_type": "skill",
+    "name": "Devonia's Vortex",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "devourer_of_worlds",
+    "entity_type": "skill",
+    "name": "Devourer of Worlds",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "discus_hurl",
+    "entity_type": "skill",
+    "name": "Discus Hurl",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "divine_beast_frost_stomp",
+    "entity_type": "skill",
+    "name": "Divine Beast Frost Stomp",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "double_slash",
+    "entity_type": "skill",
+    "name": "Double Slash",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "dragonform_flame",
+    "entity_type": "skill",
+    "name": "Dragonform Flame",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "dragonwound_slash",
+    "entity_type": "skill",
+    "name": "Dragonwound Slash",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "dryleaf_whirlwind",
+    "entity_type": "skill",
+    "name": "Dryleaf Whirlwind",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "dynastic_sickleplay",
+    "entity_type": "skill",
+    "name": "Dynastic Sickleplay",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "dynasts_finesse",
+    "entity_type": "skill",
+    "name": "Dynast's Finesse",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "earthshaker",
+    "entity_type": "skill",
+    "name": "Earthshaker",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "enchanted_shot",
+    "entity_type": "skill",
+    "name": "Enchanted Shot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "endure",
+    "entity_type": "skill",
+    "name": "Endure",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "eochaids_dancing_blade",
+    "entity_type": "skill",
+    "name": "Eochaid's Dancing Blade",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "erdtree_slam",
+    "entity_type": "skill",
+    "name": "Erdtree Slam",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "eruption",
+    "entity_type": "skill",
+    "name": "Eruption",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "establish_order",
+    "entity_type": "skill",
+    "name": "Establish Order",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "euporia_vortex",
+    "entity_type": "skill",
+    "name": "Euporia Vortex",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "familial_rancor",
+    "entity_type": "skill",
+    "name": "Familial Rancor",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "fan_shot",
+    "entity_type": "skill",
+    "name": "Fan Shot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "feeble_lords_frenzied_flame",
+    "entity_type": "skill",
+    "name": "Feeble Lord's Frenzied Flame",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "firebreather",
+    "entity_type": "skill",
+    "name": "Firebreather",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "fires_of_slumber",
+    "entity_type": "skill",
+    "name": "Fires of Slumber",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "flame_dance",
+    "entity_type": "skill",
+    "name": "Flame Dance",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "flame_of_the_redmanes",
+    "entity_type": "skill",
+    "name": "Flame of the Redmanes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "flame_skewer",
+    "entity_type": "skill",
+    "name": "Flame Skewer",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "flame_spear",
+    "entity_type": "skill",
+    "name": "Flame Spear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "flame_spit",
+    "entity_type": "skill",
+    "name": "Flame Spit",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "flaming_strike",
+    "entity_type": "skill",
+    "name": "Flaming Strike",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "flare_o_serpent",
+    "entity_type": "skill",
+    "name": "Flare, O Serpent",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "flower_dragonbolt",
+    "entity_type": "skill",
+    "name": "Flower Dragonbolt",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "flowing_form",
+    "entity_type": "skill",
+    "name": "Flowing Form",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "frenzyflame_thrust",
+    "entity_type": "skill",
+    "name": "Frenzyflame Thrust",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "ghostflame_call",
+    "entity_type": "skill",
+    "name": "Ghostflame Call",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "ghostflame_ignition",
+    "entity_type": "skill",
+    "name": "Ghostflame Ignition",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "giant_hunt",
+    "entity_type": "skill",
+    "name": "Giant Hunt",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "glintblade_phalanx",
+    "entity_type": "skill",
+    "name": "Glintblade Phalanx",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "glintstone_dart",
+    "entity_type": "skill",
+    "name": "Glintstone Dart",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "glintstone_pebble",
+    "entity_type": "skill",
+    "name": "Glintstone Pebble",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "gold_breaker",
+    "entity_type": "skill",
+    "name": "Gold Breaker",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "golden_crux",
+    "entity_type": "skill",
+    "name": "Golden Crux",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "golden_land",
+    "entity_type": "skill",
+    "name": "Golden Land",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "golden_parry",
+    "entity_type": "skill",
+    "name": "Golden Parry",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "golden_retaliation",
+    "entity_type": "skill",
+    "name": "Golden Retaliation",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "golden_slam",
+    "entity_type": "skill",
+    "name": "Golden Slam",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "golden_tempering",
+    "entity_type": "skill",
+    "name": "Golden Tempering",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "golden_vow",
+    "entity_type": "skill",
+    "name": "Golden Vow",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "gravitas",
+    "entity_type": "skill",
+    "name": "Gravitas",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "gravity_bolt",
+    "entity_type": "skill",
+    "name": "Gravity Bolt",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "great_oracular_bubble_skill",
+    "entity_type": "skill",
+    "name": "Great Oracular Bubble Skill",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "great_serpent_hunt",
+    "entity_type": "skill",
+    "name": "Great-Serpent Hunt",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "ground_slam",
+    "entity_type": "skill",
+    "name": "Ground Slam",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "hoarah_louxs_earthshaker",
+    "entity_type": "skill",
+    "name": "Hoarah Loux's Earthshaker",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "hoarfrost_stomp",
+    "entity_type": "skill",
+    "name": "Hoarfrost Stomp",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "holy_ground",
+    "entity_type": "skill",
+    "name": "Holy Ground",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "hone_blade",
+    "entity_type": "skill",
+    "name": "Hone Blade",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "horn_calling",
+    "entity_type": "skill",
+    "name": "Horn Calling",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "horn_calling_storm",
+    "entity_type": "skill",
+    "name": "Horn Calling: Storm",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "i_command_thee_kneel",
+    "entity_type": "skill",
+    "name": "I Command Thee, Kneel!",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "ice_lightning_sword",
+    "entity_type": "skill",
+    "name": "Ice Lightning Sword",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "ice_spear",
+    "entity_type": "skill",
+    "name": "Ice Spear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "igons_drake_hunt",
+    "entity_type": "skill",
+    "name": "Igon's Drake Hunt",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "impaling_thrust",
+    "entity_type": "skill",
+    "name": "Impaling Thrust",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "joris_inquisition",
+    "entity_type": "skill",
+    "name": "Jori's Inquisition",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "kick",
+    "entity_type": "skill",
+    "name": "Kick",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "knowledge_above_all",
+    "entity_type": "skill",
+    "name": "Knowledge Above All",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "kowtowers_resentment",
+    "entity_type": "skill",
+    "name": "Kowtower's Resentment",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "last_rites",
+    "entity_type": "skill",
+    "name": "Last Rites",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "lifesteal_fist",
+    "entity_type": "skill",
+    "name": "Lifesteal Fist",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "light",
+    "entity_type": "skill",
+    "name": "Light",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "lightning_ram",
+    "entity_type": "skill",
+    "name": "Lightning Ram",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "lightning_slash",
+    "entity_type": "skill",
+    "name": "Lightning Slash",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "lightspeed_slash",
+    "entity_type": "skill",
+    "name": "Lightspeed Slash",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "lions_claw",
+    "entity_type": "skill",
+    "name": "Lion's Claw",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "lorettas_slash",
+    "entity_type": "skill",
+    "name": "Loretta's Slash",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "madding_spear_hand_strike",
+    "entity_type": "skill",
+    "name": "Madding Spear-Hand Strike",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "magma_guillotine",
+    "entity_type": "skill",
+    "name": "Magma Guillotine",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "magma_shower",
+    "entity_type": "skill",
+    "name": "Magma Shower",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "messmers_assault",
+    "entity_type": "skill",
+    "name": "Messmer's Assault",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "mighty_shot",
+    "entity_type": "skill",
+    "name": "Mighty Shot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "miquellas_ring_of_light",
+    "entity_type": "skill",
+    "name": "Miquella's Ring of Light",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "mists_of_eternal_sleep",
+    "entity_type": "skill",
+    "name": "Mists of Eternal Sleep",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "mists_of_slumber",
+    "entity_type": "skill",
+    "name": "Mists of Slumber",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "moon_and_fire_stance",
+    "entity_type": "skill",
+    "name": "Moon-and-Fire Stance",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "moonlight_greatsword",
+    "entity_type": "skill",
+    "name": "Moonlight Greatsword",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "moores_charge",
+    "entity_type": "skill",
+    "name": "Moore's Charge",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "nebula",
+    "entity_type": "skill",
+    "name": "Nebula",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "needle_piercer",
+    "entity_type": "skill",
+    "name": "Needle Piercer",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "night_and_flame_stance",
+    "entity_type": "skill",
+    "name": "Night-and-Flame Stance",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "no_skill",
+    "entity_type": "skill",
+    "name": "No Skill",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "oath_of_vengeance",
+    "entity_type": "skill",
+    "name": "Oath of Vengeance",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "onyx_lords_repulsion",
+    "entity_type": "skill",
+    "name": "Onyx Lord's Repulsion",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "onzes_line_of_stars",
+    "entity_type": "skill",
+    "name": "Onze's Line of Stars",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "oracular_bubble",
+    "entity_type": "skill",
+    "name": "Oracular Bubble",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "ordoviss_vortex",
+    "entity_type": "skill",
+    "name": "Ordovis's Vortex",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "overhead_stance",
+    "entity_type": "skill",
+    "name": "Overhead Stance",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "painful_strike",
+    "entity_type": "skill",
+    "name": "Painful Strike",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "palm_blast",
+    "entity_type": "skill",
+    "name": "Palm Blast",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "parry_skill",
+    "entity_type": "skill",
+    "name": "Parry Skill",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "phantom_slash",
+    "entity_type": "skill",
+    "name": "Phantom Slash",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "piercing_fang",
+    "entity_type": "skill",
+    "name": "Piercing Fang",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "piercing_throw",
+    "entity_type": "skill",
+    "name": "Piercing Throw",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "poison_moth_flight",
+    "entity_type": "skill",
+    "name": "Poison Moth Flight",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "poison_spear_hand_strike",
+    "entity_type": "skill",
+    "name": "Poison Spear-Hand Strike",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "poisonous_mist",
+    "entity_type": "skill",
+    "name": "Poisonous Mist",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "prayerful_strike",
+    "entity_type": "skill",
+    "name": "Prayerful Strike",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "prelates_charge",
+    "entity_type": "skill",
+    "name": "Prelate's Charge",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "promised_consort",
+    "entity_type": "skill",
+    "name": "Promised Consort",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "quickstep",
+    "entity_type": "skill",
+    "name": "Quickstep",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "radahns_rain",
+    "entity_type": "skill",
+    "name": "Radahn's Rain",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "raging_beast",
+    "entity_type": "skill",
+    "name": "Raging Beast",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "rain_of_arrows",
+    "entity_type": "skill",
+    "name": "Rain of Arrows",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "rallying_standard",
+    "entity_type": "skill",
+    "name": "Rallying Standard",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "rancor_shot",
+    "entity_type": "skill",
+    "name": "Rancor Shot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "rancor_slash",
+    "entity_type": "skill",
+    "name": "Rancor Slash",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "raptor_of_the_mists",
+    "entity_type": "skill",
+    "name": "Raptor of the Mists",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "red_bear_hunt",
+    "entity_type": "skill",
+    "name": "Red Bear Hunt",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "reduvia_blood_blade",
+    "entity_type": "skill",
+    "name": "Reduvia Blood Blade",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "regal_beastclaw",
+    "entity_type": "skill",
+    "name": "Regal Beastclaw",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "regal_roar",
+    "entity_type": "skill",
+    "name": "Regal Roar",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "repeating_fire",
+    "entity_type": "skill",
+    "name": "Repeating Fire",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "repeating_thrust",
+    "entity_type": "skill",
+    "name": "Repeating Thrust",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "revenge_of_the_night",
+    "entity_type": "skill",
+    "name": "Revenge of the Night",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "revengers_blade",
+    "entity_type": "skill",
+    "name": "Revenger's Blade",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "roaring_bash",
+    "entity_type": "skill",
+    "name": "Roaring Bash",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "rolling_sparks",
+    "entity_type": "skill",
+    "name": "Rolling Sparks",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "rominas_purification",
+    "entity_type": "skill",
+    "name": "Romina's Purification",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "rosuss_summons",
+    "entity_type": "skill",
+    "name": "Rosus's Summons",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "royal_knights_resolve",
+    "entity_type": "skill",
+    "name": "Royal Knight's Resolve",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "ruinous_ghostflame",
+    "entity_type": "skill",
+    "name": "Ruinous Ghostflame",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "sacred_blade",
+    "entity_type": "skill",
+    "name": "Sacred Blade",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "sacred_order",
+    "entity_type": "skill",
+    "name": "Sacred Order",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "sacred_phalanx",
+    "entity_type": "skill",
+    "name": "Sacred Phalanx",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "sacred_ring_of_light",
+    "entity_type": "skill",
+    "name": "Sacred Ring of Light",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "savage_claws",
+    "entity_type": "skill",
+    "name": "Savage Claws",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "savage_lions_claw",
+    "entity_type": "skill",
+    "name": "Savage Lion's Claw",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "scattershot_claws",
+    "entity_type": "skill",
+    "name": "Scattershot (Claws)",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "scattershot_throw",
+    "entity_type": "skill",
+    "name": "Scattershot Throw",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "sea_of_magma",
+    "entity_type": "skill",
+    "name": "Sea of Magma",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "seppuku",
+    "entity_type": "skill",
+    "name": "Seppuku",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "shadow_sunflower_headbutt",
+    "entity_type": "skill",
+    "name": "Shadow Sunflower Headbutt",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "shared_order",
+    "entity_type": "skill",
+    "name": "Shared Order",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "shield_bash",
+    "entity_type": "skill",
+    "name": "Shield Bash",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "shield_crash",
+    "entity_type": "skill",
+    "name": "Shield Crash",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "shield_strike",
+    "entity_type": "skill",
+    "name": "Shield Strike",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "shriek_of_milos",
+    "entity_type": "skill",
+    "name": "Shriek of Milos",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "shriek_of_sorrow",
+    "entity_type": "skill",
+    "name": "Shriek of Sorrow",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "silurias_woe",
+    "entity_type": "skill",
+    "name": "Siluria's Woe",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "sky_shot",
+    "entity_type": "skill",
+    "name": "Sky Shot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "sleep_evermore",
+    "entity_type": "skill",
+    "name": "Sleep Evermore",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "smithing_art_spears",
+    "entity_type": "skill",
+    "name": "Smithing Art Spears",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "solitary_moon_slash",
+    "entity_type": "skill",
+    "name": "Solitary Moon Slash",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "sorcery_of_the_crozier",
+    "entity_type": "skill",
+    "name": "Sorcery of the Crozier",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "soul_stifler",
+    "entity_type": "skill",
+    "name": "Soul Stifler",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "spearcall_ritual",
+    "entity_type": "skill",
+    "name": "Spearcall Ritual",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "spectral_lance",
+    "entity_type": "skill",
+    "name": "Spectral Lance",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "spinning_chain",
+    "entity_type": "skill",
+    "name": "Spinning Chain",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "spinning_gravity_thrust",
+    "entity_type": "skill",
+    "name": "Spinning Gravity Thrust",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "spinning_guillotine",
+    "entity_type": "skill",
+    "name": "Spinning Guillotine",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "spinning_slash",
+    "entity_type": "skill",
+    "name": "Spinning Slash",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "spinning_strikes",
+    "entity_type": "skill",
+    "name": "Spinning Strikes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "spinning_weapon",
+    "entity_type": "skill",
+    "name": "Spinning Weapon",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "spinning_wheel",
+    "entity_type": "skill",
+    "name": "Spinning Wheel",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "square_off",
+    "entity_type": "skill",
+    "name": "Square Off",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "stamp_sweep",
+    "entity_type": "skill",
+    "name": "Stamp (Sweep)",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "stamp_upward_cut",
+    "entity_type": "skill",
+    "name": "Stamp (Upward Cut)",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "starcaller_cry",
+    "entity_type": "skill",
+    "name": "Starcaller Cry",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "storm_assault",
+    "entity_type": "skill",
+    "name": "Storm Assault",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "storm_blade",
+    "entity_type": "skill",
+    "name": "Storm Blade",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "storm_kick",
+    "entity_type": "skill",
+    "name": "Storm Kick",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "storm_stomp",
+    "entity_type": "skill",
+    "name": "Storm Stomp",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "storm_wall",
+    "entity_type": "skill",
+    "name": "Storm Wall",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "stormcaller",
+    "entity_type": "skill",
+    "name": "Stormcaller",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "surge_of_faith",
+    "entity_type": "skill",
+    "name": "Surge of Faith",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "swift_slash",
+    "entity_type": "skill",
+    "name": "Swift Slash",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "sword_dance",
+    "entity_type": "skill",
+    "name": "Sword Dance",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "takers_flames",
+    "entity_type": "skill",
+    "name": "Taker's Flames",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "the_poison_flower_blooms_twice",
+    "entity_type": "skill",
+    "name": "The Poison Flower Blooms Twice",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "the_queens_black_flame",
+    "entity_type": "skill",
+    "name": "The Queen's Black Flame",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "thopss_barrier",
+    "entity_type": "skill",
+    "name": "Thops's Barrier",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "through_and_through",
+    "entity_type": "skill",
+    "name": "Through and Through",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "thunderbolt",
+    "entity_type": "skill",
+    "name": "Thunderbolt",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "thundercloud_form",
+    "entity_type": "skill",
+    "name": "Thundercloud Form",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "thunderstorm",
+    "entity_type": "skill",
+    "name": "Thunderstorm",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "tongues_of_fire",
+    "entity_type": "skill",
+    "name": "Tongues of Fire",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "torch_attack",
+    "entity_type": "skill",
+    "name": "Torch Attack",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "transient_moonlight",
+    "entity_type": "skill",
+    "name": "Transient Moonlight",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "tremendous_phalanx",
+    "entity_type": "skill",
+    "name": "Tremendous Phalanx",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "trolls_roar",
+    "entity_type": "skill",
+    "name": "Troll's Roar",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "unblockable_blade",
+    "entity_type": "skill",
+    "name": "Unblockable Blade",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "unending_dance",
+    "entity_type": "skill",
+    "name": "Unending Dance",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "unsheathe",
+    "entity_type": "skill",
+    "name": "Unsheathe",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "vacuum_slice",
+    "entity_type": "skill",
+    "name": "Vacuum Slice",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "viper_bite",
+    "entity_type": "skill",
+    "name": "Viper Bite",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "vow_of_the_indomitable",
+    "entity_type": "skill",
+    "name": "Vow of the Indomitable",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "wall_of_sparks",
+    "entity_type": "skill",
+    "name": "Wall of Sparks",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "war_cry",
+    "entity_type": "skill",
+    "name": "War Cry",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "waterfowl_dance",
+    "entity_type": "skill",
+    "name": "Waterfowl Dance",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "wave_of_destruction",
+    "entity_type": "skill",
+    "name": "Wave of Destruction",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "wave_of_gold",
+    "entity_type": "skill",
+    "name": "Wave of Gold",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "waves_of_darkness",
+    "entity_type": "skill",
+    "name": "Waves of Darkness",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "weed_cutter",
+    "entity_type": "skill",
+    "name": "Weed Cutter",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "white_light_charge",
+    "entity_type": "skill",
+    "name": "White Light Charge",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "white_shadows_lure",
+    "entity_type": "skill",
+    "name": "White Shadow's Lure",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "wild_strikes",
+    "entity_type": "skill",
+    "name": "Wild Strikes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "wing_stance",
+    "entity_type": "skill",
+    "name": "Wing Stance",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "witching_hour_slash",
+    "entity_type": "skill",
+    "name": "Witching Hour Slash",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "wolfs_assault",
+    "entity_type": "skill",
+    "name": "Wolf's Assault",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  },
+  {
+    "slug": "zamor_ice_storm",
+    "entity_type": "skill",
+    "name": "Zamor Ice Storm",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/skills.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/skills.csv",
+        "sha256": "221dee3849541628c41bf043c538d46a56455c4d0cb2a0a8d5ec38af2c74bda3",
+        "retrieved_at": "2025-11-20T20:24:54.682293"
+      }
+    ]
+  }
+]

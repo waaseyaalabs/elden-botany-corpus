@@ -1,0 +1,1757 @@
+[
+  {
+    "slug": "ash_of_war_aspects_of_the_crucible_wings",
+    "entity_type": "ash",
+    "name": "Ash of War: Aspects of the Crucible: Wings",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_assassins_gambit",
+    "entity_type": "ash",
+    "name": "Ash of War: Assassin's Gambit",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_barbaric_roar",
+    "entity_type": "ash",
+    "name": "Ash of War: Barbaric Roar",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_barrage",
+    "entity_type": "ash",
+    "name": "Ash of War: Barrage",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_barricade_shield",
+    "entity_type": "ash",
+    "name": "Ash of War: Barricade Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_beasts_roar",
+    "entity_type": "ash",
+    "name": "Ash of War: Beast's Roar",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_black_flame_tornado",
+    "entity_type": "ash",
+    "name": "Ash of War: Black Flame Tornado",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_blind_spot",
+    "entity_type": "ash",
+    "name": "Ash of War: Blind Spot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_blinkbolt",
+    "entity_type": "ash",
+    "name": "Ash of War: Blinkbolt",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_blood_blade",
+    "entity_type": "ash",
+    "name": "Ash of War: Blood Blade",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_blood_tax",
+    "entity_type": "ash",
+    "name": "Ash of War: Blood Tax",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_bloodhounds_step",
+    "entity_type": "ash",
+    "name": "Ash of War: Bloodhound's Step",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_bloody_slash",
+    "entity_type": "ash",
+    "name": "Ash of War: Bloody Slash",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_braggarts_roar",
+    "entity_type": "ash",
+    "name": "Ash of War: Braggart's Roar",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_carian_grandeur",
+    "entity_type": "ash",
+    "name": "Ash of War: Carian Grandeur",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_carian_greatsword",
+    "entity_type": "ash",
+    "name": "Ash of War: Carian Greatsword",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_carian_retaliation",
+    "entity_type": "ash",
+    "name": "Ash of War: Carian Retaliation",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_carian_sovereignty",
+    "entity_type": "ash",
+    "name": "Ash of War: Carian Sovereignty",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_charge_forth",
+    "entity_type": "ash",
+    "name": "Ash of War: Charge Forth",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_chilling_mist",
+    "entity_type": "ash",
+    "name": "Ash of War: Chilling Mist",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_cragblade",
+    "entity_type": "ash",
+    "name": "Ash of War: Cragblade",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_determination",
+    "entity_type": "ash",
+    "name": "Ash of War: Determination",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_divine_beast_frost_stomp",
+    "entity_type": "ash",
+    "name": "Ash of War: Divine Beast Frost Stomp",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_double_slash",
+    "entity_type": "ash",
+    "name": "Ash of War: Double Slash",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_dryleaf_whirlwind",
+    "entity_type": "ash",
+    "name": "Ash of War: Dryleaf Whirlwind",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_earthshaker",
+    "entity_type": "ash",
+    "name": "Ash of War: Earthshaker",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_enchanted_shot",
+    "entity_type": "ash",
+    "name": "Ash of War: Enchanted Shot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_endure",
+    "entity_type": "ash",
+    "name": "Ash of War: Endure",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_eruption",
+    "entity_type": "ash",
+    "name": "Ash of War: Eruption",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_flame_of_the_redmanes",
+    "entity_type": "ash",
+    "name": "Ash of War: Flame of the Redmanes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_flame_skewer",
+    "entity_type": "ash",
+    "name": "Ash of War: Flame Skewer",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_flame_spear",
+    "entity_type": "ash",
+    "name": "Ash of War: Flame Spear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_flaming_strike",
+    "entity_type": "ash",
+    "name": "Ash of War: Flaming Strike",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_ghostflame_call",
+    "entity_type": "ash",
+    "name": "Ash of War: Ghostflame Call",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_giant_hunt",
+    "entity_type": "ash",
+    "name": "Ash of War: Giant Hunt",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_glintblade_phalanx",
+    "entity_type": "ash",
+    "name": "Ash of War: Glintblade Phalanx",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_glintstone_pebble",
+    "entity_type": "ash",
+    "name": "Ash of War: Glintstone Pebble",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_golden_land",
+    "entity_type": "ash",
+    "name": "Ash of War: Golden Land",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_golden_parry",
+    "entity_type": "ash",
+    "name": "Ash of War: Golden Parry",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_golden_slam",
+    "entity_type": "ash",
+    "name": "Ash of War: Golden Slam",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_golden_vow",
+    "entity_type": "ash",
+    "name": "Ash of War: Golden Vow",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_gravitas",
+    "entity_type": "ash",
+    "name": "Ash of War: Gravitas",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_ground_slam",
+    "entity_type": "ash",
+    "name": "Ash of War: Ground Slam",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_hoarah_louxs_earthshaker",
+    "entity_type": "ash",
+    "name": "Ash of War: Hoarah Loux's Earthshaker",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_hoarfrost_stomp",
+    "entity_type": "ash",
+    "name": "Ash of War: Hoarfrost Stomp",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_holy_ground",
+    "entity_type": "ash",
+    "name": "Ash of War: Holy Ground",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_ice_spear",
+    "entity_type": "ash",
+    "name": "Ash of War: Ice Spear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_igons_drake_hunt",
+    "entity_type": "ash",
+    "name": "Ash of War: Igon's Drake Hunt",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_impaling_thrust",
+    "entity_type": "ash",
+    "name": "Ash of War: Impaling Thrust",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_kick",
+    "entity_type": "ash",
+    "name": "Ash of War: Kick",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_lifesteal_fist",
+    "entity_type": "ash",
+    "name": "Ash of War: Lifesteal Fist",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_lightning_ram",
+    "entity_type": "ash",
+    "name": "Ash of War: Lightning Ram",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_lightning_slash",
+    "entity_type": "ash",
+    "name": "Ash of War: Lightning Slash",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_lions_claw",
+    "entity_type": "ash",
+    "name": "Ash of War: Lion's Claw",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_lorettas_slash",
+    "entity_type": "ash",
+    "name": "Ash of War: Loretta's Slash",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_mighty_shot",
+    "entity_type": "ash",
+    "name": "Ash of War: Mighty Shot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_no_skill",
+    "entity_type": "ash",
+    "name": "Ash of War: No Skill",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_overhead_stance",
+    "entity_type": "ash",
+    "name": "Ash of War: Overhead Stance",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_palm_blast",
+    "entity_type": "ash",
+    "name": "Ash of War: Palm Blast",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_parry",
+    "entity_type": "ash",
+    "name": "Ash of War: Parry",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_phantom_slash",
+    "entity_type": "ash",
+    "name": "Ash of War: Phantom Slash",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_piercing_fang",
+    "entity_type": "ash",
+    "name": "Ash of War: Piercing Fang",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_piercing_throw",
+    "entity_type": "ash",
+    "name": "Ash of War: Piercing Throw",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_poison_moth_flight",
+    "entity_type": "ash",
+    "name": "Ash of War: Poison Moth Flight",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_poisonous_mist",
+    "entity_type": "ash",
+    "name": "Ash of War: Poisonous Mist",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_prayerful_strike",
+    "entity_type": "ash",
+    "name": "Ash of War: Prayerful Strike",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_prelates_charge",
+    "entity_type": "ash",
+    "name": "Ash of War: Prelate's Charge",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_quickstep",
+    "entity_type": "ash",
+    "name": "Ash of War: Quickstep",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_raging_beast",
+    "entity_type": "ash",
+    "name": "Ash of War: Raging Beast",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_rain_of_arrows",
+    "entity_type": "ash",
+    "name": "Ash of War: Rain of Arrows",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_raptor_of_the_mists",
+    "entity_type": "ash",
+    "name": "Ash of War: Raptor of the Mists",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_repeating_thrust",
+    "entity_type": "ash",
+    "name": "Ash of War: Repeating Thrust",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_rolling_sparks",
+    "entity_type": "ash",
+    "name": "Ash of War: Rolling Sparks",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_royal_knights_resolve",
+    "entity_type": "ash",
+    "name": "Ash of War: Royal Knight's Resolve",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_sacred_blade",
+    "entity_type": "ash",
+    "name": "Ash of War: Sacred Blade",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_sacred_order",
+    "entity_type": "ash",
+    "name": "Ash of War: Sacred Order",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_sacred_ring_of_light",
+    "entity_type": "ash",
+    "name": "Ash of War: Sacred Ring of Light",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_savage_claws",
+    "entity_type": "ash",
+    "name": "Ash of War: Savage Claws",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_savage_lions_claw",
+    "entity_type": "ash",
+    "name": "Ash of War: Savage Lion's Claw",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_scattershot_throw",
+    "entity_type": "ash",
+    "name": "Ash of War: Scattershot Throw",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_seppuku",
+    "entity_type": "ash",
+    "name": "Ash of War: Seppuku",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_shared_order",
+    "entity_type": "ash",
+    "name": "Ash of War: Shared Order",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_shield_bash",
+    "entity_type": "ash",
+    "name": "Ash of War: Shield Bash",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_shield_crash",
+    "entity_type": "ash",
+    "name": "Ash of War: Shield Crash",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_shield_strike",
+    "entity_type": "ash",
+    "name": "Ash of War: Shield Strike",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_shriek_of_sorrow",
+    "entity_type": "ash",
+    "name": "Ash of War: Shriek of Sorrow",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_sky_shot",
+    "entity_type": "ash",
+    "name": "Ash of War: Sky Shot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_spectral_lance",
+    "entity_type": "ash",
+    "name": "Ash of War: Spectral Lance",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_spinning_gravity_thrust",
+    "entity_type": "ash",
+    "name": "Ash of War: Spinning Gravity Thrust",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_spinning_slash",
+    "entity_type": "ash",
+    "name": "Ash of War: Spinning Slash",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_spinning_strikes",
+    "entity_type": "ash",
+    "name": "Ash of War: Spinning Strikes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_spinning_weapon",
+    "entity_type": "ash",
+    "name": "Ash of War: Spinning Weapon",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_square_off",
+    "entity_type": "ash",
+    "name": "Ash of War: Square Off",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_stamp_sweep",
+    "entity_type": "ash",
+    "name": "Ash of War: Stamp (Sweep)",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_stamp_upward_cut",
+    "entity_type": "ash",
+    "name": "Ash of War: Stamp (Upward Cut)",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_storm_assault",
+    "entity_type": "ash",
+    "name": "Ash of War: Storm Assault",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_storm_blade",
+    "entity_type": "ash",
+    "name": "Ash of War: Storm Blade",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_storm_stomp",
+    "entity_type": "ash",
+    "name": "Ash of War: Storm Stomp",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_storm_wall",
+    "entity_type": "ash",
+    "name": "Ash of War: Storm Wall",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_stormcaller",
+    "entity_type": "ash",
+    "name": "Ash of War: Stormcaller",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_swift_slash",
+    "entity_type": "ash",
+    "name": "Ash of War: Swift Slash",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_sword_dance",
+    "entity_type": "ash",
+    "name": "Ash of War: Sword Dance",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_the_poison_flower_blooms_twice",
+    "entity_type": "ash",
+    "name": "Ash of War: The Poison Flower Blooms Twice",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_thopss_barrier",
+    "entity_type": "ash",
+    "name": "Ash of War: Thops's Barrier",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_through_and_through",
+    "entity_type": "ash",
+    "name": "Ash of War: Through and Through",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_thunderbolt",
+    "entity_type": "ash",
+    "name": "Ash of War: Thunderbolt",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_trolls_roar",
+    "entity_type": "ash",
+    "name": "Ash of War: Troll's Roar",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_unsheathe",
+    "entity_type": "ash",
+    "name": "Ash of War: Unsheathe",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_vacuum_slice",
+    "entity_type": "ash",
+    "name": "Ash of War: Vacuum Slice",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_vow_of_the_indomitable",
+    "entity_type": "ash",
+    "name": "Ash of War: Vow of the Indomitable",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_wall_of_sparks",
+    "entity_type": "ash",
+    "name": "Ash of War: Wall of Sparks",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_war_cry",
+    "entity_type": "ash",
+    "name": "Ash of War: War Cry",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_waves_of_darkness",
+    "entity_type": "ash",
+    "name": "Ash of War: Waves of Darkness",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_white_shadows_lure",
+    "entity_type": "ash",
+    "name": "Ash of War: White Shadow's Lure",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_wild_strikes",
+    "entity_type": "ash",
+    "name": "Ash of War: Wild Strikes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_wing_stance",
+    "entity_type": "ash",
+    "name": "Ash of War: Wing Stance",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  },
+  {
+    "slug": "lost_ashes_of_war",
+    "entity_type": "ash",
+    "name": "Lost Ashes of War",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/ashesOfWar.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/ashesOfWar.csv",
+        "sha256": "082beffb6301d0d88172a94a81bcbcd065af9158fc04fe4de4eb0a7cd45706b3",
+        "retrieved_at": "2025-11-20T20:24:54.510861"
+      }
+    ]
+  }
+]

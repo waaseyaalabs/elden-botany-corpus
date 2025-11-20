@@ -1,0 +1,3107 @@
+[
+  {
+    "slug": "acid_spraymist",
+    "entity_type": "consumable",
+    "name": "Acid Spraymist",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "albinauric_pot",
+    "entity_type": "consumable",
+    "name": "Albinauric Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "alluring_pot",
+    "entity_type": "consumable",
+    "name": "Alluring Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "ancient_dragonbolt_pot",
+    "entity_type": "consumable",
+    "name": "Ancient Dragonbolt Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "ancient_dragons_blessing",
+    "entity_type": "consumable",
+    "name": "Ancient Dragon's Blessing",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "baldachins_blessing",
+    "entity_type": "consumable",
+    "name": "Baldachin's Blessing",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "beastlure_pot",
+    "entity_type": "consumable",
+    "name": "Beastlure Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "bewitching_branch",
+    "entity_type": "consumable",
+    "name": "Bewitching Branch",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "blasphemous_claw",
+    "entity_type": "consumable",
+    "name": "Blasphemous Claw",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "blessing_of_marika",
+    "entity_type": "consumable",
+    "name": "Blessing of Marika",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "blood_grease",
+    "entity_type": "consumable",
+    "name": "Blood Grease",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "bloodboil_aromatic",
+    "entity_type": "consumable",
+    "name": "Bloodboil Aromatic",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "boiled_prawn",
+    "entity_type": "consumable",
+    "name": "Boiled Prawn",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "bone_dart",
+    "entity_type": "consumable",
+    "name": "Bone Dart",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "clarifying_boluses",
+    "entity_type": "consumable",
+    "name": "Clarifying Boluses",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "clarifying_cured_meat",
+    "entity_type": "consumable",
+    "name": "Clarifying Cured Meat",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "clarifying_white_cured_meat",
+    "entity_type": "consumable",
+    "name": "Clarifying White Cured Meat",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "crystal_dart",
+    "entity_type": "consumable",
+    "name": "Crystal Dart",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "cuckoo_glintstone",
+    "entity_type": "consumable",
+    "name": "Cuckoo Glintstone",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "cursed_blood_pot",
+    "entity_type": "consumable",
+    "name": "Cursed-Blood Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "dappled_cured_meat",
+    "entity_type": "consumable",
+    "name": "Dappled Cured Meat",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "dappled_white_cured_meat",
+    "entity_type": "consumable",
+    "name": "Dappled White Cured Meat",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "dragon_communion_flesh",
+    "entity_type": "consumable",
+    "name": "Dragon Communion Flesh",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "dragon_communion_grease",
+    "entity_type": "consumable",
+    "name": "Dragon Communion Grease",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "dragon_communion_harpoon",
+    "entity_type": "consumable",
+    "name": "Dragon Communion Harpoon",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "dragon_heart",
+    "entity_type": "consumable",
+    "name": "Dragon Heart",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "dragonbolt_grease",
+    "entity_type": "consumable",
+    "name": "Dragonbolt Grease",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "dragonscale_flesh",
+    "entity_type": "consumable",
+    "name": "Dragonscale Flesh",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "dragonwound_grease",
+    "entity_type": "consumable",
+    "name": "Dragonwound Grease",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "drawstring_blood_grease",
+    "entity_type": "consumable",
+    "name": "Drawstring Blood Grease",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "drawstring_dragonbolt_grease",
+    "entity_type": "consumable",
+    "name": "Drawstring Dragonbolt Grease",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "drawstring_eternal_sleep_grease",
+    "entity_type": "consumable",
+    "name": "Drawstring Eternal Sleep Grease",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "drawstring_fire_grease",
+    "entity_type": "consumable",
+    "name": "Drawstring Fire Grease",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "drawstring_golden_grease",
+    "entity_type": "consumable",
+    "name": "Drawstring Golden Grease",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "drawstring_holy_grease",
+    "entity_type": "consumable",
+    "name": "Drawstring Holy Grease",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "drawstring_lightning_grease",
+    "entity_type": "consumable",
+    "name": "Drawstring Lightning Grease",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "drawstring_magic_grease",
+    "entity_type": "consumable",
+    "name": "Drawstring Magic Grease",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "drawstring_messmerfire_grease",
+    "entity_type": "consumable",
+    "name": "Drawstring Messmerfire Grease",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "drawstring_poison_grease",
+    "entity_type": "consumable",
+    "name": "Drawstring Poison Grease",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "drawstring_rot_grease",
+    "entity_type": "consumable",
+    "name": "Drawstring Rot Grease",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "drawstring_royal_magic_grease",
+    "entity_type": "consumable",
+    "name": "Drawstring Royal Magic Grease",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "elden_remembrance",
+    "entity_type": "consumable",
+    "name": "Elden Remembrance",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "eternal_sleep_grease",
+    "entity_type": "consumable",
+    "name": "Eternal Sleep Grease",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "eternal_sleep_pot",
+    "entity_type": "consumable",
+    "name": "Eternal Sleep Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "exalted_flesh",
+    "entity_type": "consumable",
+    "name": "Exalted Flesh",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "explosive_stone_clump",
+    "entity_type": "consumable",
+    "name": "Explosive Stone Clump",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "fan_daggers",
+    "entity_type": "consumable",
+    "name": "Fan Daggers",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "festive_grease",
+    "entity_type": "consumable",
+    "name": "Festive Grease",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "fetid_pot",
+    "entity_type": "consumable",
+    "name": "Fetid Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "fingerprint_nostrum",
+    "entity_type": "consumable",
+    "name": "Fingerprint Nostrum",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "fire_grease",
+    "entity_type": "consumable",
+    "name": "Fire Grease",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "fire_pot",
+    "entity_type": "consumable",
+    "name": "Fire Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "fireproof_dried_liver",
+    "entity_type": "consumable",
+    "name": "Fireproof Dried Liver",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "fireproof_pickled_liver",
+    "entity_type": "consumable",
+    "name": "Fireproof Pickled Liver",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "flask_of_cerulean_tears",
+    "entity_type": "consumable",
+    "name": "Flask of Cerulean Tears",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "flask_of_crimson_tears",
+    "entity_type": "consumable",
+    "name": "Flask of Crimson Tears",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "flask_of_wondrous_physick",
+    "entity_type": "consumable",
+    "name": "Flask of Wondrous Physick",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "freezing_pot",
+    "entity_type": "consumable",
+    "name": "Freezing Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "frenzied_flame_pot",
+    "entity_type": "consumable",
+    "name": "Frenzied Flame Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "frenzyflame_stone",
+    "entity_type": "consumable",
+    "name": "Frenzyflame Stone",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "frozen_raisin",
+    "entity_type": "consumable",
+    "name": "Frozen Raisin",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "furlcalling_finger_remedy",
+    "entity_type": "consumable",
+    "name": "Furlcalling Finger Remedy",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "furled_fingers_trick_mirror",
+    "entity_type": "consumable",
+    "name": "Furled Finger's Trick-Mirror",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "giantsflame_fire_pot",
+    "entity_type": "consumable",
+    "name": "Giantsflame Fire Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "glass_shard",
+    "entity_type": "consumable",
+    "name": "Glass Shard",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "glintstone_scrap",
+    "entity_type": "consumable",
+    "name": "Glintstone Scrap",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "glowstone",
+    "entity_type": "consumable",
+    "name": "Glowstone",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "gold_pickled_fowl_foot",
+    "entity_type": "consumable",
+    "name": "Gold-Pickled Fowl Foot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "golden_grease",
+    "entity_type": "consumable",
+    "name": "Golden Grease",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "golden_horn_tender",
+    "entity_type": "consumable",
+    "name": "Golden Horn Tender",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "golden_rune_1",
+    "entity_type": "consumable",
+    "name": "Golden Rune [1]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "golden_rune_10",
+    "entity_type": "consumable",
+    "name": "Golden Rune [10]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "golden_rune_2",
+    "entity_type": "consumable",
+    "name": "Golden Rune [2]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "golden_rune_3_3",
+    "entity_type": "consumable",
+    "name": "Golden Rune [3] 3",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "golden_rune_4",
+    "entity_type": "consumable",
+    "name": "Golden Rune [4]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "golden_rune_6",
+    "entity_type": "consumable",
+    "name": "Golden Rune [6]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "golden_rune_7",
+    "entity_type": "consumable",
+    "name": "Golden Rune [7]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "golden_rune_8",
+    "entity_type": "consumable",
+    "name": "Golden Rune [8]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "golden_rune_9",
+    "entity_type": "consumable",
+    "name": "Golden Rune [9]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "golden_seed",
+    "entity_type": "consumable",
+    "name": "Golden Seed",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "gourmet_scorpion_stew",
+    "entity_type": "consumable",
+    "name": "Gourmet Scorpion Stew",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "gourmet_scorpion_stew_2",
+    "entity_type": "consumable",
+    "name": "Gourmet Scorpion Stew (2)",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "grace_mimic",
+    "entity_type": "consumable",
+    "name": "Grace Mimic",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "gravity_stone_chunk",
+    "entity_type": "consumable",
+    "name": "Gravity Stone Chunk",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "gravity_stone_fan",
+    "entity_type": "consumable",
+    "name": "Gravity Stone Fan",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "heavy_meteorite_fragment",
+    "entity_type": "consumable",
+    "name": "Heavy Meteorite Fragment",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "hefty_fetid_pot",
+    "entity_type": "consumable",
+    "name": "Hefty Fetid Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "hefty_fire_pot",
+    "entity_type": "consumable",
+    "name": "Hefty Fire Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "hefty_fly_pot",
+    "entity_type": "consumable",
+    "name": "Hefty Fly Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "hefty_freezing_pot",
+    "entity_type": "consumable",
+    "name": "Hefty Freezing Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "hefty_frenzied_flame_pot",
+    "entity_type": "consumable",
+    "name": "Hefty Frenzied Flame Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "hefty_furnace_pot",
+    "entity_type": "consumable",
+    "name": "Hefty Furnace Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "hefty_lightning_pot",
+    "entity_type": "consumable",
+    "name": "Hefty Lightning Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "hefty_magic_pot",
+    "entity_type": "consumable",
+    "name": "Hefty Magic Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "hefty_oil_pot",
+    "entity_type": "consumable",
+    "name": "Hefty Oil Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "hefty_poison_pot",
+    "entity_type": "consumable",
+    "name": "Hefty Poison Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "hefty_rancor_pot",
+    "entity_type": "consumable",
+    "name": "Hefty Rancor Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "hefty_red_lightning_pot",
+    "entity_type": "consumable",
+    "name": "Hefty Red Lightning Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "hefty_rock_pot",
+    "entity_type": "consumable",
+    "name": "Hefty Rock Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "hefty_rot_pot",
+    "entity_type": "consumable",
+    "name": "Hefty Rot Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "hefty_volcano_pot",
+    "entity_type": "consumable",
+    "name": "Hefty Volcano Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "holy_grease",
+    "entity_type": "consumable",
+    "name": "Holy Grease",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "holy_water_pot",
+    "entity_type": "consumable",
+    "name": "Holy Water Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "holyproof_dried_liver",
+    "entity_type": "consumable",
+    "name": "Holyproof Dried Liver",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "holyproof_pickled_liver",
+    "entity_type": "consumable",
+    "name": "Holyproof Pickled Liver",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "hosts_trick_mirror",
+    "entity_type": "consumable",
+    "name": "Host's Trick-Mirror",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "immunizing_cured_meat",
+    "entity_type": "consumable",
+    "name": "Immunizing Cured Meat",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "immunizing_white_cured_meat",
+    "entity_type": "consumable",
+    "name": "Immunizing White Cured Meat",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "innard_meat",
+    "entity_type": "consumable",
+    "name": "Innard Meat",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "invigorating_cured_meat",
+    "entity_type": "consumable",
+    "name": "Invigorating Cured Meat",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "invigorating_white_cured_meat",
+    "entity_type": "consumable",
+    "name": "Invigorating White Cured Meat",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "iris_of_grace",
+    "entity_type": "consumable",
+    "name": "Iris of Grace",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "iris_of_occultation",
+    "entity_type": "consumable",
+    "name": "Iris of Occultation",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "ironjar_aromatic",
+    "entity_type": "consumable",
+    "name": "Ironjar Aromatic",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "kukri",
+    "entity_type": "consumable",
+    "name": "Kukri",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "lamenters_mask",
+    "entity_type": "consumable",
+    "name": "Lamenter's Mask",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "lands_between_rune",
+    "entity_type": "consumable",
+    "name": "Lands Between Rune",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "large_glintstone_scrap",
+    "entity_type": "consumable",
+    "name": "Large Glintstone Scrap",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "lightning_grease",
+    "entity_type": "consumable",
+    "name": "Lightning Grease",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "lightning_pot",
+    "entity_type": "consumable",
+    "name": "Lightning Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "lightningproof_dried_liver",
+    "entity_type": "consumable",
+    "name": "Lightningproof Dried Liver",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "lightningproof_pickled_liver",
+    "entity_type": "consumable",
+    "name": "Lightningproof Pickled Liver",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "lulling_branch",
+    "entity_type": "consumable",
+    "name": "Lulling Branch",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "magic_grease",
+    "entity_type": "consumable",
+    "name": "Magic Grease",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "margits_shackle",
+    "entity_type": "consumable",
+    "name": "Margit's Shackle",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "memory_of_grace",
+    "entity_type": "consumable",
+    "name": "Memory of Grace",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "messmerfire_grease",
+    "entity_type": "consumable",
+    "name": "Messmerfire Grease",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "neutralizing_boluses",
+    "entity_type": "consumable",
+    "name": "Neutralizing Boluses",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "oil_pot",
+    "entity_type": "consumable",
+    "name": "Oil Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "omen_bairn",
+    "entity_type": "consumable",
+    "name": "Omen Bairn",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "opaline_pickled_liver",
+    "entity_type": "consumable",
+    "name": "Opaline Pickled Liver",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "paupers_rune",
+    "entity_type": "consumable",
+    "name": "Pauper's Rune",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "pickled_turtle_neck",
+    "entity_type": "consumable",
+    "name": "Pickled Turtle Neck",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "poison_grease",
+    "entity_type": "consumable",
+    "name": "Poison Grease",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "poison_pot",
+    "entity_type": "consumable",
+    "name": "Poison Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "poisonbone_dart",
+    "entity_type": "consumable",
+    "name": "Poisonbone Dart",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "poisoned_stone",
+    "entity_type": "consumable",
+    "name": "Poisoned Stone",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "poisoned_stone_clump",
+    "entity_type": "consumable",
+    "name": "Poisoned Stone Clump",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "polter_stone",
+    "entity_type": "consumable",
+    "name": "Polter Stone",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "prattling_pate_apologies",
+    "entity_type": "consumable",
+    "name": "Prattling Pate \"Apologies\"",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "prattling_pate_please_help",
+    "entity_type": "consumable",
+    "name": "Prattling Pate \"Please help\"",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "prattling_pate_wonderful",
+    "entity_type": "consumable",
+    "name": "Prattling Pate \"Wonderful\"",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "prattling_pate_youre_beautiful",
+    "entity_type": "consumable",
+    "name": "Prattling Pate \"You're beautiful\"",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "preserving_boluses",
+    "entity_type": "consumable",
+    "name": "Preserving Boluses",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "priestess_heart",
+    "entity_type": "consumable",
+    "name": "Priestess Heart",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "pureblood_knights_medal",
+    "entity_type": "consumable",
+    "name": "Pureblood Knight's Medal",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "radiant_baldachins_blessing",
+    "entity_type": "consumable",
+    "name": "Radiant Baldachin's Blessing",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "rainbow_stone",
+    "entity_type": "consumable",
+    "name": "Rainbow Stone",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "raw_meat_dumpling",
+    "entity_type": "consumable",
+    "name": "Raw Meat Dumpling",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "red_lightning_pot",
+    "entity_type": "consumable",
+    "name": "Red Lightning Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "redmane_fire_pot",
+    "entity_type": "consumable",
+    "name": "Redmane Fire Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "rejuvenating_boluses",
+    "entity_type": "consumable",
+    "name": "Rejuvenating Boluses",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "remembrance_of_the_black_blade",
+    "entity_type": "consumable",
+    "name": "Remembrance of the Black Blade",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "remembrance_of_the_blasphemous",
+    "entity_type": "consumable",
+    "name": "Remembrance of the Blasphemous",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "remembrance_of_the_dragonlord",
+    "entity_type": "consumable",
+    "name": "Remembrance of the Dragonlord",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "remembrance_of_the_fire_giant",
+    "entity_type": "consumable",
+    "name": "Remembrance of the Fire Giant",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "remembrance_of_the_full_moon_queen",
+    "entity_type": "consumable",
+    "name": "Remembrance of the Full Moon Queen",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "remembrance_of_the_grafted",
+    "entity_type": "consumable",
+    "name": "Remembrance of the Grafted",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "remembrance_of_the_lichdragon",
+    "entity_type": "consumable",
+    "name": "Remembrance of the Lichdragon",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "remembrance_of_the_naturalborn",
+    "entity_type": "consumable",
+    "name": "Remembrance of the Naturalborn",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "remembrance_of_the_omen_king",
+    "entity_type": "consumable",
+    "name": "Remembrance of the Omen King",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "remembrance_of_the_regal_ancestor",
+    "entity_type": "consumable",
+    "name": "Remembrance of the Regal Ancestor",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "remembrance_of_the_rot_goddess",
+    "entity_type": "consumable",
+    "name": "Remembrance of the Rot Goddess",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "remembrance_of_the_starscourge",
+    "entity_type": "consumable",
+    "name": "Remembrance of the Starscourge",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "rock_heart",
+    "entity_type": "consumable",
+    "name": "Rock Heart",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "roped_fetid_pot",
+    "entity_type": "consumable",
+    "name": "Roped Fetid Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "roped_fire_pot",
+    "entity_type": "consumable",
+    "name": "Roped Fire Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "roped_fly_pot",
+    "entity_type": "consumable",
+    "name": "Roped Fly Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "roped_freezing_pot",
+    "entity_type": "consumable",
+    "name": "Roped Freezing Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "roped_frenzied_flame_pot",
+    "entity_type": "consumable",
+    "name": "Roped Frenzied Flame Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "roped_holy_water_pot",
+    "entity_type": "consumable",
+    "name": "Roped Holy Water Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "roped_lightning_pot",
+    "entity_type": "consumable",
+    "name": "Roped Lightning Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "roped_magic_pot",
+    "entity_type": "consumable",
+    "name": "Roped Magic Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "roped_oil_pot",
+    "entity_type": "consumable",
+    "name": "Roped Oil Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "roped_volcano_pot",
+    "entity_type": "consumable",
+    "name": "Roped Volcano Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "rot_grease",
+    "entity_type": "consumable",
+    "name": "Rot Grease",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "rot_pot",
+    "entity_type": "consumable",
+    "name": "Rot Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "rowa_raisin",
+    "entity_type": "consumable",
+    "name": "Rowa Raisin",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "royal_magic_grease",
+    "entity_type": "consumable",
+    "name": "Royal Magic Grease",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "rune_arc",
+    "entity_type": "consumable",
+    "name": "Rune Arc",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "sacred_bloody_flesh",
+    "entity_type": "consumable",
+    "name": "Sacred Bloody Flesh",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "sacred_order_pot",
+    "entity_type": "consumable",
+    "name": "Sacred Order Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "sacred_tear",
+    "entity_type": "consumable",
+    "name": "Sacred Tear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "scorpion_stew",
+    "entity_type": "consumable",
+    "name": "Scorpion Stew",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "scorpion_stew_2",
+    "entity_type": "consumable",
+    "name": "Scorpion Stew (2)",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "scriptstone",
+    "entity_type": "consumable",
+    "name": "Scriptstone",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "shield_grease",
+    "entity_type": "consumable",
+    "name": "Shield Grease",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "silver_horn_tender",
+    "entity_type": "consumable",
+    "name": "Silver Horn Tender",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "silver_pickled_fowl_foot",
+    "entity_type": "consumable",
+    "name": "Silver-Pickled Fowl Foot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "sleep_pot",
+    "entity_type": "consumable",
+    "name": "Sleep Pot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "soap",
+    "entity_type": "consumable",
+    "name": "Soap",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "soft_cotton",
+    "entity_type": "consumable",
+    "name": "Soft Cotton",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "soporific_grease",
+    "entity_type": "consumable",
+    "name": "Soporific Grease",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "spark_aromatic",
+    "entity_type": "consumable",
+    "name": "Spark Aromatic",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "spellproof_dried_liver",
+    "entity_type": "consumable",
+    "name": "Spellproof Dried Liver",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "spellproof_pickled_liver",
+    "entity_type": "consumable",
+    "name": "Spellproof Pickled Liver",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "spirit_raisin",
+    "entity_type": "consumable",
+    "name": "Spirit Raisin",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "stanching_boluses",
+    "entity_type": "consumable",
+    "name": "Stanching Boluses",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "starlight_shards",
+    "entity_type": "consumable",
+    "name": "Starlight Shards",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "stimulating_boluses",
+    "entity_type": "consumable",
+    "name": "Stimulating Boluses",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "thawfrost_boluses",
+    "entity_type": "consumable",
+    "name": "Thawfrost Boluses",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "thiolliers_concoction",
+    "entity_type": "consumable",
+    "name": "Thiollier's Concoction",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "throwing_dagger",
+    "entity_type": "consumable",
+    "name": "Throwing Dagger",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "uplifting_aromatic",
+    "entity_type": "consumable",
+    "name": "Uplifting Aromatic",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "warming_stone",
+    "entity_type": "consumable",
+    "name": "Warming Stone",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "well_pickled_turtle_neck",
+    "entity_type": "consumable",
+    "name": "Well-Pickled Turtle Neck",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  },
+  {
+    "slug": "wraith_calling_bell",
+    "entity_type": "consumable",
+    "name": "Wraith Calling Bell",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/consumables.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/consumables.csv",
+        "sha256": "07709b19c343d8869015d288f4c591c2fd9d22bdc3bfba6190fee345c754a571",
+        "retrieved_at": "2025-11-20T20:24:54.523017"
+      }
+    ]
+  }
+]

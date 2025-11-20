@@ -1,0 +1,1562 @@
+[
+  {
+    "slug": "ancient_dragon_apostles_cookbook_1",
+    "entity_type": "cookbook",
+    "name": "Ancient Dragon Apostle's Cookbook [1]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "ancient_dragon_apostles_cookbook_2",
+    "entity_type": "cookbook",
+    "name": "Ancient Dragon Apostle's Cookbook [2]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "ancient_dragon_apostles_cookbook_3",
+    "entity_type": "cookbook",
+    "name": "Ancient Dragon Apostle's Cookbook [3]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "ancient_dragon_apostles_cookbook_4",
+    "entity_type": "cookbook",
+    "name": "Ancient Dragon Apostle's Cookbook [4]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "ancient_dragon_knights_cookbook_1",
+    "entity_type": "cookbook",
+    "name": "Ancient Dragon Knight's Cookbook [1]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "ancient_dragon_knights_cookbook_2",
+    "entity_type": "cookbook",
+    "name": "Ancient Dragon Knight's Cookbook [2]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "antiquity_scholars_cookbook_1",
+    "entity_type": "cookbook",
+    "name": "Antiquity Scholar's Cookbook [1]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "antiquity_scholars_cookbook_2",
+    "entity_type": "cookbook",
+    "name": "Antiquity Scholar's Cookbook [2]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "armorers_cookbook_1",
+    "entity_type": "cookbook",
+    "name": "Armorer's Cookbook [1]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "armorers_cookbook_2",
+    "entity_type": "cookbook",
+    "name": "Armorer's Cookbook [2]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "armorers_cookbook_3",
+    "entity_type": "cookbook",
+    "name": "Armorer's Cookbook [3]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "armorers_cookbook_4",
+    "entity_type": "cookbook",
+    "name": "Armorer's Cookbook [4]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "armorers_cookbook_5",
+    "entity_type": "cookbook",
+    "name": "Armorer's Cookbook [5]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "armorers_cookbook_6",
+    "entity_type": "cookbook",
+    "name": "Armorer's Cookbook [6]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "armorers_cookbook_7",
+    "entity_type": "cookbook",
+    "name": "Armorer's Cookbook [7]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "battlefield_priests_cookbook_1",
+    "entity_type": "cookbook",
+    "name": "Battlefield Priest's Cookbook [1]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "battlefield_priests_cookbook_2",
+    "entity_type": "cookbook",
+    "name": "Battlefield Priest's Cookbook [2]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "battlefield_priests_cookbook_3",
+    "entity_type": "cookbook",
+    "name": "Battlefield Priest's Cookbook [3]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "battlefield_priests_cookbook_4",
+    "entity_type": "cookbook",
+    "name": "Battlefield Priest's Cookbook [4]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "fevors_cookbook_1",
+    "entity_type": "cookbook",
+    "name": "Fevor's Cookbook [1]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "fevors_cookbook_2",
+    "entity_type": "cookbook",
+    "name": "Fevor's Cookbook [2]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "fevors_cookbook_3",
+    "entity_type": "cookbook",
+    "name": "Fevor's Cookbook [3]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "finger_weavers_cookbook_1",
+    "entity_type": "cookbook",
+    "name": "Finger-Weaver's Cookbook [1]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "finger_weavers_cookbook_2",
+    "entity_type": "cookbook",
+    "name": "Finger-Weaver's Cookbook [2]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "fire_knights_cookbook_1",
+    "entity_type": "cookbook",
+    "name": "Fire Knight's Cookbook [1]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "fire_knights_cookbook_2",
+    "entity_type": "cookbook",
+    "name": "Fire Knight's Cookbook [2]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "forager_brood_cookbook_1",
+    "entity_type": "cookbook",
+    "name": "Forager Brood Cookbook [1]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "forager_brood_cookbook_2",
+    "entity_type": "cookbook",
+    "name": "Forager Brood Cookbook [2]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "forager_brood_cookbook_3",
+    "entity_type": "cookbook",
+    "name": "Forager Brood Cookbook [3]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "forager_brood_cookbook_4",
+    "entity_type": "cookbook",
+    "name": "Forager Brood Cookbook [4]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "forager_brood_cookbook_5",
+    "entity_type": "cookbook",
+    "name": "Forager Brood Cookbook [5]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "forager_brood_cookbook_6",
+    "entity_type": "cookbook",
+    "name": "Forager Brood Cookbook [6]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "forager_brood_cookbook_7",
+    "entity_type": "cookbook",
+    "name": "Forager Brood Cookbook [7]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "frenzieds_cookbook_1",
+    "entity_type": "cookbook",
+    "name": "Frenzied's Cookbook [1]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "frenzieds_cookbook_2",
+    "entity_type": "cookbook",
+    "name": "Frenzied's Cookbook [2]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "glintstone_craftsmans_cookbook_1",
+    "entity_type": "cookbook",
+    "name": "Glintstone Craftsman's Cookbook [1]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "glintstone_craftsmans_cookbook_2",
+    "entity_type": "cookbook",
+    "name": "Glintstone Craftsman's Cookbook [2]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "glintstone_craftsmans_cookbook_3",
+    "entity_type": "cookbook",
+    "name": "Glintstone Craftsman's Cookbook [3]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "glintstone_craftsmans_cookbook_4",
+    "entity_type": "cookbook",
+    "name": "Glintstone Craftsman's Cookbook [4]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "glintstone_craftsmans_cookbook_5",
+    "entity_type": "cookbook",
+    "name": "Glintstone Craftsman's Cookbook [5]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "glintstone_craftsmans_cookbook_6",
+    "entity_type": "cookbook",
+    "name": "Glintstone Craftsman's Cookbook [6]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "glintstone_craftsmans_cookbook_7",
+    "entity_type": "cookbook",
+    "name": "Glintstone Craftsman's Cookbook [7]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "glintstone_craftsmans_cookbook_8",
+    "entity_type": "cookbook",
+    "name": "Glintstone Craftsman's Cookbook [8]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "grave_keepers_cookbook_1",
+    "entity_type": "cookbook",
+    "name": "Grave Keeper's Cookbook [1]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "grave_keepers_cookbook_2",
+    "entity_type": "cookbook",
+    "name": "Grave Keeper's Cookbook [2]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "greater_potentates_cookbook_1",
+    "entity_type": "cookbook",
+    "name": "Greater Potentate's Cookbook [1]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "greater_potentates_cookbook_10",
+    "entity_type": "cookbook",
+    "name": "Greater Potentate's Cookbook [10]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "greater_potentates_cookbook_11",
+    "entity_type": "cookbook",
+    "name": "Greater Potentate's Cookbook [11]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "greater_potentates_cookbook_12",
+    "entity_type": "cookbook",
+    "name": "Greater Potentate's Cookbook [12]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "greater_potentates_cookbook_13",
+    "entity_type": "cookbook",
+    "name": "Greater Potentate's Cookbook [13]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "greater_potentates_cookbook_14",
+    "entity_type": "cookbook",
+    "name": "Greater Potentate's Cookbook [14]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "greater_potentates_cookbook_2",
+    "entity_type": "cookbook",
+    "name": "Greater Potentate's Cookbook [2]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "greater_potentates_cookbook_3",
+    "entity_type": "cookbook",
+    "name": "Greater Potentate's Cookbook [3]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "greater_potentates_cookbook_4",
+    "entity_type": "cookbook",
+    "name": "Greater Potentate's Cookbook [4]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "greater_potentates_cookbook_5",
+    "entity_type": "cookbook",
+    "name": "Greater Potentate's Cookbook [5]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "greater_potentates_cookbook_6",
+    "entity_type": "cookbook",
+    "name": "Greater Potentate's Cookbook [6]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "greater_potentates_cookbook_7",
+    "entity_type": "cookbook",
+    "name": "Greater Potentate's Cookbook [7]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "greater_potentates_cookbook_8",
+    "entity_type": "cookbook",
+    "name": "Greater Potentate's Cookbook [8]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "greater_potentates_cookbook_9",
+    "entity_type": "cookbook",
+    "name": "Greater Potentate's Cookbook [9]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "igons_cookbook_1",
+    "entity_type": "cookbook",
+    "name": "Igon's Cookbook [1]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "igons_cookbook_2",
+    "entity_type": "cookbook",
+    "name": "Igon's Cookbook [2]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "loyal_knights_cookbook",
+    "entity_type": "cookbook",
+    "name": "Loyal Knight's Cookbook",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "mad_craftsmans_cookbook_1",
+    "entity_type": "cookbook",
+    "name": "Mad Craftsman's Cookbook [1]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "mad_craftsmans_cookbook_2",
+    "entity_type": "cookbook",
+    "name": "Mad Craftsman's Cookbook [2]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "mad_craftsmans_cookbook_3",
+    "entity_type": "cookbook",
+    "name": "Mad Craftsman's Cookbook [3]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "missionarys_cookbook_1",
+    "entity_type": "cookbook",
+    "name": "Missionary's Cookbook [1]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "missionarys_cookbook_2",
+    "entity_type": "cookbook",
+    "name": "Missionary's Cookbook [2]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "missionarys_cookbook_3",
+    "entity_type": "cookbook",
+    "name": "Missionary's Cookbook [3]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "missionarys_cookbook_4",
+    "entity_type": "cookbook",
+    "name": "Missionary's Cookbook [4]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "missionarys_cookbook_5",
+    "entity_type": "cookbook",
+    "name": "Missionary's Cookbook [5]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "missionarys_cookbook_6",
+    "entity_type": "cookbook",
+    "name": "Missionary's Cookbook [6]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "missionarys_cookbook_7",
+    "entity_type": "cookbook",
+    "name": "Missionary's Cookbook [7]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "nomadic_warriors_cookbook_1",
+    "entity_type": "cookbook",
+    "name": "Nomadic Warrior's Cookbook [1]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "nomadic_warriors_cookbook_10",
+    "entity_type": "cookbook",
+    "name": "Nomadic Warrior's Cookbook [10]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "nomadic_warriors_cookbook_11",
+    "entity_type": "cookbook",
+    "name": "Nomadic Warrior's Cookbook [11]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "nomadic_warriors_cookbook_12",
+    "entity_type": "cookbook",
+    "name": "Nomadic Warrior's Cookbook [12]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "nomadic_warriors_cookbook_13",
+    "entity_type": "cookbook",
+    "name": "Nomadic Warrior's Cookbook [13]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "nomadic_warriors_cookbook_14",
+    "entity_type": "cookbook",
+    "name": "Nomadic Warrior's Cookbook [14]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "nomadic_warriors_cookbook_15",
+    "entity_type": "cookbook",
+    "name": "Nomadic Warrior's Cookbook [15]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "nomadic_warriors_cookbook_16",
+    "entity_type": "cookbook",
+    "name": "Nomadic Warrior's Cookbook [16]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "nomadic_warriors_cookbook_17",
+    "entity_type": "cookbook",
+    "name": "Nomadic Warrior's Cookbook [17]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "nomadic_warriors_cookbook_18",
+    "entity_type": "cookbook",
+    "name": "Nomadic Warrior's Cookbook [18]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "nomadic_warriors_cookbook_19",
+    "entity_type": "cookbook",
+    "name": "Nomadic Warrior's Cookbook [19]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "nomadic_warriors_cookbook_2",
+    "entity_type": "cookbook",
+    "name": "Nomadic Warrior's Cookbook [2]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "nomadic_warriors_cookbook_20",
+    "entity_type": "cookbook",
+    "name": "Nomadic Warrior's Cookbook [20]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "nomadic_warriors_cookbook_21",
+    "entity_type": "cookbook",
+    "name": "Nomadic Warrior's Cookbook [21]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "nomadic_warriors_cookbook_22",
+    "entity_type": "cookbook",
+    "name": "Nomadic Warrior's Cookbook [22]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "nomadic_warriors_cookbook_23",
+    "entity_type": "cookbook",
+    "name": "Nomadic Warrior's Cookbook [23]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "nomadic_warriors_cookbook_24",
+    "entity_type": "cookbook",
+    "name": "Nomadic Warrior's Cookbook [24]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "nomadic_warriors_cookbook_3",
+    "entity_type": "cookbook",
+    "name": "Nomadic Warrior's Cookbook [3]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "nomadic_warriors_cookbook_4",
+    "entity_type": "cookbook",
+    "name": "Nomadic Warrior's Cookbook [4]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "nomadic_warriors_cookbook_5",
+    "entity_type": "cookbook",
+    "name": "Nomadic Warrior's Cookbook [5]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "nomadic_warriors_cookbook_6",
+    "entity_type": "cookbook",
+    "name": "Nomadic Warrior's Cookbook [6]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "nomadic_warriors_cookbook_7",
+    "entity_type": "cookbook",
+    "name": "Nomadic Warrior's Cookbook [7]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "nomadic_warriors_cookbook_8",
+    "entity_type": "cookbook",
+    "name": "Nomadic Warrior's Cookbook [8]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "nomadic_warriors_cookbook_9",
+    "entity_type": "cookbook",
+    "name": "Nomadic Warrior's Cookbook [9]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "perfumers_cookbook_1",
+    "entity_type": "cookbook",
+    "name": "Perfumer's Cookbook [1]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "perfumers_cookbook_2",
+    "entity_type": "cookbook",
+    "name": "Perfumer's Cookbook [2]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "perfumers_cookbook_3",
+    "entity_type": "cookbook",
+    "name": "Perfumer's Cookbook [3]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "perfumers_cookbook_4",
+    "entity_type": "cookbook",
+    "name": "Perfumer's Cookbook [4]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "st_trina_disciples_cookbook_1",
+    "entity_type": "cookbook",
+    "name": "St. Trina Disciple's Cookbook [1]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "st_trina_disciples_cookbook_2",
+    "entity_type": "cookbook",
+    "name": "St. Trina Disciple's Cookbook [2]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "st_trina_disciples_cookbook_3",
+    "entity_type": "cookbook",
+    "name": "St. Trina Disciple's Cookbook [3]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  },
+  {
+    "slug": "tibias_cookbook",
+    "entity_type": "cookbook",
+    "name": "Tibia's Cookbook",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/cookbooks.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/cookbooks.csv",
+        "sha256": "deccdda283f8f075f5baf3238163286c288280a572cd22721c6a456ff527f2cb",
+        "retrieved_at": "2025-11-20T20:24:54.525706"
+      }
+    ]
+  }
+]

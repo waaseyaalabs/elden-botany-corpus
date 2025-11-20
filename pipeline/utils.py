@@ -120,9 +120,7 @@ def coerce_types(df: pd.DataFrame, type_map: dict[str, str]) -> pd.DataFrame:
 
         try:
             if target_type == "int":
-                df[col] = (
-                    pd.to_numeric(df[col], errors="coerce").astype("Int64")
-                )
+                df[col] = pd.to_numeric(df[col], errors="coerce").astype("Int64")
             elif target_type == "float":
                 df[col] = pd.to_numeric(df[col], errors="coerce")
             elif target_type == "bool":

@@ -311,9 +311,7 @@ class TestDataProcessor:
         assert result["files_processed"][0]["schema_version"] == "weapons_v1"
 
         # Check output file exists
-        output_file = (
-            temp_dirs["processed_dir"] / "test-weapons" / "weapons.parquet"
-        )
+        output_file = temp_dirs["processed_dir"] / "test-weapons" / "weapons.parquet"
         assert output_file.exists()
 
     def test_process_dataset_validates_schema(
@@ -336,9 +334,7 @@ class TestDataProcessor:
         assert result["schema_version"] == "weapons_v1"
 
         # Verify output data
-        output_file = (
-            temp_dirs["processed_dir"] / "test-weapons" / "weapons.parquet"
-        )
+        output_file = temp_dirs["processed_dir"] / "test-weapons" / "weapons.parquet"
         df = pd.read_parquet(output_file)
 
         # Check transformations applied
@@ -436,9 +432,7 @@ class TestDataProcessor:
         assert result["schema_version"] == "weapons_v1"
 
         # Output file should NOT exist
-        output_file = (
-            temp_dirs["processed_dir"] / "test-weapons" / "weapons.parquet"
-        )
+        output_file = temp_dirs["processed_dir"] / "test-weapons" / "weapons.parquet"
         assert not output_file.exists()
 
     def test_process_all_skips_disabled(
@@ -458,10 +452,7 @@ class TestDataProcessor:
 
         # test-weapons should be processed
         assert results["datasets"]["test-weapons"]["status"] == "success"
-        assert (
-            results["datasets"]["test-weapons"]["schema_version"]
-            == "weapons_v1"
-        )
+        assert results["datasets"]["test-weapons"]["schema_version"] == "weapons_v1"
 
         # test-bosses should be skipped
         assert results["datasets"]["test-bosses"]["status"] == "skipped"
@@ -535,9 +526,7 @@ class TestDataProcessor:
 
         processor.process_dataset("test-weapons")
 
-        cache_file = (
-            temp_dirs["processed_dir"] / ".cache" / "test-weapons.json"
-        )
+        cache_file = temp_dirs["processed_dir"] / ".cache" / "test-weapons.json"
         cache_file.parent.mkdir(parents=True, exist_ok=True)
         payload = json.loads(cache_file.read_text())
         payload["schema_version"] = "weapons_v0"

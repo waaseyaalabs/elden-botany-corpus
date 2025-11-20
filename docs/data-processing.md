@@ -423,6 +423,44 @@ Example JSON stub:
 }
 ```
 
+### Lineage Manifests
+
+`poetry run corpus curate` now writes explicit data lineage artifacts so every
+curated slug points back to its originating files:
+
+- **Location**: `data/curated/lineage/`
+- **Index**: `lineage/index.json` captures the generation timestamp and maps
+  each entity type to its manifest path
+- **Per-entity manifests**: `lineage/<entity_type>.json` lists every slug, its
+  display name, and the full provenance payload (source identifier, dataset
+  handle, source file, canonical URI, SHA256 checksum, and retrieval timestamp)
+- **Metadata**: `data/curated/metadata.json` exposes a `lineage_manifests` block
+  so downstream tooling can discover the artifacts without scanning the
+  filesystem
+
+Example lineage record:
+
+```json
+{
+  "slug": "sword_of_night_and_flame",
+  "entity_type": "weapon",
+  "name": "Sword of Night and Flame",
+  "sources": [
+    {
+      "source": "kaggle_dlc",
+      "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+      "source_file": "weapons.csv",
+      "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/weapons.csv",
+      "sha256": "...",
+      "retrieved_at": "2025-11-18T21:05:47.074558+00:00"
+    }
+  ]
+}
+```
+
+Use these manifests to audit provenance, reproduce ingestion steps, or validate
+hashes before trusting downstream predictions.
+
 ### Failing the Pipeline on Alerts
 
 You can wire the metadata into CI/CD by reading the consolidated alerts list:
@@ -506,7 +544,7 @@ poetry run pip install pandera pyarrow
 - [x] Data quality reports (profiling, stats)
 - [ ] Schema versioning and migration
 - [ ] Incremental processing for append-only datasets
-- [ ] Data lineage tracking
+- [x] Data lineage tracking
 - [ ] Custom validation rules per dataset
 - [ ] Automated data drift detection
 - [ ] Integration with data cataloging tools

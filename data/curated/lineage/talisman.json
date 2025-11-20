@@ -1,0 +1,3719 @@
+[
+  {
+    "slug": "aged_ones_exultation",
+    "entity_type": "talisman",
+    "name": "Aged One's Exultation",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "ailment_talisman",
+    "entity_type": "talisman",
+    "name": "Ailment Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "ancestral_spirits_horn",
+    "entity_type": "talisman",
+    "name": "Ancestral Spirit's Horn",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "arrows_reach_talisman",
+    "entity_type": "talisman",
+    "name": "Arrow's Reach Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "arrows_soaring_sting_talisman",
+    "entity_type": "talisman",
+    "name": "Arrow's Soaring Sting Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "arrows_sting_talisman",
+    "entity_type": "talisman",
+    "name": "Arrow's Sting Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "arsenal_charm",
+    "entity_type": "talisman",
+    "name": "Arsenal Charm",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "arsenal_charm_1_variant",
+    "entity_type": "talisman",
+    "name": "Arsenal Charm +1 Variant",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "assassins_cerulean_dagger",
+    "entity_type": "talisman",
+    "name": "Assassin's Cerulean Dagger",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "assassins_crimson_dagger",
+    "entity_type": "talisman",
+    "name": "Assassin's Crimson Dagger",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "axe_talisman",
+    "entity_type": "talisman",
+    "name": "Axe Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "beloved_stardust",
+    "entity_type": "talisman",
+    "name": "Beloved Stardust",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "blade_of_mercy",
+    "entity_type": "talisman",
+    "name": "Blade of Mercy",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "blessed_blue_dew_talisman",
+    "entity_type": "talisman",
+    "name": "Blessed Blue Dew Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "blessed_dew_talisman",
+    "entity_type": "talisman",
+    "name": "Blessed Dew Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "blue_dancer_charm",
+    "entity_type": "talisman",
+    "name": "Blue Dancer Charm",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "blue_feathered_branchsword",
+    "entity_type": "talisman",
+    "name": "Blue-Feathered Branchsword",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "boltdrake_talisman",
+    "entity_type": "talisman",
+    "name": "Boltdrake Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "boltdrake_talisman_1_variant",
+    "entity_type": "talisman",
+    "name": "Boltdrake Talisman +1 Variant",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "boltdrake_talisman_2_variant",
+    "entity_type": "talisman",
+    "name": "Boltdrake Talisman +2 Variant",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "boltdrake_talisman_3_variant",
+    "entity_type": "talisman",
+    "name": "Boltdrake Talisman +3 Variant",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "bull_goats_talisman",
+    "entity_type": "talisman",
+    "name": "Bull-Goat's Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "carian_filigreed_crest",
+    "entity_type": "talisman",
+    "name": "Carian Filigreed Crest",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "cerulean_amber_medallion",
+    "entity_type": "talisman",
+    "name": "Cerulean Amber Medallion",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "cerulean_amber_medallion_1_variant",
+    "entity_type": "talisman",
+    "name": "Cerulean Amber Medallion +1 Variant",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "cerulean_amber_medallion_2_variant",
+    "entity_type": "talisman",
+    "name": "Cerulean Amber Medallion +2 Variant",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "cerulean_amber_medallion_3_variant",
+    "entity_type": "talisman",
+    "name": "Cerulean Amber Medallion +3 Variant",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "cerulean_seed_talisman",
+    "entity_type": "talisman",
+    "name": "Cerulean Seed Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "cerulean_seed_talisman_1_variant",
+    "entity_type": "talisman",
+    "name": "Cerulean Seed Talisman +1 Variant",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "clarifying_horn_charm",
+    "entity_type": "talisman",
+    "name": "Clarifying Horn Charm",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "clarifying_horn_charm_1_variant",
+    "entity_type": "talisman",
+    "name": "Clarifying Horn Charm +1 Variant",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "clarifying_horn_charm_2_variant",
+    "entity_type": "talisman",
+    "name": "Clarifying Horn Charm +2 Variant",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "claw_talisman",
+    "entity_type": "talisman",
+    "name": "Claw Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "companion_jar",
+    "entity_type": "talisman",
+    "name": "Companion Jar",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "concealing_veil",
+    "entity_type": "talisman",
+    "name": "Concealing Veil",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "crepuss_vial",
+    "entity_type": "talisman",
+    "name": "Crepus's Vial",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "crimson_amber_medallion",
+    "entity_type": "talisman",
+    "name": "Crimson Amber Medallion",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "crimson_amber_medallion_1_variant",
+    "entity_type": "talisman",
+    "name": "Crimson Amber Medallion +1 Variant",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "crimson_amber_medallion_2_variant",
+    "entity_type": "talisman",
+    "name": "Crimson Amber Medallion +2 Variant",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "crimson_amber_medallion_3_variant",
+    "entity_type": "talisman",
+    "name": "Crimson Amber Medallion +3 Variant",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "crimson_seed_talisman",
+    "entity_type": "talisman",
+    "name": "Crimson Seed Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "crimson_seed_talisman_1_variant",
+    "entity_type": "talisman",
+    "name": "Crimson Seed Talisman +1 Variant",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "crucible_feather_talisman",
+    "entity_type": "talisman",
+    "name": "Crucible Feather Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "crucible_knot_talisman",
+    "entity_type": "talisman",
+    "name": "Crucible Knot Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "crucible_scale_talisman",
+    "entity_type": "talisman",
+    "name": "Crucible Scale Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "crusade_insignia",
+    "entity_type": "talisman",
+    "name": "Crusade Insignia",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "curved_sword_talisman",
+    "entity_type": "talisman",
+    "name": "Curved Sword Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "daedicars_woe",
+    "entity_type": "talisman",
+    "name": "Daedicar's Woe",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "dagger_talisman",
+    "entity_type": "talisman",
+    "name": "Dagger Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "dragoncrest_greatshield_talisman",
+    "entity_type": "talisman",
+    "name": "Dragoncrest Greatshield Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "dragoncrest_shield_talisman",
+    "entity_type": "talisman",
+    "name": "Dragoncrest Shield Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "dragoncrest_shield_talisman_1_variant",
+    "entity_type": "talisman",
+    "name": "Dragoncrest Shield Talisman +1 Variant",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "dragoncrest_shield_talisman_2_variant",
+    "entity_type": "talisman",
+    "name": "Dragoncrest Shield Talisman +2 Variant",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "dried_bouquet",
+    "entity_type": "talisman",
+    "name": "Dried Bouquet",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "enraged_divine_beast",
+    "entity_type": "talisman",
+    "name": "Enraged Divine Beast",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "entwining_umbilical_cord",
+    "entity_type": "talisman",
+    "name": "Entwining Umbilical Cord",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "erdtrees_favor",
+    "entity_type": "talisman",
+    "name": "Erdtree's Favor",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "erdtrees_favor_1_variant",
+    "entity_type": "talisman",
+    "name": "Erdtree's Favor +1 Variant",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "erdtrees_favor_2_variant",
+    "entity_type": "talisman",
+    "name": "Erdtree's Favor +2 Variant",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "faithfuls_canvas_talisman",
+    "entity_type": "talisman",
+    "name": "Faithful's Canvas Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "fine_crucible_feather_talisman",
+    "entity_type": "talisman",
+    "name": "Fine Crucible Feather Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "fire_scorpion_charm",
+    "entity_type": "talisman",
+    "name": "Fire Scorpion Charm",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "flamedrake_talisman",
+    "entity_type": "talisman",
+    "name": "Flamedrake Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "flamedrake_talisman_1_variant",
+    "entity_type": "talisman",
+    "name": "Flamedrake Talisman +1 Variant",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "flamedrake_talisman_2_variant",
+    "entity_type": "talisman",
+    "name": "Flamedrake Talisman +2 Variant",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "flamedrake_talisman_3_variant",
+    "entity_type": "talisman",
+    "name": "Flamedrake Talisman +3 Variant",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "flocks_canvas_talisman",
+    "entity_type": "talisman",
+    "name": "Flock's Canvas Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "furled_fingers_trick_mirror",
+    "entity_type": "talisman",
+    "name": "Furled Finger's Trick-Mirror",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "godfrey_icon",
+    "entity_type": "talisman",
+    "name": "Godfrey Icon",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "godskin_swaddling_cloth",
+    "entity_type": "talisman",
+    "name": "Godskin Swaddling Cloth",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "gold_scarab",
+    "entity_type": "talisman",
+    "name": "Gold Scarab",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "golden_braid",
+    "entity_type": "talisman",
+    "name": "Golden Braid",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "graven_mass_talisman",
+    "entity_type": "talisman",
+    "name": "Graven-Mass Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "graven_school_talisman",
+    "entity_type": "talisman",
+    "name": "Graven-School Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "great_jars_arsenal",
+    "entity_type": "talisman",
+    "name": "Great-Jar's Arsenal",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "greatshield_talisman",
+    "entity_type": "talisman",
+    "name": "Greatshield Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "green_turtle_talisman",
+    "entity_type": "talisman",
+    "name": "Green Turtle Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "haligdrake_talisman",
+    "entity_type": "talisman",
+    "name": "Haligdrake Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "haligdrake_talisman_1_variant",
+    "entity_type": "talisman",
+    "name": "Haligdrake Talisman +1 Variant",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "haligdrake_talisman_2_variant",
+    "entity_type": "talisman",
+    "name": "Haligdrake Talisman +2 Variant",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "hammer_talisman",
+    "entity_type": "talisman",
+    "name": "Hammer Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "hosts_trick_mirror",
+    "entity_type": "talisman",
+    "name": "Host's Trick-Mirror",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "immunizing_horn_charm",
+    "entity_type": "talisman",
+    "name": "Immunizing Horn Charm",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "immunizing_horn_charm_1_variant",
+    "entity_type": "talisman",
+    "name": "Immunizing Horn Charm +1 Variant",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "immunizing_horn_charm_2_variant",
+    "entity_type": "talisman",
+    "name": "Immunizing Horn Charm +2 Variant",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "kindred_of_rots_exultation",
+    "entity_type": "talisman",
+    "name": "Kindred of Rot's Exultation",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "lacerating_crossed_tree",
+    "entity_type": "talisman",
+    "name": "Lacerating Crossed-Tree",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "lance_talisman",
+    "entity_type": "talisman",
+    "name": "Lance Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "lightning_scorpion_charm",
+    "entity_type": "talisman",
+    "name": "Lightning Scorpion Charm",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "longtail_cat_talisman",
+    "entity_type": "talisman",
+    "name": "Longtail Cat Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "lord_of_bloods_exultation",
+    "entity_type": "talisman",
+    "name": "Lord of Blood's Exultation",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "magic_scorpion_charm",
+    "entity_type": "talisman",
+    "name": "Magic Scorpion Charm",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "marikas_scarseal",
+    "entity_type": "talisman",
+    "name": "Marika's Scarseal",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "marikas_soreseal",
+    "entity_type": "talisman",
+    "name": "Marika's Soreseal",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "millicents_prosthesis",
+    "entity_type": "talisman",
+    "name": "Millicent's Prosthesis",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "moon_of_nokstella",
+    "entity_type": "talisman",
+    "name": "Moon of Nokstella",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "mottled_necklace",
+    "entity_type": "talisman",
+    "name": "Mottled Necklace",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "mottled_necklace_1_variant",
+    "entity_type": "talisman",
+    "name": "Mottled Necklace +1 Variant",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "mottled_necklace_2_variant",
+    "entity_type": "talisman",
+    "name": "Mottled Necklace +2 Variant",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "old_lords_talisman",
+    "entity_type": "talisman",
+    "name": "Old Lord's Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "outer_god_heirloom",
+    "entity_type": "talisman",
+    "name": "Outer God Heirloom",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "pearl_shield_talisman",
+    "entity_type": "talisman",
+    "name": "Pearl Shield Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "pearldrake_talisman",
+    "entity_type": "talisman",
+    "name": "Pearldrake Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "pearldrake_talisman_1_variant",
+    "entity_type": "talisman",
+    "name": "Pearldrake Talisman +1 Variant",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "pearldrake_talisman_2_variant",
+    "entity_type": "talisman",
+    "name": "Pearldrake Talisman +2 Variant",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "pearldrake_talisman_3_variant",
+    "entity_type": "talisman",
+    "name": "Pearldrake Talisman +3 Variant",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "perfumers_talisman",
+    "entity_type": "talisman",
+    "name": "Perfumer's Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "primal_glintstone_blade",
+    "entity_type": "talisman",
+    "name": "Primal Glintstone Blade",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "prince_of_deaths_cyst",
+    "entity_type": "talisman",
+    "name": "Prince of Death's Cyst",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "prince_of_deaths_pustule",
+    "entity_type": "talisman",
+    "name": "Prince of Death's Pustule",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "prosthesis_wearer_heirloom",
+    "entity_type": "talisman",
+    "name": "Prosthesis-Wearer Heirloom",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "radagon_icon",
+    "entity_type": "talisman",
+    "name": "Radagon Icon",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "radagons_scarseal",
+    "entity_type": "talisman",
+    "name": "Radagon's Scarseal",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "radagons_soreseal",
+    "entity_type": "talisman",
+    "name": "Radagon's Soreseal",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "red_feathered_branchsword",
+    "entity_type": "talisman",
+    "name": "Red-Feathered Branchsword",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "rellanas_cameo",
+    "entity_type": "talisman",
+    "name": "Rellana's Cameo",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "retaliatory_crossed_tree",
+    "entity_type": "talisman",
+    "name": "Retaliatory Crossed-Tree",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "ritual_shield_talisman",
+    "entity_type": "talisman",
+    "name": "Ritual Shield Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "ritual_sword_talisman",
+    "entity_type": "talisman",
+    "name": "Ritual Sword Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "roar_medallion",
+    "entity_type": "talisman",
+    "name": "Roar Medallion",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "rotten_winged_sword_insignia",
+    "entity_type": "talisman",
+    "name": "Rotten Winged Sword Insignia",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "sacred_scorpion_charm",
+    "entity_type": "talisman",
+    "name": "Sacred Scorpion Charm",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "sacrificial_twig",
+    "entity_type": "talisman",
+    "name": "Sacrificial Twig",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "shabriris_woe",
+    "entity_type": "talisman",
+    "name": "Shabriri's Woe",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "shard_of_alexander",
+    "entity_type": "talisman",
+    "name": "Shard of Alexander",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "sharpshot_talisman",
+    "entity_type": "talisman",
+    "name": "Sharpshot Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "shattered_stone_talisman",
+    "entity_type": "talisman",
+    "name": "Shattered Stone Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "silver_scarab",
+    "entity_type": "talisman",
+    "name": "Silver Scarab",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "smithing_talisman",
+    "entity_type": "talisman",
+    "name": "Smithing Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "spear_talisman",
+    "entity_type": "talisman",
+    "name": "Spear Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "spelldrake_talisman",
+    "entity_type": "talisman",
+    "name": "Spelldrake Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "spelldrake_talisman_1_variant",
+    "entity_type": "talisman",
+    "name": "Spelldrake Talisman +1 Variant",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "spelldrake_talisman_2_variant",
+    "entity_type": "talisman",
+    "name": "Spelldrake Talisman +2 Variant",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "spelldrake_talisman_3_variant",
+    "entity_type": "talisman",
+    "name": "Spelldrake Talisman +3 Variant",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "st_trinas_smile",
+    "entity_type": "talisman",
+    "name": "St. Trina's Smile",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "stalwart_horn_charm",
+    "entity_type": "talisman",
+    "name": "Stalwart Horn Charm",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "stalwart_horn_charm_1_variant",
+    "entity_type": "talisman",
+    "name": "Stalwart Horn Charm +1 Variant",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "stalwart_horn_charm_2_variant",
+    "entity_type": "talisman",
+    "name": "Stalwart Horn Charm +2 Variant",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "stargazer_heirloom",
+    "entity_type": "talisman",
+    "name": "Stargazer Heirloom",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "starscourge_heirloom",
+    "entity_type": "talisman",
+    "name": "Starscourge Heirloom",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "takers_cameo",
+    "entity_type": "talisman",
+    "name": "Taker's Cameo",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "talisman_of_all_crucibles",
+    "entity_type": "talisman",
+    "name": "Talisman of All Crucibles",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "talisman_of_lords_bestowal",
+    "entity_type": "talisman",
+    "name": "Talisman of Lord's Bestowal",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "talisman_of_the_dread",
+    "entity_type": "talisman",
+    "name": "Talisman of the Dread",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "twinblade_talisman",
+    "entity_type": "talisman",
+    "name": "Twinblade Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "two_fingers_heirloom",
+    "entity_type": "talisman",
+    "name": "Two Fingers Heirloom",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "two_handed_sword_talisman",
+    "entity_type": "talisman",
+    "name": "Two-Handed Sword Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "two_headed_turtle_talisman",
+    "entity_type": "talisman",
+    "name": "Two-Headed Turtle Talisman",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "verdigris_discus",
+    "entity_type": "talisman",
+    "name": "Verdigris Discus",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "viridian_amber_medallion",
+    "entity_type": "talisman",
+    "name": "Viridian Amber Medallion",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "viridian_amber_medallion_1_variant",
+    "entity_type": "talisman",
+    "name": "Viridian Amber Medallion +1 Variant",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "viridian_amber_medallion_2_variant",
+    "entity_type": "talisman",
+    "name": "Viridian Amber Medallion +2 Variant",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "viridian_amber_medallion_3_variant",
+    "entity_type": "talisman",
+    "name": "Viridian Amber Medallion +3 Variant",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      }
+    ]
+  },
+  {
+    "slug": "warrior_jar_shard",
+    "entity_type": "talisman",
+    "name": "Warrior Jar Shard",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  },
+  {
+    "slug": "winged_sword_insignia",
+    "entity_type": "talisman",
+    "name": "Winged Sword Insignia",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/talismans.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/talismans.csv",
+        "sha256": "d65885631605a9e58495dbe83cb4f342670108d4d477c5934e8b67c2fae95b90",
+        "retrieved_at": "2025-11-20T20:24:54.689275"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "talismans.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/talismans.csv",
+        "sha256": "95b4aa0dac687d15128321331adfa6dd01c27057db0e427beff83e79d61ba9f6",
+        "retrieved_at": "2025-11-20T20:24:54.491289"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:talismans",
+        "source_file": "talismans.json",
+        "uri": "https://eldenring.fanapis.com/api/talismans",
+        "sha256": "04bc29c09559afd0532f72f8bcca471f38b3b863e1701c3e712797a837f63fe3",
+        "retrieved_at": "2025-11-20T20:24:55.007657"
+      }
+    ]
+  }
+]

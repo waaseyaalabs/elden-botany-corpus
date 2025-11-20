@@ -1,0 +1,1352 @@
+[
+  {
+    "slug": "ash_of_war_assassins_gambit",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Assassin's Gambit",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_barbaric_roar",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Barbaric Roar",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_barrage",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Barrage",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_barricade_shield",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Barricade Shield",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_beasts_roar",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Beast's Roar",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_black_flame_tornado",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Black Flame Tornado",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_blood_blade",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Blood Blade",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_blood_tax",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Blood Tax",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_bloodhounds_step",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Bloodhound's Step",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_bloody_slash",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Bloody Slash",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_braggarts_roar",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Braggart's Roar",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_carian_grandeur",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Carian Grandeur",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_carian_greatsword",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Carian Greatsword",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_carian_retaliation",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Carian Retaliation",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_charge_forth",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Charge Forth",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_chilling_mist",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Chilling Mist",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_cragblade",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Cragblade",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_determination",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Determination",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_double_slash",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Double Slash",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_earthshaker",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Earthshaker",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_enchanted_shot",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Enchanted Shot",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_endure",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Endure",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_eruption",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Eruption",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_flame_of_the_redmanes",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Flame Of The Redmanes",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_flaming_strike",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Flaming Strike",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_giant_hunt",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Giant Hunt",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_glintblade_phalanx",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Glintblade Phalanx",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_glintstone_pebble",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Glintstone Pebble",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_golden_land",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Golden Land",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_golden_parry",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Golden Parry",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_golden_slam",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Golden Slam",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_gravitas",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Gravitas",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_ground_slam",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Ground Slam",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_hoarah_louxs_earthshaker",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Hoarah Loux's Earthshaker",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_hoarfrost_stomp",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Hoarfrost Stomp",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_holy_ground",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Holy Ground",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_ice_spear",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Ice Spear",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_impaling_thrust",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Impaling Thrust",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_kick",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Kick",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_lifesteal_fist",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Lifesteal Fist",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_lightning_ram",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Lightning Ram",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_lightning_slash",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Lightning Slash",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_lions_claw",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Lion's Claw",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_lorettas_slash",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Loretta's Slash",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_mighty_shot",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Mighty Shot",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_no_skill",
+    "entity_type": "ashe",
+    "name": "Ash Of War: No Skill",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_parry",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Parry",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_phantom_slash",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Phantom Slash",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_piercing_fang",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Piercing Fang",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_poison_moth_flight",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Poison Moth Flight",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_poisonous_mist",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Poisonous Mist",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_prayerful_strike",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Prayerful Strike",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_prelates_charge",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Prelate's Charge",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_quickstep",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Quickstep",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_rain_of_arrows",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Rain Of Arrows",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_raptor_of_the_mists",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Raptor Of The Mists",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_repeating_thrust",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Repeating Thrust",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_royal_knights_resolve",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Royal Knight's Resolve",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_sacred_blade",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Sacred Blade",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_sacred_order",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Sacred Order",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_sacred_ring_of_light",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Sacred Ring Of Light",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_seppuku",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Seppuku",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_shield_bash",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Shield Bash",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_shield_crash",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Shield Crash",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_spectral_lance",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Spectral Lance",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_spinning_slash",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Spinning Slash",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_spinning_strikes",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Spinning Strikes",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_spinning_weapon",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Spinning Weapon",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_square_off",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Square Off",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_stamp_sweep",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Stamp (sweep)",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_stamp_upward_cut",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Stamp (upward Cut)",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_storm_assault",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Storm Assault",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_storm_blade",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Storm Blade",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_storm_stomp",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Storm Stomp",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_storm_wall",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Storm Wall",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_stormcaller",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Stormcaller",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_sword_dance",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Sword Dance",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_thopss_barrier",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Thops's Barrier",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_thunderbolt",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Thunderbolt",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_trolls_roar",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Troll's Roar",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_unsheathe",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Unsheathe",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_vacuum_slice",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Vacuum Slice",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_vow_of_the_indomitable",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Vow Of The Indomitable",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_war_cry",
+    "entity_type": "ashe",
+    "name": "Ash Of War: War Cry",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_waves_of_darkness",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Waves Of Darkness",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_white_shadows_lure",
+    "entity_type": "ashe",
+    "name": "Ash Of War: White Shadow's Lure",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ash_of_war_wild_strikes",
+    "entity_type": "ashe",
+    "name": "Ash Of War: Wild Strikes",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "ashes_of_war_golden_vow",
+    "entity_type": "ashe",
+    "name": "Ashes Of War: Golden Vow",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "lost_ashes_of_war",
+    "entity_type": "ashe",
+    "name": "Lost Ashes Of War",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  },
+  {
+    "slug": "through_and_through",
+    "entity_type": "ashe",
+    "name": "Through And Through",
+    "sources": [
+      {
+        "source": "github_api",
+        "dataset": "fanapis:ashes",
+        "source_file": "ashes.json",
+        "uri": "https://eldenring.fanapis.com/api/ashes",
+        "sha256": "9225b04d8e97828fdaa64c7f345e6c94716cdc767f05f7747ddcdb536d542281",
+        "retrieved_at": "2025-11-20T20:24:54.998786"
+      }
+    ]
+  }
+]

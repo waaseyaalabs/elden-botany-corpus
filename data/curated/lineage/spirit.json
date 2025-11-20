@@ -1,0 +1,2307 @@
+[
+  {
+    "slug": "albinauric_ashes",
+    "entity_type": "spirit",
+    "name": "Albinauric Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "ancestral_follower_ashes",
+    "entity_type": "spirit",
+    "name": "Ancestral Follower Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "ancient_dragon_florissax",
+    "entity_type": "spirit",
+    "name": "Ancient Dragon Florissax",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      }
+    ]
+  },
+  {
+    "slug": "ancient_dragon_knight_kristoff_ashes",
+    "entity_type": "spirit",
+    "name": "Ancient Dragon Knight Kristoff Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "archer_ashes",
+    "entity_type": "spirit",
+    "name": "Archer Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "avionette_soldier_ashes",
+    "entity_type": "spirit",
+    "name": "Avionette Soldier Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "azula_beastman_ashes",
+    "entity_type": "spirit",
+    "name": "Azula Beastman Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "banished_knight_engvall",
+    "entity_type": "spirit",
+    "name": "Banished Knight Engvall",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      }
+    ]
+  },
+  {
+    "slug": "banished_knight_engvall_ashes",
+    "entity_type": "spirit",
+    "name": "Banished Knight Engvall Ashes",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "banished_knight_oleg",
+    "entity_type": "spirit",
+    "name": "Banished Knight Oleg",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "battlemage_hugues_ashes",
+    "entity_type": "spirit",
+    "name": "Battlemage Hugues Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "bigmouth_imp_ashes",
+    "entity_type": "spirit",
+    "name": "Bigmouth Imp Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      }
+    ]
+  },
+  {
+    "slug": "black_knife_tiche",
+    "entity_type": "spirit",
+    "name": "Black Knife Tiche",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "black_knight_captain_huw",
+    "entity_type": "spirit",
+    "name": "Black Knight Captain Huw",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      }
+    ]
+  },
+  {
+    "slug": "black_knight_commander_andreas",
+    "entity_type": "spirit",
+    "name": "Black Knight Commander Andreas",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      }
+    ]
+  },
+  {
+    "slug": "blackflame_monk_amon_ashes",
+    "entity_type": "spirit",
+    "name": "Blackflame Monk Amon Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "bloodfiend_hexers_ashes",
+    "entity_type": "spirit",
+    "name": "Bloodfiend Hexer's Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      }
+    ]
+  },
+  {
+    "slug": "bloodhound_knight_floh",
+    "entity_type": "spirit",
+    "name": "Bloodhound Knight Floh",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "clayman_ashes",
+    "entity_type": "spirit",
+    "name": "Clayman Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "cleanrot_knight_finlay_ashes",
+    "entity_type": "spirit",
+    "name": "Cleanrot Knight Finlay Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "crystalian_ashes",
+    "entity_type": "spirit",
+    "name": "Crystalian Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "curseblade_meera",
+    "entity_type": "spirit",
+    "name": "Curseblade Meera",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      }
+    ]
+  },
+  {
+    "slug": "demi_human_ashes",
+    "entity_type": "spirit",
+    "name": "Demi-Human Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "demi_human_swordsman_yosh",
+    "entity_type": "spirit",
+    "name": "Demi-Human Swordsman Yosh",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      }
+    ]
+  },
+  {
+    "slug": "depraved_perfumer_carmaan_ashes",
+    "entity_type": "spirit",
+    "name": "Depraved Perfumer Carmaan Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "divine_bird_warrior_ornis",
+    "entity_type": "spirit",
+    "name": "Divine Bird Warrior Ornis",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      }
+    ]
+  },
+  {
+    "slug": "dolores_the_sleeping_arrow_puppet",
+    "entity_type": "spirit",
+    "name": "Dolores the Sleeping Arrow Puppet",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "dung_eater_puppet",
+    "entity_type": "spirit",
+    "name": "Dung Eater Puppet",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "fanged_imp_ashes",
+    "entity_type": "spirit",
+    "name": "Fanged Imp Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "finger_maiden_therolina_puppet",
+    "entity_type": "spirit",
+    "name": "Finger Maiden Therolina Puppet",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "fingercreeper_ashes",
+    "entity_type": "spirit",
+    "name": "Fingercreeper Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      }
+    ]
+  },
+  {
+    "slug": "fire_knight_hilde",
+    "entity_type": "spirit",
+    "name": "Fire Knight Hilde",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      }
+    ]
+  },
+  {
+    "slug": "fire_knight_queelign",
+    "entity_type": "spirit",
+    "name": "Fire Knight Queelign",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      }
+    ]
+  },
+  {
+    "slug": "fire_monk_ashes",
+    "entity_type": "spirit",
+    "name": "Fire Monk Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "giant_rat_ashes",
+    "entity_type": "spirit",
+    "name": "Giant Rat Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "glintstone_sorcerer_ashes",
+    "entity_type": "spirit",
+    "name": "Glintstone Sorcerer Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "godrick_soldier_ashes",
+    "entity_type": "spirit",
+    "name": "Godrick Soldier Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "gravebird_ashes",
+    "entity_type": "spirit",
+    "name": "Gravebird Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      }
+    ]
+  },
+  {
+    "slug": "greatshield_soldier_ashes",
+    "entity_type": "spirit",
+    "name": "Greatshield Soldier Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "haligtree_soldier_ashes",
+    "entity_type": "spirit",
+    "name": "Haligtree Soldier Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "horned_warrior_ashes",
+    "entity_type": "spirit",
+    "name": "Horned Warrior Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      }
+    ]
+  },
+  {
+    "slug": "inquisitor_ashes",
+    "entity_type": "spirit",
+    "name": "Inquisitor Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      }
+    ]
+  },
+  {
+    "slug": "jarwight_puppet",
+    "entity_type": "spirit",
+    "name": "Jarwight Puppet",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "jarwight_puppet_壺男の傀儡",
+    "entity_type": "spirit",
+    "name": "Jarwight Puppet 壺男の傀儡",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      }
+    ]
+  },
+  {
+    "slug": "jolan_and_anna",
+    "entity_type": "spirit",
+    "name": "Jolan and Anna",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      }
+    ]
+  },
+  {
+    "slug": "kaiden_sellsword_ashes",
+    "entity_type": "spirit",
+    "name": "Kaiden Sellsword Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "kindred_of_rot_ashes",
+    "entity_type": "spirit",
+    "name": "Kindred of Rot Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "land_squirt_ashes",
+    "entity_type": "spirit",
+    "name": "Land Squirt Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "latenna_the_albinauric",
+    "entity_type": "spirit",
+    "name": "Latenna the Albinauric",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "leyndell_soldier_ashes",
+    "entity_type": "spirit",
+    "name": "Leyndell Soldier Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "lhutel_the_headless",
+    "entity_type": "spirit",
+    "name": "Lhutel the Headless",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "lone_wolf_ashes",
+    "entity_type": "spirit",
+    "name": "Lone Wolf Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "mad_pumpkin_head_ashes",
+    "entity_type": "spirit",
+    "name": "Mad Pumpkin Head Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "man_fly_ashes",
+    "entity_type": "spirit",
+    "name": "Man-Fly Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      }
+    ]
+  },
+  {
+    "slug": "man_serpent_ashes",
+    "entity_type": "spirit",
+    "name": "Man-Serpent Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "marionette_soldier_ashes",
+    "entity_type": "spirit",
+    "name": "Marionette Soldier Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "mausoleum_soldier_ashes",
+    "entity_type": "spirit",
+    "name": "Mausoleum Soldier Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "messmer_soldier_ashes",
+    "entity_type": "spirit",
+    "name": "Messmer Soldier Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      }
+    ]
+  },
+  {
+    "slug": "mimic_tear_ashes",
+    "entity_type": "spirit",
+    "name": "Mimic Tear Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "miranda_sprout_ashes",
+    "entity_type": "spirit",
+    "name": "Miranda Sprout Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "nepheli_loux_puppet",
+    "entity_type": "spirit",
+    "name": "Nepheli Loux Puppet",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "nightmaiden_swordstress_puppets",
+    "entity_type": "spirit",
+    "name": "Nightmaiden & Swordstress Puppets",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      }
+    ]
+  },
+  {
+    "slug": "nightmaiden_swordtress_puppets",
+    "entity_type": "spirit",
+    "name": "Nightmaiden & Swordtress Puppets",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "noble_sorcerer_ashes",
+    "entity_type": "spirit",
+    "name": "Noble Sorcerer Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "nomad_ashes",
+    "entity_type": "spirit",
+    "name": "Nomad Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "omenkiller_rollo",
+    "entity_type": "spirit",
+    "name": "Omenkiller Rollo",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "oracle_envoy_ashes",
+    "entity_type": "spirit",
+    "name": "Oracle Envoy Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "page_ashes",
+    "entity_type": "spirit",
+    "name": "Page Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "perfumer_tricia",
+    "entity_type": "spirit",
+    "name": "Perfumer Tricia",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "putrid_corpse_ashes",
+    "entity_type": "spirit",
+    "name": "Putrid Corpse Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "radahn_soldier_ashes",
+    "entity_type": "spirit",
+    "name": "Radahn Soldier Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "raya_lucaria_soldier_ashes",
+    "entity_type": "spirit",
+    "name": "Raya Lucaria Soldier Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "redmane_knight_ogha",
+    "entity_type": "spirit",
+    "name": "Redmane Knight Ogha",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "rotten_stray_ashes",
+    "entity_type": "spirit",
+    "name": "Rotten Stray Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "skeletal_bandit_ashes",
+    "entity_type": "spirit",
+    "name": "Skeletal Bandit Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "skeletal_militiaman_ashes",
+    "entity_type": "spirit",
+    "name": "Skeletal Militiaman Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "soldjars_of_fortune_ashes",
+    "entity_type": "spirit",
+    "name": "Soldjars of Fortune Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "spider_scorpion_ashes",
+    "entity_type": "spirit",
+    "name": "Spider Scorpion Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      }
+    ]
+  },
+  {
+    "slug": "spirit_jellyfish_ashes",
+    "entity_type": "spirit",
+    "name": "Spirit Jellyfish Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "stormhawk_deenh",
+    "entity_type": "spirit",
+    "name": "Stormhawk Deenh",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "swordhand_of_night_jolan",
+    "entity_type": "spirit",
+    "name": "Swordhand of Night Jolan",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      }
+    ]
+  },
+  {
+    "slug": "taylew_the_golem_smith",
+    "entity_type": "spirit",
+    "name": "Taylew the Golem Smith",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      }
+    ]
+  },
+  {
+    "slug": "twinsage_sorcerer_ashes",
+    "entity_type": "spirit",
+    "name": "Twinsage Sorcerer Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "vulgar_militia_ashes",
+    "entity_type": "spirit",
+    "name": "Vulgar Militia Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "wandering_noble_ashes",
+    "entity_type": "spirit",
+    "name": "Wandering Noble Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "warhawk_ashes",
+    "entity_type": "spirit",
+    "name": "Warhawk Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  },
+  {
+    "slug": "winged_misbegotten_ashes",
+    "entity_type": "spirit",
+    "name": "Winged Misbegotten Ashes",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/spiritAshes.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/spiritAshes.csv",
+        "sha256": "f69d6f01c88e4b62fdd151588aa2f3241a11baf13d19a2850253764d8d0ed00f",
+        "retrieved_at": "2025-11-20T20:24:54.687555"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "spirits.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/spirits.csv",
+        "sha256": "a1072ba5fd5afba162a683311da40989aa3fc26cb455c879c298b2b33502857f",
+        "retrieved_at": "2025-11-20T20:24:54.490007"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:spirits",
+        "source_file": "spirits.json",
+        "uri": "https://eldenring.fanapis.com/api/spirits",
+        "sha256": "176ec71d90f831963044b26bcf382de0edf4c0340f521bc65fa6bcd451de040a",
+        "retrieved_at": "2025-11-20T20:24:55.007140"
+      }
+    ]
+  }
+]

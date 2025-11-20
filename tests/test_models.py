@@ -38,11 +38,15 @@ def test_provenance_model() -> None:
     """Test Provenance model."""
     prov = Provenance(
         source="kaggle_base",
+        dataset="robikscube/elden-ring-ultimate-dataset",
+        source_file="weapons.csv",
         uri="kaggle://test/weapons.csv",
         sha256="abc123",
     )
 
     assert prov.source == "kaggle_base"
+    assert prov.dataset == "robikscube/elden-ring-ultimate-dataset"
+    assert prov.source_file == "weapons.csv"
     assert prov.uri == "kaggle://test/weapons.csv"
     assert prov.sha256 == "abc123"
     assert prov.retrieved_at is not None

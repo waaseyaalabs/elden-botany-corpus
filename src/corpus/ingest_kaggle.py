@@ -152,6 +152,8 @@ class KaggleIngester:
             # Create provenance
             provenance = Provenance(
                 source="kaggle_base",
+                dataset=KAGGLE_BASE_DATASET,
+                source_file=str(csv_path.relative_to(output_dir)),
                 uri=f"kaggle://{KAGGLE_BASE_DATASET}/{table_name}.csv",
                 sha256=compute_file_hash(csv_path),
             )
@@ -214,6 +216,8 @@ class KaggleIngester:
             # Create provenance
             provenance = Provenance(
                 source="kaggle_dlc",
+                dataset=KAGGLE_DLC_DATASET,
+                source_file=relative_path.as_posix(),
                 uri=(f"kaggle://{KAGGLE_DLC_DATASET}/{relative_path.as_posix()}"),
                 sha256=compute_file_hash(csv_path),
             )

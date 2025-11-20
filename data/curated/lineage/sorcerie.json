@@ -1,0 +1,2412 @@
+[
+  {
+    "slug": "adulas_moonblade",
+    "entity_type": "sorcerie",
+    "name": "Adula's Moonblade",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "ambush_shard",
+    "entity_type": "sorcerie",
+    "name": "Ambush Shard",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "ancient_death_rancor",
+    "entity_type": "sorcerie",
+    "name": "Ancient Death Rancor",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "blades_of_stone",
+    "entity_type": "sorcerie",
+    "name": "Blades of Stone",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      }
+    ]
+  },
+  {
+    "slug": "briars_of_punishment",
+    "entity_type": "sorcerie",
+    "name": "Briars of Punishment",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "briars_of_sin",
+    "entity_type": "sorcerie",
+    "name": "Briars of Sin",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "cannon_of_haima",
+    "entity_type": "sorcerie",
+    "name": "Cannon of Haima",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "carian_greatsword",
+    "entity_type": "sorcerie",
+    "name": "Carian Greatsword",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "carian_phalanx",
+    "entity_type": "sorcerie",
+    "name": "Carian Phalanx",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "carian_piercer",
+    "entity_type": "sorcerie",
+    "name": "Carian Piercer",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "carian_retaliation",
+    "entity_type": "sorcerie",
+    "name": "Carian Retaliation",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "carian_slicer",
+    "entity_type": "sorcerie",
+    "name": "Carian Slicer",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "cherishing_fingers",
+    "entity_type": "sorcerie",
+    "name": "Cherishing Fingers",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      }
+    ]
+  },
+  {
+    "slug": "collapsing_stars",
+    "entity_type": "sorcerie",
+    "name": "Collapsing Stars",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "comet",
+    "entity_type": "sorcerie",
+    "name": "Comet",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "comet_azur",
+    "entity_type": "sorcerie",
+    "name": "Comet Azur",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "crystal_barrage",
+    "entity_type": "sorcerie",
+    "name": "Crystal Barrage",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "crystal_burst",
+    "entity_type": "sorcerie",
+    "name": "Crystal Burst",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "crystal_release",
+    "entity_type": "sorcerie",
+    "name": "Crystal Release",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "crystal_torrent",
+    "entity_type": "sorcerie",
+    "name": "Crystal Torrent",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "eternal_darkness",
+    "entity_type": "sorcerie",
+    "name": "Eternal Darkness",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "explosive_ghostflame",
+    "entity_type": "sorcerie",
+    "name": "Explosive Ghostflame",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "fias_mist",
+    "entity_type": "sorcerie",
+    "name": "Fia's Mist",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "fleeting_microcosm",
+    "entity_type": "sorcerie",
+    "name": "Fleeting Microcosm",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      }
+    ]
+  },
+  {
+    "slug": "founding_rain_of_stars",
+    "entity_type": "sorcerie",
+    "name": "Founding Rain of Stars",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "freezing_mist",
+    "entity_type": "sorcerie",
+    "name": "Freezing Mist",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "frozen_armament",
+    "entity_type": "sorcerie",
+    "name": "Frozen Armament",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "gavel_of_haima",
+    "entity_type": "sorcerie",
+    "name": "Gavel of Haima",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "gelmirs_fury",
+    "entity_type": "sorcerie",
+    "name": "Gelmir's Fury",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "glintblade_phalanx",
+    "entity_type": "sorcerie",
+    "name": "Glintblade Phalanx",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "glintblade_trio",
+    "entity_type": "sorcerie",
+    "name": "Glintblade Trio",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      }
+    ]
+  },
+  {
+    "slug": "glintstone_arc",
+    "entity_type": "sorcerie",
+    "name": "Glintstone Arc",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "glintstone_cometshard",
+    "entity_type": "sorcerie",
+    "name": "Glintstone Cometshard",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "glintstone_icecrag",
+    "entity_type": "sorcerie",
+    "name": "Glintstone Icecrag",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "glintstone_nail",
+    "entity_type": "sorcerie",
+    "name": "Glintstone Nail",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      }
+    ]
+  },
+  {
+    "slug": "glintstone_nails",
+    "entity_type": "sorcerie",
+    "name": "Glintstone Nails",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      }
+    ]
+  },
+  {
+    "slug": "glintstone_pebble",
+    "entity_type": "sorcerie",
+    "name": "Glintstone Pebble",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "glintstone_stars",
+    "entity_type": "sorcerie",
+    "name": "Glintstone Stars",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "gravitational_missile",
+    "entity_type": "sorcerie",
+    "name": "Gravitational Missile",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      }
+    ]
+  },
+  {
+    "slug": "gravity_well",
+    "entity_type": "sorcerie",
+    "name": "Gravity Well",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "great_glintstone_shard",
+    "entity_type": "sorcerie",
+    "name": "Great Glintstone Shard",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "great_oracular_bubble",
+    "entity_type": "sorcerie",
+    "name": "Great Oracular Bubble",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "greatblade_phalanx",
+    "entity_type": "sorcerie",
+    "name": "Greatblade Phalanx",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "impenetrable_thorns",
+    "entity_type": "sorcerie",
+    "name": "Impenetrable Thorns",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      }
+    ]
+  },
+  {
+    "slug": "lorettas_greatbow",
+    "entity_type": "sorcerie",
+    "name": "Loretta's Greatbow",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "lorettas_mastery",
+    "entity_type": "sorcerie",
+    "name": "Loretta's Mastery",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "lucidity",
+    "entity_type": "sorcerie",
+    "name": "Lucidity",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "magic_downpour",
+    "entity_type": "sorcerie",
+    "name": "Magic Downpour",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "magic_glintblade",
+    "entity_type": "sorcerie",
+    "name": "Magic Glintblade",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "magma_shot",
+    "entity_type": "sorcerie",
+    "name": "Magma Shot",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "mantle_of_thorns",
+    "entity_type": "sorcerie",
+    "name": "Mantle of Thorns",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      }
+    ]
+  },
+  {
+    "slug": "mass_of_putrescence",
+    "entity_type": "sorcerie",
+    "name": "Mass of Putrescence",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      }
+    ]
+  },
+  {
+    "slug": "meteorite",
+    "entity_type": "sorcerie",
+    "name": "Meteorite",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "meteorite_of_astel",
+    "entity_type": "sorcerie",
+    "name": "Meteorite of Astel",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "miriams_vanishing",
+    "entity_type": "sorcerie",
+    "name": "Miriam's Vanishing",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      }
+    ]
+  },
+  {
+    "slug": "night_comet",
+    "entity_type": "sorcerie",
+    "name": "Night Comet",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "night_maidens_mist",
+    "entity_type": "sorcerie",
+    "name": "Night Maiden's Mist",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "night_shard",
+    "entity_type": "sorcerie",
+    "name": "Night Shard",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "oracle_bubble",
+    "entity_type": "sorcerie",
+    "name": "Oracle Bubble",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "oracle_bubbles",
+    "entity_type": "sorcerie",
+    "name": "Oracle Bubbles",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "rancorcall",
+    "entity_type": "sorcerie",
+    "name": "Rancorcall",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "rannis_dark_moon",
+    "entity_type": "sorcerie",
+    "name": "Ranni's Dark Moon",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "rellanas_twin_moons",
+    "entity_type": "sorcerie",
+    "name": "Rellana's Twin Moons",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      }
+    ]
+  },
+  {
+    "slug": "rennalas_full_moon",
+    "entity_type": "sorcerie",
+    "name": "Rennala's Full Moon",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "rings_of_spectral_light",
+    "entity_type": "sorcerie",
+    "name": "Rings of Spectral Light",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      }
+    ]
+  },
+  {
+    "slug": "rock_blaster",
+    "entity_type": "sorcerie",
+    "name": "Rock Blaster",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "rock_sling",
+    "entity_type": "sorcerie",
+    "name": "Rock Sling",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "roiling_magma",
+    "entity_type": "sorcerie",
+    "name": "Roiling Magma",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "rykards_rancor",
+    "entity_type": "sorcerie",
+    "name": "Rykard's Rancor",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "scholars_armament",
+    "entity_type": "sorcerie",
+    "name": "Scholar's Armament",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "scholars_shield",
+    "entity_type": "sorcerie",
+    "name": "Scholar's Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "shard_spiral",
+    "entity_type": "sorcerie",
+    "name": "Shard Spiral",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "shatter_earth",
+    "entity_type": "sorcerie",
+    "name": "Shatter Earth",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "shattering_crystal",
+    "entity_type": "sorcerie",
+    "name": "Shattering Crystal",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "star_shower",
+    "entity_type": "sorcerie",
+    "name": "Star Shower",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "starlight",
+    "entity_type": "sorcerie",
+    "name": "Starlight",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "stars_of_ruin",
+    "entity_type": "sorcerie",
+    "name": "Stars of Ruin",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "swift_glintstone_shard",
+    "entity_type": "sorcerie",
+    "name": "Swift Glintstone Shard",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "terra_magica",
+    "entity_type": "sorcerie",
+    "name": "Terra Magica",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      }
+    ]
+  },
+  {
+    "slug": "terra_magicus",
+    "entity_type": "sorcerie",
+    "name": "Terra Magicus",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "thopss_barrier",
+    "entity_type": "sorcerie",
+    "name": "Thops's Barrier",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "tibias_summons",
+    "entity_type": "sorcerie",
+    "name": "Tibia's Summons",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "unseen_blade",
+    "entity_type": "sorcerie",
+    "name": "Unseen Blade",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "unseen_form",
+    "entity_type": "sorcerie",
+    "name": "Unseen Form",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  },
+  {
+    "slug": "vortex_of_putrescence",
+    "entity_type": "sorcerie",
+    "name": "Vortex of Putrescence",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      }
+    ]
+  },
+  {
+    "slug": "zamor_ice_storm",
+    "entity_type": "sorcerie",
+    "name": "Zamor Ice Storm",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/sorceries.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/sorceries.csv",
+        "sha256": "38ce91370548752ff377edf9a7e9d284276661cc8925d37e2ce1582fceb78e79",
+        "retrieved_at": "2025-11-20T20:24:54.685593"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "sorceries.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/sorceries.csv",
+        "sha256": "41372c94d4a83c9a05def29544202b6e59cd72955b58bd6f7a0f74710dc163e4",
+        "retrieved_at": "2025-11-20T20:24:54.488649"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:sorceries",
+        "source_file": "sorceries.json",
+        "uri": "https://eldenring.fanapis.com/api/sorceries",
+        "sha256": "dcd11eeaca981697308be1390b30fabfcb02893d29b9de3e10bc2d6eff40c358",
+        "retrieved_at": "2025-11-20T20:24:55.006648"
+      }
+    ]
+  }
+]

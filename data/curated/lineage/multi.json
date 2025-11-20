@@ -1,0 +1,242 @@
+[
+  {
+    "slug": "bloody_finger",
+    "entity_type": "multi",
+    "name": "Bloody Finger",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/multi.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/multi.csv",
+        "sha256": "96ec771c282a30aa219099d829c6163d35eeb9b1102eb817c9fc27476c456710",
+        "retrieved_at": "2025-11-20T20:24:54.532948"
+      }
+    ]
+  },
+  {
+    "slug": "blue_cipher_ring",
+    "entity_type": "multi",
+    "name": "Blue Cipher Ring",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/multi.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/multi.csv",
+        "sha256": "96ec771c282a30aa219099d829c6163d35eeb9b1102eb817c9fc27476c456710",
+        "retrieved_at": "2025-11-20T20:24:54.532948"
+      }
+    ]
+  },
+  {
+    "slug": "duelists_furled_finger",
+    "entity_type": "multi",
+    "name": "Duelist's Furled Finger",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/multi.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/multi.csv",
+        "sha256": "96ec771c282a30aa219099d829c6163d35eeb9b1102eb817c9fc27476c456710",
+        "retrieved_at": "2025-11-20T20:24:54.532948"
+      }
+    ]
+  },
+  {
+    "slug": "festering_bloody_finger",
+    "entity_type": "multi",
+    "name": "Festering Bloody Finger",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/multi.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/multi.csv",
+        "sha256": "96ec771c282a30aa219099d829c6163d35eeb9b1102eb817c9fc27476c456710",
+        "retrieved_at": "2025-11-20T20:24:54.532948"
+      }
+    ]
+  },
+  {
+    "slug": "finger_severer",
+    "entity_type": "multi",
+    "name": "Finger Severer",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/multi.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/multi.csv",
+        "sha256": "96ec771c282a30aa219099d829c6163d35eeb9b1102eb817c9fc27476c456710",
+        "retrieved_at": "2025-11-20T20:24:54.532948"
+      }
+    ]
+  },
+  {
+    "slug": "furlcalling_finger_remedy",
+    "entity_type": "multi",
+    "name": "Furlcalling Finger Remedy",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/multi.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/multi.csv",
+        "sha256": "96ec771c282a30aa219099d829c6163d35eeb9b1102eb817c9fc27476c456710",
+        "retrieved_at": "2025-11-20T20:24:54.532948"
+      }
+    ]
+  },
+  {
+    "slug": "grace_mimic",
+    "entity_type": "multi",
+    "name": "Grace Mimic",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/multi.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/multi.csv",
+        "sha256": "96ec771c282a30aa219099d829c6163d35eeb9b1102eb817c9fc27476c456710",
+        "retrieved_at": "2025-11-20T20:24:54.532948"
+      }
+    ]
+  },
+  {
+    "slug": "phantom_bloody_finger",
+    "entity_type": "multi",
+    "name": "Phantom Bloody Finger",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/multi.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/multi.csv",
+        "sha256": "96ec771c282a30aa219099d829c6163d35eeb9b1102eb817c9fc27476c456710",
+        "retrieved_at": "2025-11-20T20:24:54.532948"
+      }
+    ]
+  },
+  {
+    "slug": "recusant_finger",
+    "entity_type": "multi",
+    "name": "Recusant Finger",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/multi.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/multi.csv",
+        "sha256": "96ec771c282a30aa219099d829c6163d35eeb9b1102eb817c9fc27476c456710",
+        "retrieved_at": "2025-11-20T20:24:54.532948"
+      }
+    ]
+  },
+  {
+    "slug": "scriptstone",
+    "entity_type": "multi",
+    "name": "Scriptstone",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/multi.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/multi.csv",
+        "sha256": "96ec771c282a30aa219099d829c6163d35eeb9b1102eb817c9fc27476c456710",
+        "retrieved_at": "2025-11-20T20:24:54.532948"
+      }
+    ]
+  },
+  {
+    "slug": "small_golden_effigy",
+    "entity_type": "multi",
+    "name": "Small Golden Effigy",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/multi.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/multi.csv",
+        "sha256": "96ec771c282a30aa219099d829c6163d35eeb9b1102eb817c9fc27476c456710",
+        "retrieved_at": "2025-11-20T20:24:54.532948"
+      }
+    ]
+  },
+  {
+    "slug": "small_red_effigy",
+    "entity_type": "multi",
+    "name": "Small Red Effigy",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/multi.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/multi.csv",
+        "sha256": "96ec771c282a30aa219099d829c6163d35eeb9b1102eb817c9fc27476c456710",
+        "retrieved_at": "2025-11-20T20:24:54.532948"
+      }
+    ]
+  },
+  {
+    "slug": "tarnisheds_furled_finger",
+    "entity_type": "multi",
+    "name": "Tarnished's Furled Finger",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/multi.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/multi.csv",
+        "sha256": "96ec771c282a30aa219099d829c6163d35eeb9b1102eb817c9fc27476c456710",
+        "retrieved_at": "2025-11-20T20:24:54.532948"
+      }
+    ]
+  },
+  {
+    "slug": "tarnisheds_wizened_finger",
+    "entity_type": "multi",
+    "name": "Tarnished's Wizened Finger",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/multi.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/multi.csv",
+        "sha256": "96ec771c282a30aa219099d829c6163d35eeb9b1102eb817c9fc27476c456710",
+        "retrieved_at": "2025-11-20T20:24:54.532948"
+      }
+    ]
+  },
+  {
+    "slug": "taunters_tongue",
+    "entity_type": "multi",
+    "name": "Taunter's Tongue",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/multi.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/multi.csv",
+        "sha256": "96ec771c282a30aa219099d829c6163d35eeb9b1102eb817c9fc27476c456710",
+        "retrieved_at": "2025-11-20T20:24:54.532948"
+      }
+    ]
+  },
+  {
+    "slug": "white_cipher_ring",
+    "entity_type": "multi",
+    "name": "White Cipher Ring",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/multi.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/multi.csv",
+        "sha256": "96ec771c282a30aa219099d829c6163d35eeb9b1102eb817c9fc27476c456710",
+        "retrieved_at": "2025-11-20T20:24:54.532948"
+      }
+    ]
+  }
+]

@@ -1,0 +1,902 @@
+[
+  {
+    "slug": "abandoned_merchants_bell_bearing",
+    "entity_type": "bell",
+    "name": "Abandoned Merchant's Bell Bearing",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "bernahls_bell_bearing",
+    "entity_type": "bell",
+    "name": "Bernahl's Bell Bearing",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "blackguards_bell_bearing",
+    "entity_type": "bell",
+    "name": "Blackguard's Bell Bearing",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "bone_peddlers_bell_bearing",
+    "entity_type": "bell",
+    "name": "Bone Peddler's Bell Bearing",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "corhyns_bell_bearing",
+    "entity_type": "bell",
+    "name": "Corhyn's Bell Bearing",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "ds_bell_bearing",
+    "entity_type": "bell",
+    "name": "D's Bell Bearing",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "ghost_glovewort_pickers_bell_bearing_1",
+    "entity_type": "bell",
+    "name": "Ghost-Glovewort Picker's Bell Bearing [1]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "ghost_glovewort_pickers_bell_bearing_2",
+    "entity_type": "bell",
+    "name": "Ghost-Glovewort Picker's Bell Bearing [2]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "glovewort_pickers_bell_bearing_1",
+    "entity_type": "bell",
+    "name": "Glovewort Picker's Bell Bearing [1]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "glovewort_pickers_bell_bearing_2",
+    "entity_type": "bell",
+    "name": "Glovewort Picker's Bell Bearing [2]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "glovewort_pickers_bell_bearing_3",
+    "entity_type": "bell",
+    "name": "Glovewort Picker's Bell Bearing [3]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "gostocs_bell_bearing",
+    "entity_type": "bell",
+    "name": "Gostoc's Bell Bearing",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "gowrys_bell_bearing",
+    "entity_type": "bell",
+    "name": "Gowry's Bell Bearing",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "gravity_stone_peddlers_bell_bearing",
+    "entity_type": "bell",
+    "name": "Gravity Stone Peddler's Bell Bearing",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "greasemongers_bell_bearing",
+    "entity_type": "bell",
+    "name": "Greasemonger's Bell Bearing",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "herbalists_bell_bearing",
+    "entity_type": "bell",
+    "name": "Herbalist's Bell Bearing",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "hermit_merchants_bell_bearing_1",
+    "entity_type": "bell",
+    "name": "Hermit Merchant's Bell Bearing [1]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "hermit_merchants_bell_bearing_2",
+    "entity_type": "bell",
+    "name": "Hermit Merchant's Bell Bearing [2]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "hermit_merchants_bell_bearing_3",
+    "entity_type": "bell",
+    "name": "Hermit Merchant's Bell Bearing [3]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "igons_bell_bearing",
+    "entity_type": "bell",
+    "name": "Igon's Bell Bearing",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "ijis_bell_bearing",
+    "entity_type": "bell",
+    "name": "Iji's Bell Bearing",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "imprisoned_merchants_bell_bearing",
+    "entity_type": "bell",
+    "name": "Imprisoned Merchant's Bell Bearing",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "isolated_merchants_bell_bearing_1",
+    "entity_type": "bell",
+    "name": "Isolated Merchant's Bell Bearing [1]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "isolated_merchants_bell_bearing_2",
+    "entity_type": "bell",
+    "name": "Isolated Merchant's Bell Bearing [2]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "kales_bell_bearing",
+    "entity_type": "bell",
+    "name": "Kale's Bell Bearing",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "meat_peddlers_bell_bearing",
+    "entity_type": "bell",
+    "name": "Meat Peddler's Bell Bearing",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "medicine_peddlers_bell_bearing",
+    "entity_type": "bell",
+    "name": "Medicine Peddler's Bell Bearing",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "miriels_bell_bearing",
+    "entity_type": "bell",
+    "name": "Miriel's Bell Bearing",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "moldmongers_bell_bearing",
+    "entity_type": "bell",
+    "name": "Moldmonger's Bell Bearing",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "moores_bell_bearing",
+    "entity_type": "bell",
+    "name": "Moore's Bell Bearing",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "mushroom_sellers_bell_bearing_1",
+    "entity_type": "bell",
+    "name": "Mushroom-Seller's Bell Bearing (1)",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "mushroom_sellers_bell_bearing_2",
+    "entity_type": "bell",
+    "name": "Mushroom-Seller's Bell Bearing (2)",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "nomadic_merchants_bell_bearing_1",
+    "entity_type": "bell",
+    "name": "Nomadic Merchant's Bell Bearing [1]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "nomadic_merchants_bell_bearing_10",
+    "entity_type": "bell",
+    "name": "Nomadic Merchant's Bell Bearing [10]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "nomadic_merchants_bell_bearing_11",
+    "entity_type": "bell",
+    "name": "Nomadic Merchant's Bell Bearing [11]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "nomadic_merchants_bell_bearing_2",
+    "entity_type": "bell",
+    "name": "Nomadic Merchant's Bell Bearing [2]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "nomadic_merchants_bell_bearing_3",
+    "entity_type": "bell",
+    "name": "Nomadic Merchant's Bell Bearing [3]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "nomadic_merchants_bell_bearing_4",
+    "entity_type": "bell",
+    "name": "Nomadic Merchant's Bell Bearing [4]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "nomadic_merchants_bell_bearing_5",
+    "entity_type": "bell",
+    "name": "Nomadic Merchant's Bell Bearing [5]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "nomadic_merchants_bell_bearing_6",
+    "entity_type": "bell",
+    "name": "Nomadic Merchant's Bell Bearing [6]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "nomadic_merchants_bell_bearing_7",
+    "entity_type": "bell",
+    "name": "Nomadic Merchant's Bell Bearing [7]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "nomadic_merchants_bell_bearing_8",
+    "entity_type": "bell",
+    "name": "Nomadic Merchant's Bell Bearing [8]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "nomadic_merchants_bell_bearing_9",
+    "entity_type": "bell",
+    "name": "Nomadic Merchant's Bell Bearing [9]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "patches_bell_bearing",
+    "entity_type": "bell",
+    "name": "Patches' Bell Bearing",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "pidias_bell_bearing",
+    "entity_type": "bell",
+    "name": "Pidia's Bell Bearing",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "rogiers_bell_bearing",
+    "entity_type": "bell",
+    "name": "Rogier's Bell Bearing",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "sellens_bell_bearing",
+    "entity_type": "bell",
+    "name": "Sellen's Bell Bearing",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "seluviss_bell_bearing",
+    "entity_type": "bell",
+    "name": "Seluvis's Bell Bearing",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "smithing_stone_miners_bell_bearing_1",
+    "entity_type": "bell",
+    "name": "Smithing-Stone Miner's Bell Bearing [1]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "smithing_stone_miners_bell_bearing_2",
+    "entity_type": "bell",
+    "name": "Smithing-Stone Miner's Bell Bearing [2]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "smithing_stone_miners_bell_bearing_3",
+    "entity_type": "bell",
+    "name": "Smithing-Stone Miner's Bell Bearing [3]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "smithing_stone_miners_bell_bearing_4",
+    "entity_type": "bell",
+    "name": "Smithing-Stone Miner's Bell Bearing [4]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "somberstone_miners_bell_bearing_2",
+    "entity_type": "bell",
+    "name": "SOMBERSTONE MINER'S BELL BEARING (2)",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "somberstone_miners_bell_bearing_3",
+    "entity_type": "bell",
+    "name": "Somberstone Miner's Bell Bearing [3]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "somberstone_miners_bell_bearing_4",
+    "entity_type": "bell",
+    "name": "Somberstone Miner's Bell Bearing [4]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "somberstone_miners_bell_bearing_5",
+    "entity_type": "bell",
+    "name": "Somberstone Miner's Bell Bearing [5]",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "spellmachinists_bell_bearing",
+    "entity_type": "bell",
+    "name": "Spellmachinist's Bell Bearing",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "string_sellers_bell_bearing",
+    "entity_type": "bell",
+    "name": "String-Seller's Bell Bearing",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "thopss_bell_bearing",
+    "entity_type": "bell",
+    "name": "Thops's Bell Bearing",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  },
+  {
+    "slug": "ymirs_bell_bearing",
+    "entity_type": "bell",
+    "name": "Ymir's Bell Bearing",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/bells.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/bells.csv",
+        "sha256": "5eca4e4fcea3e0616a4b208d2bfba8e96df247af2c3853c97e80c6e533ba038a",
+        "retrieved_at": "2025-11-20T20:24:54.521619"
+      }
+    ]
+  }
+]

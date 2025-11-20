@@ -1,0 +1,557 @@
+[
+  {
+    "slug": "bloodsucking_cracked_tear",
+    "entity_type": "crystal_tear",
+    "name": "Bloodsucking Cracked Tear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/crystalTears.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/crystalTears.csv",
+        "sha256": "ff8e9e44331c1fefd55f2c9d938ffd6e3e18685deba04e1ad107a79413407eb1",
+        "retrieved_at": "2025-11-20T20:24:54.527347"
+      }
+    ]
+  },
+  {
+    "slug": "cerulean_crystal_tear",
+    "entity_type": "crystal_tear",
+    "name": "Cerulean Crystal Tear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/crystalTears.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/crystalTears.csv",
+        "sha256": "ff8e9e44331c1fefd55f2c9d938ffd6e3e18685deba04e1ad107a79413407eb1",
+        "retrieved_at": "2025-11-20T20:24:54.527347"
+      }
+    ]
+  },
+  {
+    "slug": "cerulean_hidden_tear",
+    "entity_type": "crystal_tear",
+    "name": "CERULEAN HIDDEN TEAR",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/crystalTears.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/crystalTears.csv",
+        "sha256": "ff8e9e44331c1fefd55f2c9d938ffd6e3e18685deba04e1ad107a79413407eb1",
+        "retrieved_at": "2025-11-20T20:24:54.527347"
+      }
+    ]
+  },
+  {
+    "slug": "cerulean_sapping_cracked_tear",
+    "entity_type": "crystal_tear",
+    "name": "Cerulean-Sapping Cracked Tear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/crystalTears.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/crystalTears.csv",
+        "sha256": "ff8e9e44331c1fefd55f2c9d938ffd6e3e18685deba04e1ad107a79413407eb1",
+        "retrieved_at": "2025-11-20T20:24:54.527347"
+      }
+    ]
+  },
+  {
+    "slug": "crimson_bubbletear",
+    "entity_type": "crystal_tear",
+    "name": "Crimson Bubbletear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/crystalTears.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/crystalTears.csv",
+        "sha256": "ff8e9e44331c1fefd55f2c9d938ffd6e3e18685deba04e1ad107a79413407eb1",
+        "retrieved_at": "2025-11-20T20:24:54.527347"
+      }
+    ]
+  },
+  {
+    "slug": "crimson_crystal_tear",
+    "entity_type": "crystal_tear",
+    "name": "Crimson Crystal Tear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/crystalTears.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/crystalTears.csv",
+        "sha256": "ff8e9e44331c1fefd55f2c9d938ffd6e3e18685deba04e1ad107a79413407eb1",
+        "retrieved_at": "2025-11-20T20:24:54.527347"
+      }
+    ]
+  },
+  {
+    "slug": "crimson_sapping_cracked_tear",
+    "entity_type": "crystal_tear",
+    "name": "Crimson-Sapping Cracked Tear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/crystalTears.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/crystalTears.csv",
+        "sha256": "ff8e9e44331c1fefd55f2c9d938ffd6e3e18685deba04e1ad107a79413407eb1",
+        "retrieved_at": "2025-11-20T20:24:54.527347"
+      }
+    ]
+  },
+  {
+    "slug": "crimsonburst_crystal_tear",
+    "entity_type": "crystal_tear",
+    "name": "Crimsonburst Crystal Tear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/crystalTears.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/crystalTears.csv",
+        "sha256": "ff8e9e44331c1fefd55f2c9d938ffd6e3e18685deba04e1ad107a79413407eb1",
+        "retrieved_at": "2025-11-20T20:24:54.527347"
+      }
+    ]
+  },
+  {
+    "slug": "crimsonburst_dried_tear",
+    "entity_type": "crystal_tear",
+    "name": "Crimsonburst Dried Tear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/crystalTears.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/crystalTears.csv",
+        "sha256": "ff8e9e44331c1fefd55f2c9d938ffd6e3e18685deba04e1ad107a79413407eb1",
+        "retrieved_at": "2025-11-20T20:24:54.527347"
+      }
+    ]
+  },
+  {
+    "slug": "crimsonspill_crystal_tear",
+    "entity_type": "crystal_tear",
+    "name": "Crimsonspill Crystal Tear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/crystalTears.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/crystalTears.csv",
+        "sha256": "ff8e9e44331c1fefd55f2c9d938ffd6e3e18685deba04e1ad107a79413407eb1",
+        "retrieved_at": "2025-11-20T20:24:54.527347"
+      }
+    ]
+  },
+  {
+    "slug": "crimsonwhorl_bubbletear",
+    "entity_type": "crystal_tear",
+    "name": "Crimsonwhorl Bubbletear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/crystalTears.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/crystalTears.csv",
+        "sha256": "ff8e9e44331c1fefd55f2c9d938ffd6e3e18685deba04e1ad107a79413407eb1",
+        "retrieved_at": "2025-11-20T20:24:54.527347"
+      }
+    ]
+  },
+  {
+    "slug": "deflecting_hardtear",
+    "entity_type": "crystal_tear",
+    "name": "Deflecting Hardtear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/crystalTears.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/crystalTears.csv",
+        "sha256": "ff8e9e44331c1fefd55f2c9d938ffd6e3e18685deba04e1ad107a79413407eb1",
+        "retrieved_at": "2025-11-20T20:24:54.527347"
+      }
+    ]
+  },
+  {
+    "slug": "dexterity_knot_crystal_tear",
+    "entity_type": "crystal_tear",
+    "name": "Dexterity-knot Crystal Tear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/crystalTears.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/crystalTears.csv",
+        "sha256": "ff8e9e44331c1fefd55f2c9d938ffd6e3e18685deba04e1ad107a79413407eb1",
+        "retrieved_at": "2025-11-20T20:24:54.527347"
+      }
+    ]
+  },
+  {
+    "slug": "faith_knot_crystal_tear",
+    "entity_type": "crystal_tear",
+    "name": "Faith-knot Crystal Tear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/crystalTears.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/crystalTears.csv",
+        "sha256": "ff8e9e44331c1fefd55f2c9d938ffd6e3e18685deba04e1ad107a79413407eb1",
+        "retrieved_at": "2025-11-20T20:24:54.527347"
+      }
+    ]
+  },
+  {
+    "slug": "flame_shrouding_cracked_tear",
+    "entity_type": "crystal_tear",
+    "name": "Flame-Shrouding Cracked Tear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/crystalTears.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/crystalTears.csv",
+        "sha256": "ff8e9e44331c1fefd55f2c9d938ffd6e3e18685deba04e1ad107a79413407eb1",
+        "retrieved_at": "2025-11-20T20:24:54.527347"
+      }
+    ]
+  },
+  {
+    "slug": "glovewort_crystal_tear",
+    "entity_type": "crystal_tear",
+    "name": "Glovewort Crystal Tear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/crystalTears.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/crystalTears.csv",
+        "sha256": "ff8e9e44331c1fefd55f2c9d938ffd6e3e18685deba04e1ad107a79413407eb1",
+        "retrieved_at": "2025-11-20T20:24:54.527347"
+      }
+    ]
+  },
+  {
+    "slug": "greenburst_crystal_tear",
+    "entity_type": "crystal_tear",
+    "name": "Greenburst Crystal Tear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/crystalTears.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/crystalTears.csv",
+        "sha256": "ff8e9e44331c1fefd55f2c9d938ffd6e3e18685deba04e1ad107a79413407eb1",
+        "retrieved_at": "2025-11-20T20:24:54.527347"
+      }
+    ]
+  },
+  {
+    "slug": "greenspill_crystal_tear",
+    "entity_type": "crystal_tear",
+    "name": "Greenspill Crystal Tear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/crystalTears.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/crystalTears.csv",
+        "sha256": "ff8e9e44331c1fefd55f2c9d938ffd6e3e18685deba04e1ad107a79413407eb1",
+        "retrieved_at": "2025-11-20T20:24:54.527347"
+      }
+    ]
+  },
+  {
+    "slug": "holy_shrouding_cracked_tear",
+    "entity_type": "crystal_tear",
+    "name": "Holy-Shrouding Cracked Tear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/crystalTears.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/crystalTears.csv",
+        "sha256": "ff8e9e44331c1fefd55f2c9d938ffd6e3e18685deba04e1ad107a79413407eb1",
+        "retrieved_at": "2025-11-20T20:24:54.527347"
+      }
+    ]
+  },
+  {
+    "slug": "intelligence_knotcrystal_tear",
+    "entity_type": "crystal_tear",
+    "name": "INTELLIGENCE-KNOTCRYSTAL TEAR",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/crystalTears.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/crystalTears.csv",
+        "sha256": "ff8e9e44331c1fefd55f2c9d938ffd6e3e18685deba04e1ad107a79413407eb1",
+        "retrieved_at": "2025-11-20T20:24:54.527347"
+      }
+    ]
+  },
+  {
+    "slug": "leaden_hardtear",
+    "entity_type": "crystal_tear",
+    "name": "Leaden Hardtear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/crystalTears.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/crystalTears.csv",
+        "sha256": "ff8e9e44331c1fefd55f2c9d938ffd6e3e18685deba04e1ad107a79413407eb1",
+        "retrieved_at": "2025-11-20T20:24:54.527347"
+      }
+    ]
+  },
+  {
+    "slug": "lightning_shrouding_cracked_tear",
+    "entity_type": "crystal_tear",
+    "name": "Lightning-Shrouding Cracked Tear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/crystalTears.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/crystalTears.csv",
+        "sha256": "ff8e9e44331c1fefd55f2c9d938ffd6e3e18685deba04e1ad107a79413407eb1",
+        "retrieved_at": "2025-11-20T20:24:54.527347"
+      }
+    ]
+  },
+  {
+    "slug": "magic_shrouding_cracked_tear",
+    "entity_type": "crystal_tear",
+    "name": "Magic-Shrouding Cracked Tear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/crystalTears.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/crystalTears.csv",
+        "sha256": "ff8e9e44331c1fefd55f2c9d938ffd6e3e18685deba04e1ad107a79413407eb1",
+        "retrieved_at": "2025-11-20T20:24:54.527347"
+      }
+    ]
+  },
+  {
+    "slug": "oil_soaked_tear",
+    "entity_type": "crystal_tear",
+    "name": "Oil-Soaked Tear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/crystalTears.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/crystalTears.csv",
+        "sha256": "ff8e9e44331c1fefd55f2c9d938ffd6e3e18685deba04e1ad107a79413407eb1",
+        "retrieved_at": "2025-11-20T20:24:54.527347"
+      }
+    ]
+  },
+  {
+    "slug": "opaline_bubbletear",
+    "entity_type": "crystal_tear",
+    "name": "Opaline Bubbletear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/crystalTears.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/crystalTears.csv",
+        "sha256": "ff8e9e44331c1fefd55f2c9d938ffd6e3e18685deba04e1ad107a79413407eb1",
+        "retrieved_at": "2025-11-20T20:24:54.527347"
+      }
+    ]
+  },
+  {
+    "slug": "opaline_hardtear",
+    "entity_type": "crystal_tear",
+    "name": "Opaline Hardtear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/crystalTears.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/crystalTears.csv",
+        "sha256": "ff8e9e44331c1fefd55f2c9d938ffd6e3e18685deba04e1ad107a79413407eb1",
+        "retrieved_at": "2025-11-20T20:24:54.527347"
+      }
+    ]
+  },
+  {
+    "slug": "purifying_crystal_tear",
+    "entity_type": "crystal_tear",
+    "name": "Purifying Crystal Tear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/crystalTears.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/crystalTears.csv",
+        "sha256": "ff8e9e44331c1fefd55f2c9d938ffd6e3e18685deba04e1ad107a79413407eb1",
+        "retrieved_at": "2025-11-20T20:24:54.527347"
+      }
+    ]
+  },
+  {
+    "slug": "ruptured_crystal_tear",
+    "entity_type": "crystal_tear",
+    "name": "Ruptured Crystal Tear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/crystalTears.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/crystalTears.csv",
+        "sha256": "ff8e9e44331c1fefd55f2c9d938ffd6e3e18685deba04e1ad107a79413407eb1",
+        "retrieved_at": "2025-11-20T20:24:54.527347"
+      }
+    ]
+  },
+  {
+    "slug": "speckled_hardtear",
+    "entity_type": "crystal_tear",
+    "name": "Speckled Hardtear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/crystalTears.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/crystalTears.csv",
+        "sha256": "ff8e9e44331c1fefd55f2c9d938ffd6e3e18685deba04e1ad107a79413407eb1",
+        "retrieved_at": "2025-11-20T20:24:54.527347"
+      }
+    ]
+  },
+  {
+    "slug": "spiked_cracked_tear",
+    "entity_type": "crystal_tear",
+    "name": "Spiked Cracked Tear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/crystalTears.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/crystalTears.csv",
+        "sha256": "ff8e9e44331c1fefd55f2c9d938ffd6e3e18685deba04e1ad107a79413407eb1",
+        "retrieved_at": "2025-11-20T20:24:54.527347"
+      }
+    ]
+  },
+  {
+    "slug": "stonebarb_cracked_tear",
+    "entity_type": "crystal_tear",
+    "name": "Stonebarb Cracked Tear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/crystalTears.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/crystalTears.csv",
+        "sha256": "ff8e9e44331c1fefd55f2c9d938ffd6e3e18685deba04e1ad107a79413407eb1",
+        "retrieved_at": "2025-11-20T20:24:54.527347"
+      }
+    ]
+  },
+  {
+    "slug": "strength_knot_crystal_tear",
+    "entity_type": "crystal_tear",
+    "name": "Strength-knot Crystal Tear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/crystalTears.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/crystalTears.csv",
+        "sha256": "ff8e9e44331c1fefd55f2c9d938ffd6e3e18685deba04e1ad107a79413407eb1",
+        "retrieved_at": "2025-11-20T20:24:54.527347"
+      }
+    ]
+  },
+  {
+    "slug": "thorny_cracked_tear",
+    "entity_type": "crystal_tear",
+    "name": "Thorny Cracked Tear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/crystalTears.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/crystalTears.csv",
+        "sha256": "ff8e9e44331c1fefd55f2c9d938ffd6e3e18685deba04e1ad107a79413407eb1",
+        "retrieved_at": "2025-11-20T20:24:54.527347"
+      }
+    ]
+  },
+  {
+    "slug": "twiggy_cracked_tear",
+    "entity_type": "crystal_tear",
+    "name": "Twiggy Cracked Tear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/crystalTears.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/crystalTears.csv",
+        "sha256": "ff8e9e44331c1fefd55f2c9d938ffd6e3e18685deba04e1ad107a79413407eb1",
+        "retrieved_at": "2025-11-20T20:24:54.527347"
+      }
+    ]
+  },
+  {
+    "slug": "viridian_hidden_tear",
+    "entity_type": "crystal_tear",
+    "name": "Viridian Hidden Tear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/crystalTears.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/crystalTears.csv",
+        "sha256": "ff8e9e44331c1fefd55f2c9d938ffd6e3e18685deba04e1ad107a79413407eb1",
+        "retrieved_at": "2025-11-20T20:24:54.527347"
+      }
+    ]
+  },
+  {
+    "slug": "windy_crystal_tear",
+    "entity_type": "crystal_tear",
+    "name": "Windy Crystal Tear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/crystalTears.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/crystalTears.csv",
+        "sha256": "ff8e9e44331c1fefd55f2c9d938ffd6e3e18685deba04e1ad107a79413407eb1",
+        "retrieved_at": "2025-11-20T20:24:54.527347"
+      }
+    ]
+  },
+  {
+    "slug": "winged_crystal_tear",
+    "entity_type": "crystal_tear",
+    "name": "Winged Crystal Tear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/crystalTears.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/crystalTears.csv",
+        "sha256": "ff8e9e44331c1fefd55f2c9d938ffd6e3e18685deba04e1ad107a79413407eb1",
+        "retrieved_at": "2025-11-20T20:24:54.527347"
+      }
+    ]
+  }
+]

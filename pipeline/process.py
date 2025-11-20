@@ -254,11 +254,7 @@ class DataProcessor:
             df = normalize_categorical(df, {"armor_type": armor_type_mapping})
 
         # Handle missing defense values
-        defense_cols = [
-            col
-            for col in df.columns
-            if col.startswith("defense_")
-        ]
+        defense_cols = [col for col in df.columns if col.startswith("defense_")]
         strategy = {col: 0.0 for col in defense_cols}
         df = handle_missing_values(df, strategy)
 
@@ -358,9 +354,7 @@ class DataProcessor:
 
         for raw_file in raw_files:
             file_stem = raw_file.stem
-            output_file = (
-                self.processed_dir / dataset_name / f"{file_stem}.parquet"
-            )
+            output_file = self.processed_dir / dataset_name / f"{file_stem}.parquet"
             cache_file = self.cache_dir / f"{dataset_name}.json"
 
             # Check if processing needed
@@ -509,14 +503,10 @@ class DataProcessor:
         # Generate summary
         total = len(results["datasets"])
         succeeded = sum(
-            1
-            for result in results["datasets"].values()
-            if result.get("status") == "success"
+            1 for result in results["datasets"].values() if result.get("status") == "success"
         )
         failed = sum(
-            1
-            for result in results["datasets"].values()
-            if result.get("status") == "failed"
+            1 for result in results["datasets"].values() if result.get("status") == "failed"
         )
         skipped = total - succeeded - failed
 
@@ -652,9 +642,7 @@ class DataProcessor:
             schema_tag = schema_version.tag if schema_version else None
             files_needing: list[str] = []
             for raw_file in raw_files:
-                output_file = (
-                    self.processed_dir / name / f"{raw_file.stem}.parquet"
-                )
+                output_file = self.processed_dir / name / f"{raw_file.stem}.parquet"
                 if needs_processing(
                     raw_file,
                     output_file,

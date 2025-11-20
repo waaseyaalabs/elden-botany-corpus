@@ -88,10 +88,15 @@ def merge_text_fields(row: dict[str, Any], text_fields: list[str]) -> str:
     parts = []
     for field in text_fields:
         value = row.get(field)
-        if value and str(value).strip() and str(value).lower() not in (
-            "nan",
-            "none",
-            "null",
+        if (
+            value
+            and str(value).strip()
+            and str(value).lower()
+            not in (
+                "nan",
+                "none",
+                "null",
+            )
         ):
             # Add field label if it's meaningful
             if len(text_fields) > 1:
@@ -137,6 +142,7 @@ class MetadataTracker:
             "provenance_summary": {},
             "quality_reports": {},
             "schema_versions": {},
+            "lineage_manifests": {},
         }
 
     def add_row_count(self, source: str, count: int) -> None:
@@ -188,6 +194,11 @@ class MetadataTracker:
             payload = schema_metadata
 
         self.metadata["schema_versions"][dataset] = payload
+
+    def set_lineage_manifests(self, summary: dict[str, Any]) -> None:
+        """Record lineage manifest artifacts."""
+
+        self.metadata["lineage_manifests"] = summary
 
     def save(self, file_path: Path) -> None:
         """Save metadata to JSON."""

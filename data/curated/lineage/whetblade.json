@@ -1,0 +1,92 @@
+[
+  {
+    "slug": "black_whetblade",
+    "entity_type": "whetblade",
+    "name": "Black Whetblade",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/whetblades.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/whetblades.csv",
+        "sha256": "02dd870b112ac7b1fe3dad34e8c676ab4050b5049bc82871c0acf0d27bf7505a",
+        "retrieved_at": "2025-11-20T20:24:54.536717"
+      }
+    ]
+  },
+  {
+    "slug": "glintstone_whetblade",
+    "entity_type": "whetblade",
+    "name": "Glintstone Whetblade",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/whetblades.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/whetblades.csv",
+        "sha256": "02dd870b112ac7b1fe3dad34e8c676ab4050b5049bc82871c0acf0d27bf7505a",
+        "retrieved_at": "2025-11-20T20:24:54.536717"
+      }
+    ]
+  },
+  {
+    "slug": "iron_whetblade",
+    "entity_type": "whetblade",
+    "name": "Iron Whetblade",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/whetblades.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/whetblades.csv",
+        "sha256": "02dd870b112ac7b1fe3dad34e8c676ab4050b5049bc82871c0acf0d27bf7505a",
+        "retrieved_at": "2025-11-20T20:24:54.536717"
+      }
+    ]
+  },
+  {
+    "slug": "red_hot_whetblade",
+    "entity_type": "whetblade",
+    "name": "Red-Hot Whetblade",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/whetblades.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/whetblades.csv",
+        "sha256": "02dd870b112ac7b1fe3dad34e8c676ab4050b5049bc82871c0acf0d27bf7505a",
+        "retrieved_at": "2025-11-20T20:24:54.536717"
+      }
+    ]
+  },
+  {
+    "slug": "sanctified_whetblade",
+    "entity_type": "whetblade",
+    "name": "Sanctified Whetblade",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/whetblades.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/whetblades.csv",
+        "sha256": "02dd870b112ac7b1fe3dad34e8c676ab4050b5049bc82871c0acf0d27bf7505a",
+        "retrieved_at": "2025-11-20T20:24:54.536717"
+      }
+    ]
+  },
+  {
+    "slug": "whetstone_knife",
+    "entity_type": "whetblade",
+    "name": "Whetstone Knife",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/items/whetblades.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/items/whetblades.csv",
+        "sha256": "02dd870b112ac7b1fe3dad34e8c676ab4050b5049bc82871c0acf0d27bf7505a",
+        "retrieved_at": "2025-11-20T20:24:54.536717"
+      }
+    ]
+  }
+]

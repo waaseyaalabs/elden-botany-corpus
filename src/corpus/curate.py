@@ -6,6 +6,7 @@ from pathlib import Path
 import polars as pl  # type: ignore[import]
 
 from corpus.config import settings
+from corpus.lineage import LineageManifestBuilder
 from corpus.models import RawEntity
 from corpus.quality import QualityReporter
 from corpus.reconcile import entities_to_dataframe
@@ -36,6 +37,10 @@ class CorpusCurator:
         self.output_dir = output_dir or settings.curated_dir
         self.output_dir.mkdir(parents=True, exist_ok=True)
         self.metadata = MetadataTracker()
+        self.lineage_builder = LineageManifestBuilder(
+            output_root=self.output_dir / "lineage",
+            relative_root=self.output_dir,
+        )
         self.quality_reporter: QualityReporter | None = None
         if enable_quality_reports:
             self.quality_reporter = QualityReporter(
@@ -88,6 +93,8 @@ class CorpusCurator:
 
         for source, count in source_counts.items():
             self.metadata.add_provenance_summary(source, count)
+
+        self._emit_lineage_manifests(entities)
 
         # Handle unmapped texts
         if unmapped_texts:
@@ -191,6 +198,15 @@ class CorpusCurator:
         metadata_path = self.output_dir / "metadata.json"
         self.metadata.save(metadata_path)
         print(f"\nSaved metadata: {metadata_path}")
+
+    def _emit_lineage_manifests(self, entities: list[RawEntity]) -> None:
+        """Generate lineage manifests and register them in metadata."""
+
+        if not entities:
+            return
+
+        summary = self.lineage_builder.build(entities)
+        self.metadata.set_lineage_manifests(summary)
 
     def _export_unmapped_texts(self, unmapped_texts: list[RawEntity]) -> None:
         """Export unmapped DLC texts for manual review."""

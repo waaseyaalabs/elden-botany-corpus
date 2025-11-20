@@ -1,0 +1,3540 @@
+[
+  {
+    "slug": "agheels_flame",
+    "entity_type": "incantation",
+    "name": "Agheel's Flame",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "ancient_dragons_lightning_spear",
+    "entity_type": "incantation",
+    "name": "Ancient Dragons' Lightning Spear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "ancient_dragons_lightning_strike",
+    "entity_type": "incantation",
+    "name": "Ancient Dragons' Lightning Strike",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "aspect_of_the_crucible_breath",
+    "entity_type": "incantation",
+    "name": "Aspect Of The Crucible: Breath",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "aspects_of_the_crucible_bloom",
+    "entity_type": "incantation",
+    "name": "Aspects of the Crucible: Bloom",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      }
+    ]
+  },
+  {
+    "slug": "aspects_of_the_crucible_breath",
+    "entity_type": "incantation",
+    "name": "Aspects of the Crucible: Breath",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      }
+    ]
+  },
+  {
+    "slug": "aspects_of_the_crucible_horns",
+    "entity_type": "incantation",
+    "name": "Aspects of the Crucible: Horns",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "aspects_of_the_crucible_tail",
+    "entity_type": "incantation",
+    "name": "Aspects of the Crucible: Tail",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "aspects_of_the_crucible_thorns",
+    "entity_type": "incantation",
+    "name": "Aspects of the Crucible: Thorns",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      }
+    ]
+  },
+  {
+    "slug": "assassins_approach",
+    "entity_type": "incantation",
+    "name": "Assassin's Approach",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      }
+    ]
+  },
+  {
+    "slug": "barrier_of_gold",
+    "entity_type": "incantation",
+    "name": "Barrier of Gold",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "bayles_flame_lightning",
+    "entity_type": "incantation",
+    "name": "Bayle's Flame Lightning",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      }
+    ]
+  },
+  {
+    "slug": "bayles_tyranny",
+    "entity_type": "incantation",
+    "name": "Bayle's Tyranny",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      }
+    ]
+  },
+  {
+    "slug": "beast_claw",
+    "entity_type": "incantation",
+    "name": "Beast Claw",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "bestial_constitution",
+    "entity_type": "incantation",
+    "name": "Bestial Constitution",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "bestial_sling",
+    "entity_type": "incantation",
+    "name": "Bestial Sling",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "bestial_vitality",
+    "entity_type": "incantation",
+    "name": "Bestial Vitality",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "black_blade",
+    "entity_type": "incantation",
+    "name": "Black Blade",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "black_flame",
+    "entity_type": "incantation",
+    "name": "Black Flame",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "black_flame_blade",
+    "entity_type": "incantation",
+    "name": "Black Flame Blade",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "black_flame_ritual",
+    "entity_type": "incantation",
+    "name": "Black Flame Ritual",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "black_flames_protection",
+    "entity_type": "incantation",
+    "name": "Black Flame's Protection",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "blessing_of_the_erdtree",
+    "entity_type": "incantation",
+    "name": "Blessing of the Erdtree",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "blessings_boon",
+    "entity_type": "incantation",
+    "name": "Blessing's Boon",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "bloodboon",
+    "entity_type": "incantation",
+    "name": "Bloodboon",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "bloodflame_blade",
+    "entity_type": "incantation",
+    "name": "Bloodflame Blade",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "bloodflame_talons",
+    "entity_type": "incantation",
+    "name": "Bloodflame Talons",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "borealiss_mist",
+    "entity_type": "incantation",
+    "name": "Borealis's Mist",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "burn_o_flame",
+    "entity_type": "incantation",
+    "name": "Burn, O Flame!",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "catch_flame",
+    "entity_type": "incantation",
+    "name": "Catch Flame",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      }
+    ]
+  },
+  {
+    "slug": "cure_poison",
+    "entity_type": "incantation",
+    "name": "Cure Poison",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "darkness",
+    "entity_type": "incantation",
+    "name": "Darkness",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "death_lightning",
+    "entity_type": "incantation",
+    "name": "Death Lightning",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "discus_of_light",
+    "entity_type": "incantation",
+    "name": "Discus of Light",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "divine_beast_tornado",
+    "entity_type": "incantation",
+    "name": "Divine Beast Tornado",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      }
+    ]
+  },
+  {
+    "slug": "divine_bird_feathers",
+    "entity_type": "incantation",
+    "name": "Divine Bird Feathers",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      }
+    ]
+  },
+  {
+    "slug": "divine_fortification",
+    "entity_type": "incantation",
+    "name": "Divine Fortification",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "dragonbolt_blessing",
+    "entity_type": "incantation",
+    "name": "Dragonbolt Blessing",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "dragonbolt_of_florissax",
+    "entity_type": "incantation",
+    "name": "Dragonbolt of Florissax",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      }
+    ]
+  },
+  {
+    "slug": "dragonclaw",
+    "entity_type": "incantation",
+    "name": "Dragonclaw",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "dragonfire",
+    "entity_type": "incantation",
+    "name": "Dragonfire",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "dragonice",
+    "entity_type": "incantation",
+    "name": "Dragonice",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "dragonmaw",
+    "entity_type": "incantation",
+    "name": "Dragonmaw",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "ekzykes_decay",
+    "entity_type": "incantation",
+    "name": "Ekzyke's Decay",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "ekzykess_decay",
+    "entity_type": "incantation",
+    "name": "Ekzykes's Decay",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "elden_stars",
+    "entity_type": "incantation",
+    "name": "Elden Stars",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "electrify_armament",
+    "entity_type": "incantation",
+    "name": "Electrify Armament",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "electrocharge",
+    "entity_type": "incantation",
+    "name": "Electrocharge",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      }
+    ]
+  },
+  {
+    "slug": "erdtree_heal",
+    "entity_type": "incantation",
+    "name": "Erdtree Heal",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "ezykess_decay",
+    "entity_type": "incantation",
+    "name": "Ezykes's Decay",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "fire_serpent",
+    "entity_type": "incantation",
+    "name": "Fire Serpent",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      }
+    ]
+  },
+  {
+    "slug": "fires_deadly_sin",
+    "entity_type": "incantation",
+    "name": "Fire's Deadly Sin",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "flame_cleanse_me",
+    "entity_type": "incantation",
+    "name": "Flame, Cleanse Me",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      }
+    ]
+  },
+  {
+    "slug": "flame_fall_upon_them",
+    "entity_type": "incantation",
+    "name": "Flame, Fall Upon Them",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "flame_fortification",
+    "entity_type": "incantation",
+    "name": "Flame Fortification",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "flame_grant_me_strength",
+    "entity_type": "incantation",
+    "name": "Flame, Grant me Strength",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      }
+    ]
+  },
+  {
+    "slug": "flame_of_the_fell_god",
+    "entity_type": "incantation",
+    "name": "Flame of the Fell God",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "flame_protect_me",
+    "entity_type": "incantation",
+    "name": "Flame, Protect Me",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "flame_sling",
+    "entity_type": "incantation",
+    "name": "Flame Sling",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      }
+    ]
+  },
+  {
+    "slug": "fortissaxs_lightning_spear",
+    "entity_type": "incantation",
+    "name": "Fortissax's Lightning Spear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "frenzied_burst",
+    "entity_type": "incantation",
+    "name": "Frenzied Burst",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "frozen_lightning_spear",
+    "entity_type": "incantation",
+    "name": "Frozen Lightning Spear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "furious_blade_of_ansbach",
+    "entity_type": "incantation",
+    "name": "Furious Blade of Ansbach",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      }
+    ]
+  },
+  {
+    "slug": "ghostflame_breath",
+    "entity_type": "incantation",
+    "name": "Ghostflame Breath",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      }
+    ]
+  },
+  {
+    "slug": "giant_golden_arc",
+    "entity_type": "incantation",
+    "name": "Giant Golden Arc",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      }
+    ]
+  },
+  {
+    "slug": "giantsflame_take_thee",
+    "entity_type": "incantation",
+    "name": "Giantsflame Take Thee",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "glintstone_breath",
+    "entity_type": "incantation",
+    "name": "Glintstone Breath",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "golden_arcs",
+    "entity_type": "incantation",
+    "name": "Golden Arcs",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      }
+    ]
+  },
+  {
+    "slug": "golden_lightning_fortification",
+    "entity_type": "incantation",
+    "name": "Golden Lightning Fortification",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "golden_vow",
+    "entity_type": "incantation",
+    "name": "Golden Vow",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      }
+    ]
+  },
+  {
+    "slug": "golden_vow_spell",
+    "entity_type": "incantation",
+    "name": "Golden Vow (spell)",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "great_heal",
+    "entity_type": "incantation",
+    "name": "Great Heal",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "greyolls_roar",
+    "entity_type": "incantation",
+    "name": "Greyoll's Roar",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "gurrangs_beast_claw",
+    "entity_type": "incantation",
+    "name": "Gurrang's Beast Claw",
+    "sources": [
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "gurranqs_beast_claw",
+    "entity_type": "incantation",
+    "name": "Gurranq's Beast Claw",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      }
+    ]
+  },
+  {
+    "slug": "heal",
+    "entity_type": "incantation",
+    "name": "Heal",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "heal_from_afar",
+    "entity_type": "incantation",
+    "name": "Heal from Afar",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      }
+    ]
+  },
+  {
+    "slug": "honed_bolt",
+    "entity_type": "incantation",
+    "name": "Honed Bolt",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "howl_of_shabriri",
+    "entity_type": "incantation",
+    "name": "Howl of Shabriri",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "immutable_shield",
+    "entity_type": "incantation",
+    "name": "Immutable Shield",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "inescapable_frenzy",
+    "entity_type": "incantation",
+    "name": "Inescapable Frenzy",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "knights_lightning_spear",
+    "entity_type": "incantation",
+    "name": "Knight's Lightning Spear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      }
+    ]
+  },
+  {
+    "slug": "land_of_shadow_incantation",
+    "entity_type": "incantation",
+    "name": "Land of Shadow (Incantation)",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      }
+    ]
+  },
+  {
+    "slug": "lansseaxs_glaive",
+    "entity_type": "incantation",
+    "name": "Lansseax's Glaive",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "law_of_causality",
+    "entity_type": "incantation",
+    "name": "Law of Causality",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "law_of_regression",
+    "entity_type": "incantation",
+    "name": "Law of Regression",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "light_of_miquella",
+    "entity_type": "incantation",
+    "name": "Light of Miquella",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      }
+    ]
+  },
+  {
+    "slug": "lightning_fortification",
+    "entity_type": "incantation",
+    "name": "Lightning Fortification",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "lightning_spear",
+    "entity_type": "incantation",
+    "name": "Lightning Spear",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "lightning_strike",
+    "entity_type": "incantation",
+    "name": "Lightning Strike",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "litany_of_proper_death",
+    "entity_type": "incantation",
+    "name": "Litany of Proper Death",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "lords_aid",
+    "entity_type": "incantation",
+    "name": "Lord's Aid",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "lords_divine_fortification",
+    "entity_type": "incantation",
+    "name": "Lord's Divine Fortification",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "lords_heal",
+    "entity_type": "incantation",
+    "name": "Lord's Heal",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "magic_fortification",
+    "entity_type": "incantation",
+    "name": "Magic Fortification",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "magma_breath",
+    "entity_type": "incantation",
+    "name": "Magma Breath",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "messmers_orb",
+    "entity_type": "incantation",
+    "name": "Messmer's Orb",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      }
+    ]
+  },
+  {
+    "slug": "midras_flame_of_frenzy",
+    "entity_type": "incantation",
+    "name": "Midra's Flame of Frenzy",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      }
+    ]
+  },
+  {
+    "slug": "minor_erdtree",
+    "entity_type": "incantation",
+    "name": "Minor Erdtree",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      }
+    ]
+  },
+  {
+    "slug": "multilayered_ring_of_light",
+    "entity_type": "incantation",
+    "name": "Multilayered Ring of Light",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      }
+    ]
+  },
+  {
+    "slug": "noble_presence",
+    "entity_type": "incantation",
+    "name": "Noble Presence",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "o_flame",
+    "entity_type": "incantation",
+    "name": "O, Flame!",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "order_healing",
+    "entity_type": "incantation",
+    "name": "Order Healing",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "orders_blade",
+    "entity_type": "incantation",
+    "name": "Order's Blade",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "pest_thread_spears",
+    "entity_type": "incantation",
+    "name": "Pest-Thread Spears",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      }
+    ]
+  },
+  {
+    "slug": "pest_threads",
+    "entity_type": "incantation",
+    "name": "Pest Threads",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "placidusaxs_ruin",
+    "entity_type": "incantation",
+    "name": "Placidusax's Ruin",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "poison_armament",
+    "entity_type": "incantation",
+    "name": "Poison Armament",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "poison_mist",
+    "entity_type": "incantation",
+    "name": "Poison Mist",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "protection_of_the_erdtree",
+    "entity_type": "incantation",
+    "name": "Protection of the Erdtree",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "radagons_rings_of_light",
+    "entity_type": "incantation",
+    "name": "Radagon's Rings of Light",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "rain_of_fire",
+    "entity_type": "incantation",
+    "name": "Rain of Fire",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      }
+    ]
+  },
+  {
+    "slug": "rejection",
+    "entity_type": "incantation",
+    "name": "Rejection",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "roar_of_rugalea",
+    "entity_type": "incantation",
+    "name": "Roar of Rugalea",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      }
+    ]
+  },
+  {
+    "slug": "rotten_breath",
+    "entity_type": "incantation",
+    "name": "Rotten Breath",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "rotten_butterflies",
+    "entity_type": "incantation",
+    "name": "Rotten Butterflies",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      }
+    ]
+  },
+  {
+    "slug": "scarlet_aeonia",
+    "entity_type": "incantation",
+    "name": "Scarlet Aeonia",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "scouring_black_flame",
+    "entity_type": "incantation",
+    "name": "Scouring Black Flame",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "shadow_bait",
+    "entity_type": "incantation",
+    "name": "Shadow Bait",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "smarags_glintstone_breath",
+    "entity_type": "incantation",
+    "name": "Smarag's Glintstone Breath",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "spira",
+    "entity_type": "incantation",
+    "name": "Spira",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      }
+    ]
+  },
+  {
+    "slug": "stone_of_gurranq",
+    "entity_type": "incantation",
+    "name": "Stone of Gurranq",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "surge_o_flame",
+    "entity_type": "incantation",
+    "name": "Surge, O Flame!",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "swarm_of_flies",
+    "entity_type": "incantation",
+    "name": "Swarm of Flies",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "the_flame_of_frenzy",
+    "entity_type": "incantation",
+    "name": "The Flame of Frenzy",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "theodorixs_magma",
+    "entity_type": "incantation",
+    "name": "Theodorix's Magma",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "triple_rings_of_light",
+    "entity_type": "incantation",
+    "name": "Triple Rings of Light",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "unendurable_frenzy",
+    "entity_type": "incantation",
+    "name": "Unendurable Frenzy",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "urgent_heal",
+    "entity_type": "incantation",
+    "name": "Urgent Heal",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "vykes_dragonbolt",
+    "entity_type": "incantation",
+    "name": "Vyke's Dragonbolt",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "watchful_spirit",
+    "entity_type": "incantation",
+    "name": "Watchful Spirit",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      }
+    ]
+  },
+  {
+    "slug": "whirl_o_flame",
+    "entity_type": "incantation",
+    "name": "Whirl, O Flame!",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  },
+  {
+    "slug": "wrath_from_afar",
+    "entity_type": "incantation",
+    "name": "Wrath from Afar",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      }
+    ]
+  },
+  {
+    "slug": "wrath_of_gold",
+    "entity_type": "incantation",
+    "name": "Wrath of Gold",
+    "sources": [
+      {
+        "source": "kaggle_dlc",
+        "dataset": "pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc",
+        "source_file": "eldenringScrap/incantations.csv",
+        "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/incantations.csv",
+        "sha256": "37bea748d40cfc025b1bdac1ff431e840024dfcc743aee036f32281b453f26e1",
+        "retrieved_at": "2025-11-20T20:24:54.517703"
+      },
+      {
+        "source": "kaggle_base",
+        "dataset": "robikscube/elden-ring-ultimate-dataset",
+        "source_file": "incantations.csv",
+        "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/incantations.csv",
+        "sha256": "5b03bb71809fb13ffc928280ebbac8285835ac286d6292bcf9a3465598892154",
+        "retrieved_at": "2025-11-20T20:24:54.477457"
+      },
+      {
+        "source": "github_api",
+        "dataset": "fanapis:incantations",
+        "source_file": "incantations.json",
+        "uri": "https://eldenring.fanapis.com/api/incantations",
+        "sha256": "027d5413783549592a1111ebb4be696b0f65284903d05f0aa5445a324d80a2e1",
+        "retrieved_at": "2025-11-20T20:24:55.001594"
+      }
+    ]
+  }
+]
