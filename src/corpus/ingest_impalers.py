@@ -1,5 +1,6 @@
 """Impalers Archive DLC text dump ingestion."""
 
+from datetime import datetime
 from pathlib import Path
 from typing import Any
 
@@ -7,12 +8,16 @@ import requests
 from bs4 import BeautifulSoup
 
 from corpus.config import settings
+from corpus.incremental import IncrementalManifest, build_signature
 from corpus.models import Provenance, RawEntity
 from corpus.utils import compute_file_hash
 
 # Impalers Archive repository
 IMPALERS_REPO = "ividyon/Impalers-Archive"
-MASTER_HTML_URL = f"https://raw.githubusercontent.com/{IMPALERS_REPO}/main/Master.html"
+MASTER_HTML_URL = (
+    f"https://raw.githubusercontent.com/{IMPALERS_REPO}/main/Master.html"
+)
+DATASET_KEY_IMPALERS = "impalers"
 
 
 class ImpalersIngester:
@@ -139,30 +144,58 @@ class ImpalersIngester:
         print(f"Parsed {len(records)} text records from Master.html")
         return records
 
-    def ingest(self) -> list[RawEntity]:
-        """
-        Ingest DLC text dump.
+    def ingest(
+        self,
+        *,
+        incremental: bool = False,
+        since: datetime | None = None,
+        manifest: IncrementalManifest | None = None,
+        record_state: bool = True,
+    ) -> list[RawEntity]:
+        """Ingest DLC text dump."""
 
-        Returns:
-            List of RawEntity objects (unmapped text)
-        """
         html_path = self.fetch_master_html()
         records = self.parse_master_html(html_path)
+        file_hash = compute_file_hash(html_path)
+        if manifest and record_state:
+            manifest.update_file_hash(
+                DATASET_KEY_IMPALERS,
+                html_path.name,
+                file_hash,
+            )
 
-        # Create provenance
         provenance = Provenance(
             source="dlc_textdump",
             dataset=IMPALERS_REPO,
             source_file=html_path.name,
             uri=MASTER_HTML_URL,
-            sha256=compute_file_hash(html_path),
+            sha256=file_hash,
+            ingestion_mode="incremental" if incremental else "full",
         )
 
         entities: list[RawEntity] = []
+        total_added = 0
+        total_skipped = 0
 
         for record in records:
-            # These are raw text snippets without clear entity type
-            # They'll be matched to entities in the reconciliation phase
+            signature = build_signature(
+                DATASET_KEY_IMPALERS,
+                record.get("section", ""),
+                record.get("name", ""),
+                record.get("text", ""),
+            )
+            if (
+                manifest
+                and incremental
+                and manifest.should_skip(
+                    DATASET_KEY_IMPALERS,
+                    signature,
+                    since=since,
+                )
+            ):
+                total_skipped += 1
+                continue
+
             entities.append(
                 RawEntity(
                     entity_type="text_snippet",
@@ -170,21 +203,37 @@ class ImpalersIngester:
                     is_dlc=True,
                     description=record["text"],
                     raw_data=record,
-                    provenance=[provenance],
+                    provenance=[provenance.model_copy(deep=True)],
                 )
+            )
+            total_added += 1
+            if manifest and record_state:
+                manifest.record_signature(DATASET_KEY_IMPALERS, signature)
+
+        if incremental:
+            print(
+                f"[incremental] impalers new={total_added} "
+                f"skipped={total_skipped}"
             )
 
         print(f"\nTotal DLC text snippets: {len(entities)}")
         return entities
 
 
-def fetch_impalers_data() -> list[RawEntity]:
-    """
-    Fetch DLC text dump from Impalers Archive.
+def fetch_impalers_data(
+    *,
+    incremental: bool = False,
+    since: datetime | None = None,
+    manifest: IncrementalManifest | None = None,
+    record_state: bool = True,
+) -> list[RawEntity]:
+    """Fetch DLC text dump from Impalers Archive."""
 
-    Returns:
-        List of RawEntity objects (text snippets)
-    """
     print("\n=== Ingesting Impalers Archive DLC Text ===")
     ingester = ImpalersIngester()
-    return ingester.ingest()
+    return ingester.ingest(
+        incremental=incremental,
+        since=since,
+        manifest=manifest,
+        record_state=record_state,
+    )

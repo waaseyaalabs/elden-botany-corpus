@@ -14,12 +14,13 @@ import statistics
 from collections.abc import Mapping, Sequence
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Literal, Protocol
+from typing import Literal, Protocol, SupportsFloat, cast
 
-import pandas as pd  # type: ignore[import]
+import pandas as pd
 import yaml
 from corpus.config import settings
 
+from pipelines import rag_guard
 from pipelines.embedding_backends import EncoderConfig, create_encoder
 
 ProviderName = Literal["local", "openai"]
@@ -177,6 +178,18 @@ def build_lore_embeddings(
             resolved_model,
             output_path,
         )
+        guard_payload = rag_guard.build_guard_state(
+            lore_path=lore_path,
+            weight_path=weights_path or DEFAULT_WEIGHT_CONFIG,
+            inline_weights=weights if text_type_weights is not None else None,
+            embed_provider=resolved_provider,
+            embed_model=resolved_model,
+        )
+        rag_guard.write_guard_state(guard_payload)
+        LOGGER.info(
+            "Updated RAG rebuild guard at %s",
+            rag_guard.DEFAULT_STATE_PATH,
+        )
     return enriched
 
 
@@ -185,7 +198,11 @@ def _load_lore_frame(path: Path) -> pd.DataFrame:
         raise FileNotFoundError(f"Lore corpus parquet not found: {path}")
 
     frame = pd.read_parquet(path)
-    missing = [column for column in REQUIRED_COLUMNS if column not in frame.columns]
+    missing = [
+        column
+        for column in REQUIRED_COLUMNS
+        if column not in frame.columns
+    ]
     if missing:
         missing_str = ", ".join(missing)
         raise EmbeddingGenerationError(
@@ -207,14 +224,21 @@ def _load_text_type_weights(path: Path | None) -> dict[str, float]:
     if resolved.exists():
         with resolved.open("r", encoding="utf-8") as handle:
             payload = yaml.safe_load(handle) or {}
-        if not isinstance(payload, Mapping):  # type: ignore[arg-type]
+        if not isinstance(payload, Mapping):
             msg = "Text-type weight config must be a mapping of type -> weight"
             raise LoreEmbeddingError(msg)
+        payload_map = cast(Mapping[str, object], payload)
         parsed: dict[str, float] = {}
-        for key, value in payload.items():
+        for key, value in payload_map.items():
             try:
-                parsed[str(key).strip().lower()] = float(value)
-            except (TypeError, ValueError) as exc:  # pragma: no cover - config
+                normalized_key = str(key).strip().lower()
+                normalized_value = float(_coerce_weight_input(value))
+                parsed[normalized_key] = normalized_value
+            except (
+                TypeError,
+                ValueError,
+                UnicodeDecodeError,
+            ) as exc:  # pragma: no cover - config
                 msg = f"Invalid weight for text_type '{key}': {value}"
                 raise LoreEmbeddingError(msg) from exc
         weights = DEFAULT_TEXT_TYPE_WEIGHTS | parsed
@@ -226,6 +250,14 @@ def _load_text_type_weights(path: Path | None) -> dict[str, float]:
         resolved,
     )
     return DEFAULT_TEXT_TYPE_WEIGHTS.copy()
+
+
+def _coerce_weight_input(value: object) -> SupportsFloat | str:
+    if isinstance(value, int | float):
+        return value
+    if isinstance(value, bytes | bytearray):
+        return value.decode("utf-8")
+    return str(value)
 
 
 def _apply_weighted_concatenation(
@@ -273,11 +305,21 @@ def _compose_weighted_record(
         reverse=True,
     )
     components = [result.text_type for result, _ in ordered]
-    display_sections = [_format_section(result.text_type, original) for result, original in ordered]
-    embedding_sections = [_format_section(result.text_type, result.text) for result, _ in ordered]
+    display_sections = [
+        _format_section(result.text_type, original)
+        for result, original in ordered
+    ]
+    embedding_sections = [
+        _format_section(result.text_type, result.text)
+        for result, _ in ordered
+    ]
 
-    display_text = "\n\n".join(section for section in display_sections if section)
-    embedding_text = "\n\n".join(section for section in embedding_sections if section)
+    display_text = "\n\n".join(
+        section for section in display_sections if section
+    )
+    embedding_text = "\n\n".join(
+        section for section in embedding_sections if section
+    )
     if not display_text or not embedding_text:
         stats.canonical_skipped += 1
         return None
@@ -381,7 +423,9 @@ def _first_value(frame: pd.DataFrame, column: str) -> str | None:
     if column not in frame.columns:
         return None
     values = [
-        str(value) for value in frame[column].tolist() if value is not None and str(value).strip()
+        str(value)
+        for value in frame[column].tolist()
+        if value is not None and str(value).strip()
     ]
     return values[0] if values else None
 
@@ -473,13 +517,14 @@ def _encode_texts(
 ) -> list[list[float]]:
     vectors: list[list[float]] = []
     for start in range(0, len(texts), batch_size):
-        batch = list(texts[start : start + batch_size])
+        batch = list(texts[start:start + batch_size])
         if not batch:
             continue
         encoded = encoder.encode(batch)
         if len(encoded) != len(batch):
             raise LoreEmbeddingError(
-                "Embedding backend returned mismatched vector count within " "a batch",
+                "Embedding backend returned mismatched vector count within a "
+                "batch",
             )
         vectors.extend(encoded)
     return vectors

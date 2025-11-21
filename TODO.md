@@ -13,6 +13,7 @@
 
 ## Follow-ups
 - [ ] Review Pandera warning about imports in a future PR.
+- [ ] Phase in `check_untyped_defs` for `src/tarnishedbotanist/*` only; once stable, extend via `[[tool.mypy.overrides]]` entries (see requested config snippet) before turning it on for tests.
 
 ## RAG quality improvements
 - [x] Reweight text types so `description` and `impalers_excerpt` rows score higher than terse `effect` snippets for thematic prompts (Radahn, Scarlet Rot, etc.).

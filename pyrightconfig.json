@@ -1,0 +1,11 @@
+{
+  "typeCheckingMode": "strict",
+  "reportMissingTypeStubs": "none",
+  "executionEnvironments": [
+    {
+      "root": "./",
+      "extraPaths": ["./src", "./pipeline"],
+      "stubPath": "./typings"
+    }
+  ]
+}

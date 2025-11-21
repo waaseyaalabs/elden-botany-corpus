@@ -310,20 +310,33 @@ gh workflow run "Data Processing Pipeline" -f force=true
 
 ## Incremental Processing
 
-The pipeline intelligently avoids reprocessing:
+Append-only datasets (Kaggle + Impalers) no longer require full refreshes. The
+shared `IncrementalManifest` keeps per-record signatures and file hashes so we
+can safely skip previously exported rows:
 
-1. **Modification time check**: Skip if processed file is newer than raw file
-2. **Hash-based cache**: Skip if raw file hash matches cached value
-3. **Force flag**: Override all checks and reprocess
+- Manifest path: `data/processed/incremental_manifest.json`
+- Baseline curated state: `data/curated/state/reconciled_entities.json`
 
-Cache location: `data/processed/.cache/<dataset-name>.json`
+Typical workflow:
 
-Cache format:
-```json
-{
-  "data/raw/weapons/weapons.csv": "sha256_hash_here"
-}
+```bash
+# Detect + ingest only new rows
+poetry run corpus fetch --incremental
+poetry run corpus curate --incremental
+
+# Re-run for a specific window
+poetry run corpus curate --incremental --since "2025-11-01T00:00:00Z"
 ```
+
+How it works:
+
+1. Each Kaggle table/Impalers snippet is hashed (`build_signature`) and stored
+  in the manifest with a timestamp.
+2. Incremental runs load the previous curated entities, treat them as the
+  baseline, and only reconcile brand-new rows on top.
+3. File hashes are tracked for observability and future change detection.
+4. Use the default `--full` flag (or delete the manifest/state files) to force a
+  clean rebuild when you need to regenerate everything.
 
 ## Reading Processed Data
 

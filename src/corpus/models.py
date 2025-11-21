@@ -2,8 +2,8 @@
 
 import hashlib
 import re
-from datetime import datetime
-from typing import Any
+from datetime import UTC, datetime
+from typing import Any, Literal
 from uuid import UUID, uuid4
 
 from pydantic import BaseModel, Field
@@ -12,7 +12,9 @@ from pydantic import BaseModel, Field
 class Provenance(BaseModel):
     """Source provenance metadata."""
 
-    source: str = Field(description="Source identifier (e.g., 'kaggle_base', 'github_api')")
+    source: str = Field(
+        description="Source identifier (e.g., 'kaggle_base', 'github_api')",
+    )
     dataset: str | None = Field(
         default=None,
         description="Dataset identifier or name",
@@ -27,7 +29,15 @@ class Provenance(BaseModel):
         description="SHA256 hash of source file",
     )
     retrieved_at: datetime = Field(
-        default_factory=datetime.utcnow, description="Retrieval timestamp"
+        default_factory=lambda: datetime.now(UTC),
+        description="Retrieval timestamp",
+    )
+    ingestion_mode: Literal["full", "incremental"] = Field(
+        default="full",
+        description=(
+            "Indicates whether the record was produced via a full rebuild or "
+            "incremental ingestion"
+        ),
     )
 
 
@@ -36,7 +46,9 @@ class CorpusDocument(BaseModel):
 
     id: UUID = Field(default_factory=uuid4)
     source_type: str = Field(
-        description=("Source type: kaggle_base, kaggle_dlc, github_api, dlc_textdump")
+        description=(
+            "Source type: kaggle_base, kaggle_dlc, github_api, dlc_textdump"
+        ),
     )
     source_uri: str = Field(description="Source URI")
     title: str | None = Field(default=None)
@@ -49,7 +61,9 @@ class CorpusChunk(BaseModel):
 
     id: UUID = Field(default_factory=uuid4)
     document_id: UUID | None = Field(default=None)
-    entity_type: str = Field(description="Entity type: weapon, armor, boss, npc, item, etc.")
+    entity_type: str = Field(
+        description="Entity type: weapon, armor, boss, npc, item, etc.",
+    )
     game_entity_id: str = Field(description="Stable slug/identifier")
     is_dlc: bool = Field(default=False)
     name: str = Field(description="Entity name")
@@ -64,7 +78,13 @@ class CorpusChunk(BaseModel):
 
     def compute_hash(self) -> str:
         """Compute SHA256 hash of chunk content."""
-        content = f"{self.entity_type}:{self.game_entity_id}:{self.name}:{self.text}"
+        parts = (
+            self.entity_type,
+            self.game_entity_id,
+            self.name,
+            self.text,
+        )
+        content = ":".join(str(part) for part in parts)
         return hashlib.sha256(content.encode()).hexdigest()
 
 

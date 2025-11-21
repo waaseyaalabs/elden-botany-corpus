@@ -1,6 +1,6 @@
 # Makefile for common tasks
 
-.PHONY: help setup install test lint format clean fetch curate load rag-embeddings rag-index rag-query ci-local
+.PHONY: help setup install test lint format clean fetch curate load rag-embeddings rag-index rag-query rag-guard ci-local
 
 help:
 	@echo "Elden Botany Corpus - Available Commands"
@@ -17,6 +17,7 @@ help:
 	@echo "  make load       - Load to PostgreSQL (requires POSTGRES_DSN)"
 	@echo "  make rag-embeddings - Build lore_embeddings.parquet"
 	@echo "  make rag-index  - Build FAISS index + metadata"
+	@echo "  make rag-guard  - Check checksum guard for lore corpus/RAG"
 	@echo "  make rag-query  - Run semantic search (pass QUERY='...')"
 	@echo ""
 
@@ -66,6 +67,9 @@ rag-embeddings:
 
 rag-index:
 	poetry run python -m pipelines.build_rag_index $(ARGS)
+
+rag-guard:
+	poetry run python -m pipelines.rag_guard $(ARGS)
 
 rag-query:
 	@if [ -z "$(QUERY)" ]; then \

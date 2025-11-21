@@ -9,6 +9,11 @@ A complete, production-ready data pipeline for curating Elden Ring game data (ba
 **Files Created**: 39  
 **Lines of Code**: 3,768
 
+## Issue Links for Current PR
+
+- [#21 – Support incremental updates for append-only datasets](https://github.com/waaseyaalabs/elden-botany-corpus/issues/21): Incremental ingestion manifests, CLI flags (`--incremental`, `--since`), and provenance plumbing are implemented across `corpus.fetch`, `IncrementalManifest`, and manifest-aware ingestion modules.
+- [#32 – Complete RAG index + retrieval helper](https://github.com/waaseyaalabs/elden-botany-corpus/issues/32): FAISS index builder, guard fingerprints, query helper/CLI, and qualitative evaluation notebook are in place; this PR keeps the surrounding pipelines lint-clean and documented so the RAG layer remains reproducible.
+
 ## 2025-11-18 RAG Quality Refresh
 
 - ✅ **Carian FMG aliasing** now ingests alternate filename pairs (e.g., `ArtsName.fmg.xml`) so ash-of-war, boss, spell, and dialogue datasets survive missing canonical FMGs. See `corpus/ingest_carian_fmg.py` and `pipelines/io/carian_fmg_loader.py` for the candidate lists.

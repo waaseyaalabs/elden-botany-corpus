@@ -10,7 +10,7 @@ from typing import Any
 from corpus.ingest_carian_fmg import CARIAN_FMG_CANDIDATES
 from corpus.models import create_slug, normalize_name_for_matching
 
-from pipelines.io.common import serialize_payload  # type: ignore[import]
+from pipelines.io.common import serialize_payload
 
 FMG_PRIORITY = 4
 

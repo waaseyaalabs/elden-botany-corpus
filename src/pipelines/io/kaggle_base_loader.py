@@ -260,7 +260,9 @@ def _first_present(row: Mapping[str, Any], keys: Sequence[str]) -> Any:
     return None
 
 
-def _requirements_from_entries(entries: list[dict[str, Any]]) -> tuple[Any, Any, Any]:
+def _requirements_from_entries(
+    entries: list[dict[str, Any]],
+) -> tuple[Any, Any, Any]:
     lookup: dict[str, Any] = {}
     for entry in entries:
         name = str(entry.get("name", "")).strip().lower()

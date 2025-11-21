@@ -1,0 +1,19 @@
+from typing import Any, Protocol
+
+
+class FAISSIndex(Protocol):
+    def add(self, vectors: Any) -> None: ...
+    def search(self, queries: Any, k: int) -> tuple[Any, Any]: ...
+
+
+class IndexFlatIP(FAISSIndex):
+    def __init__(self, dimension: int) -> None: ...
+
+
+def normalize_L2(matrix: Any) -> None: ...
+
+
+def write_index(index: Any, path: str) -> None: ...
+
+
+def read_index(path: str) -> Any: ...

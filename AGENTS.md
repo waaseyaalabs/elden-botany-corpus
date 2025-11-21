@@ -20,9 +20,16 @@ Repository-specific guidance for AI coding agents working in `elden-botany-corpu
 | Regenerate processed Kaggle data | `poetry run python scripts/process_data.py` |
 | Download Kaggle sources | `poetry run python scripts/download_kaggle_dataset.py` |
 
-- Run the Ruff commands and `pytest` before every commit or PR (mirrors the instructions in `pyproject.toml` + CI).
-- `corpus curate` touches thousands of files. Only rerun when the change impacts ingestion, reconciliation, or export logic.
-- Long-running steps (downloads, curation) require network and disk access; avoid invoking them simultaneously in parallel shells.
+- Lore embeddings + RAG artifacts are **always full rebuilds**. Whenever curated
+  text, weighting configs, embedding provider/model, or reranker settings change,
+  run `make rag-embeddings && make rag-index`. Do not attempt to reuse the
+  incremental manifest for these pipelines—stale vectors are worse than a longer
+  rebuild.
+- `make rag-embeddings` now writes `data/embeddings/rag_rebuild_state.json`, a
+  checksum guard that captures the lore parquet + weighting config. Run
+  `make rag-guard` (or `python -m pipelines.rag_guard`) to confirm whether the
+  stored embeddings/index are in sync before pushing large artifacts; the command
+  exits non-zero when a rebuild is required.
 
 ## Code & documentation standards
 

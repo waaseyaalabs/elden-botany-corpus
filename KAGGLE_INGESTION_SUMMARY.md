@@ -166,7 +166,7 @@ pytest tests/test_download_kaggle_dataset.py -v
 ### Future Enhancements (Optional)
 
 - [ ] Add dataset validation after download
-- [ ] Implement incremental updates for large datasets
+- [x] Implement incremental updates for large datasets (see `poetry run corpus fetch|curate --incremental` and `data/processed/incremental_manifest.json`)
 - [ ] Add progress bars for downloads
 - [ ] Create dataset catalog/inventory
 - [ ] Add dataset versioning/checksums

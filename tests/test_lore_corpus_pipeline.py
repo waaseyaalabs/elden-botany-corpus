@@ -10,7 +10,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-import pandas as pd  # type: ignore[import-not-found]
+import pandas as pd
 import pytest
 
 from pipelines.build_lore_corpus import (
@@ -167,7 +167,9 @@ def test_build_lore_corpus_pipeline(
     assert not df.empty
     assert set(df["language"]) == {"en"}
 
-    item_rows = df[(df["category"] == "item") & (df["text_type"] == "description")]
+    item_rows = df[
+        (df["category"] == "item") & (df["text_type"] == "description")
+    ]
     description_row = item_rows.iloc[0]
     expected_id = _compute_lore_id(
         description_row["canonical_id"],

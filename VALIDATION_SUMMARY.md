@@ -295,7 +295,7 @@ pytest tests/ -q                       # ✅ 16 passed, 18 skipped
 1. **Parallelized ingestion + curation** – Use Polars lazy execution or multiprocessing when iterating large DLC tables to cut runtime (~2–3s today but will grow with future sources).
 2. **Data-quality reporting** – Emit summary tables (missing columns, null ratios, provenance mixes) into `metadata.json` and optionally Markdown under `docs/` for auditability.
 3. **Schema versioning & lineage** – Capture schema version + git SHA in `metadata.json` and add a `schema_version` column inside `elden.corpus_document` for downstream reproducibility.
-4. **Incremental + lineage-aware refreshes** – Track source file hashes (already in `metadata.json` placeholder) and implement `poetry run corpus fetch --incremental` to skip unchanged datasets.
+4. **Incremental + lineage-aware refreshes** – ✅ Implemented via `poetry run corpus fetch|curate --incremental` with `data/processed/incremental_manifest.json` + curated state snapshots.
 5. **Impalers/NPC mapping improvements** – Lower/adjust fuzzy threshold per entity type, add custom dictionaries, or integrate manual overrides to reduce the 467 unmapped entries.
 
 ## 📎 Artifacts to Share in Issue #16
