@@ -5,13 +5,26 @@ from __future__ import annotations
 import logging
 from collections.abc import Callable, Sequence
 from dataclasses import dataclass, field
-from typing import TYPE_CHECKING, Protocol
+from types import ModuleType
+from typing import TYPE_CHECKING, Any, Protocol, cast
 
 from corpus.config import settings
 
+SentenceCrossEncoder = Any
+
 try:  # pragma: no cover - optional dependency
-    from sentence_transformers import CrossEncoder
+    import sentence_transformers as _sentence_transformers
 except ImportError:  # pragma: no cover - handled at runtime
+    sentence_transformers: ModuleType | None = None
+else:
+    sentence_transformers = _sentence_transformers
+
+if sentence_transformers is not None:
+    CrossEncoder: type[SentenceCrossEncoder] | None = cast(
+        type[SentenceCrossEncoder],
+        getattr(sentence_transformers, "CrossEncoder", None),
+    )
+else:
     CrossEncoder = None
 
 if TYPE_CHECKING:  # pragma: no cover
@@ -61,7 +74,7 @@ class IdentityReranker:
         return list(matches)
 
 
-_CrossEncoderFactory = Callable[[str, str | None], "CrossEncoder"]
+_CrossEncoderFactory = Callable[[str, str | None], SentenceCrossEncoder]
 
 
 @dataclass(slots=True)
@@ -71,7 +84,7 @@ class CrossEncoderReranker:
     config: RerankerConfig
     name: str = "cross_encoder"
     candidate_pool_size: int | None = field(init=False)
-    _model: CrossEncoder | None = field(default=None, init=False)
+    _model: SentenceCrossEncoder | None = field(default=None, init=False)
     _model_factory: _CrossEncoderFactory | None = field(
         default=None,
         init=False,
@@ -110,7 +123,7 @@ class CrossEncoderReranker:
         reranked.extend(matches[limit:])
         return reranked
 
-    def _load_model(self) -> CrossEncoder:
+    def _load_model(self) -> SentenceCrossEncoder:
         if self._model is not None:
             return self._model
 
@@ -136,7 +149,7 @@ def _append_note(match: LoreMatch, note: str) -> None:
 def _default_cross_encoder_factory(
     model_name: str,
     device: str | None,
-) -> CrossEncoder:  # pragma: no cover - thin wrapper
+) -> SentenceCrossEncoder:  # pragma: no cover - thin wrapper
     if CrossEncoder is None:  # pragma: no cover - defensive
         msg = (
             "sentence-transformers is required for cross-encoder reranking. "

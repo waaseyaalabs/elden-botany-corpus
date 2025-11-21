@@ -27,6 +27,7 @@ class IncrementalManifest:
 
     def __init__(self, path: Path) -> None:
         self.path = path
+        self._data: dict[str, Any]
         if path.exists():
             try:
                 self._data = json.loads(path.read_text(encoding="utf-8"))
@@ -34,7 +35,7 @@ class IncrementalManifest:
                 message = f"Failed to parse manifest at {path}: {exc}"
                 raise RuntimeError(message) from exc
         else:
-            self._data: dict[str, Any] = {
+            self._data = {
                 "version": 1,
                 "datasets": {},
                 "updated_at": datetime.now(UTC).isoformat(),
