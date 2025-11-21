@@ -111,9 +111,7 @@ def log_conflicts(
                 summary[column] += 1
 
     messages = [
-        f"{column}={count}"
-        for column, count in summary.items()
-        if count
+        f"{column}={count}" for column, count in summary.items() if count
     ]
 
     if messages:

@@ -8,9 +8,15 @@ from corpus.models import normalize_name_for_matching
 
 def test_normalize_name_for_matching() -> None:
     """Test name normalization for fuzzy matching."""
-    assert normalize_name_for_matching("Messmer the Impaler") == "messmer the impaler"
+    assert (
+        normalize_name_for_matching("Messmer the Impaler")
+        == "messmer the impaler"
+    )
     assert normalize_name_for_matching("Bayle, the Dread") == "bayle the dread"
-    assert normalize_name_for_matching("Rellana - Twin Moon Knight") == "rellana twin moon knight"
+    assert (
+        normalize_name_for_matching("Rellana - Twin Moon Knight")
+        == "rellana twin moon knight"
+    )
 
 
 @pytest.mark.skipif(

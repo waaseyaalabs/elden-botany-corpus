@@ -188,11 +188,7 @@ def _records_to_dataframe(records: list[dict[str, Any]]) -> pd.DataFrame:
         if column not in frame.columns:
             frame_any[column] = "-"
         frame_any[column] = (
-            frame[column]
-            .fillna("-")
-            .replace("", "-")
-            .astype(str)
-            .str.upper()
+            frame[column].fillna("-").replace("", "-").astype(str).str.upper()
         )
 
     frame_any["weapon_type"] = frame["weapon_type"].fillna("other")

@@ -207,7 +207,9 @@ def test_load_github_api_spells_parses_requirements(tmp_path: Path) -> None:
 
     records = load_github_api_spells(raw_root)
     assert len(records) == 2
-    spell = next(entry for entry in records if entry["name"] == "Glintstone Pebble")
+    spell = next(
+        entry for entry in records if entry["name"] == "Glintstone Pebble"
+    )
     assert spell["spell_type"] == "sorcery"
     assert spell["required_int"] == 10
 

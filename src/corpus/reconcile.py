@@ -182,8 +182,7 @@ class EntityReconciler:
 
         existing_sources = set(entry["sources"])
         existing_prov_keys = {
-            self._provenance_key(prov)
-            for prov in entry["entity"].provenance
+            self._provenance_key(prov) for prov in entry["entity"].provenance
         }
 
         for prov in provenance.copy():

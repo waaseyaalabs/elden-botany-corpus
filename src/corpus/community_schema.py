@@ -293,10 +293,15 @@ class CommunityAnnotation(BaseModel):
 
         slug = handle.strip().lower()
         if not MIN_HANDLE_LENGTH <= len(slug) <= MAX_HANDLE_LENGTH:
-            msg = f"Handle must be between {MIN_HANDLE_LENGTH} and " f"{MAX_HANDLE_LENGTH} chars"
+            msg = (
+                f"Handle must be between {MIN_HANDLE_LENGTH} and "
+                f"{MAX_HANDLE_LENGTH} chars"
+            )
             raise ValueError(msg)
         if not set(slug) <= ALLOWED_HANDLE_CHARS:
-            raise ValueError("Handle must be alphanumeric plus - or _ characters")
+            raise ValueError(
+                "Handle must be alphanumeric plus - or _ characters"
+            )
         return slug
 
     def add_revision(
@@ -311,7 +316,9 @@ class CommunityAnnotation(BaseModel):
         revision.ensure_motifs_are_known(taxonomy)
         for existing in self.revisions:
             if existing.version == revision.version:
-                raise ValueError("Revision version already exists for this annotation")
+                raise ValueError(
+                    "Revision version already exists for this annotation"
+                )
             existing.is_current = False
         revision.is_current = True
         self.revisions.append(revision)

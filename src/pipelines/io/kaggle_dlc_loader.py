@@ -23,7 +23,9 @@ from pipelines.io.common import (
 def load_kaggle_dlc_weapons(raw_root: Path) -> list[dict[str, Any]]:
     """Load Kaggle DLC weapons and normalize core columns."""
 
-    weapons_path = raw_root / "kaggle" / "dlc" / "eldenringScrap" / "weapons.csv"
+    weapons_path = (
+        raw_root / "kaggle" / "dlc" / "eldenringScrap" / "weapons.csv"
+    )
     rows = _read_csv(weapons_path)
     records: list[dict[str, Any]] = []
 
@@ -81,7 +83,9 @@ def load_kaggle_dlc_items(raw_root: Path) -> list[dict[str, Any]]:
                 category_raw=row.get("type"),
                 category_hint=category_hint,
                 weight=_first_present(row, ["weight", "Weight"]),
-                sell_price=_first_present(row, ["sell_price", "sellPrice", "value", "price"]),
+                sell_price=_first_present(
+                    row, ["sell_price", "sellPrice", "value", "price"]
+                ),
                 max_stack=_first_present(
                     row,
                     [
@@ -93,7 +97,9 @@ def load_kaggle_dlc_items(raw_root: Path) -> list[dict[str, Any]]:
                 ),
                 rarity=row.get("rarity"),
                 effect=row.get("effect"),
-                obtained_from=_first_present(row, ["how to acquire", "location", "obtainedFrom"]),
+                obtained_from=_first_present(
+                    row, ["how to acquire", "location", "obtainedFrom"]
+                ),
                 is_dlc=_bool_from_value(row.get("dlc", 1)),
                 source="kaggle_dlc",
                 source_id=source_id,
@@ -158,7 +164,9 @@ def load_kaggle_dlc_armor(raw_root: Path) -> list[dict[str, Any]]:
         if not isinstance(name, str) or not name.strip():
             continue
 
-        damage_entries = to_entry_list(_first_present(row, ["damage negation", "dmgNegation"]))
+        damage_entries = to_entry_list(
+            _first_present(row, ["damage negation", "dmgNegation"])
+        )
         resistance_entries = to_entry_list(row.get("resistance"))
 
         record = build_armor_record(

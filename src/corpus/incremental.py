@@ -10,7 +10,6 @@ from pathlib import Path
 from typing import Any
 
 
-
 @dataclass(slots=True)
 class IncrementalSignature:
     """Helper for building stable record signatures."""

@@ -45,7 +45,9 @@ class _StubQueryHelper:
         limit = min(len(self._frame), top_k)
         subset = self._frame.head(limit).copy()
         if include_vectors and "_vector" not in subset.columns:
-            subset["_vector"] = [[float(index), 0.0, 0.0] for index in range(len(subset))]
+            subset["_vector"] = [
+                [float(index), 0.0, 0.0] for index in range(len(subset))
+            ]
         return subset
 
 
@@ -264,7 +266,9 @@ def _build_rag_fixture(
         extra_frame = pd.DataFrame(extra_rows, columns=frame.columns)
         frame = pd.concat([frame, extra_frame], ignore_index=True)
         frame.to_parquet(lore_path, index=False)
-    embeddings_path = base_dir / "data" / "embeddings" / "lore_embeddings.parquet"
+    embeddings_path = (
+        base_dir / "data" / "embeddings" / "lore_embeddings.parquet"
+    )
     index_path = base_dir / "data" / "embeddings" / "faiss_index.bin"
     metadata_path = base_dir / "data" / "embeddings" / "rag_metadata.parquet"
     info_path = base_dir / "data" / "embeddings" / "rag_index_meta.json"

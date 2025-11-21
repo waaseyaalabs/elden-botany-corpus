@@ -90,7 +90,9 @@ class PgVectorLoader:
             )
 
             # Insert chunks
-            for row in tqdm(df.iter_rows(named=True), total=len(df), desc="Inserting"):
+            for row in tqdm(
+                df.iter_rows(named=True), total=len(df), desc="Inserting"
+            ):
                 chunk_id = str(uuid.uuid4())
 
                 # Parse embedding if present
@@ -159,7 +161,9 @@ class PgVectorLoader:
 
         # Generate embedding for query
         query_df = pl.DataFrame({"description": [text]})
-        query_df = generate_embeddings(query_df, provider=settings.embed_provider)
+        query_df = generate_embeddings(
+            query_df, provider=settings.embed_provider
+        )
         query_embedding = json.loads(query_df.select("embedding").item(0, 0))
 
         with psycopg.connect(self.dsn, row_factory=dict_row) as conn:

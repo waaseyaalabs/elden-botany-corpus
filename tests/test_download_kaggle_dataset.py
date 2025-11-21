@@ -102,7 +102,9 @@ class TestKaggleDatasetDownloader:
 
         with patch("scripts.download_kaggle_dataset.KaggleApi") as MockApi:
             MockApi.return_value = Mock()
-            downloader = KaggleDatasetDownloader(config_file, temp_dir, force=False)
+            downloader = KaggleDatasetDownloader(
+                config_file, temp_dir, force=False
+            )
             downloader.load_config()
 
             assert "datasets" in downloader.config
@@ -119,7 +121,9 @@ class TestKaggleDatasetDownloader:
 
         with patch("scripts.download_kaggle_dataset.KaggleApi") as MockApi:
             MockApi.return_value = Mock()
-            downloader = KaggleDatasetDownloader(missing_config, temp_dir, force=False)
+            downloader = KaggleDatasetDownloader(
+                missing_config, temp_dir, force=False
+            )
 
             with pytest.raises(FileNotFoundError):
                 downloader.load_config()
@@ -136,7 +140,9 @@ class TestKaggleDatasetDownloader:
 
         with patch("scripts.download_kaggle_dataset.KaggleApi") as MockApi:
             MockApi.return_value = Mock()
-            downloader = KaggleDatasetDownloader(invalid_config, temp_dir, force=False)
+            downloader = KaggleDatasetDownloader(
+                invalid_config, temp_dir, force=False
+            )
 
             with pytest.raises(yaml.YAMLError):
                 downloader.load_config()
@@ -152,7 +158,9 @@ class TestKaggleDatasetDownloader:
             mock_api.authenticate = Mock()
             MockApi.return_value = mock_api
 
-            downloader = KaggleDatasetDownloader(config_file, temp_dir, force=False)
+            downloader = KaggleDatasetDownloader(
+                config_file, temp_dir, force=False
+            )
             downloader.authenticate()
 
             mock_api.authenticate.assert_called_once()
@@ -168,12 +176,16 @@ class TestKaggleDatasetDownloader:
             mock_api.authenticate = Mock(side_effect=Exception("Auth failed"))
             MockApi.return_value = mock_api
 
-            downloader = KaggleDatasetDownloader(config_file, temp_dir, force=False)
+            downloader = KaggleDatasetDownloader(
+                config_file, temp_dir, force=False
+            )
 
             with pytest.raises(Exception, match="Auth failed"):
                 downloader.authenticate()
 
-    def test_download_specific_files(self, config_file, temp_dir, sample_config):
+    def test_download_specific_files(
+        self, config_file, temp_dir, sample_config
+    ):
         """Test downloading specific files from a dataset."""
         from scripts.download_kaggle_dataset import (
             KaggleDatasetDownloader,
@@ -185,7 +197,9 @@ class TestKaggleDatasetDownloader:
             mock_api.dataset_download_file = Mock()
             MockApi.return_value = mock_api
 
-            downloader = KaggleDatasetDownloader(config_file, temp_dir, force=False)
+            downloader = KaggleDatasetDownloader(
+                config_file, temp_dir, force=False
+            )
             downloader.load_config()
 
             dataset_config = sample_config["datasets"][0]
@@ -206,7 +220,9 @@ class TestKaggleDatasetDownloader:
             mock_api.dataset_download_files = Mock()
             MockApi.return_value = mock_api
 
-            downloader = KaggleDatasetDownloader(config_file, temp_dir, force=False)
+            downloader = KaggleDatasetDownloader(
+                config_file, temp_dir, force=False
+            )
             downloader.load_config()
 
             # Dataset with empty files list = download all
@@ -228,7 +244,9 @@ class TestKaggleDatasetDownloader:
             mock_api.dataset_download_files = Mock()
             MockApi.return_value = mock_api
 
-            downloader = KaggleDatasetDownloader(config_file, temp_dir, force=False)
+            downloader = KaggleDatasetDownloader(
+                config_file, temp_dir, force=False
+            )
             downloader.load_config()
 
             # Dataset with enabled=False
@@ -257,7 +275,9 @@ class TestKaggleDatasetDownloader:
             mock_api.dataset_download_file = Mock()
             MockApi.return_value = mock_api
 
-            downloader = KaggleDatasetDownloader(config_file, temp_dir, force=True)
+            downloader = KaggleDatasetDownloader(
+                config_file, temp_dir, force=True
+            )
             downloader.load_config()
 
             dataset_config = sample_config["datasets"][0]
@@ -266,7 +286,9 @@ class TestKaggleDatasetDownloader:
             # Should download even though file exists
             assert mock_api.dataset_download_file.call_count == 2
 
-    def test_skip_existing_files_without_force(self, config_file, temp_dir, sample_config):
+    def test_skip_existing_files_without_force(
+        self, config_file, temp_dir, sample_config
+    ):
         """Test that existing files are skipped without --force."""
         from scripts.download_kaggle_dataset import (
             KaggleDatasetDownloader,
@@ -284,7 +306,9 @@ class TestKaggleDatasetDownloader:
             mock_api.dataset_download_file = Mock()
             MockApi.return_value = mock_api
 
-            downloader = KaggleDatasetDownloader(config_file, temp_dir, force=False)
+            downloader = KaggleDatasetDownloader(
+                config_file, temp_dir, force=False
+            )
             downloader.load_config()
 
             dataset_config = sample_config["datasets"][0]
@@ -307,7 +331,9 @@ class TestKaggleDatasetDownloader:
 
         with patch("scripts.download_kaggle_dataset.KaggleApi") as MockApi:
             MockApi.return_value = Mock()
-            downloader = KaggleDatasetDownloader(temp_dir / "config.yml", temp_dir, force=False)
+            downloader = KaggleDatasetDownloader(
+                temp_dir / "config.yml", temp_dir, force=False
+            )
             downloader._unzip_files(temp_dir)
 
             # Check that files were extracted
@@ -322,7 +348,9 @@ class TestKaggleDatasetDownloader:
 
         with patch("scripts.download_kaggle_dataset.KaggleApi") as MockApi:
             MockApi.return_value = Mock()
-            downloader = KaggleDatasetDownloader(temp_dir / "config.yml", temp_dir, force=False)
+            downloader = KaggleDatasetDownloader(
+                temp_dir / "config.yml", temp_dir, force=False
+            )
 
             # Non-existent directory
             assert not downloader._dataset_exists(temp_dir / "nonexistent")
@@ -355,7 +383,9 @@ class TestKaggleDatasetDownloader:
             mock_api = Mock()
             MockApi.return_value = mock_api
 
-            downloader = KaggleDatasetDownloader(config_file, temp_dir, force=False)
+            downloader = KaggleDatasetDownloader(
+                config_file, temp_dir, force=False
+            )
             downloader.load_config()
 
             # Should log warning and skip

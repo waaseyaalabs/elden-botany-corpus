@@ -156,7 +156,9 @@ def test_pgvector_schema_and_queries() -> None:
             """
             )
             fts_results = cur.fetchall()
-            assert len(fts_results) == 1, f"Expected 1 FTS result, got {len(fts_results)}"
+            assert (
+                len(fts_results) == 1
+            ), f"Expected 1 FTS result, got {len(fts_results)}"
             assert fts_results[0][0] == chunk_id, "FTS returned wrong chunk"
             assert (
                 "legendary" in fts_results[0][2].lower()
@@ -177,8 +179,12 @@ def test_pgvector_schema_and_queries() -> None:
                 (query_vector, query_vector),
             )
             knn_result = cur.fetchone()
-            assert knn_result is not None, "Vector KNN query returned no results"
-            assert knn_result[0] == chunk_id, "KNN returned wrong chunk (expected exact match)"
+            assert (
+                knn_result is not None
+            ), "Vector KNN query returned no results"
+            assert (
+                knn_result[0] == chunk_id
+            ), "KNN returned wrong chunk (expected exact match)"
             assert (
                 knn_result[2] < 0.001
             ), f"Distance should be ~0 for exact match, got {knn_result[2]}"
@@ -192,8 +198,12 @@ def test_pgvector_schema_and_queries() -> None:
             """
             )
             meta_results = cur.fetchall()
-            assert len(meta_results) == 1, f"Expected 1 JSONB result, got {len(meta_results)}"
-            assert meta_results[0][1] == "magic", "JSONB query returned wrong metadata"
+            assert (
+                len(meta_results) == 1
+            ), f"Expected 1 JSONB result, got {len(meta_results)}"
+            assert (
+                meta_results[0][1] == "magic"
+            ), "JSONB query returned wrong metadata"
 
             # ======= TEST: Index Existence =======
             # Verify that our key indexes were created
@@ -210,8 +220,12 @@ def test_pgvector_schema_and_queries() -> None:
             """
             )
             indexes = {row[0] for row in cur.fetchall()}
-            assert "corpus_chunk_embedding_hnsw_idx" in indexes, "HNSW vector index not created"
-            assert "corpus_chunk_text_idx" in indexes, "FTS GIN index not created"
+            assert (
+                "corpus_chunk_embedding_hnsw_idx" in indexes
+            ), "HNSW vector index not created"
+            assert (
+                "corpus_chunk_text_idx" in indexes
+            ), "FTS GIN index not created"
 
             # ======= CLEANUP =======
             # Drop tables for cleanup (test isolation)
@@ -221,7 +235,9 @@ def test_pgvector_schema_and_queries() -> None:
 
 
 @pytest.mark.integration
-@pytest.mark.skipif(not os.getenv("POSTGRES_DSN"), reason="POSTGRES_DSN not set")
+@pytest.mark.skipif(
+    not os.getenv("POSTGRES_DSN"), reason="POSTGRES_DSN not set"
+)
 def test_vector_dimension_validation() -> None:
     """
     Test that vector dimension enforcement works correctly.
@@ -270,7 +286,9 @@ def test_vector_dimension_validation() -> None:
 
 
 @pytest.mark.integration
-@pytest.mark.skipif(not os.getenv("POSTGRES_DSN"), reason="POSTGRES_DSN not set")
+@pytest.mark.skipif(
+    not os.getenv("POSTGRES_DSN"), reason="POSTGRES_DSN not set"
+)
 def test_cascade_delete() -> None:
     """
     Test that deleting a document cascades to delete associated chunks.
