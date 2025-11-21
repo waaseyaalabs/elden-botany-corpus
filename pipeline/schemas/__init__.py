@@ -1,4 +1,9 @@
-"""Schema definitions for Elden Ring datasets with version metadata."""
+"""Schema definitions for Elden Ring datasets with version metadata.
+
+This package intentionally re-exports all schema constants via ``__init__`` so
+pipeline code (and tooling such as pyright/mypy) can import a single module and
+receive the same interfaces regardless of the underlying file layout.
+"""
 
 from __future__ import annotations
 
