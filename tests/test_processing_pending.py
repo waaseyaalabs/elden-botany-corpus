@@ -54,7 +54,9 @@ settings:
     }
 
 
-def test_pending_detects_unprocessed_files(processor_setup: dict[str, Path]) -> None:
+def test_pending_detects_unprocessed_files(
+    processor_setup: dict[str, Path],
+) -> None:
     """Datasets with untouched raw files should appear as pending."""
     processor = DataProcessor(
         config_path=processor_setup["config"],
@@ -69,7 +71,9 @@ def test_pending_detects_unprocessed_files(processor_setup: dict[str, Path]) -> 
     assert pending["test-weapons"]["files"]
 
 
-def test_pending_respects_cache_and_force(processor_setup: dict[str, Path]) -> None:
+def test_pending_respects_cache_and_force(
+    processor_setup: dict[str, Path],
+) -> None:
     """Cache clears pending datasets unless --force is supplied."""
     processor = DataProcessor(
         config_path=processor_setup["config"],

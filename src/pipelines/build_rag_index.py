@@ -3,6 +3,7 @@
 # pyright: reportUnknownMemberType=false
 # pyright: reportUnknownVariableType=false
 # pyright: reportGeneralTypeIssues=false
+# pyright: reportMissingTypeStubs=false
 
 """Build and query a FAISS index for the lore embeddings."""
 
@@ -14,12 +15,17 @@ import logging
 import os
 from collections.abc import Mapping, Sequence
 from dataclasses import dataclass, field
+from importlib import import_module
 from pathlib import Path
 from typing import Any, cast
 
-import faiss  # type: ignore[import]
-import numpy as np  # type: ignore[import]
-import pandas as pd  # type: ignore[import]
+import numpy as np
+
+try:
+    faiss = import_module("faiss")
+except ImportError as err:  # pragma: no cover - optional dependency
+    raise ImportError("faiss is required for RAG index operations") from err
+import pandas as pd
 from corpus.config import settings
 
 from pipelines.embedding_backends import (
@@ -136,7 +142,8 @@ def load_query_helper(
     if resolved_provider is None:
         resolved_provider = _get_constant_value(metadata, "embedding_provider")
     if resolved_provider not in {"local", "openai"}:
-        raise RAGIndexError("Cannot determine embedding provider; rebuild embeddings")
+        msg = "Cannot determine embedding provider; rebuild embeddings"
+        raise RAGIndexError(msg)
     resolved_provider = cast(ProviderLiteral, resolved_provider)
 
     resolved_model = model_name or info.get("embedding_model")
@@ -169,7 +176,10 @@ def _resolve_index_path(target: Path) -> Path:
         return target
     if target == DEFAULT_INDEX and LEGACY_INDEX.exists():
         LOGGER.warning(
-            ("Legacy lore_index.faiss artifact detected; rebuild the RAG " "index to generate %s."),
+            (
+                "Legacy lore_index.faiss artifact detected; rebuild the RAG "
+                "index to generate %s."
+            ),
             DEFAULT_INDEX,
         )
         return LEGACY_INDEX
@@ -233,7 +243,7 @@ def _write_info(
     provider = _get_constant_value(metadata, "embedding_provider")
     model_name = _get_constant_value(metadata, "embedding_model")
     strategy = _get_constant_value(metadata, "embedding_strategy")
-    payload = {
+    payload: dict[str, object] = {
         "vector_count": len(metadata),
         "dimension": dimension,
         "normalized": normalize,
@@ -252,9 +262,14 @@ def _write_info(
 
 def _read_info(path: Path) -> dict[str, object]:
     try:
-        return json.loads(path.read_text(encoding="utf-8"))
+        payload = json.loads(path.read_text(encoding="utf-8"))
     except json.JSONDecodeError as exc:  # pragma: no cover - defensive
-        raise RAGIndexError(f"Failed to parse index metadata JSON: {exc}") from exc
+        msg = f"Failed to parse index metadata JSON: {exc}"
+        raise RAGIndexError(msg) from exc
+
+    if not isinstance(payload, dict):  # pragma: no cover - defensive
+        raise RAGIndexError("Index metadata JSON must be an object")
+    return cast(dict[str, object], payload)
 
 
 def _get_constant_value(frame: pd.DataFrame, column: str) -> str | None:
@@ -292,7 +307,8 @@ class RAGQueryHelper:
     ) -> pd.DataFrame:
         vectors = self._encoder.encode([query_text])
         if not vectors:
-            raise RAGIndexError("Embedding backend returned no vector for query")
+            msg = "Embedding backend returned no vector for query"
+            raise RAGIndexError(msg)
 
         query_vec = np.asarray(vectors, dtype=np.float32)
         if query_vec.ndim == 1:
@@ -340,7 +356,8 @@ def _search_index(
 
         candidate_df.sort_values("score", ascending=False, inplace=True)
         if len(candidate_df) >= top_k or limit == len(metadata):
-            return candidate_df.head(top_k)
+            result: pd.DataFrame = candidate_df.head(top_k).copy()
+            return result
 
         limit = min(len(metadata), limit * 2)
 
@@ -358,7 +375,7 @@ def _reconstruct_vectors(
             vector = index.reconstruct(int(idx))
         except (ValueError, RuntimeError, AttributeError):  # pragma: no cover
             return None
-        vectors.append(vector.tolist())
+        vectors.append([float(value) for value in vector.tolist()])
     return vectors
 
 
@@ -381,7 +398,9 @@ def _log_index_summary(frame: pd.DataFrame, dimension: int) -> None:
     LOGGER.info("Indexing %s embeddings (dim=%s)", len(frame), dimension)
     for label in ("category", "source", "text_type"):
         counts = frame[label].value_counts()
-        formatted = ", ".join(f"{key}={value}" for key, value in counts.items())
+        formatted = ", ".join(
+            f"{key}={value}" for key, value in counts.items()
+        )
         LOGGER.info("Distribution by %s: %s", label, formatted)
 
 

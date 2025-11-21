@@ -10,13 +10,13 @@ import re
 from collections import Counter, defaultdict
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any
+from typing import Any, cast, no_type_check
 
-import pandas as pd  # type: ignore[import]
-import pandera as pa  # type: ignore[import]
-from bs4 import BeautifulSoup  # type: ignore[import]
+import pandas as pd
+import pandera as pa
+from bs4 import BeautifulSoup
 from corpus.models import create_slug, normalize_name_for_matching
-from Levenshtein import ratio as levenshtein_ratio  # type: ignore[import]
+from Levenshtein import ratio as levenshtein_ratio
 from pandera import Check, Column, DataFrameSchema
 
 from pipelines.io.carian_fmg_loader import load_carian_dialogue_lines
@@ -138,20 +138,31 @@ SECTION_CATEGORY = {
 }
 
 
-LORE_SCHEMA = DataFrameSchema(
-    {
-        "lore_id": Column(pa.String, nullable=False, unique=True),
-        "canonical_id": Column(pa.String, nullable=False),
-        "category": Column(pa.String, Check.isin(sorted(ALLOWED_CATEGORIES))),
-        "source": Column(pa.String, Check.isin(sorted(ALLOWED_SOURCES))),
-        "text_type": Column(pa.String, Check.isin(sorted(ALLOWED_TEXT_TYPES))),
-        "language": Column(pa.String, Check.isin(["en"])),
-        "text": Column(pa.String, Check.str_length(min_value=1)),
-        "provenance": Column(pa.String, nullable=False),
-    },
-    strict=True,
-    coerce=True,
-)
+@no_type_check
+def _build_lore_schema() -> DataFrameSchema:
+    return DataFrameSchema(
+        {
+            "lore_id": Column(pa.String, nullable=False, unique=True),
+            "canonical_id": Column(pa.String, nullable=False),
+            "category": Column(
+                pa.String,
+                Check.isin(sorted(ALLOWED_CATEGORIES)),
+            ),
+            "source": Column(pa.String, Check.isin(sorted(ALLOWED_SOURCES))),
+            "text_type": Column(
+                pa.String,
+                Check.isin(sorted(ALLOWED_TEXT_TYPES)),
+            ),
+            "language": Column(pa.String, Check.isin(["en"])),
+            "text": Column(pa.String, Check.str_length(min_value=1)),
+            "provenance": Column(pa.String, nullable=False),
+        },
+        strict=True,
+        coerce=True,
+    )
+
+
+LORE_SCHEMA = _build_lore_schema()
 
 
 def build_lore_corpus(
@@ -164,7 +175,8 @@ def build_lore_corpus(
     """Aggregate lore lines from canonical datasets and Impalers dump."""
 
     canonical_frames = {
-        spec.category: _load_domain_frame(spec, curated_root) for spec in DOMAIN_SPECS
+        spec.category: _load_domain_frame(spec, curated_root)
+        for spec in DOMAIN_SPECS
     }
     canonical_lookup = _build_canonical_lookup(canonical_frames)
 
@@ -176,7 +188,9 @@ def build_lore_corpus(
     carian_dialogue_rows = _load_carian_dialogue_lore(raw_root)
     lore_rows.extend(carian_dialogue_rows)
 
-    impalers_entries = _parse_impalers_dump(raw_root / "impalers" / "Master.html")
+    impalers_entries = _parse_impalers_dump(
+        raw_root / "impalers" / "Master.html"
+    )
     matched_impalers, unmatched = _match_impalers_entries(
         entries=impalers_entries,
         canonical_lookup=canonical_lookup,
@@ -193,21 +207,22 @@ def build_lore_corpus(
 
     try:
         validated = LORE_SCHEMA.validate(lore_df, lazy=True)
-    except pa.errors.SchemaErrors as exc:  # type: ignore[attr-defined]
+    except pa.errors.SchemaErrors as exc:
         LOGGER.error("Lore schema validation failed: %s", exc)
         raise
 
-    _log_corpus_stats(validated, unmatched)
+    validated_df = cast(pd.DataFrame, validated)
+    _log_corpus_stats(validated_df, unmatched)
 
     if dry_run:
         LOGGER.info("Dry run enabled; skipping parquet write")
-        return validated
+        return validated_df
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    validated.to_parquet(output_path, index=False)
+    validated_df.to_parquet(output_path, index=False)
     LOGGER.info("Wrote lore corpus to %s", output_path)
 
-    return validated
+    return validated_df
 
 
 def _load_domain_frame(spec: DomainSpec, curated_root: Path) -> pd.DataFrame:
@@ -218,15 +233,21 @@ def _load_domain_frame(spec: DomainSpec, curated_root: Path) -> pd.DataFrame:
 
     frame = pd.read_parquet(path)
     if spec.id_column not in frame.columns:
-        message = f"{spec.dataset} dataset is missing id column {spec.id_column}"
+        message = (
+            f"{spec.dataset} dataset is missing id column {spec.id_column}"
+        )
         raise RuntimeError(message)
     return frame
 
 
-def _extract_canonical_lore(frame: pd.DataFrame, spec: DomainSpec) -> list[dict[str, Any]]:
+def _extract_canonical_lore(
+    frame: pd.DataFrame,
+    spec: DomainSpec,
+) -> list[dict[str, Any]]:
     rows: list[dict[str, Any]] = []
 
-    for record in frame.to_dict("records"):
+    records = cast(list[dict[str, Any]], frame.to_dict("records"))
+    for record in records:
         canonical_id = _build_canonical_id(record, spec)
         for field in spec.text_fields:
             raw_text = record.get(field.column)
@@ -248,7 +269,9 @@ def _extract_canonical_lore(frame: pd.DataFrame, spec: DomainSpec) -> list[dict[
             provenance_value = record.get("provenance")
             if provenance_value:
                 try:
-                    payload["canonical_provenance"] = json.loads(provenance_value)
+                    payload["canonical_provenance"] = json.loads(
+                        provenance_value
+                    )
                 except (TypeError, json.JSONDecodeError):
                     payload["canonical_provenance"] = provenance_value
 
@@ -347,7 +370,9 @@ def _parse_impalers_dump(html_path: Path) -> list[dict[str, Any]]:
         if node.name == "h2":
             current_section = node.get_text(strip=True)
             section_base = _section_base(current_section)
-            current_category = SECTION_CATEGORY.get(section_base) if section_base else None
+            current_category = (
+                SECTION_CATEGORY.get(section_base) if section_base else None
+            )
             current_entry = None
             continue
 
@@ -475,7 +500,8 @@ def _build_canonical_lookup(
     lookup: dict[str, list[dict[str, Any]]] = {}
     for category, frame in frames.items():
         entries: list[dict[str, Any]] = []
-        for record in frame.to_dict("records"):
+        records = cast(list[dict[str, Any]], frame.to_dict("records"))
+        for record in records:
             slug = record.get("canonical_slug") or record.get("name")
             if not isinstance(slug, str) or not slug:
                 slug = create_slug(str(record.get("name", "")))
@@ -499,7 +525,9 @@ def _build_canonical_lookup(
 def _build_canonical_id(record: dict[str, Any], spec: DomainSpec) -> str:
     value = record.get(spec.id_column)
     if value is None or pd.isna(value):
-        slug = record.get("canonical_slug") or create_slug(str(record.get("name", "")))
+        slug = record.get("canonical_slug") or create_slug(
+            str(record.get("name", ""))
+        )
         return f"{spec.category}:{slug}"
     return f"{spec.category}:{int(value)}"
 
@@ -557,7 +585,9 @@ def _log_corpus_stats(
         ("by text_type", df["text_type"]),
     ):
         counts = Counter(series)
-        formatted = ", ".join(f"{key}={value}" for key, value in counts.items())
+        formatted = ", ".join(
+            f"{key}={value}" for key, value in counts.items()
+        )
         LOGGER.info("Lore lines %s: %s", label, formatted)
 
     impaler_count = len(df[df["source"] == "impalers"])

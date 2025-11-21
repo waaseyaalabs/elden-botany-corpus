@@ -1,9 +1,12 @@
+# pyright: reportMissingTypeStubs=false
+
 """Data curation and export pipeline."""
 
 import json
+from collections.abc import Iterable
 from pathlib import Path
 
-import polars as pl  # type: ignore[import]
+import polars as pl
 
 from corpus.config import settings
 from corpus.lineage import LineageManifestBuilder
@@ -15,7 +18,10 @@ from corpus.utils import (
     save_csv,
     save_parquet,
 )
-from pipeline.schemas import get_active_schema_version
+from pipelines.schema_loader import get_active_schema_version
+
+STATE_DIR_NAME = "state"
+STATE_FILE_NAME = "reconciled_entities.json"
 
 
 class CorpusCurator:
@@ -250,6 +256,63 @@ class CorpusCurator:
         )
 
 
+def _state_path(output_dir: Path | None = None) -> Path:
+    base_dir = output_dir or settings.curated_dir
+    return base_dir / STATE_DIR_NAME / STATE_FILE_NAME
+
+
+def load_reconciled_state(output_dir: Path | None = None) -> list[RawEntity]:
+    path = _state_path(output_dir)
+    if not path.exists():
+        return []
+
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    return [RawEntity.model_validate(item) for item in payload]
+
+
+def save_reconciled_state(
+    entities: Iterable[RawEntity],
+    output_dir: Path | None = None,
+) -> None:
+    path = _state_path(output_dir)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    serialized = [entity.model_dump(mode="json") for entity in entities]
+    path.write_text(json.dumps(serialized, indent=2), encoding="utf-8")
+
+
+def entity_cache_key(entity: RawEntity) -> str:
+    """Return a stable key for deduplicating reconciled entities."""
+
+    return f"{entity.entity_type}:{entity.to_slug()}"
+
+
+def build_entity_map(entities: Iterable[RawEntity]) -> dict[str, RawEntity]:
+    """Build a slug-indexed lookup."""
+
+    return {entity_cache_key(entity): entity for entity in entities}
+
+
+def diff_entities(
+    entities: Iterable[RawEntity],
+    baseline_map: dict[str, RawEntity],
+) -> list[RawEntity]:
+    """Return entities that are new or changed compared to the baseline."""
+
+    delta: list[RawEntity] = []
+    for entity in entities:
+        key = entity_cache_key(entity)
+        baseline_entity = baseline_map.get(key)
+        if baseline_entity is None:
+            delta.append(entity)
+            continue
+
+        if entity.model_dump(mode="json") != baseline_entity.model_dump(
+            mode="json",
+        ):
+            delta.append(entity)
+    return delta
+
+
 def curate_corpus(
     entities: list[RawEntity],
     unmapped_texts: list[RawEntity] | None = None,
@@ -276,5 +339,6 @@ def curate_corpus(
     curator.export_unified(df)
     curator.export_by_entity_type(df)
     curator.export_metadata()
+    save_reconciled_state(entities, curator.output_dir)
 
     return df

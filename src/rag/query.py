@@ -16,7 +16,7 @@ from pathlib import Path
 from typing import Literal, Protocol
 
 import numpy as np
-import pandas as pd  # type: ignore[import]
+import pandas as pd
 from numpy.typing import NDArray
 
 from pipelines.build_rag_index import (
@@ -27,7 +27,7 @@ from pipelines.build_rag_index import (
     RAGIndexError,
     load_query_helper,
 )
-from rag.reranker import (  # type: ignore[import-not-found]
+from rag.reranker import (
     RerankerProtocol,
     load_reranker,
 )
@@ -388,7 +388,9 @@ def _is_semantic_duplicate(
         candidate_norm = float(np.linalg.norm(candidate))
         if candidate_norm == 0.0:
             continue
-        similarity = float(np.dot(candidate, vector) / (candidate_norm * vector_norm))
+        numerator = np.dot(candidate, vector)
+        denominator = candidate_norm * vector_norm
+        similarity = float(numerator / denominator)
         if similarity >= threshold:
             return True
     return False
@@ -470,7 +472,11 @@ def _parse_filter_expression(raw_expression: str) -> FilterExpression | None:
         )
         return None
 
-    values = [token.strip() for token in raw_values.split(",") if token.strip()]
+    values = [
+        token.strip()
+        for token in raw_values.split(",")
+        if token.strip()
+    ]
     if not values:
         LOGGER.warning(
             "Ignoring filter with missing values: %s",

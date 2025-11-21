@@ -7,7 +7,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
-import pandas as pd  # type: ignore[import]
+import pandas as pd
 from corpus.models import normalize_name_for_matching
 
 SourceRecord = dict[str, Any]
@@ -103,12 +103,18 @@ def log_conflicts(
     for bucket in buckets.values():
         for column in columns:
             values = {
-                entry.get(column) for entry in bucket.entries if entry.get(column) not in (None, "")
+                entry.get(column)
+                for entry in bucket.entries
+                if entry.get(column) not in (None, "")
             }
             if len(values) > 1:
                 summary[column] += 1
 
-    messages = [f"{column}={count}" for column, count in summary.items() if count]
+    messages = [
+        f"{column}={count}"
+        for column, count in summary.items()
+        if count
+    ]
 
     if messages:
         logger.info("Column conflicts detected: %s", ", ".join(messages))
@@ -190,7 +196,8 @@ def log_schema_validation_failure(
             canonical = record.get("canonical_slug") or record.get("name")
             source_id = record.get("source_id")
             problem_details = ", ".join(
-                f"{entry.get('column')}: {entry.get('failure_case')}" for entry in failure_entries
+                f"{entry.get('column')}: {entry.get('failure_case')}"
+                for entry in failure_entries
             )
             logger.error(
                 "%s row failed schema (canonical=%s, source_id=%s): %s",

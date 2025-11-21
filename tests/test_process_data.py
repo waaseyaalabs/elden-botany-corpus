@@ -4,15 +4,19 @@ import json
 import os
 import textwrap
 import time
+from pathlib import Path
+from typing import TypedDict
 
 import pandas as pd
 import pytest
+from pytest import MonkeyPatch
 
 from pipeline.process import DataProcessor
 from pipeline.schemas import (
     BOSSES_SCHEMA,
     ITEMS_SCHEMA,
     WEAPONS_SCHEMA,
+    SchemaVersion,
     get_dataset_schema,
     list_schema_versions,
     validate_dataframe,
@@ -24,6 +28,12 @@ from pipeline.utils import (
     read_data_file,
     write_parquet,
 )
+
+
+class TempDirs(TypedDict):
+    config_dir: Path
+    raw_dir: Path
+    processed_dir: Path
 
 
 class TestSchemas:
@@ -56,8 +66,11 @@ class TestSchemas:
     def test_list_schema_versions(self):
         """Schema registry should enumerate versions per dataset."""
         versions = list_schema_versions("weapons")
+        assert isinstance(versions, list)
         assert len(versions) == 1
-        assert versions[0].tag == "weapons_v1"
+        first_version = versions[0]
+        assert isinstance(first_version, SchemaVersion)
+        assert first_version.tag == "weapons_v1"
 
     def test_validate_with_schema_version(self):
         """validate_dataframe accepts SchemaVersion payloads."""
@@ -135,6 +148,7 @@ class TestSchemas:
 
         is_valid, error, _ = validate_dataframe(df, BOSSES_SCHEMA)
         assert is_valid
+        assert error is None
 
 
 class TestUtils:
@@ -181,7 +195,7 @@ class TestUtils:
             "greatsword",
         ]
 
-    def test_calculate_file_hash(self, tmp_path):
+    def test_calculate_file_hash(self, tmp_path: Path) -> None:
         """Test file hash calculation."""
         test_file = tmp_path / "test.txt"
         test_file.write_text("test content")
@@ -193,7 +207,7 @@ class TestUtils:
         assert hash1 == hash2
         assert len(hash1) == 64  # SHA256 produces 64 char hex
 
-    def test_read_write_parquet(self, tmp_path):
+    def test_read_write_parquet(self, tmp_path: Path) -> None:
         """Test reading and writing Parquet files."""
         df = pd.DataFrame(
             {
@@ -216,7 +230,7 @@ class TestDataProcessor:
     """Test DataProcessor class."""
 
     @pytest.fixture
-    def temp_dirs(self, tmp_path):
+    def temp_dirs(self, tmp_path: Path) -> TempDirs:
         """Create temporary directory structure."""
         config_dir = tmp_path / "config"
         raw_dir = tmp_path / "data" / "raw"
@@ -233,7 +247,7 @@ class TestDataProcessor:
         }
 
     @pytest.fixture
-    def config_file(self, temp_dirs):
+    def config_file(self, temp_dirs: TempDirs) -> Path:
         """Create test configuration file."""
         config_path = temp_dirs["config_dir"] / "test_config.yml"
         config_content = textwrap.dedent(
@@ -259,7 +273,7 @@ class TestDataProcessor:
         return config_path
 
     @pytest.fixture
-    def sample_weapons_csv(self, temp_dirs):
+    def sample_weapons_csv(self, temp_dirs: TempDirs) -> Path:
         """Create sample weapons CSV file."""
         dataset_dir = temp_dirs["raw_dir"] / "test-weapons"
         dataset_dir.mkdir(parents=True)
@@ -279,7 +293,11 @@ class TestDataProcessor:
         df.to_csv(csv_path, index=False)
         return csv_path
 
-    def test_processor_initialization(self, config_file, temp_dirs):
+    def test_processor_initialization(
+        self,
+        config_file: Path,
+        temp_dirs: TempDirs,
+    ) -> None:
         """Test DataProcessor initialization."""
         processor = DataProcessor(
             config_path=config_file,
@@ -292,9 +310,9 @@ class TestDataProcessor:
 
     def test_process_dataset_creates_parquet(
         self,
-        config_file,
-        temp_dirs,
-        sample_weapons_csv,
+        config_file: Path,
+        temp_dirs: TempDirs,
+        sample_weapons_csv: Path,
     ) -> None:
         """Test processing creates Parquet output."""
         processor = DataProcessor(
@@ -311,14 +329,16 @@ class TestDataProcessor:
         assert result["files_processed"][0]["schema_version"] == "weapons_v1"
 
         # Check output file exists
-        output_file = temp_dirs["processed_dir"] / "test-weapons" / "weapons.parquet"
+        output_file: Path = (
+            temp_dirs["processed_dir"] / "test-weapons" / "weapons.parquet"
+        )
         assert output_file.exists()
 
     def test_process_dataset_validates_schema(
         self,
-        config_file,
-        temp_dirs,
-        sample_weapons_csv,
+        config_file: Path,
+        temp_dirs: TempDirs,
+        sample_weapons_csv: Path,
     ) -> None:
         """Test processing validates against schema."""
         processor = DataProcessor(
@@ -334,8 +354,12 @@ class TestDataProcessor:
         assert result["schema_version"] == "weapons_v1"
 
         # Verify output data
-        output_file = temp_dirs["processed_dir"] / "test-weapons" / "weapons.parquet"
-        df = pd.read_parquet(output_file)
+        output_file: Path = (
+            temp_dirs["processed_dir"] / "test-weapons" / "weapons.parquet"
+        )
+        df = pd.read_parquet(  # pyright: ignore[reportUnknownMemberType]
+            output_file,
+        )
 
         # Check transformations applied
         assert "weapon_id" in df.columns
@@ -343,9 +367,9 @@ class TestDataProcessor:
 
     def test_process_dataset_skips_up_to_date(
         self,
-        config_file,
-        temp_dirs,
-        sample_weapons_csv,
+        config_file: Path,
+        temp_dirs: TempDirs,
+        sample_weapons_csv: Path,
     ) -> None:
         """Test processing skips up-to-date files."""
         processor = DataProcessor(
@@ -366,9 +390,9 @@ class TestDataProcessor:
 
     def test_process_dataset_uses_hash_cache(
         self,
-        config_file,
-        temp_dirs,
-        sample_weapons_csv,
+        config_file: Path,
+        temp_dirs: TempDirs,
+        sample_weapons_csv: Path,
     ) -> None:
         """Cache prevents extra work when raw content is unchanged."""
         processor = DataProcessor(
@@ -393,9 +417,9 @@ class TestDataProcessor:
 
     def test_process_dataset_force_reprocess(
         self,
-        config_file,
-        temp_dirs,
-        sample_weapons_csv,
+        config_file: Path,
+        temp_dirs: TempDirs,
+        sample_weapons_csv: Path,
     ) -> None:
         """Test force flag reprocesses files."""
         processor = DataProcessor(
@@ -415,9 +439,9 @@ class TestDataProcessor:
 
     def test_process_dataset_dry_run(
         self,
-        config_file,
-        temp_dirs,
-        sample_weapons_csv,
+        config_file: Path,
+        temp_dirs: TempDirs,
+        sample_weapons_csv: Path,
     ) -> None:
         """Test dry run doesn't write files."""
         processor = DataProcessor(
@@ -432,14 +456,16 @@ class TestDataProcessor:
         assert result["schema_version"] == "weapons_v1"
 
         # Output file should NOT exist
-        output_file = temp_dirs["processed_dir"] / "test-weapons" / "weapons.parquet"
+        output_file: Path = (
+            temp_dirs["processed_dir"] / "test-weapons" / "weapons.parquet"
+        )
         assert not output_file.exists()
 
     def test_process_all_skips_disabled(
         self,
-        config_file,
-        temp_dirs,
-        sample_weapons_csv,
+        config_file: Path,
+        temp_dirs: TempDirs,
+        sample_weapons_csv: Path,
     ) -> None:
         """Test process_all skips disabled datasets."""
         processor = DataProcessor(
@@ -452,7 +478,10 @@ class TestDataProcessor:
 
         # test-weapons should be processed
         assert results["datasets"]["test-weapons"]["status"] == "success"
-        assert results["datasets"]["test-weapons"]["schema_version"] == "weapons_v1"
+        assert (
+            results["datasets"]["test-weapons"]["schema_version"]
+            == "weapons_v1"
+        )
 
         # test-bosses should be skipped
         assert results["datasets"]["test-bosses"]["status"] == "skipped"
@@ -464,11 +493,11 @@ class TestDataProcessor:
 
     def test_process_all_parallel_dispatches(
         self,
-        config_file,
-        temp_dirs,
-        sample_weapons_csv,
-        monkeypatch,
-    ):
+        config_file: Path,
+        temp_dirs: TempDirs,
+        sample_weapons_csv: Path,
+        monkeypatch: MonkeyPatch,
+    ) -> None:
         """Ensure helper runs when multiple datasets and workers > 1."""
         processor = DataProcessor(
             config_path=config_file,
@@ -485,7 +514,13 @@ class TestDataProcessor:
 
         captured: dict[str, object] = {}
 
-        def fake_parallel(self, dataset_names, force, dry_run, max_workers):
+        def fake_parallel(
+            self: DataProcessor,
+            dataset_names: list[str],
+            force: bool,
+            dry_run: bool,
+            max_workers: int,
+        ) -> dict[str, dict[str, object]]:
             captured["names"] = dataset_names
             captured["force"] = force
             captured["dry_run"] = dry_run
@@ -513,9 +548,9 @@ class TestDataProcessor:
 
     def test_schema_version_mismatch_triggers_reprocess(
         self,
-        config_file,
-        temp_dirs,
-        sample_weapons_csv,
+        config_file: Path,
+        temp_dirs: TempDirs,
+        sample_weapons_csv: Path,
     ) -> None:
         """Changing cached schema version should force reprocessing."""
         processor = DataProcessor(
@@ -526,7 +561,9 @@ class TestDataProcessor:
 
         processor.process_dataset("test-weapons")
 
-        cache_file = temp_dirs["processed_dir"] / ".cache" / "test-weapons.json"
+        cache_file: Path = (
+            temp_dirs["processed_dir"] / ".cache" / "test-weapons.json"
+        )
         cache_file.parent.mkdir(parents=True, exist_ok=True)
         payload = json.loads(cache_file.read_text())
         payload["schema_version"] = "weapons_v0"
@@ -536,7 +573,11 @@ class TestDataProcessor:
         assert len(result["files_processed"]) == 1
         assert result["schema_version"] == "weapons_v1"
 
-    def test_resolve_worker_count_auto_cpu(self, config_file, temp_dirs):
+    def test_resolve_worker_count_auto_cpu(
+        self,
+        config_file: Path,
+        temp_dirs: TempDirs,
+    ) -> None:
         """Auto worker value should fall back to CPU count when <=0."""
         processor = DataProcessor(
             config_path=config_file,
@@ -546,13 +587,21 @@ class TestDataProcessor:
 
         processor.config.setdefault("settings", {})["process_workers"] = 0
 
-        assert processor._resolve_worker_count(None) == max(
+        # Access the private helper via getattr to avoid pyright private-usage
+        # noise while keeping the test honest about the method name.
+        resolve_worker_count = getattr(processor, "_resolve_worker_count")
+
+        assert resolve_worker_count(None) == max(
             os.cpu_count() or 1,
             1,
         )
-        assert processor._resolve_worker_count(3) == 3
+        assert resolve_worker_count(3) == 3
 
-    def test_transform_weapons_normalizes_types(self, config_file, temp_dirs):
+    def test_transform_weapons_normalizes_types(
+        self,
+        config_file: Path,
+        temp_dirs: TempDirs,
+    ) -> None:
         """Test weapon type normalization."""
         processor = DataProcessor(
             config_path=config_file,
@@ -568,12 +617,18 @@ class TestDataProcessor:
             }
         )
 
-        result = processor._transform_weapons(df)
+        # See note above: getattr keeps pyright happy without suppressions.
+        transform_weapons = getattr(processor, "_transform_weapons")
+        result = transform_weapons(df)
 
         assert "weapon_id" in result.columns
         assert result["weapon_type"].tolist() == ["sword", "bow"]
 
-    def test_transform_handles_missing_values(self, config_file, temp_dirs):
+    def test_transform_handles_missing_values(
+        self,
+        config_file: Path,
+        temp_dirs: TempDirs,
+    ) -> None:
         """Test missing value handling in transformations."""
         processor = DataProcessor(
             config_path=config_file,
@@ -591,7 +646,8 @@ class TestDataProcessor:
             }
         )
 
-        result = processor._transform_weapons(df)
+        transform_weapons = getattr(processor, "_transform_weapons")
+        result = transform_weapons(df)
 
         # Missing damage should be filled with 0
         assert result["damage_physical"].tolist() == [100, 0]

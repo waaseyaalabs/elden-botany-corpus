@@ -62,7 +62,7 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.ruff]
-line-length = 100
+line-length = 79
 target-version = "py311"
 
 [tool.ruff.lint]
@@ -84,7 +84,7 @@ ignore = [
 
 [tool.mypy]
 python_version = "3.11"
-mypy_path = "src"
+mypy_path = "src:pipeline:typings"
 strict = true
 warn_return_any = true
 warn_unused_configs = true
@@ -105,13 +105,22 @@ module = [
     "duckdb.*",
     "pgvector.*",
     "Levenshtein.*",
+    "faiss",
+    "faiss.*",
+    "sentence_transformers",
     "sentence_transformers.*",
+    "openai",
     "openai.*",
     "pydantic_settings",
     "kaggle",
+    "kaggle.*",
     "bs4",
     "pandera.*",
     "pytest",
+    "pipeline",
+    "pipeline.*",
+    "pipelines",
+    "pipelines.*",
 ]
 ignore_missing_imports = true
 
@@ -136,3 +145,6 @@ exclude_lines = [
     "if TYPE_CHECKING:",
     "@abstractmethod",
 ]
+
+[tool.pycodestyle]
+max-line-length = 79

@@ -8,11 +8,10 @@ import logging
 from pathlib import Path
 from typing import Any, cast
 
-import pandas as pd  # type: ignore[import]
-import pandera as pa  # type: ignore[import]
+import pandas as pd
+import pandera as pa
 from corpus.models import create_slug
 
-from pipeline.schemas import get_dataset_schema  # type: ignore[import]
 from pipelines.canonical_utils import (
     Bucket,
     SourceLoader,
@@ -27,6 +26,7 @@ from pipelines.io.carian_fmg_loader import load_carian_item_fmg
 from pipelines.io.github_api_loader import load_github_api_items
 from pipelines.io.kaggle_base_loader import load_kaggle_base_items
 from pipelines.io.kaggle_dlc_loader import load_kaggle_dlc_items
+from pipelines.schema_loader import get_dataset_schema
 
 LOGGER = logging.getLogger(__name__)
 
@@ -94,7 +94,7 @@ def build_items_canonical(
         )
         raise
 
-    finalized = validated
+    finalized = cast(pd.DataFrame, validated)
     LOGGER.info("Validated canonical items: %s rows", len(finalized))
 
     if dry_run:
@@ -130,33 +130,41 @@ def _buckets_to_records(buckets: dict[str, Bucket]) -> list[dict[str, Any]]:
 
 def _records_to_dataframe(records: list[dict[str, Any]]) -> pd.DataFrame:
     frame = pd.DataFrame.from_records(records)
-    frame = cast(Any, frame)
+    frame_any = cast(Any, frame)
 
     if frame.empty:
         raise RuntimeError("No canonical records remain after merging")
 
-    frame["source_priority"] = (
-        pd.to_numeric(frame["source_priority"], errors="coerce").fillna(99).astype(int)
+    frame_any["source_priority"] = (
+        pd.to_numeric(
+            frame["source_priority"],
+            errors="coerce",
+        )
+        .fillna(99)
+        .astype(int)
     )
-    frame["is_dlc"] = frame["is_dlc"].fillna(False).astype(bool)
-    frame["category"] = frame["category"].fillna("other")
+    frame_any["is_dlc"] = frame["is_dlc"].fillna(False).astype(bool)
+    frame_any["category"] = frame["category"].fillna("other")
     if "provenance" not in frame.columns:
-        frame["provenance"] = "[]"
+        frame_any["provenance"] = "[]"
 
     for column in FLOAT_COLUMNS:
         if column not in frame.columns:
-            frame[column] = pd.NA
-        frame[column] = pd.to_numeric(frame[column], errors="coerce")
+            frame_any[column] = pd.NA
+        frame_any[column] = pd.to_numeric(frame[column], errors="coerce")
 
     for column, default_value in INT_COLUMN_DEFAULTS.items():
         if column not in frame.columns:
-            frame[column] = default_value
+            frame_any[column] = default_value
         series = pd.to_numeric(frame[column], errors="coerce").round(0)
         series = series.fillna(default_value)
-        frame[column] = series.astype("Int64")
+        frame_any[column] = series.astype("Int64")
 
     frame.reset_index(drop=True, inplace=True)
-    frame["item_id"] = pd.Series(range(1, len(frame) + 1), dtype="Int64")
+    frame_any["item_id"] = pd.Series(
+        range(1, len(frame) + 1),
+        dtype="Int64",
+    )
 
     column_order = [
         "item_id",
@@ -177,7 +185,9 @@ def _records_to_dataframe(records: list[dict[str, Any]]) -> pd.DataFrame:
         "provenance",
     ]
 
-    extra_columns = [column for column in frame.columns if column not in column_order]
+    extra_columns = [
+        column for column in frame.columns if column not in column_order
+    ]
     return frame.loc[:, column_order + extra_columns]
 
 

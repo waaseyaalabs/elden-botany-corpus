@@ -251,7 +251,9 @@ def extract_damage(entries: list[dict[str, Any]]) -> dict[str, float | None]:
     return result
 
 
-def extract_requirements(entries: list[dict[str, Any]]) -> dict[str, int | None]:
+def extract_requirements(
+    entries: list[dict[str, Any]],
+) -> dict[str, int | None]:
     """Extract attribute requirements as canonical columns."""
 
     result: dict[str, int | None] = {value: None for value in ATTRIBUTE_KEY_MAP.values()}
@@ -305,7 +307,9 @@ def serialize_payload(payload: dict[str, Any]) -> str:
     return json.dumps(payload, ensure_ascii=False, sort_keys=True)
 
 
-def extract_armor_damage(entries: list[dict[str, Any]]) -> dict[str, float | None]:
+def extract_armor_damage(
+    entries: list[dict[str, Any]],
+) -> dict[str, float | None]:
     """Map structured damage negation entries to canonical armor columns."""
 
     result: dict[str, float | None] = {value: None for value in ARMOR_DAMAGE_KEY_MAP.values()}
@@ -330,7 +334,9 @@ def extract_armor_damage(entries: list[dict[str, Any]]) -> dict[str, float | Non
     return result
 
 
-def extract_armor_resistances(entries: list[dict[str, Any]]) -> dict[str, float | int | None]:
+def extract_armor_resistances(
+    entries: list[dict[str, Any]],
+) -> dict[str, float | int | None]:
     """Map resistance entries to canonical armor resistance columns."""
 
     result: dict[str, float | int | None] = {

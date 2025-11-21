@@ -6,8 +6,8 @@ from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
-import polars as pl  # type: ignore[import]
-from polars import exceptions as pl_exceptions  # type: ignore[import]
+import polars as pl
+from polars import exceptions as pl_exceptions
 
 from corpus.config import settings
 from corpus.utils import save_json
@@ -53,7 +53,9 @@ class QualityReporter:
         self.output_dir = output_dir or settings.curated_dir / "quality"
         self.output_dir.mkdir(parents=True, exist_ok=True)
         self.top_k = top_k
-        self.relative_root = relative_root or base_dir or self.output_dir.parent
+        self.relative_root = (
+            relative_root or base_dir or self.output_dir.parent
+        )
 
     def profile(self, dataset_name: str, df: pl.DataFrame) -> dict[str, Any]:
         """Backward-compatible alias for :meth:`generate_report`."""
@@ -132,12 +134,19 @@ class QualityReporter:
                         {
                             "min": non_null_series.min(),
                             "max": non_null_series.max(),
-                            "mean": round(float(non_null_series.mean()), 4),
-                            "std": round(float(non_null_series.std()), 4)
-                            if non_null_series.len() > 1
-                            else 0.0,
                         }
                     )
+                    mean_raw = non_null_series.mean()
+                    mean_value = 0.0 if mean_raw is None else float(mean_raw)
+                    summary["mean"] = round(mean_value, 4)
+
+                    std_raw = (
+                        non_null_series.std()
+                        if non_null_series.len() > 1
+                        else 0.0
+                    )
+                    std_value = 0.0 if std_raw is None else float(std_raw)
+                    summary["std"] = round(std_value, 4)
             elif _is_categorical_dtype(dtype):
                 value_counts = (
                     non_null_series.value_counts(sort=True)

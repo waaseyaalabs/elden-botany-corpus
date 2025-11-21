@@ -20,7 +20,8 @@ import pytest
 
 @pytest.mark.integration
 @pytest.mark.skipif(
-    not os.getenv("POSTGRES_DSN"), reason="POSTGRES_DSN not set (required for integration tests)"
+    not os.getenv("POSTGRES_DSN"),
+    reason="POSTGRES_DSN not set (required for integration tests)",
 )
 def test_pgvector_schema_and_queries() -> None:
     """
@@ -329,18 +330,23 @@ def test_cascade_delete() -> None:
 
             # Verify chunk exists
             cur.execute(
-                "SELECT COUNT(*) FROM elden_cascade.corpus_chunk WHERE document_id = %s", (doc_id,)
+                "SELECT COUNT(*) FROM elden_cascade.corpus_chunk WHERE document_id = %s",
+                (doc_id,),
             )
             count_result = cur.fetchone()
             assert count_result is not None
             assert count_result[0] == 1
 
             # Delete document
-            cur.execute("DELETE FROM elden_cascade.corpus_document WHERE id = %s", (doc_id,))
+            cur.execute(
+                "DELETE FROM elden_cascade.corpus_document WHERE id = %s",
+                (doc_id,),
+            )
 
             # Verify chunk was cascade-deleted
             cur.execute(
-                "SELECT COUNT(*) FROM elden_cascade.corpus_chunk WHERE document_id = %s", (doc_id,)
+                "SELECT COUNT(*) FROM elden_cascade.corpus_chunk WHERE document_id = %s",
+                (doc_id,),
             )
             cascade_result = cur.fetchone()
             assert cascade_result is not None

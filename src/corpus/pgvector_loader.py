@@ -192,7 +192,10 @@ class PgVectorLoader:
 
 
 def load_to_postgres(
-    dsn: str, parquet_path: str | Path, create: bool = True, embed: bool = False
+    dsn: str,
+    parquet_path: str | Path,
+    create: bool = True,
+    embed: bool = False,
 ) -> None:
     """
     Load corpus to PostgreSQL.

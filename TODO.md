@@ -13,6 +13,11 @@
 
 ## Follow-ups
 - [ ] Review Pandera warning about imports in a future PR.
+- [ ] Phase in `check_untyped_defs` for `src/tarnishedbotanist/*` only; once stable, extend via `[[tool.mypy.overrides]]` entries (see requested config snippet) before turning it on for tests.
+- [ ] Grow `tests/test_cli_incremental.py` to cover additional CLI flags
+	(e.g., `--all`, error handling) whenever incremental plumbing changes.
+- [ ] Add a docs checklist to PR templates ensuring README/AGENTS/TODO stay in
+	sync when manifest or guard behavior shifts.
 
 ## RAG quality improvements
 - [x] Reweight text types so `description` and `impalers_excerpt` rows score higher than terse `effect` snippets for thematic prompts (Radahn, Scarlet Rot, etc.).

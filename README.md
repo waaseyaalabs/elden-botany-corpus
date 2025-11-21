@@ -137,6 +137,42 @@ poetry run corpus curate
 
 **Output**: `data/curated/unified.parquet` (~5-10MB) with all entities. Per-dataset profiling summaries live under `data/curated/quality/*.json|html` and are referenced inside `data/curated/metadata.json`.
 
+### Incremental Refreshes
+
+Both `fetch` and `curate` support append-only refreshes:
+
+```bash
+# Skip previously processed rows/files
+poetry run corpus fetch --incremental
+poetry run corpus curate --incremental
+
+# Reprocess items created on/after a timestamp (UTC)
+poetry run corpus curate --incremental --since "2025-11-01T00:00:00Z"
+```
+
+- `corpus fetch` consults `data/processed/incremental_manifest.json` to skip
+   Kaggle/Impalers rows when you pass `--incremental` or `--since`, but it treats
+   the manifest as read-only so fetch runs never save incremental state.
+- `corpus curate` writes the manifest (file hashes + record signatures) and
+   snapshots curated entities to
+   `data/curated/state/reconciled_entities.json`, which becomes the baseline for
+   incremental runs.
+- Pass `--full` (the default) or remove the manifest/state files to force a
+   clean rebuild when needed.
+- Logs note how many Kaggle/Impalers records were newly ingested vs. skipped so
+   you can verify the delta before exporting.
+- `tests/test_cli_incremental.py` exercises both commands to ensure
+   `corpus fetch` stays read-only while `corpus curate` persists manifest
+   updates; extend it whenever you change the CLI flags or manifest plumbing.
+- **Lore embeddings and RAG artifacts always rebuild in full.** Changes to text
+   weighting, embedding models, or reranker parameters require
+   `make rag-embeddings && make rag-index` so downstream search stays consistent
+   with the curated text snapshot. The incremental manifest intentionally does
+   not gate these pipelines. The embedding pipeline now records a checksum guard
+   at `data/embeddings/rag_rebuild_state.json`; run `make rag-guard` any time to
+   confirm whether the stored embeddings/index are in-sync with the current lore
+   corpus + weighting config.
+
 ### 4. (Optional) Load to PostgreSQL
 
 ```bash
@@ -165,6 +201,11 @@ make rag-query QUERY="scarlet rot and decay"
 poetry run python -m rag.query "thorned death rites" --filter text_type!=dialogue --top-k 10
 ```
 
+`make rag-embeddings` automatically refreshes
+`data/embeddings/rag_rebuild_state.json`. `make rag-guard` surfaces the current
+status (and exits with code 1 when a rebuild is required) so you can verify the
+checksum guard before pushing RAG artifacts.
+
 Artifacts are written under `data/embeddings/`:
 
 - `lore_embeddings.parquet`: vectors + provenance columns
@@ -191,9 +232,14 @@ poetry run python -m pipelines.build_lore_embeddings \
    --text-type-weights /path/to/custom_weights.yml
 ```
 
-Dialogue now carries a 0.7 weight (down from 1.5) so Carian TalkMsg rows complement, rather than overwhelm, descriptive lore. Whenever you change the YAML file, rerun `make rag-embeddings && make rag-index` to regenerate `data/embeddings/*` with the new weighting.
+Dialogue now carries a 0.7 weight (down from 1.5) so Carian TalkMsg rows complement, rather than overwhelm, descriptive lore. Whenever you change the YAML file, rerun `make rag-embeddings && make rag-index` to regenerate `data/embeddings/*` with the new weighting. The guard file mentioned above captures the text-weight configuration in addition to the curated parquet hash, so any YAML edits show up immediately when you run `make rag-guard`.
 
 Each embedding row records `embedding_strategy=weighted_text_types_v1`, the configured weight file, and a `text_type_components` pipe-delimited summary so downstream evaluations can confirm which snippets influenced the vector.
+
+> ℹ️ **These pipelines do not support incremental skips.** Always run `make
+> rag-embeddings && make rag-index` after changing curated text, weighting
+> configs, embedding/reranker settings, or the ingestion manifest. Skipping
+> these steps can leave stale vectors that no longer match the curated corpus.
 
 ### Qualitative Retrieval Evaluation
 

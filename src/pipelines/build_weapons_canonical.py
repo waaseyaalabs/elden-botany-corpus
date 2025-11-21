@@ -8,11 +8,10 @@ import logging
 from pathlib import Path
 from typing import Any, cast
 
-import pandas as pd  # type: ignore[import]
-import pandera as pa  # type: ignore[import]
+import pandas as pd
+import pandera as pa
 from corpus.models import create_slug
 
-from pipeline.schemas import get_dataset_schema  # type: ignore[import]
 from pipelines.canonical_utils import (
     Bucket,
     SourceLoader,
@@ -27,6 +26,7 @@ from pipelines.io.carian_fmg_loader import load_carian_weapon_fmg
 from pipelines.io.github_api_loader import load_github_api_weapons
 from pipelines.io.kaggle_base_loader import load_kaggle_base_weapons
 from pipelines.io.kaggle_dlc_loader import load_kaggle_dlc_weapons
+from pipelines.schema_loader import get_dataset_schema
 
 LOGGER = logging.getLogger(__name__)
 
@@ -125,7 +125,7 @@ def build_weapons_canonical(
         )
         raise
 
-    finalized = validated
+    finalized = cast(pd.DataFrame, validated)
 
     LOGGER.info("Validated canonical weapons: %s rows", len(finalized))
 
@@ -163,12 +163,12 @@ def _buckets_to_records(buckets: dict[str, Bucket]) -> list[dict[str, Any]]:
 
 def _records_to_dataframe(records: list[dict[str, Any]]) -> pd.DataFrame:
     frame = pd.DataFrame.from_records(records)
-    frame = cast(Any, frame)
+    frame_any = cast(Any, frame)
 
     if frame.empty:
         raise RuntimeError("No canonical records remain after merging")
 
-    frame["source_priority"] = (
+    frame_any["source_priority"] = (
         pd.to_numeric(
             frame["source_priority"],
             errors="coerce",
@@ -177,24 +177,33 @@ def _records_to_dataframe(records: list[dict[str, Any]]) -> pd.DataFrame:
         .astype(int)
     )
 
-    frame["is_dlc"] = frame["is_dlc"].fillna(False).astype(bool)
+    frame_any["is_dlc"] = frame["is_dlc"].fillna(False).astype(bool)
 
     for column in NUMERIC_COLUMNS:
         if column not in frame.columns:
-            frame[column] = pd.NA
-        frame[column] = pd.to_numeric(frame[column], errors="coerce")
+            frame_any[column] = pd.NA
+        frame_any[column] = pd.to_numeric(frame[column], errors="coerce")
 
     for column in SCALING_COLUMNS:
         if column not in frame.columns:
-            frame[column] = "-"
-        frame[column] = frame[column].fillna("-").replace("", "-").astype(str).str.upper()
+            frame_any[column] = "-"
+        frame_any[column] = (
+            frame[column]
+            .fillna("-")
+            .replace("", "-")
+            .astype(str)
+            .str.upper()
+        )
 
-    frame["weapon_type"] = frame["weapon_type"].fillna("other")
+    frame_any["weapon_type"] = frame["weapon_type"].fillna("other")
     if "provenance" not in frame.columns:
-        frame["provenance"] = "[]"
+        frame_any["provenance"] = "[]"
 
     frame.reset_index(drop=True, inplace=True)
-    frame["weapon_id"] = pd.Series(range(1, len(frame) + 1), dtype="Int64")
+    frame_any["weapon_id"] = pd.Series(
+        range(1, len(frame) + 1),
+        dtype="Int64",
+    )
 
     column_order = [
         "weapon_id",
@@ -226,10 +235,11 @@ def _records_to_dataframe(records: list[dict[str, Any]]) -> pd.DataFrame:
         "provenance",
     ]
 
-    extra_columns = [column for column in frame.columns if column not in column_order]
+    extra_columns = [
+        column for column in frame.columns if column not in column_order
+    ]
     final_columns = column_order + extra_columns
-
-    return frame.loc[:, final_columns]  # type: ignore[return-value]
+    return frame.loc[:, final_columns]
 
 
 def _resolve_description(bucket: Bucket) -> str | None:
@@ -238,7 +248,9 @@ def _resolve_description(bucket: Bucket) -> str | None:
     fallback_priority = _description_priority(bucket.best.get("source"))
 
     best_value = fallback_value
-    best_priority = fallback_priority if fallback_value else DEFAULT_DESCRIPTION_PRIORITY
+    best_priority = (
+        fallback_priority if fallback_value else DEFAULT_DESCRIPTION_PRIORITY
+    )
 
     for entry in bucket.entries:
         raw_value = entry.get("description")

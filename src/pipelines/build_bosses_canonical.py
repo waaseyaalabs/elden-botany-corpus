@@ -8,11 +8,10 @@ import logging
 from pathlib import Path
 from typing import Any, cast
 
-import pandas as pd  # type: ignore[import]
-import pandera as pa  # type: ignore[import]
+import pandas as pd
+import pandera as pa
 from corpus.models import create_slug
 
-from pipeline.schemas import get_dataset_schema  # type: ignore[import]
 from pipelines.canonical_utils import (
     Bucket,
     SourceLoader,
@@ -27,6 +26,7 @@ from pipelines.io.carian_fmg_loader import load_carian_boss_fmg
 from pipelines.io.github_api_loader import load_github_api_bosses
 from pipelines.io.kaggle_base_loader import load_kaggle_base_bosses
 from pipelines.io.kaggle_dlc_loader import load_kaggle_dlc_bosses
+from pipelines.schema_loader import get_dataset_schema
 
 LOGGER = logging.getLogger(__name__)
 
@@ -90,7 +90,7 @@ def build_bosses_canonical(
         )
         raise
 
-    finalized = validated
+    finalized = cast(pd.DataFrame, validated)
     LOGGER.info("Validated canonical bosses: %s rows", len(finalized))
 
     if dry_run:
@@ -126,27 +126,39 @@ def _buckets_to_records(buckets: dict[str, Bucket]) -> list[dict[str, Any]]:
 
 def _records_to_dataframe(records: list[dict[str, Any]]) -> pd.DataFrame:
     frame = pd.DataFrame.from_records(records)
-    frame = cast(Any, frame)
+    frame_any = cast(Any, frame)
 
     if frame.empty:
         raise RuntimeError("No canonical records remain after merging")
 
-    frame["source_priority"] = (
-        pd.to_numeric(frame["source_priority"], errors="coerce").fillna(99).astype(int)
+    frame_any["source_priority"] = (
+        pd.to_numeric(
+            frame["source_priority"],
+            errors="coerce",
+        )
+        .fillna(99)
+        .astype(int)
     )
-    frame["is_dlc"] = frame["is_dlc"].fillna(False).astype(bool)
-    frame["region"] = frame.get("region", pd.Series(dtype="string"))
-    frame["location"] = frame.get("location", pd.Series(dtype="string"))
+    frame_any["is_dlc"] = frame["is_dlc"].fillna(False).astype(bool)
+    frame_any["region"] = frame.get("region", pd.Series(dtype="string"))
+    frame_any["location"] = frame.get("location", pd.Series(dtype="string"))
     if "provenance" not in frame.columns:
-        frame["provenance"] = "[]"
+        frame_any["provenance"] = "[]"
 
     for column in INT_COLUMNS:
         if column not in frame.columns:
-            frame[column] = pd.NA
-        frame[column] = pd.to_numeric(frame[column], errors="coerce").round(0).astype("Int64")
+            frame_any[column] = pd.NA
+        frame_any[column] = (
+            pd.to_numeric(frame[column], errors="coerce")
+            .round(0)
+            .astype("Int64")
+        )
 
     frame.reset_index(drop=True, inplace=True)
-    frame["boss_id"] = pd.Series(range(1, len(frame) + 1), dtype="Int64")
+    frame_any["boss_id"] = pd.Series(
+        range(1, len(frame) + 1),
+        dtype="Int64",
+    )
 
     column_order = [
         "boss_id",
@@ -165,7 +177,9 @@ def _records_to_dataframe(records: list[dict[str, Any]]) -> pd.DataFrame:
         "provenance",
     ]
 
-    extra_columns = [column for column in frame.columns if column not in column_order]
+    extra_columns = [
+        column for column in frame.columns if column not in column_order
+    ]
     return frame.loc[:, column_order + extra_columns]
 
 

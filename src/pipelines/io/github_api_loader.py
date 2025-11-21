@@ -269,7 +269,9 @@ def _load_github_spell_file(path: Path, *, spell_type_hint: str) -> list[dict[st
     return records
 
 
-def _requirements_from_entries(entries: Sequence[dict[str, Any]]) -> tuple[Any, Any, Any]:
+def _requirements_from_entries(
+    entries: Sequence[dict[str, Any]],
+) -> tuple[Any, Any, Any]:
     lookup: dict[str, Any] = {}
     for entry in entries:
         name = str(entry.get("name", "")).strip().lower()

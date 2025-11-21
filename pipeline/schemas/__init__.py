@@ -1,4 +1,9 @@
-"""Schema definitions for Elden Ring datasets with version metadata."""
+"""Schema definitions for Elden Ring datasets with version metadata.
+
+This package intentionally re-exports all schema constants via ``__init__`` so
+pipeline code (and tooling such as pyright/mypy) can import a single module and
+receive the same interfaces regardless of the underlying file layout.
+"""
 
 from __future__ import annotations
 
@@ -7,6 +12,7 @@ from collections.abc import Iterable
 from dataclasses import dataclass
 from typing import Any
 
+import pandas as pd
 import pandera
 import pandera.pandas as pa
 from pandera.pandas import Check, Column, DataFrameSchema
@@ -309,7 +315,9 @@ SPELLS_SCHEMA = DataFrameSchema(
 )
 
 
-VERSION_SUFFIX_RE = re.compile(r"^(?P<dataset>[a-z0-9_]+)_v(?P<version>[a-z0-9][a-z0-9_.-]*)$")
+VERSION_SUFFIX_RE = re.compile(
+    r"^(?P<dataset>[a-z0-9_]+)_v(?P<version>[a-z0-9][a-z0-9_.-]*)$"
+)
 
 
 def _normalize_dataset_name(name: str) -> str:
@@ -511,9 +519,9 @@ def get_active_schema_version(dataset_name: str) -> SchemaVersion | None:
 
 
 def validate_dataframe(
-    df,
+    df: pd.DataFrame,
     schema: DataFrameSchema | SchemaVersion,
-) -> tuple[bool, str | None, Any]:
+) -> tuple[bool, str | None, pd.DataFrame]:
     """Validate a DataFrame against a schema.
 
     Args:
@@ -525,7 +533,9 @@ def validate_dataframe(
         The validated_df contains the coerced types when validation succeeds
     """
     try:
-        schema_obj = schema.schema if isinstance(schema, SchemaVersion) else schema
+        schema_obj = (
+            schema.schema if isinstance(schema, SchemaVersion) else schema
+        )
         validated_df = schema_obj.validate(df, lazy=True)
         return True, None, validated_df
     except pandera.errors.SchemaErrors as e:

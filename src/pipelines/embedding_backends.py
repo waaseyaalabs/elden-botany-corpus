@@ -2,6 +2,7 @@
 # pyright: reportUnknownArgumentType=false
 # pyright: reportUnknownMemberType=false
 # pyright: reportUnknownVariableType=false
+# pyright: reportMissingTypeStubs=false
 
 """Shared embedding backend utilities for lore pipelines."""
 
@@ -9,7 +10,8 @@ from __future__ import annotations
 
 from collections.abc import Sequence
 from dataclasses import dataclass
-from typing import Literal, Protocol
+from importlib import import_module
+from typing import Any, Literal, Protocol, cast
 
 ProviderLiteral = Literal["local", "openai"]
 
@@ -61,7 +63,7 @@ class _LocalSentenceTransformerEncoder:
 
     def __init__(self, model_name: str, batch_size: int) -> None:
         try:
-            import sentence_transformers  # type: ignore[import]
+            sentence_transformers = import_module("sentence_transformers")
         except ImportError as err:  # pragma: no cover - import guard
             raise ImportError(
                 "sentence-transformers is not installed. "
@@ -75,13 +77,13 @@ class _LocalSentenceTransformerEncoder:
         if not texts:
             return []
 
-        vectors = self._model.encode(
+        vectors: Any = self._model.encode(
             list(texts),
             batch_size=self._batch_size,
             show_progress_bar=False,
             convert_to_numpy=True,
         )
-        return vectors.tolist()
+        return cast(list[list[float]], vectors.tolist())
 
 
 class _OpenAIEncoder:
@@ -89,12 +91,16 @@ class _OpenAIEncoder:
 
     def __init__(self, model_name: str, batch_size: int, api_key: str) -> None:
         try:
-            from openai import OpenAI  # type: ignore[import]
+            openai_module = import_module("openai")
         except ImportError as err:  # pragma: no cover - import guard
             raise ImportError(
-                "openai package is not installed. " "Install with 'poetry add openai'"
+                (
+                    "openai package is not installed. "
+                    "Install with 'poetry add openai'"
+                )
             ) from err
 
+        OpenAI = cast(Any, openai_module.OpenAI)
         self._model_name = model_name
         self._batch_size = batch_size
         self._client = OpenAI(api_key=api_key)
@@ -105,12 +111,15 @@ class _OpenAIEncoder:
 
         batches: list[list[float]] = []
         for start in range(0, len(texts), self._batch_size):
-            batch = list(texts[start : start + self._batch_size])
+            batch = list(texts[start:start + self._batch_size])
             response = self._client.embeddings.create(
                 input=batch,
                 model=self._model_name,
             )
-            batch_vectors = [item.embedding for item in response.data]
+            batch_vectors = [
+                [float(value) for value in item.embedding]
+                for item in response.data
+            ]
             batches.extend(batch_vectors)
 
         return batches

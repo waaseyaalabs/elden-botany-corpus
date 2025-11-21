@@ -92,7 +92,10 @@ def test_carian_fmg_loader_deduplicates_names(tmp_path: Path) -> None:
     )
 
     records = load_carian_weapon_fmg(raw_root)
-    assert {record["name"] for record in records} == {"Hand Axe", "Shadow Saber"}
+    assert {record["name"] for record in records} == {
+        "Hand Axe",
+        "Shadow Saber",
+    }
 
     by_name = {record["name"]: record for record in records}
     assert by_name["Hand Axe"]["description"] == "FMG lore"
