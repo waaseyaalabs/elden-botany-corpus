@@ -11,85 +11,88 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
     
-    - name: Set up Python
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.11'
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
     
-    - name: Install Poetry
-      run: |
-        curl -sSL https://install.python-poetry.org | python3 -
-        echo "$HOME/.local/bin" >> $GITHUB_PATH
+      - name: Install Poetry
+        run: |
+          curl -sSL https://install.python-poetry.org | python3 -
+          echo "$HOME/.local/bin" >> $GITHUB_PATH
     
-    - name: Cache Poetry dependencies
-      uses: actions/cache@v3
-      with:
-        path: ~/.cache/pypoetry
-        key: ${{ runner.os }}-poetry-${{ hashFiles('**/poetry.lock') }}
-        restore-keys: |
-          ${{ runner.os }}-poetry-
+      - name: Cache Poetry dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pypoetry
+          key: ${{ runner.os }}-poetry-${{ hashFiles('**/poetry.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-poetry-
     
-    - name: Install dependencies
-      run: |
-        poetry install --no-interaction
+      - name: Install dependencies
+        run: |
+          poetry install --no-interaction
     
-    - name: Check code formatting with Ruff
-      run: |
-        poetry run ruff format --check src/ tests/
+      - name: Check code formatting with Ruff
+        run: |
+          poetry run ruff format --check src/ tests/
     
-    - name: Run Ruff linter
-      run: |
-        poetry run ruff check src/ tests/
+      - name: Run Ruff linter
+        run: |
+          poetry run ruff check src/ tests/
     
-    - name: Run mypy type checker
-      run: |
-        poetry run mypy src/
-      continue-on-error: true  # Type checking can be strict initially
+      - name: Run mypy type checker
+        run: |
+          poetry run mypy src/
+        continue-on-error: true  # Type checking can be strict initially
 
   test:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
     
-    - name: Set up Python
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.11'
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
     
-    - name: Install Poetry
-      run: |
-        curl -sSL https://install.python-poetry.org | python3 -
-        echo "$HOME/.local/bin" >> $GITHUB_PATH
+      - name: Install Poetry
+        run: |
+          curl -sSL https://install.python-poetry.org | python3 -
+          echo "$HOME/.local/bin" >> $GITHUB_PATH
     
-    - name: Cache Poetry dependencies
-      uses: actions/cache@v3
-      with:
-        path: ~/.cache/pypoetry
-        key: ${{ runner.os }}-poetry-${{ hashFiles('**/poetry.lock') }}
-        restore-keys: |
-          ${{ runner.os }}-poetry-
+      - name: Cache Poetry dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pypoetry
+          key: ${{ runner.os }}-poetry-${{ hashFiles('**/poetry.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-poetry-
     
-    - name: Install dependencies
-      run: |
-        poetry install --no-interaction
+      - name: Install dependencies
+        run: |
+          poetry install --no-interaction
     
-    - name: Run unit tests
-      run: |
-        poetry run pytest -v -m "not integration" --cov=corpus --cov-report=xml --cov-report=term
+      - name: Run unit tests
+        run: |
+          poetry run pytest -v -m "not integration" --cov=corpus --cov-report=xml --cov-report=term
     
-    - name: Upload coverage
-      uses: codecov/codecov-action@v3
-      with:
-        files: ./coverage.xml
-        flags: unittests
-        name: codecov-umbrella
-        fail_ci_if_error: false
+      - name: Upload coverage
+        uses: codecov/codecov-action@v3
+        with:
+          files: ./coverage.xml
+          flags: unittests
+          name: codecov-umbrella
+          fail_ci_if_error: false
 
   integration-test:
     runs-on: ubuntu-latest
+    env:
+      KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+      KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
     
     services:
       postgres:
@@ -107,55 +110,55 @@ jobs:
           - 5432:5432
     
     steps:
-    - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
     
-    - name: Set up Python
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.11'
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
     
-    - name: Install Poetry
-      run: |
-        curl -sSL https://install.python-poetry.org | python3 -
-        echo "$HOME/.local/bin" >> $GITHUB_PATH
+      - name: Install Poetry
+        run: |
+          curl -sSL https://install.python-poetry.org | python3 -
+          echo "$HOME/.local/bin" >> $GITHUB_PATH
     
-    - name: Cache Poetry dependencies
-      uses: actions/cache@v3
-      with:
-        path: ~/.cache/pypoetry
-        key: ${{ runner.os }}-poetry-${{ hashFiles('**/poetry.lock') }}
-        restore-keys: |
-          ${{ runner.os }}-poetry-
+      - name: Cache Poetry dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pypoetry
+          key: ${{ runner.os }}-poetry-${{ hashFiles('**/poetry.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-poetry-
     
-    - name: Install dependencies
-      run: |
-        poetry install --no-interaction
+      - name: Install dependencies
+        run: |
+          poetry install --no-interaction
     
-    - name: Configure Kaggle credentials
-      if: ${{ secrets.KAGGLE_USERNAME != '' && secrets.KAGGLE_KEY != '' }}
-      run: |
-        mkdir -p ~/.kaggle
-        cat <<EOF > ~/.kaggle/kaggle.json
-        {
-          "username": "${{ secrets.KAGGLE_USERNAME }}",
-          "key": "${{ secrets.KAGGLE_KEY }}"
-        }
-        EOF
-        chmod 600 ~/.kaggle/kaggle.json
+      - name: Configure Kaggle credentials
+        if: ${{ env.KAGGLE_USERNAME != '' && env.KAGGLE_KEY != '' }}
+        run: |
+          mkdir -p ~/.kaggle
+          cat <<EOF > ~/.kaggle/kaggle.json
+          {
+            "username": "${{ env.KAGGLE_USERNAME }}",
+            "key": "${{ env.KAGGLE_KEY }}"
+          }
+          EOF
+          chmod 600 ~/.kaggle/kaggle.json
     
-    - name: Run integration tests
-      env:
-        RUN_INTEGRATION: "1"
-        POSTGRES_DSN: postgresql://test_user:test_password@localhost:5432/test_db
-        KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
-        KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
-      run: |
-        poetry run pytest -v -m integration --cov=corpus --cov-report=xml --cov-report=term
+      - name: Run integration tests
+        env:
+          RUN_INTEGRATION: "1"
+          POSTGRES_DSN: postgresql://test_user:test_password@localhost:5432/test_db
+          KAGGLE_USERNAME: ${{ env.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ env.KAGGLE_KEY }}
+        run: |
+          poetry run pytest -v -m integration --cov=corpus --cov-report=xml --cov-report=term
     
-    - name: Upload integration test coverage
-      uses: codecov/codecov-action@v3
-      with:
-        files: ./coverage.xml
-        flags: integrationtests
-        name: codecov-integration
-        fail_ci_if_error: false
+      - name: Upload integration test coverage
+        uses: codecov/codecov-action@v3
+        with:
+          files: ./coverage.xml
+          flags: integrationtests
+          name: codecov-integration
+          fail_ci_if_error: false
