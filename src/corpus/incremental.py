@@ -9,7 +9,6 @@ from hashlib import sha256
 from pathlib import Path
 from typing import Any
 
-ISO_FORMAT = "%Y-%m-%dT%H:%M:%S.%fZ"
 
 
 @dataclass(slots=True)
