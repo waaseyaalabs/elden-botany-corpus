@@ -135,7 +135,7 @@ jobs:
           poetry install --no-interaction
     
       - name: Configure Kaggle credentials
-        if: ${{ env.KAGGLE_USERNAME != '' && env.KAGGLE_KEY != '' }}
+        if: env.KAGGLE_USERNAME != '' && env.KAGGLE_KEY != ''
         run: |
           mkdir -p ~/.kaggle
           cat <<EOF > ~/.kaggle/kaggle.json
