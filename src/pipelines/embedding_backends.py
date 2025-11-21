@@ -109,7 +109,7 @@ class _OpenAIEncoder:
 
         batches: list[list[float]] = []
         for start in range(0, len(texts), self._batch_size):
-            batch = list(texts[start:start + self._batch_size])
+            batch = list(texts[start : start + self._batch_size])
             response = self._client.embeddings.create(
                 input=batch,
                 model=self._model_name,
