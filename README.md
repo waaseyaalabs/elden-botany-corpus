@@ -150,10 +150,12 @@ poetry run corpus curate --incremental
 poetry run corpus curate --incremental --since "2025-11-01T00:00:00Z"
 ```
 
-- State is persisted in `data/processed/incremental_manifest.json` along with
-   file hashes and record signatures per dataset.
-- Curated entities are snapshotted to
-   `data/curated/state/reconciled_entities.json` and reused as the baseline for
+- `corpus fetch` consults `data/processed/incremental_manifest.json` to skip
+   Kaggle/Impalers rows when you pass `--incremental` or `--since`, but it treats
+   the manifest as read-only so fetch runs never save incremental state.
+- `corpus curate` writes the manifest (file hashes + record signatures) and
+   snapshots curated entities to
+   `data/curated/state/reconciled_entities.json`, which becomes the baseline for
    incremental runs.
 - Pass `--full` (the default) or remove the manifest/state files to force a
    clean rebuild when needed.

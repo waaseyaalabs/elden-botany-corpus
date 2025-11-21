@@ -46,7 +46,7 @@ def main() -> None:
     default=False,
     help=(
         "Skip previously processed Kaggle/Impalers rows using the cache "
-        "manifest"
+        "manifest (read-only; fetch never saves incremental state)"
     ),
 )
 @click.option(

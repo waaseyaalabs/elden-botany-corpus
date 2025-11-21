@@ -316,6 +316,11 @@ can safely skip previously exported rows:
 
 - Manifest path: `data/processed/incremental_manifest.json`
 - Baseline curated state: `data/curated/state/reconciled_entities.json`
+- `corpus fetch` treats the manifest as read-only; `--incremental/--since`
+  runs consult the file to skip Kaggle/Impalers rows but never persist state.
+- `corpus curate` updates both the manifest (hash/signature cache) and the
+  reconciled baseline so subsequent incremental runs have an authoritative
+  reference point.
 
 Typical workflow:
 

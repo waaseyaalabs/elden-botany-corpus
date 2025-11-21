@@ -4,7 +4,6 @@ import json
 import os
 import textwrap
 import time
-from importlib import import_module
 from pathlib import Path
 from typing import TypedDict
 
@@ -13,6 +12,15 @@ import pytest
 from pytest import MonkeyPatch
 
 from pipeline.process import DataProcessor
+from pipeline.schemas import (
+    BOSSES_SCHEMA,
+    ITEMS_SCHEMA,
+    WEAPONS_SCHEMA,
+    SchemaVersion,
+    get_dataset_schema,
+    list_schema_versions,
+    validate_dataframe,
+)
 from pipeline.utils import (
     calculate_file_hash,
     normalize_categorical,
@@ -20,14 +28,6 @@ from pipeline.utils import (
     read_data_file,
     write_parquet,
 )
-
-schemas = import_module("pipeline.schemas")
-BOSSES_SCHEMA = schemas.BOSSES_SCHEMA
-ITEMS_SCHEMA = schemas.ITEMS_SCHEMA
-WEAPONS_SCHEMA = schemas.WEAPONS_SCHEMA
-get_dataset_schema = schemas.get_dataset_schema
-list_schema_versions = schemas.list_schema_versions
-validate_dataframe = schemas.validate_dataframe
 
 
 class TempDirs(TypedDict):
@@ -66,8 +66,11 @@ class TestSchemas:
     def test_list_schema_versions(self):
         """Schema registry should enumerate versions per dataset."""
         versions = list_schema_versions("weapons")
+        assert isinstance(versions, list)
         assert len(versions) == 1
-        assert versions[0].tag == "weapons_v1"
+        first_version = versions[0]
+        assert isinstance(first_version, SchemaVersion)
+        assert first_version.tag == "weapons_v1"
 
     def test_validate_with_schema_version(self):
         """validate_dataframe accepts SchemaVersion payloads."""
@@ -584,6 +587,8 @@ class TestDataProcessor:
 
         processor.config.setdefault("settings", {})["process_workers"] = 0
 
+        # Access the private helper via getattr to avoid pyright private-usage
+        # noise while keeping the test honest about the method name.
         resolve_worker_count = getattr(processor, "_resolve_worker_count")
 
         assert resolve_worker_count(None) == max(
@@ -612,6 +617,7 @@ class TestDataProcessor:
             }
         )
 
+        # See note above: getattr keeps pyright happy without suppressions.
         transform_weapons = getattr(processor, "_transform_weapons")
         result = transform_weapons(df)
 

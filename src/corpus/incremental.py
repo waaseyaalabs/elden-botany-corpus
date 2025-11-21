@@ -47,7 +47,20 @@ class IncrementalManifest:
         *,
         since: datetime | None = None,
     ) -> bool:
-        """Return True when a signature was processed prior to the cutoff."""
+        """Return True when a signature was processed prior to the cutoff.
+
+        Args:
+            dataset: Dataset key such as ``kaggle_base``.
+            signature: Stable content signature returned by
+                :func:`build_signature`.
+            since: Optional timestamp; when provided only records older than
+                this instant are considered processed.
+
+        Returns:
+            ``True`` when the manifest already contains ``signature`` for the
+            dataset and, if supplied, the recorded timestamp predates
+            ``since``.
+        """
 
         dataset_bucket = self._data["datasets"].get(dataset)
         if not dataset_bucket:
@@ -71,6 +84,7 @@ class IncrementalManifest:
         *,
         timestamp: datetime | None = None,
     ) -> None:
+        """Persist ``signature`` for ``dataset`` with an optional timestamp."""
         bucket = self._data["datasets"].setdefault(
             dataset,
             {"records": {}, "file_hashes": {}},
@@ -81,6 +95,7 @@ class IncrementalManifest:
         self._data["updated_at"] = records[signature]
 
     def update_file_hash(self, dataset: str, file_name: str, sha: str) -> None:
+        """Record the latest hash for a supporting file such as a CSV."""
         bucket = self._data["datasets"].setdefault(
             dataset,
             {"records": {}, "file_hashes": {}},
@@ -91,6 +106,7 @@ class IncrementalManifest:
         self._data["updated_at"] = datetime.now(UTC).isoformat()
 
     def save(self) -> None:
+        """Write the manifest and ensure parent directories exist."""
         self.path.parent.mkdir(parents=True, exist_ok=True)
         self._data["updated_at"] = datetime.now(UTC).isoformat()
         payload = json.dumps(self._data, indent=2, sort_keys=True)
@@ -98,13 +114,25 @@ class IncrementalManifest:
 
 
 def build_signature(dataset: str, *parts: str) -> str:
-    """Return a stable SHA256 signature for a dataset record."""
+    """Return a stable SHA256 signature for a dataset record.
+
+    Args:
+        dataset: Dataset key that anchors the signature namespace.
+        parts: Salient pieces of the record (table name, slug, etc.).
+
+    Returns:
+        Hex-encoded SHA256 digest suitable for manifest lookups.
+    """
 
     return IncrementalSignature(dataset=dataset, parts=tuple(parts)).to_hex()
 
 
 def parse_since(value: str | None) -> datetime | None:
-    """Parse an ISO-8601 timestamp into a timezone-aware datetime."""
+    """Parse an ISO-8601 timestamp into a timezone-aware datetime.
+
+    The parser accepts timestamps with or without ``Z`` suffixes and normalizes
+    them to UTC. Whitespace-only strings return ``None``.
+    """
 
     if not value:
         return None
