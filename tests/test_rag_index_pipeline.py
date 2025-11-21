@@ -21,7 +21,9 @@ from tests.helpers import DeterministicEncoder, write_sample_lore_corpus
 
 def test_build_rag_index_produces_artifacts(tmp_path: Path) -> None:
     lore_path = write_sample_lore_corpus(tmp_path)
-    embeddings_path = tmp_path / "data" / "embeddings" / "lore_embeddings.parquet"
+    embeddings_path = (
+        tmp_path / "data" / "embeddings" / "lore_embeddings.parquet"
+    )
     index_path = tmp_path / "data" / "embeddings" / "faiss_index.bin"
     metadata_path = tmp_path / "data" / "embeddings" / "rag_metadata.parquet"
     info_path = tmp_path / "data" / "embeddings" / "rag_index_meta.json"
@@ -54,7 +56,9 @@ def test_build_rag_index_produces_artifacts(tmp_path: Path) -> None:
 
 def test_query_index_supports_filters(tmp_path: Path) -> None:
     lore_path = write_sample_lore_corpus(tmp_path)
-    embeddings_path = tmp_path / "data" / "embeddings" / "lore_embeddings.parquet"
+    embeddings_path = (
+        tmp_path / "data" / "embeddings" / "lore_embeddings.parquet"
+    )
     index_path = tmp_path / "data" / "embeddings" / "faiss_index.bin"
     metadata_path = tmp_path / "data" / "embeddings" / "rag_metadata.parquet"
     info_path = tmp_path / "data" / "embeddings" / "rag_index_meta.json"

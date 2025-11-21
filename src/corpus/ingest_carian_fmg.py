@@ -15,7 +15,9 @@ def _relpath(filename: str) -> str:
 
 
 CARIAN_ARCHIVE_REPO: Final = "AsteriskAmpersand/Carian-Archive"
-CARIAN_BASE_URL: Final = f"https://raw.githubusercontent.com/{CARIAN_ARCHIVE_REPO}/main"
+CARIAN_BASE_URL: Final = (
+    f"https://raw.githubusercontent.com/{CARIAN_ARCHIVE_REPO}/main"
+)
 CARIAN_FMG_CANDIDATES: Final[dict[str, tuple[str, ...]]] = {
     "accessory_caption": ("AccessoryCaption.fmg.xml",),
     "accessory_info": ("AccessoryInfo.fmg.xml",),
@@ -114,17 +116,26 @@ class CarianFMGDownloader:
             relative_path = _relpath(filename)
             target_path = self.base_dir / relative_path
             url = f"{CARIAN_BASE_URL}/{relative_path}"
-            print(f"[{dataset}] Downloading candidate {filename} " "from Carian Archive…")
+            print(
+                f"[{dataset}] Downloading candidate {filename} "
+                "from Carian Archive…"
+            )
             response = requests.get(url, timeout=REQUEST_TIMEOUT_SECONDS)
             if response.status_code == 404:
                 last_error = relative_path
-                print(f"[{dataset}] Candidate missing from Carian Archive: " f"{filename}")
+                print(
+                    f"[{dataset}] Candidate missing from Carian Archive: "
+                    f"{filename}"
+                )
                 continue
             response.raise_for_status()
 
             target_path.parent.mkdir(parents=True, exist_ok=True)
             target_path.write_bytes(response.content)
-            print(f"[{dataset}] Saved {target_path} " f"({len(response.content)} bytes)")
+            print(
+                f"[{dataset}] Saved {target_path} "
+                f"({len(response.content)} bytes)"
+            )
             return target_path
 
         if last_error is not None:

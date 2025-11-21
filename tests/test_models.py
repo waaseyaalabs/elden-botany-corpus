@@ -10,8 +10,13 @@ from corpus.models import (
 
 def test_create_slug() -> None:
     """Test slug generation."""
-    assert create_slug("Sword of Night and Flame") == "sword_of_night_and_flame"
-    assert create_slug("Rennala, Queen of the Full Moon") == "rennala_queen_of_the_full_moon"
+    assert (
+        create_slug("Sword of Night and Flame") == "sword_of_night_and_flame"
+    )
+    assert (
+        create_slug("Rennala, Queen of the Full Moon")
+        == "rennala_queen_of_the_full_moon"
+    )
     assert create_slug("Dragon's Breath") == "dragons_breath"
     assert create_slug("  Spaces  ") == "spaces"
 

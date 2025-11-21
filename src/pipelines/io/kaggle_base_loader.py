@@ -81,7 +81,9 @@ def load_kaggle_base_items(raw_root: Path) -> list[dict[str, Any]]:
             category_raw=row.get("type"),
             weight=row.get("weight"),
             sell_price=_first_present(row, ["sellPrice", "sell_price"]),
-            max_stack=_first_present(row, ["maxAmount", "maxHeld", "max_held"]),
+            max_stack=_first_present(
+                row, ["maxAmount", "maxHeld", "max_held"]
+            ),
             rarity=row.get("rarity"),
             effect=row.get("effect"),
             obtained_from=row.get("obtainedFrom"),
@@ -216,7 +218,9 @@ def _load_kaggle_spell_rows(
             continue
 
         requirements = to_entry_list(row.get("requires"))
-        required_int, required_fai, required_arc = _requirements_from_entries(requirements)
+        required_int, required_fai, required_arc = _requirements_from_entries(
+            requirements
+        )
 
         record = build_spell_record(
             name=name,

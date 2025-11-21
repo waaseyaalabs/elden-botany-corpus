@@ -128,7 +128,9 @@ def _append_note(match: LoreMatch, note: str) -> None:
     if not note:
         return
     existing = getattr(match, "ordering_notes", "")
-    match.ordering_notes = f"{existing}; {note}".strip("; ") if existing else note
+    match.ordering_notes = (
+        f"{existing}; {note}".strip("; ") if existing else note
+    )
 
 
 def _default_cross_encoder_factory(

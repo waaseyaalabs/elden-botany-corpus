@@ -38,12 +38,16 @@ def generate_embeddings(
         raise ValueError(f"Unknown provider: {provider}")
 
 
-def _generate_openai_embeddings(df: pl.DataFrame, model: str, batch_size: int) -> pl.DataFrame:
+def _generate_openai_embeddings(
+    df: pl.DataFrame, model: str, batch_size: int
+) -> pl.DataFrame:
     """Generate embeddings using OpenAI API."""
     try:
         from openai import OpenAI
     except ImportError as err:
-        raise ImportError("OpenAI package not installed. Install with: poetry add openai") from err
+        raise ImportError(
+            "OpenAI package not installed. Install with: poetry add openai"
+        ) from err
 
     if not settings.openai_api_key:
         raise ValueError("OPENAI_API_KEY not set in environment")
@@ -77,7 +81,9 @@ def _generate_openai_embeddings(df: pl.DataFrame, model: str, batch_size: int) -
     return df
 
 
-def _generate_local_embeddings(df: pl.DataFrame, model: str, batch_size: int) -> pl.DataFrame:
+def _generate_local_embeddings(
+    df: pl.DataFrame, model: str, batch_size: int
+) -> pl.DataFrame:
     """Generate embeddings using local sentence-transformers."""
     try:
         from sentence_transformers import SentenceTransformer

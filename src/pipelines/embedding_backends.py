@@ -94,10 +94,8 @@ class _OpenAIEncoder:
             openai_module = import_module("openai")
         except ImportError as err:  # pragma: no cover - import guard
             raise ImportError(
-                (
-                    "openai package is not installed. "
-                    "Install with 'poetry add openai'"
-                )
+                "openai package is not installed. "
+                "Install with 'poetry add openai'"
             ) from err
 
         OpenAI = cast(Any, openai_module.OpenAI)
@@ -111,7 +109,8 @@ class _OpenAIEncoder:
 
         batches: list[list[float]] = []
         for start in range(0, len(texts), self._batch_size):
-            batch = list(texts[start:start + self._batch_size])
+            batch_end = start + self._batch_size
+            batch = list(texts[start:batch_end])
             response = self._client.embeddings.create(
                 input=batch,
                 model=self._model_name,

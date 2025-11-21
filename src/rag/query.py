@@ -473,9 +473,7 @@ def _parse_filter_expression(raw_expression: str) -> FilterExpression | None:
         return None
 
     values = [
-        token.strip()
-        for token in raw_values.split(",")
-        if token.strip()
+        token.strip() for token in raw_values.split(",") if token.strip()
     ]
     if not values:
         LOGGER.warning(

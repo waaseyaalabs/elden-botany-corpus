@@ -82,7 +82,9 @@ def test_fetch_carian_fmg_files_uses_alias_when_primary_missing(
 
     downloaded = fetch_carian_fmg_files(force=True)
     assert any(path.name == "ArtsName.fmg.xml" for path in downloaded)
-    assert not any(path.name == "WeaponSkillName.fmg.xml" for path in downloaded)
+    assert not any(
+        path.name == "WeaponSkillName.fmg.xml" for path in downloaded
+    )
 
     arts_files = list((raw_dir / "carian_archive").rglob("ArtsName.fmg.xml"))
     assert arts_files, "expected fallback FMG to be saved locally"

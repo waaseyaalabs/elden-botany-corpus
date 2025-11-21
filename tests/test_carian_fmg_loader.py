@@ -51,7 +51,9 @@ def test_item_loader_uses_alias_for_weapon_skill_names(tmp_path: Path) -> None:
     )
 
     records = load_carian_item_fmg(raw_root)
-    skill_records = [record for record in records if record["source"] == "carian_skill_fmg"]
+    skill_records = [
+        record for record in records if record["source"] == "carian_skill_fmg"
+    ]
     assert len(skill_records) == 1
     skill = skill_records[0]
     assert skill["name"] == "Flame Art"
@@ -79,7 +81,9 @@ def test_item_loader_uses_alias_for_weapon_skill_captions(
     )
 
     records = load_carian_item_fmg(raw_root)
-    skill_records = [record for record in records if record["source"] == "carian_skill_fmg"]
+    skill_records = [
+        record for record in records if record["source"] == "carian_skill_fmg"
+    ]
     assert len(skill_records) == 1
     skill = skill_records[0]
     assert skill["name"] == "Frost Stomp"

@@ -54,7 +54,8 @@ class LineageManifestBuilder:
             "generated_at": datetime.now(UTC).isoformat(),
             "total_records": total_records,
             "datasets": {
-                entity_type: meta["path"] for entity_type, meta in summary["datasets"].items()
+                entity_type: meta["path"]
+                for entity_type, meta in summary["datasets"].items()
             },
         }
 
@@ -71,7 +72,9 @@ class LineageManifestBuilder:
             "slug": entity.to_slug(),
             "entity_type": entity.entity_type,
             "name": entity.name,
-            "sources": [self._serialize_provenance(p) for p in entity.provenance],
+            "sources": [
+                self._serialize_provenance(p) for p in entity.provenance
+            ],
         }
 
     @staticmethod

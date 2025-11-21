@@ -589,7 +589,7 @@ class TestDataProcessor:
 
         # Access the private helper via getattr to avoid pyright private-usage
         # noise while keeping the test honest about the method name.
-        resolve_worker_count = getattr(processor, "_resolve_worker_count")
+        resolve_worker_count = processor._resolve_worker_count
 
         assert resolve_worker_count(None) == max(
             os.cpu_count() or 1,
@@ -618,7 +618,7 @@ class TestDataProcessor:
         )
 
         # See note above: getattr keeps pyright happy without suppressions.
-        transform_weapons = getattr(processor, "_transform_weapons")
+        transform_weapons = processor._transform_weapons
         result = transform_weapons(df)
 
         assert "weapon_id" in result.columns
@@ -646,7 +646,7 @@ class TestDataProcessor:
             }
         )
 
-        transform_weapons = getattr(processor, "_transform_weapons")
+        transform_weapons = processor._transform_weapons
         result = transform_weapons(df)
 
         # Missing damage should be filled with 0

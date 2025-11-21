@@ -34,7 +34,10 @@ class DeterministicEncoder:
         vectors: list[list[float]] = []
         for text in texts:
             checksum = sum(ord(char) for char in text)
-            vector = [((checksum + index * 31) % 997) / 997.0 for index in range(self.dim)]
+            vector = [
+                ((checksum + index * 31) % 997) / 997.0
+                for index in range(self.dim)
+            ]
             vectors.append(vector)
         return vectors
 

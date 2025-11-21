@@ -35,7 +35,10 @@ def test_lineage_builder_emits_per_entity_manifests(tmp_path: Path) -> None:
         provenance=[
             _sample_provenance(
                 "kaggle_dlc",
-                ("pedroaltobelli/ultimate-elden-ring-" "with-shadow-of-the-erdtree-dlc"),
+                (
+                    "pedroaltobelli/ultimate-elden-ring-"
+                    "with-shadow-of-the-erdtree-dlc"
+                ),
                 "weapons.csv",
             )
         ],
@@ -70,7 +73,9 @@ def test_lineage_builder_emits_per_entity_manifests(tmp_path: Path) -> None:
 
     weapon_records = json.loads(weapon_manifest.read_text())
     assert weapon_records[0]["slug"] == "sword_of_night_and_flame"
-    assert weapon_records[0]["sources"][0]["dataset"].startswith("pedroaltobelli/")
+    assert weapon_records[0]["sources"][0]["dataset"].startswith(
+        "pedroaltobelli/"
+    )
 
     spell_records = json.loads(spell_manifest.read_text())
     assert spell_records[0]["sources"][0]["source_file"] == "spells.json"
