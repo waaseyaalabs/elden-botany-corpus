@@ -88,6 +88,9 @@ A complete, production-ready data pipeline for curating Elden Ring game data (ba
 - ✅ **Unit Tests**: Models, reconciliation, utilities
 - ✅ **Fixtures**: Sample bosses.csv, weapons.json
 - ✅ **Test Coverage**: Core logic covered (aim: >80%)
+- ✅ **CLI Regression Coverage**:
+        `tests/test_cli_incremental.py` keeps `corpus fetch/curate --incremental`
+        behavior (read-only vs persisted manifest) under test.
 
 ### Documentation
 

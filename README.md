@@ -161,6 +161,9 @@ poetry run corpus curate --incremental --since "2025-11-01T00:00:00Z"
    clean rebuild when needed.
 - Logs note how many Kaggle/Impalers records were newly ingested vs. skipped so
    you can verify the delta before exporting.
+- `tests/test_cli_incremental.py` exercises both commands to ensure
+   `corpus fetch` stays read-only while `corpus curate` persists manifest
+   updates; extend it whenever you change the CLI flags or manifest plumbing.
 - **Lore embeddings and RAG artifacts always rebuild in full.** Changes to text
    weighting, embedding models, or reranker parameters require
    `make rag-embeddings && make rag-index` so downstream search stays consistent

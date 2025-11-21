@@ -25,6 +25,11 @@ Repository-specific guidance for AI coding agents working in `elden-botany-corpu
   run `make rag-embeddings && make rag-index`. Do not attempt to reuse the
   incremental manifest for these pipelines—stale vectors are worse than a longer
   rebuild.
+- Incremental manifests are split by command: `corpus fetch` only *reads*
+  `data/processed/incremental_manifest.json` while `corpus curate` reads and
+  writes both the manifest and `data/curated/state/reconciled_entities.json`.
+  Preserve this contract and extend `tests/test_cli_incremental.py` whenever the
+  CLI flow changes so agents can keep regressions out of the manifest logic.
 - `make rag-embeddings` now writes `data/embeddings/rag_rebuild_state.json`, a
   checksum guard that captures the lore parquet + weighting config. Run
   `make rag-guard` (or `python -m pipelines.rag_guard`) to confirm whether the
@@ -33,7 +38,7 @@ Repository-specific guidance for AI coding agents working in `elden-botany-corpu
 
 ## Code & documentation standards
 
-- Follow the repo default: max line length 100, type hints on every function, docstrings on public APIs, ASCII text unless the file already uses Unicode.
+- Follow the repo default: max line length 79, type hints on every function, docstrings on public APIs, ASCII text unless the file already uses Unicode.
 - Organize imports into stdlib / third-party / local groups. Let Ruff fix ordering.
 - Prefer descriptive names and structured logging.
 - Keep domain knowledge in `docs/` or `PROJECT_SUMMARY.md`; reference those sources instead of duplicating lore in code comments.
@@ -71,7 +76,9 @@ Repository-specific guidance for AI coding agents working in `elden-botany-corpu
    - `tests/test_ingest_*.py`
    - `tests/test_reconcile.py`
    - `tests/test_lineage.py` for lineage builder updates.
-3. For CLI scripts, prefer thin wrappers that call functions already covered by tests.
+3. For CLI scripts, prefer thin wrappers that call functions already covered by
+  tests, and extend `tests/test_cli_incremental.py` when adjusting
+  `--incremental/--since` flows so manifest behavior stays verified.
 4. If you skip tests due to external dependencies, mark them with the existing pytest markers rather than deleting them.
 
 ## Working with large artifacts
