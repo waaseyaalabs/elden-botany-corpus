@@ -1,6 +1,6 @@
 # Makefile for common tasks
 
-.PHONY: help setup install test lint format clean fetch curate load rag-embeddings rag-index rag-query rag-guard ci-local analysis-clusters analysis-graph analysis-summaries
+.PHONY: help setup install test lint format clean fetch curate load rag-embeddings rag-index rag-query rag-guard ci-local analysis-clusters analysis-graph analysis-summaries analysis-smoke
 
 help:
 	@echo "Elden Botany Corpus - Available Commands"
@@ -97,6 +97,9 @@ analysis-graph:
 
 analysis-summaries:
 	poetry run corpus analysis summaries $(ARGS)
+
+analysis-smoke:
+	@./scripts/analysis_smoke_test.sh
 
 docker-up:
 	docker compose -f docker/compose.example.yml up -d
