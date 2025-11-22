@@ -14,6 +14,8 @@ help:
 	@echo "  make clean      - Clean generated files"
 	@echo "  make fetch      - Fetch all data sources"
 	@echo "  make curate     - Curate corpus"
+	@echo "  make build-corpus - Fetch, curate, and regenerate motif coverage"
+	@echo "  make community-report - Rebuild motif coverage report only"
 	@echo "  make load       - Load to PostgreSQL (requires POSTGRES_DSN)"
 	@echo "  make rag-embeddings - Build lore_embeddings.parquet"
 	@echo "  make rag-index  - Build FAISS index + metadata"
@@ -58,6 +60,12 @@ fetch:
 
 curate:
 	poetry run corpus curate
+
+build-corpus:
+	poetry run python scripts/build_corpus.py $(ARGS)
+
+community-report:
+	poetry run python scripts/build_corpus.py --skip-fetch --skip-curate $(ARGS)
 
 load:
 	poetry run corpus load --create-schema

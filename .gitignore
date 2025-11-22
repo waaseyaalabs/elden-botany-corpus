@@ -63,6 +63,12 @@ data/curated/*.parquet
 data/curated/*.csv
 !data/curated/metadata.json
 data/embeddings/
+data/community/bundles/**
+!data/community/bundles/.gitkeep
+data/community/processed/**
+!data/community/processed/motif_coverage.parquet
+!data/community/processed/.gitkeep
+!data/community/README.md
 
 # Test artifacts
 .pytest_cache/

@@ -10,7 +10,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -25,7 +25,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -33,7 +33,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -48,7 +48,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -63,7 +63,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -71,7 +71,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -79,7 +79,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -94,7 +94,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -109,7 +109,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -117,7 +117,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -132,7 +132,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -140,7 +140,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -148,7 +148,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -163,7 +163,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -178,7 +178,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -193,7 +193,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -201,7 +201,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -216,7 +216,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -231,7 +231,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -239,7 +239,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -247,7 +247,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -262,7 +262,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -270,7 +270,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -278,7 +278,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -293,7 +293,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -301,7 +301,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -309,7 +309,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -324,7 +324,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -332,7 +332,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -340,7 +340,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -355,7 +355,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -370,7 +370,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -385,7 +385,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -400,7 +400,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -408,7 +408,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -416,7 +416,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -431,7 +431,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -439,7 +439,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -447,7 +447,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -462,7 +462,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -470,7 +470,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -485,7 +485,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -500,7 +500,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -508,7 +508,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -516,7 +516,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -531,7 +531,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -539,7 +539,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -554,7 +554,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -569,7 +569,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -577,7 +577,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -585,7 +585,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -600,7 +600,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -615,7 +615,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -623,7 +623,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -631,7 +631,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -646,7 +646,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -654,7 +654,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -669,7 +669,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -684,7 +684,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -692,7 +692,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -700,7 +700,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -715,7 +715,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -730,7 +730,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -745,7 +745,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -753,7 +753,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -761,7 +761,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -776,7 +776,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -791,7 +791,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -799,7 +799,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -807,7 +807,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -822,7 +822,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -830,7 +830,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -845,7 +845,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -853,7 +853,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -861,7 +861,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -876,7 +876,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -891,7 +891,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -906,7 +906,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -921,7 +921,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -936,7 +936,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -944,7 +944,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -952,7 +952,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -967,7 +967,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -975,7 +975,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -983,7 +983,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -998,7 +998,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -1013,7 +1013,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -1028,7 +1028,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -1043,7 +1043,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -1051,7 +1051,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -1059,7 +1059,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -1074,7 +1074,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -1089,7 +1089,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -1097,7 +1097,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -1105,7 +1105,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -1120,7 +1120,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -1135,7 +1135,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -1143,7 +1143,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -1151,7 +1151,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -1166,7 +1166,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -1174,7 +1174,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -1182,7 +1182,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -1197,7 +1197,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -1212,7 +1212,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -1227,7 +1227,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -1242,7 +1242,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -1250,7 +1250,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -1258,7 +1258,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -1273,7 +1273,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -1288,7 +1288,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -1303,7 +1303,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -1318,7 +1318,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -1326,7 +1326,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -1334,7 +1334,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -1349,7 +1349,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -1364,7 +1364,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -1379,7 +1379,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -1387,7 +1387,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -1395,7 +1395,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -1410,7 +1410,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -1425,7 +1425,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -1440,7 +1440,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -1455,7 +1455,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -1463,7 +1463,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -1471,7 +1471,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -1486,7 +1486,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -1501,7 +1501,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -1509,7 +1509,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -1517,7 +1517,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -1532,7 +1532,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -1547,7 +1547,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -1555,7 +1555,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -1563,7 +1563,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -1578,7 +1578,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -1586,7 +1586,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -1594,7 +1594,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -1609,7 +1609,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -1624,7 +1624,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -1632,7 +1632,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -1647,7 +1647,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -1662,7 +1662,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -1670,7 +1670,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -1685,7 +1685,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -1693,7 +1693,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -1701,7 +1701,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -1716,7 +1716,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -1731,7 +1731,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -1746,7 +1746,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -1761,7 +1761,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -1769,7 +1769,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -1777,7 +1777,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -1792,7 +1792,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -1800,7 +1800,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -1815,7 +1815,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -1830,7 +1830,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -1838,7 +1838,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -1846,7 +1846,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -1861,7 +1861,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -1869,7 +1869,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -1877,7 +1877,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -1892,7 +1892,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -1900,7 +1900,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -1915,7 +1915,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -1923,7 +1923,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -1931,7 +1931,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -1946,7 +1946,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -1961,7 +1961,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -1976,7 +1976,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -1991,7 +1991,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -1999,7 +1999,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -2007,7 +2007,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -2022,7 +2022,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -2037,7 +2037,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -2045,7 +2045,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -2053,7 +2053,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -2068,7 +2068,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -2083,7 +2083,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -2098,7 +2098,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -2113,7 +2113,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -2128,7 +2128,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -2136,7 +2136,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -2144,7 +2144,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -2159,7 +2159,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -2174,7 +2174,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -2189,7 +2189,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -2204,7 +2204,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -2212,7 +2212,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -2220,7 +2220,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -2235,7 +2235,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -2243,7 +2243,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -2258,7 +2258,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -2273,7 +2273,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -2281,7 +2281,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -2289,7 +2289,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -2304,7 +2304,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -2312,7 +2312,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -2327,7 +2327,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -2342,7 +2342,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -2350,7 +2350,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -2358,7 +2358,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -2373,7 +2373,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -2381,7 +2381,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -2389,7 +2389,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -2404,7 +2404,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -2412,7 +2412,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -2420,7 +2420,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -2435,7 +2435,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -2443,7 +2443,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -2451,7 +2451,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -2466,7 +2466,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -2474,7 +2474,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -2482,7 +2482,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -2497,7 +2497,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -2512,7 +2512,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -2527,7 +2527,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -2542,7 +2542,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -2557,7 +2557,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -2572,7 +2572,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -2580,7 +2580,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -2588,7 +2588,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -2603,7 +2603,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -2618,7 +2618,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -2633,7 +2633,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -2648,7 +2648,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -2663,7 +2663,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -2678,7 +2678,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -2693,7 +2693,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -2708,7 +2708,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -2723,7 +2723,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -2731,7 +2731,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -2746,7 +2746,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -2754,7 +2754,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -2762,7 +2762,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -2777,7 +2777,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -2785,7 +2785,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -2793,7 +2793,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -2808,7 +2808,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -2816,7 +2816,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -2831,7 +2831,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -2846,7 +2846,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -2854,7 +2854,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -2862,7 +2862,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -2877,7 +2877,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -2885,7 +2885,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -2893,7 +2893,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -2908,7 +2908,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -2923,7 +2923,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -2938,7 +2938,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -2953,7 +2953,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -2968,7 +2968,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -2976,7 +2976,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -2984,7 +2984,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -2999,7 +2999,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -3014,7 +3014,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -3029,7 +3029,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -3044,7 +3044,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -3052,7 +3052,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -3060,7 +3060,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -3075,7 +3075,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -3090,7 +3090,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -3098,7 +3098,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -3106,7 +3106,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -3121,7 +3121,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -3136,7 +3136,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -3151,7 +3151,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -3166,7 +3166,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -3174,7 +3174,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -3189,7 +3189,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -3197,7 +3197,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -3212,7 +3212,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -3220,7 +3220,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -3228,7 +3228,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -3243,7 +3243,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -3258,7 +3258,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -3273,7 +3273,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -3288,7 +3288,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -3303,7 +3303,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -3318,7 +3318,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -3326,7 +3326,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -3334,7 +3334,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -3349,7 +3349,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -3364,7 +3364,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -3372,7 +3372,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -3380,7 +3380,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -3395,7 +3395,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -3410,7 +3410,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -3425,7 +3425,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -3433,7 +3433,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -3441,7 +3441,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -3456,7 +3456,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -3464,7 +3464,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -3472,7 +3472,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -3487,7 +3487,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -3495,7 +3495,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -3510,7 +3510,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -3525,7 +3525,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -3540,7 +3540,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -3548,7 +3548,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -3556,7 +3556,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -3571,7 +3571,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -3586,7 +3586,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -3601,7 +3601,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -3616,7 +3616,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -3624,7 +3624,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -3632,7 +3632,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -3647,7 +3647,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -3655,7 +3655,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -3663,7 +3663,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -3678,7 +3678,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -3693,7 +3693,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -3708,7 +3708,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -3716,7 +3716,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -3724,7 +3724,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -3739,7 +3739,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -3754,7 +3754,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -3762,7 +3762,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -3777,7 +3777,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -3785,7 +3785,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -3793,7 +3793,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -3808,7 +3808,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -3816,7 +3816,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -3831,7 +3831,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -3839,7 +3839,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -3854,7 +3854,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -3862,7 +3862,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -3870,7 +3870,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -3885,7 +3885,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -3893,7 +3893,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -3908,7 +3908,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -3923,7 +3923,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -3938,7 +3938,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -3946,7 +3946,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -3961,7 +3961,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -3976,7 +3976,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -3991,7 +3991,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -3999,7 +3999,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -4014,7 +4014,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -4029,7 +4029,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -4044,7 +4044,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -4052,7 +4052,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -4067,7 +4067,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -4075,7 +4075,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -4090,7 +4090,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -4098,7 +4098,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -4106,7 +4106,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -4121,7 +4121,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -4136,7 +4136,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -4144,7 +4144,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -4152,7 +4152,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -4167,7 +4167,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -4175,7 +4175,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -4183,7 +4183,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -4198,7 +4198,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -4213,7 +4213,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -4221,7 +4221,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -4236,7 +4236,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -4251,7 +4251,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -4266,7 +4266,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -4274,7 +4274,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -4282,7 +4282,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -4297,7 +4297,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -4312,7 +4312,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -4327,7 +4327,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -4342,7 +4342,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -4357,7 +4357,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -4365,7 +4365,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -4373,7 +4373,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -4388,7 +4388,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -4403,7 +4403,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -4418,7 +4418,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -4433,7 +4433,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -4441,7 +4441,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -4449,7 +4449,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -4464,7 +4464,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -4479,7 +4479,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -4487,7 +4487,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -4502,7 +4502,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -4510,7 +4510,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -4518,7 +4518,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -4533,7 +4533,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -4541,7 +4541,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -4556,7 +4556,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -4564,7 +4564,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -4579,7 +4579,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -4587,7 +4587,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -4602,7 +4602,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -4610,7 +4610,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -4625,7 +4625,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -4640,7 +4640,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -4648,7 +4648,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -4656,7 +4656,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -4671,7 +4671,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -4686,7 +4686,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -4701,7 +4701,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -4716,7 +4716,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -4724,7 +4724,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -4739,7 +4739,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -4747,7 +4747,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -4762,7 +4762,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -4777,7 +4777,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -4792,7 +4792,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -4800,7 +4800,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -4808,7 +4808,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -4823,7 +4823,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -4831,7 +4831,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -4839,7 +4839,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -4854,7 +4854,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -4862,7 +4862,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -4870,7 +4870,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -4885,7 +4885,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -4893,7 +4893,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -4901,7 +4901,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -4916,7 +4916,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -4924,7 +4924,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -4939,7 +4939,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -4954,7 +4954,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -4969,7 +4969,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -4984,7 +4984,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       }
     ]
   },
@@ -4999,7 +4999,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -5007,7 +5007,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -5015,7 +5015,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -5030,7 +5030,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -5038,7 +5038,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   },
@@ -5053,7 +5053,7 @@
         "source_file": "eldenringScrap/creatures.csv",
         "uri": "kaggle://pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc/eldenringScrap/creatures.csv",
         "sha256": "39c528c069aeb75bb80010a687db3e8a21e4a2cd3429e8a2d9378a0dfe5987ff",
-        "retrieved_at": "2025-11-20T20:24:54.515121"
+        "retrieved_at": "2025-11-21T23:50:49.140523+00:00"
       },
       {
         "source": "kaggle_base",
@@ -5061,7 +5061,7 @@
         "source_file": "creatures.csv",
         "uri": "kaggle://robikscube/elden-ring-ultimate-dataset/creatures.csv",
         "sha256": "ab38f130efb0d11dce0e2e52a7eced5310ddedc931bf5105d944af14f32e3107",
-        "retrieved_at": "2025-11-20T20:24:54.475834"
+        "retrieved_at": "2025-11-21T23:50:49.048090+00:00"
       },
       {
         "source": "github_api",
@@ -5069,7 +5069,7 @@
         "source_file": "creatures.json",
         "uri": "https://eldenring.fanapis.com/api/creatures",
         "sha256": "5cf2158e6fc76174c61892213c563f7c83f139d813473a119134e8302e806f3b",
-        "retrieved_at": "2025-11-20T20:24:55.000507"
+        "retrieved_at": "2025-11-21T23:50:49.667682+00:00"
       }
     ]
   }

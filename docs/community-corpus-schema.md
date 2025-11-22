@@ -32,16 +32,56 @@ See `sql/010_schema.sql` for the authoritative definitions.
 - `load_motif_taxonomy` reads `config/community_motifs.yml` so CLI or UI layers can auto-complete valid motif tags.
 - Tests covering the schema live in `tests/test_community_schema.py` and guard taxonomy loading plus revision validation.
 
-## Motif Taxonomy (Initial Set)
+## Motif Taxonomy
 
-Defined in `config/community_motifs.yml` and loaded into `community_motif`.
+`config/community_motifs.yml` now captures the full reviewer-approved taxonomy and mirrors the `community_motif` table. Each entry tracks synonyms, narrative signals, and canonical examples to anchor annotations.
 
-- **Botanical**: `fungus`, `thorn`, `sap`
-- **Elemental**: `gravity`, `flame`, `glintstone`
-- **Narrative**: `rebirth`, `martyrdom`, `betrayal`
-- **Cosmic**: `scarlet_rot`, `primeval_current`, `dream`
+### Botanical
 
-Each entry includes synonyms, narrative signals, and canonical examples to shorten review loops. The YAML `review_log` currently records a pending sign-off entry so lore editors can append their approval notes inline.
+- `fungus` – scarlet rot blooms, parasitic mycelia imagery.
+- `thorn` – binding brambles and thorn-crowned figures.
+- `sap` – amber tears, memory resin, lifeblood motifs.
+- `lichen` – mossbound sigils, weathered bark armor.
+- `root` – Erdtree root networks channeling grace.
+
+### Elemental
+
+- `gravity` – starscourge pressure and meteor sorceries.
+- `flame` – golden, black, or frenzied cleansing fire.
+- `glintstone` – crystalline intellect and primeval currents.
+- `storm` – tempest oaths, dragon call lightning.
+- `frost` – hoarfrost stasis, brittle promises.
+
+### Narrative
+
+- `rebirth` – larval tears, cocoons, cyclical vows.
+- `martyrdom` – chosen suffering, thorn-chariots.
+- `betrayal` – shattered rings, usurped thrones.
+- `oath` – grace bindings, blood/flame pledges.
+- `twin` – mirrored fates and conjoined spirits.
+
+### Cosmic
+
+- `scarlet_rot` – outer god of rot and crimson spores.
+- `primeval_current` – fate tides and glintstone flow.
+- `dream` – reveries bridging waking and astral planes.
+
+### Archetypal
+
+- `trickster` – masks, riddles, shapeshifters.
+- `guardian` – threshold wardens, gate-bound entities.
+- `pilgrim` – wandering relic bearers and endless quests.
+
+Lore editors can append approvals to `review_log` inside the YAML to document taxonomy governance.
+
+## Motif Coverage & Lore Mapping
+
+The `pipelines.motif_coverage` module scans curated lore lines (default `data/curated/unified.parquet`) and emits:
+
+- `data/community/processed/motif_coverage.parquet` containing keyword counts, coverage percentages, and up to five representative canonical IDs per motif.
+- `docs/motif-taxonomy.md` summarizing the taxonomy plus a Markdown coverage table for quick review.
+
+Run `poetry run corpus community motifs-report [--curated PATH]` to regenerate both artifacts whenever the curated corpus or taxonomy changes. These outputs provide the stable mapping between motif IDs and lore lines needed for downstream clustering.
 
 ## Provenance & Versioning Strategy
 
@@ -104,6 +144,10 @@ Lore editors can mark the checklist directly in this doc after reviewing the sch
 
 ## Tooling Considerations
 
-- `CommunityAnnotation` + `CommunityAnnotationRevision` models can be wrapped by a CLI command (`corpus community annotate`) that loads motifs, validates input, and writes rows to the database or Parquet dumps in `data/community/`.
+- `CommunityAnnotation` + `CommunityAnnotationRevision` models now power the `corpus community` CLI:
+    - `corpus community init` scaffolds bundle directories under `data/community/bundles/`.
+    - `corpus community validate` checks YAML bundles against `community_schema` + motif taxonomy.
+    - `corpus community ingest` loads bundles via the ingestion pipeline and writes `community_*.parquet` tables to `data/community/processed/`.
+    - `corpus community list` provides quick summaries for on-disk bundles (status, contributor, motif count).
 - The join table makes motif filtering cheap for downstream RAG weighting (e.g., filter to `primary` motifs before embedding clusters).
 - Use the sample tests as reference for future UI contracts and extend coverage as new fields land.
