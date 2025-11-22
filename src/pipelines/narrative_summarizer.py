@@ -4,9 +4,10 @@ from __future__ import annotations
 
 import json
 import logging
+from collections.abc import Mapping
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Mapping, cast
+from typing import Any, cast
 
 import pandas as pd
 from corpus.community_schema import MotifTaxonomy, load_motif_taxonomy
@@ -171,9 +172,7 @@ class NarrativeSummariesPipeline:
             top_motifs,
         )
         summary_motif_slugs = [
-            str(item.get("slug"))
-            for item in top_motifs
-            if item.get("slug")
+            str(item.get("slug")) for item in top_motifs if item.get("slug")
         ]
         supporting_quotes = [
             str(quote.get("lore_id"))
@@ -285,9 +284,7 @@ class NarrativeSummariesPipeline:
         if value is None:
             return []
         if not isinstance(value, list):
-            raise LLMResponseError(
-                f"LLM field '{field_name}' must be a list"
-            )
+            raise LLMResponseError(f"LLM field '{field_name}' must be a list")
         typed_list = cast(list[Any], value)
         result: list[str] = []
         for item in typed_list:
@@ -510,9 +507,7 @@ class NarrativeSummariesPipeline:
                 lines.append("Quotes:")
                 quote_items = cast(list[dict[str, Any]], entry["quotes"])
                 for quote in quote_items:
-                    motif_list = ", ".join(
-                        cast(list[str], quote["motifs"])
-                    )
+                    motif_list = ", ".join(cast(list[str], quote["motifs"]))
                     lines.append(f"- {quote['text']} ({motif_list})")
             lines.append("")
         return "\n".join(lines)

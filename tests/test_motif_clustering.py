@@ -34,9 +34,10 @@ def tiny_lore_frame() -> pd.DataFrame:
 
 def test_sample_frame_is_deterministic(tiny_lore_frame: pd.DataFrame) -> None:
     config = MotifClusteringConfig(max_rows=2, random_seed=1)
-    pipeline = MotifClusteringPipeline(config)
-    sampled_first = pipeline.sample_frame(tiny_lore_frame)
-    sampled_second = pipeline.sample_frame(tiny_lore_frame)
+    first_pipeline = MotifClusteringPipeline(config)
+    second_pipeline = MotifClusteringPipeline(config)
+    sampled_first = first_pipeline.sample_frame(tiny_lore_frame)
+    sampled_second = second_pipeline.sample_frame(tiny_lore_frame)
     assert sampled_first.equals(sampled_second)
 
 

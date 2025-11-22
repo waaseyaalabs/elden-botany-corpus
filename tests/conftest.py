@@ -4,6 +4,7 @@ import os
 import sys
 from collections.abc import Generator
 from pathlib import Path
+from types import ModuleType
 from typing import Any
 
 import pytest
@@ -14,6 +15,17 @@ if str(SRC_DIR) not in sys.path:
     sys.path.insert(0, str(SRC_DIR))
 if str(ROOT_DIR) not in sys.path:
     sys.path.insert(0, str(ROOT_DIR))
+
+
+if "openai" not in sys.modules:
+    class _OpenAIStub:
+        def __init__(self, *args: Any, **kwargs: Any) -> None:
+            msg = "Install the 'openai' extra to enable OpenAI integrations"
+            raise RuntimeError(msg)
+
+    openai_module = ModuleType("openai")
+    openai_module.OpenAI = _OpenAIStub  # type: ignore[attr-defined]
+    sys.modules["openai"] = openai_module
 
 
 @pytest.fixture

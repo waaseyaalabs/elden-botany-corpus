@@ -4,7 +4,8 @@ from __future__ import annotations
 
 import json
 import os
-from typing import Any, Mapping, cast
+from collections.abc import Mapping
+from typing import Any, cast
 
 from pipelines.llm.base import LLMConfig, LLMResponseError
 
@@ -194,7 +195,7 @@ class OpenAILLMClient:
         end = raw.rfind("}")
         if start == -1 or end == -1:
             return raw
-        return raw[start:end + 1]
+        return raw[start : end + 1]
 
     def _validate_payload(self, parsed: Mapping[str, Any]) -> None:
         for field in (

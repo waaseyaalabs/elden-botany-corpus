@@ -3,12 +3,13 @@
 from __future__ import annotations
 
 import json
+from collections.abc import Mapping
 from pathlib import Path
-from typing import Any, Mapping
+from typing import Any
 
 import pandas as pd
-
 from corpus.community_schema import MotifTaxonomy
+
 from pipelines.llm.base import LLMConfig, LLMResponseError
 from pipelines.narrative_summarizer import (
     NarrativeSummariesConfig,
