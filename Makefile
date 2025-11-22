@@ -1,6 +1,6 @@
 # Makefile for common tasks
 
-.PHONY: help setup install test lint format clean fetch curate load rag-embeddings rag-index rag-query rag-guard ci-local analysis-clusters
+.PHONY: help setup install test lint format clean fetch curate load rag-embeddings rag-index rag-query rag-guard ci-local analysis-clusters analysis-graph analysis-summaries
 
 help:
 	@echo "Elden Botany Corpus - Available Commands"
@@ -22,6 +22,8 @@ help:
 	@echo "  make rag-guard  - Check checksum guard for lore corpus/RAG"
 	@echo "  make rag-query  - Run semantic search (pass QUERY='...')"
 	@echo "  make analysis-clusters - Run motif clustering analysis"
+	@echo "  make analysis-graph - Build NPC motif interaction graph (Phase 7)"
+	@echo "  make analysis-summaries - Generate narrative summaries (Phase 7)"
 	@echo ""
 
 setup:
@@ -89,6 +91,12 @@ rag-query:
 
 analysis-clusters:
 	poetry run corpus analysis clusters --export $(ARGS)
+
+analysis-graph:
+	poetry run corpus analysis graph $(ARGS)
+
+analysis-summaries:
+	poetry run corpus analysis summaries $(ARGS)
 
 docker-up:
 	docker compose -f docker/compose.example.yml up -d

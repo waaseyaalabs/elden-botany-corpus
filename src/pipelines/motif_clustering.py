@@ -5,7 +5,6 @@ from __future__ import annotations
 import json
 import logging
 import math
-import re
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, cast
@@ -14,11 +13,7 @@ import click
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-from corpus.community_schema import (
-    MotifEntry,
-    MotifTaxonomy,
-    load_motif_taxonomy,
-)
+from corpus.community_schema import MotifTaxonomy, load_motif_taxonomy
 from corpus.config import settings
 from numpy.typing import NDArray
 
@@ -28,6 +23,10 @@ from pipelines.embedding_backends import (
     create_encoder,
 )
 from pipelines.motif_coverage import COVERAGE_FILENAME
+from pipelines.motif_taxonomy_utils import (
+    compile_motif_patterns,
+    detect_motif_hits,
+)
 
 LOGGER = logging.getLogger(__name__)
 
@@ -86,7 +85,7 @@ class MotifClusteringPipeline:
         self.config = config or MotifClusteringConfig()
         self._taxonomy = taxonomy or load_motif_taxonomy()
         self._rng = np.random.default_rng(self.config.random_seed)
-        self._motif_patterns = _compile_motif_patterns(self._taxonomy)
+        self._motif_patterns = compile_motif_patterns(self._taxonomy)
 
     def run(self) -> MotifClusterArtifacts:
         """Execute the clustering workflow and persist artifacts."""
@@ -267,14 +266,7 @@ class MotifClusteringPipeline:
         return frame
 
     def _detect_motif_hits(self, texts: pd.Series) -> pd.DataFrame:
-        if not self._motif_patterns:
-            return pd.DataFrame(index=texts.index)
-
-        normalized = texts.astype(str).fillna("")
-        hits: dict[str, list[bool]] = {}
-        for slug, pattern in self._motif_patterns.items():
-            hits[slug] = [bool(pattern.search(value)) for value in normalized]
-        return pd.DataFrame(hits)
+        return detect_motif_hits(texts, self._motif_patterns)
 
     def _write_artifacts(
         self,
@@ -333,30 +325,6 @@ class MotifClusteringPipeline:
         plt.tight_layout()
         plt.savefig(path, dpi=200)
         plt.close()
-
-
-def _compile_motif_patterns(
-    taxonomy: MotifTaxonomy,
-) -> dict[str, re.Pattern[str]]:
-    patterns: dict[str, re.Pattern[str]] = {}
-    for category in taxonomy.categories:
-        for motif in category.motifs:
-            pattern = _keyword_pattern(motif)
-            if pattern is not None:
-                patterns[motif.slug] = pattern
-    return patterns
-
-
-def _keyword_pattern(motif: MotifEntry) -> re.Pattern[str] | None:
-    keywords = (
-        {motif.label} | set(motif.synonyms) | set(motif.narrative_signals)
-    )
-    normalized = {word.strip().lower() for word in keywords if word.strip()}
-    if not normalized:
-        return None
-    escaped = [re.escape(word) for word in normalized]
-    pattern = "|".join(escaped)
-    return re.compile(pattern, re.IGNORECASE)
 
 
 def summarize_clusters(

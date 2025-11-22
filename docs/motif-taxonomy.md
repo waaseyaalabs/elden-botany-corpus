@@ -37,3 +37,9 @@ reports:
 - The resulting JSON report highlights exemplar lore lines per cluster, motif
 	density deltas relative to the global coverage metrics above, and the
 	associated visualization for qualitative review.
+- `poetry run corpus analysis graph` (Phase 7 Branch 2) will assemble the NPC
+	motif interaction graph, exposing NetworkX exports plus diagnostics that tie
+	motif co-occurrence back to this taxonomy.
+- `poetry run corpus analysis summaries` (Phase 7 Branch 3) will feed graph and
+	clustering outputs into the narrative summarizer, generating clan-level
+	briefings with guardrailed LLM prompts and citations into curated lore.
