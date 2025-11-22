@@ -50,7 +50,10 @@ def analysis() -> None:
     "--output-dir",
     type=click.Path(path_type=Path),
     default=None,
-    help="Directory for analysis artifacts (defaults to data/analysis)",
+    help=(
+        "Directory for motif clustering artifacts "
+        "(defaults to data/analysis/motif_clustering)."
+    ),
 )
 @click.option("--model", type=str, default=None)
 @click.option(
@@ -133,7 +136,10 @@ def clusters(
     "--output-dir",
     type=click.Path(path_type=Path),
     default=None,
-    help="Directory for graph artifacts (defaults to data/analysis).",
+    help=(
+        "Directory for graph artifacts "
+        "(defaults to data/analysis/npc_motif_graph)."
+    ),
 )
 @click.option(
     "--category",
@@ -171,13 +177,19 @@ def graph(
     "--graph-dir",
     type=click.Path(path_type=Path),
     default=None,
-    help="Directory containing npc motif graph artifacts.",
+    help=(
+        "Directory containing NPC motif graph artifacts "
+        "(defaults to data/analysis/npc_motif_graph)."
+    ),
 )
 @click.option(
     "--output-dir",
     type=click.Path(path_type=Path),
     default=None,
-    help="Directory for narrative summaries (defaults to data/analysis).",
+    help=(
+        "Directory for narrative summaries "
+        "(defaults to data/analysis/narrative_summaries)."
+    ),
 )
 @click.option("--max-motifs", type=int, default=None)
 @click.option("--max-quotes", type=int, default=None)

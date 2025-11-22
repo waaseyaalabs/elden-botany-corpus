@@ -88,6 +88,24 @@ class FailingLLMClient(FakeLLMClient):
         raise LLMResponseError("boom")
 
 
+class MismatchedLLMClient(FakeLLMClient):
+    """LLM client that returns responses for the wrong entity."""
+
+    def summarize_entity(self, payload: Mapping[str, Any]) -> dict[str, Any]:
+        result = super().summarize_entity(payload)
+        result["canonical_id"] = "npc:radahn"
+        return result
+
+
+class HallucinatedQuoteLLMClient(FakeLLMClient):
+    """LLM client that references unsupported quote identifiers."""
+
+    def summarize_entity(self, payload: Mapping[str, Any]) -> dict[str, Any]:
+        result = super().summarize_entity(payload)
+        result["supporting_quotes"] = ["invented-quote"]
+        return result
+
+
 def test_narrative_summaries_pipeline(tmp_path: Path) -> None:
     graph_dir, taxonomy = _prepare_graph(tmp_path)
 
@@ -158,3 +176,53 @@ def test_narrative_summaries_pipeline_llm_fallback(tmp_path: Path) -> None:
     assert entry["llm_used"] is False
     assert entry["llm_provider"] == "fake"
     assert "npc:melina" in entry["summary_text"]
+
+
+def test_narrative_summaries_pipeline_rejects_mismatched_responses(
+    tmp_path: Path,
+) -> None:
+    graph_dir, taxonomy = _prepare_graph(tmp_path)
+    bad_llm = MismatchedLLMClient()
+
+    pipeline = NarrativeSummariesPipeline(
+        config=NarrativeSummariesConfig(
+            graph_dir=graph_dir,
+            output_dir=tmp_path / "summaries_mismatch",
+            max_motifs=2,
+            max_quotes=1,
+        ),
+        taxonomy=taxonomy,
+        llm_client=bad_llm,
+    )
+    artifacts = pipeline.run()
+
+    payload = json.loads(artifacts.summaries_json.read_text())
+    entry = payload["summaries"][0]
+    assert entry["llm_used"] is False
+    assert entry["summary_text"] != "FAKE SUMMARY"
+    assert "npc:melina" in entry["summary_text"]
+
+
+def test_narrative_summaries_pipeline_rejects_hallucinated_quotes(
+    tmp_path: Path,
+) -> None:
+    graph_dir, taxonomy = _prepare_graph(tmp_path)
+    bad_llm = HallucinatedQuoteLLMClient()
+
+    pipeline = NarrativeSummariesPipeline(
+        config=NarrativeSummariesConfig(
+            graph_dir=graph_dir,
+            output_dir=tmp_path / "summaries_hallucinated",
+            max_motifs=2,
+            max_quotes=1,
+        ),
+        taxonomy=taxonomy,
+        llm_client=bad_llm,
+    )
+    artifacts = pipeline.run()
+
+    payload = json.loads(artifacts.summaries_json.read_text())
+    entry = payload["summaries"][0]
+    assert entry["llm_used"] is False
+    assert entry["supporting_quotes"] != ["invented-quote"]
+    assert entry["supporting_quotes"], "Expected fallback quotes"

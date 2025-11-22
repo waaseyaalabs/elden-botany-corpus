@@ -117,6 +117,26 @@ elden-botany-corpus/
    - `make analysis-summaries ARGS="--llm-model gpt-5.1"` → hero run.
    - `make analysis-summaries ARGS="--llm-model gpt-4o-mini"` → debug run.
 
+#### End-to-end analysis workflow
+
+1. **Cluster lore motifs**: `make analysis-clusters` runs
+   `poetry run corpus analysis clusters --export`, writing artifacts under
+   `data/analysis/motif_clustering/`. Pass overrides through
+   `ARGS="--curated path/to/lore.parquet --max-rows 20000"` when needed.
+2. **Build the NPC motif graph**: `make analysis-graph` produces the graph,
+   GraphML, and JSON report inside `data/analysis/npc_motif_graph/`. Run this
+   after every curated lore refresh so downstream steps see the latest stats.
+3. **Generate narrative summaries**: `make analysis-summaries` consumes the
+   graph artifacts and emits JSON/Parquet/Markdown outputs in
+   `data/analysis/narrative_summaries/`. Add `ARGS="--dry-run-llm"` for the
+   heuristic fallback or adjust `--llm-model` / `--llm-provider` to match your
+   deployment. Each run records the provider/model plus whether an LLM was
+   actually used.
+
+Run the steps in order whenever you need a fresh qualitative drop; summaries
+fail fast if the graph artifacts are missing or stale, so keeping this workflow
+together prevents mismatched datasets.
+
 ### 1. Clone & Install
 
 ```bash

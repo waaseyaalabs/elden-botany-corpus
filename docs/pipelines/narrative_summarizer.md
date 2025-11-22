@@ -68,7 +68,7 @@ entity (either because `--dry-run-llm` was set or the LLM raised an
 Run the pipeline after the motif graph has been generated:
 
 ```bash
-poetry run corpus analysis graph --export  # generates graph artifacts
+poetry run corpus analysis graph  # generates graph artifacts
 poetry run corpus analysis summaries --graph-dir data/analysis/npc_motif_graph
 ```
 
