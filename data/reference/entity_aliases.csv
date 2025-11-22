@@ -1,0 +1,51 @@
+raw_id,canonical_id,confidence,comment
+npc:carian_speaker_10001*,npc:melina,0.95,Offers the maiden accord and rune-channeling pact
+npc:carian_speaker_10002*,npc:melina,0.95,Level-up handshake invocation 'Let my hand rest upon you'
+npc:carian_speaker_10003*,npc:melina,0.9,Explains grace guidance to the Tarnished
+npc:carian_speaker_100041*,npc:marika,0.95,Direct quote 'My Lord and thy warriors' from Marika's decree
+npc:carian_speaker_100044*,npc:marika,0.95,Marika commands warriors to brandish the Elden Ring
+npc:carian_speaker_100045*,npc:marika,0.95,Marika's instruction about joining or divesting from the Order
+npc:carian_speaker_10010*,npc:marika,0.95,Opening proclamation 'Hear me Demigods' addressed by Marika
+npc:carian_speaker_10011*,npc:melina,0.9,Companion chatter about Boc and Roundtable errands
+npc:carian_speaker_10012*,npc:melina,0.9,Mentions 'other you' after housing an outer presence
+npc:carian_speaker_10013*,npc:melina,0.9,Reflects on being born at the foot of the Erdtree
+npc:carian_speaker_10014*,npc:melina,1.0,Explicit 'It''s me Melina' at Erdtree barrier
+npc:carian_speaker_10015*,npc:melina,0.95,Mountaintops guidance prior to Flame of Ruin
+npc:carian_speaker_10016*,npc:melina,0.9,Declares acting of her own volition
+npc:carian_speaker_10017*,npc:melina,0.95,Encourages player near Flame of Ruin
+npc:carian_speaker_10018*,npc:melina,0.95,Warns against claiming the Frenzied Flame
+npc:carian_speaker_10019*,npc:melina,0.95,Breaks accord after inheriting the Frenzied Flame
+npc:carian_speaker_1061*,npc:ranni,1.0,Prefix-range mapping for Ranni/Renna
+npc:carian_speaker_1062*,npc:ranni,1.0,Prefix-range mapping for Ranni/Renna
+npc:carian_speaker_1063*,npc:ranni,1.0,Prefix-range mapping for Ranni/Renna
+npc:carian_speaker_2050*,npc:melina,0.9,Frenzied Flame ending vow culminating in 'Destined Death'
+npc:carian_speaker_2054*,npc:marika,0.95,Prayer beginning 'Young seedling' and 'Elden Ring O Elden Ring'
+npc:carian_speaker_2056*,npc:marika,0.95,Marika's vision 'If thou covetest the throne'
+npc:carian_speaker_2058*,npc:melina,1.0,Accord introduction 'Greetings...I am Melina'
+npc:carian_speaker_216*,npc:blaidd,1.0,Blaidd half-wolf questline
+npc:carian_speaker_220*,npc:iron_fist_alexander,1.0,Self-identifies as Iron Fist Alexander stuck in a hole
+npc:carian_speaker_223*,npc:boc_the_seamster,1.0,Explicit 'The name''s Boc' tree-curse arc
+npc:carian_speaker_224*,npc:war_counselor_iji,1.0,Blacksmith Iji introduction at Carian Manor gate
+npc:carian_speaker_226*,npc:jar_bairn,0.8,Potentate trial dialogue unique to Jar Bairn
+npc:carian_speaker_301*,npc:white_mask_varre,1.0,White Mask Varre's 'maidenless' greeting
+npc:carian_speaker_307*,npc:preceptor_seluvis,1.0,Seluvis introduces himself as preceptor
+npc:carian_speaker_309*,npc:patches,1.0,'I'm Patches' repentance ambush lines
+npc:carian_speaker_310*,npc:irina,1.0,Irina requests help delivering a letter from Castle Morne
+npc:carian_speaker_313*,npc:rya,1.0,Rya asks for her stolen necklace
+npc:carian_speaker_316*,npc:sorceress_sellen,1.0,Sellen self-identifies in Waypoint Ruins
+npc:carian_speaker_31808*,npc:shabriri,1.0,Shabriri Frenzied Flame guidance
+npc:carian_speaker_31882*,npc:shabriri,1.0,Shabriri rejection branch dialogues
+npc:carian_speaker_319*,npc:d_hunter_of_the_dead,1.0,D warns Tarnished about Those Who Live in Death
+npc:carian_speaker_320*,npc:roderika,1.0,Roderika laments grafting at Stormveil
+npc:carian_speaker_322*,npc:fia,1.0,Fia introduces herself as the deathbed companion
+npc:carian_speaker_324*,npc:gideon_ofnir,1.0,Gideon Ofnir the All-knowing
+npc:carian_speaker_325*,npc:sorcerer_rogier,1.0,Rogier greets player inside Stormveil
+npc:carian_speaker_334*,npc:nepheli_loux,1.0,Nepheli Loux battle invitation against Godrick
+npc:carian_speaker_348*,npc:millicent,1.0,Millicent scarlet rot treatment dialogue
+npc:carian_speaker_349*,npc:gowry,1.0,Gowry asks aid for Millicent
+npc:carian_speaker_351*,npc:brother_corhyn,1.0,Brother Corhyn introduces himself at Roundtable Hold
+npc:carian_speaker_300*,npc:tanith,1.0,Tanith Volcano Manor arc
+npc:carian_speaker_202*,npc:gurranq_beast_clergyman,0.9,Gurranq snarls 'Feed me more Death' at Bestial Sanctum
+npc:carian_speaker_31003*,npc:hyetta,1.0,Hyetta fingerprint grape questline
+npc:carian_speaker_310010010,npc:hyetta,1.0,Hyetta introductory block
+npc:carian_speaker_800*,npc:merchant_kale,1.0,Nomadic merchant Kale welcomes Tarnished at Elleh
