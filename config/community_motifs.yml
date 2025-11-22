@@ -39,6 +39,26 @@ categories:
         canonical_examples:
           - "Erdtree's amber tears"
           - "Mirage rinds"
+      - slug: "lichen"
+        label: "Lichen & Bark"
+        description: "Weathered bark, mossbound sigils, and patient growth over stone."
+        synonyms: ["moss", "lichen", "bark"]
+        narrative_signals:
+          - "Ancient trees etched with runes or growths"
+          - "Armor described as moss-eaten or bark-plated"
+        canonical_examples:
+          - "Dragon Communion ruins"
+          - "Ancient dragon cultists"
+      - slug: "root"
+        label: "Roots & Veins"
+        description: "Buried tendrils channeling power, Erdtree roots threading the lands between."
+        synonyms: ["root", "tendril", "vein"]
+        narrative_signals:
+          - "Roots storing memory or grace"
+          - "Characters following root-path prophecies"
+        canonical_examples:
+          - "Frenzied Flame catacombs"
+          - "Fia's champions"
   elemental:
     label: "Elemental"
     description: "Classical elements plus gravity, order, and outer cosmic forces."
@@ -73,6 +93,26 @@ categories:
         canonical_examples:
           - "Primeval Sorcerer Lusat"
           - "Crystalian beings"
+      - slug: "storm"
+        label: "Storm & Tempest"
+        description: "Tempest knights, stormcallers, and wind-bound oaths."
+        synonyms: ["storm", "tempest", "squall"]
+        narrative_signals:
+          - "Weapons crackling with wind"
+          - "Knights invoking dragons of stormveil"
+        canonical_examples:
+          - "Stormveil soldiers"
+          - "Ancient dragon cult"
+      - slug: "frost"
+        label: "Frost & Hoarfrost"
+        description: "Silver mist, cold sorcery, and stagnant dream-ice."
+        synonyms: ["frost", "hoarfrost", "ice"]
+        narrative_signals:
+          - "Wintry breath freezing time"
+          - "References to brittle promises"
+        canonical_examples:
+          - "Hoarfrost Stomp"
+          - "Freezing potions of Albinaurics"
   narrative:
     label: "Narrative"
     description: "Archetypal story beats, vows, betrayals, and ritual scars."
@@ -104,6 +144,26 @@ categories:
           - "Lore describing trust turned weapon"
         canonical_examples:
           - "Night of Black Knives"
+      - slug: "oath"
+        label: "Oaths & Vows"
+        description: "Bindings of grace, blood, or flame that exact a cost."
+        synonyms: ["oath", "vow", "pledge"]
+        narrative_signals:
+          - "Language emphasizing sworn service"
+          - "Lore where vows warp the speaker"
+        canonical_examples:
+          - "Tarnished oath of Lord's approval"
+          - "Serpent-hunter's pledge"
+      - slug: "twin"
+        label: "Twinship & Mirrors"
+        description: "Duality, mirrored bodies, and fates that hinge on a sibling."
+        synonyms: ["twin", "mirror", "double"]
+        narrative_signals:
+          - "Mirror-husk bodies or reflections"
+          - "Twin thrones and conjoined spirits"
+        canonical_examples:
+          - "Godskin duo"
+          - "Miquella & Malenia"
   cosmic:
     label: "Cosmic"
     description: "Outer gods, fate threads, and dreamlike astral intrusions."
@@ -135,3 +195,37 @@ categories:
           - "Narratives crossing from waking world to beyond"
         canonical_examples:
           - "Miquella's cocoon"
+  archetypal:
+    label: "Archetypal"
+    description: "Jungian-style archetypes and mythic roles echoed through the Lands Between."
+    motifs:
+      - slug: "trickster"
+        label: "Trickster & Mask"
+        description: "Shape-shifting, riddles, and truth hidden behind masks."
+        synonyms: ["trickster", "mask", "jester"]
+        narrative_signals:
+          - "Illusory walls called out by NPCs"
+          - "Characters folding truth inside riddles"
+        canonical_examples:
+          - "Patches"
+          - "Seluvis"
+      - slug: "guardian"
+        label: "Guardian & Threshold"
+        description: "Entities binding gates, thrones, or dream boundaries."
+        synonyms: ["guardian", "warden", "threshold"]
+        narrative_signals:
+          - "Standing watch over sealed doorways"
+          - "Demanding tribute to cross"
+        canonical_examples:
+          - "Tree Sentinels"
+          - "Messmer's watch"
+      - slug: "pilgrim"
+        label: "Pilgrim & Journey"
+        description: "Wandering figures carrying relics, recounting never-ending quests."
+        synonyms: ["pilgrim", "journey", "wanderer"]
+        narrative_signals:
+          - "Lore referencing endless travel"
+          - "Collecting offerings along an ordained path"
+        canonical_examples:
+          - "Nomadic merchants"
+          - "Melina's guidance"

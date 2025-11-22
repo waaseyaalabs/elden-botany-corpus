@@ -28,31 +28,41 @@ def parse_env_file(path: Path) -> dict[str, str]:
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description=("Create ~/.kaggle/kaggle.json from env vars or a .env file.")
+        description=(
+            "Create ~/.kaggle/kaggle.json from env vars or a .env file."
+        )
     )
     parser.add_argument(
         "--env-file",
         default=".env",
-        help=("Optional .env file to read when environment variables " "are not already set."),
+        help=(
+            "Optional .env file to read when environment variables "
+            "are not already set."
+        ),
     )
     args = parser.parse_args()
 
     env_file = Path(args.env_file)
     env_values = parse_env_file(env_file)
 
-    username = os.environ.get("KAGGLE_USERNAME") or env_values.get("KAGGLE_USERNAME")
+    username = os.environ.get("KAGGLE_USERNAME") or env_values.get(
+        "KAGGLE_USERNAME"
+    )
     key = os.environ.get("KAGGLE_KEY") or env_values.get("KAGGLE_KEY")
 
     if not username or not key:
         raise SystemExit(
-            "KAGGLE_USERNAME and KAGGLE_KEY must come from env vars " "or the specified .env file."
+            "KAGGLE_USERNAME and KAGGLE_KEY must come from env vars "
+            "or the specified .env file."
         )
 
     kaggle_dir = Path.home() / ".kaggle"
     kaggle_dir.mkdir(parents=True, exist_ok=True)
     kaggle_json = kaggle_dir / "kaggle.json"
 
-    kaggle_json.write_text(json.dumps({"username": username, "key": key}, indent=2))
+    kaggle_json.write_text(
+        json.dumps({"username": username, "key": key}, indent=2)
+    )
     os.chmod(kaggle_json, 0o600)
 
     print(f"Wrote credentials to {kaggle_json} with 0600 permissions.")

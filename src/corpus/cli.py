@@ -6,6 +6,7 @@ from typing import Literal, cast
 
 import click
 
+from corpus.community_cli import community as community_group
 from corpus.config import settings
 from corpus.curate import (
     build_entity_map,
@@ -38,6 +39,9 @@ def main() -> None:
     """Elden Ring Botany Corpus - Data ingestion and curation."""
     # Commands registered below
     return None
+
+
+main.add_command(community_group)
 
 
 @main.command()

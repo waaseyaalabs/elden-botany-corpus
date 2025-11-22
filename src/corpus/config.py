@@ -77,6 +77,24 @@ class Settings(BaseSettings):
         default=Path("data/curated"),
         description="Curated data directory",
     )
+    curated_unified_csv_path: Path = Field(
+        default=Path("data/curated/unified.csv"),
+        description=(
+            "CSV fallback used when curated Parquet files fail to load"
+        ),
+    )
+    community_dir: Path = Field(
+        default=Path("data/community"),
+        description="Community bundles + processed outputs",
+    )
+    community_bundles_dir: Path = Field(
+        default=Path("data/community/bundles"),
+        description="Directory where contributor bundles live",
+    )
+    community_processed_dir: Path = Field(
+        default=Path("data/community/processed"),
+        description="Directory storing processed community artifacts",
+    )
 
     # String matching threshold for DLC text reconciliation
     match_threshold: float = Field(
@@ -94,6 +112,9 @@ class Settings(BaseSettings):
         # Ensure directories exist
         self.raw_dir.mkdir(parents=True, exist_ok=True)
         self.curated_dir.mkdir(parents=True, exist_ok=True)
+        self.community_dir.mkdir(parents=True, exist_ok=True)
+        self.community_bundles_dir.mkdir(parents=True, exist_ok=True)
+        self.community_processed_dir.mkdir(parents=True, exist_ok=True)
 
     @property
     def kaggle_credentials_set(self) -> bool:

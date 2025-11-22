@@ -137,6 +137,33 @@ poetry run corpus curate
 
 **Output**: `data/curated/unified.parquet` (~5-10MB) with all entities. Per-dataset profiling summaries live under `data/curated/quality/*.json|html` and are referenced inside `data/curated/metadata.json`.
 
+### 3b. One-Command Corpus Build + Community Report
+
+Need the canonical build plus the community motif coverage in one shot? Use the
+new orchestration helper:
+
+```bash
+# Runs: corpus fetch --all → corpus curate → corpus community motifs-report
+make build-corpus
+
+# Only regenerate the motif coverage artifacts (skip fetch/curate)
+make community-report
+
+# Pass additional CLI flags through the helper
+make build-corpus ARGS="--fetch-arg --base --curate-arg --no-quality"
+```
+
+Under the hood these targets invoke `scripts/build_corpus.py`, which accepts
+`--skip-*` switches plus a `--dry-run` flag if you want to preview the pipeline
+without executing any commands. The helper now verifies that
+`data/curated/unified.csv` exists before it regenerates motif coverage so the
+CSV fallback path can satisfy environments where Parquet readers hiccup. If your
+CSV lives elsewhere, set `CURATED_UNIFIED_CSV_PATH`, pass `--csv-path` to the
+helper, or provide `--csv-fallback` to
+`poetry run corpus community motifs-report`/`pipelines.motif_coverage.main`.
+When `unified.parquet` fails to load, the pipeline automatically falls back to
+the configured CSV and logs a warning, ensuring motif coverage still completes.
+
 ### Incremental Refreshes
 
 Both `fetch` and `curate` support append-only refreshes:
