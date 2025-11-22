@@ -8,6 +8,7 @@ from typing import cast
 import click
 
 from pipelines.embedding_backends import ProviderLiteral
+from pipelines.llm.base import create_llm_client_from_env
 from pipelines.motif_clustering import (
     MotifClusteringConfig,
     MotifClusteringPipeline,
@@ -180,11 +181,23 @@ def graph(
 )
 @click.option("--max-motifs", type=int, default=None)
 @click.option("--max-quotes", type=int, default=None)
+@click.option("--llm-provider", type=str, default=None)
+@click.option("--llm-model", type=str, default=None)
+@click.option("--llm-reasoning", type=str, default=None)
+@click.option(
+    "--dry-run-llm",
+    is_flag=True,
+    help="Skip LLM calls and emit heuristic summaries instead.",
+)
 def summaries(
     graph_dir: Path | None,
     output_dir: Path | None,
     max_motifs: int | None,
     max_quotes: int | None,
+    llm_provider: str | None,
+    llm_model: str | None,
+    llm_reasoning: str | None,
+    dry_run_llm: bool,
 ) -> None:
     """Generate narrative summaries from the motif graph."""
 
@@ -194,8 +207,20 @@ def summaries(
         output_dir=output_dir or defaults.output_dir,
         max_motifs=max_motifs or defaults.max_motifs,
         max_quotes=max_quotes or defaults.max_quotes,
+        use_llm=not dry_run_llm,
     )
-    pipeline = NarrativeSummariesPipeline(config)
+    llm_client = None
+    if config.use_llm:
+        try:
+            llm_client = create_llm_client_from_env(
+                provider_override=llm_provider,
+                model_override=llm_model,
+                reasoning_override=llm_reasoning,
+            )
+        except RuntimeError as exc:
+            raise click.ClickException(str(exc)) from exc
+
+    pipeline = NarrativeSummariesPipeline(config, llm_client=llm_client)
     try:
         artifacts = pipeline.run()
     except (FileNotFoundError, RuntimeError, ValueError) as exc:
