@@ -6,6 +6,7 @@ from typing import Literal, cast
 
 import click
 
+from corpus.analysis_cli import analysis as analysis_group
 from corpus.community_cli import community as community_group
 from corpus.config import settings
 from corpus.curate import (
@@ -42,6 +43,7 @@ def main() -> None:
 
 
 main.add_command(community_group)
+main.add_command(analysis_group)
 
 
 @main.command()
