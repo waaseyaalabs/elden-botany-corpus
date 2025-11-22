@@ -3,7 +3,10 @@ from __future__ import annotations
 import pandas as pd
 from corpus.community_schema import load_motif_taxonomy
 
-from pipelines.motif_coverage import compute_motif_coverage
+from pipelines.motif_coverage import (
+    _load_curated_frame,
+    compute_motif_coverage,
+)
 
 
 def _row_for_slug(rows, slug):
@@ -34,3 +37,27 @@ def test_compute_motif_coverage_counts_matches() -> None:
     twin = _row_for_slug(rows, "twin")
     assert twin.match_count == 1
     assert twin.sample_ids == ["entry_b"]
+
+
+def test_load_curated_frame_falls_back_to_csv(tmp_path, monkeypatch) -> None:
+    parquet_path = tmp_path / "unified.parquet"
+    parquet_path.write_text("not a parquet file", encoding="utf-8")
+    csv_path = tmp_path / "unified.csv"
+    csv_path.write_text("text,canonical_id\nhello,entry_a\n", encoding="utf-8")
+
+    def fake_read_parquet(path: object) -> pd.DataFrame:
+        raise OSError("boom")
+
+    captured: dict[str, object] = {}
+    real_read_csv = pd.read_csv
+
+    def fake_read_csv(path: object) -> pd.DataFrame:
+        captured["path"] = path
+        return real_read_csv(csv_path)
+
+    monkeypatch.setattr(pd, "read_parquet", fake_read_parquet)
+    monkeypatch.setattr(pd, "read_csv", fake_read_csv)
+
+    frame = _load_curated_frame(parquet_path, csv_path)
+    assert captured["path"] == str(csv_path)
+    assert frame["canonical_id"].tolist() == ["entry_a"]

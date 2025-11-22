@@ -117,29 +117,42 @@ def compute_motif_coverage(
     return coverage_rows
 
 
-def _load_curated_frame(path: Path) -> pd.DataFrame:
+def _load_curated_frame(
+    path: Path,
+    csv_fallback: Path | None = None,
+) -> pd.DataFrame:
     if not path.exists():
         raise FileNotFoundError(
             f"Curated dataset not found at {path}. Run 'make curate' first."
         )
+    fallback_path = csv_fallback or path.with_suffix(".csv")
     try:
         frame: pd.DataFrame = pd.read_parquet(path)  # type: ignore[misc]
         return frame
     except Exception as exc:  # pragma: no cover - defensive fallback
-        csv_fallback = path.with_suffix(".csv")
-        if not csv_fallback.exists():
-            raise
+        if not fallback_path.exists():
+            raise FileNotFoundError(
+                (
+                    "Unable to read {parquet} ({error}) and CSV fallback "
+                    "{csv} does not exist. Ensure the curated CSV artifact "
+                    "has been exported."
+                ).format(
+                    parquet=path,
+                    error=exc,
+                    csv=fallback_path,
+                )
+            ) from exc
         click.echo(
             (
                 "⚠️ Unable to read {parquet} ({error}); falling back to {csv}."
             ).format(
                 parquet=path.name,
                 error=exc,
-                csv=csv_fallback.name,
+                csv=fallback_path.name,
             )
         )
         csv_frame: pd.DataFrame = pd.read_csv(  # type: ignore[call-overload]
-            str(csv_fallback)
+            str(fallback_path)
         )
         return csv_frame
 
@@ -171,11 +184,18 @@ def _ensure_processed_dir() -> Path:
 
 def run_motif_coverage(
     curated_path: Path | None = None,
+    csv_fallback: Path | None = None,
 ) -> list[MotifCoverageRow]:
     taxonomy = load_motif_taxonomy()
-    dataframe = _load_curated_frame(
-        curated_path or (settings.curated_dir / "unified.parquet")
-    )
+    parquet_path = curated_path or (settings.curated_dir / "unified.parquet")
+    resolved_csv_fallback: Path
+    if csv_fallback is not None:
+        resolved_csv_fallback = csv_fallback
+    elif curated_path is not None:
+        resolved_csv_fallback = curated_path.with_suffix(".csv")
+    else:
+        resolved_csv_fallback = settings.curated_unified_csv_path
+    dataframe = _load_curated_frame(parquet_path, resolved_csv_fallback)
     rows = compute_motif_coverage(dataframe, taxonomy)
     processed_dir = _ensure_processed_dir()
     coverage_path = processed_dir / COVERAGE_FILENAME
@@ -195,11 +215,21 @@ def run_motif_coverage(
         "(defaults to data/curated/unified.parquet)."
     ),
 )
-def main(curated: Path | None) -> None:
+@click.option(
+    "--csv-fallback",
+    type=click.Path(dir_okay=False, path_type=Path),
+    default=None,
+    help=(
+        "Override the CSV fallback used when the curated Parquet cannot be "
+        "read (defaults to data/curated/unified.csv or matches --curated if "
+        "set)."
+    ),
+)
+def main(curated: Path | None, csv_fallback: Path | None) -> None:
     """CLI entry point for generating motif coverage metrics."""
 
     try:
-        rows = run_motif_coverage(curated)
+        rows = run_motif_coverage(curated, csv_fallback)
     except FileNotFoundError as exc:  # pragma: no cover - CLI convenience
         raise click.ClickException(str(exc)) from exc
 

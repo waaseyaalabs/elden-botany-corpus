@@ -77,6 +77,12 @@ class Settings(BaseSettings):
         default=Path("data/curated"),
         description="Curated data directory",
     )
+    curated_unified_csv_path: Path = Field(
+        default=Path("data/curated/unified.csv"),
+        description=(
+            "CSV fallback used when curated Parquet files fail to load"
+        ),
+    )
     community_dir: Path = Field(
         default=Path("data/community"),
         description="Community bundles + processed outputs",

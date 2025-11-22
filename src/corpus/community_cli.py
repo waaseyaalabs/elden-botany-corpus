@@ -341,11 +341,20 @@ def list_bundles(targets: Sequence[Path], json_output: bool) -> None:
         "(defaults to data/curated/unified.parquet)."
     ),
 )
-def motifs_report(curated: Path | None) -> None:
+@click.option(
+    "--csv-fallback",
+    type=click.Path(dir_okay=False, path_type=Path),
+    default=None,
+    help=(
+        "Override CSV fallback when the curated Parquet cannot be read "
+        "(defaults to data/curated/unified.csv or mirrors --curated)."
+    ),
+)
+def motifs_report(curated: Path | None, csv_fallback: Path | None) -> None:
     """Generate motif coverage metrics + Markdown report."""
 
     try:
-        rows = run_motif_coverage(curated)
+        rows = run_motif_coverage(curated, csv_fallback)
     except FileNotFoundError as exc:
         raise click.ClickException(str(exc)) from exc
 

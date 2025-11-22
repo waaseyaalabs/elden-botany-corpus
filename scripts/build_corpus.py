@@ -15,6 +15,8 @@ import sys
 from collections.abc import Sequence
 from pathlib import Path
 
+from corpus.config import settings
+
 
 def _run_step(name: str, command: Sequence[str], *, dry_run: bool) -> None:
     printable = " ".join(shlex.quote(arg) for arg in command)
@@ -26,6 +28,18 @@ def _run_step(name: str, command: Sequence[str], *, dry_run: bool) -> None:
 
 def _cli_command(*parts: str) -> list[str]:
     return [sys.executable, "-m", "corpus.cli", *parts]
+
+
+def _ensure_csv_artifact(path: Path, *, dry_run: bool) -> None:
+    if dry_run or path.exists():
+        return
+    message = (
+        f"Missing curated CSV artifact at {path}. Run 'poetry run corpus "
+        "curate' (or rerun without --skip-curate) before motifs-report, or "
+        "pass --csv-path to point at an existing CSV."
+    )
+    print(message, file=sys.stderr)
+    raise SystemExit(1)
 
 
 def main() -> None:
@@ -82,8 +96,18 @@ def main() -> None:
             "(repeatable)."
         ),
     )
+    parser.add_argument(
+        "--csv-path",
+        type=Path,
+        default=None,
+        help=(
+            "Override the CSV fallback used by motifs-report; defaults to "
+            "data/curated/unified.csv"
+        ),
+    )
 
     args = parser.parse_args()
+    csv_path = args.csv_path or settings.curated_unified_csv_path
 
     if not args.skip_fetch:
         fetch_cmd = _cli_command("fetch", "--all", *args.fetch_arg)
@@ -94,6 +118,7 @@ def main() -> None:
         _run_step("Curating corpus", curate_cmd, dry_run=args.dry_run)
 
     if not args.skip_report:
+        _ensure_csv_artifact(csv_path, dry_run=args.dry_run)
         report_parts: list[str] = [
             "community",
             "motifs-report",
@@ -101,6 +126,7 @@ def main() -> None:
         ]
         if args.curated_path is not None:
             report_parts.extend(["--curated", str(args.curated_path)])
+        report_parts.extend(["--csv-fallback", str(csv_path)])
         report_cmd = _cli_command(*report_parts)
         _run_step(
             "Generating motif coverage report",
