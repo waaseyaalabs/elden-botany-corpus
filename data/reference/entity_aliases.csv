@@ -15,32 +15,122 @@ npc:carian_speaker_10016*,npc:melina,0.9,Declares acting of her own volition
 npc:carian_speaker_10017*,npc:melina,0.95,Encourages player near Flame of Ruin
 npc:carian_speaker_10018*,npc:melina,0.95,Warns against claiming the Frenzied Flame
 npc:carian_speaker_10019*,npc:melina,0.95,Breaks accord after inheriting the Frenzied Flame
+npc:carian_speaker_100*,npc:intro_storyteller,0.9,Omniscient opening narration 'The fallen leaves tell a story' recited in the intro cinematic
+npc:carian_speaker_101*,npc:finger_reader_crone,1.0,"Bridge and lift-side Finger Reader crones lament Godwyn, Destined Death, and grant Grand Lift directions"
+npc:carian_speaker_102*,npc:finger_reader_enia,0.95,"Roundtable Hold interpreter Enia names herself and relays the Two Fingers' decrees"
+npc:carian_speaker_110*,npc:intro_storyteller,0.9,Continues the prologue hymn about grace and the Erdtree
+npc:carian_speaker_112*,npc:two_fingers,0.85,Guttural gestures from the mute Two Fingers before Enia translates their will
+npc:carian_speaker_120*,npc:intro_storyteller,0.9,Praises Hoarah Loux and Goldmask within the narration cadence
+npc:carian_speaker_130*,npc:intro_storyteller,0.9,Describes the shattering and Godrick/Malenia during the intro monologue
+npc:carian_speaker_140*,npc:intro_storyteller,0.9,Laments the war and abandonment by the Greater Will in the cinematic
+npc:carian_speaker_150*,npc:intro_storyteller,0.9,Roll-call of Tarnished champions from the narration
+npc:carian_speaker_160*,npc:intro_storyteller,0.9,Narrates the Night of Black Knives segment
+npc:carian_speaker_165*,npc:intro_storyteller,0.9,Concludes the Night of Black Knives recounting
+npc:carian_speaker_1060*,npc:ranni,1.0,"Renna's first visit grants Torrent's bell and recounts Empyrean defiance of the Two Fingers"
 npc:carian_speaker_1061*,npc:ranni,1.0,Prefix-range mapping for Ranni/Renna
 npc:carian_speaker_1062*,npc:ranni,1.0,Prefix-range mapping for Ranni/Renna
 npc:carian_speaker_1063*,npc:ranni,1.0,Prefix-range mapping for Ranni/Renna
+npc:carian_speaker_20000*,npc:rennala_queen_of_the_full_moon,0.95,"Rennala's maternal pleas 'Come out my sweetings' within Raya Lucaria arena"
+npc:carian_speaker_20002*,npc:rennala_queen_of_the_full_moon,0.95,"Post-defeat gratitude 'My thanks to thee' aligned with Rennala's rebirth cutscene"
+npc:carian_speaker_20003*,npc:rennala_queen_of_the_full_moon,0.95,"Calls to her hidden children and egg—exclusive to Rennala encounter"
+npc:carian_speaker_20010*,npc:melina,0.95,"Torrent bedside scene 'Don't worry Torrent, fortune is on her side' identifying Melina"
+npc:carian_speaker_20030*,npc:margit_the_fell_omen,0.95,"Battle intro 'Foul Tarnished...Let it be Margit the Fell'"
+npc:carian_speaker_20040*,npc:godrick_the_grafted,0.95,"Phase-one monologue 'Mighty dragon, thou'rt a trueborn heir' unique to Godrick"
+npc:carian_speaker_20050*,npc:godrick_the_grafted,0.95,"Phase-two plea 'Forefathers, one and all...Great King Godfrey' during grafted dragon transformation"
+npc:carian_speaker_20070*,npc:godfrey_first_elden_lord,0.95,"Rematch preamble 'Upon my name as Godfrey, the first Elden Lord'"
+npc:carian_speaker_20080*,npc:godfrey_first_elden_lord,0.95,"Hoarah Loux phase declaration 'Now I fight as Hoarah Loux!'"
+npc:carian_speaker_20100*,npc:rennala_sweetings,0.95,"Giggling 'Mother's newborn' chorus of Rennala's rebirth-bound children inside Raya Lucaria"
+npc:carian_speaker_20300*,npc:rykard_lord_of_blasphemy,0.95,"Praetor Rykard beckons 'Join the Serpent King and devour the gods'"
+npc:carian_speaker_203900010,npc:malenia_blade_of_miquella,1.0,"Malenia's intro declaration 'I am Malenia. Blade of Miquella.'"
+npc:carian_speaker_2039010*,npc:malenia_blade_of_miquella,0.95,"Scarlet rot warning 'Let your flesh be consumed' during the boss fight"
+npc:carian_speaker_2039040*,npc:malenia_blade_of_miquella,0.95,"Defeat lines 'Bravely fought...the scarlet bloom will flower again'"
+npc:carian_speaker_2039050*,npc:malenia_blade_of_miquella,0.95,"Post-defeat apology to Miquella after acknowledging the Tarnished's strength"
+npc:carian_speaker_20391*,npc:witch_hunter_jerren,0.95,"Radahn Festival address 'General Radahn is cursed ever to wander' delivered by Jerren"
+npc:carian_speaker_20400*,npc:morgott_the_omen_king,0.95,"Arena taunts 'Warrior blood must truly run in thy veins' identify Morgott's boss fight"
+npc:carian_speaker_20401*,npc:morgott_the_omen_king,0.95,"Post-fight lament 'The Erdtree welcometh no man' as Morgott slumps before the wall of thorns"
+npc:carian_speaker_20430*,npc:melina,0.95,"Forge of the Giants oath 'O Erdtree, you shall burn' delivered by Melina"
+npc:carian_speaker_20450*,npc:morgott_the_omen_king,0.9,"Death howls and collapsing groans immediately after felling Morgott"
+npc:carian_speaker_2048000*,npc:morgott_the_omen_king,0.95,"Alternate boss shouts 'Warrior blood must truly run in thy veins' duplicating Morgott's fight"
+npc:carian_speaker_20480010,npc:intro_storyteller,0.9,"Elden Lord ending narration 'The Elden Lord is crowned, and the lands between are reunited'"
+npc:carian_speaker_20480100,npc:intro_storyteller,0.9,"Age of Fracture narration block 'And lo, a Tarnished became Elden Lord'"
+npc:carian_speaker_204801000,npc:morgott_the_omen_king,0.95,"Gravelly threat 'Felled thy ambition' variant voiced by Morgott in Leyndell"
+npc:carian_speaker_204801010,npc:morgott_the_omen_king,0.95,"Warning bark 'Put these foolish ambitions to rest'"
+npc:carian_speaker_204801020,npc:morgott_the_omen_king,0.95,"Rebuke 'The Erdtree is firm in its roots, naught but its blessing shall take root'"
+npc:carian_speaker_20480110,npc:intro_storyteller,0.9,"Closing line 'And so beginneth the Age of Fracture'"
+npc:carian_speaker_2048020*,npc:morgott_the_omen_king,0.95,"Death throes 'I shall remember thee, Tarnished' and 'Cower in fear of the night'"
+npc:carian_speaker_20481*,npc:intro_storyteller,0.9,"Default ending stanza 'The fallen leaves tell a story...'"
+npc:carian_speaker_20482*,npc:intro_storyteller,0.9,"Narration framing the Age of Fracture ending immediately before the credits roll"
+npc:carian_speaker_20483*,npc:intro_storyteller,0.9,"Default Elden Lord ending refrain 'Our seed will look back upon us—An Age of Fracture'"
+npc:carian_speaker_20484*,npc:brother_corhyn,0.9,"Age of Order epilogue where Corhyn trumpets 'The Age Absolute' in Goldmask's name"
+npc:carian_speaker_20485*,npc:fia,0.85,"Deathbed companion voice crowns the Age of the Duskborn after restoring the Rune of the Death-Prince"
+npc:carian_speaker_20486*,npc:dung_eater,0.95,"Blessing of Despair cutscene where the Dung Eater proclaims the reviled curse of the new age"
+npc:carian_speaker_20490*,npc:ranni,1.0,"Age of Stars vow 'Here beginneth the chill night that encompasses all' spoken by Ranni"
+npc:carian_speaker_20495*,npc:ranni,1.0,"Alternate Age of Stars narration 'My dear consort, eternal—A thousand year voyage'"
 npc:carian_speaker_2050*,npc:melina,0.9,Frenzied Flame ending vow culminating in 'Destined Death'
 npc:carian_speaker_2054*,npc:marika,0.95,Prayer beginning 'Young seedling' and 'Elden Ring O Elden Ring'
 npc:carian_speaker_2056*,npc:marika,0.95,Marika's vision 'If thou covetest the throne'
 npc:carian_speaker_2058*,npc:melina,1.0,Accord introduction 'Greetings...I am Melina'
+npc:carian_speaker_20700000,npc:songstress_of_haligtree,0.95,"Opening lament 'The Rune of Death is unbound' sung in Haligtree Town Plaza"
+npc:carian_speaker_2070010*,npc:songstress_of_haligtree,0.95,"Song of Lament chorus 'One day we'll return together' sung by the shackled Haligtree songstress"
+npc:carian_speaker_2070011*,npc:songstress_of_haligtree,0.95,"Refrain 'To our home, bathed in rays of gold' completing the Song of Lament"
+npc:carian_speaker_20700200,npc:melina,0.95,"Forge of the Giants cutscene 'But the flames will also burn the impenetrable thorns'"
+npc:carian_speaker_2070020??,npc:godrick_the_grafted,0.95,"Stormveil rally 'Fetch me a mighty branch!' and grafting orders issued by Godrick"
+npc:carian_speaker_207002920,npc:godrick_the_grafted,0.95,"Command 'Hunt me down a new branch! Bring me a Tarnished!'"
+npc:carian_speaker_20700300,npc:nepheli_loux,0.9,"Nepheli farewell 'Farewell it is, then. I'll see you again'"
+npc:carian_speaker_20700400,npc:nepheli_loux,0.9,"Encouragement 'You'll be Elden Lord, yet'"
+npc:carian_speaker_20750*,npc:asimi_silver_tear,0.85,"Possessed noble sermon thanking the host body within the Silver Tear questline"
+npc:carian_speaker_20770*,npc:patches,0.95,"Ambush taunt 'Well, well, well... You scheming little thief' when Patches retaliates"
+npc:carian_speaker_2078000*,npc:godrick_the_grafted,0.95,"Boss introduction 'Lowly Tarnished...Unfit even to graft'"
+npc:carian_speaker_20780100,npc:gatekeeper_gostoc,0.9,"Gostoc compliments the champion for opening Stormveil's gate"
+npc:carian_speaker_207801000,npc:godrick_the_grafted,0.95,"Agony 'Great Godfrey, did you witness?' during Godrick's defeat"
+npc:carian_speaker_20780200,npc:gatekeeper_gostoc,0.9,"Gostoc merchant gratitude 'You're the finest customer a man ever had'"
+npc:carian_speaker_207802000,npc:godrick_the_grafted,0.95,"Last boast 'I am the Lord of all that is Golden'"
+npc:carian_speaker_207802020,npc:godrick_the_grafted,0.95,"Promise 'And one day, we'll return together' as he dies"
+npc:carian_speaker_207802030,npc:godrick_the_grafted,0.95,"Dying wish 'To our home, bathed in rays of gold'"
+npc:carian_speaker_2078030*,npc:gatekeeper_gostoc,0.9,"Gostoc curses Godrick while stomping his corpse"
+npc:carian_speaker_208*,npc:ensha_of_the_royal_remains,0.9,"Roundtable Hold invader Ensha hisses 'This is how you die, you disgusting Tarnished'"
+npc:carian_speaker_209*,npc:mohg_lord_of_blood,1.0,"Mohg chants 'nihil' and claims Miquella for his coming dynasty in the mausoleum"
+npc:carian_speaker_206*,npc:intro_storyteller,0.9,Final exhortation 'Cross the fog to the Lands Between' spoken in the intro
+npc:carian_speaker_213*,npc:smithing_master_hewg,1.0,"Roundtable Hold blacksmith Hewg repeats 'Lay out your arms' and vows to forge a god-slaying weapon"
 npc:carian_speaker_216*,npc:blaidd,1.0,Blaidd half-wolf questline
+npc:carian_speaker_218*,npc:asimi_silver_tear,0.85,"Cut silver tear self-identifies as Asimi and begs the 'lord host' to share a chalice"
+npc:carian_speaker_219*,npc:albus,0.95,"Dying Albinauric Albus gasps 'Please give this medallion to young Latenna'"
 npc:carian_speaker_220*,npc:iron_fist_alexander,1.0,Self-identifies as Iron Fist Alexander stuck in a hole
 npc:carian_speaker_223*,npc:boc_the_seamster,1.0,Explicit 'The name''s Boc' tree-curse arc
 npc:carian_speaker_224*,npc:war_counselor_iji,1.0,Blacksmith Iji introduction at Carian Manor gate
 npc:carian_speaker_226*,npc:jar_bairn,0.8,Potentate trial dialogue unique to Jar Bairn
+npc:carian_speaker_2270010*,npc:aureliette,0.95,"Spirit Jellyfish sister in Stargazer's Ruins asking Aurelia to watch the stars"
+npc:carian_speaker_228*,npc:latenna,1.0,"Latenna greets 'lord destined to ferry me' and mourns her wolf Lobo at Apostate Derelict"
+npc:carian_speaker_21490*,cut_content_eveligne_serpent_cultist,0.6,"Volcano Manor zealot invoking Eveligne to 'devour the gods'; unused in final game"
 npc:carian_speaker_301*,npc:white_mask_varre,1.0,White Mask Varre's 'maidenless' greeting
+npc:carian_speaker_302*,npc:gatekeeper_gostoc,1.0,"Stormveil gatekeeper Gostoc snarls about Godrick's corpse while fencing stolen goods"
+npc:carian_speaker_303*,cut_content_guilbert_redeemer,0.6,Redeemer Guilbert vows to a God of Vengeance and hunts Godrick/Ordovis in cut Volcano Manor quest
 npc:carian_speaker_307*,npc:preceptor_seluvis,1.0,Seluvis introduces himself as preceptor
 npc:carian_speaker_309*,npc:patches,1.0,'I'm Patches' repentance ambush lines
 npc:carian_speaker_310*,npc:irina,1.0,Irina requests help delivering a letter from Castle Morne
+npc:carian_speaker_311*,npc:edgar,1.0,Castle Morne castellan laments Irina's fate and swears revenge on rebellious menials
+npc:carian_speaker_312*,npc:witch_hunter_jerren,1.0,Radahn Festival herald Jerren rallies champions and vows to slay Sellen
 npc:carian_speaker_313*,npc:rya,1.0,Rya asks for her stolen necklace
+npc:carian_speaker_314*,npc:knight_diallos,1.0,"Diallos names House Hoslow, Lanya, and later jar-keeper vows in Jarburg"
 npc:carian_speaker_316*,npc:sorceress_sellen,1.0,Sellen self-identifies in Waypoint Ruins
 npc:carian_speaker_31808*,npc:shabriri,1.0,Shabriri Frenzied Flame guidance
 npc:carian_speaker_31882*,npc:shabriri,1.0,Shabriri rejection branch dialogues
+npc:carian_speaker_318*,npc:bloody_finger_hunter_yura,1.0,"Yura introduces himself as a hunter of Bloody Fingers and warns about Dragon Communion"
 npc:carian_speaker_319*,npc:d_hunter_of_the_dead,1.0,D warns Tarnished about Those Who Live in Death
 npc:carian_speaker_320*,npc:roderika,1.0,Roderika laments grafting at Stormveil
+npc:carian_speaker_321*,npc:kenneth_haight,1.0,"Kenneth Haight begs you reclaim Fort Haight and sneers at Godrick's cowardice"
 npc:carian_speaker_322*,npc:fia,1.0,Fia introduces herself as the deathbed companion
+npc:carian_speaker_323*,npc:dung_eater,1.0,"Dung Eater demands you 'defile my flesh with the seedbed curse' in the sewer gaol"
 npc:carian_speaker_324*,npc:gideon_ofnir,1.0,Gideon Ofnir the All-knowing
 npc:carian_speaker_325*,npc:sorcerer_rogier,1.0,Rogier greets player inside Stormveil
+npc:carian_speaker_326*,npc:recusant_bernahl,1.0,"Bernahl offers Volcano Manor contracts and later vows to rise against the Erdtree"
+npc:carian_speaker_330*,npc:miriel_pastor_of_vows,1.0,"Miriel introduces the Church of Vows and teaches absolution with Celestial Dew"
+npc:carian_speaker_331*,npc:blackguard_boggart,1.0,"Blackguard Big Boggart hawks Rya's necklace and sells crab at the Liurnia bridge"
+npc:carian_speaker_332*,npc:serpent_hunter_spirit,0.85,"Ghost outside Rykard's arena pleads 'Use the serpent-slaying spear and kill that horror'"
+npc:carian_speaker_333*,npc:sorcerer_thops,1.0,"Thops introduces himself as an academy washout and asks for an extra glintstone key"
 npc:carian_speaker_334*,npc:nepheli_loux,1.0,Nepheli Loux battle invitation against Godrick
+npc:carian_speaker_335*,npc:rhico_dreambrew_apostle,1.0,"Rhico requests slumber fog to brew dreambrew and invokes St. Trina and Miquella"
+npc:carian_speaker_337*,npc:viscount_shanehaight,0.9,"Leyndell viscount boasts of House Shanehaight and commissions Omen hunts beneath the capital"
 npc:carian_speaker_348*,npc:millicent,1.0,Millicent scarlet rot treatment dialogue
 npc:carian_speaker_349*,npc:gowry,1.0,Gowry asks aid for Millicent
 npc:carian_speaker_351*,npc:brother_corhyn,1.0,Brother Corhyn introduces himself at Roundtable Hold
@@ -48,4 +138,31 @@ npc:carian_speaker_300*,npc:tanith,1.0,Tanith Volcano Manor arc
 npc:carian_speaker_202*,npc:gurranq_beast_clergyman,0.9,Gurranq snarls 'Feed me more Death' at Bestial Sanctum
 npc:carian_speaker_31003*,npc:hyetta,1.0,Hyetta fingerprint grape questline
 npc:carian_speaker_310010010,npc:hyetta,1.0,Hyetta introductory block
+npc:carian_speaker_221001000,npc:two_fingers,0.85,"Silent ellipsis from the dead Two Fingers atop Divine Towers"
+npc:carian_speaker_7300001*,npc:songstress_of_haligtree,0.95,"Duplicate Song of Lament chorus used for alternate encounter placement"
+npc:carian_speaker_700*,cut_content_combat_vo_bank,0.5,"Non-dialogue combat vocalization bank (proper Erdtree burial chants)"
+npc:carian_speaker_701*,cut_content_combat_vo_bank,0.5,"Non-dialogue combat vocalization bank (frenzied villagers)"
+npc:carian_speaker_702*,cut_content_combat_vo_bank,0.5,"Non-dialogue combat vocalization bank (castle soldiers)"
+npc:carian_speaker_703*,cut_content_combat_vo_bank,0.5,"Non-dialogue combat vocalization bank (dragon communion zealots)"
+npc:carian_speaker_704*,cut_content_combat_vo_bank,0.5,"Non-dialogue combat vocalization bank (Haligtree pilgrims)"
+npc:carian_speaker_705*,cut_content_combat_vo_bank,0.5,"Non-dialogue combat vocalization bank (Mohgwyn supplicants)"
+npc:carian_speaker_706*,cut_content_combat_vo_bank,0.5,"Non-dialogue combat vocalization bank (capital loyalists)"
+npc:carian_speaker_730*,cut_content_combat_vo_bank,0.5,"Non-dialogue combat vocalization bank (alternate chorus variant)"
+npc:carian_speaker_736*,cut_content_combat_vo_bank,0.5,"Non-dialogue combat vocalization bank (tarnished acolytes)"
+npc:carian_speaker_740*,cut_content_combat_vo_bank,0.5,"Non-dialogue combat vocalization bank (Kaiden warrior cry)"
+npc:carian_speaker_743*,cut_content_combat_vo_bank,0.5,"Non-dialogue combat vocalization bank (mad miner SFX)"
+npc:carian_speaker_746*,cut_content_combat_vo_bank,0.5,"Non-dialogue combat vocalization bank (beastman SFX)"
+npc:carian_speaker_900*,cut_content_combat_vo_bank,0.5,"Non-dialogue combat vocalization bank (generic warcries)"
+npc:carian_speaker_901*,cut_content_combat_vo_bank,0.5,"Non-dialogue combat vocalization bank (whistling/retching)"
+npc:carian_speaker_902*,cut_content_combat_vo_bank,0.5,"Non-dialogue combat vocalization bank (warcries)"
+npc:carian_speaker_903*,cut_content_combat_vo_bank,0.5,"Non-dialogue combat vocalization bank (calls/whistles)"
+npc:carian_speaker_904*,cut_content_combat_vo_bank,0.5,"Non-dialogue combat vocalization bank (pain grunts)"
+npc:carian_speaker_905*,cut_content_combat_vo_bank,0.5,"Non-dialogue combat vocalization bank (grunts)"
+npc:carian_speaker_910*,cut_content_combat_vo_bank,0.5,"Non-dialogue combat vocalization bank (death falls)"
+npc:carian_speaker_911*,cut_content_combat_vo_bank,0.5,"Non-dialogue combat vocalization bank (ally calls/pain)"
+npc:carian_speaker_912*,cut_content_combat_vo_bank,0.5,"Non-dialogue combat vocalization bank (dying screams)"
+npc:carian_speaker_913*,cut_content_combat_vo_bank,0.5,"Non-dialogue combat vocalization bank (impact grunts)"
+npc:carian_speaker_914*,cut_content_combat_vo_bank,0.5,"Non-dialogue combat vocalization bank (whistles/frenzy screams)"
+npc:carian_speaker_915*,cut_content_combat_vo_bank,0.5,"Non-dialogue combat vocalization bank (poison retches)"
 npc:carian_speaker_800*,npc:merchant_kale,1.0,Nomadic merchant Kale welcomes Tarnished at Elleh
+npc:carian_speaker_801*,npc:imprisoned_merchant,1.0,"Mohgwyn shack merchant greets 'dear customer,' begs for coin, and curses thieves"
