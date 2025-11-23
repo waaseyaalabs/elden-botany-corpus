@@ -129,25 +129,52 @@ def _load_curated_frame(
     try:
         frame: pd.DataFrame = pd.read_parquet(path)  # type: ignore[misc]
         return frame
-    except Exception as exc:  # pragma: no cover - defensive fallback
+    except Exception as pandas_error:  # pragma: no cover - defensive fallback
+        polars_frame: pd.DataFrame | None = None
+        polars_error: Exception | None = None
+        try:
+            polars_frame = _polars_roundtrip(path)
+        except Exception as exc:  # pragma: no cover - defensive fallback
+            polars_error = exc
+        if polars_frame is not None:
+            click.echo(
+                f"⚠️ Unable to read {path.name} via pandas ("
+                f"{pandas_error}); using Polars conversion."
+            )
+            return polars_frame
+
         if not fallback_path.exists():
-            raise FileNotFoundError(
-                (
-                    "Unable to read {parquet} ({error}) and CSV fallback "
-                    "{csv} does not exist. Ensure the curated CSV artifact "
-                    "has been exported."
-                ).format(
-                    parquet=path,
-                    error=exc,
-                    csv=fallback_path,
-                )
-            ) from exc
+            detail = (
+                f" and Polars conversion failed ({polars_error})"
+                if polars_error
+                else ""
+            )
+            message = (
+                "Unable to read {parquet} via pandas ({pandas_error}){detail} "
+                "and CSV fallback {csv} does not exist. Ensure the curated "
+                "CSV artifact has been exported."
+            ).format(
+                parquet=path,
+                pandas_error=pandas_error,
+                detail=detail,
+                csv=fallback_path,
+            )
+            if polars_error is not None:
+                raise FileNotFoundError(message) from polars_error
+            raise FileNotFoundError(message) from pandas_error
+
         click.echo(
             (
-                "⚠️ Unable to read {parquet} ({error}); falling back to {csv}."
+                "⚠️ Unable to read {parquet} via pandas ({pandas_error})"
+                "{detail}; falling back to {csv}."
             ).format(
                 parquet=path.name,
-                error=exc,
+                pandas_error=pandas_error,
+                detail=(
+                    f" and Polars conversion failed ({polars_error})"
+                    if polars_error
+                    else ""
+                ),
                 csv=fallback_path.name,
             )
         )
@@ -155,6 +182,13 @@ def _load_curated_frame(
             str(fallback_path)
         )
         return csv_frame
+
+
+def _polars_roundtrip(path: Path) -> pd.DataFrame:
+    import polars as pl
+
+    polars_frame = pl.read_parquet(path)
+    return polars_frame.to_pandas()
 
 
 def _write_report(rows: list[MotifCoverageRow]) -> None:

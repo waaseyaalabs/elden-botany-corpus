@@ -25,21 +25,3 @@ This report summarizes how often each motif appears in the current curated lore 
 | Betrayal & Fracture | Narrative | 2 | 0.05 | ijis_mirrorhelm, millicents_prosthesis |
 | Oaths & Vows | Narrative | 105 | 2.48 | oathseeker_knight_helm, wise_mans_mask, beast_champion_helm, cleanrot_helm, cleanrot_helm_altered |
 | Twinship & Mirrors | Narrative | 154 | 3.64 | messmers_helm, messmers_helm_altered, rellanas_helm, blackguards_iron_mask, dialloss_mask |
-
-## Analysis layer overview
-
-The Phase 7 analysis layer builds on this taxonomy to produce derived visuals and
-reports:
-
-- `poetry run corpus analysis clusters --export` embeds curated lore lines,
-	projects them with UMAP, clusters via HDBSCAN, and saves
-	`data/analysis/motif_clustering/*.parquet|json|png`.
-- The resulting JSON report highlights exemplar lore lines per cluster, motif
-	density deltas relative to the global coverage metrics above, and the
-	associated visualization for qualitative review.
-- `poetry run corpus analysis graph` (Phase 7 Branch 2) will assemble the NPC
-	motif interaction graph, exposing NetworkX exports plus diagnostics that tie
-	motif co-occurrence back to this taxonomy.
-- `poetry run corpus analysis summaries` (Phase 7 Branch 3) will feed graph and
-	clustering outputs into the narrative summarizer, generating clan-level
-	briefings with guardrailed LLM prompts and citations into curated lore.
