@@ -7,7 +7,6 @@ from typing import Any
 
 import pytest
 
-
 from pipelines.llm.base import LLMConfig, LLMResponseError
 from pipelines.llm.openai_client import OpenAILLMClient
 
@@ -55,6 +54,35 @@ class _FakeClient:
         exc: Exception | None = None,
     ) -> None:
         self.responses = _FakeResponsesAPI(response=response, exc=exc)
+
+
+class _FakeTextOnlyResponsesAPI:
+    def __init__(self, response: _FakeResponse) -> None:
+        self._response = response
+        self.called_with: dict[str, Any] | None = None
+
+    def create(
+        self,
+        *,
+        model: str,
+        input: list[Any],
+        text: Any | None = None,
+        reasoning: Any | None = None,
+        max_output_tokens: Any | None = None,
+    ) -> Any:
+        self.called_with = {
+            "model": model,
+            "input": input,
+            "text": text,
+            "reasoning": reasoning,
+            "max_output_tokens": max_output_tokens,
+        }
+        return self._response
+
+
+class _FakeTextOnlyClient:
+    def __init__(self, response: _FakeResponse) -> None:
+        self.responses = _FakeTextOnlyResponsesAPI(response=response)
 
 
 def _sample_payload() -> dict[str, Any]:
@@ -135,3 +163,22 @@ def test_openai_client_requires_api_key(
     monkeypatch.delenv("OPENAI_API_KEY", raising=False)
     with pytest.raises(RuntimeError):
         OpenAILLMClient(client=_FakeClient(response=_FakeResponse("{}")))
+
+
+def test_openai_client_falls_back_to_text_json_schema() -> None:
+    expected: dict[str, Any] = {
+        "canonical_id": "npc:millicent",
+        "summary_text": "Scarlet descent",
+        "motif_slugs": ["scarlet_rot"],
+        "supporting_quotes": ["l-99"],
+    }
+    response = _FakeResponse(json.dumps(expected))
+    text_client = _FakeTextOnlyClient(response=response)
+    client = OpenAILLMClient(api_key="token", client=text_client)
+
+    client.summarize_entity(_sample_payload())
+
+    assert text_client.responses.called_with is not None
+    text_config = text_client.responses.called_with["text"]
+    assert isinstance(text_config, dict)
+    assert text_config["format"]["type"] == "json_schema"

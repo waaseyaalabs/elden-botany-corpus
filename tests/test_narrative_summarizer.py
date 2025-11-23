@@ -3,14 +3,14 @@
 from __future__ import annotations
 
 import json
-from collections.abc import Mapping
 from pathlib import Path
 from typing import Any
 
 import pandas as pd
+import pytest
 from corpus.community_schema import MotifTaxonomy
 
-from pipelines.llm.base import LLMConfig, LLMResponseError
+from pipelines.llm.base import LLMConfig
 from pipelines.narrative_summarizer import (
     NarrativeSummariesConfig,
     NarrativeSummariesPipeline,
@@ -21,6 +21,8 @@ from pipelines.npc_motif_graph import (
 )
 from tests.helpers import sample_taxonomy
 
+LORE_TEXT = "The scarlet rot takes root in every oath I keep."
+
 
 def _write_lore_fixture(path: Path) -> None:
     frame = pd.DataFrame(
@@ -30,7 +32,7 @@ def _write_lore_fixture(path: Path) -> None:
                 "canonical_id": "npc:melina",
                 "category": "npc",
                 "text_type": "dialogue",
-                "text": "The scarlet rot takes root in every oath I keep.",
+                "text": LORE_TEXT,
                 "source": "test",
             },
             {
@@ -63,48 +65,49 @@ def _prepare_graph(tmp_path: Path) -> tuple[Path, MotifTaxonomy]:
     return graph_dir, taxonomy
 
 
-class FakeLLMClient:
-    """In-memory LLM client used for deterministic tests."""
-
-    def __init__(self) -> None:
-        self.calls: list[Mapping[str, Any]] = []
-        self.config = LLMConfig(provider="fake", model="fake-model")
-
-    def summarize_entity(self, payload: Mapping[str, Any]) -> dict[str, Any]:
-        self.calls.append(dict(payload))
-        quotes = payload.get("quotes", [])
-        first_quote = quotes[0]["lore_id"] if quotes else "none"
-        return {
-            "canonical_id": payload["canonical_id"],
-            "summary_text": "FAKE SUMMARY",
-            "motif_slugs": ["scarlet_rot"],
-            "supporting_quotes": [first_quote],
-        }
-
-
-class FailingLLMClient(FakeLLMClient):
-    """LLM client that surfaces response errors for fallback coverage."""
-
-    def summarize_entity(self, payload: Mapping[str, Any]) -> dict[str, Any]:
-        raise LLMResponseError("boom")
+def _batch_response(custom_id: str, payload: dict[str, Any]) -> dict[str, Any]:
+    return {
+        "custom_id": custom_id,
+        "response": {
+            "output": [
+                {
+                    "content": [
+                        {
+                            "type": "output_text",
+                            "text": json.dumps(payload),
+                        }
+                    ]
+                }
+            ]
+        },
+    }
 
 
-class MismatchedLLMClient(FakeLLMClient):
-    """LLM client that returns responses for the wrong entity."""
+def _write_batch_file(path: Path, records: list[dict[str, Any]]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8") as handle:
+        for record in records:
+            handle.write(json.dumps(record))
+            handle.write("\n")
 
-    def summarize_entity(self, payload: Mapping[str, Any]) -> dict[str, Any]:
-        result = super().summarize_entity(payload)
-        result["canonical_id"] = "npc:radahn"
-        return result
+
+def _summary_payload(**overrides: Any) -> dict[str, Any]:
+    payload: dict[str, Any] = {
+        "canonical_id": "npc:melina",
+        "summary_text": "FAKE SUMMARY",
+        "motif_slugs": ["scarlet_rot"],
+        "supporting_quotes": ["lore-010"],
+    }
+    payload.update(overrides)
+    return payload
 
 
-class HallucinatedQuoteLLMClient(FakeLLMClient):
-    """LLM client that references unsupported quote identifiers."""
-
-    def summarize_entity(self, payload: Mapping[str, Any]) -> dict[str, Any]:
-        result = super().summarize_entity(payload)
-        result["supporting_quotes"] = ["invented-quote"]
-        return result
+@pytest.fixture(autouse=True)
+def _stub_llm_config(monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.setattr(
+        "pipelines.narrative_summarizer.resolve_llm_config",
+        lambda **_: LLMConfig(provider="fake", model="fake-model"),
+    )
 
 
 def test_narrative_summaries_pipeline(tmp_path: Path) -> None:
@@ -130,45 +133,57 @@ def test_narrative_summaries_pipeline(tmp_path: Path) -> None:
     assert artifacts.markdown_path.exists()
 
 
-def test_narrative_summaries_pipeline_llm_client_invoked(
+def test_narrative_summaries_pipeline_consumes_batch_output(
     tmp_path: Path,
 ) -> None:
     graph_dir, taxonomy = _prepare_graph(tmp_path)
-    fake_llm = FakeLLMClient()
+    batch_path = tmp_path / "batch_output.jsonl"
+    _write_batch_file(
+        batch_path,
+        [_batch_response("npc:melina", _summary_payload())],
+    )
 
     pipeline = NarrativeSummariesPipeline(
         config=NarrativeSummariesConfig(
             graph_dir=graph_dir,
             output_dir=tmp_path / "summaries_llm",
+            batch_output_path=batch_path,
             max_motifs=2,
             max_quotes=1,
         ),
         taxonomy=taxonomy,
-        llm_client=fake_llm,
     )
     artifacts = pipeline.run()
 
-    assert fake_llm.calls, "LLM client was never invoked"
     payload = json.loads(artifacts.summaries_json.read_text())
     entry = payload["summaries"][0]
     assert entry["summary_text"] == "FAKE SUMMARY"
     assert entry["llm_used"] is True
-    assert entry["supporting_quotes"], "Expected citations from fake LLM"
+    assert entry["supporting_quotes"] == ["lore-010"]
 
 
 def test_narrative_summaries_pipeline_llm_fallback(tmp_path: Path) -> None:
     graph_dir, taxonomy = _prepare_graph(tmp_path)
-    failing_llm = FailingLLMClient()
+    batch_path = tmp_path / "batch_error.jsonl"
+    _write_batch_file(
+        batch_path,
+        [
+            {
+                "custom_id": "npc:melina",
+                "error": {"message": "boom"},
+            }
+        ],
+    )
 
     pipeline = NarrativeSummariesPipeline(
         config=NarrativeSummariesConfig(
             graph_dir=graph_dir,
             output_dir=tmp_path / "summaries_fallback",
+            batch_output_path=batch_path,
             max_motifs=2,
             max_quotes=1,
         ),
         taxonomy=taxonomy,
-        llm_client=failing_llm,
     )
     artifacts = pipeline.run()
 
@@ -183,17 +198,26 @@ def test_narrative_summaries_pipeline_rejects_mismatched_responses(
     tmp_path: Path,
 ) -> None:
     graph_dir, taxonomy = _prepare_graph(tmp_path)
-    bad_llm = MismatchedLLMClient()
+    batch_path = tmp_path / "batch_mismatch.jsonl"
+    _write_batch_file(
+        batch_path,
+        [
+            _batch_response(
+                "npc:melina",
+                _summary_payload(canonical_id="npc:radahn"),
+            )
+        ],
+    )
 
     pipeline = NarrativeSummariesPipeline(
         config=NarrativeSummariesConfig(
             graph_dir=graph_dir,
             output_dir=tmp_path / "summaries_mismatch",
+            batch_output_path=batch_path,
             max_motifs=2,
             max_quotes=1,
         ),
         taxonomy=taxonomy,
-        llm_client=bad_llm,
     )
     artifacts = pipeline.run()
 
@@ -208,17 +232,26 @@ def test_narrative_summaries_pipeline_rejects_hallucinated_quotes(
     tmp_path: Path,
 ) -> None:
     graph_dir, taxonomy = _prepare_graph(tmp_path)
-    bad_llm = HallucinatedQuoteLLMClient()
+    batch_path = tmp_path / "batch_hallucinated.jsonl"
+    _write_batch_file(
+        batch_path,
+        [
+            _batch_response(
+                "npc:melina",
+                _summary_payload(supporting_quotes=["invented-quote"]),
+            )
+        ],
+    )
 
     pipeline = NarrativeSummariesPipeline(
         config=NarrativeSummariesConfig(
             graph_dir=graph_dir,
             output_dir=tmp_path / "summaries_hallucinated",
+            batch_output_path=batch_path,
             max_motifs=2,
             max_quotes=1,
         ),
         taxonomy=taxonomy,
-        llm_client=bad_llm,
     )
     artifacts = pipeline.run()
 
@@ -227,3 +260,110 @@ def test_narrative_summaries_pipeline_rejects_hallucinated_quotes(
     assert entry["llm_used"] is False
     assert entry["supporting_quotes"] != ["invented-quote"]
     assert entry["supporting_quotes"], "Expected fallback quotes"
+
+
+def test_narrative_summaries_pipeline_ignores_partial_quote_hallucinations(
+    tmp_path: Path,
+) -> None:
+    graph_dir, taxonomy = _prepare_graph(tmp_path)
+    batch_path = tmp_path / "batch_partial_hallucinated.jsonl"
+    _write_batch_file(
+        batch_path,
+        [
+            _batch_response(
+                "npc:melina",
+                _summary_payload(
+                    supporting_quotes=["lore-010", "unknown-quote"],
+                ),
+            )
+        ],
+    )
+
+    pipeline = NarrativeSummariesPipeline(
+        config=NarrativeSummariesConfig(
+            graph_dir=graph_dir,
+            output_dir=tmp_path / "summaries_partial_hallucinated",
+            batch_output_path=batch_path,
+            max_motifs=2,
+            max_quotes=1,
+        ),
+        taxonomy=taxonomy,
+    )
+    artifacts = pipeline.run()
+
+    payload = json.loads(artifacts.summaries_json.read_text())
+    entry = payload["summaries"][0]
+    assert entry["llm_used"] is True
+    assert entry["supporting_quotes"] == ["lore-010"]
+
+
+def test_narrative_summaries_pipeline_normalizes_verbose_quote_ids(
+    tmp_path: Path,
+) -> None:
+    graph_dir, taxonomy = _prepare_graph(tmp_path)
+    batch_path = tmp_path / "batch_verbose.jsonl"
+    _write_batch_file(
+        batch_path,
+        [
+            _batch_response(
+                "npc:melina",
+                _summary_payload(
+                    supporting_quotes=[
+                        f"lore_id=lore-010 text={LORE_TEXT}",
+                    ],
+                ),
+            )
+        ],
+    )
+
+    pipeline = NarrativeSummariesPipeline(
+        config=NarrativeSummariesConfig(
+            graph_dir=graph_dir,
+            output_dir=tmp_path / "summaries_verbose",
+            batch_output_path=batch_path,
+            max_motifs=2,
+            max_quotes=1,
+        ),
+        taxonomy=taxonomy,
+    )
+    artifacts = pipeline.run()
+
+    payload = json.loads(artifacts.summaries_json.read_text())
+    entry = payload["summaries"][0]
+    quote_id = entry["supporting_quotes"][0]
+    assert entry["llm_used"] is True
+    assert quote_id == "lore-010"
+
+
+def test_narrative_summaries_pipeline_maps_text_only_quote_references(
+    tmp_path: Path,
+) -> None:
+    graph_dir, taxonomy = _prepare_graph(tmp_path)
+    batch_path = tmp_path / "batch_text_only.jsonl"
+    _write_batch_file(
+        batch_path,
+        [
+            _batch_response(
+                "npc:melina",
+                _summary_payload(supporting_quotes=[LORE_TEXT]),
+            )
+        ],
+    )
+
+    pipeline = NarrativeSummariesPipeline(
+        config=NarrativeSummariesConfig(
+            graph_dir=graph_dir,
+            output_dir=tmp_path / "summaries_text_only",
+            batch_output_path=batch_path,
+            max_motifs=2,
+            max_quotes=1,
+        ),
+        taxonomy=taxonomy,
+    )
+    artifacts = pipeline.run()
+
+    payload = json.loads(artifacts.summaries_json.read_text())
+    entry = payload["summaries"][0]
+    quote_id = entry["supporting_quotes"][0]
+    assert entry["llm_used"] is True
+    assert quote_id == "lore-010"

@@ -1,6 +1,6 @@
 # Makefile for common tasks
 
-.PHONY: help setup install test lint format clean fetch curate load rag-embeddings rag-index rag-query rag-guard ci-local analysis-clusters analysis-graph analysis-summaries analysis-smoke
+.PHONY: help setup install test lint format clean fetch curate load rag-embeddings rag-index rag-query rag-guard ci-local analysis-clusters analysis-graph analysis-summaries analysis-summaries-batch analysis-smoke
 
 help:
 	@echo "Elden Botany Corpus - Available Commands"
@@ -24,6 +24,7 @@ help:
 	@echo "  make analysis-clusters - Run motif clustering analysis"
 	@echo "  make analysis-graph - Build NPC motif interaction graph (Phase 7)"
 	@echo "  make analysis-summaries - Generate narrative summaries (Phase 7)"
+	@echo "  make analysis-summaries-batch - Build/submit OpenAI batch jobs"
 	@echo ""
 
 setup:
@@ -97,6 +98,9 @@ analysis-graph:
 
 analysis-summaries:
 	poetry run corpus analysis summaries $(ARGS)
+
+analysis-summaries-batch:
+	poetry run corpus analysis summaries-batch $(ARGS)
 
 analysis-smoke:
 	@./scripts/analysis_smoke_test.sh

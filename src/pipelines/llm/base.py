@@ -43,6 +43,28 @@ class LLMClient(Protocol):
         ...
 
 
+def resolve_llm_config(
+    provider_override: str | None = None,
+    model_override: str | None = None,
+    reasoning_override: str | None = None,
+    max_output_override: int | None = None,
+) -> LLMConfig:
+    """Resolve configured LLM provider/model without instantiating a client."""
+
+    provider = (
+        provider_override or _env("TB_LLM_PROVIDER") or DEFAULT_LLM_PROVIDER
+    )
+    model = (model_override or _env("TB_LLM_MODEL")) or DEFAULT_LLM_MODEL
+    reasoning = reasoning_override or _env("TB_LLM_REASONING")
+    max_output = max_output_override or _env_int("TB_LLM_MAX_OUTPUT_TOKENS")
+    return LLMConfig(
+        provider=provider.lower(),
+        model=model,
+        reasoning_effort=reasoning,
+        max_output_tokens=max_output,
+    )
+
+
 def create_llm_client_from_env(
     provider_override: str | None = None,
     model_override: str | None = None,
@@ -51,18 +73,11 @@ def create_llm_client_from_env(
 ) -> LLMClient:
     """Instantiate the configured client via environment + overrides."""
 
-    provider = (
-        provider_override or _env("TB_LLM_PROVIDER") or DEFAULT_LLM_PROVIDER
-    )
-    model = (model_override or _env("TB_LLM_MODEL")) or DEFAULT_LLM_MODEL
-    reasoning = reasoning_override or _env("TB_LLM_REASONING")
-    max_output = max_output_override or _env_int("TB_LLM_MAX_OUTPUT_TOKENS")
-
-    config = LLMConfig(
-        provider=provider.lower(),
-        model=model,
-        reasoning_effort=reasoning,
-        max_output_tokens=max_output,
+    config = resolve_llm_config(
+        provider_override=provider_override,
+        model_override=model_override,
+        reasoning_override=reasoning_override,
+        max_output_override=max_output_override,
     )
 
     if config.provider == "openai":
@@ -94,6 +109,7 @@ def _env_int(name: str) -> int | None:
 
 __all__ = [
     "ALLOWED_OPENAI_MODELS",
+    "resolve_llm_config",
     "LLMClient",
     "LLMConfig",
     "LLMResponseError",

@@ -70,21 +70,59 @@ make analysis-summaries ARGS="--dry-run-llm"
 echo "✓ Dry-run narrative summaries complete (heuristic mode)"
 echo
 
-# 5. Single real LLM run (same corpus, different output dir)
-echo ">>> Step 5: Narrative summaries with real LLM (one batch run)"
+# 5. Build OpenAI batch payload (submission is manual/optional)
+echo ">>> Step 5: Prepare OpenAI batch payload for LLM summaries"
+LLM_OUTPUT_DIR="data/analysis/narrative_summaries_llm"
+BATCH_INPUT_PATH="${LLM_OUTPUT_DIR}/batch_input.jsonl"
+BATCH_OUTPUT_PATH="${LLM_OUTPUT_DIR}/batch_output.jsonl"
 
-if [[ -z "${OPENAI_API_KEY:-}" && "${TB_LLM_PROVIDER}" == "openai" ]]; then
-  echo "[WARN] OPENAI_API_KEY is not set; skipping real LLM run." >&2
-  echo "       Set OPENAI_API_KEY and rerun this script to exercise real LLM integration."
+make analysis-summaries-batch ARGS="--graph-dir data/analysis/npc_motif_graph --output-dir ${LLM_OUTPUT_DIR}"
+
+cat <<'EOF'
+ℹ To submit the batch to OpenAI manually run:
+  make analysis-summaries-batch ARGS="--graph-dir data/analysis/npc_motif_graph --output-dir data/analysis/narrative_summaries_llm --submit --completion-window 24h"
+This prints the batch ID. Once it completes, download the results with:
+  make analysis-summaries-batch ARGS="--graph-dir data/analysis/npc_motif_graph --output-dir data/analysis/narrative_summaries_llm --batch-id <BATCH_ID> --wait --download-output"
+The downloaded file will live at data/analysis/narrative_summaries_llm/batch_output.jsonl.
+EOF
+
+echo
+
+if [[ ! -f "${BATCH_OUTPUT_PATH}" ]]; then
+  echo "[WARN] Batch output ${BATCH_OUTPUT_PATH} not found; skipping live LLM verification." >&2
+  echo "       After downloading the batch output, rerun this script to validate end-to-end."
   exit 0
 fi
 
-# Use a separate output dir so reviewers can diff against dry-run artifacts
+# 6. Materialize summaries from the completed batch output
+echo ">>> Step 6: Materialize LLM-backed summaries from batch output"
 poetry run corpus analysis summaries \
   --graph-dir data/analysis/npc_motif_graph \
-  --output-dir data/analysis/narrative_summaries_llm
+  --output-dir "${LLM_OUTPUT_DIR}"
+
+python - <<'PY'
+import json
+import sys
+from pathlib import Path
+
+summary_path = Path("data/analysis/narrative_summaries_llm/npc_narrative_summaries.json")
+if not summary_path.exists():
+  print(f"[ERR] Expected summary JSON at {summary_path}", file=sys.stderr)
+  sys.exit(1)
+
+payload = json.loads(summary_path.read_text())
+llm_count = sum(1 for entry in payload.get("summaries", []) if entry.get("llm_used"))
+if llm_count == 0:
+  print(
+    "[ERR] No entries reported llm_used=true. Ensure the batch output contained valid responses.",
+    file=sys.stderr,
+  )
+  sys.exit(1)
+
+print(f"✓ Verified {llm_count} LLM-backed summaries in {summary_path}")
+PY
 
 echo "✓ LLM-backed narrative summaries refreshed"
-echo "Artifacts written to data/analysis/narrative_summaries_llm"
+echo "Artifacts written to ${LLM_OUTPUT_DIR}"
 echo
 echo "=== Smoke test complete ==="

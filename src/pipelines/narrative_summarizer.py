@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import logging
+import re
 from collections.abc import Mapping
 from dataclasses import dataclass
 from pathlib import Path
@@ -13,10 +14,11 @@ import pandas as pd
 from corpus.community_schema import MotifTaxonomy, load_motif_taxonomy
 
 from pipelines.llm.base import (
-    LLMClient,
+    LLMConfig,
     LLMResponseError,
-    create_llm_client_from_env,
+    resolve_llm_config,
 )
+from pipelines.llm.openai_client import build_summary_request_body
 from pipelines.npc_motif_graph import (
     ENTITY_MOTIF_FILENAME,
     ENTITY_SUMMARY_FILENAME,
@@ -30,6 +32,9 @@ SUMMARY_PARQUET = "npc_narrative_summaries.parquet"
 SUMMARY_MARKDOWN = "npc_narrative_summaries.md"
 
 
+_QUOTE_ID_PATTERN = re.compile(r"lore_id\s*(?:=|:)\s*([A-Za-z0-9_:-]+)")
+
+
 @dataclass(slots=True)
 class NarrativeSummariesConfig:
     """Configuration for transforming graph artifacts into summaries."""
@@ -40,6 +45,12 @@ class NarrativeSummariesConfig:
     max_motifs: int = 4
     max_quotes: int = 3
     use_llm: bool = True
+    batch_input_path: Path | None = None
+    batch_output_path: Path | None = None
+    llm_provider: str | None = None
+    llm_model: str | None = None
+    llm_reasoning: str | None = None
+    llm_max_output_tokens: int | None = None
 
 
 @dataclass(slots=True)
@@ -58,24 +69,42 @@ class NarrativeSummariesPipeline:
         self,
         config: NarrativeSummariesConfig | None = None,
         taxonomy: MotifTaxonomy | None = None,
-        llm_client: LLMClient | None = None,
     ) -> None:
         self.config = config or NarrativeSummariesConfig()
         self._taxonomy = taxonomy or load_motif_taxonomy(
             self.config.taxonomy_path
         )
         self._motif_order = self._build_motif_order()
-        self._llm_client = self._resolve_llm_client(llm_client)
+        self._llm_config: LLMConfig | None = None
+        if self.config.use_llm:
+            self._llm_config = resolve_llm_config(
+                provider_override=self.config.llm_provider,
+                model_override=self.config.llm_model,
+                reasoning_override=self.config.llm_reasoning,
+                max_output_override=self.config.llm_max_output_tokens,
+            )
 
-    def _resolve_llm_client(
-        self,
-        llm_client: LLMClient | None,
-    ) -> LLMClient | None:
-        if llm_client is not None:
-            return llm_client
-        if not self.config.use_llm:
-            return None
-        return create_llm_client_from_env()
+    @property
+    def batch_input_path(self) -> Path:
+        if self.config.batch_input_path is not None:
+            return self.config.batch_input_path
+        return self.config.output_dir / "batch_input.jsonl"
+
+    @property
+    def batch_output_path(self) -> Path:
+        if self.config.batch_output_path is not None:
+            return self.config.batch_output_path
+        return self.config.output_dir / "batch_output.jsonl"
+
+    def _require_llm_config(self) -> LLMConfig:
+        if self._llm_config is None:
+            self._llm_config = resolve_llm_config(
+                provider_override=self.config.llm_provider,
+                model_override=self.config.llm_model,
+                reasoning_override=self.config.llm_reasoning,
+                max_output_override=self.config.llm_max_output_tokens,
+            )
+        return self._llm_config
 
     def run(self) -> NarrativeSummaryArtifacts:
         entity_summary = self._read_parquet(
@@ -91,10 +120,16 @@ class NarrativeSummariesPipeline:
             "lore motif hits",
         )
 
+        batch_results: dict[str, Mapping[str, Any]] | None = None
+        if self.config.use_llm:
+            self._require_llm_config()
+            batch_results = self._load_batch_results()
+
         summaries = self._build_summaries(
             entity_summary,
             entity_motif,
             lore_hits,
+            batch_results=batch_results,
         )
         if not summaries:
             raise RuntimeError("No narrative summaries were produced")
@@ -105,6 +140,70 @@ class NarrativeSummariesPipeline:
         )
         return artifacts
 
+    def build_batch_file(
+        self,
+        *,
+        destination: Path | None = None,
+        llm_config: LLMConfig | None = None,
+    ) -> Path:
+        """Render the JSONL payload for the OpenAI batch API."""
+
+        if not self.config.use_llm:
+            raise RuntimeError(
+                "LLM mode is disabled; enable --use-llm to build a batch "
+                "payload"
+            )
+
+        entity_summary = self._read_parquet(
+            ENTITY_SUMMARY_FILENAME,
+            "entity summary",
+        )
+        entity_motif = self._read_parquet(
+            ENTITY_MOTIF_FILENAME,
+            "entity motif stats",
+        )
+        lore_hits = self._read_parquet(
+            LORE_HITS_FILENAME,
+            "lore motif hits",
+        )
+        llm_config = llm_config or self._require_llm_config()
+        batch_path = destination or self.batch_input_path
+        batch_path.parent.mkdir(parents=True, exist_ok=True)
+
+        with batch_path.open("w", encoding="utf-8") as handle:
+            for (
+                canonical_id,
+                summary_row,
+                top_motifs,
+                quotes,
+            ) in self._iter_entity_contexts(
+                entity_summary,
+                entity_motif,
+                lore_hits,
+            ):
+                payload = self._build_llm_payload(
+                    canonical_id,
+                    summary_row,
+                    top_motifs,
+                    quotes,
+                )
+                request_body = build_summary_request_body(
+                    llm_config,
+                    payload,
+                    include_response_format=True,
+                )
+                record = {
+                    "custom_id": canonical_id,
+                    "method": "POST",
+                    "url": "/v1/responses",
+                    "body": request_body,
+                }
+                handle.write(json.dumps(record, ensure_ascii=False))
+                handle.write("\n")
+
+        LOGGER.info("Batch payload written to %s", batch_path)
+        return batch_path
+
     def _read_parquet(self, name: str, label: str) -> pd.DataFrame:
         path = self.config.graph_dir / name
         if not path.exists():
@@ -114,16 +213,25 @@ class NarrativeSummariesPipeline:
             )
         return pd.read_parquet(path)
 
-    def _build_summaries(
+    def _iter_entity_contexts(
         self,
         entity_summary: pd.DataFrame,
         entity_motif: pd.DataFrame,
         lore_hits: pd.DataFrame,
-    ) -> list[dict[str, Any]]:
-        summaries: list[dict[str, Any]] = []
+    ) -> list[
+        tuple[
+            str,
+            pd.Series,
+            list[dict[str, Any]],
+            list[dict[str, Any]],
+        ]
+    ]:
         grouped_hits = lore_hits.groupby("canonical_id")
         grouped_motifs = entity_motif.groupby("canonical_id")
 
+        contexts: list[
+            tuple[str, pd.Series, list[dict[str, Any]], list[dict[str, Any]]]
+        ] = []
         for _, row in entity_summary.iterrows():
             canonical_id = str(row["canonical_id"])
             if canonical_id not in grouped_motifs.groups:
@@ -131,21 +239,148 @@ class NarrativeSummariesPipeline:
             motif_rows = grouped_motifs.get_group(canonical_id)
             if motif_rows.empty:
                 continue
-
             top_motifs = self._top_motifs(motif_rows)
-            quotes = self._quotes_for_entity(
-                canonical_id,
-                grouped_hits,
+            quotes = self._quotes_for_entity(canonical_id, grouped_hits)
+            contexts.append((canonical_id, row, top_motifs, quotes))
+        return contexts
+
+    def _load_batch_results(self) -> dict[str, Mapping[str, Any]]:
+        path = self.batch_output_path
+        if not path.exists():
+            raise FileNotFoundError(
+                f"Batch output missing at {path}. "
+                "Run 'corpus analysis summaries-batch' to generate it."
             )
+
+        results: dict[str, Mapping[str, Any]] = {}
+        with path.open("r", encoding="utf-8") as handle:
+            for line_no, raw_line in enumerate(handle, 1):
+                line = raw_line.strip()
+                if not line:
+                    continue
+                try:
+                    record = json.loads(line)
+                except json.JSONDecodeError as exc:
+                    LOGGER.warning(
+                        "Skipping invalid batch line %s (%s)",
+                        line_no,
+                        exc,
+                    )
+                    continue
+                custom_id = str(record.get("custom_id") or "").strip()
+                if not custom_id:
+                    LOGGER.warning(
+                        "Batch line %s missing custom_id; skipping",
+                        line_no,
+                    )
+                    continue
+                if record.get("error"):
+                    LOGGER.warning(
+                        "Batch entry for %s failed: %s",
+                        custom_id,
+                        record["error"],
+                    )
+                    continue
+                response_payload = record.get("response")
+                text_payload = self._extract_batch_response_text(
+                    response_payload
+                )
+                if not text_payload:
+                    LOGGER.warning(
+                        "Batch entry for %s did not include response text",
+                        custom_id,
+                    )
+                    continue
+                try:
+                    parsed = json.loads(text_payload)
+                except json.JSONDecodeError as exc:
+                    LOGGER.warning(
+                        "Batch entry for %s produced invalid JSON: %s",
+                        custom_id,
+                        exc,
+                    )
+                    continue
+                results[custom_id] = parsed
+
+        if not results:
+            LOGGER.warning(
+                "Batch output %s contained no usable summaries", path
+            )
+        return results
+
+    def _extract_batch_response_text(
+        self,
+        response: Mapping[str, Any] | None,
+    ) -> str | None:
+        if response is None:
+            return None
+        output = response.get("output") or []
+        chunks: list[str] = []
+        for item in output:
+            content = item.get("content") or []
+            for piece in content:
+                if isinstance(piece, dict):
+                    text = piece.get("text")
+                    if isinstance(text, str):
+                        chunks.append(text)
+        if chunks:
+            return "".join(chunks)
+        body = response.get("body")
+        if isinstance(body, dict):
+            choices = body.get("choices") or []
+            for choice in choices:
+                message = choice.get("message") or {}
+                content = message.get("content") or []
+                for piece in content:
+                    if isinstance(piece, dict):
+                        text = piece.get("text")
+                        if isinstance(text, str):
+                            chunks.append(text)
+            if chunks:
+                return "".join(chunks)
+        return None
+
+    def _build_summaries(
+        self,
+        entity_summary: pd.DataFrame,
+        entity_motif: pd.DataFrame,
+        lore_hits: pd.DataFrame,
+        batch_results: dict[str, Mapping[str, Any]] | None = None,
+    ) -> list[dict[str, Any]]:
+        summaries: list[dict[str, Any]] = []
+        missing_batch: list[str] = []
+        contexts = self._iter_entity_contexts(
+            entity_summary,
+            entity_motif,
+            lore_hits,
+        )
+
+        for canonical_id, row, top_motifs, quotes in contexts:
+            entry = None
+            if batch_results is not None:
+                entry = batch_results.get(canonical_id)
+                if entry is None:
+                    missing_batch.append(canonical_id)
             summaries.append(
                 self._summarize_entity(
                     canonical_id,
                     row,
                     top_motifs,
                     quotes,
+                    batch_entry=entry,
                 )
             )
 
+        if missing_batch:
+            preview = ", ".join(missing_batch[:5])
+            if len(missing_batch) > 5:
+                preview += ", …"
+            LOGGER.warning(
+                "Missing %s batch summaries; falling back to heuristics for "
+                "%s",
+                len(missing_batch),
+                preview,
+            )
         return summaries
 
     def _summarize_entity(
@@ -154,6 +389,7 @@ class NarrativeSummariesPipeline:
         summary_row: pd.Series,
         top_motifs: list[dict[str, Any]],
         quotes: list[dict[str, Any]],
+        batch_entry: Mapping[str, Any] | None = None,
     ) -> dict[str, Any]:
         category = summary_row.get("category", "npc")
         entry: dict[str, Any] = {
@@ -182,29 +418,34 @@ class NarrativeSummariesPipeline:
         llm_used = False
         llm_provider: str | None = None
         llm_model: str | None = None
-
-        if self.config.use_llm and self._llm_client:
-            llm_provider = self._llm_client.config.provider
-            llm_model = self._llm_client.config.model
-            try:
-                llm_result = self._invoke_llm(
-                    canonical_id,
-                    summary_row,
-                    top_motifs,
-                    quotes,
-                )
-            except LLMResponseError as exc:
-                LOGGER.warning(
-                    "LLM summarization failed for %s: %s",
-                    canonical_id,
-                    exc,
-                )
+        if self.config.use_llm:
+            llm_config = self._require_llm_config()
+            llm_provider = self.config.llm_provider or llm_config.provider
+            llm_model = self.config.llm_model or llm_config.model
+            if batch_entry:
+                try:
+                    llm_result = self._normalize_llm_response(
+                        canonical_id,
+                        batch_entry,
+                        quotes,
+                    )
+                except LLMResponseError as exc:
+                    LOGGER.warning(
+                        "Batch summary invalid for %s: %s",
+                        canonical_id,
+                        exc,
+                    )
+                else:
+                    summary_text = llm_result["summary_text"]
+                    if llm_result["motif_slugs"]:
+                        summary_motif_slugs = llm_result["motif_slugs"]
+                    supporting_quotes = llm_result["supporting_quotes"]
+                    llm_used = True
             else:
-                summary_text = llm_result["summary_text"]
-                if llm_result["motif_slugs"]:
-                    summary_motif_slugs = llm_result["motif_slugs"]
-                supporting_quotes = llm_result["supporting_quotes"]
-                llm_used = True
+                LOGGER.debug(
+                    "No batch summary found for %s; using heuristic output",
+                    canonical_id,
+                )
 
         entry.update(
             {
@@ -217,28 +458,6 @@ class NarrativeSummariesPipeline:
             }
         )
         return entry
-
-    def _invoke_llm(
-        self,
-        canonical_id: str,
-        summary_row: pd.Series,
-        top_motifs: list[dict[str, Any]],
-        quotes: list[dict[str, Any]],
-    ) -> dict[str, Any]:
-        if not self._llm_client:
-            raise LLMResponseError("LLM client is not configured")
-        payload = self._build_llm_payload(
-            canonical_id,
-            summary_row,
-            top_motifs,
-            quotes,
-        )
-        response = self._llm_client.summarize_entity(payload)
-        return self._normalize_llm_response(
-            canonical_id,
-            response,
-            quotes,
-        )
 
     def _normalize_llm_response(
         self,
@@ -304,21 +523,74 @@ class NarrativeSummariesPipeline:
             for quote in quotes
             if quote.get("lore_id")
         }
+        text_index: dict[str, str] = {}
+        for quote in quotes:
+            lore_id = quote.get("lore_id")
+            text = quote.get("text")
+            if not lore_id or not text:
+                continue
+            normalized_text = self._normalize_quote_text(str(text))
+            text_index.setdefault(normalized_text, str(lore_id))
         if not available and supporting_quotes:
             raise LLMResponseError(
                 f"LLM referenced quotes for {canonical_id} but none exist"
             )
-        missing = [
-            quote_id
-            for quote_id in supporting_quotes
-            if quote_id not in available
-        ]
+        normalized: list[str] = []
+        missing: list[str] = []
+        for quote_id in supporting_quotes:
+            resolved = self._normalize_quote_reference(
+                quote_id,
+                available,
+                text_index,
+            )
+            if resolved in available:
+                normalized.append(resolved)
+            else:
+                missing.append(quote_id)
         if missing:
+            if normalized:
+                LOGGER.warning(
+                    "LLM referenced unknown quote IDs %s for %s; "
+                    "dropping unmatched references",
+                    missing,
+                    canonical_id,
+                )
+                return normalized
             raise LLMResponseError(
                 "LLM referenced unknown quote IDs "
                 f"{missing} for {canonical_id}"
             )
-        return supporting_quotes
+        return normalized
+
+    def _normalize_quote_reference(
+        self,
+        value: str,
+        available: set[str],
+        text_index: dict[str, str],
+    ) -> str:
+        trimmed = value.strip()
+        if trimmed in available:
+            return trimmed
+        match = _QUOTE_ID_PATTERN.search(trimmed)
+        if match:
+            candidate = match.group(1)
+            if candidate in available:
+                return candidate
+        normalized_text = self._normalize_quote_text(trimmed)
+        resolved = text_index.get(normalized_text)
+        if resolved:
+            return resolved
+        for text_value, quote_id in text_index.items():
+            if text_value and (
+                text_value in normalized_text or normalized_text in text_value
+            ):
+                return quote_id
+        return trimmed
+
+    def _normalize_quote_text(self, value: str) -> str:
+        lowered = value.lower()
+        collapsed = " ".join(lowered.split())
+        return collapsed.strip()
 
     def _build_llm_payload(
         self,

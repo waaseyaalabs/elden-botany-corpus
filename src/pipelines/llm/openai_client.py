@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import inspect
 import json
 import os
 from collections.abc import Mapping
@@ -25,6 +26,123 @@ _SYSTEM_PROMPT = (
     "each claim. Respond in JSON using the provided schema."
 )
 
+_JSON_SCHEMA_NAME = "narrative_summary"
+_SUMMARY_JSON_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "canonical_id": {"type": "string"},
+        "summary_text": {"type": "string"},
+        "motif_slugs": {
+            "type": "array",
+            "items": {"type": "string"},
+        },
+        "supporting_quotes": {
+            "type": "array",
+            "items": {"type": "string"},
+        },
+    },
+    "required": [
+        "canonical_id",
+        "summary_text",
+        "motif_slugs",
+        "supporting_quotes",
+    ],
+    "additionalProperties": False,
+}
+
+
+def _format_payload(payload: Mapping[str, Any]) -> str:
+    motifs = payload.get("top_motifs", [])
+    quotes = payload.get("quotes", [])
+    lines = [
+        f"Canonical ID: {payload.get('canonical_id')}",
+        f"Category: {payload.get('category')}",
+        (
+            "Entity stats: "
+            f"lore_count={payload.get('lore_count')} "
+            f"motif_mentions={payload.get('motif_mentions')} "
+            f"unique_motifs={payload.get('unique_motifs')}"
+        ),
+        "Top motifs:",
+    ]
+    for motif in motifs:
+        lines.append(
+            f"- {motif.get('slug')}: {motif.get('label')} "
+            f"(hits={motif.get('hit_count')}, "
+            f"unique_lore={motif.get('unique_lore')})"
+        )
+    if not motifs:
+        lines.append("- None available")
+
+    lines.append("Quotes:")
+    for quote in quotes:
+        motifs_joined = ", ".join(quote.get("motifs", []))
+        lines.append(
+            f"- lore_id={quote.get('lore_id')} motifs={motifs_joined}\n"
+            f"  text={quote.get('text')}"
+        )
+    if not quotes:
+        lines.append("- No lore quotes provided")
+
+    return "\n".join(lines)
+
+
+def build_summary_request_body(
+    config: LLMConfig,
+    payload: Mapping[str, Any],
+    *,
+    include_response_format: bool = True,
+    include_text_format: bool = False,
+) -> dict[str, Any]:
+    """Render the Responses API request body for the narrative summarizer."""
+
+    schema_body = json.loads(json.dumps(_SUMMARY_JSON_SCHEMA))
+    response_format_payload = {
+        "type": "json_schema",
+        "json_schema": {
+            "name": _JSON_SCHEMA_NAME,
+            "schema": schema_body,
+        },
+    }
+    text_format_payload = {
+        "format": {
+            "type": "json_schema",
+            "name": _JSON_SCHEMA_NAME,
+            "schema": json.loads(json.dumps(_SUMMARY_JSON_SCHEMA)),
+        }
+    }
+
+    user_prompt = _format_payload(payload)
+    request: dict[str, Any] = {
+        "model": config.model,
+        "input": [
+            {
+                "role": "system",
+                "content": [
+                    {
+                        "type": "input_text",
+                        "text": _SYSTEM_PROMPT,
+                    }
+                ],
+            },
+            {
+                "role": "user",
+                "content": [{"type": "input_text", "text": user_prompt}],
+            },
+        ],
+    }
+    if include_response_format:
+        request["response_format"] = response_format_payload
+    if include_text_format:
+        request["text"] = text_format_payload
+    if config.reasoning_effort:
+        request["reasoning"] = {
+            "effort": config.reasoning_effort,
+        }
+    if config.max_output_tokens is not None:
+        request["max_output_tokens"] = config.max_output_tokens
+    return request
+
 
 class OpenAILLMClient:
     """LLMClient backed by OpenAI's Responses API."""
@@ -46,6 +164,10 @@ class OpenAILLMClient:
                 "OPENAI_API_KEY is required to use the OpenAI LLM connector"
             )
         self._client: Any = client or OpenAI(api_key=key)
+        (
+            self._supports_response_format,
+            self._supports_text_param,
+        ) = self._inspect_response_params()
 
     def summarize_entity(self, payload: Mapping[str, Any]) -> dict[str, Any]:
         request = self._build_request(payload)
@@ -60,91 +182,22 @@ class OpenAILLMClient:
         return parsed
 
     def _build_request(self, payload: Mapping[str, Any]) -> dict[str, Any]:
-        schema: dict[str, Any] = {
-            "name": "narrative_summary",
-            "schema": {
-                "type": "object",
-                "properties": {
-                    "canonical_id": {"type": "string"},
-                    "summary_text": {"type": "string"},
-                    "motif_slugs": {
-                        "type": "array",
-                        "items": {"type": "string"},
-                    },
-                    "supporting_quotes": {
-                        "type": "array",
-                        "items": {"type": "string"},
-                    },
-                },
-                "required": [
-                    "canonical_id",
-                    "summary_text",
-                    "motif_slugs",
-                    "supporting_quotes",
-                ],
-            },
-        }
-
-        user_prompt = self._format_payload(payload)
-        request: dict[str, Any] = {
-            "model": self.config.model,
-            "input": [
-                {
-                    "role": "system",
-                    "content": [{"type": "text", "text": _SYSTEM_PROMPT}],
-                },
-                {
-                    "role": "user",
-                    "content": [{"type": "text", "text": user_prompt}],
-                },
-            ],
-            "response_format": {
-                "type": "json_schema",
-                "json_schema": schema,
-            },
-        }
-        if self.config.reasoning_effort:
-            request["reasoning"] = {
-                "effort": self.config.reasoning_effort,
-            }
-        if self.config.max_output_tokens is not None:
-            request["max_output_tokens"] = self.config.max_output_tokens
-        return request
-
-    def _format_payload(self, payload: Mapping[str, Any]) -> str:
-        motifs = payload.get("top_motifs", [])
-        quotes = payload.get("quotes", [])
-        lines = [
-            f"Canonical ID: {payload.get('canonical_id')}",
-            f"Category: {payload.get('category')}",
-            (
-                "Entity stats: "
-                f"lore_count={payload.get('lore_count')} "
-                f"motif_mentions={payload.get('motif_mentions')} "
-                f"unique_motifs={payload.get('unique_motifs')}"
+        request = build_summary_request_body(
+            self.config,
+            payload,
+            include_response_format=self._supports_response_format,
+            include_text_format=(
+                not self._supports_response_format
+                and self._supports_text_param
             ),
-            "Top motifs:",
-        ]
-        for motif in motifs:
-            lines.append(
-                f"- {motif.get('slug')}: {motif.get('label')} "
-                f"(hits={motif.get('hit_count')}, "
-                f"unique_lore={motif.get('unique_lore')})"
-            )
-        if not motifs:
-            lines.append("- None available")
-
-        lines.append("Quotes:")
-        for quote in quotes:
-            motifs_joined = ", ".join(quote.get("motifs", []))
-            lines.append(
-                f"- lore_id={quote.get('lore_id')} motifs={motifs_joined}\n"
-                f"  text={quote.get('text')}"
-            )
-        if not quotes:
-            lines.append("- No lore quotes provided")
-
-        return "\n".join(lines)
+        )
+        if self._supports_response_format:
+            request.pop("text", None)
+        elif not self._supports_text_param:
+            request.pop("text", None)
+        else:
+            request.pop("response_format", None)
+        return request
 
     def _response_text(self, response: Any) -> str:
         chunks: list[str] = []
@@ -217,5 +270,21 @@ class OpenAILLMClient:
             msg = "supporting_quotes must be a list"
             raise LLMResponseError(msg)
 
+    def _inspect_response_params(self) -> tuple[bool, bool]:
+        try:
+            signature = inspect.signature(self._client.responses.create)
+        except (AttributeError, ValueError, TypeError):  # pragma: no cover
+            return True, False
+        has_var_kwargs = any(
+            param.kind is inspect.Parameter.VAR_KEYWORD
+            for param in signature.parameters.values()
+        )
+        params = set(signature.parameters)
+        supports_response_format = (
+            "response_format" in params or has_var_kwargs
+        )
+        supports_text_param = ("text" in params) or has_var_kwargs
+        return supports_response_format, supports_text_param
 
-__all__ = ["OpenAILLMClient"]
+
+__all__ = ["OpenAILLMClient", "build_summary_request_body"]

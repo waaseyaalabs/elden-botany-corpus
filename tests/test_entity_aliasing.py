@@ -220,14 +220,14 @@ def test_build_lore_corpus_applies_entity_aliases(
         )
         assert row["lore_id"] == expected_lore_id
 
-    marika_row = dialogue_df[
-        dialogue_df["canonical_id"] == "npc:marika"
-    ].iloc[0]
+    marika_row = dialogue_df[dialogue_df["canonical_id"] == "npc:marika"].iloc[
+        0
+    ]
     assert "npc:carian_speaker_2054" in marika_row["raw_canonical_id"]
 
-    melina_row = dialogue_df[
-        dialogue_df["canonical_id"] == "npc:melina"
-    ].iloc[0]
+    melina_row = dialogue_df[dialogue_df["canonical_id"] == "npc:melina"].iloc[
+        0
+    ]
     assert "npc:carian_speaker_10013" in melina_row["raw_canonical_id"]
 
 

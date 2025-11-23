@@ -434,6 +434,18 @@ def _build_cluster_summaries(
     return summaries
 
 
+def _coerce_percentage(value: Any) -> float | None:
+    if value is None:
+        return None
+    try:
+        numeric = float(value)
+    except (TypeError, ValueError):
+        return None
+    if math.isnan(numeric):
+        return None
+    return numeric
+
+
 def _select_top_motifs(
     density_df: pd.DataFrame, cluster_id: int
 ) -> list[dict[str, Any]]:
@@ -452,11 +464,7 @@ def _select_top_motifs(
             "motif_label": row.get("motif_label"),
             "motif_category": row.get("motif_category"),
             "cluster_pct": float(row["cluster_pct"]),
-            "global_pct": (
-                float(row["global_pct"])
-                if not math.isnan(row.get("global_pct", math.nan))
-                else None
-            ),
+            "global_pct": _coerce_percentage(row.get("global_pct")),
             "delta_pct": row.get("delta_pct"),
             "cluster_match_count": int(row["cluster_match_count"]),
         }

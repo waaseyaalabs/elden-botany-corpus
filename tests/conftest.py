@@ -17,7 +17,10 @@ if str(ROOT_DIR) not in sys.path:
     sys.path.insert(0, str(ROOT_DIR))
 
 
-if "openai" not in sys.modules:
+try:  # Prefer the real package when it is installed.
+    import openai  # noqa: F401  # pragma: no cover
+except ModuleNotFoundError:
+
     class _OpenAIStub:
         def __init__(self, *args: Any, **kwargs: Any) -> None:
             msg = "Install the 'openai' extra to enable OpenAI integrations"

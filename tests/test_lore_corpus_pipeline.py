@@ -195,3 +195,4 @@ def test_build_lore_corpus_pipeline(
     assert dialogue_row["category"] == "npc"
     assert dialogue_row["source"] == "carian_dialogue_fmg"
     assert dialogue_row["canonical_id"] == "npc:700"
+    assert dialogue_row["raw_canonical_id"] == "npc:700"

@@ -104,3 +104,34 @@ def test_summarize_clusters_builds_density_table() -> None:
     assert scarlet_row["cluster_match_count"] == 1
     cluster_pct = float(scarlet_row["cluster_pct"])
     assert math.isclose(cluster_pct, 50.0, rel_tol=1e-6)
+
+
+def test_summarize_clusters_handles_missing_coverage() -> None:
+    frame = pd.DataFrame(
+        {
+            "lore_id": ["l1", "l2"],
+            "canonical_id": ["npc:1", "npc:2"],
+            "text": ["Rot blooms", "Rot fades"],
+            "category": ["npc", "npc"],
+            "text_type": ["dialogue", "dialogue"],
+            "cluster_id": [0, 0],
+            "cluster_probability": [0.9, 0.8],
+        }
+    )
+    motif_hits = pd.DataFrame(
+        {
+            "scarlet_rot": [True, False],
+        }
+    )
+
+    density, summaries = summarize_clusters(
+        frame,
+        motif_hits,
+        coverage=None,
+        exemplars=1,
+    )
+
+    assert not density.empty
+    top_motifs = summaries[0]["top_motifs"]
+    assert top_motifs, "Expected a top motif even without coverage"
+    assert top_motifs[0]["global_pct"] is None

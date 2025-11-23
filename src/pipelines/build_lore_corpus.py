@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import fnmatch
 import hashlib
 import json
 import logging
@@ -10,6 +11,7 @@ import re
 from collections import Counter, defaultdict
 from dataclasses import dataclass
 from pathlib import Path
+from re import Pattern
 from typing import Any, cast, no_type_check
 
 import pandas as pd
@@ -26,6 +28,7 @@ LOGGER = logging.getLogger(__name__)
 DEFAULT_CURATED_ROOT = Path("data/curated")
 DEFAULT_RAW_ROOT = Path("data/raw")
 DEFAULT_OUTPUT = Path("data/curated/lore_corpus.parquet")
+DEFAULT_ENTITY_ALIAS_PATH = Path("data/reference/entity_aliases.csv")
 
 ALLOWED_SOURCES = {
     "kaggle_base",
@@ -70,6 +73,15 @@ class DomainSpec:
     id_column: str
     category: str
     text_fields: tuple[TextField, ...]
+
+
+@dataclass(frozen=True)
+class EntityAlias:
+    raw_pattern: str
+    canonical_id: str
+    confidence: float
+    comment: str
+    pattern_regex: Pattern[str]
 
 
 DOMAIN_SPECS: tuple[DomainSpec, ...] = (
@@ -144,6 +156,7 @@ def _build_lore_schema() -> DataFrameSchema:
         {
             "lore_id": Column(pa.String, nullable=False, unique=True),
             "canonical_id": Column(pa.String, nullable=False),
+            "raw_canonical_id": Column(pa.String, nullable=False),
             "category": Column(
                 pa.String,
                 Check.isin(sorted(ALLOWED_CATEGORIES)),
@@ -202,6 +215,23 @@ def build_lore_corpus(
 
     lore_df = pd.DataFrame(lore_rows)
     lore_df.drop_duplicates(subset=["lore_id"], inplace=True)
+    lore_df["raw_canonical_id"] = lore_df["canonical_id"]
+
+    aliases = _load_entity_aliases(DEFAULT_ENTITY_ALIAS_PATH)
+    replacements = _apply_entity_aliases(lore_df, aliases)
+    if replacements:
+        changed_mask = lore_df["canonical_id"] != lore_df["raw_canonical_id"]
+        if changed_mask.any():
+            lore_df.loc[changed_mask, "lore_id"] = [
+                _compute_lore_id(
+                    row["canonical_id"],
+                    row["text_type"],
+                    row["text"],
+                )
+                for _, row in lore_df.loc[changed_mask].iterrows()
+            ]
+        lore_df.drop_duplicates(subset=["lore_id"], inplace=True)
+
     lore_df.sort_values(["canonical_id", "text_type", "source"], inplace=True)
     lore_df.reset_index(drop=True, inplace=True)
 
@@ -548,6 +578,85 @@ def _normalize_text(value: Any) -> str:
 def _compute_lore_id(canonical_id: str, text_type: str, text: str) -> str:
     payload = f"{canonical_id}|{text_type}|{text}"
     return hashlib.sha256(payload.encode("utf-8")).hexdigest()[:16]
+
+
+def _load_entity_aliases(path: Path) -> list[EntityAlias]:
+    if not path.exists():
+        LOGGER.info("Entity alias file not found at %s; skipping", path)
+        return []
+
+    try:
+        frame = pd.read_csv(path)
+    except Exception as exc:  # noqa: BLE001
+        LOGGER.error("Failed to load entity aliases from %s: %s", path, exc)
+        return []
+
+    required = {"raw_id", "canonical_id"}
+    missing = required - set(frame.columns)
+    if missing:
+        LOGGER.error(
+            "Entity alias file missing required columns: %s",
+            ", ".join(sorted(missing)),
+        )
+        return []
+
+    aliases: list[EntityAlias] = []
+    for record in frame.to_dict("records"):
+        raw_pattern = str(record.get("raw_id", "")).strip()
+        canonical_id = str(record.get("canonical_id", "")).strip()
+        if not raw_pattern or not canonical_id:
+            continue
+        confidence = float(record.get("confidence", 1.0) or 0.0)
+        comment = str(record.get("comment", "")).strip()
+        pattern_regex = re.compile(fnmatch.translate(raw_pattern))
+        aliases.append(
+            EntityAlias(
+                raw_pattern=raw_pattern,
+                canonical_id=canonical_id,
+                confidence=confidence,
+                comment=comment,
+                pattern_regex=pattern_regex,
+            )
+        )
+
+    LOGGER.info("Loaded %s entity aliases from %s", len(aliases), path)
+    return aliases
+
+
+def _apply_entity_aliases(
+    frame: pd.DataFrame,
+    aliases: list[EntityAlias],
+) -> int:
+    if frame.empty or not aliases:
+        return 0
+
+    if "raw_canonical_id" not in frame.columns:
+        frame["raw_canonical_id"] = frame["canonical_id"]
+
+    def _alias_specificity(alias: EntityAlias) -> tuple[int, int]:
+        wildcard_chars = sum(alias.raw_pattern.count(ch) for ch in "*?")
+        wildcard_chars += alias.raw_pattern.count("[")
+        return (wildcard_chars, -len(alias.raw_pattern))
+
+    replacements = 0
+    for alias in sorted(aliases, key=_alias_specificity):
+        raw_mask = (
+            frame["raw_canonical_id"]
+            .astype(str)
+            .str.match(alias.pattern_regex)
+        )
+        if not raw_mask.any():
+            continue
+        unchanged_mask = frame["canonical_id"] == frame["raw_canonical_id"]
+        target_mask = raw_mask & unchanged_mask
+        if not target_mask.any():
+            continue
+        frame.loc[target_mask, "canonical_id"] = alias.canonical_id
+        replacements += int(target_mask.sum())
+
+    if replacements:
+        LOGGER.info("Applied entity aliases to %s lore rows", replacements)
+    return replacements
 
 
 def _parse_heading(raw: str) -> tuple[str, str | None]:
