@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import pandas as pd
 from corpus.community_schema import load_motif_taxonomy
+from pandas.testing import assert_frame_equal
 
 from pipelines.motif_coverage import (
     _load_curated_frame,
@@ -48,6 +49,9 @@ def test_load_curated_frame_falls_back_to_csv(tmp_path, monkeypatch) -> None:
     def fake_read_parquet(path: object) -> pd.DataFrame:
         raise OSError("boom")
 
+    def fake_polars_roundtrip(path: object) -> pd.DataFrame:
+        raise RuntimeError("polars boom")
+
     captured: dict[str, object] = {}
     real_read_csv = pd.read_csv
 
@@ -56,8 +60,45 @@ def test_load_curated_frame_falls_back_to_csv(tmp_path, monkeypatch) -> None:
         return real_read_csv(csv_path)
 
     monkeypatch.setattr(pd, "read_parquet", fake_read_parquet)
+    monkeypatch.setattr(
+        "pipelines.motif_coverage._polars_roundtrip",
+        fake_polars_roundtrip,
+    )
     monkeypatch.setattr(pd, "read_csv", fake_read_csv)
 
     frame = _load_curated_frame(parquet_path, csv_path)
     assert captured["path"] == str(csv_path)
     assert frame["canonical_id"].tolist() == ["entry_a"]
+
+
+def test_load_curated_frame_uses_polars_roundtrip(
+    tmp_path, monkeypatch
+) -> None:
+    parquet_path = tmp_path / "unified.parquet"
+    parquet_path.write_text("not a parquet file", encoding="utf-8")
+    csv_path = tmp_path / "unified.csv"
+    csv_path.write_text("placeholder", encoding="utf-8")
+
+    def fake_read_parquet(path: object) -> pd.DataFrame:
+        raise OSError("boom")
+
+    expected = pd.DataFrame({"text": ["hi"], "canonical_id": ["entry_a"]})
+    called: dict[str, int] = {"count": 0}
+
+    def fake_polars_roundtrip(path: object) -> pd.DataFrame:
+        called["count"] += 1
+        return expected
+
+    def fake_read_csv(path: object) -> pd.DataFrame:  # pragma: no cover
+        raise AssertionError("CSV fallback should not be used")
+
+    monkeypatch.setattr(pd, "read_parquet", fake_read_parquet)
+    monkeypatch.setattr(
+        "pipelines.motif_coverage._polars_roundtrip",
+        fake_polars_roundtrip,
+    )
+    monkeypatch.setattr(pd, "read_csv", fake_read_csv)
+
+    frame = _load_curated_frame(parquet_path, csv_path)
+    assert called["count"] == 1
+    assert_frame_equal(frame, expected)

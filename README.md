@@ -97,6 +97,46 @@ elden-botany-corpus/
 
 │       ├── quality/         # HTML/JSON profiling artifacts
 
+### Phase 7 Analysis Layer
+
+- Motif clusters and NPC graphs are still computed locally via
+   `corpus analysis clusters` and `corpus analysis graph`.
+- Narrative summaries now default to an LLM connector. Configure the provider
+   with `TB_LLM_PROVIDER`, `TB_LLM_MODEL`, and set `OPENAI_API_KEY` (in CI this
+   should come from GitHub Secrets). The cost-aware model strategy is:
+   - **Bulk default** (`gpt-5-mini`): used automatically for large batches.
+   - **Hero premium** (`gpt-5.1`): opt-in when narrative polish matters most.
+   - **Ultra-cheap debug** (`gpt-4o-mini`): for JSON/prompt smoke tests only.
+- Use `poetry run corpus analysis summaries --dry-run-llm` (or
+   `make analysis-summaries ARGS="--dry-run-llm"`) whenever you want to stick
+   with heuristics.
+- When `--dry-run-llm` is omitted, the pipeline records `llm_used=true` plus
+   the provider/model inside each JSON + Parquet summary artifact.
+- CLI shortcuts:
+   - `make analysis-summaries` → default bulk (`gpt-5-mini`).
+   - `make analysis-summaries ARGS="--llm-model gpt-5.1"` → hero run.
+   - `make analysis-summaries ARGS="--llm-model gpt-4o-mini"` → debug run.
+
+#### End-to-end analysis workflow
+
+1. **Cluster lore motifs**: `make analysis-clusters` runs
+   `poetry run corpus analysis clusters --export`, writing artifacts under
+   `data/analysis/motif_clustering/`. Pass overrides through
+   `ARGS="--curated path/to/lore.parquet --max-rows 20000"` when needed.
+2. **Build the NPC motif graph**: `make analysis-graph` produces the graph,
+   GraphML, and JSON report inside `data/analysis/npc_motif_graph/`. Run this
+   after every curated lore refresh so downstream steps see the latest stats.
+3. **Generate narrative summaries**: `make analysis-summaries` consumes the
+   graph artifacts and emits JSON/Parquet/Markdown outputs in
+   `data/analysis/narrative_summaries/`. Add `ARGS="--dry-run-llm"` for the
+   heuristic fallback or adjust `--llm-model` / `--llm-provider` to match your
+   deployment. Each run records the provider/model plus whether an LLM was
+   actually used.
+
+Run the steps in order whenever you need a fresh qualitative drop; summaries
+fail fast if the graph artifacts are missing or stale, so keeping this workflow
+together prevents mismatched datasets.
+
 ### 1. Clone & Install
 
 ```bash
