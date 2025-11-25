@@ -5,8 +5,9 @@ from __future__ import annotations
 import logging
 import os
 import time
+from collections.abc import Mapping
 from pathlib import Path
-from typing import Any
+from typing import Any, cast
 
 try:  # pragma: no cover - optional dependency guard
     from openai import OpenAI
@@ -73,7 +74,7 @@ class OpenAIBatchJob:
         terminal_states = {"completed", "failed", "cancelled", "expired"}
         while True:
             batch = self.retrieve(batch_id)
-            status = getattr(batch, "status", None) or batch.get("status")
+            status = self._batch_field(batch, "status")
             LOGGER.info("Batch %s status=%s", batch_id, status)
             if status in terminal_states:
                 return batch
@@ -82,9 +83,7 @@ class OpenAIBatchJob:
     def download_output(self, batch: Any, destination: Path) -> Path:
         """Download the batch output JSONL to the requested path."""
 
-        output_file_id = getattr(batch, "output_file_id", None) or batch.get(
-            "output_file_id"
-        )
+        output_file_id = self._batch_field(batch, "output_file_id")
         if not output_file_id:
             raise RuntimeError(
                 "Batch did not expose output_file_id; ensure it completed"
@@ -98,3 +97,19 @@ class OpenAIBatchJob:
         with destination.open("wb") as handle:
             handle.write(response.read())
         return destination
+
+    def _batch_field(self, batch: Any, field: str) -> Any:
+        if hasattr(batch, field):
+            return getattr(batch, field)
+        if hasattr(batch, "model_dump"):
+            try:
+                data = batch.model_dump()
+            except Exception:  # pragma: no cover - defensive fallback
+                data = None
+            if isinstance(data, Mapping):
+                data_mapping = cast(Mapping[str, Any], data)
+                return data_mapping.get(field)
+        if isinstance(batch, Mapping):
+            batch_mapping = cast(Mapping[str, Any], batch)
+            return batch_mapping.get(field)
+        return None

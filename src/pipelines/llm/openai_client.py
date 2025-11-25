@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import inspect
 import json
 import os
 from collections.abc import Mapping
@@ -90,25 +89,15 @@ def _format_payload(payload: Mapping[str, Any]) -> str:
 def build_summary_request_body(
     config: LLMConfig,
     payload: Mapping[str, Any],
-    *,
-    include_response_format: bool = True,
-    include_text_format: bool = False,
 ) -> dict[str, Any]:
     """Render the Responses API request body for the narrative summarizer."""
 
     schema_body = json.loads(json.dumps(_SUMMARY_JSON_SCHEMA))
-    response_format_payload = {
-        "type": "json_schema",
-        "json_schema": {
-            "name": _JSON_SCHEMA_NAME,
-            "schema": schema_body,
-        },
-    }
-    text_format_payload = {
+    text_payload = {
         "format": {
             "type": "json_schema",
             "name": _JSON_SCHEMA_NAME,
-            "schema": json.loads(json.dumps(_SUMMARY_JSON_SCHEMA)),
+            "schema": schema_body,
         }
     }
 
@@ -130,11 +119,8 @@ def build_summary_request_body(
                 "content": [{"type": "input_text", "text": user_prompt}],
             },
         ],
+        "text": text_payload,
     }
-    if include_response_format:
-        request["response_format"] = response_format_payload
-    if include_text_format:
-        request["text"] = text_format_payload
     if config.reasoning_effort:
         request["reasoning"] = {
             "effort": config.reasoning_effort,
@@ -164,10 +150,6 @@ class OpenAILLMClient:
                 "OPENAI_API_KEY is required to use the OpenAI LLM connector"
             )
         self._client: Any = client or OpenAI(api_key=key)
-        (
-            self._supports_response_format,
-            self._supports_text_param,
-        ) = self._inspect_response_params()
 
     def summarize_entity(self, payload: Mapping[str, Any]) -> dict[str, Any]:
         request = self._build_request(payload)
@@ -182,22 +164,7 @@ class OpenAILLMClient:
         return parsed
 
     def _build_request(self, payload: Mapping[str, Any]) -> dict[str, Any]:
-        request = build_summary_request_body(
-            self.config,
-            payload,
-            include_response_format=self._supports_response_format,
-            include_text_format=(
-                not self._supports_response_format
-                and self._supports_text_param
-            ),
-        )
-        if self._supports_response_format:
-            request.pop("text", None)
-        elif not self._supports_text_param:
-            request.pop("text", None)
-        else:
-            request.pop("response_format", None)
-        return request
+        return build_summary_request_body(self.config, payload)
 
     def _response_text(self, response: Any) -> str:
         chunks: list[str] = []
@@ -269,22 +236,6 @@ class OpenAILLMClient:
         if not isinstance(parsed["supporting_quotes"], list):
             msg = "supporting_quotes must be a list"
             raise LLMResponseError(msg)
-
-    def _inspect_response_params(self) -> tuple[bool, bool]:
-        try:
-            signature = inspect.signature(self._client.responses.create)
-        except (AttributeError, ValueError, TypeError):  # pragma: no cover
-            return True, False
-        has_var_kwargs = any(
-            param.kind is inspect.Parameter.VAR_KEYWORD
-            for param in signature.parameters.values()
-        )
-        params = set(signature.parameters)
-        supports_response_format = (
-            "response_format" in params or has_var_kwargs
-        )
-        supports_text_param = ("text" in params) or has_var_kwargs
-        return supports_response_format, supports_text_param
 
 
 __all__ = ["OpenAILLMClient", "build_summary_request_body"]

@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 import logging
 import re
+from collections import Counter
 from collections.abc import Mapping
 from dataclasses import dataclass
 from pathlib import Path
@@ -190,7 +191,6 @@ class NarrativeSummariesPipeline:
                 request_body = build_summary_request_body(
                     llm_config,
                     payload,
-                    include_response_format=True,
                 )
                 record = {
                     "custom_id": canonical_id,
@@ -253,6 +253,9 @@ class NarrativeSummariesPipeline:
             )
 
         results: dict[str, Mapping[str, Any]] = {}
+        total_records = 0
+        failures = 0
+        failure_messages: Counter[str] = Counter()
         with path.open("r", encoding="utf-8") as handle:
             for line_no, raw_line in enumerate(handle, 1):
                 line = raw_line.strip()
@@ -267,6 +270,7 @@ class NarrativeSummariesPipeline:
                         exc,
                     )
                     continue
+                total_records += 1
                 custom_id = str(record.get("custom_id") or "").strip()
                 if not custom_id:
                     LOGGER.warning(
@@ -274,14 +278,24 @@ class NarrativeSummariesPipeline:
                         line_no,
                     )
                     continue
-                if record.get("error"):
+                response_payload = record.get("response")
+                error_detail = record.get("error")
+                status_code = self._extract_batch_status_code(response_payload)
+                if error_detail or (
+                    status_code is not None and status_code >= 400
+                ):
+                    message = self._format_batch_error(
+                        error_detail,
+                        status_code,
+                    )
+                    failure_messages[message] += 1
+                    failures += 1
                     LOGGER.warning(
                         "Batch entry for %s failed: %s",
                         custom_id,
-                        record["error"],
+                        message,
                     )
                     continue
-                response_payload = record.get("response")
                 text_payload = self._extract_batch_response_text(
                     response_payload
                 )
@@ -302,6 +316,40 @@ class NarrativeSummariesPipeline:
                     continue
                 results[custom_id] = parsed
 
+        if total_records:
+            LOGGER.info(
+                "Batch output %s processed %s records "
+                "(%s successes, %s failures)",
+                path,
+                total_records,
+                total_records - failures,
+                failures,
+            )
+        if failures:
+            top_errors = ", ".join(
+                f"{msg} (x{count})"
+                for msg, count in failure_messages.most_common(2)
+            )
+            LOGGER.warning(
+                "Batch output %s had %s failures: %s",
+                path,
+                failures,
+                top_errors,
+            )
+        if total_records and failures == total_records:
+            sample_error = (
+                next(iter(failure_messages))
+                if failure_messages
+                else "unknown error"
+            )
+            LOGGER.error(
+                "Batch output %s failed completely (%s/%s errors). Example "
+                "error: %s",
+                path,
+                failures,
+                total_records,
+                sample_error,
+            )
         if not results:
             LOGGER.warning(
                 "Batch output %s contained no usable summaries", path
@@ -339,6 +387,42 @@ class NarrativeSummariesPipeline:
             if chunks:
                 return "".join(chunks)
         return None
+
+    def _extract_batch_status_code(
+        self,
+        response: Mapping[str, Any] | None,
+    ) -> int | None:
+        if not isinstance(response, Mapping):
+            return None
+        status_code = response.get("status_code")
+        if status_code is None:
+            return None
+        try:
+            return int(status_code)
+        except (TypeError, ValueError):
+            return None
+
+    def _format_batch_error(
+        self,
+        error_detail: Any,
+        status_code: int | None,
+    ) -> str:
+        if error_detail is not None:
+            if isinstance(error_detail, Mapping):
+                message = error_detail.get("message")
+                if isinstance(message, str):
+                    return message
+                return json.dumps(
+                    error_detail,
+                    ensure_ascii=False,
+                    sort_keys=True,
+                )
+            if isinstance(error_detail, list | tuple):
+                return json.dumps(error_detail, ensure_ascii=False)
+            return str(error_detail)
+        if status_code is not None:
+            return f"status_code={status_code}"
+        return "unknown error"
 
     def _build_summaries(
         self,
