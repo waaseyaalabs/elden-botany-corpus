@@ -16,6 +16,7 @@ from pipelines.motif_clustering import (
     MotifClusteringPipeline,
 )
 from pipelines.narrative_summarizer import (
+    LLMMode,
     NarrativeSummariesConfig,
     NarrativeSummariesPipeline,
 )
@@ -199,6 +200,16 @@ def graph(
 @click.option("--llm-model", type=str, default=None)
 @click.option("--llm-reasoning", type=str, default=None)
 @click.option(
+    "--llm-mode",
+    type=click.Choice(["batch", "per-entity", "heuristic"]),
+    default="batch",
+    show_default=True,
+    help=(
+        "Execution strategy. Batch uses pre-generated JSONL output, "
+        "per-entity calls the LLM synchronously, heuristic skips the LLM."
+    ),
+)
+@click.option(
     "--dry-run-llm",
     is_flag=True,
     help="Skip LLM calls and emit heuristic summaries instead.",
@@ -211,16 +222,25 @@ def summaries(
     llm_provider: str | None,
     llm_model: str | None,
     llm_reasoning: str | None,
+    llm_mode: str,
     dry_run_llm: bool,
 ) -> None:
     """Generate narrative summaries from the motif graph."""
 
     defaults = NarrativeSummariesConfig()
+    effective_llm_mode: LLMMode = cast(LLMMode, llm_mode)
+    if dry_run_llm:
+        if llm_mode != "batch":
+            raise click.ClickException(
+                "--dry-run-llm cannot be combined with --llm-mode overrides"
+            )
+        effective_llm_mode = "heuristic"
+
     resolved_provider: str | None = None
     resolved_model: str | None = None
     resolved_reasoning: str | None = None
     resolved_max_output: int | None = None
-    if not dry_run_llm:
+    if effective_llm_mode != "heuristic":
         llm_config = resolve_llm_config(
             provider_override=llm_provider,
             model_override=llm_model,
@@ -240,7 +260,7 @@ def summaries(
         max_quotes=(
             max_quotes if max_quotes is not None else defaults.max_quotes
         ),
-        use_llm=not dry_run_llm,
+        llm_mode=effective_llm_mode,
         llm_provider=resolved_provider or llm_provider,
         llm_model=resolved_model or llm_model,
         llm_reasoning=resolved_reasoning or llm_reasoning,
@@ -355,7 +375,7 @@ def summaries_batch(
         max_quotes=(
             max_quotes if max_quotes is not None else defaults.max_quotes
         ),
-        use_llm=True,
+        llm_mode="batch",
         llm_provider=llm_provider,
         llm_model=llm_model,
         llm_reasoning=llm_reasoning,

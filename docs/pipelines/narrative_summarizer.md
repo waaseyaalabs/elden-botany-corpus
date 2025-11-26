@@ -65,28 +65,39 @@ entity (either because `--dry-run-llm` was set or the LLM raised an
 
 ## CLI Usage
 
-Run the pipeline after the motif graph has been generated:
+Run the workflow after the motif graph has been generated:
 
 ```bash
 poetry run corpus analysis graph  # generates graph artifacts
+poetry run corpus analysis summaries-batch --graph-dir data/analysis/npc_motif_graph
+# (optionally submit/poll/download the batch)
 poetry run corpus analysis summaries --graph-dir data/analysis/npc_motif_graph
 ```
 
+The CLI now has three execution modes controlled by `--llm-mode` (default
+`batch`):
+
+- `batch`: consume a downloaded OpenAI batch output (`batch_output.jsonl`).
+- `per-entity`: call the LLM synchronously for the requested subset (debug).
+- `heuristic`: skip LLM calls entirely (alias `--dry-run-llm`).
+
 Key flags:
 
-- `--llm-provider`, `--llm-model`, `--llm-reasoning`: override env defaults.
-- `--dry-run-llm`: skip the LLM entirely and emit heuristic summaries (useful
-  for CI without secrets or when iterating on prompts offline).
+- `--llm-provider`, `--llm-model`, `--llm-reasoning`: override env defaults for
+  both builder + ingestion steps.
+- `--llm-mode per-entity`: force synchronous Runs for tiny subsets / debugging.
+- `--llm-mode heuristic` or `--dry-run-llm`: emit heuristic summaries only.
 - `--max-motifs`, `--max-quotes`: cap the context passed to the LLM and stored
-  in the artifact.
+  in artifacts.
 
-Make targets forward the new options via `ARGS`:
+Make targets forward the options via `ARGS`:
 
 ```bash
-make analysis-summaries                       # provider=openai, model=gpt-5-mini
-make analysis-summaries ARGS="--llm-model gpt-5.1"   # hero run
-make analysis-summaries ARGS="--llm-model gpt-4o-mini"  # cheap debug
-make analysis-summaries ARGS="--dry-run-llm"          # heuristic fallback
+make analysis-summaries-batch                        # build payload
+make analysis-summaries                              # ingest batch output
+make analysis-summaries ARGS="--llm-model gpt-5.1"   # hero batch ingest
+make analysis-summaries ARGS="--llm-mode per-entity --llm-model gpt-4o-mini"
+make analysis-summaries ARGS="--llm-mode heuristic"  # offline fallback
 ```
 
 ## Testing & Local Development

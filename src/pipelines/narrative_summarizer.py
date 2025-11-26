@@ -7,9 +7,9 @@ import logging
 import re
 from collections import Counter
 from collections.abc import Mapping
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any, cast
+from typing import Any, Literal, cast
 
 import pandas as pd
 from corpus.community_schema import MotifTaxonomy, load_motif_taxonomy
@@ -19,7 +19,11 @@ from pipelines.llm.base import (
     LLMResponseError,
     resolve_llm_config,
 )
-from pipelines.llm.openai_client import build_summary_request_body
+from pipelines.aliasing import load_alias_map
+from pipelines.llm.openai_client import (
+    OpenAILLMClient,
+    build_summary_request_body,
+)
 from pipelines.npc_motif_graph import (
     ENTITY_MOTIF_FILENAME,
     ENTITY_SUMMARY_FILENAME,
@@ -34,6 +38,7 @@ SUMMARY_MARKDOWN = "npc_narrative_summaries.md"
 
 
 _QUOTE_ID_PATTERN = re.compile(r"lore_id\s*(?:=|:)\s*([A-Za-z0-9_:-]+)")
+LLMMode = Literal["batch", "per-entity", "heuristic"]
 
 
 @dataclass(slots=True)
@@ -45,13 +50,14 @@ class NarrativeSummariesConfig:
     taxonomy_path: Path | None = None
     max_motifs: int = 4
     max_quotes: int = 3
-    use_llm: bool = True
+    llm_mode: LLMMode = "batch"
     batch_input_path: Path | None = None
     batch_output_path: Path | None = None
     llm_provider: str | None = None
     llm_model: str | None = None
     llm_reasoning: str | None = None
     llm_max_output_tokens: int | None = None
+    alias_table_path: Path | None = None
 
 
 @dataclass(slots=True)
@@ -61,6 +67,28 @@ class NarrativeSummaryArtifacts:
     summaries_json: Path
     summaries_parquet: Path
     markdown_path: Path
+
+
+@dataclass(slots=True)
+class BatchDiagnostics:
+    """Diagnostics for an OpenAI batch output file."""
+
+    path: Path
+    total_records: int = 0
+    successes: int = 0
+    failures: int = 0
+    failed_ids: list[str] = field(default_factory=list)
+    failure_messages: Counter[str] = field(default_factory=Counter)
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "path": str(self.path),
+            "total_records": self.total_records,
+            "successes": self.successes,
+            "failures": self.failures,
+            "failed_ids": list(self.failed_ids),
+            "failure_messages": dict(self.failure_messages),
+        }
 
 
 class NarrativeSummariesPipeline:
@@ -76,8 +104,11 @@ class NarrativeSummariesPipeline:
             self.config.taxonomy_path
         )
         self._motif_order = self._build_motif_order()
+        self._alias_map = load_alias_map(self.config.alias_table_path)
         self._llm_config: LLMConfig | None = None
-        if self.config.use_llm:
+        self._llm_client: OpenAILLMClient | None = None
+        self._batch_diagnostics: BatchDiagnostics | None = None
+        if self.config.llm_mode != "heuristic":
             self._llm_config = resolve_llm_config(
                 provider_override=self.config.llm_provider,
                 model_override=self.config.llm_model,
@@ -97,6 +128,10 @@ class NarrativeSummariesPipeline:
             return self.config.batch_output_path
         return self.config.output_dir / "batch_output.jsonl"
 
+    @property
+    def batch_diagnostics(self) -> BatchDiagnostics | None:
+        return self._batch_diagnostics
+
     def _require_llm_config(self) -> LLMConfig:
         if self._llm_config is None:
             self._llm_config = resolve_llm_config(
@@ -106,6 +141,17 @@ class NarrativeSummariesPipeline:
                 max_output_override=self.config.llm_max_output_tokens,
             )
         return self._llm_config
+
+    def _require_llm_client(self) -> OpenAILLMClient:
+        if self._llm_client is None:
+            config = self._require_llm_config()
+            self._llm_client = OpenAILLMClient(config=config)
+        return self._llm_client
+
+    def _canonicalize_id(self, value: str) -> str:
+        if not value:
+            return value
+        return self._alias_map.get(value, value)
 
     def run(self) -> NarrativeSummaryArtifacts:
         entity_summary = self._read_parquet(
@@ -122,9 +168,18 @@ class NarrativeSummariesPipeline:
         )
 
         batch_results: dict[str, Mapping[str, Any]] | None = None
-        if self.config.use_llm:
+        if self.config.llm_mode == "batch":
             self._require_llm_config()
-            batch_results = self._load_batch_results()
+            try:
+                batch_results = self._load_batch_results()
+            except FileNotFoundError:
+                LOGGER.warning(
+                    "Batch output missing at %s; falling back to heuristic "
+                    "summaries",
+                    self.batch_output_path,
+                )
+        elif self.config.llm_mode == "per-entity":
+            self._require_llm_config()
 
         summaries = self._build_summaries(
             entity_summary,
@@ -146,13 +201,14 @@ class NarrativeSummariesPipeline:
         *,
         destination: Path | None = None,
         llm_config: LLMConfig | None = None,
+        only_ids: set[str] | None = None,
     ) -> Path:
         """Render the JSONL payload for the OpenAI batch API."""
 
-        if not self.config.use_llm:
+        if self.config.llm_mode == "heuristic":
             raise RuntimeError(
-                "LLM mode is disabled; enable --use-llm to build a batch "
-                "payload"
+                "LLM mode is disabled; rerun with --llm-mode batch or "
+                "per-entity to build a payload"
             )
 
         entity_summary = self._read_parquet(
@@ -171,6 +227,7 @@ class NarrativeSummariesPipeline:
         batch_path = destination or self.batch_input_path
         batch_path.parent.mkdir(parents=True, exist_ok=True)
 
+        allowlist = {str(item) for item in only_ids} if only_ids else None
         with batch_path.open("w", encoding="utf-8") as handle:
             for (
                 canonical_id,
@@ -182,6 +239,8 @@ class NarrativeSummariesPipeline:
                 entity_motif,
                 lore_hits,
             ):
+                if allowlist is not None and canonical_id not in allowlist:
+                    continue
                 payload = self._build_llm_payload(
                     canonical_id,
                     summary_row,
@@ -244,19 +303,20 @@ class NarrativeSummariesPipeline:
             contexts.append((canonical_id, row, top_motifs, quotes))
         return contexts
 
-    def _load_batch_results(self) -> dict[str, Mapping[str, Any]]:
-        path = self.batch_output_path
-        if not path.exists():
+    def _load_batch_results(
+        self,
+        path: Path | None = None,
+    ) -> dict[str, Mapping[str, Any]]:
+        target_path = path or self.batch_output_path
+        if not target_path.exists():
             raise FileNotFoundError(
-                f"Batch output missing at {path}. "
+                f"Batch output missing at {target_path}. "
                 "Run 'corpus analysis summaries-batch' to generate it."
             )
 
+        diagnostics = BatchDiagnostics(path=target_path)
         results: dict[str, Mapping[str, Any]] = {}
-        total_records = 0
-        failures = 0
-        failure_messages: Counter[str] = Counter()
-        with path.open("r", encoding="utf-8") as handle:
+        with target_path.open("r", encoding="utf-8") as handle:
             for line_no, raw_line in enumerate(handle, 1):
                 line = raw_line.strip()
                 if not line:
@@ -270,7 +330,7 @@ class NarrativeSummariesPipeline:
                         exc,
                     )
                     continue
-                total_records += 1
+                diagnostics.total_records += 1
                 custom_id = str(record.get("custom_id") or "").strip()
                 if not custom_id:
                     LOGGER.warning(
@@ -288,8 +348,8 @@ class NarrativeSummariesPipeline:
                         error_detail,
                         status_code,
                     )
-                    failure_messages[message] += 1
-                    failures += 1
+                    diagnostics.failure_messages[message] += 1
+                    diagnostics.failed_ids.append(custom_id)
                     LOGGER.warning(
                         "Batch entry for %s failed: %s",
                         custom_id,
@@ -316,43 +376,52 @@ class NarrativeSummariesPipeline:
                     continue
                 results[custom_id] = parsed
 
-        if total_records:
+        diagnostics.successes = len(results)
+        diagnostics.failures = (
+            diagnostics.total_records - diagnostics.successes
+        )
+        self._batch_diagnostics = diagnostics
+
+        if diagnostics.total_records:
             LOGGER.info(
                 "Batch output %s processed %s records "
                 "(%s successes, %s failures)",
-                path,
-                total_records,
-                total_records - failures,
-                failures,
+                target_path,
+                diagnostics.total_records,
+                diagnostics.successes,
+                diagnostics.failures,
             )
-        if failures:
+        if diagnostics.failures:
             top_errors = ", ".join(
                 f"{msg} (x{count})"
-                for msg, count in failure_messages.most_common(2)
+                for msg, count in diagnostics.failure_messages.most_common(2)
             )
             LOGGER.warning(
                 "Batch output %s had %s failures: %s",
-                path,
-                failures,
+                target_path,
+                diagnostics.failures,
                 top_errors,
             )
-        if total_records and failures == total_records:
+        if (
+            diagnostics.total_records
+            and diagnostics.failures == diagnostics.total_records
+        ):
             sample_error = (
-                next(iter(failure_messages))
-                if failure_messages
+                next(iter(diagnostics.failure_messages))
+                if diagnostics.failure_messages
                 else "unknown error"
             )
             LOGGER.error(
                 "Batch output %s failed completely (%s/%s errors). Example "
                 "error: %s",
-                path,
-                failures,
-                total_records,
+                target_path,
+                diagnostics.failures,
+                diagnostics.total_records,
                 sample_error,
             )
         if not results:
             LOGGER.warning(
-                "Batch output %s contained no usable summaries", path
+                "Batch output %s contained no usable summaries", target_path
             )
         return results
 
@@ -441,8 +510,17 @@ class NarrativeSummariesPipeline:
 
         for canonical_id, row, top_motifs, quotes in contexts:
             entry = None
-            if batch_results is not None:
+            if self.config.llm_mode == "batch" and batch_results is not None:
                 entry = batch_results.get(canonical_id)
+                if entry is None:
+                    missing_batch.append(canonical_id)
+            elif self.config.llm_mode == "per-entity":
+                entry = self._summarize_with_llm_client(
+                    canonical_id,
+                    row,
+                    top_motifs,
+                    quotes,
+                )
                 if entry is None:
                     missing_batch.append(canonical_id)
             summaries.append(
@@ -502,7 +580,7 @@ class NarrativeSummariesPipeline:
         llm_used = False
         llm_provider: str | None = None
         llm_model: str | None = None
-        if self.config.use_llm:
+        if self.config.llm_mode != "heuristic":
             llm_config = self._require_llm_config()
             llm_provider = self.config.llm_provider or llm_config.provider
             llm_model = self.config.llm_model or llm_config.model
@@ -525,7 +603,7 @@ class NarrativeSummariesPipeline:
                         summary_motif_slugs = llm_result["motif_slugs"]
                     supporting_quotes = llm_result["supporting_quotes"]
                     llm_used = True
-            else:
+            elif self.config.llm_mode == "batch":
                 LOGGER.debug(
                     "No batch summary found for %s; using heuristic output",
                     canonical_id,
@@ -543,14 +621,41 @@ class NarrativeSummariesPipeline:
         )
         return entry
 
+    def _summarize_with_llm_client(
+        self,
+        canonical_id: str,
+        summary_row: pd.Series,
+        top_motifs: list[dict[str, Any]],
+        quotes: list[dict[str, Any]],
+    ) -> Mapping[str, Any] | None:
+        payload = self._build_llm_payload(
+            canonical_id,
+            summary_row,
+            top_motifs,
+            quotes,
+        )
+        client = self._require_llm_client()
+        try:
+            return client.summarize_entity(payload)
+        except LLMResponseError as exc:
+            LOGGER.warning(
+                "Per-entity LLM call failed for %s: %s",
+                canonical_id,
+                exc,
+            )
+            return None
+
     def _normalize_llm_response(
         self,
         canonical_id: str,
         response: Mapping[str, Any],
         quotes: list[dict[str, Any]],
     ) -> dict[str, Any]:
-        response_id = str(response.get("canonical_id", "")).strip()
-        if response_id and response_id != canonical_id:
+        response_id = self._canonicalize_id(
+            str(response.get("canonical_id", "")).strip()
+        )
+        expected_id = self._canonicalize_id(canonical_id)
+        if response_id and response_id != expected_id:
             raise LLMResponseError(
                 f"LLM response canonical_id mismatch for {canonical_id}"
             )
@@ -704,166 +809,4 @@ class NarrativeSummariesPipeline:
             ["hit_count", "__rank"],
             ascending=[False, True],
         ).head(self.config.max_motifs)
-        top_motifs: list[dict[str, Any]] = []
-        for _, row in ordered.iterrows():
-            top_motifs.append(
-                {
-                    "slug": row["motif_slug"],
-                    "label": row.get("motif_label", row["motif_slug"]),
-                    "category": row.get("motif_category", "unknown"),
-                    "hit_count": int(row["hit_count"]),
-                    "unique_lore": int(row["unique_lore"]),
-                }
-            )
-        return top_motifs
-
-    def _quotes_for_entity(
-        self,
-        canonical_id: str,
-        grouped_hits: Any,
-    ) -> list[dict[str, Any]]:
-        if canonical_id not in grouped_hits.groups:
-            return []
-        subset = grouped_hits.get_group(canonical_id)
-        quotes: list[dict[str, Any]] = []
-        for lore_id, group in subset.groupby("lore_id"):
-            motifs = sorted(group["motif_label"].unique())
-            quotes.append(
-                {
-                    "lore_id": lore_id,
-                    "text": group["text"].iloc[0],
-                    "motifs": motifs,
-                }
-            )
-            if len(quotes) >= self.config.max_quotes:
-                break
-        return quotes
-
-    def _compose_summary_text(
-        self,
-        canonical_id: str,
-        summary_row: pd.Series,
-        top_motifs: list[dict[str, Any]],
-    ) -> str:
-        motif_labels = [
-            str(item.get("label", ""))
-            for item in top_motifs
-            if item.get("label")
-        ]
-        motif_phrase = self._format_list(motif_labels)
-        lore_count = int(summary_row.get("lore_count", 0))
-        if not motif_phrase:
-            return (
-                f"{canonical_id} surfaces {lore_count} lore lines but has "
-                "no registered motifs yet."
-            )
-        return (
-            f"{canonical_id} leans on {motif_phrase} across {lore_count} "
-            "lore lines."
-        )
-
-    def _format_list(self, items: list[str]) -> str:
-        cleaned = [item for item in items if item]
-        if not cleaned:
-            return ""
-        if len(cleaned) == 1:
-            return cleaned[0]
-        return ", ".join(cleaned[:-1]) + f" and {cleaned[-1]}"
-
-    def _write_artifacts(
-        self,
-        summaries: list[dict[str, object]],
-    ) -> NarrativeSummaryArtifacts:
-        output_dir = self.config.output_dir
-        output_dir.mkdir(parents=True, exist_ok=True)
-
-        json_path = output_dir / SUMMARY_JSON
-        parquet_path = output_dir / SUMMARY_PARQUET
-        markdown_path = output_dir / SUMMARY_MARKDOWN
-
-        payload: dict[str, Any] = {
-            "summary": {
-                "entities": len(summaries),
-                "graph_dir": str(self.config.graph_dir),
-                "taxonomy_version": self._taxonomy.version,
-            },
-            "summaries": summaries,
-        }
-        json_path.write_text(
-            json.dumps(payload, indent=2, ensure_ascii=False),
-            encoding="utf-8",
-        )
-
-        parquet_rows: list[dict[str, Any]] = [
-            {
-                "canonical_id": item["canonical_id"],
-                "category": item["category"],
-                "lore_count": item["lore_count"],
-                "motif_mentions": item["motif_mentions"],
-                "unique_motifs": item["unique_motifs"],
-                "top_motifs": json.dumps(
-                    item["top_motifs"], ensure_ascii=False
-                ),
-                "quotes": json.dumps(item["quotes"], ensure_ascii=False),
-                "summary_text": item["summary_text"],
-                "summary_motif_slugs": json.dumps(
-                    item["summary_motif_slugs"],
-                    ensure_ascii=False,
-                ),
-                "supporting_quotes": json.dumps(
-                    item["supporting_quotes"],
-                    ensure_ascii=False,
-                ),
-                "llm_provider": item["llm_provider"],
-                "llm_model": item["llm_model"],
-                "llm_used": item["llm_used"],
-            }
-            for item in summaries
-        ]
-        pd.DataFrame(parquet_rows).to_parquet(parquet_path, index=False)
-
-        markdown_path.write_text(
-            self._markdown_body(summaries),
-            encoding="utf-8",
-        )
-
-        return NarrativeSummaryArtifacts(
-            summaries_json=json_path,
-            summaries_parquet=parquet_path,
-            markdown_path=markdown_path,
-        )
-
-    def _build_motif_order(self) -> dict[str, int]:
-        order: dict[str, int] = {}
-        index = 0
-        for category in self._taxonomy.categories:
-            for motif in category.motifs:
-                order[motif.slug] = index
-                index += 1
-        return order
-
-    def _markdown_body(self, summaries: list[dict[str, Any]]) -> str:
-        lines = ["# NPC Narrative Summaries", ""]
-        lines.append(f"Total entities: {len(summaries)}")
-        lines.append(f"Source graph: {self.config.graph_dir}")
-        lines.append("")
-        for entry in summaries:
-            lines.append(f"## {entry['canonical_id']}")
-            lines.append(str(entry["summary_text"]))
-            lines.append("")
-            motif_items = cast(list[dict[str, Any]], entry["top_motifs"])
-            motif_labels = ", ".join(
-                [
-                    f"{item['label']} ({item['hit_count']})"
-                    for item in motif_items
-                ]
-            )
-            lines.append(f"Top motifs: {motif_labels}")
-            if entry["quotes"]:
-                lines.append("Quotes:")
-                quote_items = cast(list[dict[str, Any]], entry["quotes"])
-                for quote in quote_items:
-                    motif_list = ", ".join(cast(list[str], quote["motifs"]))
-                    lines.append(f"- {quote['text']} ({motif_list})")
-            lines.append("")
-        return "\n".join(lines)
+        top_motifs: list[dict[str, Any]] = {}
