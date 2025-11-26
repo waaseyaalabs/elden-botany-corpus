@@ -119,7 +119,7 @@ def test_narrative_summaries_pipeline(tmp_path: Path) -> None:
             output_dir=tmp_path / "summaries",
             max_motifs=2,
             max_quotes=1,
-            use_llm=False,
+            llm_mode="heuristic",
         ),
         taxonomy=taxonomy,
     )
@@ -192,6 +192,94 @@ def test_narrative_summaries_pipeline_llm_fallback(tmp_path: Path) -> None:
     assert entry["llm_used"] is False
     assert entry["llm_provider"] == "fake"
     assert "npc:melina" in entry["summary_text"]
+
+
+def test_pipeline_falls_back_when_batch_missing(tmp_path: Path) -> None:
+    graph_dir, taxonomy = _prepare_graph(tmp_path)
+
+    pipeline = NarrativeSummariesPipeline(
+        config=NarrativeSummariesConfig(
+            graph_dir=graph_dir,
+            output_dir=tmp_path / "summaries_missing",
+            llm_mode="batch",
+        ),
+        taxonomy=taxonomy,
+    )
+    artifacts = pipeline.run()
+
+    payload = json.loads(artifacts.summaries_json.read_text())
+    entry = payload["summaries"][0]
+    assert entry["llm_used"] is False
+    assert pipeline.batch_diagnostics is None
+
+
+def test_pipeline_records_batch_diagnostics(tmp_path: Path) -> None:
+    graph_dir, taxonomy = _prepare_graph(tmp_path)
+    batch_path = tmp_path / "batch_diag.jsonl"
+    _write_batch_file(
+        batch_path,
+        [
+            _batch_response("npc:melina", _summary_payload()),
+            {"custom_id": "npc:unknown", "error": {"message": "boom"}},
+        ],
+    )
+
+    pipeline = NarrativeSummariesPipeline(
+        config=NarrativeSummariesConfig(
+            graph_dir=graph_dir,
+            output_dir=tmp_path / "summaries_diag",
+            batch_output_path=batch_path,
+        ),
+        taxonomy=taxonomy,
+    )
+    pipeline.run()
+
+    diagnostics = pipeline.batch_diagnostics
+    assert diagnostics is not None
+    assert diagnostics.total_records == 2
+    assert diagnostics.successes == 1
+    assert diagnostics.failures == 1
+    assert diagnostics.failed_ids == ["npc:unknown"]
+
+
+def test_pipeline_accepts_alias_responses(tmp_path: Path) -> None:
+    graph_dir, taxonomy = _prepare_graph(tmp_path)
+    batch_path = tmp_path / "batch_alias.jsonl"
+    alias_path = tmp_path / "aliases.csv"
+    pd.DataFrame(
+        [
+            {
+                "alias_id": "npc:melina-alt",
+                "canonical_id": "npc:melina",
+            }
+        ]
+    ).to_csv(alias_path, index=False)
+
+    _write_batch_file(
+        batch_path,
+        [
+            _batch_response(
+                "npc:melina",
+                _summary_payload(canonical_id="npc:melina-alt"),
+            )
+        ],
+    )
+
+    pipeline = NarrativeSummariesPipeline(
+        config=NarrativeSummariesConfig(
+            graph_dir=graph_dir,
+            output_dir=tmp_path / "summaries_alias",
+            batch_output_path=batch_path,
+            alias_table_path=alias_path,
+        ),
+        taxonomy=taxonomy,
+    )
+    artifacts = pipeline.run()
+
+    payload = json.loads(artifacts.summaries_json.read_text())
+    entry = payload["summaries"][0]
+    assert entry["llm_used"] is True
+    assert entry["summary_text"] == "FAKE SUMMARY"
 
 
 def test_narrative_summaries_pipeline_rejects_mismatched_responses(

@@ -15,6 +15,7 @@ import pandas as pd
 from corpus.community_schema import MotifTaxonomy, load_motif_taxonomy
 from corpus.config import settings
 
+from pipelines.aliasing import load_alias_map
 from pipelines.motif_taxonomy_utils import (
     MotifMetadata,
     PatternMap,
@@ -41,6 +42,7 @@ class NPCMotifGraphConfig:
     output_dir: Path = Path("data/analysis/npc_motif_graph")
     taxonomy_path: Path | None = None
     categories: tuple[str, ...] = ("npc",)
+    alias_table_path: Path | None = None
 
 
 @dataclass(slots=True)
@@ -69,6 +71,7 @@ class NPCMotifGraphPipeline:
         )
         self._patterns: PatternMap = compile_motif_patterns(self._taxonomy)
         self._motif_lookup = motif_lookup(self._taxonomy)
+        self._alias_map = load_alias_map(self.config.alias_table_path)
 
     def run(self) -> NPCMotifGraphArtifacts:
         """Execute the pipeline and persist graph artifacts."""
@@ -122,7 +125,24 @@ class NPCMotifGraphPipeline:
             raise RuntimeError(
                 f"Lore corpus contains no rows for categories: {categories}"
             )
-        return trimmed
+        return self._apply_alias_map(trimmed)
+
+    def _apply_alias_map(self, frame: pd.DataFrame) -> pd.DataFrame:
+        if not self._alias_map:
+            return frame
+        updated = frame.copy()
+        resolved = [
+            self._alias_map.get(str(value), str(value))
+            for value in updated["canonical_id"].astype(str)
+        ]
+        updated["canonical_id"] = resolved
+        changed = updated["canonical_id"].ne(frame["canonical_id"])
+        if changed.any():
+            LOGGER.info(
+                "Applied alias overrides to %s lore rows",
+                int(changed.sum()),
+            )
+        return updated
 
     def _expand_hits(
         self,

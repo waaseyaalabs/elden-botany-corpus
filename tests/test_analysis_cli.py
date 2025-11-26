@@ -5,6 +5,9 @@ from __future__ import annotations
 from pathlib import Path
 from types import SimpleNamespace
 
+import pytest
+from click import ClickException
+
 from corpus import analysis_cli
 
 
@@ -37,13 +40,65 @@ def test_summaries_cli_respects_zero_overrides(monkeypatch, tmp_path):
         llm_provider=None,
         llm_model=None,
         llm_reasoning=None,
+        llm_mode="batch",
         dry_run_llm=True,
     )
 
     config = captured["config"]
     assert config.max_motifs == 0
     assert config.max_quotes == 0
-    assert config.use_llm is False
+    assert config.llm_mode == "heuristic"
+
+
+def test_summaries_cli_allows_llm_mode_override(monkeypatch, tmp_path):
+    captured: dict[str, object] = {}
+
+    class DummyPipeline:
+        def __init__(self, config):
+            captured["config"] = config
+
+        def run(self):
+            return SimpleNamespace(
+                summaries_json=tmp_path / "summaries.json",
+                summaries_parquet=tmp_path / "summaries.parquet",
+                markdown_path=tmp_path / "summaries.md",
+            )
+
+    monkeypatch.setattr(
+        analysis_cli,
+        "NarrativeSummariesPipeline",
+        DummyPipeline,
+    )
+
+    analysis_cli.summaries.callback(
+        graph_dir=tmp_path / "graph",
+        output_dir=tmp_path / "out",
+        max_motifs=None,
+        max_quotes=None,
+        llm_provider="openai",
+        llm_model="gpt-4o-mini",
+        llm_reasoning="medium",
+        llm_mode="per-entity",
+        dry_run_llm=False,
+    )
+
+    config = captured["config"]
+    assert config.llm_mode == "per-entity"
+
+
+def test_summaries_cli_rejects_conflicting_dry_run(monkeypatch, tmp_path):
+    with pytest.raises(ClickException):
+        analysis_cli.summaries.callback(
+            graph_dir=tmp_path / "graph",
+            output_dir=tmp_path / "out",
+            max_motifs=None,
+            max_quotes=None,
+            llm_provider=None,
+            llm_model=None,
+            llm_reasoning=None,
+            llm_mode="per-entity",
+            dry_run_llm=True,
+        )
 
 
 def test_summaries_batch_build_submit_and_download(monkeypatch, tmp_path):
@@ -146,3 +201,4 @@ def test_summaries_batch_build_submit_and_download(monkeypatch, tmp_path):
     assert captured["submitted"]["batch_file"] == batch_input
     assert captured["polled"] == {"batch_id": "batch-123", "interval": 5.0}
     assert Path(captured["download_destination"]) == batch_output
+    assert captured["config"].llm_mode == "batch"

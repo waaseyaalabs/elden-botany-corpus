@@ -809,4 +809,166 @@ class NarrativeSummariesPipeline:
             ["hit_count", "__rank"],
             ascending=[False, True],
         ).head(self.config.max_motifs)
-        top_motifs: list[dict[str, Any]] = {}
+        top_motifs: list[dict[str, Any]] = []
+        for _, row in ordered.iterrows():
+            top_motifs.append(
+                {
+                    "slug": row["motif_slug"],
+                    "label": row.get("motif_label", row["motif_slug"]),
+                    "category": row.get("motif_category", "unknown"),
+                    "hit_count": int(row["hit_count"]),
+                    "unique_lore": int(row["unique_lore"]),
+                }
+            )
+        return top_motifs
+
+    def _quotes_for_entity(
+        self,
+        canonical_id: str,
+        grouped_hits: Any,
+    ) -> list[dict[str, Any]]:
+        if canonical_id not in grouped_hits.groups:
+            return []
+        subset = grouped_hits.get_group(canonical_id)
+        quotes: list[dict[str, Any]] = []
+        for lore_id, group in subset.groupby("lore_id"):
+            motifs = sorted(group["motif_label"].unique())
+            quotes.append(
+                {
+                    "lore_id": lore_id,
+                    "text": group["text"].iloc[0],
+                    "motifs": motifs,
+                }
+            )
+            if len(quotes) >= self.config.max_quotes:
+                break
+        return quotes
+
+    def _compose_summary_text(
+        self,
+        canonical_id: str,
+        summary_row: pd.Series,
+        top_motifs: list[dict[str, Any]],
+    ) -> str:
+        motif_labels = [
+            str(item.get("label", ""))
+            for item in top_motifs
+            if item.get("label")
+        ]
+        motif_phrase = self._format_list(motif_labels)
+        lore_count = int(summary_row.get("lore_count", 0))
+        if not motif_phrase:
+            return (
+                f"{canonical_id} surfaces {lore_count} lore lines but has "
+                "no registered motifs yet."
+            )
+        return (
+            f"{canonical_id} leans on {motif_phrase} across {lore_count} "
+            "lore lines."
+        )
+
+    def _format_list(self, items: list[str]) -> str:
+        cleaned = [item for item in items if item]
+        if not cleaned:
+            return ""
+        if len(cleaned) == 1:
+            return cleaned[0]
+        return ", ".join(cleaned[:-1]) + f" and {cleaned[-1]}"
+
+    def _write_artifacts(
+        self,
+        summaries: list[dict[str, object]],
+    ) -> NarrativeSummaryArtifacts:
+        output_dir = self.config.output_dir
+        output_dir.mkdir(parents=True, exist_ok=True)
+
+        json_path = output_dir / SUMMARY_JSON
+        parquet_path = output_dir / SUMMARY_PARQUET
+        markdown_path = output_dir / SUMMARY_MARKDOWN
+
+        payload: dict[str, Any] = {
+            "summary": {
+                "entities": len(summaries),
+                "graph_dir": str(self.config.graph_dir),
+                "taxonomy_version": self._taxonomy.version,
+            },
+            "summaries": summaries,
+        }
+        json_path.write_text(
+            json.dumps(payload, indent=2, ensure_ascii=False),
+            encoding="utf-8",
+        )
+
+        parquet_rows: list[dict[str, Any]] = [
+            {
+                "canonical_id": item["canonical_id"],
+                "category": item["category"],
+                "lore_count": item["lore_count"],
+                "motif_mentions": item["motif_mentions"],
+                "unique_motifs": item["unique_motifs"],
+                "top_motifs": json.dumps(
+                    item["top_motifs"], ensure_ascii=False
+                ),
+                "quotes": json.dumps(item["quotes"], ensure_ascii=False),
+                "summary_text": item["summary_text"],
+                "summary_motif_slugs": json.dumps(
+                    item["summary_motif_slugs"],
+                    ensure_ascii=False,
+                ),
+                "supporting_quotes": json.dumps(
+                    item["supporting_quotes"],
+                    ensure_ascii=False,
+                ),
+                "llm_provider": item["llm_provider"],
+                "llm_model": item["llm_model"],
+                "llm_used": item["llm_used"],
+            }
+            for item in summaries
+        ]
+        pd.DataFrame(parquet_rows).to_parquet(parquet_path, index=False)
+
+        markdown_path.write_text(
+            self._markdown_body(summaries),
+            encoding="utf-8",
+        )
+
+        return NarrativeSummaryArtifacts(
+            summaries_json=json_path,
+            summaries_parquet=parquet_path,
+            markdown_path=markdown_path,
+        )
+
+    def _build_motif_order(self) -> dict[str, int]:
+        order: dict[str, int] = {}
+        index = 0
+        for category in self._taxonomy.categories:
+            for motif in category.motifs:
+                order[motif.slug] = index
+                index += 1
+        return order
+
+    def _markdown_body(self, summaries: list[dict[str, Any]]) -> str:
+        lines = ["# NPC Narrative Summaries", ""]
+        lines.append(f"Total entities: {len(summaries)}")
+        lines.append(f"Source graph: {self.config.graph_dir}")
+        lines.append("")
+        for entry in summaries:
+            lines.append(f"## {entry['canonical_id']}")
+            lines.append(str(entry["summary_text"]))
+            lines.append("")
+            motif_items = cast(list[dict[str, Any]], entry["top_motifs"])
+            motif_labels = ", ".join(
+                [
+                    f"{item['label']} ({item['hit_count']})"
+                    for item in motif_items
+                ]
+            )
+            lines.append(f"Top motifs: {motif_labels}")
+            if entry["quotes"]:
+                lines.append("Quotes:")
+                quote_items = cast(list[dict[str, Any]], entry["quotes"])
+                for quote in quote_items:
+                    motif_list = ", ".join(cast(list[str], quote["motifs"]))
+                    lines.append(f"- {quote['text']} ({motif_list})")
+            lines.append("")
+        return "\n".join(lines)
