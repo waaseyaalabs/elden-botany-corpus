@@ -50,6 +50,8 @@ jobs:
 
   test:
     runs-on: ubuntu-latest
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
     
     steps:
       - uses: actions/checkout@v4
@@ -75,6 +77,15 @@ jobs:
       - name: Install dependencies
         run: |
           poetry install --no-interaction
+
+      - name: Verify OpenAI API secret
+        if: github.event_name != 'pull_request' || (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository)
+        run: |
+          if [ -z "${OPENAI_API_KEY}" ]; then
+            echo "OPENAI_API_KEY secret must be configured on the repository to run LLM-enabled tests."
+            exit 1
+          fi
+          echo "Detected OPENAI_API_KEY secret; continuing with LLM-enabled paths."
     
       - name: Run unit tests
         run: |
@@ -93,6 +104,7 @@ jobs:
     env:
       KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
       KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
     
     services:
       postgres:

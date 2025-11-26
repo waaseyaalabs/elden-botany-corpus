@@ -7,10 +7,12 @@ from dataclasses import dataclass
 from pathlib import Path
 
 import pandas as pd
+from corpus.community_schema import MotifCategory, MotifEntry, MotifTaxonomy
 
 REQUIRED_LORE_COLUMNS = (
     "lore_id",
     "canonical_id",
+    "raw_canonical_id",
     "category",
     "text_type",
     "source",
@@ -53,6 +55,7 @@ def write_sample_lore_corpus(base_dir: Path) -> Path:
         {
             "lore_id": "lore-item",
             "canonical_id": "item-001",
+            "raw_canonical_id": "item-001",
             "category": "item",
             "text_type": "description",
             "source": "test",
@@ -61,6 +64,7 @@ def write_sample_lore_corpus(base_dir: Path) -> Path:
         {
             "lore_id": "lore-weapon",
             "canonical_id": "weapon-001",
+            "raw_canonical_id": "weapon-001",
             "category": "weapon",
             "text_type": "description",
             "source": "test",
@@ -69,6 +73,7 @@ def write_sample_lore_corpus(base_dir: Path) -> Path:
         {
             "lore_id": "lore-weapon-effect",
             "canonical_id": "weapon-001",
+            "raw_canonical_id": "weapon-001",
             "category": "weapon",
             "text_type": "effect",
             "source": "test",
@@ -77,6 +82,7 @@ def write_sample_lore_corpus(base_dir: Path) -> Path:
         {
             "lore_id": "lore-boss",
             "canonical_id": "boss-001",
+            "raw_canonical_id": "boss-001",
             "category": "boss",
             "text_type": "bio",
             "source": "test",
@@ -89,4 +95,39 @@ def write_sample_lore_corpus(base_dir: Path) -> Path:
     return lore_path
 
 
-__all__ = ["DeterministicEncoder", "write_sample_lore_corpus"]
+def sample_taxonomy() -> MotifTaxonomy:
+    """Return a compact taxonomy used across analysis-layer tests."""
+
+    categories = [
+        MotifCategory(
+            slug="narrative",
+            label="Narrative",
+            description="Test motifs",
+            motifs=[
+                MotifEntry(
+                    slug="scarlet_rot",
+                    label="Scarlet Rot",
+                    description="Blooming decay",
+                    category="narrative",
+                    synonyms=["rot", "scarlet"],
+                    narrative_signals=["rot"],
+                ),
+                MotifEntry(
+                    slug="dream_cycle",
+                    label="Dream Cycle",
+                    description="Dream-laden journeys",
+                    category="narrative",
+                    synonyms=["dream", "mirror"],
+                    narrative_signals=["dream"],
+                ),
+            ],
+        )
+    ]
+    return MotifTaxonomy(version=1, categories=categories)
+
+
+__all__ = [
+    "DeterministicEncoder",
+    "write_sample_lore_corpus",
+    "sample_taxonomy",
+]

@@ -217,7 +217,7 @@ def load_bundle(
         if not isinstance(revisions_section, list):
             raise BundleError("'revisions' section must be a list")
         revisions_payload = []
-        entries = cast(list[Any], revisions_section)
+        entries = list(revisions_section)
         for entry in entries:
             if not isinstance(entry, dict):
                 raise BundleError("Revision entries must be mappings")

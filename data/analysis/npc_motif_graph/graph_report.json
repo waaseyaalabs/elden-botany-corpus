@@ -1,0 +1,25 @@
+{
+  "summary": {
+    "entities": 8030,
+    "lore_nodes": 8030,
+    "motif_edges": 756,
+    "taxonomy_version": 1
+  },
+  "sample_queries": [
+    {
+      "description": "List motifs for an entity",
+      "networkx": "graph[canonical_id] to find lore neighbors, then motif successors"
+    },
+    {
+      "description": "Find NPCs sharing a motif",
+      "networkx": "{n for n in graph.predecessors(motif_slug) if graph.nodes[n]['type'] == 'entity'}"
+    }
+  ],
+  "artifacts": {
+    "graph": "data/analysis/npc_motif_graph/npc_motif_graph.gpickle",
+    "graphml": "data/analysis/npc_motif_graph/npc_motif_graph.graphml",
+    "entity_summary": "data/analysis/npc_motif_graph/entity_summary.parquet",
+    "entity_motif_stats": "data/analysis/npc_motif_graph/entity_motif_stats.parquet",
+    "lore_hits": "data/analysis/npc_motif_graph/lore_motif_hits.parquet"
+  }
+}

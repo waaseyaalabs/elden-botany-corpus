@@ -1,0 +1,41 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.6.0 -- /home/teenwdwgeek/waaseyaalabs/TarnishBotanist/elden-botany-corpus/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /home/teenwdwgeek/waaseyaalabs/TarnishBotanist/elden-botany-corpus
+configfile: pytest.ini
+plugins: typeguard-4.4.4, cov-4.1.0, anyio-4.11.0
+collecting ... collected 2 items
+
+tests/test_npc_motif_graph.py::test_npc_motif_graph_pipeline_builds_network PASSED [ 50%]
+tests/test_narrative_summarizer.py::test_narrative_summaries_pipeline PASSED [100%]
+
+---------- coverage: platform linux, python 3.12.3-final-0 -----------
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+src/corpus/__init__.py                 1      0   100%
+src/corpus/analysis_cli.py            74     74     0%   3-207
+src/corpus/cli.py                    127    127     0%   3-326
+src/corpus/community_bundle.py       208    208     0%   3-427
+src/corpus/community_cli.py          167    167     0%   3-398
+src/corpus/community_schema.py       206     82    60%   32, 87-95, 113, 159-163, 168-170, 175, 181-214, 255-260, 265, 271, 294-305, 314-328, 333-338, 357-374
+src/corpus/config.py                  47      9    81%   122, 126-138
+src/corpus/curate.py                 132    132     0%   5-344
+src/corpus/embeddings.py              44     44     0%   3-119
+src/corpus/export.py                  14     14     0%   3-33
+src/corpus/incremental.py             73     73     0%   3-161
+src/corpus/ingest_carian_fmg.py       54     54     0%   3-154
+src/corpus/ingest_github_json.py     112    112     0%   3-245
+src/corpus/ingest_impalers.py         94     94     0%   3-234
+src/corpus/ingest_kaggle.py          190    190     0%   5-510
+src/corpus/lineage.py                 38     38     0%   3-94
+src/corpus/models.py                  57     57     0%   3-135
+src/corpus/pgvector_loader.py         71     71     0%   3-224
+src/corpus/pipeline_config.py         10     10     0%   3-22
+src/corpus/quality.py                106    106     0%   3-283
+src/corpus/reconcile.py              112    112     0%   3-294
+src/corpus/utils.py                   74     74     0%   3-205
+----------------------------------------------------------------
+TOTAL                               2011   1848     8%
+
+
+============================== 2 passed in 1.40s ===============================

@@ -97,6 +97,53 @@ elden-botany-corpus/
 
 │       ├── quality/         # HTML/JSON profiling artifacts
 
+### Phase 7 Analysis Layer
+
+- Motif clusters and NPC graphs are still computed locally via
+   `corpus analysis clusters` and `corpus analysis graph`.
+- Narrative summaries now default to ingesting OpenAI **batch** outputs. Run
+   `make analysis-summaries-batch` to build/submit/download the JSONL payload,
+   then `make analysis-summaries` (batch mode) to materialize JSON/Parquet/MD
+   artifacts. Configure the connector with `TB_LLM_PROVIDER`, `TB_LLM_MODEL`,
+   and set `OPENAI_API_KEY` (CI should source this from GitHub Secrets). The
+   cost-aware model strategy is:
+   - **Bulk default** (`gpt-5-mini`): used automatically for large batches.
+   - **Hero premium** (`gpt-5.1`): opt-in when narrative polish matters most.
+   - **Ultra-cheap debug** (`gpt-4o-mini`): for JSON/prompt smoke tests only.
+- Use `poetry run corpus analysis summaries --llm-mode per-entity` for targeted
+   debugging or `--llm-mode heuristic` (alias `--dry-run-llm`) to skip LLM
+   entirely.
+- When batch output is supplied, the pipeline records `llm_used=true` plus the
+   provider/model inside each JSON + Parquet summary entry.
+- CLI shortcuts:
+    - `make analysis-summaries` → default batch ingestion (`gpt-5-mini`).
+    - `make analysis-summaries ARGS="--llm-model gpt-5.1"` → hero batch.
+    - `make analysis-summaries ARGS="--llm-mode per-entity --llm-model gpt-4o-mini"`
+       → synchronous debug run.
+    - `make analysis-summaries ARGS="--llm-mode heuristic"` → pure heuristics.
+
+#### End-to-end analysis workflow
+
+1. **Cluster lore motifs**: `make analysis-clusters` runs
+   `poetry run corpus analysis clusters --export`, writing artifacts under
+   `data/analysis/motif_clustering/`. Pass overrides through
+   `ARGS="--curated path/to/lore.parquet --max-rows 20000"` when needed.
+2. **Build the NPC motif graph**: `make analysis-graph` produces the graph,
+   GraphML, and JSON report inside `data/analysis/npc_motif_graph/`. Run this
+   after every curated lore refresh so downstream steps see the latest stats.
+3. **Generate narrative summaries**: `make analysis-summaries-batch` builds the
+   JSONL payload (and can optionally submit/download OpenAI batch jobs). Once
+   the batch output exists, run `make analysis-summaries` to ingest the JSONL
+   and emit JSON/Parquet/Markdown outputs in
+   `data/analysis/narrative_summaries/`. Use `ARGS="--llm-mode per-entity"` for
+   synchronous debugging or `--llm-mode heuristic` / `--dry-run-llm` for the
+   offline fallback. Each run records the provider/model plus whether an LLM was
+   actually used.
+
+Run the steps in order whenever you need a fresh qualitative drop; summaries
+fail fast if the graph artifacts are missing or stale, so keeping this workflow
+together prevents mismatched datasets.
+
 ### 1. Clone & Install
 
 ```bash
