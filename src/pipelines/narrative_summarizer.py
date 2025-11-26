@@ -14,12 +14,12 @@ from typing import Any, Literal, cast
 import pandas as pd
 from corpus.community_schema import MotifTaxonomy, load_motif_taxonomy
 
+from pipelines.aliasing import load_alias_map
 from pipelines.llm.base import (
     LLMConfig,
     LLMResponseError,
     resolve_llm_config,
 )
-from pipelines.aliasing import load_alias_map
 from pipelines.llm.openai_client import (
     OpenAILLMClient,
     build_summary_request_body,
@@ -693,7 +693,7 @@ class NarrativeSummariesPipeline:
             return []
         if not isinstance(value, list):
             raise LLMResponseError(f"LLM field '{field_name}' must be a list")
-        typed_list = cast(list[Any], value)
+        typed_list = value
         result: list[str] = []
         for item in typed_list:
             if item is None:
@@ -801,11 +801,9 @@ class NarrativeSummariesPipeline:
     def _top_motifs(self, motif_rows: pd.DataFrame) -> list[dict[str, Any]]:
         ranked = motif_rows.copy()
         order_series = ranked["motif_slug"].map(self._motif_order)
-        filled = order_series.fillna(  # type: ignore[arg-type]
-            float(len(self._motif_order))
-        )
+        filled = order_series.fillna(float(len(self._motif_order)))
         ranked.loc[:, "__rank"] = filled
-        ordered = ranked.sort_values(  # type: ignore[arg-type]
+        ordered = ranked.sort_values(
             ["hit_count", "__rank"],
             ascending=[False, True],
         ).head(self.config.max_motifs)

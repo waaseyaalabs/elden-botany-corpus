@@ -558,7 +558,7 @@ class CommunityIngestionPipeline:
 
     def _read_dataframe(self, path: Path, columns: list[str]) -> pd.DataFrame:
         if path.exists():
-            frame: pd.DataFrame = pd.read_parquet(path)  # type: ignore[misc]
+            frame: pd.DataFrame = pd.read_parquet(path)
             return frame
         return pd.DataFrame(columns=columns)
 

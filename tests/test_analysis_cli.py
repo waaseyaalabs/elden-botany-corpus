@@ -7,7 +7,6 @@ from types import SimpleNamespace
 
 import pytest
 from click import ClickException
-
 from corpus import analysis_cli
 
 

@@ -7,7 +7,7 @@ import logging
 import pickle
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any
+from typing import Any, cast
 
 import networkx as nx
 import numpy as np
@@ -387,4 +387,5 @@ def load_graph(graph_path: Path) -> nx.DiGraph[Any]:
     """Convenience helper for tests and downstream notebooks."""
 
     with graph_path.open("rb") as handle:
-        return pickle.load(handle)
+        graph = cast(nx.DiGraph[Any], pickle.load(handle))
+    return graph

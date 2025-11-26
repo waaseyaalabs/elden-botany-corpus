@@ -127,7 +127,7 @@ def _load_curated_frame(
         )
     fallback_path = csv_fallback or path.with_suffix(".csv")
     try:
-        frame: pd.DataFrame = pd.read_parquet(path)  # type: ignore[misc]
+        frame: pd.DataFrame = pd.read_parquet(path)
         return frame
     except Exception as pandas_error:  # pragma: no cover - defensive fallback
         polars_frame: pd.DataFrame | None = None
@@ -178,9 +178,7 @@ def _load_curated_frame(
                 csv=fallback_path.name,
             )
         )
-        csv_frame: pd.DataFrame = pd.read_csv(  # type: ignore[call-overload]
-            str(fallback_path)
-        )
+        csv_frame: pd.DataFrame = pd.read_csv(str(fallback_path))
         return csv_frame
 
 

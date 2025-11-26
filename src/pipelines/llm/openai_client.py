@@ -198,12 +198,13 @@ class OpenAILLMClient:
         return chunks
 
     def _parse_summary(self, raw: str) -> dict[str, Any]:
+        parsed: dict[str, Any]
         try:
-            parsed = json.loads(raw)
+            parsed = cast(dict[str, Any], json.loads(raw))
         except json.JSONDecodeError:
             repaired = self._repair_json(raw)
             try:
-                parsed = json.loads(repaired)
+                parsed = cast(dict[str, Any], json.loads(repaired))
             except json.JSONDecodeError as exc:
                 msg = "OpenAI response was not valid JSON"
                 raise LLMResponseError(msg) from exc
@@ -215,7 +216,7 @@ class OpenAILLMClient:
         end = raw.rfind("}")
         if start == -1 or end == -1:
             return raw
-        return raw[start : end + 1]
+        return raw[start:end + 1]
 
     def _validate_payload(self, parsed: Mapping[str, Any]) -> None:
         for field in (
