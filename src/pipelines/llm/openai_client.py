@@ -216,7 +216,7 @@ class OpenAILLMClient:
         end = raw.rfind("}")
         if start == -1 or end == -1:
             return raw
-        return raw[start:end + 1]
+        return raw[start : end + 1]
 
     def _validate_payload(self, parsed: Mapping[str, Any]) -> None:
         for field in (
