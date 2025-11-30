@@ -15,7 +15,11 @@ import pandas as pd
 from corpus.community_schema import MotifTaxonomy, load_motif_taxonomy
 from corpus.config import settings
 
-from pipelines.aliasing import load_alias_map
+from pipelines.aliasing import (
+    DEFAULT_ALIAS_TABLE,
+    AliasResolver,
+    load_alias_map,
+)
 from pipelines.motif_taxonomy_utils import (
     MotifMetadata,
     PatternMap,
@@ -31,6 +35,7 @@ GRAPHML_FILENAME = "npc_motif_graph.graphml"
 ENTITY_SUMMARY_FILENAME = "entity_summary.parquet"
 ENTITY_MOTIF_FILENAME = "entity_motif_stats.parquet"
 LORE_HITS_FILENAME = "lore_motif_hits.parquet"
+LORE_ENTRIES_FILENAME = "entity_lore_entries.parquet"
 REPORT_FILENAME = "graph_report.json"
 
 
@@ -42,7 +47,7 @@ class NPCMotifGraphConfig:
     output_dir: Path = Path("data/analysis/npc_motif_graph")
     taxonomy_path: Path | None = None
     categories: tuple[str, ...] = ("npc",)
-    alias_table_path: Path | None = None
+    alias_table_path: Path | None = DEFAULT_ALIAS_TABLE
 
 
 @dataclass(slots=True)
@@ -54,6 +59,7 @@ class NPCMotifGraphArtifacts:
     entity_summary: Path
     entity_motif_stats: Path
     lore_hits: Path
+    lore_entries: Path
     report_path: Path
 
 
@@ -71,7 +77,9 @@ class NPCMotifGraphPipeline:
         )
         self._patterns: PatternMap = compile_motif_patterns(self._taxonomy)
         self._motif_lookup = motif_lookup(self._taxonomy)
-        self._alias_map = load_alias_map(self.config.alias_table_path)
+        self._alias_map: AliasResolver = load_alias_map(
+            self.config.alias_table_path
+        )
 
     def run(self) -> NPCMotifGraphArtifacts:
         """Execute the pipeline and persist graph artifacts."""
@@ -132,7 +140,7 @@ class NPCMotifGraphPipeline:
             return frame
         updated = frame.copy()
         resolved = [
-            self._alias_map.get(str(value), str(value))
+            self._alias_map.resolve(str(value))
             for value in updated["canonical_id"].astype(str)
         ]
         updated["canonical_id"] = resolved
@@ -252,10 +260,12 @@ class NPCMotifGraphPipeline:
         entity_summary = self._entity_summary(lore_frame, hits)
         entity_motif = self._entity_motif_stats(hits)
         lore_hits = self._annotated_hits(hits)
+        lore_entries = self._entity_lore_entries(lore_frame)
 
         entity_summary_path = output_dir / ENTITY_SUMMARY_FILENAME
         entity_motif_path = output_dir / ENTITY_MOTIF_FILENAME
         lore_hits_path = output_dir / LORE_HITS_FILENAME
+        lore_entries_path = output_dir / LORE_ENTRIES_FILENAME
         graph_path = output_dir / GRAPH_FILENAME
         graphml_path = output_dir / GRAPHML_FILENAME
         report_path = output_dir / REPORT_FILENAME
@@ -263,6 +273,7 @@ class NPCMotifGraphPipeline:
         entity_summary.to_parquet(entity_summary_path, index=False)
         entity_motif.to_parquet(entity_motif_path, index=False)
         lore_hits.to_parquet(lore_hits_path, index=False)
+        lore_entries.to_parquet(lore_entries_path, index=False)
 
         with graph_path.open("wb") as handle:
             pickle.dump(graph, handle)
@@ -311,6 +322,7 @@ class NPCMotifGraphPipeline:
             entity_summary=entity_summary_path,
             entity_motif_stats=entity_motif_path,
             lore_hits=lore_hits_path,
+            lore_entries=lore_entries_path,
             report_path=report_path,
         )
 
@@ -370,6 +382,16 @@ class NPCMotifGraphPipeline:
             lambda slug: self._motif_meta(slug).category
         )
         return enriched
+
+    def _entity_lore_entries(self, lore_frame: pd.DataFrame) -> pd.DataFrame:
+        columns = [
+            "canonical_id",
+            "category",
+            "lore_id",
+            "text_type",
+            "text",
+        ]
+        return lore_frame.loc[:, columns].copy()
 
     def _motif_meta(self, slug: str) -> MotifMetadata:
         return self._motif_lookup.get(

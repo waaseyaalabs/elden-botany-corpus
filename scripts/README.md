@@ -68,6 +68,23 @@ Project setup script for initial configuration.
 
 ---
 
+### `npc_summary_coverage.py`
+
+Verifies that every curated NPC appearing in `lore_corpus.parquet` has a
+corresponding entry in `npc_narrative_summaries.*`.
+
+```bash
+python scripts/npc_summary_coverage.py \
+  --lore data/curated/lore_corpus.parquet \
+  --summaries data/analysis/narrative_summaries/npc_narrative_summaries.parquet
+```
+
+- Supports Parquet, JSON, or JSONL summary files
+- Honors custom alias tables via `--alias-table`
+- Exits with code 1 when curated NPCs are missing (unless `--allow-missing`)
+
+---
+
 ### `lint.sh`
 
 Runs code quality checks (ruff, mypy).

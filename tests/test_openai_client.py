@@ -3,12 +3,15 @@
 from __future__ import annotations
 
 import json
-from typing import Any, cast
+from typing import Any, Mapping, cast
 
 import pytest
 
 from pipelines.llm.base import LLMConfig, LLMResponseError
-from pipelines.llm.openai_client import OpenAILLMClient
+from pipelines.llm.openai_client import (
+    OpenAILLMClient,
+    build_summary_request_body,
+)
 
 
 class _FakeContentPiece:
@@ -83,6 +86,15 @@ class _FakeTextOnlyResponsesAPI:
 class _FakeTextOnlyClient:
     def __init__(self, response: _FakeResponse) -> None:
         self.responses = _FakeTextOnlyResponsesAPI(response=response)
+
+
+def _system_prompt_text(request: Mapping[str, Any]) -> str:
+    inputs = cast(list[Mapping[str, Any]], request["input"])
+    system_block = inputs[0]
+    content = cast(list[Mapping[str, Any]], system_block["content"])
+    prompt = content[0]["text"]
+    assert isinstance(prompt, str)
+    return prompt
 
 
 def _sample_payload() -> dict[str, Any]:
@@ -208,3 +220,52 @@ def test_openai_client_request_body_shape_uses_text_format() -> None:
     format_config = cast(dict[str, Any], text_config["format"])
     assert format_config["type"] == "json_schema"
     assert format_config["name"] == "narrative_summary"
+
+
+def test_openai_client_includes_max_output_tokens() -> None:
+    expected: dict[str, Any] = {
+        "canonical_id": "npc:melina",
+        "summary_text": "Brief",
+        "motif_slugs": ["scarlet_rot"],
+        "supporting_quotes": ["l-1"],
+    }
+    response = _FakeResponse(json.dumps(expected))
+    fake_client = _FakeClient(response=response)
+    client = OpenAILLMClient(
+        config=LLMConfig(
+            provider="openai",
+            model="dummy-model",
+            max_output_tokens=640,
+        ),
+        api_key="token",
+        client=fake_client,
+    )
+
+    client.summarize_entity(_sample_payload())
+
+    assert fake_client.responses.called_with is not None
+    assert fake_client.responses.called_with["max_output_tokens"] == 640
+
+
+def test_build_summary_request_body_uses_brief_prompt_by_default() -> None:
+    request = build_summary_request_body(
+        LLMConfig(provider="openai", model="dummy"),
+        _sample_payload(),
+    )
+
+    prompt = _system_prompt_text(request)
+
+    assert "concise Elden Ring lore briefs" in prompt
+
+
+def test_build_summary_request_body_switches_to_codex_prompt() -> None:
+    base_config = LLMConfig(provider="openai", model="dummy")
+    request = build_summary_request_body(
+        base_config,
+        _sample_payload(),
+        codex_mode=True,
+    )
+
+    prompt = _system_prompt_text(request)
+
+    assert "archivist of the Elden Codex" in prompt

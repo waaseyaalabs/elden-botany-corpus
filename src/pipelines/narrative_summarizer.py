@@ -5,40 +5,56 @@ from __future__ import annotations
 import json
 import logging
 import re
-from collections import Counter
 from collections.abc import Mapping
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Literal, cast
 
 import pandas as pd
+import yaml
 from corpus.community_schema import MotifTaxonomy, load_motif_taxonomy
 
-from pipelines.aliasing import load_alias_map
+from pipelines.aliasing import (
+    DEFAULT_ALIAS_TABLE,
+    AliasResolver,
+    load_alias_map,
+)
 from pipelines.llm.base import (
     LLMConfig,
     LLMResponseError,
     resolve_llm_config,
 )
+from pipelines.llm.batch_utils import (
+    BatchDiagnostics,
+    extract_response_text,
+    extract_status_code,
+    format_batch_error,
+)
 from pipelines.llm.openai_client import (
     OpenAILLMClient,
     build_summary_request_body,
 )
+from pipelines.motif_taxonomy_utils import MotifMetadata, motif_lookup
 from pipelines.npc_motif_graph import (
     ENTITY_MOTIF_FILENAME,
     ENTITY_SUMMARY_FILENAME,
+    LORE_ENTRIES_FILENAME,
     LORE_HITS_FILENAME,
 )
+from pipelines.speech_motifs import SPEECH_MOTIF_HITS_FILENAME
 
 LOGGER = logging.getLogger(__name__)
 
 SUMMARY_JSON = "npc_narrative_summaries.json"
 SUMMARY_PARQUET = "npc_narrative_summaries.parquet"
 SUMMARY_MARKDOWN = "npc_narrative_summaries.md"
+DEFAULT_MOTIF_OVERRIDE_PATH = Path("data/reference/npc_motif_overrides.yaml")
 
 
 _QUOTE_ID_PATTERN = re.compile(r"lore_id\s*(?:=|:)\s*([A-Za-z0-9_:-]+)")
 LLMMode = Literal["batch", "per-entity", "heuristic"]
+_METADATA_LEAK_TOKENS = ("lore_count=", "motif_mentions=", "unique_motifs=")
+_DISALLOWED_TEXT_TYPES = frozenset({"ambient", "system"})
 
 
 @dataclass(slots=True)
@@ -57,7 +73,13 @@ class NarrativeSummariesConfig:
     llm_model: str | None = None
     llm_reasoning: str | None = None
     llm_max_output_tokens: int | None = None
-    alias_table_path: Path | None = None
+    alias_table_path: Path | None = DEFAULT_ALIAS_TABLE
+    min_motif_unique_lore: int = 2
+    motif_override_path: Path | None = DEFAULT_MOTIF_OVERRIDE_PATH
+    codex_mode: bool = False
+    speech_motif_dir: Path | None = Path("data/analysis/llm_motifs")
+    speech_motif_hits_path: Path | None = None
+    use_speech_motifs: bool = True
 
 
 @dataclass(slots=True)
@@ -70,25 +92,10 @@ class NarrativeSummaryArtifacts:
 
 
 @dataclass(slots=True)
-class BatchDiagnostics:
-    """Diagnostics for an OpenAI batch output file."""
+class MotifOverride:
+    """Per-entity motif override instructions."""
 
-    path: Path
-    total_records: int = 0
-    successes: int = 0
-    failures: int = 0
-    failed_ids: list[str] = field(default_factory=list)
-    failure_messages: Counter[str] = field(default_factory=Counter)
-
-    def to_dict(self) -> dict[str, Any]:
-        return {
-            "path": str(self.path),
-            "total_records": self.total_records,
-            "successes": self.successes,
-            "failures": self.failures,
-            "failed_ids": list(self.failed_ids),
-            "failure_messages": dict(self.failure_messages),
-        }
+    block: frozenset[str] = field(default_factory=frozenset)
 
 
 class NarrativeSummariesPipeline:
@@ -104,7 +111,13 @@ class NarrativeSummariesPipeline:
             self.config.taxonomy_path
         )
         self._motif_order = self._build_motif_order()
-        self._alias_map = load_alias_map(self.config.alias_table_path)
+        self._motif_lookup = motif_lookup(self._taxonomy)
+        self._alias_map: AliasResolver = load_alias_map(
+            self.config.alias_table_path
+        )
+        self._motif_overrides = self._load_motif_overrides(
+            self.config.motif_override_path
+        )
         self._llm_config: LLMConfig | None = None
         self._llm_client: OpenAILLMClient | None = None
         self._batch_diagnostics: BatchDiagnostics | None = None
@@ -145,13 +158,16 @@ class NarrativeSummariesPipeline:
     def _require_llm_client(self) -> OpenAILLMClient:
         if self._llm_client is None:
             config = self._require_llm_config()
-            self._llm_client = OpenAILLMClient(config=config)
+            self._llm_client = OpenAILLMClient(
+                config=config,
+                codex_mode=self.config.codex_mode,
+            )
         return self._llm_client
 
     def _canonicalize_id(self, value: str) -> str:
         if not value:
             return value
-        return self._alias_map.get(value, value)
+        return self._alias_map.resolve(value)
 
     def run(self) -> NarrativeSummaryArtifacts:
         entity_summary = self._read_parquet(
@@ -166,6 +182,23 @@ class NarrativeSummariesPipeline:
             LORE_HITS_FILENAME,
             "lore motif hits",
         )
+        lore_entries = self._read_parquet(
+            LORE_ENTRIES_FILENAME,
+            "entity lore entries",
+        )
+
+        speech_hits = self._load_speech_hits()
+        if speech_hits is not None and not speech_hits.empty:
+            LOGGER.info(
+                "Using speech-level motif hits (%s rows)",
+                len(speech_hits),
+            )
+            lore_hits = speech_hits
+            entity_motif = self._speech_entity_motif_stats(speech_hits)
+            entity_summary = self._speech_summary_overrides(
+                entity_summary,
+                speech_hits,
+            )
 
         batch_results: dict[str, Mapping[str, Any]] | None = None
         if self.config.llm_mode == "batch":
@@ -185,10 +218,12 @@ class NarrativeSummariesPipeline:
             entity_summary,
             entity_motif,
             lore_hits,
+            lore_entries,
             batch_results=batch_results,
         )
         if not summaries:
             raise RuntimeError("No narrative summaries were produced")
+        self._validate_coverage(entity_summary, summaries)
 
         artifacts = self._write_artifacts(summaries)
         LOGGER.info(
@@ -223,6 +258,11 @@ class NarrativeSummariesPipeline:
             LORE_HITS_FILENAME,
             "lore motif hits",
         )
+        lore_entries = self._read_parquet(
+            LORE_ENTRIES_FILENAME,
+            "entity lore entries",
+        )
+        motif_text_types = self._motif_text_types(lore_hits)
         llm_config = llm_config or self._require_llm_config()
         batch_path = destination or self.batch_input_path
         batch_path.parent.mkdir(parents=True, exist_ok=True)
@@ -238,6 +278,8 @@ class NarrativeSummariesPipeline:
                 entity_summary,
                 entity_motif,
                 lore_hits,
+                lore_entries,
+                motif_text_types,
             ):
                 if allowlist is not None and canonical_id not in allowlist:
                     continue
@@ -250,6 +292,7 @@ class NarrativeSummariesPipeline:
                 request_body = build_summary_request_body(
                     llm_config,
                     payload,
+                    codex_mode=self.config.codex_mode,
                 )
                 record = {
                     "custom_id": canonical_id,
@@ -277,6 +320,8 @@ class NarrativeSummariesPipeline:
         entity_summary: pd.DataFrame,
         entity_motif: pd.DataFrame,
         lore_hits: pd.DataFrame,
+        lore_entries: pd.DataFrame,
+        motif_text_types: Mapping[tuple[str, str], set[str]],
     ) -> list[
         tuple[
             str,
@@ -287,19 +332,29 @@ class NarrativeSummariesPipeline:
     ]:
         grouped_hits = lore_hits.groupby("canonical_id")
         grouped_motifs = entity_motif.groupby("canonical_id")
+        grouped_lore_entries = lore_entries.groupby("canonical_id")
+        empty_motif_rows = entity_motif.head(0).copy()
 
         contexts: list[
             tuple[str, pd.Series, list[dict[str, Any]], list[dict[str, Any]]]
         ] = []
         for _, row in entity_summary.iterrows():
             canonical_id = str(row["canonical_id"])
-            if canonical_id not in grouped_motifs.groups:
-                continue
-            motif_rows = grouped_motifs.get_group(canonical_id)
-            if motif_rows.empty:
-                continue
-            top_motifs = self._top_motifs(motif_rows)
-            quotes = self._quotes_for_entity(canonical_id, grouped_hits)
+            motif_rows = (
+                grouped_motifs.get_group(canonical_id)
+                if canonical_id in grouped_motifs.groups
+                else empty_motif_rows
+            )
+            top_motifs = self._top_motifs(
+                canonical_id,
+                motif_rows,
+                motif_text_types,
+            )
+            quotes = self._quotes_for_entity(
+                canonical_id,
+                grouped_hits,
+                grouped_lore_entries,
+            )
             contexts.append((canonical_id, row, top_motifs, quotes))
         return contexts
 
@@ -340,14 +395,11 @@ class NarrativeSummariesPipeline:
                     continue
                 response_payload = record.get("response")
                 error_detail = record.get("error")
-                status_code = self._extract_batch_status_code(response_payload)
+                status_code = extract_status_code(response_payload)
                 if error_detail or (
                     status_code is not None and status_code >= 400
                 ):
-                    message = self._format_batch_error(
-                        error_detail,
-                        status_code,
-                    )
+                    message = format_batch_error(error_detail, status_code)
                     diagnostics.failure_messages[message] += 1
                     diagnostics.failed_ids.append(custom_id)
                     LOGGER.warning(
@@ -356,9 +408,7 @@ class NarrativeSummariesPipeline:
                         message,
                     )
                     continue
-                text_payload = self._extract_batch_response_text(
-                    response_payload
-                )
+                text_payload = extract_response_text(response_payload)
                 if not text_payload:
                     LOGGER.warning(
                         "Batch entry for %s did not include response text",
@@ -425,87 +475,78 @@ class NarrativeSummariesPipeline:
             )
         return results
 
-    def _extract_batch_response_text(
+    def _load_motif_overrides(
         self,
-        response: Mapping[str, Any] | None,
-    ) -> str | None:
-        if response is None:
-            return None
-        output = response.get("output") or []
-        chunks: list[str] = []
-        for item in output:
-            content = item.get("content") or []
-            for piece in content:
-                if isinstance(piece, dict):
-                    text = piece.get("text")
-                    if isinstance(text, str):
-                        chunks.append(text)
-        if chunks:
-            return "".join(chunks)
-        body = response.get("body")
-        if isinstance(body, dict):
-            choices = body.get("choices") or []
-            for choice in choices:
-                message = choice.get("message") or {}
-                content = message.get("content") or []
-                for piece in content:
-                    if isinstance(piece, dict):
-                        text = piece.get("text")
-                        if isinstance(text, str):
-                            chunks.append(text)
-            if chunks:
-                return "".join(chunks)
-        return None
-
-    def _extract_batch_status_code(
-        self,
-        response: Mapping[str, Any] | None,
-    ) -> int | None:
-        if not isinstance(response, Mapping):
-            return None
-        status_code = response.get("status_code")
-        if status_code is None:
-            return None
+        path: Path | None,
+    ) -> dict[str, MotifOverride]:
+        if path is None:
+            return {}
+        if not path.exists():
+            LOGGER.info(
+                "Motif override table %s missing; continuing without"
+                " overrides",
+                path,
+            )
+            return {}
         try:
-            return int(status_code)
-        except (TypeError, ValueError):
-            return None
+            with path.open("r", encoding="utf-8") as handle:
+                payload = yaml.safe_load(handle) or {}
+        except yaml.YAMLError as exc:  # pragma: no cover - unlikely
+            raise ValueError(
+                f"Failed to parse motif override table at {path}: {exc}"
+            ) from exc
+        if not isinstance(payload, Mapping):
+            raise ValueError(
+                "Motif override table must map canonical_id values to rules"
+            )
+        overrides: dict[str, MotifOverride] = {}
+        for raw_canonical_id, raw_spec in payload.items():
+            canonical_id = str(raw_canonical_id or "").strip()
+            if not canonical_id:
+                continue
+            block_values: list[str] = []
+            if isinstance(raw_spec, Mapping):
+                candidates = raw_spec.get("block", [])
+                if isinstance(candidates, list):
+                    block_values = [
+                        str(value).strip()
+                        for value in candidates
+                        if str(value or "").strip()
+                    ]
+            overrides[canonical_id] = MotifOverride(
+                block=frozenset(block_values)
+            )
+        if overrides:
+            LOGGER.info(
+                "Loaded %s motif override entries from %s",
+                len(overrides),
+                path,
+            )
+        return overrides
 
-    def _format_batch_error(
-        self,
-        error_detail: Any,
-        status_code: int | None,
-    ) -> str:
-        if error_detail is not None:
-            if isinstance(error_detail, Mapping):
-                message = error_detail.get("message")
-                if isinstance(message, str):
-                    return message
-                return json.dumps(
-                    error_detail,
-                    ensure_ascii=False,
-                    sort_keys=True,
-                )
-            if isinstance(error_detail, list | tuple):
-                return json.dumps(error_detail, ensure_ascii=False)
-            return str(error_detail)
-        if status_code is not None:
-            return f"status_code={status_code}"
-        return "unknown error"
+    def _blocked_motifs(self, canonical_id: str) -> frozenset[str]:
+        override = self._motif_overrides.get(canonical_id)
+        if override is None:
+            return frozenset()
+        return override.block
 
     def _build_summaries(
         self,
         entity_summary: pd.DataFrame,
         entity_motif: pd.DataFrame,
         lore_hits: pd.DataFrame,
+        lore_entries: pd.DataFrame,
         batch_results: dict[str, Mapping[str, Any]] | None = None,
     ) -> list[dict[str, Any]]:
         summaries: list[dict[str, Any]] = []
         missing_batch: list[str] = []
+        motif_text_types = self._motif_text_types(lore_hits)
         contexts = self._iter_entity_contexts(
             entity_summary,
             entity_motif,
             lore_hits,
+            lore_entries,
+            motif_text_types,
         )
 
         for canonical_id, row, top_motifs, quotes in contexts:
@@ -568,6 +609,7 @@ class NarrativeSummariesPipeline:
             canonical_id,
             summary_row,
             top_motifs,
+            quotes,
         )
         summary_motif_slugs = [
             str(item.get("slug")) for item in top_motifs if item.get("slug")
@@ -663,6 +705,14 @@ class NarrativeSummariesPipeline:
         summary_text = str(response.get("summary_text", "")).strip()
         if not summary_text:
             raise LLMResponseError("LLM response missing summary_text")
+        if self._looks_truncated(summary_text):
+            raise LLMResponseError(
+                "LLM response summary_text appears truncated ('...')"
+            )
+        if self._contains_metadata_leak(summary_text):
+            raise LLMResponseError(
+                "LLM response summary_text leaked prompt metadata"
+            )
 
         motif_slugs = self._ensure_str_list(
             response.get("motif_slugs"),
@@ -683,6 +733,15 @@ class NarrativeSummariesPipeline:
             "motif_slugs": motif_slugs,
             "supporting_quotes": supporting_quotes,
         }
+
+    def _looks_truncated(self, summary_text: str) -> bool:
+        """Return True when the LLM summary looks truncated."""
+
+        return "..." in summary_text
+
+    def _contains_metadata_leak(self, summary_text: str) -> bool:
+        lowered = summary_text.lower()
+        return any(token in lowered for token in _METADATA_LEAK_TOKENS)
 
     def _ensure_str_list(
         self,
@@ -798,8 +857,31 @@ class NarrativeSummariesPipeline:
             "quotes": quotes[: self.config.max_quotes],
         }
 
-    def _top_motifs(self, motif_rows: pd.DataFrame) -> list[dict[str, Any]]:
+    def _top_motifs(
+        self,
+        canonical_id: str,
+        motif_rows: pd.DataFrame,
+        motif_text_types: Mapping[tuple[str, str], set[str]],
+    ) -> list[dict[str, Any]]:
         ranked = motif_rows.copy()
+        ranked["unique_lore"] = ranked["unique_lore"].astype(int)
+        min_unique = max(1, int(self.config.min_motif_unique_lore))
+        ranked = ranked.loc[ranked["unique_lore"] >= min_unique]
+        blocked = self._blocked_motifs(canonical_id)
+        if blocked:
+            ranked = ranked.loc[~ranked["motif_slug"].isin(blocked)]
+        if ranked.empty:
+            return []
+        allowed_mask = ranked["motif_slug"].astype(str).apply(
+            lambda slug: self._motif_has_allowed_text_type(
+                canonical_id,
+                slug,
+                motif_text_types,
+            )
+        )
+        ranked = ranked.loc[allowed_mask]
+        if ranked.empty:
+            return []
         order_series = ranked["motif_slug"].map(self._motif_order)
         filled = order_series.fillna(float(len(self._motif_order)))
         ranked.loc[:, "__rank"] = filled
@@ -824,29 +906,177 @@ class NarrativeSummariesPipeline:
         self,
         canonical_id: str,
         grouped_hits: Any,
+        grouped_lore_entries: Any,
     ) -> list[dict[str, Any]]:
-        if canonical_id not in grouped_hits.groups:
-            return []
-        subset = grouped_hits.get_group(canonical_id)
         quotes: list[dict[str, Any]] = []
-        for lore_id, group in subset.groupby("lore_id"):
-            motifs = sorted(group["motif_label"].unique())
+        if canonical_id in grouped_hits.groups:
+            subset = grouped_hits.get_group(canonical_id)
+            for lore_id, group in subset.groupby("lore_id"):
+                motifs = sorted(group["motif_label"].unique())
+                quotes.append(
+                    {
+                        "lore_id": lore_id,
+                        "text": group["text"].iloc[0],
+                        "motifs": motifs,
+                    }
+                )
+                if len(quotes) >= self.config.max_quotes:
+                    return quotes
+        if quotes:
+            return quotes
+        if canonical_id not in grouped_lore_entries.groups:
+            return []
+        subset = grouped_lore_entries.get_group(canonical_id)
+        deduped = subset.drop_duplicates("lore_id")
+        for _, row in deduped.head(self.config.max_quotes).iterrows():
             quotes.append(
                 {
-                    "lore_id": lore_id,
-                    "text": group["text"].iloc[0],
-                    "motifs": motifs,
+                    "lore_id": row.get("lore_id"),
+                    "text": row.get("text"),
+                    "motifs": [],
                 }
             )
-            if len(quotes) >= self.config.max_quotes:
-                break
         return quotes
+
+    def _load_speech_hits(self) -> pd.DataFrame | None:
+        if not self.config.use_speech_motifs:
+            return None
+        target = self.config.speech_motif_hits_path
+        if target is None:
+            base = self.config.speech_motif_dir
+            if base is None:
+                return None
+            target = base / SPEECH_MOTIF_HITS_FILENAME
+        if target is None or not target.exists():
+            return None
+        frame = pd.read_parquet(target)
+        required = {
+            "canonical_id",
+            "motif_slug",
+            "lore_id",
+            "text",
+            "text_type",
+            "motif_label",
+        }
+        missing = required - set(frame.columns)
+        if missing:
+            LOGGER.warning(
+                "Speech motif hits at %s missing columns %s; skipping",
+                target,
+                ", ".join(sorted(missing)),
+            )
+            return None
+        normalized = frame.copy()
+        normalized["canonical_id"] = normalized["canonical_id"].astype(str)
+        normalized["motif_slug"] = normalized["motif_slug"].astype(str)
+        normalized["text_type"] = normalized["text_type"].astype(str)
+        normalized["motif_label"] = normalized["motif_label"].astype(str)
+        return normalized
+
+    def _speech_entity_motif_stats(
+        self,
+        hits: pd.DataFrame,
+    ) -> pd.DataFrame:
+        if hits.empty:
+            return pd.DataFrame(
+                columns=[
+                    "canonical_id",
+                    "motif_slug",
+                    "hit_count",
+                    "unique_lore",
+                    "motif_label",
+                    "motif_category",
+                ]
+            )
+        grouped = (
+            hits.groupby(["canonical_id", "motif_slug"])
+            .agg(
+                hit_count=("motif_slug", "size"),
+                unique_lore=("lore_id", "nunique"),
+            )
+            .reset_index()
+        )
+        grouped["hit_count"] = grouped["hit_count"].astype(int)
+        grouped["unique_lore"] = grouped["unique_lore"].astype(int)
+        grouped["motif_label"] = grouped["motif_slug"].map(
+            lambda slug: self._motif_metadata(slug).label
+        )
+        grouped["motif_category"] = grouped["motif_slug"].map(
+            lambda slug: self._motif_metadata(slug).category
+        )
+        return grouped
+
+    def _speech_summary_overrides(
+        self,
+        entity_summary: pd.DataFrame,
+        hits: pd.DataFrame,
+    ) -> pd.DataFrame:
+        if hits.empty:
+            return entity_summary
+        overrides = (
+            hits.groupby("canonical_id")
+            .agg(
+                motif_mentions=("motif_slug", "count"),
+                unique_motifs=("motif_slug", "nunique"),
+            )
+            .reset_index()
+        )
+        merged = entity_summary.merge(
+            overrides,
+            on="canonical_id",
+            how="left",
+            suffixes=("", "_speech"),
+        )
+        for column in ("motif_mentions", "unique_motifs"):
+            speech_col = f"{column}_speech"
+            merged[column] = (
+                merged[speech_col]
+                .fillna(merged[column])
+                .fillna(0)
+                .astype(int)
+            )
+            merged.drop(columns=[speech_col], inplace=True)
+        return merged
+
+    def _motif_text_types(
+        self,
+        lore_hits: pd.DataFrame,
+    ) -> dict[tuple[str, str], set[str]]:
+        index: dict[tuple[str, str], set[str]] = {}
+        if lore_hits.empty:
+            return index
+        for _, row in lore_hits.iterrows():
+            canonical_id = str(row.get("canonical_id", "")).strip()
+            motif_slug = str(row.get("motif_slug", "")).strip()
+            if not canonical_id or not motif_slug:
+                continue
+            text_type = str(row.get("text_type", "")).strip().lower()
+            if not text_type:
+                continue
+            key = (canonical_id, motif_slug)
+            bucket = index.setdefault(key, set())
+            bucket.add(text_type)
+        return index
+
+    def _motif_has_allowed_text_type(
+        self,
+        canonical_id: str,
+        motif_slug: str,
+        motif_text_types: Mapping[tuple[str, str], set[str]],
+    ) -> bool:
+        text_types = motif_text_types.get((canonical_id, motif_slug))
+        if not text_types:
+            return True
+        return any(
+            text_type not in _DISALLOWED_TEXT_TYPES for text_type in text_types
+        )
 
     def _compose_summary_text(
         self,
         canonical_id: str,
         summary_row: pd.Series,
         top_motifs: list[dict[str, Any]],
+        quotes: list[dict[str, Any]],
     ) -> str:
         motif_labels = [
             str(item.get("label", ""))
@@ -855,15 +1085,93 @@ class NarrativeSummariesPipeline:
         ]
         motif_phrase = self._format_list(motif_labels)
         lore_count = int(summary_row.get("lore_count", 0))
+        if self.config.codex_mode:
+            return self._compose_codex_summary(
+                canonical_id,
+                lore_count,
+                motif_phrase,
+                quotes,
+            )
         if not motif_phrase:
-            return (
-                f"{canonical_id} surfaces {lore_count} lore lines but has "
-                "no registered motifs yet."
+            return self._compose_quote_summary(
+                canonical_id,
+                lore_count,
+                quotes,
             )
         return (
             f"{canonical_id} leans on {motif_phrase} across {lore_count} "
             "lore lines."
         )
+
+    def _compose_quote_summary(
+        self,
+        canonical_id: str,
+        lore_count: int,
+        quotes: list[dict[str, Any]],
+    ) -> str:
+        excerpts = [
+            self._quote_excerpt(str(quote.get("text", "")))
+            for quote in quotes
+            if quote.get("text")
+        ]
+        excerpts = [item for item in excerpts if item]
+        if not excerpts:
+            return (
+                f"{canonical_id} surfaces {lore_count} lore lines but has "
+                "no registered motifs yet."
+            )
+        sample = excerpts[:2]
+        joined = "; ".join(f'"{item}"' for item in sample)
+        if len(excerpts) > len(sample):
+            joined += " …"
+        return f"{canonical_id} speaks directly: {joined}"
+
+    def _compose_codex_summary(
+        self,
+        canonical_id: str,
+        lore_count: int,
+        motif_phrase: str,
+        quotes: list[dict[str, Any]],
+    ) -> str:
+        name = self._codex_name(canonical_id)
+        clauses: list[str] = []
+        if motif_phrase:
+            clauses.append(
+                f"{name} is etched into the codex amid {motif_phrase}"
+            )
+        else:
+            clauses.append(
+                f"{name} is etched into the codex by testimony alone"
+            )
+        if lore_count > 0:
+            clauses.append(
+                f"Their voice threads through {lore_count} sworn accounts"
+            )
+        excerpt = self._first_quote_excerpt(quotes)
+        if excerpt:
+            clauses.append(f'"{excerpt}"')
+        sentence = ". ".join(clauses).rstrip(".")
+        return sentence + "."
+
+    def _codex_name(self, canonical_id: str) -> str:
+        name = canonical_id.split(":", 1)[-1]
+        cleaned = name.replace("_", " ").strip()
+        return cleaned.title() if cleaned else canonical_id
+
+    def _first_quote_excerpt(self, quotes: list[dict[str, Any]]) -> str:
+        for quote in quotes:
+            snippet = self._quote_excerpt(str(quote.get("text", "")))
+            if snippet:
+                return snippet
+        return ""
+
+    def _quote_excerpt(self, text: str) -> str:
+        collapsed = " ".join(text.split()).strip()
+        if not collapsed:
+            return ""
+        if len(collapsed) <= 160:
+            return collapsed
+        return collapsed[:157].rstrip() + "…"
 
     def _format_list(self, items: list[str]) -> str:
         cleaned = [item for item in items if item]
@@ -872,6 +1180,47 @@ class NarrativeSummariesPipeline:
         if len(cleaned) == 1:
             return cleaned[0]
         return ", ".join(cleaned[:-1]) + f" and {cleaned[-1]}"
+
+    def _validate_coverage(
+        self,
+        entity_summary: pd.DataFrame,
+        summaries: list[dict[str, Any]],
+    ) -> None:
+        expected: set[str] = set()
+        for _, row in entity_summary.iterrows():
+            canonical_id = self._canonicalize_id(
+                str(row.get("canonical_id", "")).strip()
+            )
+            if not canonical_id:
+                continue
+            category = str(row.get("category", "")).strip().lower()
+            if category and category != "npc":
+                continue
+            try:
+                lore_count = int(row.get("lore_count", 0))
+            except (TypeError, ValueError):  # pragma: no cover - defensive
+                lore_count = 0
+            if lore_count <= 0:
+                continue
+            expected.add(canonical_id)
+
+        observed: set[str] = set()
+        for entry in summaries:
+            raw_id = str(entry.get("canonical_id", "")).strip()
+            if not raw_id:
+                continue
+            observed.add(self._canonicalize_id(raw_id))
+
+        missing = sorted(expected - observed)
+        if missing:
+            preview = ", ".join(missing[:10])
+            message = (
+                "Missing narrative summaries for NPCs: "
+                f"{preview}"
+            )
+            if len(missing) > 10:
+                message += f" (total {len(missing)})"
+            raise RuntimeError(message)
 
     def _write_artifacts(
         self,
@@ -944,6 +1293,17 @@ class NarrativeSummariesPipeline:
                 order[motif.slug] = index
                 index += 1
         return order
+
+    def _motif_metadata(self, slug: str) -> MotifMetadata:
+        metadata = self._motif_lookup.get(slug)
+        if metadata is not None:
+            return metadata
+        return MotifMetadata(
+            slug=slug,
+            label=slug,
+            category="unknown",
+            description="",
+        )
 
     def _markdown_body(self, summaries: list[dict[str, Any]]) -> str:
         lines = ["# NPC Narrative Summaries", ""]

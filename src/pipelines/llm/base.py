@@ -9,6 +9,7 @@ from typing import Any, Protocol
 
 DEFAULT_LLM_PROVIDER = "openai"
 DEFAULT_LLM_MODEL = "gpt-5-mini"
+DEFAULT_LLM_MAX_OUTPUT_TOKENS = 640
 
 # Documented options for the OpenAI connector; we do not hard-fail outside
 # this list so new models can be introduced without code changes.
@@ -56,7 +57,13 @@ def resolve_llm_config(
     )
     model = (model_override or _env("TB_LLM_MODEL")) or DEFAULT_LLM_MODEL
     reasoning = reasoning_override or _env("TB_LLM_REASONING")
-    max_output = max_output_override or _env_int("TB_LLM_MAX_OUTPUT_TOKENS")
+    if max_output_override is not None:
+        max_output = max_output_override
+    else:
+        env_cap = _env_int("TB_LLM_MAX_OUTPUT_TOKENS")
+        max_output = (
+            env_cap if env_cap is not None else DEFAULT_LLM_MAX_OUTPUT_TOKENS
+        )
     return LLMConfig(
         provider=provider.lower(),
         model=model,

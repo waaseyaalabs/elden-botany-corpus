@@ -19,13 +19,29 @@ except ModuleNotFoundError as exc:  # pragma: no cover - handled at runtime
     raise RuntimeError(message) from exc
 
 
-_SYSTEM_PROMPT = (
-    "You author concise Elden Ring lore briefs. Only use provided data. "
-    "Never invent characters, motifs, or quotes. Cite lore_id values for "
-    "each claim. Respond in JSON using the provided schema."
+_SYSTEM_PROMPT_BRIEF = (
+    "You author concise Elden Ring lore briefs from Elden Ring motif "
+    "analysis. Use only the JSON context supplied in the user message. "
+    "Mention motifs and cite lore_id values that justify each point. "
+    "Do not mention prompt metadata, counts, token budgets, or field names. "
+    "Respond in JSON using the provided schema."
+)
+
+_SYSTEM_PROMPT_CODEX = (
+    "You speak as an archivist of the Elden Codex. Weave mythic but clear "
+    "summaries drawn only from the provided JSON context. Blend motifs, "
+    "quotes, and lore_id citations into an in-universe retelling without "
+    "revealing metadata, counts, or prompt mechanics. Respond strictly as "
+    "JSON that conforms to the supplied schema."
 )
 
 _JSON_SCHEMA_NAME = "narrative_summary"
+
+
+def _system_prompt(codex_mode: bool) -> str:
+    return _SYSTEM_PROMPT_CODEX if codex_mode else _SYSTEM_PROMPT_BRIEF
+
+
 _SUMMARY_JSON_SCHEMA = {
     "type": "object",
     "properties": {
@@ -51,44 +67,49 @@ _SUMMARY_JSON_SCHEMA = {
 
 
 def _format_payload(payload: Mapping[str, Any]) -> str:
-    motifs = payload.get("top_motifs", [])
-    quotes = payload.get("quotes", [])
-    lines = [
-        f"Canonical ID: {payload.get('canonical_id')}",
-        f"Category: {payload.get('category')}",
-        (
-            "Entity stats: "
-            f"lore_count={payload.get('lore_count')} "
-            f"motif_mentions={payload.get('motif_mentions')} "
-            f"unique_motifs={payload.get('unique_motifs')}"
-        ),
-        "Top motifs:",
-    ]
-    for motif in motifs:
-        lines.append(
-            f"- {motif.get('slug')}: {motif.get('label')} "
-            f"(hits={motif.get('hit_count')}, "
-            f"unique_lore={motif.get('unique_lore')})"
-        )
-    if not motifs:
-        lines.append("- None available")
+    def _int_value(value: Any) -> int | None:
+        try:
+            return int(value)
+        except (TypeError, ValueError):
+            return None
 
-    lines.append("Quotes:")
-    for quote in quotes:
-        motifs_joined = ", ".join(quote.get("motifs", []))
-        lines.append(
-            f"- lore_id={quote.get('lore_id')} motifs={motifs_joined}\n"
-            f"  text={quote.get('text')}"
+    motif_rows = []
+    for motif in payload.get("top_motifs", []) or []:
+        motif_rows.append(
+            {
+                "slug": motif.get("slug"),
+                "label": motif.get("label"),
+                "category": motif.get("motif_category")
+                or motif.get("category"),
+                "hits": _int_value(motif.get("hit_count")),
+                "unique_lore": _int_value(motif.get("unique_lore")),
+            }
         )
-    if not quotes:
-        lines.append("- No lore quotes provided")
 
-    return "\n".join(lines)
+    quote_rows = []
+    for quote in payload.get("quotes", []) or []:
+        quote_rows.append(
+            {
+                "lore_id": quote.get("lore_id"),
+                "text": quote.get("text"),
+                "motifs": quote.get("motifs", []),
+            }
+        )
+
+    context = {
+        "canonical_id": payload.get("canonical_id"),
+        "category": payload.get("category"),
+        "motifs": motif_rows,
+        "quotes": quote_rows,
+    }
+    return json.dumps(context, ensure_ascii=False, separators=(",", ":"))
 
 
 def build_summary_request_body(
     config: LLMConfig,
     payload: Mapping[str, Any],
+    *,
+    codex_mode: bool = False,
 ) -> dict[str, Any]:
     """Render the Responses API request body for the narrative summarizer."""
 
@@ -110,7 +131,7 @@ def build_summary_request_body(
                 "content": [
                     {
                         "type": "input_text",
-                        "text": _SYSTEM_PROMPT,
+                        "text": _system_prompt(codex_mode),
                     }
                 ],
             },
@@ -139,11 +160,13 @@ class OpenAILLMClient:
         *,
         api_key: str | None = None,
         client: Any | None = None,
+        codex_mode: bool = False,
     ) -> None:
         self.config = config or LLMConfig(
             provider="openai",
             model="gpt-5.1",
         )
+        self._codex_mode = codex_mode
         key = api_key or os.environ.get("OPENAI_API_KEY")
         if not key:
             raise RuntimeError(
@@ -164,7 +187,11 @@ class OpenAILLMClient:
         return parsed
 
     def _build_request(self, payload: Mapping[str, Any]) -> dict[str, Any]:
-        return build_summary_request_body(self.config, payload)
+        return build_summary_request_body(
+            self.config,
+            payload,
+            codex_mode=self._codex_mode,
+        )
 
     def _response_text(self, response: Any) -> str:
         chunks: list[str] = []
@@ -216,7 +243,7 @@ class OpenAILLMClient:
         end = raw.rfind("}")
         if start == -1 or end == -1:
             return raw
-        return raw[start : end + 1]
+        return raw[start:end + 1]
 
     def _validate_payload(self, parsed: Mapping[str, Any]) -> None:
         for field in (

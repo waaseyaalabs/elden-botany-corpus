@@ -1,0 +1,7 @@
+# NPC-specific motif overrides for the narrative summarizer.
+npc:fia:
+  block:
+    - sacred_flame
+npc:dung_eater:
+  block:
+    - scarlet_rot
