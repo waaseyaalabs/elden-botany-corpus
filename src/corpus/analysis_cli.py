@@ -24,6 +24,11 @@ from pipelines.npc_motif_graph import (
     NPCMotifGraphConfig,
     NPCMotifGraphPipeline,
 )
+from pipelines.speech_motifs import (
+    SpeechLLMMode,
+    SpeechMotifConfig,
+    SpeechMotifPipeline,
+)
 
 
 @click.group()
@@ -128,6 +133,296 @@ def clusters(
     click.echo(f"  Plot     : {artifacts.umap_plot}")
 
 
+@analysis.command("llm-motifs")
+@click.option(
+    "--curated",
+    type=click.Path(dir_okay=False, path_type=Path),
+    default=None,
+    help="Optional override for lore_corpus.parquet.",
+)
+@click.option(
+    "--taxonomy",
+    type=click.Path(dir_okay=False, path_type=Path),
+    default=None,
+    help="Override the motif taxonomy (defaults to config/community_motifs.yml).",
+)
+@click.option(
+    "--output-dir",
+    type=click.Path(path_type=Path),
+    default=None,
+    help="Directory for speech motif artifacts (defaults to data/analysis/llm_motifs).",
+)
+@click.option("--max-motifs", type=int, default=None)
+@click.option("--llm-provider", type=str, default=None)
+@click.option("--llm-model", type=str, default=None)
+@click.option("--llm-reasoning", type=str, default=None)
+@click.option("--llm-max-output", type=int, default=None)
+@click.option(
+    "--llm-mode",
+    type=click.Choice(["sync", "batch"]),
+    default="sync",
+    show_default=True,
+    help=(
+        "sync issues per-speech OpenAI calls; batch consumes a previously"
+        " downloaded OpenAI batch output JSONL."
+    ),
+)
+@click.option(
+    "--speech-level/--line-level",
+    default=True,
+    show_default=True,
+    help="Toggle between speech grouping or per-line analysis.",
+)
+@click.option(
+    "--dry-run-llm",
+    is_flag=True,
+    help="Skip OpenAI calls and emit regex-only motif hits.",
+)
+@click.option(
+    "--no-payload-cache",
+    is_flag=True,
+    help="Disable writing LLM payload JSONL files for debugging.",
+)
+@click.option(
+    "--batch-output",
+    type=click.Path(dir_okay=False, path_type=Path),
+    default=None,
+    help="Override batch output path when --llm-mode=batch.",
+)
+def llm_motifs(
+    curated: Path | None,
+    taxonomy: Path | None,
+    output_dir: Path | None,
+    max_motifs: int | None,
+    llm_provider: str | None,
+    llm_model: str | None,
+    llm_reasoning: str | None,
+    llm_max_output: int | None,
+    llm_mode: str,
+    speech_level: bool,
+    dry_run_llm: bool,
+    no_payload_cache: bool,
+    batch_output: Path | None,
+) -> None:
+    """Detect motifs per speech via LLM with regex fallback."""
+
+    defaults = SpeechMotifConfig()
+    if dry_run_llm and llm_mode == "batch":
+        raise click.ClickException(
+            "--dry-run-llm cannot be combined with --llm-mode=batch"
+        )
+    config = SpeechMotifConfig(
+        curated_path=curated,
+        taxonomy_path=taxonomy or defaults.taxonomy_path,
+        output_dir=output_dir or defaults.output_dir,
+        include_text_types=defaults.include_text_types,
+        speech_level=speech_level,
+        max_motifs=max_motifs or defaults.max_motifs,
+        llm_provider=llm_provider or defaults.llm_provider,
+        llm_model=llm_model or defaults.llm_model,
+        llm_reasoning=llm_reasoning or defaults.llm_reasoning,
+        llm_max_output_tokens=llm_max_output or defaults.llm_max_output_tokens,
+        llm_mode=cast("SpeechLLMMode", llm_mode),
+        batch_output_path=batch_output,
+        dry_run_llm=dry_run_llm,
+        store_payloads=not no_payload_cache,
+    )
+
+    pipeline = SpeechMotifPipeline(config)
+    try:
+        artifacts = pipeline.run()
+    except (FileNotFoundError, RuntimeError, ValueError) as exc:
+        raise click.ClickException(str(exc)) from exc
+
+    click.echo("✓ Speech motif detection complete")
+    click.echo(f"  Speeches : {artifacts.speeches_parquet}")
+    click.echo(f"  Motifs   : {artifacts.speech_motifs_parquet}")
+    click.echo(f"  Hits     : {artifacts.speech_motif_hits_parquet}")
+    if artifacts.payload_cache is not None:
+        click.echo(f"  Payloads : {artifacts.payload_cache}")
+
+
+@analysis.command("llm-motifs-batch")
+@click.option(
+    "--curated",
+    type=click.Path(dir_okay=False, path_type=Path),
+    default=None,
+    help="Optional override for lore_corpus.parquet.",
+)
+@click.option(
+    "--taxonomy",
+    type=click.Path(dir_okay=False, path_type=Path),
+    default=None,
+    help="Override the motif taxonomy (defaults to config/community_motifs.yml).",
+)
+@click.option(
+    "--output-dir",
+    type=click.Path(path_type=Path),
+    default=None,
+    help="Directory for speech motif artifacts (defaults to data/analysis/llm_motifs).",
+)
+@click.option("--batch-input", type=click.Path(path_type=Path), default=None)
+@click.option("--batch-output", type=click.Path(path_type=Path), default=None)
+@click.option("--max-motifs", type=int, default=None)
+@click.option("--llm-provider", type=str, default=None)
+@click.option("--llm-model", type=str, default=None)
+@click.option("--llm-reasoning", type=str, default=None)
+@click.option("--llm-max-output", type=int, default=None)
+@click.option(
+    "--speech-level/--line-level",
+    default=True,
+    show_default=True,
+    help="Toggle between grouped speeches or per-line requests.",
+)
+@click.option(
+    "--completion-window",
+    type=str,
+    default="24h",
+    help="OpenAI batch completion window (e.g., 24h).",
+)
+@click.option(
+    "--skip-build",
+    is_flag=True,
+    help="Assume batch input already exists; skip rebuilding JSONL payload.",
+)
+@click.option(
+    "--submit",
+    is_flag=True,
+    help="Submit the batch to OpenAI after building the payload.",
+)
+@click.option(
+    "--wait/--no-wait",
+    default=False,
+    help="Poll until the OpenAI batch reaches a terminal state.",
+)
+@click.option(
+    "--poll-interval",
+    type=float,
+    default=10.0,
+    help="Polling interval (seconds) when waiting on OpenAI batches.",
+)
+@click.option(
+    "--download-output",
+    is_flag=True,
+    help="Download the completed batch output JSONL to --batch-output.",
+)
+@click.option(
+    "--batch-id",
+    type=str,
+    default=None,
+    help="Existing OpenAI batch ID to poll or download.",
+)
+def llm_motifs_batch(
+    curated: Path | None,
+    taxonomy: Path | None,
+    output_dir: Path | None,
+    batch_input: Path | None,
+    batch_output: Path | None,
+    max_motifs: int | None,
+    llm_provider: str | None,
+    llm_model: str | None,
+    llm_reasoning: str | None,
+    llm_max_output: int | None,
+    speech_level: bool,
+    completion_window: str,
+    skip_build: bool,
+    submit: bool,
+    wait: bool,
+    poll_interval: float,
+    download_output: bool,
+    batch_id: str | None,
+) -> None:
+    """Generate and optionally submit OpenAI batch jobs for speech motifs."""
+
+    defaults = SpeechMotifConfig()
+    config = SpeechMotifConfig(
+        curated_path=curated,
+        taxonomy_path=taxonomy or defaults.taxonomy_path,
+        output_dir=output_dir or defaults.output_dir,
+        include_text_types=defaults.include_text_types,
+        speech_level=speech_level,
+        max_motifs=max_motifs or defaults.max_motifs,
+        llm_provider=llm_provider or defaults.llm_provider,
+        llm_model=llm_model or defaults.llm_model,
+        llm_reasoning=llm_reasoning or defaults.llm_reasoning,
+        llm_max_output_tokens=llm_max_output or defaults.llm_max_output_tokens,
+        llm_mode="batch",
+        batch_input_path=batch_input,
+        batch_output_path=batch_output,
+        store_payloads=False,
+    )
+
+    pipeline = SpeechMotifPipeline(config)
+    batch_payload = pipeline.batch_input_path
+
+    if not skip_build:
+        llm_config = resolve_llm_config(
+            provider_override=llm_provider,
+            model_override=llm_model,
+            reasoning_override=llm_reasoning,
+            max_output_override=llm_max_output,
+        )
+        built_path = pipeline.build_batch_file(
+            destination=batch_payload,
+            llm_config=llm_config,
+        )
+        click.echo(f"✓ Batch payload written to {built_path}")
+    else:
+        click.echo(f"Skipping build; using existing payload {batch_payload}")
+
+    job: OpenAIBatchJob | None = None
+    effective_batch_id = batch_id
+    submitted_batch = None
+
+    if submit:
+        job = OpenAIBatchJob()
+        metadata = {
+            "pipeline": "speech_motifs",
+            "speech_level": str(speech_level),
+        }
+        submitted_batch = job.submit(
+            batch_payload,
+            completion_window=completion_window,
+            metadata={k: v for k, v in metadata.items() if v},
+        )
+        effective_batch_id = _extract_batch_id(submitted_batch)
+        click.echo(f"✓ Batch submitted to OpenAI (id={effective_batch_id})")
+
+    managed_batch_id: str | None = effective_batch_id
+    if (wait or download_output) and managed_batch_id is None:
+        raise click.ClickException(
+            "Provide --batch-id when using --wait/--download-output without"
+            " submission."
+        )
+
+    batch_result = None
+    if wait:
+        assert managed_batch_id is not None
+        job = job or OpenAIBatchJob()
+        batch_result = job.poll(managed_batch_id, interval=poll_interval)
+        status = getattr(batch_result, "status", None) or batch_result.get(
+            "status"
+        )
+        click.echo(
+            f"✓ Batch {managed_batch_id} reached terminal state: {status}"
+        )
+
+    if download_output:
+        assert managed_batch_id is not None
+        job = job or OpenAIBatchJob()
+        batch_result = batch_result or job.retrieve(managed_batch_id)
+        destination = pipeline.batch_output_path
+        if batch_result is None:
+            raise click.ClickException(
+                "Unable to download batch output; batch metadata missing."
+            )
+        output_path = job.download_output(batch_result, destination)
+        click.echo(f"✓ Batch output downloaded to {output_path}")
+
+    if not submit and not wait and not download_output:
+        click.echo("ℹ Batch payload ready for manual submission.")
+
+
 @analysis.command("graph")
 @click.option(
     "--curated",
@@ -150,10 +445,20 @@ def clusters(
     multiple=True,
     help="Limit lore categories (repeat flag; default npc only).",
 )
+@click.option(
+    "--alias-table",
+    type=click.Path(dir_okay=False, path_type=Path),
+    default=None,
+    help=(
+        "Optional override for entity_aliases.csv (defaults to "
+        "data/reference/entity_aliases.csv)."
+    ),
+)
 def graph(
     curated: Path | None,
     output_dir: Path | None,
     categories: tuple[str, ...],
+    alias_table: Path | None,
 ) -> None:
     """Build the NPC motif interaction graph."""
 
@@ -162,6 +467,7 @@ def graph(
         curated_path=curated,
         output_dir=output_dir or defaults.output_dir,
         categories=categories or defaults.categories,
+        alias_table_path=alias_table or defaults.alias_table_path,
     )
     pipeline = NPCMotifGraphPipeline(config)
     try:
@@ -214,6 +520,32 @@ def graph(
     is_flag=True,
     help="Skip LLM calls and emit heuristic summaries instead.",
 )
+@click.option(
+    "--codex-mode/--brief-mode",
+    default=False,
+    help=(
+        "Toggle the in-universe Codex persona for summaries. Codex mode adds "
+        "mythic narration; brief mode stays concise and journalistic."
+    ),
+)
+@click.option(
+    "--alias-table",
+    type=click.Path(dir_okay=False, path_type=Path),
+    default=None,
+    help=(
+        "Optional override for entity_aliases.csv (defaults to "
+        "data/reference/entity_aliases.csv)."
+    ),
+)
+@click.option(
+    "--motif-overrides",
+    type=click.Path(dir_okay=False, path_type=Path),
+    default=None,
+    help=(
+        "Optional override for npc_motif_overrides.yaml (defaults to "
+        "data/reference/npc_motif_overrides.yaml)."
+    ),
+)
 def summaries(
     graph_dir: Path | None,
     output_dir: Path | None,
@@ -224,6 +556,9 @@ def summaries(
     llm_reasoning: str | None,
     llm_mode: str,
     dry_run_llm: bool,
+    codex_mode: bool,
+    alias_table: Path | None,
+    motif_overrides: Path | None = None,
 ) -> None:
     """Generate narrative summaries from the motif graph."""
 
@@ -265,6 +600,9 @@ def summaries(
         llm_model=resolved_model or llm_model,
         llm_reasoning=resolved_reasoning or llm_reasoning,
         llm_max_output_tokens=resolved_max_output,
+        alias_table_path=alias_table or defaults.alias_table_path,
+        motif_override_path=motif_overrides or defaults.motif_override_path,
+        codex_mode=codex_mode,
     )
 
     pipeline = NarrativeSummariesPipeline(config)
@@ -343,6 +681,32 @@ def summaries(
     default=None,
     help="Existing OpenAI batch ID to poll or download.",
 )
+@click.option(
+    "--alias-table",
+    type=click.Path(dir_okay=False, path_type=Path),
+    default=None,
+    help=(
+        "Optional override for entity_aliases.csv (defaults to "
+        "data/reference/entity_aliases.csv)."
+    ),
+)
+@click.option(
+    "--motif-overrides",
+    type=click.Path(dir_okay=False, path_type=Path),
+    default=None,
+    help=(
+        "Optional override for npc_motif_overrides.yaml (defaults to "
+        "data/reference/npc_motif_overrides.yaml)."
+    ),
+)
+@click.option(
+    "--codex-mode/--brief-mode",
+    default=False,
+    help=(
+        "Toggle the in-universe Codex persona for summaries. Codex mode adds "
+        "mythic narration; brief mode stays concise and journalistic."
+    ),
+)
 def summaries_batch(
     graph_dir: Path | None,
     output_dir: Path | None,
@@ -360,6 +724,9 @@ def summaries_batch(
     poll_interval: float,
     download_output: bool,
     batch_id: str | None,
+    alias_table: Path | None,
+    motif_overrides: Path | None = None,
+    codex_mode: bool = False,
 ) -> None:
     """Generate and optionally submit OpenAI batch jobs for summaries."""
 
@@ -379,6 +746,9 @@ def summaries_batch(
         llm_provider=llm_provider,
         llm_model=llm_model,
         llm_reasoning=llm_reasoning,
+        alias_table_path=alias_table or defaults.alias_table_path,
+        motif_override_path=motif_overrides or defaults.motif_override_path,
+        codex_mode=codex_mode,
     )
 
     pipeline = NarrativeSummariesPipeline(config)
