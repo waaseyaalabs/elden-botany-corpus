@@ -112,15 +112,22 @@ elden-botany-corpus/
    - **Ultra-cheap debug** (`gpt-4o-mini`): for JSON/prompt smoke tests only.
 - Use `poetry run corpus analysis summaries --llm-mode per-entity` for targeted
    debugging or `--llm-mode heuristic` (alias `--dry-run-llm`) to skip LLM
-   entirely.
+   entirely. Add `--codex-mode` to swap the response voice to the in-universe
+   Elden Codex narrator while retaining JSON safety.
 - When batch output is supplied, the pipeline records `llm_used=true` plus the
    provider/model inside each JSON + Parquet summary entry.
+- Run `python scripts/npc_summary_coverage.py` after refreshing summaries to
+   confirm every curated NPC with dialogue received a narrative entry. The
+   script exits with code 1 when any curated NPC lacks coverage unless you pass
+   `--allow-missing`.
 - CLI shortcuts:
     - `make analysis-summaries` → default batch ingestion (`gpt-5-mini`).
     - `make analysis-summaries ARGS="--llm-model gpt-5.1"` → hero batch.
     - `make analysis-summaries ARGS="--llm-mode per-entity --llm-model gpt-4o-mini"`
        → synchronous debug run.
     - `make analysis-summaries ARGS="--llm-mode heuristic"` → pure heuristics.
+      - `make analysis-summaries ARGS="--codex-mode"` → Codex persona while using
+         the same payload + batch output.
 
 #### End-to-end analysis workflow
 
@@ -131,14 +138,17 @@ elden-botany-corpus/
 2. **Build the NPC motif graph**: `make analysis-graph` produces the graph,
    GraphML, and JSON report inside `data/analysis/npc_motif_graph/`. Run this
    after every curated lore refresh so downstream steps see the latest stats.
+   Pass `ARGS="--alias-table data/reference/entity_aliases.csv"` (default) to
+   ensure hundreds of Carian speaker buckets collapse into canonical NPC slugs.
 3. **Generate narrative summaries**: `make analysis-summaries-batch` builds the
    JSONL payload (and can optionally submit/download OpenAI batch jobs). Once
    the batch output exists, run `make analysis-summaries` to ingest the JSONL
    and emit JSON/Parquet/Markdown outputs in
    `data/analysis/narrative_summaries/`. Use `ARGS="--llm-mode per-entity"` for
-   synchronous debugging or `--llm-mode heuristic` / `--dry-run-llm` for the
-   offline fallback. Each run records the provider/model plus whether an LLM was
-   actually used.
+   synchronous debugging, `--llm-mode heuristic` / `--dry-run-llm` for the
+   offline fallback, or `--codex-mode` to author archivist-style retellings from
+   the same context payload. Each run records the provider/model plus whether an
+   LLM was actually used.
 
 Run the steps in order whenever you need a fresh qualitative drop; summaries
 fail fast if the graph artifacts are missing or stale, so keeping this workflow

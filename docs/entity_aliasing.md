@@ -60,6 +60,11 @@ The full set of rows lives in `data/reference/entity_aliases.csv` and includes a
 
 We intentionally leave these unmapped so analytics continue to flag them for curator review instead of misattributing lore to the wrong NPC.
 
+## Validating alias coverage downstream
+
+- Run `python scripts/npc_summary_coverage.py --alias-table data/reference/entity_aliases.csv` after refreshing narrative summaries to confirm every curated NPC with dialogue lines resolved through this alias table has a matching summary entry. The script honors alternate alias files via `--alias-table` so experiments remain reproducible.
+- Pass `--alias-table <path>` to `poetry run corpus analysis graph`, `analysis summaries`, and `analysis summaries-batch` whenever you iterate on alias data locally. The CLI wiring threads the override through to the motif graph and summarizer so Codex vs brief runs always reference the same canonical mappings.
+
 ## Cut-content appendix
 | Raw prefix | Label | Evidence | Notes |
 | --- | --- | --- | --- |

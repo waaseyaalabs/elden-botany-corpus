@@ -87,8 +87,20 @@ Key flags:
   both builder + ingestion steps.
 - `--llm-mode per-entity`: force synchronous Runs for tiny subsets / debugging.
 - `--llm-mode heuristic` or `--dry-run-llm`: emit heuristic summaries only.
+- `--codex-mode/--brief-mode`: choose between the default concise brief tone or
+  the archivist-style Codex narration. The payload schema stays the same; only
+  the system prompt + heuristic fallback phrasing change.
 - `--max-motifs`, `--max-quotes`: cap the context passed to the LLM and stored
   in artifacts.
+
+### Codex persona vs brief mode
+
+- The default brief mode uses a journalistic tone that focuses on motifs,
+  quotes, and citations with minimal flourish—ideal for dashboards or guardrails.
+- `--codex-mode` swaps the system prompt (and heuristic fallback) to an
+  archivist voice that references the Elden Codex. Responses stay JSON-safe but
+  weave motifs/quotes into a more mythic retelling. Use this for lore guides or
+  publishable codices without touching the underlying payload schema.
 
 Make targets forward the options via `ARGS`:
 

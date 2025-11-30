@@ -1,8 +1,8 @@
 {
   "summary": {
-    "entities": 8030,
-    "lore_nodes": 8030,
-    "motif_edges": 756,
+    "entities": 70,
+    "lore_nodes": 6750,
+    "motif_edges": 234,
     "taxonomy_version": 1
   },
   "sample_queries": [
