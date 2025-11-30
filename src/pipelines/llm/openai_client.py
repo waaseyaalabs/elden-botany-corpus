@@ -186,6 +186,27 @@ class OpenAILLMClient:
         parsed = self._parse_summary(raw)
         return parsed
 
+    def invoke_json(self, request: Mapping[str, Any]) -> Any:
+        """Execute an arbitrary Responses API request expecting JSON."""
+
+        body = dict(request)
+        body.setdefault("model", self.config.model)
+        if self.config.reasoning_effort and "reasoning" not in body:
+            body["reasoning"] = {"effort": self.config.reasoning_effort}
+        if (
+            self.config.max_output_tokens is not None
+            and "max_output_tokens" not in body
+        ):
+            body["max_output_tokens"] = self.config.max_output_tokens
+        try:
+            response = self._client.responses.create(**body)
+        except Exception as exc:  # pragma: no cover - network/SDK failure
+            msg = "OpenAI request failed"
+            raise LLMResponseError(msg) from exc
+
+        raw = self._response_text(response)
+        return self._parse_json_payload(raw)
+
     def _build_request(self, payload: Mapping[str, Any]) -> dict[str, Any]:
         return build_summary_request_body(
             self.config,
@@ -204,13 +225,16 @@ class OpenAILLMClient:
         if not chunks and hasattr(response, "model_dump"):
             data = response.model_dump()
             for item in data.get("output", []):
-                content = item.get("content", [])
-                chunks.extend(self._extract_content_text(content))
+                content = item.get("content")
+                if content:
+                    chunks.extend(self._extract_content_text(content))
         if not chunks:
             raise LLMResponseError("OpenAI response contained no text content")
         return "".join(chunks)
 
     def _extract_content_text(self, content: Any) -> list[str]:
+        if not content:
+            return []
         chunks: list[str] = []
         for piece in content:
             text = getattr(piece, "text", None)
@@ -225,18 +249,20 @@ class OpenAILLMClient:
         return chunks
 
     def _parse_summary(self, raw: str) -> dict[str, Any]:
-        parsed: dict[str, Any]
+        parsed = cast(dict[str, Any], self._parse_json_payload(raw))
+        self._validate_payload(parsed)
+        return parsed
+
+    def _parse_json_payload(self, raw: str) -> Any:
         try:
-            parsed = cast(dict[str, Any], json.loads(raw))
+            return json.loads(raw)
         except json.JSONDecodeError:
             repaired = self._repair_json(raw)
             try:
-                parsed = cast(dict[str, Any], json.loads(repaired))
+                return json.loads(repaired)
             except json.JSONDecodeError as exc:
                 msg = "OpenAI response was not valid JSON"
                 raise LLMResponseError(msg) from exc
-        self._validate_payload(parsed)
-        return parsed
 
     def _repair_json(self, raw: str) -> str:
         start = raw.find("{")

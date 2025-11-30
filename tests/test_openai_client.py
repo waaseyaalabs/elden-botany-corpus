@@ -199,6 +199,29 @@ def test_openai_client_falls_back_to_text_json_schema() -> None:
     assert format_config["name"] == "narrative_summary"
 
 
+def test_openai_client_invoke_json_injects_defaults() -> None:
+    response = _FakeResponse("{\"ok\": true}")
+    fake_client = _FakeClient(response=response)
+    client = OpenAILLMClient(
+        config=LLMConfig(
+            provider="openai",
+            model="demo",
+            reasoning_effort="medium",
+            max_output_tokens=256,
+        ),
+        api_key="token",
+        client=fake_client,
+    )
+
+    payload = client.invoke_json({"input": []})
+
+    assert payload == {"ok": True}
+    assert fake_client.responses.called_with is not None
+    assert fake_client.responses.called_with["model"] == "demo"
+    assert fake_client.responses.called_with["reasoning"] == {"effort": "medium"}
+    assert fake_client.responses.called_with["max_output_tokens"] == 256
+
+
 def test_openai_client_request_body_shape_uses_text_format() -> None:
     expected: dict[str, Any] = {
         "canonical_id": "npc:melina",
