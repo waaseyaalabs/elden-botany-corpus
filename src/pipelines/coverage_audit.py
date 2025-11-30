@@ -14,6 +14,16 @@ import pandas as pd
 
 from pipelines.aliasing import AliasResolver, load_alias_map
 
+try:  # pragma: no cover - optional dependency detection
+    import pyarrow  # noqa: F401
+except ImportError:  # pyarrow is optional when using fastparquet
+    _PARQUET_READ_KWARGS: dict[str, Any] = {}
+else:
+    _PARQUET_READ_KWARGS = {
+        "engine": "pyarrow",
+        "use_threads": False,
+    }
+
 
 @dataclass(slots=True)
 class CoverageReport:
@@ -59,7 +69,7 @@ def _load_curated_ids(
             "curate' first."
         )
     try:
-        frame = pd.read_parquet(
+        frame = _read_parquet(
             path,
             columns=["canonical_id", "category", "text"],
         )
@@ -98,7 +108,7 @@ def _load_summary_ids(path: Path, alias_map: AliasResolver) -> set[str]:
     suffix = path.suffix.lower()
     if suffix in {".parquet", ".pq"}:
         try:
-            frame = pd.read_parquet(path, columns=["canonical_id"])
+            frame = _read_parquet(path, columns=["canonical_id"])
         except Exception as exc:  # pragma: no cover - defensive
             raise ValueError(
                 f"Unable to read narrative summaries parquet at {path}: {exc}"
@@ -169,6 +179,20 @@ def _extract_json_records(payload: Any) -> list[Mapping[str, Any]]:
     raise ValueError(
         "Summary JSON must be an object with 'summaries' or a list of records"
     )
+
+
+def _read_parquet(path: Path, *, columns: list[str]) -> pd.DataFrame:
+    """Load Parquet deterministically to avoid pyarrow thread finalizers."""
+
+    try:
+        return pd.read_parquet(
+            path,
+            columns=columns,
+            **_PARQUET_READ_KWARGS,
+        )
+    except TypeError:
+        # Older pandas/engines might not accept use_threads/engine args.
+        return pd.read_parquet(path, columns=columns)
 
 
 __all__ = ["CoverageReport", "compare_summary_coverage"]
